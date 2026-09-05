@@ -1,0 +1,43 @@
+# CCR Software Engineering Lab — exclusions
+#
+# Ce fichier protège la baseline des résidus d'exécution. Il n'exclut jamais un
+# artefact expérimental : les packs `participant/`, les packs `control/`, les
+# runbooks, les records de run, les matrices de vérité, les manifestes de gel et
+# les évaluations font partie du dépôt.
+#
+# Les workspaces de run, candidats gelés et copies d'évaluation vivent hors du
+# dépôt, par protocole. Rien ici ne les concerne.
+
+# Dépendances
+node_modules/
+
+# Sorties de build des packs participant
+# (`cases/*/participant` compile vers `dist/` ; le harnais de control lit
+#  `../participant/dist/`, mais cette sortie se régénère et ne se versionne pas)
+dist/
+build/
+coverage/
+
+# État d'exécution local et caches
+.ccr/
+.cache/
+tmp/
+temp/
+*.log
+
+# Environnement et secrets
+.env
+.env.*
+!.env.example
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Métadonnées de système d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
