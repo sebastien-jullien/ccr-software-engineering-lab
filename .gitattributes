@@ -1,0 +1,2 @@
+.gitattributes text eol=lf
+cases/case-003-task-planner-dependency-extension/** text eol=lf

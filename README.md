@@ -39,7 +39,7 @@ REAL USE
 3. **Frontière de décision** — CCR distingue-t-il correctement faits, inférences, incertitudes, jugements de valeur et décision humaine ?
 4. **Consommabilité externe** — un consommateur indépendant peut-il récupérer les faits durables utiles via les surfaces publiques de CCR, sans connaissance des internes ?
 
-## Cas réalisés
+## Cas
 
 Chaque cas est un micro-projet autonome et vérifiable, exécuté comme un **vrai run CCR**, avec les rôles natifs `author` / `challenger` et leurs sessions gérées par CCR. Le Lab ne reproduit pas manuellement le workflow industriel externe.
 
@@ -74,6 +74,19 @@ FORME    base de code existante imparfaite → diagnostic → réparation borné
 
 Ce cas ajoute deux documents au protocole : [`PREQUALIFICATION.md`](cases/case-002-configuration-overlay-repair/PREQUALIFICATION.md), qui qualifie l'oracle et la sensibilité du control avant tout run, et [`FREEZE-MANIFEST.md`](cases/case-002-configuration-overlay-repair/FREEZE-MANIFEST.md), qui fige les deux paquets par empreinte.
 
+### CASE-003 — Task Planner Dependency Extension
+
+```text
+FORME    extension de capacité rétrocompatible sur une base saine
+ÉTAT     paquet matérialisé et préqualifié — exécution non commencée
+```
+
+[`cases/case-003-task-planner-dependency-extension/`](cases/case-003-task-planner-dependency-extension/)
+
+Ce cas ajoute au protocole une sonde de compatibilité source gelée et visible du
+participant, et fige sa chaîne d'outils TypeScript par un `package-lock.json`
+versionné. Aucune exécution expérimentale n'a commencé.
+
 Les résultats, les incertitudes résiduelles et les non-conclusions de chaque cas appartiennent à ses propres documents. Ce README ne les résume pas.
 
 ## Documents
@@ -100,6 +113,10 @@ CASE-001
 
 CASE-002
 = completed experimental case
+
+CASE-003
+= materialized and prequalified
+= execution not started
 
 LAB ROADMAP
 = open
