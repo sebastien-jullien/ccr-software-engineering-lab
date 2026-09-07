@@ -3,7 +3,7 @@
 ```text
 FORME    optimisation bornée, préservant le comportement
 CLASSE   bounded behavior-preserving optimization / internal refactor
-ÉTAT     paquet matérialisé et préqualifié — exécution non commencée
+ÉTAT     exécution expérimentale terminée — matérialisée documentairement
 ```
 
 ## Forme du cas
@@ -75,13 +75,52 @@ lockfile      membre du paquet gelé
 installation  npm ci
 ```
 
-## État
+## Résultat
+
+Le détail appartient aux records ; ce bloc ne le duplique pas.
 
 ```text
-CASE MATERIALIZATION       = COMPLETE
-PREQUALIFICATION           = PASS
-CASE EXECUTION             = NOT STARTED
-CCR RUN                    = NOT STARTED
-BLIND BASELINE             = NOT STARTED
-PUBLIC MACHINE CONSUMPTION = NOT STARTED
+CASE EXPERIMENTAL EXECUTION = COMPLETE
+
+LAYER A       = PASS
+                baseline 26/26  ·  CCR 26/26
+                axe A 17/17 et axe B 9/9 des deux côtés
+                T1 PASS des deux côtés — hors des 26 lignes
+                SOFTWARE WINNER = NONE
+                POST-FREEZE REMEDIATION = 0
+
+LAYER B       = budget déclaré de 32 invocations consommé
+                TERMINATION OBSERVED = CCR_INVOCATION_QUOTA_EXCEEDED
+                PENDING TRANSFER = YES · HUMAN_SEND = 0
+                CCR PROCEDURAL SUCCESS = NOT CLAIMED
+
+LAYER C       = PASS
+                F1 découverte sémantique publique UNIQUE
+                F2 AVAILABLE, 31 activités durables, stabilité PASS
+
+REVUE D'EFFICACITÉ PROCÉDURALE = COMPLETE
+                aucune terminaison canonique native n'est atteignable
+                sur le chemin natif v1.1.0 audité
+
+SUIVI PRODUIT CCR SYSTEM = candidat P3, décision humaine en attente
+```
+
+```text
+T1                       ≠ 27e ligne de vérité
+31 ACTIVITÉS DURABLES F2 ≠ 32 INVOCATIONS CCR
+LAYER A ÉGALITÉ 26/26    ≠ déclaration de vainqueur
+```
+
+Records détaillés :
+[`RUN-001-RECORD.md`](RUN-001-RECORD.md) pour la chronologie du run et la
+provenance, [`BASELINE-RECORD.md`](BASELINE-RECORD.md) pour le bras aveugle,
+[`EVALUATION.md`](EVALUATION.md) pour le résultat officiel, la revue
+d'efficacité procédurale et le statut de P3,
+[`PUBLIC-CONSUMPTION.md`](PUBLIC-CONSUMPTION.md) pour la consommation
+machine publique.
+
+```text
+CASE-004
+= DOCUMENTARILY MATERIALIZED
+= READY FOR CLOSURE AUDIT
 ```

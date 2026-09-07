@@ -87,6 +87,22 @@ Ce cas ajoute au protocole une sonde de compatibilité source gelée et visible 
 participant, un bras de comparaison aveugle conduit sans CCR, et une chaîne
 d'outils TypeScript figée par un `package-lock.json` versionné.
 
+### CASE-004 — Stable Ranking Cost-Bound Refactor
+
+```text
+FORME    optimisation bornée, préservant le comportement
+ÉTAT     exécution expérimentale terminée
+```
+
+[`cases/case-004-stable-ranking-cost-bound-refactor/`](cases/case-004-stable-ranking-cost-bound-refactor/)
+
+Premier cas dont le point de départ est **comportementalement correct** : rien
+n'y a été semé, et l'axe comportemental passe dès le premier instant. Ce qui
+manque est une borne de travail à tenir sans rien changer d'observable. Le cas
+ajoute un troisième axe distinct de la matrice de vérité — un verrou de
+conformité à la tâche — et une revue d'efficacité procédurale conduite après
+l'évaluation.
+
 Les résultats, les incertitudes résiduelles et les non-conclusions de chaque cas appartiennent à ses propres documents. Ce README ne les résume pas.
 
 ## Documents
@@ -120,6 +136,15 @@ CASE-003
 = Layer B : CCR quota-exhausted at 24/24, no natural convergence
 = Layer C : public F1/F2 consumption PASS
 = no CCR System product follow-up justified
+
+CASE-004
+= complete, documentarily materialized
+= Layer A : baseline 26/26, CCR 26/26, T1 PASS both, no software winner
+= Layer B : declared 32-invocation budget consumed, pending transfer
+= Layer C : public F1/F2 consumption PASS, 31 durable activities
+= procedural efficiency review : no native canonical termination reachable
+  on the audited v1.1.0 native path
+= CCR System product follow-up : candidate P3, human decision pending
 
 LAB ROADMAP
 = open
