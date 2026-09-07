@@ -78,14 +78,14 @@ Ce cas ajoute deux documents au protocole : [`PREQUALIFICATION.md`](cases/case-0
 
 ```text
 FORME    extension de capacité rétrocompatible sur une base saine
-ÉTAT     paquet matérialisé et préqualifié — exécution non commencée
+ÉTAT     cas expérimental terminé
 ```
 
 [`cases/case-003-task-planner-dependency-extension/`](cases/case-003-task-planner-dependency-extension/)
 
 Ce cas ajoute au protocole une sonde de compatibilité source gelée et visible du
-participant, et fige sa chaîne d'outils TypeScript par un `package-lock.json`
-versionné. Aucune exécution expérimentale n'a commencé.
+participant, un bras de comparaison aveugle conduit sans CCR, et une chaîne
+d'outils TypeScript figée par un `package-lock.json` versionné.
 
 Les résultats, les incertitudes résiduelles et les non-conclusions de chaque cas appartiennent à ses propres documents. Ce README ne les résume pas.
 
@@ -115,8 +115,11 @@ CASE-002
 = completed experimental case
 
 CASE-003
-= materialized and prequalified
-= execution not started
+= complete
+= Layer A : baseline 27/27, CCR 27/27, no software winner
+= Layer B : CCR quota-exhausted at 24/24, no natural convergence
+= Layer C : public F1/F2 consumption PASS
+= no CCR System product follow-up justified
 
 LAB ROADMAP
 = open

@@ -2,7 +2,8 @@
 
 ```text
 FORME    extension de capacité rétrocompatible sur une base saine
-ÉTAT     paquet matérialisé et préqualifié — non exécuté
+CLASSE   bounded backward-compatible feature extension
+ÉTAT     cas expérimental terminé
 ```
 
 ## Forme du cas
@@ -68,13 +69,47 @@ installation            npm ci
 C'est un écart assumé avec CASE-001 et CASE-002, dont les paquets participant ne
 portaient pas de lockfile.
 
-## État
+## Résultat
+
+Le détail appartient aux records ; ce bloc ne le duplique pas.
 
 ```text
-CASE MATERIALIZATION       = COMPLETE
-PREQUALIFICATION           = PASS
-CASE EXECUTION             = NOT STARTED
-CCR RUN                    = NOT STARTED
-BLIND BASELINE             = NOT STARTED
-PUBLIC MACHINE CONSUMPTION = NOT STARTED
+CASE STATUS   = COMPLETE
+CLASS         = bounded backward-compatible feature extension
+
+LAYER A       = PASS
+                baseline 27/27  ·  CCR 27/27
+                visible 10/10, holdouts 17/17 des deux côtés
+                SOFTWARE WINNER = NONE
+                POST-FREEZE REMEDIATION = 0
+
+LAYER B       = quota épuisé à 24/24
+                TERMINATION = CCR_INVOCATION_QUOTA_EXCEEDED
+                NATURAL CONVERGENCE = NO · PENDING TRANSFER = YES
+                HUMAN_SEND = 0
+                CCR PROCEDURAL SUCCESS = NOT CLAIMED
+
+LAYER C       = PASS
+                F1 découverte sémantique publique UNIQUE
+                F2 AVAILABLE, 23 activités durables, stabilité PASS
+                PUBLIC CONTRACT CONFORMANCE = PASS
+
+AMBIGUÏTÉ DE SPÉCIFICATION = découverte, non bloquante
+                sémantique de lecture répétée de Task.id / Task.priority
+                lignes ambiguës de la matrice officielle = 0
+
+SUIVI PRODUIT CCR SYSTEM   = AUCUN JUSTIFIÉ
 ```
+
+```text
+PROCEDURAL NON-CONVERGENCE   ≠ SOFTWARE FAILURE
+SOFTWARE SUCCESS             ≠ PROCEDURAL CONVERGENCE
+LAYER A ÉGALITÉ 27/27        ≠ déclaration de vainqueur
+```
+
+Records détaillés :
+[`RUN-001-RECORD.md`](RUN-001-RECORD.md) pour la chronologie du run et la
+provenance, [`BASELINE-RECORD.md`](BASELINE-RECORD.md) pour le bras aveugle,
+[`EVALUATION.md`](EVALUATION.md) pour l'audit de validité et le résultat
+officiel, [`PUBLIC-CONSUMPTION.md`](PUBLIC-CONSUMPTION.md) pour la
+consommation machine publique.
