@@ -132,6 +132,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`06-EXTERNAL-INDUSTRIAL-WORKFLOW-CONTEXT.md`](06-EXTERNAL-INDUSTRIAL-WORKFLOW-CONTEXT.md) — contexte du workflow industriel externe ; **pas** un protocole d'exécution du Lab.
 - [`07-CASE-001-EXECUTION-PLAN.md`](07-CASE-001-EXECUTION-PLAN.md) — décision d'exécution et bornes du premier usage réel.
 - [`08-PRE-RUN-DERAILMENT-001.md`](08-PRE-RUN-DERAILMENT-001.md) — erreur d'orchestration antérieure au premier run, consignée comme telle : ce n'est ni une observation CCR, ni un résultat de CASE-001.
+- [`09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md`](09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md) — prédéclaration gelée de la première expérience d'outillage du Lab : point de reprise d'état de programme durable.
 
 ## État courant
 
@@ -195,8 +196,18 @@ CCR MAINTENANCE DETOUR
   governance work
 = not Lab experimental achievement, and not Lab→CCR product feedback
 
-CURRENT NEXT LAB OBJECTIVE
-= NOT YET SELECTED
+CURRENT LAB STREAM
+= TOOLING EXPERIMENT 001
+= durable program-state / resumption checkpoint
+= a Lab experiment on its own conduct, not a CCR requirement
+
+CURRENT PHASE
+= design ratified, predeclaration materialized and frozen
+= see 09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md
+
+IMPLEMENTATION
+= next mechanical phase after this freeze
+= not started
 
 LAB ROADMAP
 = open
