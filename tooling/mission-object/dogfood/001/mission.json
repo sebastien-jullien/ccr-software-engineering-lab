@@ -1,0 +1,306 @@
+{
+  "identity": {
+    "id": "dogfood-001-readme-durable-record-refresh",
+    "class": "DOCUMENTARY_REPOSITORY_RECORD_REFRESH",
+    "addressee": "AGENT_CCR_LAB_15",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB",
+    "facets": ["DOCUMENTARY_ONLY", "FIRST_MISSION_OBJECT_DOGFOOD"]
+  },
+  "context": [
+    {
+      "subject": "program.status",
+      "value": {
+        "type": "SET",
+        "members": [
+          { "type": "SYMBOL", "value": "TOOLING_EXPERIMENT_001_IMPLEMENTED" },
+          { "type": "SYMBOL", "value": "TOOLING_EXPERIMENT_002_OPEN" },
+          { "type": "SYMBOL", "value": "MISSION_OBJECT_V0_IMPLEMENTED_AND_QUALIFIED" },
+          { "type": "SYMBOL", "value": "EXPERIMENTAL_QUESTION_UNANSWERED" }
+        ]
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "readme.observed_drift",
+      "value": {
+        "type": "SET",
+        "members": [
+          { "type": "SYMBOL", "value": "DOCUMENT_INDEX_STOPS_AT_09" },
+          { "type": "SYMBOL", "value": "TOOLING_EXPERIMENT_002_NEVER_MENTIONED" },
+          { "type": "SYMBOL", "value": "CURRENT_LAB_STREAM_ASSERTS_TE001" },
+          { "type": "SYMBOL", "value": "CURRENT_PHASE_ASSERTS_PREDECLARATION_FROZEN" },
+          { "type": "SYMBOL", "value": "IMPLEMENTATION_ASSERTS_NOT_STARTED" }
+        ]
+      },
+      "semantics_unresolved": false,
+      "label": "constat de lecture seule ayant motivé la mission ; la force normative est portée par les exigences de contenu"
+    }
+  ],
+  "references": [
+    { "id": "ref-readme", "role": "DELIVERABLE", "locator": { "kind": "REPO_PATH", "value": "README.md" }, "identity": { "kind": "GIT_BLOB", "value": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1" }, "identity_required": true },
+    { "id": "ref-doc09", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md" }, "identity": { "kind": "GIT_BLOB", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" }, "identity_required": true },
+    { "id": "ref-doc10", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "10-TOOLING-EXPERIMENT-001-AMENDMENT-001-DECISION-CREATION.md" }, "identity": { "kind": "GIT_BLOB", "value": "3e8d4434376e9fb0b439c52d7ac053e044de83b2" }, "identity_required": true },
+    { "id": "ref-doc11", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "11-TOOLING-EXPERIMENT-001-AMENDMENT-002-EVIDENCE-SUPERSESSION-REFRESH.md" }, "identity": { "kind": "GIT_BLOB", "value": "fb1dfe654e221dacdfde0ce93ee98a783b25b091" }, "identity_required": true },
+    { "id": "ref-doc12", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md" }, "identity": { "kind": "GIT_BLOB", "value": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79" }, "identity_required": true },
+    { "id": "ref-doc13", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md" }, "identity": { "kind": "GIT_BLOB", "value": "4779da2d456abe48ca167241d400fd18003fc67c" }, "identity_required": true },
+    { "id": "ref-doc14", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md" }, "identity": { "kind": "GIT_BLOB", "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4" }, "identity_required": true },
+    { "id": "ref-tool-program-state", "role": "VERIFICATION_TARGET", "locator": { "kind": "REPO_PATH", "value": "tooling/program-state/program-state.mjs" }, "identity": { "kind": "GIT_BLOB", "value": "4ce1136daefe07a6f2cd43379932da8b8eda8df4" }, "identity_required": true },
+    { "id": "ref-tool-mission-object", "role": "VERIFICATION_TARGET", "locator": { "kind": "REPO_PATH", "value": "tooling/mission-object/mission-object.mjs" }, "identity": { "kind": "GIT_BLOB", "value": "5cef343a20aad0c03ba14508b5cf7e790bae17a7" }, "identity_required": true },
+    { "id": "ref-checkpoint", "role": "CONTEXT", "locator": { "kind": "REPO_PATH", "value": "PROGRAM-STATE.json" }, "identity_required": false },
+    { "id": "ref-observations", "role": "VERIFICATION_TARGET", "locator": { "kind": "REPO_PATH", "value": "04-OBSERVATION-RECORD.md" }, "identity_required": false },
+    { "id": "ref-return", "role": "DELIVERABLE", "locator": { "kind": "MISSION_PACKET", "value": "return-block" }, "identity_required": false },
+    { "id": "ref-remote", "role": "VERIFICATION_TARGET", "locator": { "kind": "REMOTE_REF", "value": "origin/main" }, "identity_required": false }
+  ],
+  "effects": [
+    { "id": "e-edit-readme", "mode": "REQUIRED", "action": "EDIT", "target": { "ref": "ref-readme" }, "cardinality": 1 },
+    { "id": "e-review-diff", "mode": "REQUIRED", "action": "REVIEW_DIFF", "cardinality": 1 },
+    { "id": "e-freeze", "mode": "REQUIRED", "action": "MEASURE_IDENTITY", "target": { "ref": "ref-readme" }, "cardinality": 1 },
+    { "id": "e-forbid-edit-doc09", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-doc09" } },
+    { "id": "e-forbid-edit-doc10", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-doc10" } },
+    { "id": "e-forbid-edit-doc11", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-doc11" } },
+    { "id": "e-forbid-edit-doc12", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-doc12" } },
+    { "id": "e-forbid-edit-doc13", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-doc13" } },
+    { "id": "e-forbid-edit-doc14", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-doc14" } },
+    { "id": "e-forbid-edit-observations", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-observations" } },
+    { "id": "e-forbid-edit-cases", "mode": "FORBIDDEN", "action": "EDIT", "target": "cases" },
+    { "id": "e-forbid-edit-tooling", "mode": "FORBIDDEN", "action": "EDIT", "target": "tooling" },
+    { "id": "e-forbid-mutate-checkpoint", "mode": "FORBIDDEN", "action": "MUTATE", "target": { "ref": "ref-checkpoint" }, "cardinality": 0 },
+    { "id": "e-forbid-implement", "mode": "FORBIDDEN", "action": "IMPLEMENT", "cardinality": 0 },
+    { "id": "e-forbid-tests", "mode": "FORBIDDEN", "action": "RUN_TESTS", "cardinality": 0 },
+    { "id": "e-forbid-resume", "mode": "FORBIDDEN", "action": "RESUME", "cardinality": 0 },
+    { "id": "e-forbid-fresh-session", "mode": "FORBIDDEN", "action": "START_FRESH_SESSION", "cardinality": 0 },
+    { "id": "e-forbid-protected", "mode": "FORBIDDEN", "action": "READ_PROTECTED_RUN", "cardinality": 0 },
+    { "id": "e-forbid-ccr", "mode": "FORBIDDEN", "action": "EXECUTE_CCR", "cardinality": 0 },
+    { "id": "e-forbid-provider", "mode": "FORBIDDEN", "action": "INVOKE_PROVIDER", "cardinality": 0 },
+    { "id": "e-forbid-result-record", "mode": "FORBIDDEN", "action": "CREATE_RESULT_RECORD", "cardinality": 0 },
+    { "id": "e-forbid-new-document", "mode": "FORBIDDEN", "action": "CREATE_DOCUMENT", "cardinality": 0 },
+    {
+      "id": "e-commit",
+      "mode": "PERMITTED_AFTER_GATE",
+      "action": "COMMIT",
+      "cardinality": 1,
+      "gated_by": "g-freeze",
+      "constraints": {
+        "author": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "committer": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "subject": "docs: refresh lab current state and document index",
+        "staged_paths": ["README.md"]
+      }
+    },
+    { "id": "e-push", "mode": "PERMITTED_AFTER_GATE", "action": "PUSH", "target": { "ref": "ref-remote" }, "cardinality": 1, "gated_by": "g-freeze", "constraints": { "ff_only": true } },
+    { "id": "e-forbid-amend", "mode": "FORBIDDEN", "action": "AMEND" },
+    { "id": "e-forbid-rebase", "mode": "FORBIDDEN", "action": "REBASE" },
+    { "id": "e-forbid-tag", "mode": "FORBIDDEN", "action": "TAG" },
+    { "id": "e-forbid-force-push", "mode": "FORBIDDEN", "action": "FORCE_PUSH" }
+  ],
+  "content_requirements": [
+    {
+      "id": "cr-document-index",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.document_index",
+      "relation": "SET_EQUALS",
+      "value": {
+        "type": "SET",
+        "members": [
+          { "type": "SCALAR", "value": "00-CHARTER.md" },
+          { "type": "SCALAR", "value": "01-RELATION-TO-CCR.md" },
+          { "type": "SCALAR", "value": "02-REAL-USE-PROTOCOL.md" },
+          { "type": "SCALAR", "value": "03-CASE-001-RESERVATION-INTERVAL-ENGINE.md" },
+          { "type": "SCALAR", "value": "04-OBSERVATION-RECORD.md" },
+          { "type": "SCALAR", "value": "05-CROSS-EXPERTISE-PATTERNS.md" },
+          { "type": "SCALAR", "value": "06-EXTERNAL-INDUSTRIAL-WORKFLOW-CONTEXT.md" },
+          { "type": "SCALAR", "value": "07-CASE-001-EXECUTION-PLAN.md" },
+          { "type": "SCALAR", "value": "08-PRE-RUN-DERAILMENT-001.md" },
+          { "type": "SCALAR", "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md" },
+          { "type": "SCALAR", "value": "10-TOOLING-EXPERIMENT-001-AMENDMENT-001-DECISION-CREATION.md" },
+          { "type": "SCALAR", "value": "11-TOOLING-EXPERIMENT-001-AMENDMENT-002-EVIDENCE-SUPERSESSION-REFRESH.md" },
+          { "type": "SCALAR", "value": "12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md" },
+          { "type": "SCALAR", "value": "13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md" },
+          { "type": "SCALAR", "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md" }
+        ]
+      }
+    },
+    {
+      "id": "cr-tooling-index",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.tooling_index",
+      "relation": "SET_EQUALS",
+      "value": {
+        "type": "SET",
+        "members": [
+          { "type": "SCALAR", "value": "tooling/program-state" },
+          { "type": "SCALAR", "value": "tooling/mission-object" }
+        ]
+      }
+    },
+    { "id": "cr-current-stream", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.current_lab_stream", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "TOOLING_EXPERIMENT_002" } },
+    { "id": "cr-te001-state", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.tooling_experiment_001_state", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "IMPLEMENTED" } },
+    { "id": "cr-te001-amendments", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.tooling_experiment_001_amendments", "relation": "EQUALS", "value": { "type": "SCALAR", "value": 4 } },
+    { "id": "cr-te002-state", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.tooling_experiment_002_state", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "OPEN" } },
+    { "id": "cr-te002-subject", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.tooling_experiment_002_subject", "relation": "EQUALS", "value": { "type": "SCALAR", "value": "Durable Mission Representation" } },
+    { "id": "cr-mission-object-status", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.mission_object_v0", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "IMPLEMENTED_AND_QUALIFIED" } },
+    { "id": "cr-mission-object-authority", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.mission_object_authority", "relation": "DEFINED_BY", "value": { "type": "REFERENCE", "value": "ref-doc14" } },
+    { "id": "cr-question", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "ASSERT", "subject": "readme.experimental_question", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "UNANSWERED" } },
+    { "id": "cr-deny-implementation-not-started", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "DENY", "subject": "readme.implementation_status", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "NOT_STARTED" } },
+    { "id": "cr-deny-current-stream-te001", "scope": "MISSION", "target": "ref-readme", "kind": "CLAIM", "polarity": "DENY", "subject": "readme.current_lab_stream", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "TOOLING_EXPERIMENT_001" } },
+    { "id": "cr-forbid-te002-complete", "scope": "MISSION", "target": "ref-readme", "kind": "FORBID_CLAIM", "subject": "tooling_experiment_002", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "COMPLETE" } },
+    { "id": "cr-forbid-dogfood-success", "scope": "MISSION", "target": "ref-readme", "kind": "FORBID_CLAIM", "subject": "dogfood_001", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "SUCCESS" } },
+    { "id": "cr-forbid-question-answered", "scope": "MISSION", "target": "ref-readme", "kind": "FORBID_CLAIM", "subject": "experimental_question", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ANSWERED" } },
+    { "id": "cr-forbid-ccr-requirement", "scope": "MISSION", "target": "ref-readme", "kind": "FORBID_CLAIM", "subject": "tooling_experiment_002", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "CCR_SYSTEM_REQUIREMENT" } },
+    { "id": "cr-preserve-objet", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.section.objet" },
+    { "id": "cr-preserve-principe", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.section.principe_directeur" },
+    { "id": "cr-preserve-observables", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.section.ce_que_le_lab_cherche_a_observer" },
+    { "id": "cr-preserve-cas", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.section.cas" },
+    { "id": "cr-preserve-case-results", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.case_results_001_to_005" },
+    { "id": "cr-preserve-feedback-arcs", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.lab_to_ccr_feedback_arcs" },
+    { "id": "cr-preserve-correction", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.section.correction_de_trajectoire_v3" },
+    { "id": "cr-preserve-roadmap", "scope": "MISSION", "target": "ref-readme", "kind": "PRESERVE", "subject": "readme.lab_roadmap_open_usage_led" }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      { "order": 1, "id": "s-edit", "effect": "e-edit-readme", "atomic": true, "gated_by": "g-authorities" },
+      { "order": 2, "id": "s-review", "effect": "e-review-diff", "atomic": true, "gated_by": "g-diff-boundary" },
+      { "order": 3, "id": "s-freeze", "effect": "e-freeze", "atomic": true, "produces": ["ev-readme-freeze"] }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": "ALL_PRECEDING",
+      "predicate": {
+        "all_of": [
+          { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "BRANCH" }, "value": { "type": "SCALAR", "value": "main" } },
+          { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "ORIGIN_MAIN_EQUALS_HEAD" }, "value": { "type": "SCALAR", "value": true } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "worktree_modified" }, "value": { "type": "SCALAR", "value": 0 } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "untracked" }, "value": { "type": "SCALAR", "value": 0 } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-readme" }, "value": { "type": "SCALAR", "value": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1" } }
+        ]
+      },
+      "on_fail": "sr-preflight"
+    },
+    {
+      "id": "g-authorities",
+      "scope": "ALL_PRECEDING",
+      "predicate": {
+        "all_of": [
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc09" }, "value": { "type": "SCALAR", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc10" }, "value": { "type": "SCALAR", "value": "3e8d4434376e9fb0b439c52d7ac053e044de83b2" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc11" }, "value": { "type": "SCALAR", "value": "fb1dfe654e221dacdfde0ce93ee98a783b25b091" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc12" }, "value": { "type": "SCALAR", "value": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc13" }, "value": { "type": "SCALAR", "value": "4779da2d456abe48ca167241d400fd18003fc67c" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc14" }, "value": { "type": "SCALAR", "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-tool-program-state" }, "value": { "type": "SCALAR", "value": "4ce1136daefe07a6f2cd43379932da8b8eda8df4" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-tool-mission-object" }, "value": { "type": "SCALAR", "value": "5cef343a20aad0c03ba14508b5cf7e790bae17a7" } }
+        ]
+      },
+      "on_fail": "sr-preflight"
+    },
+    {
+      "id": "g-diff-boundary",
+      "scope": ["s-edit"],
+      "predicate": {
+        "all_of": [
+          { "op": "SET_EQ", "subject": { "kind": "REPO_FACT", "ref": "changed_paths" }, "value": { "type": "SET", "members": [ { "type": "SCALAR", "value": "README.md" } ] } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "whitespace_errors" }, "value": { "type": "SCALAR", "value": 0 } }
+        ]
+      },
+      "on_fail": "sr-boundary"
+    },
+    {
+      "id": "g-freeze",
+      "scope": "ALL_PRECEDING",
+      "predicate": {
+        "all_of": [
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "edits_after_freeze" }, "value": { "type": "SCALAR", "value": 0 } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "literal_nul" }, "value": { "type": "SCALAR", "value": 0 } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "carriage_return" }, "value": { "type": "SCALAR", "value": 0 } }
+        ]
+      },
+      "on_fail": "sr-boundary"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": { "op": "NEQ", "subject": { "kind": "REPO_FACT", "ref": "preflight_match" }, "value": { "type": "SCALAR", "value": true } },
+      "prohibitions": [
+        { "id": "sp-preflight-clean", "mode": "FORBIDDEN", "action": "CLEAN" },
+        { "id": "sp-preflight-reset", "mode": "FORBIDDEN", "action": "RESET" },
+        { "id": "sp-preflight-edit", "mode": "FORBIDDEN", "action": "EDIT" }
+      ],
+      "required": ["REPORT"],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-boundary",
+      "trigger": { "op": "NEQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "changed_paths" }, "value": { "type": "SCALAR", "value": 1 } },
+      "prohibitions": [
+        { "id": "sp-boundary-commit", "mode": "FORBIDDEN", "action": "COMMIT" },
+        { "id": "sp-boundary-push", "mode": "FORBIDDEN", "action": "PUSH" },
+        { "id": "sp-boundary-repair", "mode": "FORBIDDEN", "action": "REPAIR" }
+      ],
+      "required": ["REPORT"],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      { "id": "rd-te002", "subject": "tooling_experiment_002_selected", "authority": "ref-checkpoint" },
+      { "id": "rd-mission-object-design", "subject": "mission_object_v0_semantic_design_ratified", "authority": "ref-doc14" }
+    ],
+    "deterministic_consequences": ["nc-evaluate-dogfood"]
+  },
+  "evidence_requirements": [
+    { "id": "ev-readme-freeze", "kind": "VERIFICATION", "fact": "readme.final_identity", "method": { "op": "EQ", "source": "ref-readme", "recompute": true }, "must_return": "rf-readme-blob" },
+    { "id": "ev-remote", "kind": "VERIFICATION", "fact": "remote.head_equals_local", "method": { "op": "EQ", "source": "ref-remote", "recompute": true } },
+    { "id": "ev-program-direction", "kind": "AUTHORITY", "fact": "program.current_direction", "method": { "op": "EQ", "source": "ref-checkpoint", "recompute": false } },
+    { "id": "ev-augmentation", "kind": "RETURNED", "fact": "mission.manual_normative_augmentation", "must_return": "rf-augmentation" }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "PASS",
+      "valid_when": { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "failed_gates" }, "value": { "type": "SCALAR", "value": 0 } },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "post_state": [
+        { "id": "cr-post-te002", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "tooling_experiment_002", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "OPEN" } },
+        { "id": "cr-post-question", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "experimental_question", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "UNANSWERED" } },
+        { "id": "cr-post-checkpoint", "scope": "MISSION", "target": "ref-return", "kind": "PRESERVE", "subject": "program_state.checkpoint" }
+      ],
+      "next": "nc-evaluate-dogfood"
+    }
+  ],
+  "return_contract": [
+    { "id": "rf-addressee", "fact": "mission.addressee", "acquisition": "PREDETERMINED", "value_type": "SYMBOL", "predetermined_value": { "type": "SYMBOL", "value": "AGENT_CCR_LAB_15" } },
+    { "id": "rf-mission-id", "fact": "mission.id", "acquisition": "PREDETERMINED", "value_type": "SCALAR", "predetermined_value": { "type": "SCALAR", "value": "dogfood-001-readme-durable-record-refresh" } },
+    { "id": "rf-starting-readme-blob", "fact": "readme.starting_blob", "acquisition": "PREDETERMINED", "value_type": "SCALAR", "predetermined_value": { "type": "SCALAR", "value": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1" } },
+    { "id": "rf-readme-blob", "fact": "readme.final_blob", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-modified-paths", "fact": "repo.modified_paths", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-commit", "fact": "commit.created", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-remote-main", "fact": "remote.main_head", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-outcome", "fact": "mission.terminal_outcome", "acquisition": "MEASURED", "value_type": "SYMBOL", "allowed_values": { "type": "SET", "members": [ { "type": "SYMBOL", "value": "PASS" }, { "type": "SYMBOL", "value": "BLOCKED" }, { "type": "SYMBOL", "value": "FAILED" } ] } },
+    { "id": "rf-augmentation", "fact": "mission.manual_normative_augmentation", "acquisition": "MEASURED", "value_type": "SYMBOL", "allowed_values": { "type": "SET", "members": [ { "type": "SYMBOL", "value": "YES" }, { "type": "SYMBOL", "value": "NO" } ] } },
+    { "id": "rf-missing-concept", "fact": "mission_object.missing_normative_concepts", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-envelope-sufficiency", "fact": "envelope.sufficiency_observations", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-deviations", "fact": "procedural.deviations", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-errors", "fact": "mission.errors", "acquisition": "MEASURED", "value_type": "SET" }
+  ],
+  "next_consequences": [
+    { "id": "nc-evaluate-dogfood", "kind": "DETERMINED", "action": "EVALUATE", "target": "dogfood_001_sufficiency" }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-te001-no-proactive-program-state-work",
+      "constraint": { "id": "e-sc-te001", "mode": "FORBIDDEN", "action": "INITIATE", "target": "program_state_work" },
+      "release_condition": { "op": "EQ", "subject": { "kind": "PRESENCE_OF", "ref": "fresh_dogfood_friction" }, "value": { "type": "SCALAR", "value": true } }
+    }
+  ],
+  "terminal": { "halt_after_return": true }
+}

@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T19:07:43Z"
+    "updated_at": "2026-09-12T19:27:22Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -472,7 +472,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Rédiger la prochaine mission réelle du Lab DEPUIS Mission Object v0 : valider, rendre de façon déterministe, et employer l'enveloppe engendrée sans augmentation normative manuelle.",
+    "value": "Exécuter DOGFOOD-001 dans AGENT CCR LAB #15 à partir de l'enveloppe générée et figée, puis évaluer si Mission Object v0 a suffi sans augmentation normative manuelle.",
     "evidence": [
       {
         "id": "ev-022",
@@ -489,31 +489,31 @@
         }
       },
       {
-        "id": "ev-037",
+        "id": "ev-039",
         "kind": "repo-path",
-        "ref": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md",
+        "ref": "tooling/mission-object/dogfood/001/mission.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Rédiger la prochaine mission réelle du Lab DEPUIS Mission Object v0 : valider, rendre de façon déterministe, et employer l'enveloppe engendrée sans augmentation normative manuelle."
+          "value": "Exécuter DOGFOOD-001 dans AGENT CCR LAB #15 à partir de l'enveloppe générée et figée, puis évaluer si Mission Object v0 a suffi sans augmentation normative manuelle."
         },
         "observed": {
-          "blob": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+          "blob": "a90773f89f85a2cb75bafe2155831d354fbe4ed5"
         }
       },
       {
-        "id": "ev-038",
+        "id": "ev-040",
         "kind": "repo-path",
-        "ref": "tooling/mission-object/mission-object.mjs",
+        "ref": "tooling/mission-object/dogfood/001/envelope.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Rédiger la prochaine mission réelle du Lab DEPUIS Mission Object v0 : valider, rendre de façon déterministe, et employer l'enveloppe engendrée sans augmentation normative manuelle."
+          "value": "Exécuter DOGFOOD-001 dans AGENT CCR LAB #15 à partir de l'enveloppe générée et figée, puis évaluer si Mission Object v0 a suffi sans augmentation normative manuelle."
         },
         "observed": {
-          "blob": "5cef343a20aad0c03ba14508b5cf7e790bae17a7"
+          "blob": "2e2abadac1af5029a6333a749b179e7287c1b887"
         }
       }
     ]
