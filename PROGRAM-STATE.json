@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T12:58:27Z"
+    "updated_at": "2026-09-12T14:30:06Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -313,10 +313,10 @@
       "title": "TOOLING-EXPERIMENT-001 — point de reprise d’état de programme durable",
       "type": "TOOLING_EXPERIMENT",
       "state": "IMPLEMENTED",
-      "updated_at": "2026-09-12T12:58:27Z",
+      "updated_at": "2026-09-12T14:29:28Z",
       "evidence": [
         {
-          "id": "ev-018",
+          "id": "ev-025",
           "kind": "repo-path",
           "ref": "tooling/program-state/program-state.mjs",
           "policy": "VERIFIABLE",
@@ -326,11 +326,11 @@
             "value": "IMPLEMENTED"
           },
           "observed": {
-            "blob": "9864e46f7f33d0f0e2c9df905fb5f494955045aa"
+            "blob": "828297f943195ffab60bd336f645dd5bcefbb6ff"
           }
         },
         {
-          "id": "ev-019",
+          "id": "ev-026",
           "kind": "repo-path",
           "ref": "tooling/program-state/tests/program-state.test.mjs",
           "policy": "VERIFIABLE",
@@ -340,7 +340,7 @@
             "value": "IMPLEMENTED"
           },
           "observed": {
-            "blob": "1daa80df3c8cd501d394b707e56a84982862a3c6"
+            "blob": "fdd27ba5c3ef3a36b7f165bb1b73c76b8601b7da"
           }
         }
       ]
@@ -388,11 +388,29 @@
           }
         }
       ]
+    },
+    {
+      "id": "unit-qualification-procedural-exception",
+      "question": "Accepter l'exception procédurale divulguée sur la qualification unitaire one-shot de TOOLING-EXPERIMENT-001 v0 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-024",
+          "kind": "decision",
+          "ref": "ratification humaine explicite — acceptation de l'exception procédurale de qualification unitaire one-shot, TOOLING-EXPERIMENT-001 v0",
+          "policy": "OPAQUE_BUT_ESTABLISHED",
+          "supports": {
+            "subject": "decision:unit-qualification-procedural-exception",
+            "field": "state",
+            "value": "RATIFIED"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Ouvrir la période de dogfood réel de TOOLING-EXPERIMENT-001, selon le protocole gelé — phases A à D.",
+    "value": "Maintenir PROGRAM-STATE.json à travers des transitions réelles du Lab, selon le protocole de dogfood gelé, jusqu'à une interruption réelle précédant la reprise en contexte frais.",
     "evidence": [
       {
         "id": "ev-022",
@@ -409,14 +427,14 @@
         }
       },
       {
-        "id": "ev-023",
+        "id": "ev-027",
         "kind": "repo-path",
         "ref": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Ouvrir la période de dogfood réel de TOOLING-EXPERIMENT-001, selon le protocole gelé — phases A à D."
+          "value": "Maintenir PROGRAM-STATE.json à travers des transitions réelles du Lab, selon le protocole de dogfood gelé, jusqu'à une interruption réelle précédant la reprise en contexte frais."
         },
         "observed": {
           "blob": "c94e03829e107b51f63efcdb950bfeff123f50d1"

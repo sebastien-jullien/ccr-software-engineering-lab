@@ -19,7 +19,7 @@
  *   - une source SEALED n'est jamais déréférencée.
  */
 
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 
@@ -31,6 +31,16 @@ export const UNCERTAIN = ['UNKNOWN', 'UNRESOLVED', 'NOT_APPLICABLE', 'NOT_YET_SE
 
 export const STREAM_STATES = ['OPEN', 'IMPLEMENTED', 'CLOSED', 'UNKNOWN', 'UNRESOLVED', 'NOT_APPLICABLE'];
 export const DECISION_STATES = ['PENDING', 'RATIFIED', 'UNKNOWN', 'UNRESOLVED'];
+
+/**
+ * Amendement 001 : une décision nouvellement créée porte un état substantiel.
+ * Les valeurs d'incertitude ne sont pas créables — on ne crée pas une décision
+ * pour dire qu'on ignore s'il y en a une.
+ */
+export const DECISION_CREATE_STATES = ['PENDING', 'RATIFIED'];
+
+/** Amendement 001 : seule collection dont la création est autorisée. */
+export const CREATABLE = ['decision'];
 export const NEXT_ACTION_STATES = ['NOT_YET_SELECTED', 'SELECTED', 'UNKNOWN', 'UNRESOLVED'];
 
 export const EVIDENCE_POLICIES = ['VERIFIABLE', 'OPAQUE_BUT_ESTABLISHED', 'SEALED'];
@@ -165,8 +175,31 @@ export function load(path) {
   return parse(readFileSync(path, 'utf8'));
 }
 
+let temporaryCounter = 0;
+
+/**
+ * Remplacement atomique : un voisin temporaire complet, fermé, puis renommé
+ * par-dessus la destination. Un lecteur voit l'ancien instantané complet ou le
+ * nouveau, jamais un JSON partiel.
+ */
+export function writeAtomic(path, text) {
+  temporaryCounter += 1;
+  const temporary = path + '.tmp-' + process.pid + '-' + temporaryCounter;
+  writeFileSync(temporary, text, 'utf8');
+  try {
+    renameSync(temporary, path);
+  } catch (error) {
+    try {
+      rmSync(temporary, { force: true });
+    } catch {
+      /* le nettoyage du temporaire ne doit pas masquer l'erreur d'origine */
+    }
+    throw error;
+  }
+}
+
 export function save(path, state) {
-  writeFileSync(path, serialize(state), 'utf8');
+  writeAtomic(path, serialize(state));
 }
 
 /* ------------------------------------------------------------------ *
@@ -448,7 +481,7 @@ function contradictionFindings(state, repoRoot) {
   const byKey = new Map();
   for (const entry of allEvidence(state)) {
     if (!entry.supports) continue;
-    const key = entry.supports.subject + ' ' + entry.supports.field;
+    const key = entry.supports.subject + '\u0000' + entry.supports.field;
     if (!byKey.has(key)) byKey.set(key, new Map());
     const values = byKey.get(key);
     if (!values.has(entry.supports.value)) values.set(entry.supports.value, []);
@@ -464,7 +497,7 @@ function contradictionFindings(state, repoRoot) {
       if (ok) supported.push(value);
     }
     if (supported.length >= 2) {
-      const [subject, field] = key.split(' ');
+      const [subject, field] = key.split('\u0000');
       findings.push({
         outcome: OUTCOME.CONTRADICTION,
         subject,
@@ -531,7 +564,7 @@ export function renderResume(state, repoRoot) {
   const report = check(state, repoRoot);
   const byClaim = new Map();
   for (const f of report.findings) {
-    if (f.subject && f.field) byClaim.set(f.subject + ' ' + f.field, f);
+    if (f.subject && f.field) byClaim.set(f.subject + '\u0000' + f.field, f);
   }
   const out = [];
 
@@ -565,7 +598,7 @@ export function renderResume(state, repoRoot) {
   /* 2. état courant */
   out.push('FLUX');
   for (const stream of state.streams || []) {
-    const verdict = byClaim.get('stream:' + stream.id + ' state');
+    const verdict = byClaim.get('stream:' + stream.id + '\u0000state');
     out.push(line(stream.state, stream.id + ' — ' + (stream.title || '')));
     out.push(line('', '  vérification : ' + (verdict ? verdict.outcome : 'UNKNOWN')));
   }
@@ -574,7 +607,7 @@ export function renderResume(state, repoRoot) {
   out.push('DÉCISIONS');
   if ((state.decisions || []).length === 0) out.push(line('aucune', ''));
   for (const decision of state.decisions || []) {
-    const verdict = byClaim.get('decision:' + decision.id + ' state');
+    const verdict = byClaim.get('decision:' + decision.id + '\u0000state');
     out.push(line(decision.state, decision.id + ' — ' + (decision.question || '')));
     out.push(line('', '  vérification : ' + (verdict ? verdict.outcome : 'UNKNOWN')));
   }
@@ -649,6 +682,75 @@ export function renderCheck(report) {
 
 export class UpdateRefused extends Error {}
 
+/**
+ * Validation du point de reprise ENTIER, telle que l'amendement 001 l'exige :
+ * une création qui rendrait l'ensemble incohérent doit échouer, même si
+ * l'entrée ajoutée est correcte prise isolément.
+ */
+export function validateCandidate(candidate) {
+  return [...structuralFindings(candidate), ...completenessFindings(candidate)];
+}
+
+/**
+ * Amendement 001 — création explicite d'UNE décision.
+ *
+ * Rend un point de reprise candidat complet ; n'écrit rien. L'appelant
+ * n'écrit qu'après un retour réussi, de sorte qu'un échec laisse
+ * PROGRAM-STATE.json inchangé, à l'octet près.
+ */
+export function createDecision(state, spec) {
+  const { id, question, decisionState, evidence, now } = spec;
+
+  if (!id) throw new UpdateRefused('création refusée : id absent');
+  if (!question) throw new UpdateRefused('création refusée : question absente');
+  if (!DECISION_CREATE_STATES.includes(decisionState)) {
+    throw new UpdateRefused('création refusée : état illégal — ' + String(decisionState));
+  }
+  if ((state.decisions || []).some((decision) => decision.id === id)) {
+    throw new UpdateRefused('création refusée : identifiant de décision déjà existant — ' + id);
+  }
+
+  const subject = 'decision:' + id;
+  const supporting = (evidence || []).filter(
+    (entry) =>
+      entry.supports &&
+      entry.supports.subject === subject &&
+      entry.supports.field === 'state' &&
+      entry.supports.value === decisionState,
+  );
+  if (supporting.length === 0) {
+    throw new UpdateRefused(
+      'création refusée : aucune preuve ne soutient ' + subject + ' · state = ' + decisionState,
+    );
+  }
+  for (const entry of supporting) {
+    if (!evidenceMaySupport(entry, { field: 'state', value: decisionState })) {
+      throw new UpdateRefused(
+        'création refusée : preuve inadmissible pour cette affirmation — ' + (entry.id || entry.ref),
+      );
+    }
+  }
+
+  const candidate = JSON.parse(JSON.stringify(state));
+  candidate.decisions = [...(candidate.decisions || []), {
+    id,
+    question,
+    state: decisionState,
+    evidence: supporting,
+  }];
+  candidate.checkpoint.updated_at = now;
+
+  const problems = validateCandidate(candidate);
+  if (problems.length > 0) {
+    const first = problems[0];
+    throw new UpdateRefused(
+      'création refusée : point de reprise candidat invalide — ' +
+        first.outcome + ' ' + first.subject + (first.note ? ' : ' + first.note : ''),
+    );
+  }
+  return candidate;
+}
+
 const SUBSTANTIVE = new Set(['state', 'value']);
 
 function locate(state, subject) {
@@ -686,6 +788,13 @@ export function update(state, change) {
     throw new UpdateRefused('valeur illégale pour ' + found.kind + '.' + field + ' : ' + String(value));
   }
 
+  /* Amendement 002 — tout se construit dans un candidat complet en mémoire.
+   * Rien n'est appliqué à l'état de l'appelant avant que le candidat entier
+   * ait été validé, donc aucun état intermédiaire — ancien soutien retiré,
+   * nouveau absent — ne peut exister ni être persisté. */
+  const candidate = JSON.parse(JSON.stringify(state));
+  const target = locate(candidate, subject);
+
   if (SUBSTANTIVE.has(field)) {
     const supporting = (evidence || []).filter(
       (entry) =>
@@ -705,12 +814,42 @@ export function update(state, change) {
         throw new UpdateRefused('preuve inadmissible pour cette affirmation : ' + (entry.id || entry.ref));
       }
     }
-    found.holder.evidence = [...(found.holder.evidence || []), ...supporting];
+
+    /* Amendement 002 — supersession du soutien ACTIF.
+     * Le soutien actif du sujet exact ET du champ exact est retiré de
+     * l'instantané courant ; celui des autres champs et des autres sujets est
+     * intact. L'histoire n'est pas perdue : elle vit dans l'historique Git du
+     * point de reprise, qui est un fichier suivi.
+     *
+     * Une mise à jour à valeur égale n'est donc jamais une opération vide
+     * lorsque la provenance diffère : c'est la seule façon d'affirmer qu'une
+     * affirmation a été revérifiée contre la source d'aujourd'hui. */
+    const retained = (target.holder.evidence || []).filter(
+      (entry) =>
+        !(entry.supports && entry.supports.subject === subject && entry.supports.field === field),
+    );
+    target.holder.evidence = [...retained, ...supporting];
   }
 
-  found.holder[field] = value;
-  if (found.kind === 'stream') found.holder.updated_at = now;
-  state.checkpoint.updated_at = now;
+  target.holder[field] = value;
+  if (target.kind === 'stream') target.holder.updated_at = now;
+  candidate.checkpoint.updated_at = now;
+
+  const problems = validateCandidate(candidate);
+  if (problems.length > 0) {
+    const first = problems[0];
+    throw new UpdateRefused(
+      'mise à jour refusée : point de reprise candidat invalide — ' +
+        first.outcome + ' ' + first.subject + (first.note ? ' : ' + first.note : ''),
+    );
+  }
+
+  /* Le candidat est valide : il devient l'état courant, en place. */
+  state.checkpoint = candidate.checkpoint;
+  state.git_context = candidate.git_context;
+  state.streams = candidate.streams;
+  state.decisions = candidate.decisions;
+  state.next_action = candidate.next_action;
   return state;
 }
 
@@ -734,6 +873,10 @@ const USAGE = [
   '  program-state.mjs resume <PROGRAM-STATE.json>',
   '  program-state.mjs check  <PROGRAM-STATE.json>',
   '  program-state.mjs update <PROGRAM-STATE.json> --subject <s> --field <f> --value <v> [--evidence <json>]',
+  '  program-state.mjs update <PROGRAM-STATE.json> --create decision --id <id> --question <q> --state <s> --evidence <json>',
+  '',
+  'La création est un mode explicite : sans --create, un identifiant inconnu',
+  'reste une erreur. Une faute de frappe ne crée jamais une entrée.',
 ].join('\n');
 
 export function main(argv) {
@@ -774,13 +917,43 @@ export function main(argv) {
         return 2;
       }
     }
+    const now = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+
+    /* Mode de création explicite — amendement 001. Sans --create, rien de ce
+     * qui suit n'est atteignable, et un identifiant inconnu reste un refus. */
+    if (flags.create !== undefined) {
+      if (!CREATABLE.includes(flags.create)) {
+        process.stderr.write(
+          'REFUSED — type de création inconnu : ' + String(flags.create) +
+            ' (créable : ' + CREATABLE.join(', ') + ')\n',
+        );
+        return 2;
+      }
+      let candidate;
+      try {
+        candidate = createDecision(state, {
+          id: flags.id,
+          question: flags.question,
+          decisionState: flags.state,
+          evidence,
+          now,
+        });
+      } catch (error) {
+        process.stderr.write('REFUSED — ' + error.message + '\n');
+        return 2;
+      }
+      save(file, candidate);
+      process.stdout.write('décision créée : ' + flags.id + '\n');
+      return 0;
+    }
+
     try {
       update(state, {
         subject: flags.subject,
         field: flags.field,
         value: flags.value,
         evidence,
-        now: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
+        now,
       });
     } catch (error) {
       process.stderr.write('REFUSED — ' + error.message + '\n');
