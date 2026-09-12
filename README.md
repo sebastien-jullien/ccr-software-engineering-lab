@@ -133,6 +133,18 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`07-CASE-001-EXECUTION-PLAN.md`](07-CASE-001-EXECUTION-PLAN.md) — décision d'exécution et bornes du premier usage réel.
 - [`08-PRE-RUN-DERAILMENT-001.md`](08-PRE-RUN-DERAILMENT-001.md) — erreur d'orchestration antérieure au premier run, consignée comme telle : ce n'est ni une observation CCR, ni un résultat de CASE-001.
 - [`09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md`](09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md) — prédéclaration gelée de la première expérience d'outillage du Lab : point de reprise d'état de programme durable.
+- [`10-TOOLING-EXPERIMENT-001-AMENDMENT-001-DECISION-CREATION.md`](10-TOOLING-EXPERIMENT-001-AMENDMENT-001-DECISION-CREATION.md) — amendement 001 : création d'une décision, né du premier constat du dogfood réel.
+- [`11-TOOLING-EXPERIMENT-001-AMENDMENT-002-EVIDENCE-SUPERSESSION-REFRESH.md`](11-TOOLING-EXPERIMENT-001-AMENDMENT-002-EVIDENCE-SUPERSESSION-REFRESH.md) — amendement 002 : supersession et rafraîchissement du soutien de preuve.
+- [`12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md`](12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md) — amendement 003 : création d'un flux.
+- [`13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md`](13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md) — amendement 004 : sens normatif de l'état de flux `OPEN`, sur un jeton déjà existant.
+- [`14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md`](14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md) — autorité sémantique et littérale de Mission Object v0, pour la seconde expérience d'outillage : la représentation durable de mission.
+
+## Outillage
+
+Outils que le Lab s'applique à lui-même, sur sa propre conduite. Aucun n'est un composant de CCR System, ni une exigence pesant sur lui.
+
+- [`tooling/program-state/`](tooling/program-state/) — TOOLING-EXPERIMENT-001 : point de reprise d'état de programme durable. Trois commandes — `resume` · `check` · `update`. Aucune dépendance externe, aucune mutation Git, aucun réseau.
+- [`tooling/mission-object/`](tooling/mission-object/) — TOOLING-EXPERIMENT-002 : représentation durable de mission. L'outil charge un Mission Object, le valide et en rend l'enveloppe. Représenter n'est pas exécuter : il n'ordonnance rien et n'exécute aucune mission.
 
 ## État courant
 
@@ -196,18 +208,30 @@ CCR MAINTENANCE DETOUR
   governance work
 = not Lab experimental achievement, and not Lab→CCR product feedback
 
-CURRENT LAB STREAM
-= TOOLING EXPERIMENT 001
+TOOLING EXPERIMENT 001
 = durable program-state / resumption checkpoint
-= a Lab experiment on its own conduct, not a CCR requirement
+= IMPLEMENTED
+= 4 ratified amendments : 10 · 11 · 12 · 13
+= tooling/program-state
 
-CURRENT PHASE
-= design ratified, predeclaration materialized and frozen
-= see 09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md
+CURRENT LAB STREAM
+= TOOLING EXPERIMENT 002
+= OPEN
+= subject : Durable Mission Representation
+= a Lab experiment on its own conduct, not a CCR System requirement
 
-IMPLEMENTATION
-= next mechanical phase after this freeze
-= not started
+MISSION OBJECT v0
+= IMPLEMENTED AND QUALIFIED
+= semantic and literal authority :
+  14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md
+= tooling/mission-object
+
+DOGFOOD-001
+= first real TE002 dogfood, run from a generated frozen envelope
+= sufficiency evaluation not pronounced
+
+EXPERIMENTAL QUESTION
+= UNANSWERED
 
 LAB ROADMAP
 = open
