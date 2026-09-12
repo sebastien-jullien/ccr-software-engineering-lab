@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T22:43:25Z"
+    "updated_at": "2026-09-12T23:16:41Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -535,7 +535,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Préparer la continuation objet d'abord suivante, en conservant la rédaction de DF001-01 et DF001-02 et en corrigeant DF002-01 par NOT_ATTEMPTED.",
+    "value": "Exécuter DOGFOOD-003 dans AGENT CCR LAB #17 à partir de l'enveloppe générée et figée ; puis évaluer le comportement de DF001-01 et DF001-02, et la précision de DF002-01, sans augmentation normative manuelle.",
     "evidence": [
       {
         "id": "ev-022",
@@ -552,17 +552,31 @@
         }
       },
       {
-        "id": "ev-048",
+        "id": "ev-050",
         "kind": "repo-path",
-        "ref": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+        "ref": "tooling/mission-object/dogfood/003/mission.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Préparer la continuation objet d'abord suivante, en conservant la rédaction de DF001-01 et DF001-02 et en corrigeant DF002-01 par NOT_ATTEMPTED."
+          "value": "Exécuter DOGFOOD-003 dans AGENT CCR LAB #17 à partir de l'enveloppe générée et figée ; puis évaluer le comportement de DF001-01 et DF001-02, et la précision de DF002-01, sans augmentation normative manuelle."
         },
         "observed": {
-          "blob": "8d9104b9fd538ebddc8b7c6b769229b462aa2259"
+          "blob": "37818dcfdc0b5e8c41bd847b8751fbda6e482116"
+        }
+      },
+      {
+        "id": "ev-051",
+        "kind": "repo-path",
+        "ref": "tooling/mission-object/dogfood/003/envelope.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "value",
+          "value": "Exécuter DOGFOOD-003 dans AGENT CCR LAB #17 à partir de l'enveloppe générée et figée ; puis évaluer le comportement de DF001-01 et DF001-02, et la précision de DF002-01, sans augmentation normative manuelle."
+        },
+        "observed": {
+          "blob": "033d046c7e9840bc23edc1e51bcaef7a999a805f"
         }
       }
     ]
