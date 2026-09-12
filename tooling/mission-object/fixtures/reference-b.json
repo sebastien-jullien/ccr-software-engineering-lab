@@ -1,0 +1,252 @@
+{
+  "identity": {
+    "id": "amendment-003-implementation",
+    "class": "TOOLING_EXPERIMENT_001_AMENDMENT_IMPLEMENTATION",
+    "addressee": "AGENT_CCR_LAB_1",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB",
+    "facets": ["IMPLEMENTATION", "REAL_PROGRAM_STATE_TRANSITION"]
+  },
+  "context": [
+    {
+      "subject": "decision.propagation",
+      "value": { "type": "SYMBOL", "value": "ACTIVE" },
+      "semantics_unresolved": true,
+      "label": "le corpus n'énonce aucun effet opératoire pour ce fait"
+    },
+    {
+      "subject": "program.status",
+      "value": {
+        "type": "SET",
+        "members": [
+          { "type": "SYMBOL", "value": "TE001_ACTIVE" },
+          { "type": "SYMBOL", "value": "TE002_SELECTED" },
+          { "type": "SYMBOL", "value": "AMENDMENT_003_RATIFIED" },
+          { "type": "SYMBOL", "value": "AMENDMENT_004_RATIFIED" }
+        ]
+      },
+      "semantics_unresolved": false
+    }
+  ],
+  "references": [
+    { "id": "ref-doc12", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md" }, "identity": { "kind": "GIT_BLOB", "value": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79" }, "identity_required": true },
+    { "id": "ref-doc13", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md" }, "identity": { "kind": "SHA256", "value": "1abc3d6a15c256b3fe7f0a9b7f4ccdff1fd5e3c0f10beb98ade43bb9f7ab895c" }, "identity_required": true },
+    { "id": "ref-doc09", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md" }, "identity": { "kind": "GIT_BLOB", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" }, "identity_required": true },
+    { "id": "ref-doc10", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "10-TOOLING-EXPERIMENT-001-AMENDMENT-001-DECISION-CREATION.md" }, "identity": { "kind": "GIT_BLOB", "value": "3e8d4434376e9fb0b439c52d7ac053e044de83b2" }, "identity_required": true },
+    { "id": "ref-doc11", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "11-TOOLING-EXPERIMENT-001-AMENDMENT-002-EVIDENCE-SUPERSESSION-REFRESH.md" }, "identity": { "kind": "GIT_BLOB", "value": "fb1dfe654e221dacdfde0ce93ee98a783b25b091" }, "identity_required": true },
+    { "id": "ref-tool", "role": "DELIVERABLE", "locator": { "kind": "REPO_PATH", "value": "tooling/program-state/program-state.mjs" }, "identity_required": false },
+    { "id": "ref-tests", "role": "DELIVERABLE", "locator": { "kind": "REPO_PATH", "value": "tooling/program-state/tests/program-state.test.mjs" }, "identity_required": false },
+    { "id": "ref-checkpoint", "role": "DELIVERABLE", "locator": { "kind": "REPO_PATH", "value": "PROGRAM-STATE.json" }, "identity_required": false },
+    { "id": "ref-return", "role": "DELIVERABLE", "locator": { "kind": "MISSION_PACKET", "value": "return-block" }, "identity_required": false },
+    { "id": "ref-remote", "role": "VERIFICATION_TARGET", "locator": { "kind": "REMOTE_REF", "value": "origin/main" }, "identity_required": false },
+    { "id": "ref-prior-report", "role": "CONTEXT", "locator": { "kind": "MISSION_PACKET", "value": "prior-report-prefix" }, "identity_required": false }
+  ],
+  "effects": [
+    { "id": "e-b013", "mode": "FORBIDDEN", "action": "ADD_VOCABULARY", "target": "stream_state" },
+    { "id": "e-b014", "mode": "FORBIDDEN", "action": "REDESIGN", "target": "lifecycle" },
+    { "id": "e-b022-design", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object", "cardinality": 0 },
+    { "id": "e-b022-dogfood", "mode": "FORBIDDEN", "action": "DOGFOOD", "cardinality": 0 },
+    { "id": "e-b022-resume", "mode": "FORBIDDEN", "action": "RESUME", "cardinality": 0 },
+    { "id": "e-b022-result", "mode": "FORBIDDEN", "action": "CREATE_RESULT_RECORD", "cardinality": 0 },
+    { "id": "e-b022-provider", "mode": "FORBIDDEN", "action": "INVOKE_PROVIDER", "cardinality": 0 },
+    { "id": "e-b034-read", "mode": "PERMITTED", "action": "READ_SOURCE" },
+    { "id": "e-b034-edit", "mode": "PERMITTED", "action": "EDIT", "target": { "ref": "ref-tool" } },
+    { "id": "e-b034-write-tests", "mode": "PERMITTED", "action": "EDIT", "target": { "ref": "ref-tests" } },
+    { "id": "e-b035", "mode": "FORBIDDEN", "action": "RUN_SUBSET" },
+    { "id": "e-b036", "mode": "REQUIRED", "action": "QUALIFY", "cardinality": 1 },
+    { "id": "e-b039", "mode": "REQUIRED", "action": "MEASURE_BLOBS", "cardinality": 1 },
+    { "id": "e-b040", "mode": "FORBIDDEN", "action": "EDIT_AFTER_FREEZE" },
+    { "id": "e-b041", "mode": "REQUIRED", "action": "REFRESH", "target": "evidence_te001", "cardinality": 1 },
+    { "id": "e-b044", "mode": "REQUIRED", "action": "CREATE_STREAM", "target": "tooling_experiment_002", "cardinality": 1 },
+    { "id": "e-b046", "mode": "FORBIDDEN", "action": "CREATE_DECISION", "target": "tooling_experiment_002_selected" },
+    { "id": "e-b047-replay", "mode": "FORBIDDEN", "action": "REPLAY", "cardinality": 0 },
+    { "id": "e-b047-hand-edit", "mode": "FORBIDDEN", "action": "HAND_EDIT", "target": { "ref": "ref-checkpoint" }, "cardinality": 0 },
+    { "id": "e-b050", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object_v0" },
+    { "id": "e-b051", "mode": "REQUIRED", "action": "RUN_CHECK", "cardinality": 1 },
+    { "id": "e-b058-design", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object_v0" },
+    { "id": "e-b058-schema", "mode": "FORBIDDEN", "action": "AUTHOR_SCHEMA", "target": "mission_object_v0" },
+    { "id": "e-b058-code", "mode": "FORBIDDEN", "action": "IMPLEMENT", "target": "mission_object_v0" },
+    { "id": "e-b059-protected", "mode": "FORBIDDEN", "action": "READ_PROTECTED_RUN", "cardinality": 0 },
+    { "id": "e-b059-ccr", "mode": "FORBIDDEN", "action": "EXECUTE_CCR", "cardinality": 0 },
+    { "id": "e-b059-provider", "mode": "FORBIDDEN", "action": "INVOKE_PROVIDER", "cardinality": 0 },
+    { "id": "e-b059-mutate-protected", "mode": "FORBIDDEN", "action": "MUTATE_PROTECTED_RUN", "cardinality": 0 },
+    { "id": "e-b059-query-protected", "mode": "FORBIDDEN", "action": "QUERY_PROTECTED_RUN", "cardinality": 0 },
+    { "id": "e-b059-fresh", "mode": "FORBIDDEN", "action": "START_FRESH_SESSION", "cardinality": 0 },
+    {
+      "id": "e-b064",
+      "mode": "PERMITTED_AFTER_GATE",
+      "action": "COMMIT",
+      "cardinality": 1,
+      "gated_by": "g-b060",
+      "constraints": {
+        "author": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "committer": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "subject": "feat: add explicit stream creation to program state",
+        "staged_paths": [
+          "tooling/program-state/program-state.mjs",
+          "tooling/program-state/tests/program-state.test.mjs",
+          "PROGRAM-STATE.json"
+        ]
+      }
+    },
+    { "id": "e-b064-amend", "mode": "FORBIDDEN", "action": "AMEND" },
+    { "id": "e-b064-rebase", "mode": "FORBIDDEN", "action": "REBASE" },
+    { "id": "e-b064-tag", "mode": "FORBIDDEN", "action": "TAG" },
+    { "id": "e-b065", "mode": "PERMITTED_AFTER_GATE", "action": "PUSH", "target": { "ref": "ref-remote" }, "cardinality": 1, "gated_by": "g-b060", "constraints": { "ff_only": true } },
+    { "id": "e-b065-force", "mode": "FORBIDDEN", "action": "FORCE_PUSH" }
+  ],
+  "content_requirements": [
+    { "id": "cr-b011", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "semantic_gate", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "REOPENED" } },
+    { "id": "cr-b016-doc13-role", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "role.doc13", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "DEFINES_OPEN_SEMANTICS" } },
+    { "id": "cr-b016-selection-role", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "role.human_selection", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ESTABLISHES_DURABLE_ADMISSION" } },
+    { "id": "cr-b018-misrepresent", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "amendment.004", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "SOMETHING_IT_DOES_NOT_SAY" } },
+    { "id": "cr-b018-conjunction", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "authorities", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "INVENTED_CONJUNCTION" } },
+    { "id": "cr-b020", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "implementation.scope", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "AMENDMENT_003_ONLY" } },
+    { "id": "cr-b021-resume", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "command.resume" },
+    { "id": "cr-b021-check", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "command.check" },
+    { "id": "cr-b021-update", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "command.update" },
+    { "id": "cr-b021-typed-evidence", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.typed_evidence" },
+    { "id": "cr-b021-source-changed", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.source_changed_detection" },
+    { "id": "cr-b021-head-informational", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.head_advance_informational" },
+    { "id": "cr-b021-sealed", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.sealed_never_dereferenced" },
+    { "id": "cr-b021-atomic-write", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.atomic_write" },
+    { "id": "cr-b021-decision-creation", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.decision_creation" },
+    { "id": "cr-b021-supersession", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.active_support_supersession" },
+    { "id": "cr-b023-explicit", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream_creation.mode", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "EXPLICIT_ONLY" } },
+    { "id": "cr-b023-unknown-id", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "update.unknown_id", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "REJECT" } },
+    { "id": "cr-b023-typo", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "DENY", "subject": "typo_in_stream_id", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "SILENT_STREAM_CREATION" } },
+    { "id": "cr-b024", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream.shape", "relation": "SET_EQUALS", "value": { "type": "SET", "members": [ { "type": "SYMBOL", "value": "id" }, { "type": "SYMBOL", "value": "title" }, { "type": "SYMBOL", "value": "type" }, { "type": "SYMBOL", "value": "state" }, { "type": "SYMBOL", "value": "updated_at" }, { "type": "SYMBOL", "value": "evidence" } ] } },
+    { "id": "cr-b025-id", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.id", "relation": "EQUALS", "value": { "type": "SCALAR", "value": "tooling-experiment-002" } },
+    { "id": "cr-b025-title", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.title", "relation": "EQUALS", "value": { "type": "SCALAR", "value": "Durable Mission Representation" } },
+    { "id": "cr-b025-type", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.type", "relation": "EQUALS", "value": { "type": "SCALAR", "value": "TOOLING EXPERIMENT" } },
+    { "id": "cr-b025-state", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.state", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "OPEN" } },
+    { "id": "cr-b026", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream.updated_at", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "MECHANICALLY_GENERATED" } },
+    { "id": "cr-b027", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "creation.algorithm", "relation": "SEQ_EQUALS", "value": { "type": "SEQUENCE", "members": [ { "type": "SYMBOL", "value": "PARSE_EXPLICIT_REQUEST" }, { "type": "SYMBOL", "value": "VERIFY_ID_ABSENT" }, { "type": "SYMBOL", "value": "VALIDATE_STATE" }, { "type": "SYMBOL", "value": "BUILD_COMPLETE_STREAM" }, { "type": "SYMBOL", "value": "INSERT_INTO_CANDIDATE" }, { "type": "SYMBOL", "value": "VALIDATE_WHOLE_CANDIDATE" }, { "type": "SYMBOL", "value": "CANONICAL_SERIALIZE" }, { "type": "SYMBOL", "value": "ATOMIC_REPLACE" } ] } },
+    { "id": "cr-b028", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "failure.bytes_written", "relation": "EQUALS", "value": { "type": "SCALAR", "value": 0 } },
+    { "id": "cr-b029-existing-id", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "STREAM_ID_ALREADY_EXISTS" } },
+    { "id": "cr-b029-unknown-kind", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "UNKNOWN_CREATION_KIND" } },
+    { "id": "cr-b029-no-id", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "ID_ABSENT" } },
+    { "id": "cr-b029-no-title", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "TITLE_ABSENT" } },
+    { "id": "cr-b029-no-type", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "TYPE_ABSENT" } },
+    { "id": "cr-b029-no-state", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "STATE_ABSENT" } },
+    { "id": "cr-b029-bad-state", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "STATE_NOT_VALID" } },
+    { "id": "cr-b029-no-evidence", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "SUPPORTING_EVIDENCE_ABSENT" } },
+    { "id": "cr-b029-wrong-evidence", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "EVIDENCE_DOES_NOT_SUPPORT_STATE" } },
+    { "id": "cr-b029-bad-candidate", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "WHOLE_CANDIDATE_INVALID" } },
+    { "id": "cr-b029-unknown-update", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "ORDINARY_UPDATE_UNKNOWN_ID" } },
+    { "id": "cr-b029-generic-collection", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "GENERIC_COLLECTION_CREATION" } },
+    { "id": "cr-b029-decision-unchanged", "scope": "MISSION", "target": "ref-tool", "kind": "CLAIM", "polarity": "ASSERT", "subject": "rejection_cases", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "DECISION_CREATION_UNCHANGED" } },
+    { "id": "cr-b030-ordinary-update", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.ordinary_update_rejects_unknown" },
+    { "id": "cr-b030-decision-creation", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.decision_creation_unchanged" },
+    { "id": "cr-b030-generic-rejected", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "behaviour.generic_collection_rejected" },
+    { "id": "cr-b031-create-ok", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "CREATE_STREAM_SUCCEEDS" } },
+    { "id": "cr-b031-duplicate", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "DUPLICATE_ID_REJECTED" } },
+    { "id": "cr-b031-unknown-kind", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "UNKNOWN_KIND_REJECTED" } },
+    { "id": "cr-b031-missing-id", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "MISSING_ID_REJECTED" } },
+    { "id": "cr-b031-missing-title", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "MISSING_TITLE_REJECTED" } },
+    { "id": "cr-b031-missing-type", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "MISSING_TYPE_REJECTED" } },
+    { "id": "cr-b031-missing-state", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "MISSING_STATE_REJECTED" } },
+    { "id": "cr-b031-bad-state", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "INVALID_STATE_REJECTED" } },
+    { "id": "cr-b031-no-evidence", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "MISSING_EVIDENCE_REJECTED" } },
+    { "id": "cr-b031-wrong-evidence", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "NON_SUPPORTING_EVIDENCE_REJECTED" } },
+    { "id": "cr-b031-atomicity", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "ZERO_BYTES_ON_FAILURE" } },
+    { "id": "cr-b031-unknown-update", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "ORDINARY_UPDATE_STILL_REJECTS" } },
+    { "id": "cr-b031-decision-unchanged", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "DECISION_CREATION_STILL_WORKS" } },
+    { "id": "cr-b031-generic", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "GENERIC_COLLECTION_STILL_REJECTED" } },
+    { "id": "cr-b031-supersession", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "SUPERSESSION_APPLIES_TO_NEW_STREAM" } },
+    { "id": "cr-b031-source-changed", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "SOURCE_CHANGED_APPLIES_TO_NEW_STREAM" } },
+    { "id": "cr-b031-canonical", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "CANONICAL_SERIALIZATION_PRESERVED" } },
+    { "id": "cr-b031-updated-at", "scope": "MISSION", "target": "ref-tests", "kind": "CLAIM", "polarity": "ASSERT", "subject": "test_items", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "UPDATED_AT_GENERATED" } },
+    { "id": "cr-b032", "scope": "MISSION", "target": "ref-tests", "kind": "FORBID_CLAIM", "subject": "tests", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "NEW_LIFECYCLE_STATES" } },
+    { "id": "cr-b033", "scope": "MISSION", "target": "ref-tests", "kind": "FORBID_CLAIM", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "RUN_STATE_RUNNING" }, "depends_on": ["ref-doc13"] },
+    { "id": "cr-b042-retired", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "support.te001_implementation", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "INACTIVE" } },
+    { "id": "cr-b042-tool-active", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "support.tool_final", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ACTIVE" } },
+    { "id": "cr-b042-tests-active", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "support.tests_final", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ACTIVE" } },
+    { "id": "cr-b042-detector", "scope": "MISSION", "target": "ref-tool", "kind": "PRESERVE", "subject": "detector.source_changed" },
+    { "id": "cr-b043", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "evidence_refresh", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "LIFECYCLE_TRANSITION" } },
+    { "id": "cr-b049-old-inactive", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "support.next_action_old", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "INACTIVE" } },
+    { "id": "cr-b049-new-active", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "support.next_action_new", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ACTIVE" } },
+    { "id": "cr-b049-state-selected", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "next_action.state", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "SELECTED" } },
+    { "id": "cr-b055", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream_state.OPEN", "relation": "DEFINED_BY", "value": { "type": "REFERENCE", "value": "ref-doc13" } },
+    { "id": "cr-b056", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "stream.state", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "EXCLUSIVITY" } }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      { "order": 1, "id": "s-b034", "effect": "e-b034-edit", "atomic": true, "gated_by": "g-b015" },
+      { "order": 2, "id": "s-b036", "effect": "e-b036", "atomic": true, "gated_by": "g-b008" },
+      { "order": 3, "id": "s-b039", "effect": "e-b039", "atomic": true, "produces": ["ev-b061"] },
+      { "order": 4, "id": "s-b041", "effect": "e-b041", "atomic": true, "gated_by": "g-b038" },
+      { "order": 5, "id": "s-b044", "effect": "e-b044", "atomic": true, "gated_by": "g-b038", "produces": ["ev-b045"] },
+      { "order": 6, "id": "s-b051", "effect": "e-b051", "atomic": true, "gated_by": "g-b062" }
+    ]
+  },
+  "gates": [
+    { "id": "g-b003", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "HEAD" }, "value": { "type": "SCALAR", "value": "ff1358b0d1c2e3f4a5b6c7d8e9f0a1b2c3d4e5f6" } }, { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "TREE" }, "value": { "type": "SCALAR", "value": "2272fd1a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e" } } ] }, "on_fail": "sr-b010" },
+    { "id": "g-b006", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "BRANCH" }, "value": { "type": "SCALAR", "value": "main" } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "worktree_modified" }, "value": { "type": "SCALAR", "value": 0 } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "untracked" }, "value": { "type": "SCALAR", "value": 0 } } ] }, "on_fail": "sr-b010" },
+    { "id": "g-b007", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-tool" }, "value": { "type": "SCALAR", "value": "914d5aa0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6" } }, { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-tests" }, "value": { "type": "SCALAR", "value": "dc4eacb1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7" } }, { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-checkpoint" }, "value": { "type": "SCALAR", "value": "511552a2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f708" } } ] }, "on_fail": "sr-b010" },
+    { "id": "g-b008", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc09" }, "value": { "type": "SCALAR", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" } }, { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc10" }, "value": { "type": "SCALAR", "value": "3e8d4434376e9fb0b439c52d7ac053e044de83b2" } }, { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc11" }, "value": { "type": "SCALAR", "value": "fb1dfe654e221dacdfde0ce93ee98a783b25b091" } }, { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc12" }, "value": { "type": "SCALAR", "value": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79" } }, { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc13" }, "value": { "type": "SCALAR", "value": "1abc3d6a15c256b3fe7f0a9b7f4ccdff1fd5e3c0f10beb98ade43bb9f7ab895c" } } ] }, "on_fail": "sr-b010" },
+    { "id": "g-b015", "scope": "ALL_PRECEDING", "predicate": { "op": "EQ", "subject": { "kind": "PRESENCE_OF", "ref": "derivation_in_doc13" }, "value": { "type": "SCALAR", "value": true } }, "on_fail": "sr-b019" },
+    { "id": "g-b038", "scope": ["s-b036"], "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "OPERATION_RESULT", "ref": "e-b036", "field": "exit" }, "value": { "type": "SCALAR", "value": 0 } }, { "op": "EQ", "subject": { "kind": "OPERATION_RESULT", "ref": "e-b036", "field": "fail" }, "value": { "type": "SCALAR", "value": 0 } } ] }, "on_fail": "sr-b037" },
+    { "id": "g-b052", "scope": ["s-b051"], "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "OPERATION_RESULT", "ref": "e-b051", "field": "exit" }, "value": { "type": "SCALAR", "value": 0 } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "material_findings" }, "value": { "type": "SCALAR", "value": 0 } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "source_changed" }, "value": { "type": "SCALAR", "value": 0 } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "supported_contradictions" }, "value": { "type": "SCALAR", "value": 0 } } ] }, "tolerated": ["UNVERIFIED", "REPOSITORY_ADVANCED_SINCE_RECORDED_CONTEXT"], "on_fail": "sr-b054" },
+    { "id": "g-b060", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "SET_EQ", "subject": { "kind": "REPO_FACT", "ref": "changed_paths" }, "value": { "type": "SET", "members": [ { "type": "SCALAR", "value": "tooling/program-state/program-state.mjs" }, { "type": "SCALAR", "value": "tooling/program-state/tests/program-state.test.mjs" }, { "type": "SCALAR", "value": "PROGRAM-STATE.json" } ] } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "forbidden_paths_touched" }, "value": { "type": "SCALAR", "value": 0 } } ] }, "on_fail": "sr-b054" },
+    { "id": "g-b061", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "literal_nul" }, "value": { "type": "SCALAR", "value": 0 } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "edits_after_freeze" }, "value": { "type": "SCALAR", "value": 0 } } ] }, "on_fail": "sr-b054" },
+    { "id": "g-b062", "scope": ["s-b041", "s-b044"], "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "OBJECT_FIELD", "ref": "stream:tooling-experiment-002", "field": "state" }, "value": { "type": "SYMBOL", "value": "OPEN" } }, { "op": "EQ", "subject": { "kind": "OBJECT_FIELD", "ref": "next_action", "field": "state" }, "value": { "type": "SYMBOL", "value": "SELECTED" } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "pending_decisions" }, "value": { "type": "SCALAR", "value": 0 } } ] }, "on_fail": "sr-b054" }
+  ],
+  "stop_rules": [
+    { "id": "sr-b010", "trigger": { "op": "NEQ", "subject": { "kind": "REPO_FACT", "ref": "preflight_match" }, "value": { "type": "SCALAR", "value": true } }, "prohibitions": [ { "id": "sp-b010-clean", "mode": "FORBIDDEN", "action": "CLEAN" }, { "id": "sp-b010-reset", "mode": "FORBIDDEN", "action": "RESET" }, { "id": "sp-b010-edit", "mode": "FORBIDDEN", "action": "EDIT" } ], "required": ["REPORT"], "terminal": "STOP" },
+    { "id": "sr-b019", "trigger": { "op": "EQ", "subject": { "kind": "PRESENCE_OF", "ref": "derivation_in_doc13" }, "value": { "type": "SCALAR", "value": false } }, "prohibitions": [ { "id": "sp-b019-code", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-tool" } } ], "required": ["REPORT"], "terminal": "STOP" },
+    { "id": "sr-b037", "trigger": { "op": "NEQ", "subject": { "kind": "OPERATION_RESULT", "ref": "e-b036", "field": "exit" }, "value": { "type": "SCALAR", "value": 0 } }, "prohibitions": [ { "id": "sp-b037-repair", "mode": "FORBIDDEN", "action": "REPAIR" }, { "id": "sp-b037-rerun", "mode": "FORBIDDEN", "action": "RERUN_QUALIFICATION" }, { "id": "sp-b037-commit", "mode": "FORBIDDEN", "action": "COMMIT" } ], "required": ["REPORT"], "terminal": "STOP" },
+    { "id": "sr-b054", "trigger": { "op": "NEQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "material_findings" }, "value": { "type": "SCALAR", "value": 0 } }, "prohibitions": [ { "id": "sp-b054-hand-edit", "mode": "FORBIDDEN", "action": "HAND_EDIT" }, { "id": "sp-b054-second-check", "mode": "FORBIDDEN", "action": "RUN_CHECK" }, { "id": "sp-b054-commit", "mode": "FORBIDDEN", "action": "COMMIT" } ], "required": ["REPORT"], "terminal": "STOP" }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      { "id": "rd-b012", "subject": "te002_stream_state_open", "authority": "ref-doc13" }
+    ],
+    "deterministic_consequences": ["nc-b066"]
+  },
+  "evidence_requirements": [
+    { "id": "ev-b009", "kind": "VERIFICATION", "fact": "identity.doc13", "method": { "op": "EQ", "source": "ref-doc13", "recompute": true }, "forbidden_sources": ["prior_report_prefix"], "must_return": "rf-b067-doc13-sha256" },
+    { "id": "ev-b017", "kind": "AUTHORITY", "fact": "open.semantics", "method": { "op": "EQ", "source": "ref-doc13", "recompute": false } },
+    { "id": "ev-b045", "kind": "AUTHORITY", "fact": "te002.state_support", "method": { "op": "EQ", "source": "ref-doc13", "recompute": false } },
+    { "id": "ev-b061", "kind": "VERIFICATION", "fact": "freeze.eight_attributes", "method": { "op": "EQ", "source": "ref-tool", "recompute": true }, "must_return": "rf-b067-tool-blob" },
+    { "id": "ev-b065", "kind": "VERIFICATION", "fact": "remote.head_equals_local", "method": { "op": "EQ", "source": "ref-remote", "recompute": true } }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "PASS",
+      "valid_when": { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "failed_gates" }, "value": { "type": "SCALAR", "value": 0 } },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "post_state": [
+        { "id": "cr-b066-te001", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "tooling_experiment_001", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ACTIVE" } },
+        { "id": "cr-b066-te002", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream.tooling_experiment_002", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "OPEN" } },
+        { "id": "cr-b066-question", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "experimental_question", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "UNANSWERED" } }
+      ],
+      "next": "nc-b066"
+    }
+  ],
+  "return_contract": [
+    { "id": "rf-b067-addressee", "fact": "mission.addressee", "acquisition": "PREDETERMINED", "value_type": "SYMBOL", "predetermined_value": { "type": "SYMBOL", "value": "AGENT_CCR_LAB_1" } },
+    { "id": "rf-b067-doc13-sha256", "fact": "authority.doc13_sha256", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-b067-tool-blob", "fact": "tool.final_blob", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-b067-tests-total", "fact": "tests.total", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-b067-tests-pass", "fact": "tests.pass", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-b067-tests-fail", "fact": "tests.fail", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-b067-commit", "fact": "commit.created", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-b067-modified-paths", "fact": "repo.modified_paths", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-b067-outcome", "fact": "mission.terminal_outcome", "acquisition": "MEASURED", "value_type": "SYMBOL", "allowed_values": { "type": "SET", "members": [ { "type": "SYMBOL", "value": "PASS" }, { "type": "SYMBOL", "value": "BLOCKED" }, { "type": "SYMBOL", "value": "FAILED" } ] } },
+    { "id": "rf-b067-deviations", "fact": "procedural.deviations", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-b067-errors", "fact": "mission.errors", "acquisition": "MEASURED", "value_type": "SET" }
+  ],
+  "next_consequences": [
+    { "id": "nc-b066", "kind": "DETERMINED", "action": "SELECT", "target": "next_lab_direction" }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-b057",
+      "constraint": { "id": "e-b057", "mode": "FORBIDDEN", "action": "INITIATE", "target": "program_state_work" },
+      "release_condition": { "op": "EQ", "subject": { "kind": "PRESENCE_OF", "ref": "fresh_dogfood_friction" }, "value": { "type": "SCALAR", "value": true } }
+    }
+  ],
+  "terminal": { "halt_after_return": true }
+}

@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T18:12:00Z"
+    "updated_at": "2026-09-12T19:07:43Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -472,7 +472,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Implémenter Mission Object v0 depuis l'autorité 14 : validateur, rendu déterministe et fixtures de qualification A / B / C.",
+    "value": "Rédiger la prochaine mission réelle du Lab DEPUIS Mission Object v0 : valider, rendre de façon déterministe, et employer l'enveloppe engendrée sans augmentation normative manuelle.",
     "evidence": [
       {
         "id": "ev-022",
@@ -489,17 +489,31 @@
         }
       },
       {
-        "id": "ev-036",
+        "id": "ev-037",
         "kind": "repo-path",
         "ref": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Implémenter Mission Object v0 depuis l'autorité 14 : validateur, rendu déterministe et fixtures de qualification A / B / C."
+          "value": "Rédiger la prochaine mission réelle du Lab DEPUIS Mission Object v0 : valider, rendre de façon déterministe, et employer l'enveloppe engendrée sans augmentation normative manuelle."
         },
         "observed": {
           "blob": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+        }
+      },
+      {
+        "id": "ev-038",
+        "kind": "repo-path",
+        "ref": "tooling/mission-object/mission-object.mjs",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "value",
+          "value": "Rédiger la prochaine mission réelle du Lab DEPUIS Mission Object v0 : valider, rendre de façon déterministe, et employer l'enveloppe engendrée sans augmentation normative manuelle."
+        },
+        "observed": {
+          "blob": "5cef343a20aad0c03ba14508b5cf7e790bae17a7"
         }
       }
     ]

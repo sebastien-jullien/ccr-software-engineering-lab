@@ -1,0 +1,343 @@
+{
+  "identity": {
+    "id": "amendment-004-materialization",
+    "class": "TOOLING_EXPERIMENT_001_DESIGN_AMENDMENT_MATERIALIZATION",
+    "addressee": "AGENT_CCR_LAB_1",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "mission.mode",
+      "value": { "type": "SYMBOL", "value": "DOCUMENTARY_ONLY" },
+      "semantics_unresolved": false,
+      "label": "force portée par les interdictions d'effet, non par cette étiquette"
+    },
+    {
+      "subject": "program.status",
+      "value": {
+        "type": "SET",
+        "members": [
+          { "type": "SYMBOL", "value": "TE001_ACTIVE" },
+          { "type": "SYMBOL", "value": "TE002_SELECTED" },
+          { "type": "SYMBOL", "value": "MISSION_OBJECT_NOT_DESIGNED" }
+        ]
+      },
+      "semantics_unresolved": false
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-doc09",
+      "role": "VERIFICATION_TARGET",
+      "locator": { "kind": "REPO_PATH", "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md" },
+      "identity": { "kind": "GIT_BLOB", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" },
+      "identity_required": true
+    },
+    {
+      "id": "ref-doc10",
+      "role": "VERIFICATION_TARGET",
+      "locator": { "kind": "REPO_PATH", "value": "10-TOOLING-EXPERIMENT-001-AMENDMENT-001-DECISION-CREATION.md" },
+      "identity": { "kind": "GIT_BLOB", "value": "3e8d4434376e9fb0b439c52d7ac053e044de83b2" },
+      "identity_required": true
+    },
+    {
+      "id": "ref-doc11",
+      "role": "VERIFICATION_TARGET",
+      "locator": { "kind": "REPO_PATH", "value": "11-TOOLING-EXPERIMENT-001-AMENDMENT-002-EVIDENCE-SUPERSESSION-REFRESH.md" },
+      "identity": { "kind": "GIT_BLOB", "value": "fb1dfe654e221dacdfde0ce93ee98a783b25b091" },
+      "identity_required": true
+    },
+    {
+      "id": "ref-doc12",
+      "role": "AUTHORITY",
+      "locator": { "kind": "REPO_PATH", "value": "12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md" },
+      "identity": { "kind": "GIT_BLOB", "value": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79" },
+      "identity_required": true
+    },
+    {
+      "id": "ref-tool",
+      "role": "VERIFICATION_TARGET",
+      "locator": { "kind": "REPO_PATH", "value": "tooling/program-state/program-state.mjs" },
+      "identity": { "kind": "GIT_BLOB", "value": "4ce1136daefe07a6f2cd43379932da8b8eda8df4" },
+      "identity_required": true
+    },
+    {
+      "id": "ref-tests",
+      "role": "VERIFICATION_TARGET",
+      "locator": { "kind": "REPO_PATH", "value": "tooling/program-state/tests/program-state.test.mjs" },
+      "identity": { "kind": "GIT_BLOB", "value": "936e55cb02edeb00735e7e308d43feaf49ac41ff" },
+      "identity_required": true
+    },
+    {
+      "id": "ref-checkpoint",
+      "role": "VERIFICATION_TARGET",
+      "locator": { "kind": "REPO_PATH", "value": "PROGRAM-STATE.json" },
+      "identity_required": false
+    },
+    {
+      "id": "ref-doc13",
+      "role": "DELIVERABLE",
+      "locator": { "kind": "REPO_PATH", "value": "13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md" },
+      "identity_required": false
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": { "kind": "MISSION_PACKET", "value": "return-block" },
+      "identity_required": false
+    },
+    {
+      "id": "ref-remote",
+      "role": "VERIFICATION_TARGET",
+      "locator": { "kind": "REMOTE_REF", "value": "origin/main" },
+      "identity_required": false
+    }
+  ],
+  "effects": [
+    { "id": "e-a003", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-tool" } },
+    { "id": "e-a004", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-tests" } },
+    { "id": "e-a005", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-checkpoint" } },
+    { "id": "e-a006", "mode": "FORBIDDEN", "action": "CREATE", "target": "stream" },
+    { "id": "e-a007", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object" },
+    { "id": "e-a034", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-doc12" } },
+    { "id": "e-a038", "mode": "FORBIDDEN", "action": "MUTATE", "target": { "ref": "ref-checkpoint" } },
+    { "id": "e-a039-impl", "mode": "FORBIDDEN", "action": "IMPLEMENT", "target": "amendment_003", "cardinality": 0 },
+    { "id": "e-a039-test", "mode": "FORBIDDEN", "action": "RUN_TESTS", "cardinality": 0 },
+    { "id": "e-a039-check", "mode": "FORBIDDEN", "action": "RUN_CHECK", "cardinality": 0 },
+    { "id": "e-a039-create", "mode": "FORBIDDEN", "action": "ATTEMPT_STREAM_CREATION", "cardinality": 0 },
+    { "id": "e-a039-result", "mode": "FORBIDDEN", "action": "CREATE_RESULT_RECORD", "cardinality": 0 },
+    { "id": "e-a040", "mode": "FORBIDDEN", "action": "RESUME", "target": "amendment_003_implementation" },
+    { "id": "e-a041-design", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object_v0" },
+    { "id": "e-a041-schema", "mode": "FORBIDDEN", "action": "AUTHOR_SCHEMA", "target": "mission_object_v0" },
+    { "id": "e-a041-impl", "mode": "FORBIDDEN", "action": "IMPLEMENT", "target": "mission_object_v0" },
+    { "id": "e-a042", "mode": "REQUIRED", "action": "CREATE_DOCUMENT", "target": { "ref": "ref-doc13" }, "cardinality": 1 },
+    { "id": "e-a043", "mode": "FORBIDDEN", "action": "EDIT", "target": "do_not_edit_set" },
+    { "id": "e-a051", "mode": "FORBIDDEN", "action": "ADD_SIGNOFF" },
+    {
+      "id": "e-a052",
+      "mode": "PERMITTED_AFTER_GATE",
+      "action": "COMMIT",
+      "cardinality": 1,
+      "gated_by": "g-a049",
+      "constraints": {
+        "author": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "committer": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "parent": "7e9ae01ca902af8fe8d255303397ff9ab81c676a",
+        "subject": "docs: amend program state design for stream open semantics",
+        "staged_paths": ["13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md"]
+      }
+    },
+    { "id": "e-a055-amend", "mode": "FORBIDDEN", "action": "AMEND" },
+    { "id": "e-a055-rebase", "mode": "FORBIDDEN", "action": "REBASE" },
+    { "id": "e-a055-tag", "mode": "FORBIDDEN", "action": "TAG" },
+    {
+      "id": "e-a056",
+      "mode": "PERMITTED_AFTER_GATE",
+      "action": "PUSH",
+      "target": { "ref": "ref-remote" },
+      "cardinality": 1,
+      "gated_by": "g-a049",
+      "constraints": { "ff_only": true }
+    },
+    { "id": "e-a057", "mode": "FORBIDDEN", "action": "FORCE_PUSH" }
+  ],
+  "content_requirements": [
+    { "id": "cr-a014", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream_state.accepted_set", "relation": "SET_EQUALS", "value": { "type": "SET", "members": [ { "type": "SYMBOL", "value": "OPEN" }, { "type": "SYMBOL", "value": "IMPLEMENTED" }, { "type": "SYMBOL", "value": "CLOSED" }, { "type": "SYMBOL", "value": "UNKNOWN" }, { "type": "SYMBOL", "value": "UNRESOLVED" }, { "type": "SYMBOL", "value": "NOT_APPLICABLE" } ] } },
+    { "id": "cr-a015-open", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "token.OPEN.status_before_decision", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "STRUCTURALLY_ACCEPTED_SEMANTICALLY_UNDEFINED" } },
+    { "id": "cr-a015-implemented", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "token.IMPLEMENTED.status_before_decision", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ESTABLISHED_NARROW" } },
+    { "id": "cr-a015-closed", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "token.CLOSED.status_before_decision", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ESTABLISHED" } },
+    { "id": "cr-a015-unknown", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "token.UNKNOWN.status_before_decision", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ESTABLISHED_UNCERTAINTY" } },
+    { "id": "cr-a015-unresolved", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "token.UNRESOLVED.status_before_decision", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ESTABLISHED_UNCERTAINTY" } },
+    { "id": "cr-a015-na", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "token.NOT_APPLICABLE.status_before_decision", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ESTABLISHED_UNCERTAINTY" } },
+    { "id": "cr-a016", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "gate_refusal.evaluated_as", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "CORRECT" } },
+    { "id": "cr-a017", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "finding.005", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "NO" } },
+    { "id": "cr-a018-model", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "finding.005.grounds", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "MODEL_ALREADY_CONTAINS_OPEN" } },
+    { "id": "cr-a018-lifecycle", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "finding.005.grounds", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "NO_LIFECYCLE_INCAPACITY_DEMONSTRATED" } },
+    { "id": "cr-a018-meaning", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "finding.005.grounds", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "ABSENCE_OF_NORMATIVE_MEANING_ONLY" } },
+    { "id": "cr-a019-gap", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "classification.bounded_semantic_gap", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "YES" } },
+    { "id": "cr-a019-lifecycle", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "classification.lifecycle_representation_defect", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "NOT_DEMONSTRATED" } },
+    { "id": "cr-a019-bug", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "classification.implementation_bug", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "NO" } },
+    { "id": "cr-a020", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "state_model", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "HAS_DEFECT" } },
+    { "id": "cr-a021", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "amendment.004.status", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "RATIFIED" } },
+    { "id": "cr-a022-admitted", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "DURABLY_ADMITTED_IN_PROGRAM" } },
+    { "id": "cr-a022-nonterminal", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "NON_TERMINAL" } },
+    { "id": "cr-a022-work", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "SUBSTANTIVE_WORK_REMAINS" } },
+    { "id": "cr-a023-preexisting", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "token.OPEN", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "PRE_EXISTING" } },
+    { "id": "cr-a023-no-new", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "amendment.004", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "NEW_STREAM_STATE_TOKEN" } },
+    { "id": "cr-a024-work-started", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "WORK_STARTED" } },
+    { "id": "cr-a024-design-started", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "DESIGN_STARTED" } },
+    { "id": "cr-a024-implementation-exists", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "IMPLEMENTATION_EXISTS" } },
+    { "id": "cr-a024-execution-running", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "EXECUTION_RUNNING" } },
+    { "id": "cr-a024-agent-assigned", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "AGENT_ASSIGNED" } },
+    { "id": "cr-a024-stream-exclusive", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "EXCLUSIVE_ACTIVE_STREAM" } },
+    { "id": "cr-a024-program-only-work", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "ONLY_WORK_OF_PROGRAM" } },
+    { "id": "cr-a024-dispatch-priority", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "DISPATCH_PRIORITY" } },
+    { "id": "cr-a024-outcome-success", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "SUCCESS" } },
+    { "id": "cr-a024-outcome-completion", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "COMPLETION" } },
+    { "id": "cr-a024-running", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "RUN_STATE_RUNNING" } },
+    { "id": "cr-a024-implemented", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "STREAM_STATE_IMPLEMENTED" } },
+    { "id": "cr-a024-selection-current", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "CURRENT_SELECTION" } },
+    { "id": "cr-a025-stream-state", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "field_role.stream_state", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "LIFECYCLE_AND_EXISTENCE_STATUS" } },
+    { "id": "cr-a025-decisions", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "field_role.human_decisions", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "SUBSTANTIVE_SELECTIONS" } },
+    { "id": "cr-a025-next-action", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "field_role.next_action", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "WHAT_THE_PROGRAM_IS_SELECTED_TO_DO_NEXT" } },
+    { "id": "cr-a026", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.direction", "relation": "ESTABLISHED_BY", "value": { "type": "SET", "members": [ { "type": "REFERENCE", "value": "ref-doc12" }, { "type": "REFERENCE", "value": "ref-checkpoint" } ] } },
+    { "id": "cr-a027", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "stream_state.OPEN", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "CARRIES_SELECTION" } },
+    { "id": "cr-a028-id", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.id", "relation": "EQUALS", "value": { "type": "SCALAR", "value": "tooling-experiment-002" } },
+    { "id": "cr-a028-title", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.title", "relation": "EQUALS", "value": { "type": "SCALAR", "value": "Durable Mission Representation" } },
+    { "id": "cr-a028-type", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.type", "relation": "EQUALS", "value": { "type": "SCALAR", "value": "TOOLING EXPERIMENT" } },
+    { "id": "cr-a028-state", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "te002.state", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "OPEN" } },
+    { "id": "cr-a029", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "DENY", "subject": "te002.state", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "MISSION_OBJECT_DESIGN_STARTED" } },
+    { "id": "cr-a030", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "new_token_required", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "NO" } },
+    { "id": "cr-a031-planned", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "stream_state.vocabulary", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "PLANNED" } },
+    { "id": "cr-a031-selected", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "stream_state.vocabulary", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "SELECTED" } },
+    { "id": "cr-a031-ready", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "stream_state.vocabulary", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "READY" } },
+    { "id": "cr-a031-active", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "stream_state.vocabulary", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "ACTIVE" } },
+    { "id": "cr-a031-running", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "stream_state.vocabulary", "relation": "HAS_MEMBER", "value": { "type": "SYMBOL", "value": "RUNNING" } },
+    { "id": "cr-a032-graph", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "amendment.004", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "LIFECYCLE_GRAPH" } },
+    { "id": "cr-a032-table", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "amendment.004", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "TRANSITION_TABLE" } },
+    { "id": "cr-a032-auto", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "amendment.004", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "AUTOMATIC_TRANSITION_RULE" } },
+    { "id": "cr-a033-closure", "scope": "MISSION", "target": "ref-doc13", "kind": "PRESERVE", "subject": "semantics.closure" },
+    { "id": "cr-a033-implemented", "scope": "MISSION", "target": "ref-doc13", "kind": "PRESERVE", "subject": "semantics.implemented" },
+    { "id": "cr-a033-uncertainty", "scope": "MISSION", "target": "ref-doc13", "kind": "PRESERVE", "subject": "semantics.uncertainty" },
+    { "id": "cr-a035", "scope": "MISSION", "target": "ref-doc13", "kind": "PRESERVE", "subject": "chronology.te002", "relation": "SEQ_EQUALS", "value": { "type": "SEQUENCE", "members": [ { "type": "SYMBOL", "value": "TE002_SELECTED" }, { "type": "SYMBOL", "value": "DECISION_PERSISTED" }, { "type": "SYMBOL", "value": "CONSEQUENCE_SELECTED" }, { "type": "SYMBOL", "value": "CREATE_ATTEMPTED" }, { "type": "SYMBOL", "value": "REFUSED" }, { "type": "SYMBOL", "value": "FINDING_004" }, { "type": "SYMBOL", "value": "AMENDMENT_003" }, { "type": "SYMBOL", "value": "SEMANTIC_GATE" }, { "type": "SYMBOL", "value": "AMENDMENT_004" }, { "type": "SYMBOL", "value": "IMPLEMENTATION_FUTURE" } ] } },
+    { "id": "cr-a036", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "future_evidence.te002_state", "relation": "SUPPORTS", "value": { "type": "CLAIM_TRIPLE", "subject": "stream:tooling-experiment-002", "field": "state", "value": "OPEN" } },
+    { "id": "cr-a037-established", "scope": "MISSION", "target": "ref-doc13", "kind": "CLAIM", "polarity": "ASSERT", "subject": "conclusion.te002_state", "relation": "ESTABLISHED_BY", "value": { "type": "SET", "members": [ { "type": "REFERENCE", "value": "ref-checkpoint" }, { "type": "REFERENCE", "value": "ref-doc13" } ] } },
+    { "id": "cr-a037-forbid-a004-selected", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "amendment.004", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "PERFORMED_TE002_SELECTION" } },
+    { "id": "cr-a037-forbid-selection-defined", "scope": "MISSION", "target": "ref-doc13", "kind": "FORBID_CLAIM", "subject": "human_selection", "relation": "DEFINED_BY", "value": { "type": "REFERENCE", "value": "ref-doc13" } }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      { "order": 1, "id": "s-a045", "effect": "e-a042", "atomic": true, "gated_by": "g-a044" },
+      { "order": 2, "id": "s-a046", "effect": "e-a042", "atomic": true, "produces": ["ev-a047"] }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-a008",
+      "scope": "ALL_PRECEDING",
+      "predicate": {
+        "all_of": [
+          { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "HEAD" }, "value": { "type": "SCALAR", "value": "7e9ae01ca902af8fe8d255303397ff9ab81c676a" } },
+          { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "TREE" }, "value": { "type": "SCALAR", "value": "0d0e3a5dd80b7f8e0c1cb2d7c2dbb5c69e0c9fb2" } }
+        ]
+      },
+      "on_fail": "sr-a013"
+    },
+    {
+      "id": "g-a011",
+      "scope": "ALL_PRECEDING",
+      "predicate": {
+        "all_of": [
+          { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "BRANCH" }, "value": { "type": "SCALAR", "value": "main" } },
+          { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "ORIGIN_MAIN_EQUALS_HEAD" }, "value": { "type": "SCALAR", "value": true } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "worktree_modified" }, "value": { "type": "SCALAR", "value": 0 } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "index_staged" }, "value": { "type": "SCALAR", "value": 0 } },
+          { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "untracked" }, "value": { "type": "SCALAR", "value": 0 } },
+          { "op": "EQ", "subject": { "kind": "PRESENCE_OF", "ref": "stream.tooling_experiment_002" }, "value": { "type": "SCALAR", "value": false } },
+          { "op": "EQ", "subject": { "kind": "OBJECT_FIELD", "ref": "next_action", "field": "state" }, "value": { "type": "SYMBOL", "value": "SELECTED" } }
+        ]
+      },
+      "on_fail": "sr-a013"
+    },
+    {
+      "id": "g-a012",
+      "scope": "ALL_PRECEDING",
+      "predicate": {
+        "all_of": [
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc09" }, "value": { "type": "SCALAR", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc10" }, "value": { "type": "SCALAR", "value": "3e8d4434376e9fb0b439c52d7ac053e044de83b2" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc11" }, "value": { "type": "SCALAR", "value": "fb1dfe654e221dacdfde0ce93ee98a783b25b091" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc12" }, "value": { "type": "SCALAR", "value": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-tool" }, "value": { "type": "SCALAR", "value": "4ce1136daefe07a6f2cd43379932da8b8eda8df4" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-tests" }, "value": { "type": "SCALAR", "value": "936e55cb02edeb00735e7e308d43feaf49ac41ff" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-checkpoint" }, "value": { "type": "SCALAR", "value": "0f1c2b3a4d5e6f708192a3b4c5d6e7f809a1b2c3" } }
+        ]
+      },
+      "on_fail": "sr-a013"
+    },
+    {
+      "id": "g-a044",
+      "scope": "ALL_PRECEDING",
+      "predicate": { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "changed_paths" }, "value": { "type": "SCALAR", "value": 1 } },
+      "on_fail": "sr-a013"
+    },
+    {
+      "id": "g-a048",
+      "scope": "ALL_PRECEDING",
+      "predicate": { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "edits_after_freeze" }, "value": { "type": "SCALAR", "value": 0 } },
+      "on_fail": "sr-a013"
+    },
+    {
+      "id": "g-a049",
+      "scope": "ALL_PRECEDING",
+      "predicate": {
+        "all_of": [
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc09" }, "value": { "type": "SCALAR", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" } },
+          { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-doc12" }, "value": { "type": "SCALAR", "value": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79" } }
+        ]
+      },
+      "on_fail": "sr-a013"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-a013",
+      "trigger": { "op": "NEQ", "subject": { "kind": "REPO_FACT", "ref": "preflight_match" }, "value": { "type": "SCALAR", "value": true } },
+      "prohibitions": [
+        { "id": "sp-a013-clean", "mode": "FORBIDDEN", "action": "CLEAN" },
+        { "id": "sp-a013-reset", "mode": "FORBIDDEN", "action": "RESET" },
+        { "id": "sp-a013-edit", "mode": "FORBIDDEN", "action": "EDIT" }
+      ],
+      "required": ["REPORT"],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "deterministic_consequences": ["nc-a060"]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-a047",
+      "kind": "VERIFICATION",
+      "fact": "freeze.doc13",
+      "method": { "op": "EQ", "source": "ref-doc13", "recompute": true },
+      "must_return": "rf-a062-authority-blob"
+    },
+    {
+      "id": "ev-a058",
+      "kind": "VERIFICATION",
+      "fact": "remote.head_equals_local",
+      "method": { "op": "EQ", "source": "ref-remote", "recompute": true }
+    }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "PASS",
+      "valid_when": { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "failed_gates" }, "value": { "type": "SCALAR", "value": 0 } },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "post_state": [
+        { "id": "cr-a059-te001", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "tooling_experiment_001", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ACTIVE" } },
+        { "id": "cr-a059-te002", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "tooling_experiment_002.stream", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ABSENT" } },
+        { "id": "cr-a059-question", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "experimental_question", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "UNANSWERED" } }
+      ],
+      "next": "nc-a060"
+    }
+  ],
+  "return_contract": [
+    { "id": "rf-a062-addressee", "fact": "mission.addressee", "acquisition": "PREDETERMINED", "value_type": "SYMBOL", "predetermined_value": { "type": "SYMBOL", "value": "AGENT_CCR_LAB_1" } },
+    { "id": "rf-a062-starting-head", "fact": "repo.starting_head", "acquisition": "PREDETERMINED", "value_type": "SCALAR", "predetermined_value": { "type": "SCALAR", "value": "7e9ae01ca902af8fe8d255303397ff9ab81c676a" } },
+    { "id": "rf-a062-authority-blob", "fact": "authority.doc13_blob", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-a062-commit", "fact": "commit.created", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-a062-modified-paths", "fact": "repo.modified_path_count", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-a062-tests", "fact": "tests.executed", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-a062-outcome", "fact": "mission.terminal_outcome", "acquisition": "MEASURED", "value_type": "SYMBOL", "allowed_values": { "type": "SET", "members": [ { "type": "SYMBOL", "value": "PASS" }, { "type": "SYMBOL", "value": "BLOCKED" }, { "type": "SYMBOL", "value": "FAILED" } ] } },
+    { "id": "rf-a062-deviations", "fact": "procedural.deviations", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-a062-errors", "fact": "mission.errors", "acquisition": "MEASURED", "value_type": "SET" }
+  ],
+  "next_consequences": [
+    { "id": "nc-a060", "kind": "DETERMINED", "action": "IMPLEMENT", "target": "amendment_003", "no_new_gate": true }
+  ],
+  "terminal": { "halt_after_return": true }
+}

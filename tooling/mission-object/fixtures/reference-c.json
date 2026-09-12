@@ -1,0 +1,177 @@
+{
+  "identity": {
+    "id": "te002-selection-transition",
+    "class": "REAL_PROGRAM_STATE_TRANSITION",
+    "addressee": "AGENT_CCR_LAB_1",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB",
+    "facets": ["DECISION_PERSISTENCE", "STREAM_OPENING_ATTEMPT"]
+  },
+  "context": [
+    {
+      "subject": "mission.scope",
+      "value": { "type": "SYMBOL", "value": "PROGRAM_STATE_TRANSITION_ONLY" },
+      "semantics_unresolved": false,
+      "label": "la reprise fraîche n'est pas dans le périmètre ; sa force est portée par e-c036-resume"
+    }
+  ],
+  "references": [
+    { "id": "ref-doc09", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md" }, "identity": { "kind": "GIT_BLOB", "value": "c94e03829e107b51f63efcdb950bfeff123f50d1" }, "identity_required": true },
+    { "id": "ref-doc11", "role": "AUTHORITY", "locator": { "kind": "REPO_PATH", "value": "11-TOOLING-EXPERIMENT-001-AMENDMENT-002-EVIDENCE-SUPERSESSION-REFRESH.md" }, "identity": { "kind": "GIT_BLOB", "value": "fb1dfe654e221dacdfde0ce93ee98a783b25b091" }, "identity_required": true },
+    { "id": "ref-human-selection", "role": "AUTHORITY", "locator": { "kind": "MISSION_PACKET", "value": "human-ratification-te002-selection" }, "identity_required": false },
+    { "id": "ref-tool", "role": "VERIFICATION_TARGET", "locator": { "kind": "REPO_PATH", "value": "tooling/program-state/program-state.mjs" }, "identity": { "kind": "GIT_BLOB", "value": "914d5aa0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6" }, "identity_required": true },
+    { "id": "ref-checkpoint", "role": "DELIVERABLE", "locator": { "kind": "REPO_PATH", "value": "PROGRAM-STATE.json" }, "identity_required": false },
+    { "id": "ref-return", "role": "DELIVERABLE", "locator": { "kind": "MISSION_PACKET", "value": "return-block" }, "identity_required": false },
+    { "id": "ref-remote", "role": "VERIFICATION_TARGET", "locator": { "kind": "REMOTE_REF", "value": "origin/main" }, "identity_required": false }
+  ],
+  "effects": [
+    { "id": "e-c002-design", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object" },
+    { "id": "e-c002-amendment", "mode": "FORBIDDEN", "action": "CREATE_DESIGN_AMENDMENT" },
+    { "id": "e-c002-implement", "mode": "FORBIDDEN", "action": "IMPLEMENT" },
+    { "id": "e-c002-tool-edit", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-tool" } },
+    { "id": "e-c002-dogfood", "mode": "FORBIDDEN", "action": "DOGFOOD" },
+    { "id": "e-c002-result", "mode": "FORBIDDEN", "action": "CREATE_RESULT_RECORD" },
+    { "id": "e-c005", "mode": "FORBIDDEN", "action": "RE_OPEN", "target": "rd-c004" },
+    { "id": "e-c006", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object_v0" },
+    { "id": "e-c011-implement", "mode": "FORBIDDEN", "action": "IMPLEMENT", "cardinality": 0 },
+    { "id": "e-c011-software", "mode": "FORBIDDEN", "action": "CHANGE_SOFTWARE", "cardinality": 0 },
+    { "id": "e-c011-tests-edit", "mode": "FORBIDDEN", "action": "EDIT_TESTS", "cardinality": 0 },
+    { "id": "e-c011-tests-run", "mode": "FORBIDDEN", "action": "RUN_TESTS", "cardinality": 0 },
+    { "id": "e-c011-refactor", "mode": "FORBIDDEN", "action": "REFACTOR", "cardinality": 0 },
+    { "id": "e-c011-amend-design", "mode": "FORBIDDEN", "action": "AMEND_DESIGN", "cardinality": 0 },
+    { "id": "e-c011-new-doc", "mode": "FORBIDDEN", "action": "CREATE_DOCUMENT", "cardinality": 0 },
+    { "id": "e-c011-schema", "mode": "FORBIDDEN", "action": "AUTHOR_SCHEMA", "cardinality": 0 },
+    { "id": "e-c011-orchestrate", "mode": "FORBIDDEN", "action": "ORCHESTRATE", "cardinality": 0 },
+    { "id": "e-c012", "mode": "REQUIRED", "action": "CREATE_DECISION", "target": "tooling_experiment_002_selected", "cardinality": 1 },
+    { "id": "e-c016", "mode": "REQUIRED", "action": "UPDATE", "target": "next_action", "cardinality": 1 },
+    { "id": "e-c019", "mode": "REQUIRED", "action": "ATTEMPT_STREAM_CREATION", "target": "tooling_experiment_002", "cardinality": 1 },
+    { "id": "e-c020-tool", "mode": "FORBIDDEN", "action": "EDIT", "target": { "ref": "ref-tool" } },
+    { "id": "e-c020-hand-edit", "mode": "FORBIDDEN", "action": "HAND_EDIT", "target": { "ref": "ref-checkpoint" } },
+    { "id": "e-c020-vocabulary", "mode": "FORBIDDEN", "action": "ADD_VOCABULARY" },
+    { "id": "e-c028", "mode": "REQUIRED", "action": "RUN_CHECK", "cardinality": 1 },
+    { "id": "e-c032", "mode": "FORBIDDEN", "action": "DESIGN", "target": "mission_object_v0" },
+    { "id": "e-c036-resume", "mode": "FORBIDDEN", "action": "RESUME", "cardinality": 0 },
+    { "id": "e-c036-fresh", "mode": "FORBIDDEN", "action": "START_FRESH_SESSION", "cardinality": 0 },
+    { "id": "e-c036-result", "mode": "FORBIDDEN", "action": "CREATE_RESULT_RECORD", "cardinality": 0 },
+    { "id": "e-c037-protected", "mode": "FORBIDDEN", "action": "READ_PROTECTED_RUN", "cardinality": 0 },
+    { "id": "e-c037-ccr", "mode": "FORBIDDEN", "action": "EXECUTE_CCR", "cardinality": 0 },
+    { "id": "e-c037-provider", "mode": "FORBIDDEN", "action": "INVOKE_PROVIDER", "cardinality": 0 },
+    { "id": "e-c044", "mode": "PERMITTED_AFTER_GATE", "action": "PUSH", "target": { "ref": "ref-remote" }, "cardinality": 1, "gated_by": "g-c038", "constraints": { "ff_only": true } }
+  ],
+  "content_requirements": [
+    { "id": "cr-c014", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "git", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "MADE_THE_DECISION" } },
+    { "id": "cr-c015-decisions", "scope": "MISSION", "target": "ref-checkpoint", "kind": "PRESERVE", "subject": "decisions.existing" },
+    { "id": "cr-c017-superseded", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "support.superseded", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "INACTIVE" } },
+    { "id": "cr-c017-replacement", "scope": "MISSION", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "support.replacement", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ACTIVE" } },
+    { "id": "cr-c029", "scope": "MISSION", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "branch_b.report", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "COHERENT_WITH_REACHED_STATE" } },
+    { "id": "cr-c035", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "mission.outcome", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "PHASE_D_RESULT" } },
+    { "id": "cr-c041", "scope": "MISSION", "target": "ref-return", "kind": "FORBID_CLAIM", "subject": "blocker", "relation": "IMPLIES", "value": { "type": "SYMBOL", "value": "ERASES_RATIFIED_DECISION" } }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      { "order": 1, "id": "s-c012", "effect": "e-c012", "atomic": true, "gated_by": "g-c009", "produces": ["ev-c013"] },
+      { "order": 2, "id": "s-c016", "effect": "e-c016", "atomic": true, "gated_by": "g-c018" },
+      { "order": 3, "id": "s-c019", "effect": "e-c019", "atomic": true, "produces": ["ev-c021"] },
+      { "order": 4, "id": "s-c028", "effect": "e-c028", "atomic": true, "gated_by": "g-c030" }
+    ]
+  },
+  "gates": [
+    { "id": "g-c009", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "EQ", "subject": { "kind": "REPO_FACT", "ref": "HEAD" }, "value": { "type": "SCALAR", "value": "914d5aa0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6" } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "worktree_modified" }, "value": { "type": "SCALAR", "value": 0 } }, { "op": "EQ", "subject": { "kind": "ARTIFACT_IDENTITY", "ref": "ref-tool" }, "value": { "type": "SCALAR", "value": "914d5aa0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6" } } ] }, "on_fail": "sr-c010" },
+    { "id": "g-c018", "scope": ["s-c012"], "predicate": { "op": "EQ", "subject": { "kind": "OPERATION_RESULT", "ref": "e-c012", "field": "exit" }, "value": { "type": "SCALAR", "value": 0 } }, "on_fail": "sr-c010" },
+    { "id": "g-c030", "scope": ["s-c019"], "predicate": { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "unrelated_material_findings" }, "value": { "type": "SCALAR", "value": 0 } }, "on_fail": "sr-c031" },
+    { "id": "g-c038", "scope": "ALL_PRECEDING", "predicate": { "all_of": [ { "op": "SET_EQ", "subject": { "kind": "REPO_FACT", "ref": "changed_paths" }, "value": { "type": "SET", "members": [ { "type": "SCALAR", "value": "PROGRAM-STATE.json" } ] } }, { "op": "EQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "edits_after_freeze" }, "value": { "type": "SCALAR", "value": 0 } } ] }, "on_fail": "sr-c031" }
+  ],
+  "stop_rules": [
+    { "id": "sr-c010", "trigger": { "op": "NEQ", "subject": { "kind": "REPO_FACT", "ref": "preflight_match" }, "value": { "type": "SCALAR", "value": true } }, "prohibitions": [ { "id": "sp-c010-clean", "mode": "FORBIDDEN", "action": "CLEAN" }, { "id": "sp-c010-reset", "mode": "FORBIDDEN", "action": "RESET" }, { "id": "sp-c010-edit", "mode": "FORBIDDEN", "action": "EDIT" } ], "required": ["REPORT"], "terminal": "STOP" },
+    { "id": "sr-c031", "trigger": { "op": "NEQ", "subject": { "kind": "MEASUREMENT", "modifier": "COUNT_OF", "ref": "other_material_issues" }, "value": { "type": "SCALAR", "value": 0 } }, "prohibitions": [ { "id": "sp-c031-hand-edit", "mode": "FORBIDDEN", "action": "HAND_EDIT" }, { "id": "sp-c031-commit", "mode": "FORBIDDEN", "action": "COMMIT" } ], "required": ["REPORT"], "terminal": "STOP" }
+  ],
+  "branches": [
+    {
+      "id": "A",
+      "condition": { "op": "EQ", "subject": { "kind": "OPERATION_RESULT", "ref": "e-c019", "field": "ok" }, "value": { "type": "SCALAR", "value": true } },
+      "steps": [
+        { "order": 5, "id": "s-c022-advance", "effect": "e-c016", "atomic": true }
+      ],
+      "effects": [
+        { "id": "e-c043-a", "mode": "PERMITTED_AFTER_GATE", "action": "COMMIT", "cardinality": 1, "gated_by": "g-c038", "constraints": { "author": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>", "committer": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>", "subject": "chore: persist te002 selection", "staged_paths": ["PROGRAM-STATE.json"] } }
+      ],
+      "terminal_outcome": "PASS",
+      "next": "nc-c045"
+    },
+    {
+      "id": "B",
+      "condition": { "op": "EQ", "subject": { "kind": "OPERATION_RESULT", "ref": "e-c019", "field": "refused" }, "value": { "type": "SCALAR", "value": true } },
+      "effects": [
+        { "id": "e-c024", "mode": "FORBIDDEN", "action": "REPAIR" },
+        { "id": "e-c025-rollback", "mode": "FORBIDDEN", "action": "ROLLBACK", "target": "reached_state" },
+        { "id": "e-c046-amendment", "mode": "FORBIDDEN", "action": "CREATE_DOCUMENT", "target": "amendment_003" },
+        { "id": "e-c043-b", "mode": "PERMITTED_AFTER_GATE", "action": "COMMIT", "cardinality": 1, "gated_by": "g-c038", "constraints": { "author": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>", "committer": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>", "subject": "chore: persist te002 selection", "staged_paths": ["PROGRAM-STATE.json"] } }
+      ],
+      "requirements": [
+        { "id": "cr-c023-finding", "scope": "B", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "finding.004", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "NEW_STREAM_CREATION_GAP" }, "depends_on": ["ev-c021"] },
+        { "id": "cr-c026", "scope": "B", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "finding.004.source", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "OBSERVED_REFUSAL" }, "depends_on": ["ev-c021"] },
+        { "id": "cr-c034", "scope": "B", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "blocked_outcome", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "LEGITIMATE_DOGFOOD_EVIDENCE" }, "depends_on": ["ev-c021"] }
+      ],
+      "terminal_outcome": "BLOCKED",
+      "next": "nc-c046"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      { "id": "rd-c004", "subject": "te002_selection", "authority": "ref-human-selection" }
+    ],
+    "open_human_gates": [
+      { "id": "hg-c046", "subject": "stream_creation_capability" }
+    ],
+    "deterministic_consequences": ["nc-c045"]
+  },
+  "evidence_requirements": [
+    { "id": "ev-c013", "kind": "AUTHORITY", "fact": "decision.te002_selected_state", "method": { "op": "EQ", "source": "ref-human-selection", "recompute": false } },
+    { "id": "ev-c021", "kind": "OBSERVATION", "fact": "stream_creation.early_refusal_sufficient" },
+    { "id": "ev-c042", "kind": "VERIFICATION", "fact": "freeze.checkpoint", "method": { "op": "EQ", "source": "ref-checkpoint", "recompute": true }, "must_return": "rf-c033-checkpoint-blob" },
+    { "id": "ev-c044", "kind": "VERIFICATION", "fact": "remote.head_equals_local", "method": { "op": "EQ", "source": "ref-remote", "recompute": true } }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "PASS",
+      "valid_when": { "branch": "A" },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "post_state": [
+        { "id": "cr-c045-stream", "scope": "A", "target": "ref-return", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream.tooling_experiment_002", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "OPEN" } },
+        { "id": "cr-c045-next-action", "scope": "A", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "next_action.value", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "DESIGN_MISSION_OBJECT_V0" } }
+      ],
+      "next": "nc-c045"
+    },
+    {
+      "label": "BLOCKED",
+      "valid_when": { "branch": "B" },
+      "partial_state_allowed": true,
+      "reached_state_must_be_preserved": true,
+      "post_state": [
+        { "id": "cr-c046-decision", "scope": "B", "target": "ref-checkpoint", "kind": "PRESERVE", "subject": "decision.tooling_experiment_002_selected" },
+        { "id": "cr-c046-next-action", "scope": "B", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "next_action.value", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "REPRESENT_OR_OPEN_TE002" } },
+        { "id": "cr-c046-stream-absent", "scope": "B", "target": "ref-checkpoint", "kind": "CLAIM", "polarity": "ASSERT", "subject": "stream.tooling_experiment_002", "relation": "EQUALS", "value": { "type": "SYMBOL", "value": "ABSENT" } }
+      ],
+      "next": "nc-c046"
+    }
+  ],
+  "return_contract": [
+    { "id": "rf-c047-addressee", "fact": "mission.addressee", "acquisition": "PREDETERMINED", "value_type": "SYMBOL", "predetermined_value": { "type": "SYMBOL", "value": "AGENT_CCR_LAB_1" } },
+    { "id": "rf-c047-outcome", "fact": "mission.terminal_outcome", "acquisition": "MEASURED", "value_type": "SYMBOL", "allowed_values": { "type": "SET", "members": [ { "type": "SYMBOL", "value": "PASS" }, { "type": "SYMBOL", "value": "BLOCKED" }, { "type": "SYMBOL", "value": "FAILED" } ] } },
+    { "id": "rf-c033-command", "fact": "stream_creation.exact_command", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-c033-outcome", "fact": "stream_creation.exact_outcome", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-c033-exit", "fact": "stream_creation.exit_code", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-c033-mutation", "fact": "stream_creation.bytes_mutated", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-c033-checkpoint-blob", "fact": "checkpoint.final_blob", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-c015-decision-count", "fact": "decisions.ratified_count", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-c015-pending-count", "fact": "decisions.pending_count", "acquisition": "MEASURED", "value_type": "SCALAR" },
+    { "id": "rf-c047-deviations", "fact": "procedural.deviations", "acquisition": "MEASURED", "value_type": "SET" },
+    { "id": "rf-c047-errors", "fact": "mission.errors", "acquisition": "MEASURED", "value_type": "SET" }
+  ],
+  "next_consequences": [
+    { "id": "nc-c045", "kind": "DETERMINED", "action": "DESIGN", "target": "mission_object_v0" },
+    { "id": "nc-c046", "kind": "HUMAN_GATE", "action": "DECIDE", "target": "stream_creation_capability" }
+  ],
+  "terminal": { "halt_after_return": true }
+}
