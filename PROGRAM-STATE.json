@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T21:49:03Z"
+    "updated_at": "2026-09-12T22:43:25Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -510,11 +510,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "dogfood-002-evaluation-ratified",
+      "question": "Ratifier l'évaluation de DOGFOOD-002 comme BLOCKED_COMMIT_NOT_REALIZED avec remédiations DF001-01 et DF001-02 rédigées mais non confirmées en usage réel, finding DF002-01, et aucun gap du schéma Mission Object v0 démontré ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-047",
+          "kind": "repo-path",
+          "ref": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:dogfood-002-evaluation-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "8d9104b9fd538ebddc8b7c6b769229b462aa2259"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter DOGFOOD-002 corrigé dans AGENT CCR LAB #16 à partir de l'enveloppe générée et figée, puis évaluer le branchement sur la réalisation des effets et la temporalité de la preuve post-push, sans augmentation normative manuelle.",
+    "value": "Préparer la continuation objet d'abord suivante, en conservant la rédaction de DF001-01 et DF001-02 et en corrigeant DF002-01 par NOT_ATTEMPTED.",
     "evidence": [
       {
         "id": "ev-022",
@@ -531,31 +552,17 @@
         }
       },
       {
-        "id": "ev-045",
+        "id": "ev-048",
         "kind": "repo-path",
-        "ref": "tooling/mission-object/dogfood/002/mission.json",
+        "ref": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter DOGFOOD-002 corrigé dans AGENT CCR LAB #16 à partir de l'enveloppe générée et figée, puis évaluer le branchement sur la réalisation des effets et la temporalité de la preuve post-push, sans augmentation normative manuelle."
+          "value": "Préparer la continuation objet d'abord suivante, en conservant la rédaction de DF001-01 et DF001-02 et en corrigeant DF002-01 par NOT_ATTEMPTED."
         },
         "observed": {
-          "blob": "4d1c6027d717bfc7b189a2889fb6b22b42b3d568"
-        }
-      },
-      {
-        "id": "ev-046",
-        "kind": "repo-path",
-        "ref": "tooling/mission-object/dogfood/002/envelope.md",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "value",
-          "value": "Exécuter DOGFOOD-002 corrigé dans AGENT CCR LAB #16 à partir de l'enveloppe générée et figée, puis évaluer le branchement sur la réalisation des effets et la temporalité de la preuve post-push, sans augmentation normative manuelle."
-        },
-        "observed": {
-          "blob": "223fbcf02b5c38051f5a9807fe50ea68277c5acd"
+          "blob": "8d9104b9fd538ebddc8b7c6b769229b462aa2259"
         }
       }
     ]
