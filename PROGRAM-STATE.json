@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T16:09:38Z"
+    "updated_at": "2026-09-12T18:12:00Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -447,11 +447,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "mission-object-v0-semantic-design-ratified",
+      "question": "Ratifier le design sémantique et littéral de Mission Object v0 pour TOOLING-EXPERIMENT-002 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-035",
+          "kind": "repo-path",
+          "ref": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:mission-object-v0-semantic-design-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Concevoir et prédéclarer Mission Object v0 pour TOOLING-EXPERIMENT-002 — représentation durable de mission.",
+    "value": "Implémenter Mission Object v0 depuis l'autorité 14 : validateur, rendu déterministe et fixtures de qualification A / B / C.",
     "evidence": [
       {
         "id": "ev-022",
@@ -468,17 +489,17 @@
         }
       },
       {
-        "id": "ev-034",
+        "id": "ev-036",
         "kind": "repo-path",
-        "ref": "12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md",
+        "ref": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Concevoir et prédéclarer Mission Object v0 pour TOOLING-EXPERIMENT-002 — représentation durable de mission."
+          "value": "Implémenter Mission Object v0 depuis l'autorité 14 : validateur, rendu déterministe et fixtures de qualification A / B / C."
         },
         "observed": {
-          "blob": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79"
+          "blob": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
         }
       }
     ]
