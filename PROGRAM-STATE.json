@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T14:30:06Z"
+    "updated_at": "2026-09-12T15:14:58Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -406,11 +406,29 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-002-selected",
+      "question": "Sélectionner TOOLING-EXPERIMENT-002 — représentation durable de mission — comme prochain flux de développement du Lab ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-028",
+          "kind": "decision",
+          "ref": "ratification humaine explicite — sélection de TOOLING-EXPERIMENT-002, représentation durable de mission",
+          "policy": "OPAQUE_BUT_ESTABLISHED",
+          "supports": {
+            "subject": "decision:tooling-experiment-002-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Maintenir PROGRAM-STATE.json à travers des transitions réelles du Lab, selon le protocole de dogfood gelé, jusqu'à une interruption réelle précédant la reprise en contexte frais.",
+    "value": "Représenter et ouvrir TOOLING-EXPERIMENT-002 — représentation durable de mission — comme prochain flux actif du Lab.",
     "evidence": [
       {
         "id": "ev-022",
@@ -427,17 +445,14 @@
         }
       },
       {
-        "id": "ev-027",
-        "kind": "repo-path",
-        "ref": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md",
-        "policy": "VERIFIABLE",
+        "id": "ev-029",
+        "kind": "decision",
+        "ref": "decision:tooling-experiment-002-selected",
+        "policy": "OPAQUE_BUT_ESTABLISHED",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Maintenir PROGRAM-STATE.json à travers des transitions réelles du Lab, selon le protocole de dogfood gelé, jusqu'à une interruption réelle précédant la reprise en contexte frais."
-        },
-        "observed": {
-          "blob": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+          "value": "Représenter et ouvrir TOOLING-EXPERIMENT-002 — représentation durable de mission — comme prochain flux actif du Lab."
         }
       }
     ]
