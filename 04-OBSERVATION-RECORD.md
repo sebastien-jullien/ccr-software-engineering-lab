@@ -1288,3 +1288,656 @@ ESTABLISHES ONLY
 PRODUCT DECISION
 = NONE
 ```
+
+---
+
+## Observation O-010 — Les surfaces machine publiques ne portent pas la comptabilité opérationnelle d'un run
+
+### Contexte
+
+```text
+CASE
+= CASE-005
+
+RUN
+= CCR-20260908-001
+
+STEP / INTERACTION
+= Layer C — consommation publique par AGENT CCR LAB #10,
+  puis contrôle de suffisance sur l'ensemble des surfaces publiques
+```
+
+### Observation
+
+```text
+OBSERVATION
+= sur les surfaces machine publiques supportées, huit questions
+  opérationnelles d'un run réel restent sans réponse contractuelle
+
+QUESTIONS
+= budget d'invocations configuré · maximum configuré
+  invocations consommées · invocations restantes
+  transfert pendant · fin de production volontaire
+  état terminal ou non terminal du run
+  coût d'invocation de `ccr start` lui-même
+
+DÉCOUVERTE DU CONTRÔLE DE SUFFISANCE
+= `ccr status <run>` AFFICHE six de ces huit réponses,
+  mais n'a ni `--format`, ni spécification dans `docs/specs/`,
+  ni entrée dans l'énumération des contrats supportés
+
+CONSEQUENCE
+= un consommateur public ne peut pas répondre à ces questions
+  par une autorité supportée ; l'information est observable,
+  elle n'est pas contractuelle
+
+BLOCKING
+= NO pour la lecture procédurale du run
+= YES pour toute décision opérationnelle sous plafond
+```
+
+### Attribution
+
+```text
+CCR-SIDE
+= YES
+
+CONSUMER-SIDE
+= NO
+
+CASE-SIDE
+= NO
+```
+
+### Nature
+
+```text
+AUTHORITY GAP
+= YES
+
+PUBLIC CONTRACT GAP
+= YES
+
+PUBLIC REPRESENTATION GAP
+= YES
+
+QUERY / DISCOVERY GAP
+= NO — le run est découvert et lu sans aide
+
+OPERATOR FRICTION
+= YES
+```
+
+### Contournement
+
+```text
+WORKAROUND REQUIRED
+= YES
+
+WORKAROUND
+= lire `ccr status`, surface humaine non contractuelle
+
+WORKAROUND COST
+= le consommateur dépend d'une sortie que rien n'oblige à rester stable ;
+  `compatibility.md` § 2.1 énonce qu'un comportement non documenté
+  n'est pas un contrat public supporté
+```
+
+### Preuve
+
+- retour de Layer C (`AGENT CCR LAB #10`, 2026-09-08) : F1 rend l'identité et le titre,
+  F2 rend onze activités durables sous `projection_status = AVAILABLE`, et aucune des deux
+  surfaces ne porte budget, invocations, transfert ni état de run ;
+- `run-activity-machine.md` § 12 : « ACTIVITÉ ≠ ISSUE D'INVOCATION … les deux contrats ne se
+  joignent pas, ne se recoupent pas, et aucun ne se déduit de l'autre » — l'omission est une
+  séparation d'autorité déclarée, pas un oubli ;
+- inventaire des surfaces publiques supportées au commit `8993cbe` (paquet 1.2.0) : aucune ne
+  répond aux huit questions ;
+- sortie de `ccr status CCR-20260908-001` montrant quota, transfert et état — sans `--format`.
+
+### Analyse
+
+Le manque est **contractuel**, non informationnel : CCR détient les faits et les affiche déjà à
+un humain. Ce qui manque est une autorité machine supportée qui les porte. C'est exactement la
+distinction que le produit pose lui-même, et l'observation ne fait que la constater sur un run
+réel.
+
+### Non-conclusions
+
+```text
+DOES NOT ESTABLISH
+= un défaut de CCR
+= que F1 ou F2 auraient dû porter ces faits
+= qu'une commande nouvelle est nécessaire
+```
+
+### Décision produit
+
+```text
+PRODUCT DECISION
+= HUMAN-SELECTED
+```
+
+Cycle de vie, conservé dans son ordre réel :
+
+```text
+OBSERVATION                   CASE-005 Layer C · 2026-09-08
+CONSÉQUENCE DÉMONTRÉE         contrôle de suffisance · 2026-09-08
+DÉCISION HUMAINE              A1..A6 relèvent de l'autorité machine publique
+                              + connaissabilité prospective · 2026-09-08
+                              Q6 explicitement exclue — P3 reste l'autorité
+IMPLÉMENTATION CCR SYSTEM     R1 · R2 · P · 2026-09-08
+PUBLICATION                   v1.3.0 · frontière du § 2.2
+VALIDATION CONSOMMATEUR       AGENT CCR LAB #11 · v1.4.0 · voir O-011
+```
+
+---
+
+## Observation O-011 — L'effet d'invocation prospectif n'était pas connaissable pour les opérations assistées par modèle
+
+### Contexte
+
+```text
+CASE
+= aucun — usage consommateur réel hors cas numéroté
+
+SESSION
+= AGENT CCR LAB #11
+
+RUN
+= run réel préexistant, lu en surfaces publiques uniquement
+
+STEP / INTERACTION
+= consommation de R1 / R2 / P sur la ligne de base v1.4.0
+```
+
+### Observation
+
+```text
+OBSERVATION
+= la représentation 1 de l'effet d'invocation prospectif ne rend pas
+  les trois opérations assistées par modèle — DETECT, PROPOSE, ADDUCE_MODEL
+
+CONSEQUENCE
+= un opérateur sous plafond ne peut pas établir, avant d'agir, l'effet
+  d'invocation des opérations qui peuvent appeler un fournisseur
+
+BLOCKING
+= NO pour les opérations rendues
+= YES pour planifier les trois opérations absentes
+
+BLINDNESS
+= PARTIAL — l'environnement de la session nommait CCR avant tout geste ;
+  aucune de ces mentions n'a servi de preuve
+```
+
+### Attribution
+
+```text
+CCR-SIDE
+= YES
+
+CONSUMER-SIDE
+= NO
+
+CASE-SIDE
+= NO
+```
+
+### Nature
+
+```text
+AUTHORITY GAP
+= NO — le contrat existe et est supporté
+
+PUBLIC CONTRACT GAP
+= NO
+
+PUBLIC REPRESENTATION GAP
+= YES — c'est la représentation qui est incomplète, pas le contrat
+
+QUERY / DISCOVERY GAP
+= NO
+
+OPERATOR FRICTION
+= YES
+```
+
+### Contournement
+
+```text
+WORKAROUND REQUIRED
+= YES
+
+WORKAROUND
+= aucun par surface publique ; l'opérateur agit sans connaître l'effet
+
+WORKAROUND COST
+= une décision opérationnelle sous plafond se prend sans le fait qui la fonde
+```
+
+### Preuve
+
+- retour brut d'`AGENT CCR LAB #11`, journal d'observation horodaté, ligne de base v1.4.0 ;
+- `ccr operation-effects --format json` en représentation 1 : six entrées, aucune des trois
+  opérations assistées par modèle ;
+- R1 et R2 répondent, eux, aux questions testées : l'écart est isolé à cette représentation.
+
+### Analyse
+
+Ajouter une représentation à un contrat déjà supporté n'est pas ajouter un contrat : c'est la
+distinction que `compatibility.md` § 3.4.4 pose. L'observation porte donc sur l'axe de
+représentation de P, et sur lui seul. Elle vient d'un usage réel des surfaces que l'observation
+O-010 avait fait naître — le consommateur n'a pas cherché ce trou, il l'a rencontré.
+
+### Non-conclusions
+
+```text
+DOES NOT ESTABLISH
+= que la représentation 1 était incorrecte
+= que le contrat sémantique de P devait changer
+= que cette représentation était prévisible depuis CASE-005
+```
+
+### Décision produit
+
+```text
+PRODUCT DECISION
+= HUMAN-SELECTED
+```
+
+Cycle de vie, conservé dans son ordre réel :
+
+```text
+OBSERVATION                   AGENT CCR LAB #11 · 2026-09-09
+CONSÉQUENCE DÉMONTRÉE         analyse d'écart Q7 · 2026-09-09
+DÉCISION HUMAINE              représentation 2 retenue comme cible produit
+IMPLÉMENTATION CCR SYSTEM     2026-09-09 · conformité établie
+PUBLICATION                   v1.5.0 · frontière du § 2.2, § 3.4.4
+VALIDATION CONSOMMATEUR       AGENT CCR LAB #12 · v1.5.0 · voir O-012
+```
+
+---
+
+## Observation O-012 — La fermeture de l'écart prospectif est consommable en v1.5.0
+
+### Contexte
+
+```text
+CASE
+= aucun — validation consommateur fraîche hors cas numéroté
+
+SESSION
+= AGENT CCR LAB #12
+
+LIGNE DE BASE
+= v1.5.0, canoniquement publiée
+
+STEP / INTERACTION
+= validation post-publication, surfaces publiques uniquement
+```
+
+### Observation
+
+```text
+OBSERVATION
+= la frontière de publication de la représentation 2 est vérifiable
+  depuis des preuves publiques, et la représentation est consommable
+
+VERDICT
+= PASS WITH LIMITATIONS
+
+ÉTABLI
+= fermeture, côté consommateur, de l'écart démontré en O-011
+= R1 et P utilisables pour la tâche de planification testée
+= R2 inchangé pour cette question
+
+NEW PRODUCT GAP
+= NONE DEMONSTRATED
+
+BLOCKING
+= NO
+
+BLINDNESS
+= PARTIAL — même cause qu'en O-011, non employée comme preuve
+```
+
+### Attribution
+
+```text
+CCR-SIDE
+= NO — aucun écart nouveau
+
+CONSUMER-SIDE
+= NO
+
+CASE-SIDE
+= NO
+```
+
+### Nature
+
+```text
+AUTHORITY GAP
+= NO
+
+PUBLIC CONTRACT GAP
+= NO
+
+PUBLIC REPRESENTATION GAP
+= NO
+
+QUERY / DISCOVERY GAP
+= NO
+
+OPERATOR FRICTION
+= NO pour la question testée
+```
+
+### Contournement
+
+```text
+WORKAROUND REQUIRED
+= NO
+```
+
+### Preuve
+
+- retour d'`AGENT CCR LAB #12`, sorties publiques reproduites intégralement ;
+- vérification mécanique de la frontière : tag annoté, cible directe de type commit, cible
+  directe égale à la cible épluchée, présence sur le remote canonique ;
+- `src/**`, `tests/**`, journaux de run et rapports antérieurs : non ouverts.
+
+### Analyse
+
+Une publication n'est pas une validation : ce sont deux événements distincts, et c'est cette
+session qui établit le second. Les limitations relevées bornent la portée de la validation à la
+question testée ; elles ne décrivent aucun écart nouveau.
+
+### Non-conclusions
+
+```text
+DOES NOT ESTABLISH
+= que toutes les questions opérationnelles sont désormais couvertes
+= que R2 a été revalidé pour d'autres questions
+= un écart produit nouveau
+```
+
+### Décision produit
+
+```text
+PRODUCT DECISION
+= NONE
+```
+
+```text
+RERUN
+= NO
+```
+
+---
+
+## Observation O-013 — Un opérateur réel a mené une tâche à son terme sur les surfaces publiques
+
+### Contexte
+
+```text
+CASE
+= aucun — usage opérateur réel, ouvert, hors cas numéroté
+
+SESSION
+= AGENT CCR LAB #13
+
+LIGNE DE BASE
+= v1.5.0
+
+STEP / INTERACTION
+= tâche opérationnelle concrète, choisie par l'opérateur,
+  sous autorisation humaine explicite et plafond d'invocations natives
+```
+
+### Observation
+
+```text
+OBSERVATION
+= l'opérateur établit la situation du run par les surfaces publiques,
+  en déduit le geste justifié, et l'exécute
+
+OPÉRATION NATIVE RÉELLE
+= un passage de témoin
+
+STATUT FINAL DE LA TÂCHE
+= ACHEVÉE — objectif A
+
+NEW MATERIAL PRODUCT FRICTION
+= NONE DEMONSTRATED
+
+BLOCKING
+= NO
+
+BLINDNESS
+= PARTIAL — injections d'environnement nommant le laboratoire,
+  non employées comme preuve
+```
+
+### Attribution
+
+```text
+CCR-SIDE
+= NO — aucune friction matérielle nouvelle
+
+CONSUMER-SIDE
+= NO
+
+CASE-SIDE
+= NO
+```
+
+### Nature
+
+```text
+AUTHORITY GAP
+= NO
+
+PUBLIC CONTRACT GAP
+= NO
+
+PUBLIC REPRESENTATION GAP
+= NO
+
+QUERY / DISCOVERY GAP
+= NO
+
+OPERATOR FRICTION
+= NO pour la tâche conduite
+```
+
+### Contournement
+
+```text
+WORKAROUND REQUIRED
+= NO
+```
+
+### Preuve
+
+- retour d'`AGENT CCR LAB #13`, journal chronologique geste par geste, sorties publiques
+  reproduites intégralement ;
+- l'état du run, le plan de transfert, l'intention de production, la comptabilité d'invocations
+  et l'effet prospectif du pas ont tous été lus par surface publique **avant** le geste ;
+- une seule invocation native engagée, dans le plafond autorisé.
+
+### Analyse
+
+C'est la première fois qu'un opérateur du laboratoire fonde un geste réel sur les surfaces nées
+de O-010 et O-011, et les mène jusqu'à l'exécution sans recourir à un contournement. Le résultat
+est une non-friction, et une non-friction est un résultat : la charte prévoit explicitement
+qu'une expérience puisse conclure `FRICTION = NONE`.
+
+### Non-conclusions
+
+```text
+DOES NOT ESTABLISH
+= que toute tâche opérationnelle réussirait de même
+= que les surfaces publiques sont complètes
+= une conclusion sur le travail substantiel produit dans le run
+```
+
+### Décision produit
+
+```text
+PRODUCT DECISION
+= NONE
+```
+
+```text
+RERUN
+= NO
+```
+
+Le run employé conserve un reliquat non consommé. Il n'est pas rejoué, et il n'est pas consulté
+pour compléter ce document.
+
+---
+
+## Observation O-014 — L'état du programme a dépassé l'état durable du dépôt
+
+### Contexte
+
+```text
+CASE
+= aucun — phénomène de conduite de programme
+
+SESSION
+= plusieurs, sur quatre jours
+
+STEP / INTERACTION
+= reprise du laboratoire après la séquence de maintenance CCR System
+```
+
+### Observation
+
+```text
+OBSERVATION
+= l'état réellement atteint par le programme a avancé pendant que l'état
+  durable du dépôt restait à son point de départ
+
+FAIT MESURÉ
+= CASE-005 a été produit, évalué et clos le 2026-09-08 ;
+  les documents du dépôt le décrivaient encore comme non exécuté
+  jusqu'au 2026-09-12
+
+CONSEQUENCE DÉMONTRÉE
+= une reprise conduite de bonne foi sur le seul état durable a produit
+  un commit affirmant un état faux, et lui a attaché un instrument
+  postérieur de trois jours à l'expérience
+
+SECOND FAIT
+= le statut produit de P3 est resté « décision humaine en attente » dans
+  les documents de CASE-004 alors que la réponse produit existait déjà
+  dans une version publiée
+
+TROISIÈME FAIT
+= le registre d'observations s'était arrêté à CASE-002, alors que les
+  frictions de CASE-005 avaient produit trois contrats publics supportés
+  et une représentation machine
+
+BLOCKING
+= NO pour la production
+= YES pour toute reprise fondée sur le seul état durable
+```
+
+### Attribution
+
+```text
+CCR-SIDE
+= NO
+
+CONSUMER-SIDE
+= YES — conduite du laboratoire
+
+CASE-SIDE
+= NO
+```
+
+Le phénomène porte sur la persistance de l'état de programme côté consommateur. CCR était
+l'objet du travail, il n'en est pas la cause : rien ici ne s'attribue à CCR au motif qu'il était
+utilisé.
+
+### Nature
+
+```text
+AUTHORITY GAP
+= NO
+
+PUBLIC CONTRACT GAP
+= NO
+
+PUBLIC REPRESENTATION GAP
+= NO
+
+QUERY / DISCOVERY GAP
+= NO
+
+OPERATOR FRICTION
+= YES — côté conduite, pas côté produit
+```
+
+### Contournement
+
+```text
+WORKAROUND REQUIRED
+= YES
+
+WORKAROUND
+= reconstruction de l'état réel à partir des traces opérationnelles
+  et des artefacts d'exécution conservés
+
+WORKAROUND COST
+= une reprise erronée, puis une réécriture de l'historique courant
+  autorisée par l'humain pour la corriger
+```
+
+### Preuve
+
+- artefacts d'exécution du 2026-09-08 conservés et revérifiés : les deux candidats se
+  recalculent aux empreintes enregistrées, les résultats par ligne sont intacts ;
+- le dépôt ne portait aucune trace de cette exécution avant le 2026-09-12 ;
+- le commit de reprise erroné, puis son remplacement, sont tous deux des faits Git.
+
+### Analyse
+
+L'énoncé démontré est étroit et se suffit :
+
+```text
+l'état du programme peut avancer au-delà de l'état durable du dépôt
+```
+
+Là où une trace opérationnelle a été reprise immédiatement, la conséquence s'est propagée sans
+perte. Là où elle ne l'a pas été, l'état durable a divergé. C'est une observation sur la
+conduite du programme, mesurée sur son propre historique.
+
+### Non-conclusions
+
+```text
+DOES NOT ESTABLISH
+= un défaut de CCR System
+= une exigence logicielle
+= le choix d'un composant à construire
+= que le routage des sessions ou des projets soit en cause
+```
+
+### Décision produit
+
+```text
+PRODUCT DECISION
+= NONE
+```
+
+```text
+COMPOSANT LOGICIEL SÉLECTIONNÉ
+= AUCUN
+```
+
+Conformément à la règle de décision du protocole, une observation ne produit pas d'elle-même
+une décision. Le choix d'une suite appartient à l'autorité humaine.

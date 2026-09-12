@@ -173,9 +173,30 @@ CASE-005
 = observed CCR instrument : source 8993cbe, package 1.2.0, release line v1.2.0
 = no rerun, no remediation, no extra probes
 
+POST-CASE-005 REAL-CONSUMER WORK
+= reconciled, closed
+= AGENT CCR LAB #11 : R1/R2/P real consumer use on v1.4.0, closed
+  → prospective-effect gap observed, see O-011
+= AGENT CCR LAB #12 : fresh canonical v1.5.0 validation, closed
+  → PASS WITH LIMITATIONS, no new product gap, see O-012
+= AGENT CCR LAB #13 : open-ended real operator use on v1.5.0, closed
+  → objective achieved, one real native handoff, no new material
+    product friction, see O-013
+
+LAB → CCR SYSTEM PRODUCT FEEDBACK
+= 2 arcs
+= arc 1 : CASE-005 Layer C authority gap → R1 · R2 · P → published v1.3.0
+= arc 2 : #11 prospective-effect gap → P machine representation 2
+  → published v1.5.0
+
+CCR MAINTENANCE DETOUR
+= closed
+= CCR-System-native integration, QA, product repair, release and
+  governance work
+= not Lab experimental achievement, and not Lab→CCR product feedback
+
 CURRENT NEXT LAB OBJECTIVE
-= NOT YET RECONCILED
-= the operational history after CASE-005 has not been reconstructed
+= NOT YET SELECTED
 
 LAB ROADMAP
 = open
