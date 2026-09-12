@@ -371,12 +371,16 @@ PRODUCER-READY FREEZE = YES
 ## 17. Ce que ce manifeste ne couvre pas
 
 ```text
-production expérimentale     NOT STARTED
-bras témoin #8               NOT RUN
-bras CCR #9                  NOT STARTED
-Layer C #10                  PENDING
-matérialisation Git          AUCUNE — git add / commit / push = 0
+production expérimentale     FAITE — 2026-09-08
+bras témoin #8               FAIT — 30 / 30
+bras CCR #9                  FAIT — 30 / 30 · run CCR-20260908-001
+Layer C #10                  FAIT — PASS
+matérialisation Git          FAITE — commit e69d9db
 ```
+
+Le gel a tenu pendant la production : entre les deux campagnes officielles, les
+47 empreintes de ce manifeste ont été recontrôlées et trouvées identiques, et le
+watchdog était toujours à 20 000 ms.
 
 ## 18. Historique — déviation procédurale sur A07
 

@@ -102,7 +102,10 @@ REVUE D'EFFICACITÉ PROCÉDURALE = COMPLETE
                 aucune terminaison canonique native n'est atteignable
                 sur le chemin natif v1.1.0 audité
 
-SUIVI PRODUIT CCR SYSTEM = candidat P3, décision humaine en attente
+SUIVI PRODUIT CCR SYSTEM = P3 TRANCHÉ HORS DE CASE-004
+                réponse produit livrée par CCR System en v1.2.0
+                CASE-004 n'a été ni rejoué ni réinterprété
+                détail en EVALUATION.md § 7
 ```
 
 ```text
@@ -122,5 +125,5 @@ machine publique.
 ```text
 CASE-004
 = DOCUMENTARILY MATERIALIZED
-= READY FOR CLOSURE AUDIT
+= CLOSED
 ```

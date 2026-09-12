@@ -103,6 +103,22 @@ ajoute un troisième axe distinct de la matrice de vérité — un verrou de
 conformité à la tâche — et une revue d'efficacité procédurale conduite après
 l'évaluation.
 
+### CASE-005 — Bounded Concurrency Task Pool
+
+```text
+FORME    implémentation asynchrone bornée, à partir d'un squelette
+ÉTAT     cas expérimental terminé
+```
+
+[`cases/case-005-bounded-concurrency-task-pool/`](cases/case-005-bounded-concurrency-task-pool/)
+
+Premier cas dont la difficulté porte sur l'**ordonnancement** plutôt que sur la
+logique métier : le contrat dit ce qui doit démarrer, quand, dans quel ordre, et
+surtout ce qui ne doit jamais démarrer. Il ajoute au protocole une preuve de
+non-progression qui ne repose sur aucun délai — chaque ligne de vérité sensible
+à la vivacité s'exécute dans un processus isolé dont la fin naturelle est un
+fait, là où le watchdog opérationnel ne prononce jamais qu'un `INCONCLUSIVE`.
+
 Les résultats, les incertitudes résiduelles et les non-conclusions de chaque cas appartiennent à ses propres documents. Ce README ne les résume pas.
 
 ## Documents
@@ -125,26 +141,41 @@ CCR SYSTEM
 = not modified by default
 
 CASE-001
-= completed experimental case
+= closed, experimental execution complete
 
 CASE-002
-= completed experimental case
+= closed, experimental execution complete
 
 CASE-003
-= complete
+= closed, experimental execution complete
 = Layer A : baseline 27/27, CCR 27/27, no software winner
 = Layer B : CCR quota-exhausted at 24/24, no natural convergence
 = Layer C : public F1/F2 consumption PASS
 = no CCR System product follow-up justified
 
 CASE-004
-= complete, documentarily materialized
+= closed
 = Layer A : baseline 26/26, CCR 26/26, T1 PASS both, no software winner
 = Layer B : declared 32-invocation budget consumed, pending transfer
 = Layer C : public F1/F2 consumption PASS, 31 durable activities
 = procedural efficiency review : no native canonical termination reachable
   on the audited v1.1.0 native path
-= CCR System product follow-up : candidate P3, human decision pending
+= CCR System product follow-up : P3 settled outside CASE-004, answered by
+  CCR v1.2.0 ; the v1.1.0 finding itself is preserved, not revised
+
+CASE-005
+= closed, experimental execution complete   (2026-09-08)
+= Layer A : baseline 30/30, CCR 30/30, T1/T2/T3 PASS both, no software winner
+= per-row verdicts identical, final-outcome difference 0/30
+= Layer B : declared 16-invocation budget, 12 consumed, voluntary stop,
+  pending transfer, no native termination required
+= Layer C : public F1/F2 consumption PASS, 11 durable activities
+= observed CCR instrument : source 8993cbe, package 1.2.0, release line v1.2.0
+= no rerun, no remediation, no extra probes
+
+CURRENT NEXT LAB OBJECTIVE
+= NOT YET RECONCILED
+= the operational history after CASE-005 has not been reconstructed
 
 LAB ROADMAP
 = open

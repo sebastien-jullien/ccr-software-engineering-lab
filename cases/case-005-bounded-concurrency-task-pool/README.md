@@ -4,7 +4,7 @@
 FORME     implémentation asynchrone bornée, à partir d'un squelette
 CLASSE    bounded asynchronous feature implementation
 CANDIDAT  task-pool
-ÉTAT      matérialisé · préqualifié · AUCUNE production expérimentale
+ÉTAT      exécuté · évalué · CLOS — 30/30 contre 30/30, aucun vainqueur
 ```
 
 ## Forme du cas
@@ -84,11 +84,52 @@ RUNBOOK.md       procédure d'exécution du cas
 TRUTH-MATRIX.md  les 30 lignes — CONTROL-PRIVATE
 PREQUALIFICATION.md   preuves de préqualification de l'oracle
 FREEZE-MANIFEST.md    empreintes de gel
-BASELINE-RECORD.md    bras témoin — NOT RUN
-RUN-001-RECORD.md     bras CCR — NOT STARTED
-EVALUATION.md         PENDING
-PUBLIC-CONSUMPTION.md PENDING
+BASELINE-RECORD.md    bras témoin #8 — 30/30
+RUN-001-RECORD.md     bras CCR #9 — 30/30, run CCR-20260908-001
+EVALUATION.md         résultat officiel — égalité, vainqueur NONE
+PUBLIC-CONSUMPTION.md Layer C #10 — PASS
 ```
+
+## Résultat
+
+Les deux bras atteignent le **succès logiciel complet**. À égalité stricte, la
+règle gelée interdit tout départage.
+
+```text
+BRAS TÉMOIN #8   30 / 30    T1 PASS · T2 PASS · T3 PASS
+BRAS CCR #9      30 / 30    T1 PASS · T2 PASS · T3 PASS
+                            run CCR-20260908-001 · 12 invocations sur 16
+
+VERDICTS LIGNE À LIGNE      identiques sur les 30 lignes
+ÉCART D'ISSUE FINALE        0 / 30
+SOFTWARE WINNER             NONE
+```
+
+La question expérimentale posée en tête de ce document reçoit une réponse
+mécanique. Aucune ligne n'a été tranchée par un délai : les 30 lignes des deux
+bras ont conclu par la fin naturelle de leur processus isolé, et le watchdog
+opérationnel ne s'est déclenché nulle part.
+
+```text
+lignes concluantes          30 / 30   dans les deux bras
+fin naturelle du processus  30 / 30   dans les deux bras
+watchdog déclenché          0 ligne
+INCONCLUSIVE                0 ligne
+ARTIFACT FAILURE            0 ligne
+```
+
+Ce que ce résultat ne dit pas :
+
+```text
+égalité de sortie logicielle   ≠  équivalence du coût de processus
+succès logiciel complet        ≠  vainqueur
+30/30 des deux côtés           ≠  jugement sur la contradiction CCR
+```
+
+Résultat officiel dans [`EVALUATION.md`](EVALUATION.md), production des bras dans
+[`BASELINE-RECORD.md`](BASELINE-RECORD.md) et
+[`RUN-001-RECORD.md`](RUN-001-RECORD.md), lecture publique dans
+[`PUBLIC-CONSUMPTION.md`](PUBLIC-CONSUMPTION.md).
 
 ## État
 
@@ -101,6 +142,12 @@ RÉFÉRENCES               PRÉQUALIFIÉES
 CONTRÔLES NÉGATIFS       PRÉQUALIFIÉS
 WATCHDOG OPÉRATIONNEL    20 000 ms par ligne · HUMAN FROZEN
 PRODUCER-READY FREEZE    YES
-MATÉRIALISATION GIT      EN ATTENTE — aucun add, commit ni push
-PRODUCTION EXPÉRIMENTALE NOT STARTED
+MATÉRIALISATION GIT      COMPLÈTE — commit e69d9db
+PRODUCTION EXPÉRIMENTALE FAITE — 2026-09-08
+BRAS TÉMOIN #8           COMPLET · 30 / 30
+BRAS CCR #9              COMPLET · 30 / 30 · run CCR-20260908-001
+ÉVALUATION               COMPLÈTE · SOFTWARE WINNER NONE · écart 0 / 30
+LAYER C #10              PASS
+INSTRUMENT CCR OBSERVÉ   source 8993cbe · paquet 1.2.0 · ligne v1.2.0
+CAS                      CLOS
 ```

@@ -264,6 +264,52 @@ IMPLEMENTATION            = NOT AUTHORIZED
 Aucune commande, aucun nom d'état, aucun champ, aucun événement et aucune
 version de contrat n'est choisi ici.
 
+### Suite produit de P3 — enregistrement de clôture
+
+La décision humaine attendue par le bloc ci-dessus a été prise **hors de
+CASE-004**. Elle est enregistrée ici pour que le statut de P3 ne reste pas
+ouvert dans ce dossier, et pour rien d'autre.
+
+```text
+DÉCISION HUMAINE          = PRISE, HORS DE CASE-004
+LIEU DE LA DÉCISION       = CCR System, projet R&D autonome
+RÉPONSE PRODUIT           = contrat de domaine « intention de production »
+COMMIT CCR SYSTEM         = d85e9eb
+                            feat: add durable production intent control
+PREMIÈRE VERSION PUBLIÉE
+  QUI LA CONTIENT         = CCR v1.2.0
+```
+
+Surface livrée, telle que CCR System la déclare :
+
+```text
+CONTRAT               docs/specs/production-intent.md
+                      « contrat de domaine ajouté après v1.1.0 »
+                      compatibility.md § 3.4
+COMMANDES             ccr end-production · ccr reactivate-production
+FAIT DURABLE          production_intent
+EXPOSITION MACHINE    ccr run-activity --format json
+                        --machine-representation-version 2
+                      ajoute production_intent, sous AVAILABLE uniquement
+                      représentation 1 inchangée, rendue par défaut
+```
+
+Ce que cet enregistrement n'est pas :
+
+```text
+CASE-004 REJOUÉ                            = NON
+CASE-004 RÉINTERPRÉTÉ                      = NON
+CASE-004 QUALIFIANT CETTE IMPLÉMENTATION   = NON
+LIGNES DE VÉRITÉ · SCORES · LAYER A/B/C    = INCHANGÉS
+P3, CONSTAT SUR v1.1.0                     = CONSERVÉ, HISTORIQUE
+```
+
+La limitation P3 reste vraie de ce qui a été observé : elle porte sur les
+surfaces machine publiques F1/F2 de CCR v1.1.0, et aucune version ultérieure
+n'efface ce constat. CASE-004 n'a fourni ni preuve de conformité, ni
+qualification, ni acceptation de la surface livrée en v1.2.0 : cette
+qualification appartient à CCR System et a été conduite chez lui.
+
 ## 8. Déviations de protocole
 
 ```text
@@ -297,7 +343,7 @@ CCR SYSTEM FAILURE
 CCR SYSTEM PRODUCT CHANGE      = NONE IMPLEMENTED
 NEW CONTRACT VIOLATION         = NONE
 CCR SYSTEM v1.1.0              = KEEP FROZEN
-P3                             = candidat produit, décision humaine en attente
+P3                             = tranché hors de CASE-004, en CCR v1.2.0 · § 7
 ```
 
 ## 10. État de clôture
@@ -310,8 +356,10 @@ PROCEDURAL EFFICIENCY REVIEW    = COMPLETE
 LAYER C                         = PASS
 SOFTWARE WINNER                 = NONE
 OPEN SOFTWARE EVALUATION WORK   = NONE
+CLOSURE AUDIT                   = COMPLETE
+OPEN ADMINISTRATIVE WORK        = NONE
 
 CASE-004
 = DOCUMENTARILY MATERIALIZED
-= READY FOR CLOSURE AUDIT
+= CLOSED
 ```

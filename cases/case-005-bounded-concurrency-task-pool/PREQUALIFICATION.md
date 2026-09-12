@@ -9,7 +9,9 @@ PLATEFORME      win32 · Windows 10 Pro 19045
 DÉPÔT           ccr-software-engineering-lab
 DISCIPLINE      R2 — stdout/stderr complets, code de sortie capté séparément,
                 commande exacte, horodatage, durée, identités de lignes
-PRODUCTION EXPÉRIMENTALE   AUCUNE
+PRODUCTION EXPÉRIMENTALE   AUCUNE AU MOMENT DE CETTE PRÉQUALIFICATION
+                           (les deux bras ont été produits ensuite, le même
+                           jour ; résultat dans EVALUATION.md)
 ÉTAT DES PREUVES           campagnes complètes du 2026-09-08, plus les
                            exécutions ciblées A05 et A07 postérieures à la
                            réparation de réalisation de A05 et à l'amendement

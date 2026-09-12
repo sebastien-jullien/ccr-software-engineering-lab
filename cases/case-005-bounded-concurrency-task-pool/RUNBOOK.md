@@ -14,6 +14,12 @@ réseau        aucun
 
 `node_modules/` n'est pas versionné.
 
+Aucune version de CCR n'a été déclarée à l'avance pour ce cas. La provenance
+réellement observée au démarrage du bras CCR est consignée dans
+[`RUN-001-RECORD.md`](RUN-001-RECORD.md), qui en est la seule autorité.
+
+Le bras témoin n'utilise pas CCR.
+
 ## Phase 0 — gel (FAITE)
 
 ```text
@@ -64,26 +70,43 @@ WINNER COMPARISON          = FORBIDDEN
 dénominateur de vérité     = 30, TOUJOURS
 ```
 
-## Phase 3 — matérialisation Git (À FAIRE)
-
-Aucun `git add`, `git commit` ni `git push` n'a été exécuté pour ce cas.
-
-## Phase 4 — bras témoin, sans CCR (NOT RUN)
+## Phase 3 — matérialisation Git (FAITE)
 
 ```text
-SESSION      AGENT CCR LAB #8 — non ouverte
-QUARANTAINE  la sortie substantive ne doit jamais atteindre l'opérateur du bras CCR
+COMMIT    e69d9db  test: materialize CASE-005 bounded concurrency experiment
+CONTENU   participant/ · control/ · documents du cas
+PUSH      effectué
+```
+
+La matérialisation publie le matériel gelé. Elle ne produit aucun résultat
+expérimental, et n'en préjuge aucun.
+
+## Phase 4 — bras témoin, sans CCR (FAITE)
+
+```text
+SESSION      AGENT CCR LAB #8 — ouverte, close
+DATE         2026-09-08
+QUARANTAINE  tenue — aucune sortie substantive n'a atteint le bras CCR
 ENTRÉE       participant/ — octet pour octet
 SORTIE       une seule écriture : src/task-pool.ts
+RÉSULTAT     30 / 30
 ```
 
-## Phase 5 — bras CCR (NOT STARTED)
+Détail dans [`BASELINE-RECORD.md`](BASELINE-RECORD.md).
+
+## Phase 5 — bras CCR (FAITE)
 
 ```text
-SESSION      AGENT CCR LAB #9 — non ouverte
+SESSION      AGENT CCR LAB #9 — ouverte, close
+DATE         2026-09-08
+RUN CCR      CCR-20260908-001
 ENTRÉE       participant/ — octet pour octet, identique à la phase 4
 BUDGET       16 invocations natives de production, FROZEN
+CONSOMMÉ     12 / 16 — arrêt volontaire · 17e invocation = 0
+RÉSULTAT     30 / 30
 ```
+
+Détail dans [`RUN-001-RECORD.md`](RUN-001-RECORD.md).
 
 Règles de budget gelées :
 
@@ -98,7 +121,10 @@ ajustement du budget après production
    = INTERDIT
 ```
 
-## Phase 6 — évaluation
+## Phase 6 — évaluation (FAITE)
+
+Conduite le 2026-09-08, bras témoin puis bras CCR, dans l'ordre prédéclaré.
+Résultat officiel dans [`EVALUATION.md`](EVALUATION.md).
 
 Pour chaque bras, dans cet ordre :
 
@@ -124,11 +150,15 @@ une ligne INCONCLUSIVE         →  ÉVALUATION INCOMPLETE
 Toute panne d'évaluateur (`EVALUATION ARTIFACT FAILURE`) est un défaut du
 harnais, **jamais** un échec du candidat : réparer et relancer la ligne.
 
-## Phase 7 — consommation publique (Layer C)
+## Phase 7 — consommation publique (Layer C) (FAITE)
 
 ```text
-SESSION   AGENT CCR LAB #10 — non ouverte
+SESSION   AGENT CCR LAB #10 — ouverte, close
+DATE      2026-09-08
+RÉSULTAT  PASS
 ```
+
+Détail dans [`PUBLIC-CONSUMPTION.md`](PUBLIC-CONSUMPTION.md).
 
 ## Discipline de preuve (R2)
 
