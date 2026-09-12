@@ -1,0 +1,427 @@
+{
+  "checkpoint": {
+    "format_version": 1,
+    "updated_at": "2026-09-12T12:58:27Z"
+  },
+  "git_context": {
+    "repository": "ccr-software-engineering-lab",
+    "branch": "main",
+    "observed_base_head": "7e9ae01ca902af8fe8d255303397ff9ab81c676a",
+    "observed_base_tree": "e424836e82d1f048e2b74d025d95ab4730447d07"
+  },
+  "streams": [
+    {
+      "id": "case-001",
+      "title": "CASE-001 — Reservation Interval Engine",
+      "type": "CASE",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-001",
+          "kind": "repo-path",
+          "ref": "cases/case-001-reservation-interval-engine/EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-001",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "459a63c54b5a36ed4bf94f3621130b1232cfb404"
+          }
+        },
+        {
+          "id": "ev-002",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-001",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-002",
+      "title": "CASE-002 — Configuration Overlay Repair",
+      "type": "CASE",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-003",
+          "kind": "repo-path",
+          "ref": "cases/case-002-configuration-overlay-repair/EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-002",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "20d4fa1e842b89702c86611b8dd2dae44b0ff6e5"
+          }
+        },
+        {
+          "id": "ev-004",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-002",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-003",
+      "title": "CASE-003 — Task Planner Dependency Extension",
+      "type": "CASE",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-005",
+          "kind": "repo-path",
+          "ref": "cases/case-003-task-planner-dependency-extension/EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-003",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "fc50e9685f6cfe612392deb084065132c0274ff8"
+          }
+        },
+        {
+          "id": "ev-006",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-003",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-004",
+      "title": "CASE-004 — Stable Ranking Cost-Bound Refactor",
+      "type": "CASE",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-007",
+          "kind": "repo-path",
+          "ref": "cases/case-004-stable-ranking-cost-bound-refactor/EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-004",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "8c5febba38801d5542f5bbdc09634323debd533b"
+          }
+        },
+        {
+          "id": "ev-008",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-004",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-005",
+      "title": "CASE-005 — Bounded Concurrency Task Pool",
+      "type": "CASE",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-009",
+          "kind": "repo-path",
+          "ref": "cases/case-005-bounded-concurrency-task-pool/EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-005",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "c0d48f1ba48c1d73a046445d1468fbaefd1f8458"
+          }
+        },
+        {
+          "id": "ev-010",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:case-005",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "session-11",
+      "title": "AGENT CCR LAB #11 — usage consommateur réel R1/R2/P",
+      "type": "SESSION",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-011",
+          "kind": "observation",
+          "ref": "O-011",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:session-11",
+            "field": "state",
+            "value": "CLOSED"
+          }
+        },
+        {
+          "id": "ev-012",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:session-11",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "session-12",
+      "title": "AGENT CCR LAB #12 — validation consommateur fraîche de v1.5.0",
+      "type": "SESSION",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-013",
+          "kind": "observation",
+          "ref": "O-012",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:session-12",
+            "field": "state",
+            "value": "CLOSED"
+          }
+        },
+        {
+          "id": "ev-014",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:session-12",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "session-13",
+      "title": "AGENT CCR LAB #13 — usage opérateur réel ouvert",
+      "type": "SESSION",
+      "state": "CLOSED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-015",
+          "kind": "observation",
+          "ref": "O-013",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:session-13",
+            "field": "state",
+            "value": "CLOSED"
+          }
+        },
+        {
+          "id": "ev-016",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:session-13",
+            "field": "state",
+            "value": "CLOSED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        },
+        {
+          "id": "ev-017",
+          "kind": "session",
+          "ref": "CCR-20260830-001",
+          "policy": "SEALED",
+          "supports": {
+            "subject": "stream:session-13",
+            "field": "state",
+            "value": "CLOSED"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tooling-experiment-001",
+      "title": "TOOLING-EXPERIMENT-001 — point de reprise d’état de programme durable",
+      "type": "TOOLING_EXPERIMENT",
+      "state": "IMPLEMENTED",
+      "updated_at": "2026-09-12T12:58:27Z",
+      "evidence": [
+        {
+          "id": "ev-018",
+          "kind": "repo-path",
+          "ref": "tooling/program-state/program-state.mjs",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:tooling-experiment-001",
+            "field": "state",
+            "value": "IMPLEMENTED"
+          },
+          "observed": {
+            "blob": "9864e46f7f33d0f0e2c9df905fb5f494955045aa"
+          }
+        },
+        {
+          "id": "ev-019",
+          "kind": "repo-path",
+          "ref": "tooling/program-state/tests/program-state.test.mjs",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:tooling-experiment-001",
+            "field": "state",
+            "value": "IMPLEMENTED"
+          },
+          "observed": {
+            "blob": "1daa80df3c8cd501d394b707e56a84982862a3c6"
+          }
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "tooling-experiment-001-selected",
+      "question": "TOOLING-EXPERIMENT-001 est-il le flux de travail sélectionné du Lab ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-020",
+          "kind": "repo-path",
+          "ref": "README.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-001-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tooling-experiment-001-design",
+      "question": "La conception de TOOLING-EXPERIMENT-001 est-elle ratifiée et gelée ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-021",
+          "kind": "repo-path",
+          "ref": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-001-design",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+          }
+        }
+      ]
+    }
+  ],
+  "next_action": {
+    "state": "SELECTED",
+    "value": "Ouvrir la période de dogfood réel de TOOLING-EXPERIMENT-001, selon le protocole gelé — phases A à D.",
+    "evidence": [
+      {
+        "id": "ev-022",
+        "kind": "repo-path",
+        "ref": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "state",
+          "value": "SELECTED"
+        },
+        "observed": {
+          "blob": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+        }
+      },
+      {
+        "id": "ev-023",
+        "kind": "repo-path",
+        "ref": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "value",
+          "value": "Ouvrir la période de dogfood réel de TOOLING-EXPERIMENT-001, selon le protocole gelé — phases A à D."
+        },
+        "observed": {
+          "blob": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+        }
+      }
+    ]
+  }
+}
