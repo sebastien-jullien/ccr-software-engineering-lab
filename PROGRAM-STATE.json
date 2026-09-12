@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T15:14:58Z"
+    "updated_at": "2026-09-12T16:09:38Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -313,10 +313,10 @@
       "title": "TOOLING-EXPERIMENT-001 — point de reprise d’état de programme durable",
       "type": "TOOLING_EXPERIMENT",
       "state": "IMPLEMENTED",
-      "updated_at": "2026-09-12T14:29:28Z",
+      "updated_at": "2026-09-12T16:09:19Z",
       "evidence": [
         {
-          "id": "ev-025",
+          "id": "ev-031",
           "kind": "repo-path",
           "ref": "tooling/program-state/program-state.mjs",
           "policy": "VERIFIABLE",
@@ -326,11 +326,11 @@
             "value": "IMPLEMENTED"
           },
           "observed": {
-            "blob": "828297f943195ffab60bd336f645dd5bcefbb6ff"
+            "blob": "4ce1136daefe07a6f2cd43379932da8b8eda8df4"
           }
         },
         {
-          "id": "ev-026",
+          "id": "ev-032",
           "kind": "repo-path",
           "ref": "tooling/program-state/tests/program-state.test.mjs",
           "policy": "VERIFIABLE",
@@ -340,7 +340,30 @@
             "value": "IMPLEMENTED"
           },
           "observed": {
-            "blob": "fdd27ba5c3ef3a36b7f165bb1b73c76b8601b7da"
+            "blob": "936e55cb02edeb00735e7e308d43feaf49ac41ff"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tooling-experiment-002",
+      "title": "Durable Mission Representation",
+      "type": "TOOLING EXPERIMENT",
+      "state": "OPEN",
+      "updated_at": "2026-09-12T16:09:27Z",
+      "evidence": [
+        {
+          "id": "ev-033",
+          "kind": "repo-path",
+          "ref": "13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:tooling-experiment-002",
+            "field": "state",
+            "value": "OPEN"
+          },
+          "observed": {
+            "blob": "4779da2d456abe48ca167241d400fd18003fc67c"
           }
         }
       ]
@@ -428,7 +451,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Représenter et ouvrir TOOLING-EXPERIMENT-002 — représentation durable de mission — comme prochain flux actif du Lab.",
+    "value": "Concevoir et prédéclarer Mission Object v0 pour TOOLING-EXPERIMENT-002 — représentation durable de mission.",
     "evidence": [
       {
         "id": "ev-022",
@@ -445,14 +468,17 @@
         }
       },
       {
-        "id": "ev-029",
-        "kind": "decision",
-        "ref": "decision:tooling-experiment-002-selected",
-        "policy": "OPAQUE_BUT_ESTABLISHED",
+        "id": "ev-034",
+        "kind": "repo-path",
+        "ref": "12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md",
+        "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Représenter et ouvrir TOOLING-EXPERIMENT-002 — représentation durable de mission — comme prochain flux actif du Lab."
+          "value": "Concevoir et prédéclarer Mission Object v0 pour TOOLING-EXPERIMENT-002 — représentation durable de mission."
+        },
+        "observed": {
+          "blob": "ac73e80ecb67e402d1ba6b8b1db08a4a92647f79"
         }
       }
     ]

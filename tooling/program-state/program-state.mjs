@@ -39,8 +39,13 @@ export const DECISION_STATES = ['PENDING', 'RATIFIED', 'UNKNOWN', 'UNRESOLVED'];
  */
 export const DECISION_CREATE_STATES = ['PENDING', 'RATIFIED'];
 
-/** Amendement 001 : seule collection dont la création est autorisée. */
-export const CREATABLE = ['decision'];
+/**
+ * Collections dont la création explicite est autorisée.
+ *   decision — amendement 001
+ *   stream   — amendement 003
+ * Toute autre collection reste non créable : il n'y a pas de CRUD générique.
+ */
+export const CREATABLE = ['decision', 'stream'];
 export const NEXT_ACTION_STATES = ['NOT_YET_SELECTED', 'SELECTED', 'UNKNOWN', 'UNRESOLVED'];
 
 export const EVIDENCE_POLICIES = ['VERIFIABLE', 'OPAQUE_BUT_ESTABLISHED', 'SEALED'];
@@ -853,6 +858,71 @@ export function update(state, change) {
   return state;
 }
 
+/**
+ * Amendement 003 — création explicite d'UN flux.
+ *
+ * Même discipline que la création d'une décision : un candidat complet est
+ * rendu, rien n'est écrit, et l'appelant n'écrit qu'après un retour réussi.
+ * L'état doit appartenir au vocabulaire déjà accepté ; aucun jeton de cycle
+ * de vie n'est introduit ici.
+ */
+export function createStream(state, spec) {
+  const { id, title, type, streamState, evidence, now } = spec;
+
+  if (!id) throw new UpdateRefused('création refusée : id absent');
+  if (!title) throw new UpdateRefused('création refusée : title absent');
+  if (!type) throw new UpdateRefused('création refusée : type absent');
+  if (!streamState) throw new UpdateRefused('création refusée : state absent');
+  if (!STREAM_STATES.includes(streamState)) {
+    throw new UpdateRefused('création refusée : état hors vocabulaire — ' + String(streamState));
+  }
+  if ((state.streams || []).some((stream) => stream.id === id)) {
+    throw new UpdateRefused('création refusée : identifiant de flux déjà existant — ' + id);
+  }
+
+  const subject = 'stream:' + id;
+  const supporting = (evidence || []).filter(
+    (entry) =>
+      entry.supports &&
+      entry.supports.subject === subject &&
+      entry.supports.field === 'state' &&
+      entry.supports.value === streamState,
+  );
+  if (supporting.length === 0) {
+    throw new UpdateRefused(
+      'création refusée : aucune preuve ne soutient ' + subject + ' · state = ' + streamState,
+    );
+  }
+  for (const entry of supporting) {
+    if (!evidenceMaySupport(entry, { field: 'state', value: streamState })) {
+      throw new UpdateRefused(
+        'création refusée : preuve inadmissible pour cette affirmation — ' + (entry.id || entry.ref),
+      );
+    }
+  }
+
+  const candidate = JSON.parse(JSON.stringify(state));
+  candidate.streams = [...(candidate.streams || []), {
+    id,
+    title,
+    type,
+    state: streamState,
+    updated_at: now,
+    evidence: supporting,
+  }];
+  candidate.checkpoint.updated_at = now;
+
+  const problems = validateCandidate(candidate);
+  if (problems.length > 0) {
+    const first = problems[0];
+    throw new UpdateRefused(
+      'création refusée : point de reprise candidat invalide — ' +
+        first.outcome + ' ' + first.subject + (first.note ? ' : ' + first.note : ''),
+    );
+  }
+  return candidate;
+}
+
 /* ------------------------------------------------------------------ *
  * CLI
  * ------------------------------------------------------------------ */
@@ -874,6 +944,7 @@ const USAGE = [
   '  program-state.mjs check  <PROGRAM-STATE.json>',
   '  program-state.mjs update <PROGRAM-STATE.json> --subject <s> --field <f> --value <v> [--evidence <json>]',
   '  program-state.mjs update <PROGRAM-STATE.json> --create decision --id <id> --question <q> --state <s> --evidence <json>',
+  '  program-state.mjs update <PROGRAM-STATE.json> --create stream   --id <id> --title <t> --type <ty> --state <s> --evidence <json>',
   '',
   'La création est un mode explicite : sans --create, un identifiant inconnu',
   'reste une erreur. Une faute de frappe ne crée jamais une entrée.',
@@ -931,19 +1002,31 @@ export function main(argv) {
       }
       let candidate;
       try {
-        candidate = createDecision(state, {
-          id: flags.id,
-          question: flags.question,
-          decisionState: flags.state,
-          evidence,
-          now,
-        });
+        candidate =
+          flags.create === 'decision'
+            ? createDecision(state, {
+                id: flags.id,
+                question: flags.question,
+                decisionState: flags.state,
+                evidence,
+                now,
+              })
+            : createStream(state, {
+                id: flags.id,
+                title: flags.title,
+                type: flags.type,
+                streamState: flags.state,
+                evidence,
+                now,
+              });
       } catch (error) {
         process.stderr.write('REFUSED — ' + error.message + '\n');
         return 2;
       }
       save(file, candidate);
-      process.stdout.write('décision créée : ' + flags.id + '\n');
+      process.stdout.write(
+        (flags.create === 'decision' ? 'décision créée : ' : 'flux créé : ') + flags.id + '\n',
+      );
       return 0;
     }
 

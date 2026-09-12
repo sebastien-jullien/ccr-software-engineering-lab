@@ -18,6 +18,7 @@ import { join } from 'node:path';
 import {
   CREATABLE,
   OUTCOME,
+  STREAM_STATES,
   blobOf,
   canonicalize,
   check,
@@ -764,18 +765,22 @@ test('identifiant dupliqué rejeté, octets inchangés', () => {
   assert.equal(load(file).decisions.length, 1);
 });
 
-test('type de création inconnu rejeté — aucune création de flux', () => {
+test('type de création inconnu rejeté — pas de création générique de collection', () => {
   const root = tempRepo();
   commitAll(root, 'init');
   const file = checkpointOnDisk(root);
   const before = readFileSync(file);
 
-  for (const type of ['stream', 'streams', 'evidence', 'next_action', 'collection']) {
+  for (const type of ['streams', 'evidence', 'next_action', 'collection', 'case', 'checkpoint']) {
     const code = main(['update', file, '--create', type, '--id', 'x', '--question', 'q', '--state', 'RATIFIED']);
     assert.equal(code, 2, 'création refusée pour le type ' + type);
   }
   assert.deepEqual(readFileSync(file), before);
-  assert.deepEqual(CREATABLE, ['decision'], 'une seule collection créable, gelée');
+  assert.deepEqual(
+    CREATABLE,
+    ['decision', 'stream'],
+    'deux collections créables, nommées — jamais une création générique',
+  );
 });
 
 test('champs requis absents rejetés', () => {
@@ -1250,6 +1255,213 @@ test('le séparateur de clé composite reste un caractère impossible dans un id
     0,
     'aucune contradiction fantôme : le séparateur ne peut pas apparaître dans un identifiant',
   );
+});
+
+/* ------------------------------------------------------------------ *
+ * Amendement 003 — création explicite d'un flux
+ * ------------------------------------------------------------------ */
+
+function streamEvidence(id, value, extra = {}) {
+  return {
+    id: extra.id || 'ev-stream',
+    kind: extra.kind || 'repo-path',
+    ref: extra.ref || 'SOURCE.md',
+    policy: extra.policy || 'VERIFIABLE',
+    supports: { subject: 'stream:' + id, field: 'state', value },
+  };
+}
+
+function streamArgs(file, id, title, type, state, evidence) {
+  const args = ['update', file, '--create', 'stream'];
+  if (id !== null) args.push('--id', id);
+  if (title !== null) args.push('--title', title);
+  if (type !== null) args.push('--type', type);
+  if (state !== null) args.push('--state', state);
+  if (evidence !== null) args.push('--evidence', JSON.stringify(evidence));
+  return args;
+}
+
+function streamFixture(root) {
+  writeFileSync(join(root, 'SOURCE.md'), 'source\n');
+  commitAll(root, 'init');
+  const file = join(root, 'PROGRAM-STATE.json');
+  save(file, baseState());
+  return file;
+}
+
+test('création explicite d’un flux réussie, avec l’état OPEN préexistant', () => {
+  const root = tempRepo();
+  const file = streamFixture(root);
+
+  const code = main(
+    streamArgs(file, 'te-002', 'Durable Mission Representation', 'TOOLING EXPERIMENT', 'OPEN',
+      streamEvidence('te-002', 'OPEN')),
+  );
+  assert.equal(code, 0);
+
+  const after = load(file);
+  assert.equal(after.streams.length, 1);
+  const created = after.streams[0];
+  assert.deepEqual(
+    Object.keys(created),
+    ['id', 'title', 'type', 'state', 'updated_at', 'evidence'],
+    'forme complète du modèle existant, aucun champ supplémentaire',
+  );
+  assert.equal(created.id, 'te-002');
+  assert.equal(created.title, 'Durable Mission Representation');
+  assert.equal(created.type, 'TOOLING EXPERIMENT');
+  assert.equal(created.state, 'OPEN');
+  assert.ok(created.updated_at, 'updated_at estampillé mécaniquement');
+  assert.equal(created.evidence.length, 1);
+  assert.equal(created.evidence[0].supports.value, 'OPEN');
+});
+
+test('OPEN est accepté parce qu’il appartient déjà au vocabulaire gelé', () => {
+  assert.ok(STREAM_STATES.includes('OPEN'), 'jeton préexistant, non introduit par l’amendement 003');
+  assert.equal(
+    STREAM_STATES.length,
+    6,
+    'aucun jeton de cycle de vie ajouté : le vocabulaire reste celui de la v0',
+  );
+  for (const invented of ['ACTIVE', 'READY', 'RUNNING', 'PLANNED', 'SELECTED']) {
+    assert.equal(STREAM_STATES.includes(invented), false, invented + ' n’existe pas');
+  }
+});
+
+test('identifiant de flux dupliqué rejeté, octets inchangés', () => {
+  const root = tempRepo();
+  const file = streamFixture(root);
+  main(streamArgs(file, 'te-002', 't', 'TOOLING EXPERIMENT', 'OPEN', streamEvidence('te-002', 'OPEN')));
+
+  const before = readFileSync(file);
+  const code = main(
+    streamArgs(file, 'te-002', 'autre titre', 'TOOLING EXPERIMENT', 'OPEN', streamEvidence('te-002', 'OPEN')),
+  );
+  assert.equal(code, 2);
+  assert.deepEqual(readFileSync(file), before);
+  assert.equal(load(file).streams.length, 1);
+});
+
+test('champs requis absents rejetés à la création d’un flux', () => {
+  const root = tempRepo();
+  const file = streamFixture(root);
+  const before = readFileSync(file);
+  const ev = streamEvidence('te-002', 'OPEN');
+
+  assert.equal(main(streamArgs(file, null, 't', 'TY', 'OPEN', ev)), 2, 'id absent');
+  assert.equal(main(streamArgs(file, 'te-002', null, 'TY', 'OPEN', ev)), 2, 'title absent');
+  assert.equal(main(streamArgs(file, 'te-002', 't', null, 'OPEN', ev)), 2, 'type absent');
+  assert.equal(main(streamArgs(file, 'te-002', 't', 'TY', null, ev)), 2, 'state absent');
+  assert.deepEqual(readFileSync(file), before);
+});
+
+test('état de flux hors vocabulaire rejeté', () => {
+  const root = tempRepo();
+  const file = streamFixture(root);
+  const before = readFileSync(file);
+
+  for (const invented of ['ACTIVE', 'READY', 'RUNNING', 'PLANNED', 'INVENTÉ']) {
+    const code = main(
+      streamArgs(file, 'te-002', 't', 'TY', invented, streamEvidence('te-002', invented)),
+    );
+    assert.equal(code, 2, 'état refusé : ' + invented);
+  }
+  assert.deepEqual(readFileSync(file), before);
+});
+
+test('preuve absente ou ne soutenant pas exactement l’état du flux rejetée', () => {
+  const root = tempRepo();
+  const file = streamFixture(root);
+  const before = readFileSync(file);
+
+  assert.equal(main(streamArgs(file, 'te-002', 't', 'TY', 'OPEN', null)), 2, 'aucune preuve');
+  assert.equal(
+    main(streamArgs(file, 'te-002', 't', 'TY', 'OPEN', streamEvidence('autre-flux', 'OPEN'))),
+    2,
+    'mauvais sujet',
+  );
+  assert.equal(
+    main(streamArgs(file, 'te-002', 't', 'TY', 'OPEN', streamEvidence('te-002', 'CLOSED'))),
+    2,
+    'mauvaise valeur',
+  );
+  assert.equal(
+    main(streamArgs(file, 'te-002', 't', 'TY', 'OPEN', {
+      id: 'ev-x', kind: 'repo-path', ref: 'SOURCE.md', policy: 'VERIFIABLE',
+      supports: { subject: 'stream:te-002', field: 'title', value: 'OPEN' },
+    })),
+    2,
+    'mauvais champ',
+  );
+  assert.deepEqual(readFileSync(file), before);
+});
+
+test('échec de validation du candidat ENTIER à la création d’un flux : octets inchangés', () => {
+  const root = tempRepo();
+  writeFileSync(join(root, 'SOURCE.md'), 'source\n');
+  commitAll(root, 'init');
+  const file = join(root, 'PROGRAM-STATE.json');
+  /* CLOSED exige une date d'établissement ; updated_at est estampillé, donc on
+   * rend le candidat invalide par un flux préexistant hors vocabulaire. */
+  const broken = baseState({
+    streams: [{ id: 's1', title: 't', type: 'CASE', state: 'PRESQUE_FINI', updated_at: 'x', evidence: [] }],
+  });
+  writeFileSync(file, JSON.stringify(broken, null, 2) + '\n');
+  const before = readFileSync(file);
+
+  const code = main(
+    streamArgs(file, 'te-002', 't', 'TY', 'OPEN', streamEvidence('te-002', 'OPEN')),
+  );
+  assert.equal(code, 2, 'candidat entier invalide');
+  assert.deepEqual(readFileSync(file), before);
+});
+
+test('la mutation ordinaire d’un identifiant de flux inconnu reste rejetée', () => {
+  const root = tempRepo();
+  const file = streamFixture(root);
+  const before = readFileSync(file);
+
+  const code = main([
+    'update', file,
+    '--subject', 'stream:jamais-cree',
+    '--field', 'state',
+    '--value', 'OPEN',
+    '--evidence', JSON.stringify(streamEvidence('jamais-cree', 'OPEN')),
+  ]);
+  assert.equal(code, 2, 'sans --create, un identifiant de flux inconnu est une erreur');
+  assert.deepEqual(readFileSync(file), before, 'aucun upsert implicite');
+  assert.equal(load(file).streams.length, 0);
+});
+
+test('un flux créé participe immédiatement à la supersession et au rafraîchissement', () => {
+  const root = tempRepo();
+  writeFileSync(join(root, 'A.md'), 'a\n');
+  writeFileSync(join(root, 'B.md'), 'b\n');
+  commitAll(root, 'init');
+  const file = join(root, 'PROGRAM-STATE.json');
+  save(file, baseState());
+
+  assert.equal(
+    main(streamArgs(file, 'te-002', 't', 'TY', 'OPEN',
+      streamEvidence('te-002', 'OPEN', { id: 'ev-a', ref: 'A.md' }))),
+    0,
+  );
+
+  /* rafraîchissement de provenance à valeur égale sur le flux nouvellement créé */
+  const state = load(file);
+  update(state, {
+    subject: 'stream:te-002',
+    field: 'state',
+    value: 'OPEN',
+    evidence: [streamEvidence('te-002', 'OPEN', { id: 'ev-b', ref: 'B.md' })],
+    now: '2026-09-12T12:00:00Z',
+  });
+  assert.deepEqual(
+    state.streams[0].evidence.map((e) => e.id),
+    ['ev-b'],
+    'aucun modèle de preuve alternatif pour les flux',
+  );
+  assert.equal(state.streams[0].state, 'OPEN');
 });
 
 test('mkdir de test : aucun état CCR réel n’est touché', () => {
