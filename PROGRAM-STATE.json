@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T20:58:26Z"
+    "updated_at": "2026-09-12T21:49:03Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -514,7 +514,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Préparer DOGFOOD-002 : continuation objet d'abord de la réconciliation du README à partir de l'état atteint préservé, avec les primitives Mission Object v0 existantes et des chemins explicites de réalisation d'effet et de preuve post-push.",
+    "value": "Exécuter DOGFOOD-002 corrigé dans AGENT CCR LAB #16 à partir de l'enveloppe générée et figée, puis évaluer le branchement sur la réalisation des effets et la temporalité de la preuve post-push, sans augmentation normative manuelle.",
     "evidence": [
       {
         "id": "ev-022",
@@ -531,17 +531,31 @@
         }
       },
       {
-        "id": "ev-043",
+        "id": "ev-045",
         "kind": "repo-path",
-        "ref": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+        "ref": "tooling/mission-object/dogfood/002/mission.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Préparer DOGFOOD-002 : continuation objet d'abord de la réconciliation du README à partir de l'état atteint préservé, avec les primitives Mission Object v0 existantes et des chemins explicites de réalisation d'effet et de preuve post-push."
+          "value": "Exécuter DOGFOOD-002 corrigé dans AGENT CCR LAB #16 à partir de l'enveloppe générée et figée, puis évaluer le branchement sur la réalisation des effets et la temporalité de la preuve post-push, sans augmentation normative manuelle."
         },
         "observed": {
-          "blob": "dda39af84d833e7d160aba3ab6c77399abba1878"
+          "blob": "4d1c6027d717bfc7b189a2889fb6b22b42b3d568"
+        }
+      },
+      {
+        "id": "ev-046",
+        "kind": "repo-path",
+        "ref": "tooling/mission-object/dogfood/002/envelope.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "value",
+          "value": "Exécuter DOGFOOD-002 corrigé dans AGENT CCR LAB #16 à partir de l'enveloppe générée et figée, puis évaluer le branchement sur la réalisation des effets et la temporalité de la preuve post-push, sans augmentation normative manuelle."
+        },
+        "observed": {
+          "blob": "223fbcf02b5c38051f5a9807fe50ea68277c5acd"
         }
       }
     ]
