@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T22:23:01Z"
+    "updated_at": "2026-09-13T23:00:18Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -890,11 +890,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "decision-consequence-boundary-real-use-mission-selected",
+      "question": "Sélectionner comme prochaine mission authentique du CCR Lab une étude bornée de la frontière durable entre décision humaine ratifiée, conséquence déterministe et conséquence effectivement exécutée, à partir de cas historiques réels, avec LOCAL MISSION CONSOLE V0 utilisé seulement comme surface secondaire d'observation en usage réel ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-092",
+          "kind": "repo-path",
+          "ref": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:decision-consequence-boundary-real-use-mission-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Obtenir la sélection humaine d'UNE prochaine mission authentique du Lab CCR dont l'objet PREMIER est un travail d'ingénierie ou de Lab utile, et non la couverture de la console, et pour laquelle LOCAL MISSION CONSOLE V0 puisse servir de surface de suivi de mission. Ne fabriquer aucune mission dans le seul but d'exercer la console. Ne sélectionner automatiquement aucune nouvelle expérience d'outillage. Une fois cette mission authentique sélectionnée par l'humain et gelée, employer la console sur cette mission pour évaluer la question d'usage réel encore ouverte : améliore-t-elle matériellement le suivi état → mission → résultat en préservant les frontières sémantiques établies ? S'arrêter avant de sélectionner cette mission automatiquement.",
+    "value": "Concevoir et geler la mission exécutable bornée de l'étude décision humaine ratifiée → conséquence déterministe → conséquence effectivement exécutée, sélectionnée par l'autorité 34. En n'employant que la preuve historique durable du Lab, sélectionner les cas historiques exacts nécessaires pour répondre à la question de recherche ; définir le contrat de retour factuel de la mission et ses critères de succès ; déterminer comment les surfaces existantes PROGRAM-STATE, Mission Object et Result Instance seront consommées ; définir le protocole d'observation secondaire de LOCAL MISSION CONSOLE V0 en usage réel ; puis créer le Mission Object nécessaire à l'exécution réelle. Ne pas implémenter de nouvelle représentation. Ne pas créer TOOLING-EXPERIMENT-004. Ne pas sélectionner de conséquence CCR System. S'arrêter avant d'exécuter la mission.",
     "evidence": [
       {
         "id": "ev-065",
@@ -911,17 +932,17 @@
         }
       },
       {
-        "id": "ev-091",
+        "id": "ev-093",
         "kind": "repo-path",
-        "ref": "33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md",
+        "ref": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Obtenir la sélection humaine d'UNE prochaine mission authentique du Lab CCR dont l'objet PREMIER est un travail d'ingénierie ou de Lab utile, et non la couverture de la console, et pour laquelle LOCAL MISSION CONSOLE V0 puisse servir de surface de suivi de mission. Ne fabriquer aucune mission dans le seul but d'exercer la console. Ne sélectionner automatiquement aucune nouvelle expérience d'outillage. Une fois cette mission authentique sélectionnée par l'humain et gelée, employer la console sur cette mission pour évaluer la question d'usage réel encore ouverte : améliore-t-elle matériellement le suivi état → mission → résultat en préservant les frontières sémantiques établies ? S'arrêter avant de sélectionner cette mission automatiquement."
+          "value": "Concevoir et geler la mission exécutable bornée de l'étude décision humaine ratifiée → conséquence déterministe → conséquence effectivement exécutée, sélectionnée par l'autorité 34. En n'employant que la preuve historique durable du Lab, sélectionner les cas historiques exacts nécessaires pour répondre à la question de recherche ; définir le contrat de retour factuel de la mission et ses critères de succès ; déterminer comment les surfaces existantes PROGRAM-STATE, Mission Object et Result Instance seront consommées ; définir le protocole d'observation secondaire de LOCAL MISSION CONSOLE V0 en usage réel ; puis créer le Mission Object nécessaire à l'exécution réelle. Ne pas implémenter de nouvelle représentation. Ne pas créer TOOLING-EXPERIMENT-004. Ne pas sélectionner de conséquence CCR System. S'arrêter avant d'exécuter la mission."
         },
         "observed": {
-          "blob": "a0060090fa23a1db98c3ede8f60f0f02f75d99e1"
+          "blob": "4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
         }
       }
     ]

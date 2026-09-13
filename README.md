@@ -156,6 +156,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md`](31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md) — sélection de la direction de programme suivante : une petite console web locale v0 pour suivre une mission dans un dépôt, avec son périmètre produit gelé ; conception technique et implantation non commencées, et aucune nouvelle expérience d'outillage sélectionnée.
 - [`32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md`](32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md) — conception d'implémentation gelée et ratifiée de la console : trois panneaux, autorité de dépôt en lecture seule, modèle de capture unique et d'identité, liaison à la version de mission, sémantique d'association, résolution de preuve bornée au contexte et frontières de sécurité du navigateur ; classée intégration ordinaire, sans nouvelle expérience d'outillage requise pour la v0.
 - [`33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md`](33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md) — qualification indépendante de l'implémentation publiée de la console : PASS WITH LIMITATIONS, conformité fonctionnelle à l'autorité 32 établie, zéro défaut matériel, fidélité d'intégration historique byte-identique, frontières de sécurité et de lecture seule tenues, suite publiée remesurée 61/61 ; cinq limites non matérielles consignées, et l'utilité en usage réel reste non évaluée — conformité établie n'est pas utilité démontrée.
+- [`34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md`](34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md) — sélection de la prochaine mission authentique du Lab : étudier la frontière durable entre décision humaine ratifiée, conséquence déterministe et conséquence effectivement exécutée, à partir de cas historiques réels ; objet premier R&D d'orchestration, console employée seulement comme surface d'observation secondaire en usage réel ; méthode preuve-d'abord, aucune implémentation pré-autorisée, aucune nouvelle expérience d'outillage, contrat de mission bornée non encore gelé.
 
 ## Outillage
 
@@ -284,10 +285,9 @@ LIVE-USE CAPTURE BY AN EXECUTOR
 = real missions exercised 1 · real task classes exercised 1
 = universal Result Instance reliability : not asserted
 
-CURRENT PROGRAM DIRECTION
-= LOCAL MISSION CONSOLE V0
-= HUMAN-SELECTED
-= small local web console to follow one Lab mission in one repository
+LOCAL MISSION CONSOLE V0
+= IMPLEMENTED / QUALIFIED
+= tooling/console
 = product scope : FROZEN
   31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md
 = technical design : FROZEN / RATIFIED
@@ -295,8 +295,6 @@ CURRENT PROGRAM DIRECTION
 = implementation class : ORDINARY INTEGRATION
 = concrete semantic gap : 0
 = new tooling experiment : NOT REQUIRED FOR V0
-= implementation : IMPLEMENTED / PUBLISHED
-= tooling/console
 = independent implementation qualification : PASS WITH LIMITATIONS
   33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md
 = authority-32 functional conformance : PASS
@@ -304,10 +302,26 @@ CURRENT PROGRAM DIRECTION
 = security / read-only boundary : PASS
 = material conformance defects : 0
 = non-material limitations : 5
-= real-use utility : NOT EVALUATED
-= future genuine mission : NOT SELECTED
-= next : obtain human selection of one genuine Lab mission for real-use
-  evaluation of the console
+= real-use utility : NOT YET EVALUATED
+
+CURRENT PROGRAM DIRECTION
+= NEXT GENUINE LAB MISSION
+= HUMAN-SELECTED
+  34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md
+= mission : study HUMAN DECISION
+  → DETERMINISTIC CONSEQUENCE
+  → EXECUTED CONSEQUENCE
+= primary purpose : orchestration R&D
+= console purpose : secondary real-use observation
+= method : real historical cases first, existing-surface sufficiency check,
+  gap only if demonstrated
+= bounded mission contract : NOT YET FROZEN
+= mission object : NOT YET CREATED
+= mission execution : NOT STARTED
+= implementation : NOT PRE-AUTHORIZED
+= TE004 : NOT SELECTED
+= CCR System frontier : NOT SELECTED
+= next : freeze the bounded executable mission from real historical cases
 
 CURRENT LAB STREAM
 = NONE
