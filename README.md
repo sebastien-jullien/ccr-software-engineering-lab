@@ -157,6 +157,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md`](32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md) — conception d'implémentation gelée et ratifiée de la console : trois panneaux, autorité de dépôt en lecture seule, modèle de capture unique et d'identité, liaison à la version de mission, sémantique d'association, résolution de preuve bornée au contexte et frontières de sécurité du navigateur ; classée intégration ordinaire, sans nouvelle expérience d'outillage requise pour la v0.
 - [`33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md`](33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md) — qualification indépendante de l'implémentation publiée de la console : PASS WITH LIMITATIONS, conformité fonctionnelle à l'autorité 32 établie, zéro défaut matériel, fidélité d'intégration historique byte-identique, frontières de sécurité et de lecture seule tenues, suite publiée remesurée 61/61 ; cinq limites non matérielles consignées, et l'utilité en usage réel reste non évaluée — conformité établie n'est pas utilité démontrée.
 - [`34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md`](34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md) — sélection de la prochaine mission authentique du Lab : étudier la frontière durable entre décision humaine ratifiée, conséquence déterministe et conséquence effectivement exécutée, à partir de cas historiques réels ; objet premier R&D d'orchestration, console employée seulement comme surface d'observation secondaire en usage réel ; méthode preuve-d'abord, aucune implémentation pré-autorisée, aucune nouvelle expérience d'outillage, contrat de mission bornée non encore gelé.
+- [`35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md`](35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md) — gel de la mission exécutable bornée : coupe du corpus historique, inventaire A–E exhaustif, cinq cas authentiques sélectionnés et leurs lignées factuelles, question de l'étude, vocabulaire de classification, porte d'écart concret en cinq parties, contrat de retour factuel, critères de succès, frontière de lecture / écriture de l'exécution, artefacts de mission gelés, et protocole d'observation de la console en usage réel ; l'étude est exécutable, sa conclusion n'est pas écrite.
 
 ## Outillage
 
@@ -306,22 +307,31 @@ LOCAL MISSION CONSOLE V0
 
 CURRENT PROGRAM DIRECTION
 = NEXT GENUINE LAB MISSION
-= HUMAN-SELECTED
+= HUMAN-SELECTED / BOUNDED / FROZEN
   34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md
-= mission : study HUMAN DECISION
+  35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md
+= primary study : HUMAN DECISION
   → DETERMINISTIC CONSEQUENCE
   → EXECUTED CONSEQUENCE
 = primary purpose : orchestration R&D
 = console purpose : secondary real-use observation
 = method : real historical cases first, existing-surface sufficiency check,
   gap only if demonstrated
-= bounded mission contract : NOT YET FROZEN
-= mission object : NOT YET CREATED
+= historical corpus cut : 70ca6d43aca5f07aafdc9e1b112d5991f2bf974a
+= historical case set : FROZEN, 5 cases, categories A C D E represented,
+  category B without authentic example
+= mission object : CREATED / VALIDATED / RENDERED
+  missions/001-decision-consequence-boundary
 = mission execution : NOT STARTED
-= implementation : NOT PRE-AUTHORIZED
+= result instance : NOT YET PRODUCED
+= console real-use protocol : FROZEN
+= console real-use utility : NOT YET EVALUATED
+= study conclusion : NOT YET KNOWN
+= concrete representation gap : NOT YET ESTABLISHED
+= implementation of a new representation : NOT AUTHORIZED
 = TE004 : NOT SELECTED
 = CCR System frontier : NOT SELECTED
-= next : freeze the bounded executable mission from real historical cases
+= next : execute the frozen genuine mission using the console real-use protocol
 
 CURRENT LAB STREAM
 = NONE

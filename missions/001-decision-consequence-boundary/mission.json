@@ -1,0 +1,2661 @@
+{
+ "identity": {
+  "id": "decision-consequence-boundary-historical-study-001",
+  "class": "DECISION_CONSEQUENCE_BOUNDARY_HISTORICAL_STUDY",
+  "addressee": "AGENT_CCR_LAB_NEXT_FRESH_EXECUTOR",
+  "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+ },
+ "context": [
+  {
+   "subject": "study.historical_corpus_cut",
+   "value": {
+    "type": "SCALAR",
+    "value": "70ca6d43aca5f07aafdc9e1b112d5991f2bf974a"
+   },
+   "semantics_unresolved": false,
+   "label": "coupe gelée du corpus historique ; toute source de cas se lit à cette coupe ou avant, et les autorités 34 et 35 sont un contexte gouvernant, jamais une preuve de cas"
+  },
+  {
+   "subject": "study.selected_cases",
+   "value": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "CASE_01_A_TE003_LIVE_DOGFOOD_001_STRUCTURED_EXECUTION"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CASE_02_A_DOGFOOD_003_PROSE_ONLY_EXECUTION"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CASE_03_C_AUTHORITY_30_README_MAINTENANCE_DUE_NOT_ATTEMPTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CASE_04_D_RESULT_001_NEXT_ACTION_SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CASE_05_E_RESULT_001_RESUMPTION_RECOVERY"
+     }
+    ]
+   },
+   "semantics_unresolved": false,
+   "label": "ensemble de cas gelé ; identité et catégorie de chaque cas sont gelées ici, pas retournées"
+  },
+  {
+   "subject": "study.boundaries",
+   "value": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "HUMAN_DECISION_IS_NOT_DETERMINISTIC_CONSEQUENCE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "DETERMINISTIC_CONSEQUENCE_IS_NOT_EXECUTION_INTENT"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTION_INTENT_IS_NOT_EXECUTION_FACT"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTION_FACT_IS_NOT_PROGRAM_ADVANCEMENT"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTOR_REPORTED_IS_NOT_INDEPENDENTLY_VERIFIED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "INCONVENIENT_QUERY_IS_NOT_REPRESENTATION_GAP"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NO_COMBINED_OBJECT_IS_NOT_REPRESENTATION_GAP"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "ORDINARY_JOIN_IS_NOT_NEW_DURABLE_PRIMITIVE"
+     }
+    ]
+   },
+   "semantics_unresolved": false
+  }
+ ],
+ "references": [
+  {
+   "id": "ref-auth34",
+   "role": "AUTHORITY",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
+   }
+  },
+  {
+   "id": "ref-auth35",
+   "role": "AUTHORITY",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md"
+   },
+   "identity_required": false
+  },
+  {
+   "id": "ref-auth09",
+   "role": "CONTEXT",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+   }
+  },
+  {
+   "id": "ref-auth14",
+   "role": "CONTEXT",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+   }
+  },
+  {
+   "id": "ref-auth23",
+   "role": "CONTEXT",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+   }
+  },
+  {
+   "id": "ref-program-state",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "PROGRAM-STATE.json"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "78d87e89a8bbc88662b9687672076f6177ff7c21"
+   }
+  },
+  {
+   "id": "ref-auth17",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "8d9104b9fd538ebddc8b7c6b769229b462aa2259"
+   }
+  },
+  {
+   "id": "ref-auth19",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "5b9abf337fb33dae9d0da64930d3dccf1dfe1c25"
+   }
+  },
+  {
+   "id": "ref-auth21",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "4b3b9f20130d53368b5414fa0504e7e3e0b31544"
+   }
+  },
+  {
+   "id": "ref-auth27",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "420b4c5704d5f619852155d5d07276fa96330ae0"
+   }
+  },
+  {
+   "id": "ref-auth28",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "0f7ef0512cfbcaf976b45cea3dea23ef4ea02181"
+   }
+  },
+  {
+   "id": "ref-auth29",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "502a1cd787f592e17ed4d87b1260313db6beede2"
+   }
+  },
+  {
+   "id": "ref-auth30",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+   }
+  },
+  {
+   "id": "ref-result001",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "tooling/program-state/RESULT-001.md"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
+   }
+  },
+  {
+   "id": "ref-live-mission",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "tooling/result-instance/live-dogfood/001/mission.json"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "7358a63719036810222fe3d0c657f7192bd4f8c2"
+   }
+  },
+  {
+   "id": "ref-live-result",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "tooling/result-instance/live-dogfood/001/result.json"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "f0781cbea2a1bd773c95c7ebffc91915bb7c076d"
+   }
+  },
+  {
+   "id": "ref-live-evidence",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "tooling/result-instance/live-dogfood/001/evidence/remote-main-head.txt"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "4b822a1f771898cd7883cf51c00fa63ff263104c"
+   }
+  },
+  {
+   "id": "ref-df003-mission",
+   "role": "VERIFICATION_TARGET",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "tooling/mission-object/dogfood/003/mission.json"
+   },
+   "identity_required": true,
+   "identity": {
+    "kind": "GIT_BLOB",
+    "value": "37818dcfdc0b5e8c41bd847b8751fbda6e482116"
+   }
+  },
+  {
+   "id": "ref-return",
+   "role": "DELIVERABLE",
+   "locator": {
+    "kind": "REPO_PATH",
+    "value": "missions/001-decision-consequence-boundary/result.json"
+   },
+   "identity_required": false
+  }
+ ],
+ "effects": [
+  {
+   "id": "e-read-corpus",
+   "mode": "REQUIRED",
+   "action": "READ_DURABLE_CORPUS",
+   "cardinality": 1,
+   "target": {
+    "ref": "ref-program-state"
+   }
+  },
+  {
+   "id": "e-build-lineages",
+   "mode": "REQUIRED",
+   "action": "ESTABLISH_CASE_LINEAGES",
+   "cardinality": 1
+  },
+  {
+   "id": "e-classify",
+   "mode": "REQUIRED",
+   "action": "CLASSIFY_SUFFICIENCY",
+   "cardinality": 1
+  },
+  {
+   "id": "e-gap-gate",
+   "mode": "REQUIRED",
+   "action": "APPLY_GAP_GATE",
+   "cardinality": 1
+  },
+  {
+   "id": "e-conclude",
+   "mode": "REQUIRED",
+   "action": "CLASSIFY_STUDY_OVERALL",
+   "cardinality": 1
+  },
+  {
+   "id": "e-produce-result",
+   "mode": "REQUIRED",
+   "action": "PRODUCE_RESULT_INSTANCE",
+   "cardinality": 1,
+   "target": {
+    "ref": "ref-return"
+   }
+  },
+  {
+   "id": "e-validate-result",
+   "mode": "REQUIRED",
+   "action": "VALIDATE_RESULT_INSTANCE",
+   "cardinality": 1,
+   "target": {
+    "ref": "ref-return"
+   }
+  },
+  {
+   "id": "e-freeze-result",
+   "mode": "REQUIRED",
+   "action": "FREEZE_RESULT_INSTANCE",
+   "cardinality": 1,
+   "target": {
+    "ref": "ref-return"
+   }
+  },
+  {
+   "id": "e-forbid-commit",
+   "mode": "FORBIDDEN",
+   "action": "COMMIT",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-push",
+   "mode": "FORBIDDEN",
+   "action": "PUSH",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-fetch",
+   "mode": "FORBIDDEN",
+   "action": "FETCH",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-network",
+   "mode": "FORBIDDEN",
+   "action": "REMOTE_LOOKUP",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-edit-authority",
+   "mode": "FORBIDDEN",
+   "action": "MODIFY_AUTHORITY",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-edit-program-state",
+   "mode": "FORBIDDEN",
+   "action": "MODIFY_PROGRAM_STATE",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-edit-readme",
+   "mode": "FORBIDDEN",
+   "action": "MODIFY_README",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-edit-tooling",
+   "mode": "FORBIDDEN",
+   "action": "MODIFY_TOOLING",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-edit-console",
+   "mode": "FORBIDDEN",
+   "action": "MODIFY_CONSOLE",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-edit-historical",
+   "mode": "FORBIDDEN",
+   "action": "MODIFY_HISTORICAL_ARTIFACT",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-design",
+   "mode": "FORBIDDEN",
+   "action": "DESIGN_REPRESENTATION",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-remedy",
+   "mode": "FORBIDDEN",
+   "action": "INVENT_REMEDIATION",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-experiment",
+   "mode": "FORBIDDEN",
+   "action": "CREATE_TOOLING_EXPERIMENT",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-system",
+   "mode": "FORBIDDEN",
+   "action": "ACCESS_CCR_SYSTEM",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-protected",
+   "mode": "FORBIDDEN",
+   "action": "ACCESS_PROTECTED_RUN",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-prose",
+   "mode": "FORBIDDEN",
+   "action": "RECONSTRUCT_FROM_CONVERSATION",
+   "cardinality": 0
+  },
+  {
+   "id": "e-forbid-persist",
+   "mode": "FORBIDDEN",
+   "action": "PERSIST_RESULT_INSTANCE",
+   "cardinality": 0
+  }
+ ],
+ "content_requirements": [
+  {
+   "id": "cr-corpus-cut",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "PRESERVE",
+   "subject": "study.historical_corpus_cut",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SCALAR",
+    "value": "70ca6d43aca5f07aafdc9e1b112d5991f2bf974a"
+   }
+  },
+  {
+   "id": "cr-case-count",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "CLAIM",
+   "polarity": "ASSERT",
+   "subject": "study.selected_case_count",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SCALAR",
+    "value": 5
+   }
+  },
+  {
+   "id": "cr-no-conversation-reconstruction",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "CLAIM",
+   "polarity": "ASSERT",
+   "subject": "discipline.conversation_factual_reconstruction_count",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SCALAR",
+    "value": 0
+   }
+  },
+  {
+   "id": "cr-no-session-prose",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "CLAIM",
+   "polarity": "ASSERT",
+   "subject": "discipline.session_prose_fallback_count",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SCALAR",
+    "value": 0
+   }
+  },
+  {
+   "id": "cr-no-protected-source",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "CLAIM",
+   "polarity": "ASSERT",
+   "subject": "discipline.protected_source_usage_count",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SCALAR",
+    "value": 0
+   }
+  },
+  {
+   "id": "cr-no-system-source",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "CLAIM",
+   "polarity": "ASSERT",
+   "subject": "discipline.ccr_system_source_usage_count",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SCALAR",
+    "value": 0
+   }
+  },
+  {
+   "id": "cr-mutation-boundary",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "CLAIM",
+   "polarity": "ASSERT",
+   "subject": "discipline.repository_mutations_other_than_result",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SCALAR",
+    "value": 0
+   }
+  },
+  {
+   "id": "cr-forbid-remediation-design",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "FORBID_CLAIM",
+   "subject": "study.remediation_design",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SYMBOL",
+    "value": "PRESENT"
+   }
+  },
+  {
+   "id": "cr-forbid-new-experiment",
+   "scope": "MISSION",
+   "target": "ref-return",
+   "kind": "FORBID_CLAIM",
+   "subject": "study.new_tooling_experiment",
+   "relation": "EQUALS",
+   "value": {
+    "type": "SYMBOL",
+    "value": "SELECTED"
+   }
+  }
+ ],
+ "procedure": {
+  "strict_order": true,
+  "steps": [
+   {
+    "order": 1,
+    "id": "s-read",
+    "effect": "e-read-corpus",
+    "atomic": true,
+    "gated_by": "g-preflight"
+   },
+   {
+    "order": 2,
+    "id": "s-lineages",
+    "effect": "e-build-lineages",
+    "atomic": true,
+    "gated_by": "g-durable-only"
+   },
+   {
+    "order": 3,
+    "id": "s-classify",
+    "effect": "e-classify",
+    "atomic": true
+   },
+   {
+    "order": 4,
+    "id": "s-gap-gate",
+    "effect": "e-gap-gate",
+    "atomic": true
+   },
+   {
+    "order": 5,
+    "id": "s-conclude",
+    "effect": "e-conclude",
+    "atomic": true
+   },
+   {
+    "order": 6,
+    "id": "s-produce",
+    "effect": "e-produce-result",
+    "atomic": true
+   },
+   {
+    "order": 7,
+    "id": "s-validate",
+    "effect": "e-validate-result",
+    "atomic": true,
+    "gated_by": "g-result-valid",
+    "produces": [
+     "ev-result-validation"
+    ]
+   },
+   {
+    "order": 8,
+    "id": "s-freeze",
+    "effect": "e-freeze-result",
+    "atomic": true,
+    "gated_by": "g-mutation-boundary"
+   }
+  ]
+ },
+ "gates": [
+  {
+   "id": "g-preflight",
+   "scope": "ALL_PRECEDING",
+   "on_fail": "sr-preflight",
+   "predicate": {
+    "all_of": [
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "REPO_FACT",
+       "ref": "BRANCH"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": "main"
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "REPO_FACT",
+       "ref": "WORKTREE_CLEAN"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": true
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "ARTIFACT_IDENTITY",
+       "ref": "ref-auth34"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": "4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "MEASUREMENT",
+       "modifier": "COUNT_OF",
+       "ref": "reserved_result_path_existing"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": 0
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "g-durable-only",
+   "scope": [
+    "s-lineages"
+   ],
+   "on_fail": "sr-prose",
+   "predicate": {
+    "all_of": [
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "MEASUREMENT",
+       "modifier": "COUNT_OF",
+       "ref": "conversation_factual_reconstruction"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": 0
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "MEASUREMENT",
+       "modifier": "COUNT_OF",
+       "ref": "session_prose_fallback"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": 0
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "MEASUREMENT",
+       "modifier": "COUNT_OF",
+       "ref": "protected_source_usage"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": 0
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "MEASUREMENT",
+       "modifier": "COUNT_OF",
+       "ref": "ccr_system_source_usage"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": 0
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "g-result-valid",
+   "scope": [
+    "s-validate"
+   ],
+   "on_fail": "sr-result-invalid",
+   "predicate": {
+    "op": "EQ",
+    "subject": {
+     "kind": "OPERATION_RESULT",
+     "ref": "e-validate-result",
+     "field": "status"
+    },
+    "value": {
+     "type": "SYMBOL",
+     "value": "PASS"
+    }
+   }
+  },
+  {
+   "id": "g-mutation-boundary",
+   "scope": [
+    "s-freeze"
+   ],
+   "on_fail": "sr-scope",
+   "predicate": {
+    "op": "SET_EQ",
+    "subject": {
+     "kind": "MEASUREMENT",
+     "ref": "repo.modified_paths"
+    },
+    "value": {
+     "type": "SET",
+     "members": [
+      {
+       "type": "SCALAR",
+       "value": "missions/001-decision-consequence-boundary/result.json"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "branches": [
+  {
+   "id": "br-durable-insufficient",
+   "condition": {
+    "op": "EQ",
+    "subject": {
+     "kind": "OPERATION_RESULT",
+     "ref": "e-build-lineages",
+     "field": "durable_evidence_sufficient"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": false
+    }
+   },
+   "effects": [
+    {
+     "id": "e-b1-forbid-prose",
+     "mode": "FORBIDDEN",
+     "action": "RECONSTRUCT_FROM_CONVERSATION",
+     "cardinality": 0
+    },
+    {
+     "id": "e-b1-forbid-invent",
+     "mode": "FORBIDDEN",
+     "action": "INVENT_LINEAGE",
+     "cardinality": 0
+    }
+   ],
+   "steps": [
+    {
+     "id": "s-b1-produce",
+     "order": 1,
+     "effect": "e-produce-result",
+     "atomic": true
+    },
+    {
+     "id": "s-b1-validate",
+     "order": 2,
+     "effect": "e-validate-result",
+     "atomic": true,
+     "produces": [
+      "ev-result-validation"
+     ]
+    },
+    {
+     "id": "s-b1-freeze",
+     "order": 3,
+     "effect": "e-freeze-result",
+     "atomic": true
+    }
+   ],
+   "requirements": [
+    {
+     "id": "cr-b1-outcome",
+     "scope": "br-durable-insufficient",
+     "target": "ref-return",
+     "kind": "CLAIM",
+     "polarity": "ASSERT",
+     "subject": "study.overall_classification",
+     "relation": "EQUALS",
+     "value": {
+      "type": "SYMBOL",
+      "value": "INCONCLUSIVE_ON_CURRENT_DURABLE_EVIDENCE"
+     }
+    }
+   ],
+   "terminal_outcome": "INCONCLUSIVE_ON_DURABLE_EVIDENCE",
+   "next": "nc-return"
+  },
+  {
+   "id": "br-gap-candidate",
+   "condition": {
+    "op": "EQ",
+    "subject": {
+     "kind": "OPERATION_RESULT",
+     "ref": "e-gap-gate",
+     "field": "gap_candidate_present"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   },
+   "effects": [
+    {
+     "id": "e-b2-forbid-design",
+     "mode": "FORBIDDEN",
+     "action": "DESIGN_REPRESENTATION",
+     "cardinality": 0
+    },
+    {
+     "id": "e-b2-forbid-name",
+     "mode": "FORBIDDEN",
+     "action": "NAME_FUTURE_OBJECT",
+     "cardinality": 0
+    },
+    {
+     "id": "e-b2-forbid-experiment",
+     "mode": "FORBIDDEN",
+     "action": "CREATE_TOOLING_EXPERIMENT",
+     "cardinality": 0
+    },
+    {
+     "id": "e-b2-forbid-remedy",
+     "mode": "FORBIDDEN",
+     "action": "INVENT_REMEDIATION",
+     "cardinality": 0
+    }
+   ],
+   "steps": [
+    {
+     "id": "s-b2-produce",
+     "order": 1,
+     "effect": "e-produce-result",
+     "atomic": true
+    },
+    {
+     "id": "s-b2-validate",
+     "order": 2,
+     "effect": "e-validate-result",
+     "atomic": true,
+     "produces": [
+      "ev-result-validation"
+     ]
+    },
+    {
+     "id": "s-b2-freeze",
+     "order": 3,
+     "effect": "e-freeze-result",
+     "atomic": true
+    }
+   ],
+   "requirements": [
+    {
+     "id": "cr-b2-outcome",
+     "scope": "br-gap-candidate",
+     "target": "ref-return",
+     "kind": "CLAIM",
+     "polarity": "ASSERT",
+     "subject": "study.overall_classification",
+     "relation": "EQUALS",
+     "value": {
+      "type": "SYMBOL",
+      "value": "CONCRETE_REPRESENTATION_GAP_DEMONSTRATED"
+     }
+    }
+   ],
+   "terminal_outcome": "GAP_CANDIDATE_RETURNED",
+   "next": "nc-return"
+  },
+  {
+   "id": "br-result-invalid",
+   "condition": {
+    "op": "NEQ",
+    "subject": {
+     "kind": "OPERATION_RESULT",
+     "ref": "e-validate-result",
+     "field": "status"
+    },
+    "value": {
+     "type": "SYMBOL",
+     "value": "PASS"
+    }
+   },
+   "effects": [
+    {
+     "id": "e-b3-forbid-persist",
+     "mode": "FORBIDDEN",
+     "action": "PERSIST_RESULT_INSTANCE",
+     "cardinality": 0
+    },
+    {
+     "id": "e-b3-forbid-commit",
+     "mode": "FORBIDDEN",
+     "action": "COMMIT",
+     "cardinality": 0
+    }
+   ],
+   "steps": [],
+   "requirements": [
+    {
+     "id": "cr-b3-outcome",
+     "scope": "br-result-invalid",
+     "target": "ref-return",
+     "kind": "CLAIM",
+     "polarity": "ASSERT",
+     "subject": "operation.blocker_reason",
+     "relation": "EQUALS",
+     "value": {
+      "type": "SYMBOL",
+      "value": "RESULT_INSTANCE_INVALID"
+     }
+    }
+   ],
+   "terminal_outcome": "BLOCKED_RESULT_INVALID",
+   "next": "nc-return"
+  },
+  {
+   "id": "br-contract-inexpressible",
+   "condition": {
+    "op": "EQ",
+    "subject": {
+     "kind": "OPERATION_RESULT",
+     "ref": "e-produce-result",
+     "field": "contract_expressible"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": false
+    }
+   },
+   "effects": [
+    {
+     "id": "e-b4-forbid-tooling",
+     "mode": "FORBIDDEN",
+     "action": "MODIFY_TOOLING",
+     "cardinality": 0
+    },
+    {
+     "id": "e-b4-forbid-schema",
+     "mode": "FORBIDDEN",
+     "action": "INVENT_SCHEMA_FIELD",
+     "cardinality": 0
+    }
+   ],
+   "steps": [],
+   "requirements": [
+    {
+     "id": "cr-b4-outcome",
+     "scope": "br-contract-inexpressible",
+     "target": "ref-return",
+     "kind": "CLAIM",
+     "polarity": "ASSERT",
+     "subject": "operation.blocker_reason",
+     "relation": "EQUALS",
+     "value": {
+      "type": "SYMBOL",
+      "value": "CONTRACT_NOT_EXPRESSIBLE"
+     }
+    }
+   ],
+   "terminal_outcome": "BLOCKED_CONTRACT_NOT_EXPRESSIBLE",
+   "next": "nc-return"
+  }
+ ],
+ "stop_rules": [
+  {
+   "id": "sr-preflight",
+   "trigger": {
+    "op": "NEQ",
+    "subject": {
+     "kind": "REPO_FACT",
+     "ref": "preflight_match"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   },
+   "prohibitions": [
+    {
+     "id": "sp-clean-preflight",
+     "mode": "FORBIDDEN",
+     "action": "CLEAN"
+    },
+    {
+     "id": "sp-reset-preflight",
+     "mode": "FORBIDDEN",
+     "action": "RESET"
+    },
+    {
+     "id": "sp-restore-preflight",
+     "mode": "FORBIDDEN",
+     "action": "RESTORE"
+    },
+    {
+     "id": "sp-fetch-preflight",
+     "mode": "FORBIDDEN",
+     "action": "FETCH"
+    }
+   ],
+   "required": [
+    "REPORT"
+   ],
+   "terminal": "STOP"
+  },
+  {
+   "id": "sr-prose",
+   "trigger": {
+    "op": "NEQ",
+    "subject": {
+     "kind": "REPO_FACT",
+     "ref": "durable_evidence_only"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   },
+   "prohibitions": [
+    {
+     "id": "sp-prose-reconstruct",
+     "mode": "FORBIDDEN",
+     "action": "RECONSTRUCT_FROM_CONVERSATION"
+    },
+    {
+     "id": "sp-prose-invent",
+     "mode": "FORBIDDEN",
+     "action": "INVENT_LINEAGE"
+    },
+    {
+     "id": "sp-prose-protected",
+     "mode": "FORBIDDEN",
+     "action": "ACCESS_PROTECTED_RUN"
+    },
+    {
+     "id": "sp-prose-system",
+     "mode": "FORBIDDEN",
+     "action": "ACCESS_CCR_SYSTEM"
+    }
+   ],
+   "required": [
+    "REPORT"
+   ],
+   "terminal": "STOP"
+  },
+  {
+   "id": "sr-result-invalid",
+   "trigger": {
+    "op": "NEQ",
+    "subject": {
+     "kind": "REPO_FACT",
+     "ref": "result_instance_valid"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   },
+   "prohibitions": [
+    {
+     "id": "sp-invalid-persist",
+     "mode": "FORBIDDEN",
+     "action": "PERSIST_RESULT_INSTANCE"
+    },
+    {
+     "id": "sp-invalid-commit",
+     "mode": "FORBIDDEN",
+     "action": "COMMIT"
+    },
+    {
+     "id": "sp-invalid-tooling",
+     "mode": "FORBIDDEN",
+     "action": "MODIFY_TOOLING"
+    }
+   ],
+   "required": [
+    "REPORT"
+   ],
+   "terminal": "STOP"
+  },
+  {
+   "id": "sr-scope",
+   "trigger": {
+    "op": "NEQ",
+    "subject": {
+     "kind": "REPO_FACT",
+     "ref": "mutation_boundary_held"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   },
+   "prohibitions": [
+    {
+     "id": "sp-scope-clean",
+     "mode": "FORBIDDEN",
+     "action": "CLEAN"
+    },
+    {
+     "id": "sp-scope-reset",
+     "mode": "FORBIDDEN",
+     "action": "RESET"
+    },
+    {
+     "id": "sp-scope-commit",
+     "mode": "FORBIDDEN",
+     "action": "COMMIT"
+    },
+    {
+     "id": "sp-scope-push",
+     "mode": "FORBIDDEN",
+     "action": "PUSH"
+    }
+   ],
+   "required": [
+    "REPORT"
+   ],
+   "terminal": "STOP"
+  },
+  {
+   "id": "sr-gap-remedy",
+   "trigger": {
+    "op": "NEQ",
+    "subject": {
+     "kind": "REPO_FACT",
+     "ref": "remedy_abstained"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   },
+   "prohibitions": [
+    {
+     "id": "sp-gap-design",
+     "mode": "FORBIDDEN",
+     "action": "DESIGN_REPRESENTATION"
+    },
+    {
+     "id": "sp-gap-name",
+     "mode": "FORBIDDEN",
+     "action": "NAME_FUTURE_OBJECT"
+    },
+    {
+     "id": "sp-gap-experiment",
+     "mode": "FORBIDDEN",
+     "action": "CREATE_TOOLING_EXPERIMENT"
+    },
+    {
+     "id": "sp-gap-implement",
+     "mode": "FORBIDDEN",
+     "action": "IMPLEMENT_REPRESENTATION"
+    }
+   ],
+   "required": [
+    "REPORT"
+   ],
+   "terminal": "STOP"
+  }
+ ],
+ "human_authority": {
+  "ratified_decisions": [
+   {
+    "id": "rd-mission-selected",
+    "subject": "decision_consequence_boundary_real_use_mission_selected",
+    "authority": "ref-auth34"
+   }
+  ],
+  "deterministic_consequences": [
+   "nc-return"
+  ]
+ },
+ "evidence_requirements": [
+  {
+   "id": "ev-case-lineages",
+   "kind": "OBSERVATION",
+   "fact": "study.case_lineages",
+   "method": {
+    "op": "EQ",
+    "source": "ref-program-state",
+    "recompute": true
+   },
+   "forbidden_sources": [
+    "session_prose",
+    "conversation_transcript"
+   ]
+  },
+  {
+   "id": "ev-sufficiency",
+   "kind": "OBSERVATION",
+   "fact": "study.sufficiency_classifications",
+   "must_return": "rf-overall-classification"
+  },
+  {
+   "id": "ev-gap-gate",
+   "kind": "VERIFICATION",
+   "fact": "study.gap_gate_outcome",
+   "must_return": "rf-gap-candidate-count"
+  },
+  {
+   "id": "ev-discipline",
+   "kind": "VERIFICATION",
+   "fact": "discipline.source_boundary",
+   "must_return": "rf-conversation-reconstruction-count"
+  },
+  {
+   "id": "ev-result-validation",
+   "kind": "VERIFICATION",
+   "fact": "result_instance.structural_validation",
+   "method": {
+    "op": "EQ",
+    "source": "ref-return",
+    "recompute": true
+   }
+  }
+ ],
+ "terminal_outcomes": [
+  {
+   "label": "PASS",
+   "valid_when": {
+    "all_of": [
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "OPERATION_RESULT",
+       "ref": "e-build-lineages",
+       "field": "durable_evidence_sufficient"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": true
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "OPERATION_RESULT",
+       "ref": "e-gap-gate",
+       "field": "gap_candidate_present"
+      },
+      "value": {
+       "type": "SCALAR",
+       "value": false
+      }
+     },
+     {
+      "op": "EQ",
+      "subject": {
+       "kind": "OPERATION_RESULT",
+       "ref": "e-validate-result",
+       "field": "status"
+      },
+      "value": {
+       "type": "SYMBOL",
+       "value": "PASS"
+      }
+     }
+    ]
+   },
+   "partial_state_allowed": false,
+   "reached_state_must_be_preserved": true,
+   "next": "nc-return",
+   "post_state": [
+    {
+     "id": "cr-pass-frozen",
+     "scope": "MISSION",
+     "target": "ref-return",
+     "kind": "CLAIM",
+     "polarity": "ASSERT",
+     "subject": "result_instance.frozen",
+     "relation": "EQUALS",
+     "value": {
+      "type": "SYMBOL",
+      "value": "YES"
+     }
+    }
+   ]
+  },
+  {
+   "label": "GAP_CANDIDATE_RETURNED",
+   "valid_when": {
+    "branch": "br-gap-candidate"
+   },
+   "partial_state_allowed": false,
+   "reached_state_must_be_preserved": true,
+   "next": "nc-return",
+   "post_state": []
+  },
+  {
+   "label": "INCONCLUSIVE_ON_DURABLE_EVIDENCE",
+   "valid_when": {
+    "branch": "br-durable-insufficient"
+   },
+   "partial_state_allowed": true,
+   "reached_state_must_be_preserved": true,
+   "next": "nc-return",
+   "post_state": []
+  },
+  {
+   "label": "BLOCKED_RESULT_INVALID",
+   "valid_when": {
+    "branch": "br-result-invalid"
+   },
+   "partial_state_allowed": true,
+   "reached_state_must_be_preserved": true,
+   "next": "nc-return",
+   "post_state": []
+  },
+  {
+   "label": "BLOCKED_CONTRACT_NOT_EXPRESSIBLE",
+   "valid_when": {
+    "branch": "br-contract-inexpressible"
+   },
+   "partial_state_allowed": true,
+   "reached_state_must_be_preserved": true,
+   "next": "nc-return",
+   "post_state": []
+  }
+ ],
+ "return_contract": [
+  {
+   "id": "rf-c01-decision-ref",
+   "fact": "case_01.human_decision_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c01-consequence-ref",
+   "fact": "case_01.deterministic_consequence_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c01-execution-intent",
+   "fact": "case_01.execution_intent_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ESTABLISHED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c01-execution-intent-ref",
+   "fact": "case_01.execution_intent_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c01-execution-state",
+   "fact": "case_01.execution_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "BLOCKED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ATTEMPTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c01-execution-ref",
+   "fact": "case_01.execution_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c01-advancement",
+   "fact": "case_01.program_advancement_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c01-advancement-ref",
+   "fact": "case_01.program_advancement_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c01-supersession",
+   "fact": "case_01.supersession_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c01-remaining-due",
+   "fact": "case_01.remaining_due_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c01-sufficiency",
+   "fact": "case_01.sufficiency_classification",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "DIRECT_EXISTING_SURFACE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "ORDINARY_JOIN_REQUIRED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CONCRETE_REPRESENTATION_GAP_CANDIDATE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CANNOT_ESTABLISH_FROM_DURABLE_EVIDENCE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c01-joins",
+   "fact": "case_01.ordinary_joins_required",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c01-unresolved",
+   "fact": "case_01.unresolved_propositions",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c02-decision-ref",
+   "fact": "case_02.human_decision_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c02-consequence-ref",
+   "fact": "case_02.deterministic_consequence_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c02-execution-intent",
+   "fact": "case_02.execution_intent_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ESTABLISHED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c02-execution-intent-ref",
+   "fact": "case_02.execution_intent_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c02-execution-state",
+   "fact": "case_02.execution_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "BLOCKED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ATTEMPTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c02-execution-ref",
+   "fact": "case_02.execution_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c02-advancement",
+   "fact": "case_02.program_advancement_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c02-advancement-ref",
+   "fact": "case_02.program_advancement_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c02-supersession",
+   "fact": "case_02.supersession_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c02-remaining-due",
+   "fact": "case_02.remaining_due_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c02-sufficiency",
+   "fact": "case_02.sufficiency_classification",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "DIRECT_EXISTING_SURFACE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "ORDINARY_JOIN_REQUIRED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CONCRETE_REPRESENTATION_GAP_CANDIDATE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CANNOT_ESTABLISH_FROM_DURABLE_EVIDENCE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c02-joins",
+   "fact": "case_02.ordinary_joins_required",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c02-unresolved",
+   "fact": "case_02.unresolved_propositions",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c03-decision-ref",
+   "fact": "case_03.human_decision_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c03-consequence-ref",
+   "fact": "case_03.deterministic_consequence_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c03-execution-intent",
+   "fact": "case_03.execution_intent_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ESTABLISHED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c03-execution-intent-ref",
+   "fact": "case_03.execution_intent_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c03-execution-state",
+   "fact": "case_03.execution_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "BLOCKED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ATTEMPTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c03-execution-ref",
+   "fact": "case_03.execution_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c03-advancement",
+   "fact": "case_03.program_advancement_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c03-advancement-ref",
+   "fact": "case_03.program_advancement_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c03-supersession",
+   "fact": "case_03.supersession_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c03-remaining-due",
+   "fact": "case_03.remaining_due_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c03-sufficiency",
+   "fact": "case_03.sufficiency_classification",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "DIRECT_EXISTING_SURFACE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "ORDINARY_JOIN_REQUIRED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CONCRETE_REPRESENTATION_GAP_CANDIDATE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CANNOT_ESTABLISH_FROM_DURABLE_EVIDENCE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c03-joins",
+   "fact": "case_03.ordinary_joins_required",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c03-unresolved",
+   "fact": "case_03.unresolved_propositions",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c04-decision-ref",
+   "fact": "case_04.human_decision_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c04-consequence-ref",
+   "fact": "case_04.deterministic_consequence_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c04-execution-intent",
+   "fact": "case_04.execution_intent_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ESTABLISHED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c04-execution-intent-ref",
+   "fact": "case_04.execution_intent_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c04-execution-state",
+   "fact": "case_04.execution_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "BLOCKED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ATTEMPTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c04-execution-ref",
+   "fact": "case_04.execution_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c04-advancement",
+   "fact": "case_04.program_advancement_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c04-advancement-ref",
+   "fact": "case_04.program_advancement_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c04-supersession",
+   "fact": "case_04.supersession_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c04-remaining-due",
+   "fact": "case_04.remaining_due_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c04-sufficiency",
+   "fact": "case_04.sufficiency_classification",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "DIRECT_EXISTING_SURFACE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "ORDINARY_JOIN_REQUIRED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CONCRETE_REPRESENTATION_GAP_CANDIDATE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CANNOT_ESTABLISH_FROM_DURABLE_EVIDENCE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c04-joins",
+   "fact": "case_04.ordinary_joins_required",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c04-unresolved",
+   "fact": "case_04.unresolved_propositions",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c05-decision-ref",
+   "fact": "case_05.human_decision_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c05-consequence-ref",
+   "fact": "case_05.deterministic_consequence_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c05-execution-intent",
+   "fact": "case_05.execution_intent_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ESTABLISHED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c05-execution-intent-ref",
+   "fact": "case_05.execution_intent_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c05-execution-state",
+   "fact": "case_05.execution_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "EXECUTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "BLOCKED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ATTEMPTED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c05-execution-ref",
+   "fact": "case_05.execution_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c05-advancement",
+   "fact": "case_05.program_advancement_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ADVANCED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c05-advancement-ref",
+   "fact": "case_05.program_advancement_reference",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-c05-supersession",
+   "fact": "case_05.supersession_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_SUPERSEDED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c05-remaining-due",
+   "fact": "case_05.remaining_due_state",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_RECOVERED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_APPLICABLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "NOT_ESTABLISHED"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c05-sufficiency",
+   "fact": "case_05.sufficiency_classification",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "DIRECT_EXISTING_SURFACE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "ORDINARY_JOIN_REQUIRED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CONCRETE_REPRESENTATION_GAP_CANDIDATE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CANNOT_ESTABLISH_FROM_DURABLE_EVIDENCE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-c05-joins",
+   "fact": "case_05.ordinary_joins_required",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-c05-unresolved",
+   "fact": "case_05.unresolved_propositions",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-selected-case-count",
+   "fact": "study.selected_case_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-categories-represented",
+   "fact": "study.categories_represented",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-categories-without-example",
+   "fact": "study.categories_without_authentic_example",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-direct-count",
+   "fact": "study.direct_existing_surface_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-join-count",
+   "fact": "study.ordinary_join_required_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-gap-candidate-count",
+   "fact": "study.gap_candidate_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-cannot-establish-count",
+   "fact": "study.cannot_establish_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-overall-classification",
+   "fact": "study.overall_classification",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "EXISTING_SURFACES_SUFFICIENT"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "EXISTING_SURFACES_SUFFICIENT_WITH_ORDINARY_ORCHESTRATION_LOGIC"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CONCRETE_REPRESENTATION_GAP_DEMONSTRATED"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "INCONCLUSIVE_ON_CURRENT_DURABLE_EVIDENCE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rf-gap-candidates",
+   "fact": "study.gap_candidate_propositions",
+   "acquisition": "MEASURED",
+   "value_type": "SET"
+  },
+  {
+   "id": "rf-conversation-reconstruction-count",
+   "fact": "discipline.conversation_factual_reconstruction_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-session-prose-fallback-count",
+   "fact": "discipline.session_prose_fallback_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-protected-source-usage-count",
+   "fact": "discipline.protected_source_usage_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-ccr-system-source-usage-count",
+   "fact": "discipline.ccr_system_source_usage_count",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-repository-mutations-other",
+   "fact": "discipline.repository_mutations_other_than_result",
+   "acquisition": "MEASURED",
+   "value_type": "SCALAR"
+  },
+  {
+   "id": "rf-blocker",
+   "fact": "operation.blocker_reason",
+   "acquisition": "MEASURED",
+   "value_type": "SYMBOL",
+   "allowed_values": {
+    "type": "SET",
+    "members": [
+     {
+      "type": "SYMBOL",
+      "value": "NONE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "DURABLE_EVIDENCE_INSUFFICIENT"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "RESULT_INSTANCE_INVALID"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "CONTRACT_NOT_EXPRESSIBLE"
+     },
+     {
+      "type": "SYMBOL",
+      "value": "OTHER"
+     }
+    ]
+   }
+  }
+ ],
+ "next_consequences": [
+  {
+   "id": "nc-return",
+   "kind": "HUMAN_GATE",
+   "action": "RETURN_FROZEN_RESULT_INSTANCE",
+   "target": "decision_consequence_boundary_study_qualification"
+  }
+ ],
+ "standing_constraints": [
+  {
+   "id": "sc-no-representation-design",
+   "constraint": {
+    "id": "e-sc-design",
+    "mode": "FORBIDDEN",
+    "action": "DESIGN_REPRESENTATION",
+    "target": "durable_orchestration_representation"
+   },
+   "release_condition": {
+    "op": "EQ",
+    "subject": {
+     "kind": "PRESENCE_OF",
+     "ref": "new_ratified_human_design_decision"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   }
+  },
+  {
+   "id": "sc-no-persistence-by-executor",
+   "constraint": {
+    "id": "e-sc-persist",
+    "mode": "FORBIDDEN",
+    "action": "PERSIST_RESULT_INSTANCE",
+    "target": "repository_history"
+   },
+   "release_condition": {
+    "op": "EQ",
+    "subject": {
+     "kind": "PRESENCE_OF",
+     "ref": "downstream_persistence_authorization"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   }
+  },
+  {
+   "id": "sc-no-scope-expansion",
+   "constraint": {
+    "id": "e-sc-scope",
+    "mode": "FORBIDDEN",
+    "action": "INITIATE",
+    "target": "work_outside_frozen_case_set"
+   },
+   "release_condition": {
+    "op": "EQ",
+    "subject": {
+     "kind": "PRESENCE_OF",
+     "ref": "new_ratified_authority"
+    },
+    "value": {
+     "type": "SCALAR",
+     "value": true
+    }
+   }
+  }
+ ],
+ "terminal": {
+  "halt_after_return": true
+ }
+}
