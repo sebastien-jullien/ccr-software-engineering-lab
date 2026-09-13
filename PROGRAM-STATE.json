@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T14:40:49Z"
+    "updated_at": "2026-09-13T15:19:07Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -722,11 +722,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-first-live-dogfood-design",
+      "question": "Ratifier le design corrigé du premier dogfood en usage réel de TOOLING-EXPERIMENT-003 pour la maintenance bornée du README, tel que gelé par l'autorité 28 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-075",
+          "kind": "repo-path",
+          "ref": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-first-live-dogfood-design",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "0f7ef0512cfbcaf976b45cea3dea23ef4ea02181"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Concevoir et prédéclarer le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 pour la tâche de maintenance bornée du README sélectionnée par l'humain : geler l'objet de mission prospectif, le contrat de retour, le protocole de production, de gel et de passation de l'instance de résultat, les restrictions de consommation factuelle en aval et la frontière d'évaluation ; ne sélectionner ni instancier aucun exécutant, et ne pas encore modifier README.md.",
+    "value": "Matérialiser le paquet de dépêche du premier dogfood en usage réel de TOOLING-EXPERIMENT-003 contre la BASE CIBLE DU README créée par ce commit de matérialisation de conception : dériver et geler mission.json et envelope.md en employant le SHA de base cible désormais connu et l'empreinte de départ du README, committer uniquement ces fichiers de paquet comme descendant direct, sans ajouter d'autorité racine indexée par le README ni muter PROGRAM-STATE, et s'arrêter avant toute dépêche d'exécutant ou toute modification de README.md.",
     "evidence": [
       {
         "id": "ev-065",
@@ -743,17 +764,17 @@
         }
       },
       {
-        "id": "ev-074",
+        "id": "ev-076",
         "kind": "repo-path",
-        "ref": "27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md",
+        "ref": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Concevoir et prédéclarer le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 pour la tâche de maintenance bornée du README sélectionnée par l'humain : geler l'objet de mission prospectif, le contrat de retour, le protocole de production, de gel et de passation de l'instance de résultat, les restrictions de consommation factuelle en aval et la frontière d'évaluation ; ne sélectionner ni instancier aucun exécutant, et ne pas encore modifier README.md."
+          "value": "Matérialiser le paquet de dépêche du premier dogfood en usage réel de TOOLING-EXPERIMENT-003 contre la BASE CIBLE DU README créée par ce commit de matérialisation de conception : dériver et geler mission.json et envelope.md en employant le SHA de base cible désormais connu et l'empreinte de départ du README, committer uniquement ces fichiers de paquet comme descendant direct, sans ajouter d'autorité racine indexée par le README ni muter PROGRAM-STATE, et s'arrêter avant toute dépêche d'exécutant ou toute modification de README.md."
         },
         "observed": {
-          "blob": "420b4c5704d5f619852155d5d07276fa96330ae0"
+          "blob": "0f7ef0512cfbcaf976b45cea3dea23ef4ea02181"
         }
       }
     ]
