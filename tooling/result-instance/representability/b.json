@@ -47,83 +47,6 @@
       "kind": "REPORTED_VALUE",
       "fact": {
         "defined_by": "RETURN_CONTRACT",
-        "id": "rf-addressee"
-      },
-      "value": {
-        "type": "SYMBOL",
-        "value": "AGENT_CCR_LAB_16"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-mission-id"
-      },
-      "value": {
-        "type": "SCALAR",
-        "value": "dogfood-002-readme-publication-continuation"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-starting-readme-blob"
-      },
-      "value": {
-        "type": "SCALAR",
-        "value": "ea62342d4ef45314b7331d9f212e057e88999d54"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-readme-current-blob"
-      },
-      "value": {
-        "type": "SCALAR",
-        "value": "ea62342d4ef45314b7331d9f212e057e88999d54"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-commit-realized"
-      },
-      "value": {
-        "type": "SYMBOL",
-        "value": "NO"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-commit-identifier"
-      },
-      "value": {
-        "type": "SYMBOL",
-        "value": "NOT_REALIZED"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-blocker-reason"
-      },
-      "value": {
-        "type": "SYMBOL",
-        "value": "PERMISSION_DENIED"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
         "id": "rf-push-realized"
       },
       "value": {
@@ -140,52 +63,6 @@
       "value": {
         "type": "SYMBOL",
         "value": "NOT_MEASURED"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-outcome"
-      },
-      "value": {
-        "type": "SYMBOL",
-        "value": "BLOCKED_COMMIT_NOT_REALIZED"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-augmentation"
-      },
-      "value": {
-        "type": "SYMBOL",
-        "value": "NO"
-      }
-    },
-    {
-      "kind": "REPORTED_VALUE",
-      "fact": {
-        "defined_by": "RETURN_CONTRACT",
-        "id": "rf-deviations"
-      },
-      "value": {
-        "type": "SET",
-        "members": [
-          {
-            "type": "SCALAR",
-            "value": "commit invoque par pathspec plutot que git add explicite puis git commit"
-          },
-          {
-            "type": "SCALAR",
-            "value": "identite finale du README mesuree en lecture pure apres refus de git hash-object"
-          },
-          {
-            "type": "SCALAR",
-            "value": "commande de lecture composee refusee, remplacee par des mesures separees en lecture seule"
-          }
-        ]
       }
     }
   ]

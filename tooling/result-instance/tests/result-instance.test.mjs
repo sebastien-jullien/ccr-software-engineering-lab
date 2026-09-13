@@ -606,90 +606,185 @@ test('une instance sans autorite de contrat ne peut etre confrontee a un contrat
 });
 
 /* ------------------------------------------------------------------ *
- * Representabilite historique A / B / C / D
+ * Couverture structurelle purement synthetique
  * ------------------------------------------------------------------ *
  *
- * Ces cas sont des artefacts de qualification derives du corpus. Ils ne sont
- * PAS des instances de resultat historiques, et rien ici n'affirme que leurs
- * octets ont ete retournes par un executant.
+ * Ces objets sont FABRIQUES pour eprouver le logiciel. Ils ne representent
+ * aucune execution historique et ne revendiquent aucune reportedness
+ * historique. C'est ici que vivent les formes que les anciens cas C et D
+ * exercaient a tort au nom de l'histoire.
  */
 
-const CASES = ['a', 'b', 'c', 'd'];
+/** Instance adossee a un protocole, plusieurs faits portes par l'executant. */
+function syntheticProtocolBacked() {
+  const instance = base();
+  instance.execution.id = 'synthetic-protocol';
+  instance.reported_entries = [
+    {
+      kind: 'REPORTED_VALUE',
+      fact: { defined_by: 'EXECUTOR', id: 'tool.resume_exit' },
+      value: { type: 'SCALAR', value: '0' },
+      evidence: { locator: { kind: 'REPO_PATH', value: 'PROGRAM-STATE.json' } },
+    },
+    {
+      kind: 'REPORTED_VALUE',
+      fact: { defined_by: 'EXECUTOR', id: 'worktree.state' },
+      value: { type: 'SYMBOL', value: 'CLEAN' },
+    },
+    {
+      kind: 'REPORTED_VALUE',
+      fact: { defined_by: 'SOURCE', id: 'protocol.streams.recovered' },
+      value: { type: 'SCALAR', value: '10' },
+    },
+  ];
+  return instance;
+}
+
+/** Instance adossee a un contrat : realisation reussie + non-production. */
+function syntheticContractBackedRealized() {
+  const instance = contractBacked();
+  instance.execution.id = 'synthetic-contract-realized';
+  instance.reported_entries = [
+    {
+      kind: 'REPORTED_VALUE',
+      fact: { defined_by: 'RETURN_CONTRACT', id: 'rf-commit-realized' },
+      value: { type: 'SYMBOL', value: 'YES' },
+    },
+    {
+      kind: 'REPORTED_VALUE',
+      fact: { defined_by: 'RETURN_CONTRACT', id: 'rf-push-status' },
+      value: { type: 'SYMBOL', value: 'REALIZED' },
+    },
+    {
+      kind: 'REPORTED_VALUE',
+      fact: { defined_by: 'RETURN_CONTRACT', id: 'rf-remote-main-head' },
+      value: { type: 'SYMBOL', value: 'c60ac29cac954bada681734c5e16d8dcfd1ff69f' },
+      evidence: { locator: { kind: 'REMOTE_REF', value: 'origin/main' } },
+    },
+    { kind: 'STRUCTURAL_NON_PRODUCTION', requirement: 'rf-missing-concept' },
+  ];
+  return instance;
+}
+
+test('synthetique : une instance adossee a un protocole est structurellement valide', () => {
+  const instance = syntheticProtocolBacked();
+  assert.equal(instance.source.kind, 'PROTOCOL');
+  assert.equal(instance.return_contract, undefined);
+  const result = validate(instance);
+  assert.equal(result.ok, true, firstError(result));
+  assert.equal(instance.execution.id.startsWith('synthetic-'), true);
+});
+
+test('synthetique : realisation reussie et non-production structurelle coexistent', () => {
+  const instance = syntheticContractBackedRealized();
+  const structural = validate(instance);
+  assert.equal(structural.ok, true, firstError(structural));
+  const contract = validateAgainstContract(instance, missionObject('003'));
+  assert.equal(contract.ok, true, firstError(contract));
+  assert.equal(contract.checked, 4);
+  const absent = instance.reported_entries.filter((e) => e.kind === 'STRUCTURAL_NON_PRODUCTION');
+  assert.equal(absent.length, 1);
+  assert.equal(absent[0].requirement, 'rf-missing-concept');
+});
+
+test('synthetique : aucun objet fabrique ne porte un identifiant de representabilite', () => {
+  for (const instance of [syntheticProtocolBacked(), syntheticContractBackedRealized(), base(), contractBacked()]) {
+    assert.equal(instance.execution.id.startsWith('representability-'), false);
+  }
+});
+
+/* ------------------------------------------------------------------ *
+ * Representabilite historique — corrigee
+ * ------------------------------------------------------------------ *
+ *
+ * Seules survivent les semantiques de retour qu'une autorite durable ATTRIBUE
+ * EXPLICITEMENT au retour de l'executant. Le recensement complet des 49
+ * entrees synthetiques anterieures, dont 46 non soutenues, est consigne par
+ * l'autorite 26.
+ *
+ * DOGFOOD-003 et TE001 PHASE D n'apportent aucune attribution de retour : ils
+ * n'ont donc plus de cas historique. Leurs FORMES restent eprouvees ci-dessus,
+ * par des objets explicitement fabriques.
+ */
+
+const CASES = ['a', 'b'];
 
 function representabilityCase(name) {
   return load(join(REPO, MANIFEST.cases[name].case_path));
 }
 
-test('les quatre cas de representabilite sont structurellement valides', () => {
+function caseAbsent(name) {
+  try {
+    readFileSync(join(REPO, 'tooling', 'result-instance', 'representability', name + '.json'), 'utf8');
+    return false;
+  } catch {
+    return true;
+  }
+}
+
+test('les deux cas historiques sont structurellement valides', () => {
   for (const name of CASES) {
     const result = validate(representabilityCase(name));
     assert.equal(result.ok, true, name + ' : ' + firstError(result));
   }
 });
 
-test('cas A : contrat, execution bloquee, resultat terminal rapporte, non-production', () => {
+test('cas A : exactement une semantique de retour historiquement soutenue', () => {
   const instance = representabilityCase('a');
-  const result = validateAgainstContract(instance, missionObject('001'));
-  assert.equal(result.ok, true, firstError(result));
-  const byId = new Map(
-    instance.reported_entries
-      .filter((entry) => entry.kind === 'REPORTED_VALUE')
-      .map((entry) => [entry.fact.id, entry]),
-  );
-  assert.equal(byId.get('rf-outcome').value.value, 'BLOCKED');
-  assert.equal(byId.get('gates.failed').value.value, '0');
-  assert.equal(byId.get('gates.failed').fact.defined_by, 'EXECUTOR');
-  assert.equal(byId.get('push.attempted').fact.defined_by, 'EXECUTOR');
-  assert.equal(byId.get('rf-modified-paths').value.type, 'SET');
-  const absent = instance.reported_entries.filter((entry) => entry.kind === 'STRUCTURAL_NON_PRODUCTION');
-  assert.deepEqual(absent.map((entry) => entry.requirement), ['rf-commit']);
+  assert.equal(instance.reported_entries.length, 1);
+  const entry = instance.reported_entries[0];
+  assert.equal(entry.kind, 'REPORTED_VALUE');
+  assert.equal(entry.fact.defined_by, 'RETURN_CONTRACT');
+  assert.equal(entry.fact.id, 'rf-outcome');
+  assert.equal(entry.value.value, 'BLOCKED');
+  const contract = validateAgainstContract(instance, missionObject('001'));
+  assert.equal(contract.ok, true, firstError(contract));
+  assert.equal(contract.checked, 1);
 });
 
-test('cas B : rapporte n est pas vrai, et les negatifs restent distincts', () => {
+test('cas B : exactement deux semantiques de retour historiquement soutenues', () => {
   const instance = representabilityCase('b');
-  const result = validateAgainstContract(instance, missionObject('002'));
-  assert.equal(result.ok, true, firstError(result));
-  const byId = new Map(instance.reported_entries.map((entry) => [entry.fact.id, entry.value]));
-  assert.equal(byId.get('rf-push-realized').value, 'NO');
-  assert.equal(byId.get('rf-commit-identifier').value, 'NOT_REALIZED');
-  assert.equal(byId.get('rf-remote-main-head').value, 'NOT_MEASURED');
-  assert.equal(byId.get('rf-blocker-reason').value, 'PERMISSION_DENIED');
-  assert.equal(byId.get('rf-commit-realized').value, 'NO');
-  assert.equal(instance.reported_entries.some((entry) => entry.kind === 'STRUCTURAL_NON_PRODUCTION'), false);
-  assert.equal(byId.get('rf-deviations').type, 'SET');
-  assert.equal(byId.get('rf-deviations').members.length, 3);
-});
-
-test('cas C : realisation reussie adossee au contrat et faits post-push', () => {
-  const instance = representabilityCase('c');
-  const result = validateAgainstContract(instance, missionObject('003'));
-  assert.equal(result.ok, true, firstError(result));
-  const byId = new Map(instance.reported_entries.map((entry) => [entry.fact.id, entry]));
-  assert.equal(byId.get('rf-commit-realized').value.value, 'YES');
-  assert.equal(byId.get('rf-push-status').value.value, 'REALIZED');
-  assert.equal(byId.get('rf-outcome').value.value, 'PASS');
-  assert.equal(
-    byId.get('rf-commit-identifier').value.value,
-    byId.get('rf-remote-main-head').value.value,
-  );
-  assert.equal(byId.get('rf-remote-main-head').evidence.locator.kind, 'REMOTE_REF');
-  assert.equal(byId.get('post_push.verification').fact.defined_by, 'EXECUTOR');
-});
-
-test('cas D : adosse a un protocole, sans contrat, identifiants synthetiques seulement', () => {
-  const instance = representabilityCase('d');
-  assert.equal(instance.source.kind, 'PROTOCOL');
-  assert.equal(instance.return_contract, undefined);
-  assert.equal(instance.source.authority.locator.value, '09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md');
+  assert.equal(instance.reported_entries.length, 2);
+  const byId = new Map(instance.reported_entries.map((e) => [e.fact.id, e]));
+  assert.equal(byId.get('rf-push-realized').value.value, 'NO');
+  assert.equal(byId.get('rf-remote-main-head').value.value, 'NOT_MEASURED');
   for (const entry of instance.reported_entries) {
-    assert.equal(entry.kind, 'REPORTED_VALUE');
-    assert.equal(entry.fact.defined_by, 'EXECUTOR', 'identite SOURCE fabriquee : ' + entry.fact.id);
-    assert.equal(entry.requirement, undefined);
+    assert.equal(entry.fact.defined_by, 'RETURN_CONTRACT');
   }
-  const ids = instance.reported_entries.map((entry) => entry.fact.id);
-  for (const evaluative of ['next_action.recovered_correctly', 'manual_factual_corrections', 'criterion.6']) {
-    assert.equal(ids.includes(evaluative), false, 'fait de qualification present : ' + evaluative);
+  const contract = validateAgainstContract(instance, missionObject('002'));
+  assert.equal(contract.ok, true, firstError(contract));
+  assert.equal(contract.checked, 2);
+});
+
+test('cas B : la valeur rapportee NO est preservee, jamais corrigee', () => {
+  const entry = representabilityCase('b').reported_entries.find(
+    (e) => e.fact.id === 'rf-push-realized',
+  );
+  assert.equal(entry.value.value, 'NO');
+  assert.notEqual(entry.value.value, 'NOT_ATTEMPTED');
+  const allowed = missionObject('002').return_contract.find((f) => f.id === 'rf-push-realized');
+  assert.equal(allowed.allowed_values.members.some((m) => m.value === 'NOT_ATTEMPTED'), true);
+});
+
+test('aucun cas historique pour DOGFOOD-003 ni pour la phase D', () => {
+  assert.equal(caseAbsent('c'), true);
+  assert.equal(caseAbsent('d'), true);
+  assert.equal(MANIFEST.cases.c, undefined);
+  assert.equal(MANIFEST.cases.d, undefined);
+  assert.deepEqual(Object.keys(MANIFEST.cases).sort(), ['a', 'b']);
+});
+
+test('aucune non-production structurelle historique n est soutenue', () => {
+  let count = 0;
+  for (const name of CASES) {
+    for (const entry of representabilityCase(name).reported_entries) {
+      if (entry.kind === 'STRUCTURAL_NON_PRODUCTION') count += 1;
+    }
+    for (const key of Object.keys(MANIFEST.cases[name].elements)) {
+      if (key.startsWith('NON_PRODUCTION:')) count += 1;
+    }
   }
+  assert.equal(count, 0);
 });
 
 test('aucun cas ne se presente comme une instance de resultat historique', () => {
@@ -699,7 +794,7 @@ test('aucun cas ne se presente comme une instance de resultat historique', () =>
 });
 
 /* ------------------------------------------------------------------ *
- * Manifeste de provenance
+ * Manifeste de provenance — corrige
  * ------------------------------------------------------------------ */
 
 test('le manifeste se declare metadonnee de qualification uniquement', () => {
@@ -709,11 +804,18 @@ test('le manifeste se declare metadonnee de qualification uniquement', () => {
   assert.match(MANIFEST.declarations.proof_of_historical_bytes, /^NON/);
   assert.match(MANIFEST.declarations.transcript_use, /^AUCUN/);
   assert.match(MANIFEST.declarations.replay, /^AUCUN/);
-  assert.match(MANIFEST.declarations.synthetic_qualification_identifiers, /SYNTHETIQUES DE QUALIFICATION/);
-  assert.match(MANIFEST.declarations.case_d_limit, /aucune identite SOURCE/);
+});
+
+test('le manifeste enonce la regle d admission corrigee', () => {
+  assert.match(MANIFEST.declarations.admission_rule, /ATTRIBUE EXPLICITEMENT/);
+  assert.match(MANIFEST.declarations.admission_rule, /aucune attribution de niveau section/);
+  assert.match(MANIFEST.declarations.scope_limits, /n'est PAS etablie historiquement/);
+  assert.match(MANIFEST.declarations.structural_non_production, /Aucune non-production structurelle/);
+  assert.match(MANIFEST.declarations.census_reference, /autorite 26/);
 });
 
 test('le manifeste couvre exactement chaque element de chaque cas', () => {
+  let total = 0;
   for (const name of CASES) {
     const instance = representabilityCase(name);
     const declared = new Set(Object.keys(MANIFEST.cases[name].elements));
@@ -725,16 +827,20 @@ test('le manifeste couvre exactement chaque element de chaque cas', () => {
     assert.equal(new Set(present).size, present.length, name + ' : cle dupliquee');
     for (const key of present) assert.ok(declared.has(key), name + ' : element non trace ' + key);
     for (const key of declared) assert.ok(present.includes(key), name + ' : trace orpheline ' + key);
+    total += present.length;
   }
+  assert.equal(total, 3);
 });
 
-test('chaque element trace nomme une autorite durable committee', () => {
+test('chaque element trace porte une attribution de retour explicite', () => {
   const known = new Set(Object.keys(MANIFEST.authorities));
   for (const name of CASES) {
-    for (const [key, grounding] of Object.entries(MANIFEST.cases[name].elements)) {
-      assert.ok(known.has(grounding.authority), name + ' / ' + key + ' : autorite inconnue');
-      assert.ok(grounding.section.length > 0, name + ' / ' + key + ' : section absente');
-      assert.ok(grounding.durable_statement.length > 0, name + ' / ' + key + ' : enonce absent');
+    for (const [key, g] of Object.entries(MANIFEST.cases[name].elements)) {
+      assert.ok(known.has(g.authority), name + ' / ' + key + ' : autorite inconnue');
+      assert.ok(g.section.length > 0, name + ' / ' + key + ' : section absente');
+      assert.ok(g.durable_statement.length > 0, name + ' / ' + key + ' : enonce absent');
+      assert.equal(g.attribution_mode, 'ITEM_EXPLICIT', name + ' / ' + key);
+      assert.match(g.durable_statement, /RETOURNE|retourne|RETOUR/, name + ' / ' + key);
     }
   }
 });
@@ -744,16 +850,4 @@ test('les autorites citees par le manifeste existent reellement dans le depot', 
     assert.match(blob, /^[0-9a-f]{40}$/, path);
     assert.ok(readFileSync(join(REPO, path), 'utf8').length > 0, path);
   }
-});
-
-test('une reference d autorite est native au depot, une reference de preuve non', () => {
-  const authorityElsewhere = base();
-  authorityElsewhere.source.authority.locator = { kind: 'REMOTE_REF', value: 'origin/main' };
-  const refused = validate(authorityElsewhere);
-  assert.equal(refused.ok, false);
-  assert.match(refused.errors[0].note, /genre hors vocabulaire/);
-
-  const evidenceElsewhere = base();
-  evidenceElsewhere.reported_entries[0].evidence = { locator: { kind: 'REMOTE_REF', value: 'origin/main' } };
-  assert.equal(validate(evidenceElsewhere).ok, true);
 });

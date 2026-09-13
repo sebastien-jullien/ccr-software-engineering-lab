@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T12:40:12Z"
+    "updated_at": "2026-09-13T13:53:49Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -680,6 +680,27 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-corrective-historical-qualification",
+      "question": "Ratifier la correction minimale et véridique de la qualification historique de Result Instance v0, telle que gelée par l'autorité 26 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-071",
+          "kind": "repo-path",
+          "ref": "26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-corrective-historical-qualification",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "ed18f78f5117fab3d7996541eaf31900db0de7d6"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
@@ -701,9 +722,9 @@
         }
       },
       {
-        "id": "ev-070",
+        "id": "ev-072",
         "kind": "repo-path",
-        "ref": "25-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-QUALIFICATION.md",
+        "ref": "26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
@@ -711,7 +732,7 @@
           "value": "Obtenir la sélection humaine de la première tâche réelle authentique du Lab pour le dogfood en usage réel de TOOLING-EXPERIMENT-003 avec Result Instance v0 qualifiée ; ne présumer ni la maintenance du README ni aucune autre tâche, et ne revendiquer aucune validation de capture en usage réel avant l'exécution de ce dogfood."
         },
         "observed": {
-          "blob": "0c71fb0c5810a272535f0fb64a769880529244da"
+          "blob": "ed18f78f5117fab3d7996541eaf31900db0de7d6"
         }
       }
     ]
