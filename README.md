@@ -153,6 +153,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md`](28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md) — conception du premier dogfood en usage réel.
 - [`29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md`](29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md) — correction du séquençage durable de reprise, supersédant l'autorité 28 sur la base cible et sur l'action durable, et là seulement.
 - [`30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md`](30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md) — qualification finale du premier dogfood en usage réel et conclusion de TOOLING-EXPERIMENT-003 : tâche README PASS, dogfood PASS WITH LIMITATIONS, question sélectionnée répondue positivement pour le périmètre éprouvé, et clôture par décision de gouvernance humaine — un PASS ne ferme jamais un flux de lui-même.
+- [`31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md`](31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md) — sélection de la direction de programme suivante : une petite console web locale v0 pour suivre une mission dans un dépôt, avec son périmètre produit gelé ; conception technique et implantation non commencées, et aucune nouvelle expérience d'outillage sélectionnée.
 
 ## Outillage
 
@@ -279,6 +280,18 @@ LIVE-USE CAPTURE BY AN EXECUTOR
   protocol-backed capture, structural non-production
 = real missions exercised 1 · real task classes exercised 1
 = universal Result Instance reliability : not asserted
+
+CURRENT PROGRAM DIRECTION
+= LOCAL MISSION CONSOLE V0
+= HUMAN-SELECTED
+= small local web console to follow one Lab mission in one repository
+= product scope frozen :
+  31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md
+= technical design : NOT YET FROZEN
+= implementation : NOT STARTED
+= existing-stack sufficiency : NOT YET ESTABLISHED
+= next : design local mission console v0, then classify each required
+  operation as existing capability, ordinary integration or concrete gap
 
 CURRENT LAB STREAM
 = NONE
