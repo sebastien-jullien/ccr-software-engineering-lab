@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T03:56:30Z"
+    "updated_at": "2026-09-13T04:19:49Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -638,26 +638,33 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-result-instance-v0-design",
+      "question": "Ratifier le modèle sémantique et le protocole expérimental Result Instance v0 de TOOLING-EXPERIMENT-003 tels que gelés par l'autorité 23 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-066",
+          "kind": "repo-path",
+          "ref": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-result-instance-v0-design",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Concevoir et prédéclarer TOOLING-EXPERIMENT-003 à partir du corpus durable de retours réels, en préservant la distinction entre contrat de retour, instance réelle de retour et qualification du retour ; ne sélectionner ni schéma ni implémentation avant que la conception de l'expérience ne les établisse.",
+    "value": "Concevoir l'implémentation et la sérialisation minimales des sémantiques Result Instance v0 gelées par TOOLING-EXPERIMENT-003, les qualifier contre le corpus historique des quatre exécutions réelles sans reconstruire les retours bruts depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que l'implémentation n'est pas qualifiée.",
     "evidence": [
-      {
-        "id": "ev-064",
-        "kind": "repo-path",
-        "ref": "22-TOOLING-EXPERIMENT-003-SELECTION.md",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "value",
-          "value": "Concevoir et prédéclarer TOOLING-EXPERIMENT-003 à partir du corpus durable de retours réels, en préservant la distinction entre contrat de retour, instance réelle de retour et qualification du retour ; ne sélectionner ni schéma ni implémentation avant que la conception de l'expérience ne les établisse."
-        },
-        "observed": {
-          "blob": "369a65c191cd3400f7c2a75d677eed8f12c8d532"
-        }
-      },
       {
         "id": "ev-065",
         "kind": "repo-path",
@@ -670,6 +677,20 @@
         },
         "observed": {
           "blob": "369a65c191cd3400f7c2a75d677eed8f12c8d532"
+        }
+      },
+      {
+        "id": "ev-067",
+        "kind": "repo-path",
+        "ref": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "value",
+          "value": "Concevoir l'implémentation et la sérialisation minimales des sémantiques Result Instance v0 gelées par TOOLING-EXPERIMENT-003, les qualifier contre le corpus historique des quatre exécutions réelles sans reconstruire les retours bruts depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que l'implémentation n'est pas qualifiée."
+        },
+        "observed": {
+          "blob": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
         }
       }
     ]
