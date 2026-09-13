@@ -1,0 +1,2179 @@
+{
+  "identity": {
+    "id": "te003-live-dogfood-001-readme-reconciliation",
+    "class": "TE003_LIVE_DOGFOOD_README_RECONCILIATION",
+    "addressee": "AGENT_CCR_LAB_NEXT_FRESH_EXECUTOR",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "readme.target_base",
+      "value": {
+        "type": "SCALAR",
+        "value": "5df42244466334d0053e6462fc96fed54d86e6cc"
+      },
+      "semantics_unresolved": false,
+      "label": "base gelée contre laquelle l'état cible du README se dérive ; la tête de dépêche est fournie par le transport, jamais par cet objet"
+    },
+    {
+      "subject": "mission.capture_arc",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTOR_OWNS_README_GIT_EFFECTS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTOR_PRODUCES_RESULT_INSTANCE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESULT_FROZEN_BEFORE_QUALIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTOR_DOES_NOT_PERSIST_RESULT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TASK_BLOCKER_IS_NOT_CAPTURE_BLOCKER"
+          }
+        ]
+      },
+      "semantics_unresolved": false
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-readme",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "README.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "ea62342d4ef45314b7331d9f212e057e88999d54"
+      }
+    },
+    {
+      "id": "ref-auth14",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      }
+    },
+    {
+      "id": "ref-auth20",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "20-TOOLING-EXPERIMENT-002-CONCLUSION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "d0f2f4d402f87e2ec083902715ec309e0719d3d5"
+      }
+    },
+    {
+      "id": "ref-auth23",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    },
+    {
+      "id": "ref-auth24",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "9efe619e2872ed275d73897ff6444d90ef1b03d7"
+      }
+    },
+    {
+      "id": "ref-auth26",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "ed18f78f5117fab3d7996541eaf31900db0de7d6"
+      }
+    },
+    {
+      "id": "ref-auth27",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "420b4c5704d5f619852155d5d07276fa96330ae0"
+      }
+    },
+    {
+      "id": "ref-auth28",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0f7ef0512cfbcaf976b45cea3dea23ef4ea02181"
+      }
+    },
+    {
+      "id": "ref-auth29",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "502a1cd787f592e17ed4d87b1260313db6beede2"
+      }
+    },
+    {
+      "id": "ref-result-001",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/program-state/RESULT-001.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
+      }
+    },
+    {
+      "id": "ref-checkpoint",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "PROGRAM-STATE.json"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-authorities",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "."
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-tooling",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-remote",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REMOTE_REF",
+        "value": "origin/main"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-mission",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/result-instance/live-dogfood/001/mission.json"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-validator",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/result-instance/validate.mjs"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-result",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/result-instance/live-dogfood/001/result.json"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-evidence",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/result-instance/live-dogfood/001/evidence/remote-main-head.txt"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "MISSION_PACKET",
+        "value": "return-block"
+      },
+      "identity_required": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-edit-readme",
+      "mode": "REQUIRED",
+      "action": "EDIT",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-readme"
+      }
+    },
+    {
+      "id": "e-review-diff",
+      "mode": "REQUIRED",
+      "action": "REVIEW_DIFF",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-readme"
+      }
+    },
+    {
+      "id": "e-freeze-readme",
+      "mode": "REQUIRED",
+      "action": "MEASURE_IDENTITY",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-readme"
+      }
+    },
+    {
+      "id": "e-commit",
+      "mode": "REQUIRED",
+      "action": "COMMIT",
+      "cardinality": 1,
+      "constraints": {
+        "author": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "committer": "Sébastien JULLIEN <sebastien.jullien.35@gmail.com>",
+        "subject": "docs: reconcile lab readme",
+        "staged_paths": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "id": "e-push",
+      "mode": "REQUIRED",
+      "action": "PUSH",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-remote"
+      },
+      "constraints": {
+        "ff_only": true
+      }
+    },
+    {
+      "id": "e-measure-remote",
+      "mode": "REQUIRED",
+      "action": "MEASURE_REMOTE_HEAD",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-remote"
+      }
+    },
+    {
+      "id": "e-freeze-evidence",
+      "mode": "REQUIRED",
+      "action": "MEASURE_IDENTITY",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-evidence"
+      }
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-result"
+      }
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-result"
+      }
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "MEASURE_IDENTITY",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-result"
+      }
+    },
+    {
+      "id": "e-forbid-commit-result",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-result"
+      }
+    },
+    {
+      "id": "e-forbid-push-result",
+      "mode": "FORBIDDEN",
+      "action": "PUSH",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-result"
+      }
+    },
+    {
+      "id": "e-forbid-commit-evidence",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-evidence"
+      }
+    },
+    {
+      "id": "e-forbid-rewrite-result",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-result"
+      }
+    },
+    {
+      "id": "e-forbid-edit-checkpoint",
+      "mode": "FORBIDDEN",
+      "action": "MUTATE",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-checkpoint"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth14",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth14"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth20",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth20"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth23",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth23"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth24",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth24"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth26",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth26"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth27",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth27"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth28",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth28"
+      }
+    },
+    {
+      "id": "e-forbid-edit-auth29",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-auth29"
+      }
+    },
+    {
+      "id": "e-forbid-edit-result-001",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-result-001"
+      }
+    },
+    {
+      "id": "e-forbid-edit-tooling",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-tooling"
+      }
+    },
+    {
+      "id": "e-forbid-edit-mission",
+      "mode": "FORBIDDEN",
+      "action": "EDIT",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-mission"
+      }
+    },
+    {
+      "id": "e-forbid-new-document",
+      "mode": "FORBIDDEN",
+      "action": "CREATE_DOCUMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-amend",
+      "mode": "FORBIDDEN",
+      "action": "AMEND",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-rebase",
+      "mode": "FORBIDDEN",
+      "action": "REBASE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-tag",
+      "mode": "FORBIDDEN",
+      "action": "TAG",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-force-push",
+      "mode": "FORBIDDEN",
+      "action": "FORCE_PUSH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-trailer",
+      "mode": "FORBIDDEN",
+      "action": "ADD_COMMIT_TRAILER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-bypass",
+      "mode": "FORBIDDEN",
+      "action": "BYPASS_PERMISSION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-alternate-git",
+      "mode": "FORBIDDEN",
+      "action": "USE_ALTERNATE_GIT_MECHANISM",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-retry",
+      "mode": "FORBIDDEN",
+      "action": "RETRY_COMMIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-reset",
+      "mode": "FORBIDDEN",
+      "action": "RESET",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-clean",
+      "mode": "FORBIDDEN",
+      "action": "CLEAN",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-restore-readme",
+      "mode": "FORBIDDEN",
+      "action": "RESTORE",
+      "cardinality": 0,
+      "target": {
+        "ref": "ref-readme"
+      }
+    },
+    {
+      "id": "e-forbid-implement",
+      "mode": "FORBIDDEN",
+      "action": "IMPLEMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-tests",
+      "mode": "FORBIDDEN",
+      "action": "RUN_TESTS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-resume",
+      "mode": "FORBIDDEN",
+      "action": "RESUME",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-fresh-session",
+      "mode": "FORBIDDEN",
+      "action": "START_FRESH_SESSION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-protected",
+      "mode": "FORBIDDEN",
+      "action": "READ_PROTECTED_RUN",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-ccr",
+      "mode": "FORBIDDEN",
+      "action": "EXECUTE_CCR",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-provider",
+      "mode": "FORBIDDEN",
+      "action": "INVOKE_PROVIDER",
+      "cardinality": 0
+    }
+  ],
+  "content_requirements": [
+    {
+      "id": "cr-document-index",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.document_index",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": "00..17, 19..29"
+      }
+    },
+    {
+      "id": "cr-document-index-count",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.document_index_cardinality",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 29
+      }
+    },
+    {
+      "id": "cr-tooling-index",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.tooling_index",
+      "relation": "SET_EQUALS",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "TOOLING_MISSION_OBJECT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TOOLING_PROGRAM_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TOOLING_RESULT_INSTANCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cr-current-stream",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.current_lab_stream",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "TOOLING_EXPERIMENT_003"
+      }
+    },
+    {
+      "id": "cr-te001-state",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te001_state",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "IMPLEMENTED"
+      }
+    },
+    {
+      "id": "cr-te001-question",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te001_question",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ANSWERED_FOR_TESTED_SCOPE"
+      }
+    },
+    {
+      "id": "cr-te001-phase-d",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te001_phase_d",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTED"
+      }
+    },
+    {
+      "id": "cr-te002-state",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te002_state",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CLOSED"
+      }
+    },
+    {
+      "id": "cr-te002-result",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te002_result",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS_WITH_LIMITATIONS"
+      }
+    },
+    {
+      "id": "cr-te003-state",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te003_state",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "OPEN"
+      }
+    },
+    {
+      "id": "cr-te003-subject",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te003_subject",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "DURABLE_RESULT_INSTANCE_REPRESENTATION"
+      }
+    },
+    {
+      "id": "cr-result-instance-state",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.result_instance_state",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "IMPLEMENTED_AND_STRUCTURALLY_QUALIFIED"
+      }
+    },
+    {
+      "id": "cr-live-capture",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.live_capture",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_YET_TESTED"
+      }
+    },
+    {
+      "id": "cr-dogfood-evaluations",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "readme.te002_dogfood_evaluations",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 3
+      }
+    },
+    {
+      "id": "cr-deny-te002-open",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "DENY",
+      "subject": "readme.te002_state",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "OPEN"
+      }
+    },
+    {
+      "id": "cr-deny-question-unanswered",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "DENY",
+      "subject": "readme.experimental_question_generic",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "UNANSWERED"
+      }
+    },
+    {
+      "id": "cr-deny-dogfood-001-unpronounced",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "CLAIM",
+      "polarity": "DENY",
+      "subject": "readme.dogfood_001_sufficiency",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_PRONOUNCED"
+      }
+    },
+    {
+      "id": "cr-forbid-te003-complete",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "FORBID_CLAIM",
+      "subject": "readme.te003_state",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "COMPLETE"
+      }
+    },
+    {
+      "id": "cr-forbid-live-validated",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "FORBID_CLAIM",
+      "subject": "readme.live_capture",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "VALIDATED"
+      }
+    },
+    {
+      "id": "cr-forbid-dogfood-passed",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "FORBID_CLAIM",
+      "subject": "readme.live_dogfood_outcome",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "id": "cr-forbid-te001-closed",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "FORBID_CLAIM",
+      "subject": "readme.te001_state",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CLOSED"
+      }
+    },
+    {
+      "id": "cr-forbid-deferred-due",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "FORBID_CLAIM",
+      "subject": "readme.deferred_work",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "DUE"
+      }
+    },
+    {
+      "id": "cr-forbid-ccr-requirement",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "FORBID_CLAIM",
+      "subject": "readme.ccr_system_requirement",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "IMPOSED"
+      }
+    },
+    {
+      "id": "cr-preserve-objet",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_objet"
+    },
+    {
+      "id": "cr-preserve-principe",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_principe_directeur"
+    },
+    {
+      "id": "cr-preserve-observables",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_ce_que_le_lab_cherche_a_observer"
+    },
+    {
+      "id": "cr-preserve-cas",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_cas"
+    },
+    {
+      "id": "cr-preserve-case-001",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_case_001"
+    },
+    {
+      "id": "cr-preserve-case-002",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_case_002"
+    },
+    {
+      "id": "cr-preserve-case-003",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_case_003"
+    },
+    {
+      "id": "cr-preserve-case-004",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_case_004"
+    },
+    {
+      "id": "cr-preserve-case-005",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_case_005"
+    },
+    {
+      "id": "cr-preserve-ccr-system-block",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.current_state_block_ccr_system"
+    },
+    {
+      "id": "cr-preserve-case-result-blocks",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.current_state_blocks_case_001_005"
+    },
+    {
+      "id": "cr-preserve-post-case-005",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.current_state_block_post_case_005"
+    },
+    {
+      "id": "cr-preserve-feedback-arcs",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.current_state_block_feedback_arcs"
+    },
+    {
+      "id": "cr-preserve-maintenance-detour",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.current_state_block_ccr_maintenance_detour"
+    },
+    {
+      "id": "cr-preserve-workspaces-note",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.current_state_workspaces_note"
+    },
+    {
+      "id": "cr-preserve-correction-v3",
+      "scope": "MISSION",
+      "target": "ref-readme",
+      "kind": "PRESERVE",
+      "subject": "readme.section_correction_de_trajectoire_v3"
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-edit",
+        "effect": "e-edit-readme",
+        "atomic": true,
+        "gated_by": "g-preflight"
+      },
+      {
+        "order": 2,
+        "id": "s-review",
+        "effect": "e-review-diff",
+        "atomic": true,
+        "gated_by": "g-diff-boundary"
+      },
+      {
+        "order": 3,
+        "id": "s-freeze-readme",
+        "effect": "e-freeze-readme",
+        "atomic": true,
+        "produces": [
+          "ev-readme-final"
+        ]
+      },
+      {
+        "order": 4,
+        "id": "s-commit",
+        "effect": "e-commit",
+        "atomic": true,
+        "produces": [
+          "ev-commit-result"
+        ]
+      },
+      {
+        "order": 5,
+        "id": "s-push",
+        "effect": "e-push",
+        "atomic": true,
+        "gated_by": "g-commit-realized",
+        "produces": [
+          "ev-push-result"
+        ]
+      },
+      {
+        "order": 6,
+        "id": "s-measure-remote",
+        "effect": "e-measure-remote",
+        "atomic": true,
+        "produces": [
+          "ev-post-attempt-remote"
+        ]
+      },
+      {
+        "order": 7,
+        "id": "s-freeze-evidence",
+        "effect": "e-freeze-evidence",
+        "atomic": true
+      },
+      {
+        "order": 8,
+        "id": "s-produce-result",
+        "effect": "e-produce-result",
+        "atomic": true
+      },
+      {
+        "order": 9,
+        "id": "s-validate-result",
+        "effect": "e-validate-result",
+        "atomic": true,
+        "produces": [
+          "ev-result-validation"
+        ]
+      },
+      {
+        "order": 10,
+        "id": "s-freeze-result",
+        "effect": "e-freeze-result",
+        "atomic": true,
+        "gated_by": "g-result-valid"
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-preflight",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "PARENT_OF_HEAD"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "5df42244466334d0053e6462fc96fed54d86e6cc"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-readme"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "ea62342d4ef45314b7331d9f212e057e88999d54"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "dispatch_extra_paths"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-diff-boundary",
+      "scope": [
+        "s-edit"
+      ],
+      "on_fail": "sr-scope",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "SET_EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "repo.modified_paths"
+            },
+            "value": {
+              "type": "SET",
+              "members": [
+                {
+                  "type": "SCALAR",
+                  "value": "README.md"
+                }
+              ]
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "preserved_section_changes"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-commit-realized",
+      "scope": [
+        "s-commit"
+      ],
+      "on_fail": "sr-blocked",
+      "predicate": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-commit",
+          "field": "realized"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "g-result-valid",
+      "scope": [
+        "s-validate-result"
+      ],
+      "on_fail": "sr-result-invalid",
+      "predicate": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-validate-result",
+          "field": "status"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "PASS"
+        }
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-edit-not-completed",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-edit-readme",
+          "field": "realized"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": false
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b0-forbid-rollback",
+          "mode": "FORBIDDEN",
+          "action": "ROLLBACK",
+          "target": {
+            "ref": "ref-readme"
+          },
+          "cardinality": 0
+        },
+        {
+          "id": "e-b0-forbid-retry",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b0-forbid-bypass",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b0-forbid-alternate",
+          "mode": "FORBIDDEN",
+          "action": "USE_ALTERNATE_GIT_MECHANISM",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b0-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b0-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true,
+          "produces": [
+            "ev-result-validation"
+          ]
+        },
+        {
+          "id": "s-b0-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b0-outcome",
+          "scope": "br-edit-not-completed",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "task.terminal_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "BLOCKED_EDIT_NOT_COMPLETED"
+          }
+        }
+      ],
+      "terminal_outcome": "BLOCKED_EDIT_NOT_COMPLETED",
+      "next": "nc-capture"
+    },
+    {
+      "id": "br-commit-not-realized",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-commit",
+          "field": "realized"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": false
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b1-forbid-rollback",
+          "mode": "FORBIDDEN",
+          "action": "ROLLBACK",
+          "target": {
+            "ref": "ref-readme"
+          },
+          "cardinality": 0
+        },
+        {
+          "id": "e-b1-forbid-retry",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b1-forbid-bypass",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b1-forbid-alternate",
+          "mode": "FORBIDDEN",
+          "action": "USE_ALTERNATE_GIT_MECHANISM",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b1-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b1-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true,
+          "produces": [
+            "ev-result-validation"
+          ]
+        },
+        {
+          "id": "s-b1-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b1-outcome",
+          "scope": "br-commit-not-realized",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "task.terminal_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "BLOCKED_COMMIT_NOT_REALIZED"
+          }
+        },
+        {
+          "id": "cr-b1-push",
+          "scope": "br-commit-not-realized",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "push.status",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NOT_ATTEMPTED"
+          }
+        }
+      ],
+      "terminal_outcome": "BLOCKED_COMMIT_NOT_REALIZED",
+      "next": "nc-capture"
+    },
+    {
+      "id": "br-push-not-realized",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-push",
+          "field": "status"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "NOT_REALIZED"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b2-forbid-rollback",
+          "mode": "FORBIDDEN",
+          "action": "ROLLBACK",
+          "target": {
+            "ref": "ref-readme"
+          },
+          "cardinality": 0
+        },
+        {
+          "id": "e-b2-forbid-retry",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b2-forbid-bypass",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b2-forbid-alternate",
+          "mode": "FORBIDDEN",
+          "action": "USE_ALTERNATE_GIT_MECHANISM",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b2-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b2-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true,
+          "produces": [
+            "ev-result-validation"
+          ]
+        },
+        {
+          "id": "s-b2-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b2-outcome",
+          "scope": "br-push-not-realized",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "task.terminal_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "BLOCKED_PUSH_NOT_REALIZED"
+          }
+        }
+      ],
+      "terminal_outcome": "BLOCKED_PUSH_NOT_REALIZED",
+      "next": "nc-capture"
+    },
+    {
+      "id": "br-publication-unverified",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-measure-remote",
+          "field": "remote_equals_local_head"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": false
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b3-forbid-rollback",
+          "mode": "FORBIDDEN",
+          "action": "ROLLBACK",
+          "target": {
+            "ref": "ref-readme"
+          },
+          "cardinality": 0
+        },
+        {
+          "id": "e-b3-forbid-retry",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b3-forbid-bypass",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b3-forbid-alternate",
+          "mode": "FORBIDDEN",
+          "action": "USE_ALTERNATE_GIT_MECHANISM",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b3-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b3-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true,
+          "produces": [
+            "ev-result-validation"
+          ]
+        },
+        {
+          "id": "s-b3-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b3-outcome",
+          "scope": "br-publication-unverified",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "task.terminal_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "BLOCKED_PUBLICATION_UNVERIFIED"
+          }
+        }
+      ],
+      "terminal_outcome": "BLOCKED_PUBLICATION_UNVERIFIED",
+      "next": "nc-capture"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "preflight_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-clean-preflight",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-reset-preflight",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-restore-preflight",
+          "mode": "FORBIDDEN",
+          "action": "RESTORE"
+        },
+        {
+          "id": "sp-retry-preflight",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT"
+        },
+        {
+          "id": "sp-bypass-preflight",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-scope",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "scope_boundary_held"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-clean-scope",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-reset-scope",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-restore-scope",
+          "mode": "FORBIDDEN",
+          "action": "RESTORE"
+        },
+        {
+          "id": "sp-retry-scope",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT"
+        },
+        {
+          "id": "sp-bypass-scope",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-blocked",
+      "trigger": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "task_blocker"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-clean-blocked",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-reset-blocked",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-restore-blocked",
+          "mode": "FORBIDDEN",
+          "action": "RESTORE"
+        },
+        {
+          "id": "sp-retry-blocked",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT"
+        },
+        {
+          "id": "sp-bypass-blocked",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-result-invalid",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-validate-result",
+          "field": "status"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "PASS"
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-clean-result",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-reset-result",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-restore-result",
+          "mode": "FORBIDDEN",
+          "action": "RESTORE"
+        },
+        {
+          "id": "sp-retry-result",
+          "mode": "FORBIDDEN",
+          "action": "RETRY_COMMIT"
+        },
+        {
+          "id": "sp-bypass-result",
+          "mode": "FORBIDDEN",
+          "action": "BYPASS_PERMISSION"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-task-selected",
+        "subject": "tooling_experiment_003_first_live_dogfood_task_selected",
+        "authority": "ref-auth27"
+      },
+      {
+        "id": "rd-design",
+        "subject": "tooling_experiment_003_first_live_dogfood_design",
+        "authority": "ref-auth28"
+      },
+      {
+        "id": "rd-sequencing",
+        "subject": "tooling_experiment_003_live_dogfood_resumption_sequencing_correction",
+        "authority": "ref-auth29"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-capture"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-readme-final",
+      "kind": "OBSERVATION",
+      "fact": "readme.final_blob",
+      "method": {
+        "op": "EQ",
+        "source": "ref-readme",
+        "recompute": true
+      },
+      "must_return": "rf-readme-final-blob"
+    },
+    {
+      "id": "ev-commit-result",
+      "kind": "OBSERVATION",
+      "fact": "commit.operation_result",
+      "must_return": "rf-commit-realized"
+    },
+    {
+      "id": "ev-push-result",
+      "kind": "OBSERVATION",
+      "fact": "push.operation_result",
+      "must_return": "rf-push-status"
+    },
+    {
+      "id": "ev-post-attempt-remote",
+      "kind": "VERIFICATION",
+      "fact": "remote.post_attempt_head",
+      "method": {
+        "op": "EQ",
+        "source": "ref-remote",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "remote.preflight_head"
+      ],
+      "must_return": "rf-remote-main-head"
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "result_instance.structural_validation",
+      "method": {
+        "op": "EQ",
+        "source": "ref-validator",
+        "recompute": true
+      }
+    }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "PASS",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-commit",
+              "field": "realized"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-push",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "REALIZED"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-measure-remote",
+              "field": "remote_equals_local_head"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-capture",
+      "post_state": [
+        {
+          "id": "cr-pass-capture",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BLOCKED_EDIT_NOT_COMPLETED",
+      "valid_when": {
+        "branch": "br-edit-not-completed"
+      },
+      "partial_state_allowed": true,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-capture",
+      "post_state": []
+    },
+    {
+      "label": "BLOCKED_COMMIT_NOT_REALIZED",
+      "valid_when": {
+        "branch": "br-commit-not-realized"
+      },
+      "partial_state_allowed": true,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-capture",
+      "post_state": []
+    },
+    {
+      "label": "BLOCKED_PUSH_NOT_REALIZED",
+      "valid_when": {
+        "branch": "br-push-not-realized"
+      },
+      "partial_state_allowed": true,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-capture",
+      "post_state": []
+    },
+    {
+      "label": "BLOCKED_PUBLICATION_UNVERIFIED",
+      "valid_when": {
+        "branch": "br-publication-unverified"
+      },
+      "partial_state_allowed": true,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-capture",
+      "post_state": []
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-starting-head",
+      "fact": "execution.starting_head",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-readme-final-blob",
+      "fact": "readme.final_blob",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-modified-paths",
+      "fact": "repo.modified_paths",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-commit-realized",
+      "fact": "commit.realized",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-commit-identifier",
+      "fact": "commit.identifier",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-push-status",
+      "fact": "push.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REALIZED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REALIZED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ATTEMPTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-remote-main-head",
+      "fact": "remote.main_head",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-task-outcome",
+      "fact": "task.terminal_outcome",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED_EDIT_NOT_COMPLETED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED_COMMIT_NOT_REALIZED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED_PUSH_NOT_REALIZED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED_PUBLICATION_UNVERIFIED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-blocker-reason",
+      "fact": "operation.blocker_reason",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERMISSION_DENIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ENVIRONMENT_REFUSAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REPOSITORY_FACT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "OTHER"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-capture",
+      "kind": "DETERMINED",
+      "action": "HANDOFF_FROZEN_RESULT_INSTANCE",
+      "target": "te003_live_capture_arc"
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-no-persistence-by-executor",
+      "constraint": {
+        "id": "e-sc-persist",
+        "mode": "FORBIDDEN",
+        "action": "PERSIST_RESULT_INSTANCE",
+        "target": "result_instance_artifacts"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "downstream_persistence_authorization"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-scope-expansion",
+      "constraint": {
+        "id": "e-sc-scope",
+        "mode": "FORBIDDEN",
+        "action": "INITIATE",
+        "target": "work_outside_readme_task_scope"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}
