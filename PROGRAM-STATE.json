@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T15:19:07Z"
+    "updated_at": "2026-09-13T15:46:38Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -743,11 +743,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-live-dogfood-resumption-sequencing-correction",
+      "question": "Ratifier la correction du séquençage durable de reprise du premier dogfood en usage réel de TOOLING-EXPERIMENT-003, telle que gelée par l'autorité 29 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-077",
+          "kind": "repo-path",
+          "ref": "29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-live-dogfood-resumption-sequencing-correction",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "502a1cd787f592e17ed4d87b1260313db6beede2"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Matérialiser le paquet de dépêche du premier dogfood en usage réel de TOOLING-EXPERIMENT-003 contre la BASE CIBLE DU README créée par ce commit de matérialisation de conception : dériver et geler mission.json et envelope.md en employant le SHA de base cible désormais connu et l'empreinte de départ du README, committer uniquement ces fichiers de paquet comme descendant direct, sans ajouter d'autorité racine indexée par le README ni muter PROGRAM-STATE, et s'arrêter avant toute dépêche d'exécutant ou toute modification de README.md.",
+    "value": "Conduire le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 sous les autorités 28 et 29, pour la tâche de maintenance bornée du README : 1 matérialiser le paquet de dépêche gelé contre la BASE CIBLE DU README courante ; 2 dépêcher un exécutant frais qualifié ; 3 exécuter la tâche bornée du README et ses effets Git portés par l'exécutant ; 4 obtenir l'instance de résultat produite, validée et gelée par l'exécutant ainsi que la preuve temporelle du distant ; 5 appliquer la règle de persistance sûre sans réaliser aucun effet README non réalisé ; 6 si la persistance durable réussit, remettre le paquet durable autorisé à un consommateur aval frais sous pare-feu d'entrée factuel ; 7 conduire la récupération factuelle et produire le registre exhaustif des sources factuelles ; 8 s'arrêter avant la qualification humaine du dogfood, avant toute conclusion d'expérience et avant toute décision de direction suivante.",
     "evidence": [
       {
         "id": "ev-065",
@@ -764,17 +785,17 @@
         }
       },
       {
-        "id": "ev-076",
+        "id": "ev-078",
         "kind": "repo-path",
-        "ref": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md",
+        "ref": "29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Matérialiser le paquet de dépêche du premier dogfood en usage réel de TOOLING-EXPERIMENT-003 contre la BASE CIBLE DU README créée par ce commit de matérialisation de conception : dériver et geler mission.json et envelope.md en employant le SHA de base cible désormais connu et l'empreinte de départ du README, committer uniquement ces fichiers de paquet comme descendant direct, sans ajouter d'autorité racine indexée par le README ni muter PROGRAM-STATE, et s'arrêter avant toute dépêche d'exécutant ou toute modification de README.md."
+          "value": "Conduire le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 sous les autorités 28 et 29, pour la tâche de maintenance bornée du README : 1 matérialiser le paquet de dépêche gelé contre la BASE CIBLE DU README courante ; 2 dépêcher un exécutant frais qualifié ; 3 exécuter la tâche bornée du README et ses effets Git portés par l'exécutant ; 4 obtenir l'instance de résultat produite, validée et gelée par l'exécutant ainsi que la preuve temporelle du distant ; 5 appliquer la règle de persistance sûre sans réaliser aucun effet README non réalisé ; 6 si la persistance durable réussit, remettre le paquet durable autorisé à un consommateur aval frais sous pare-feu d'entrée factuel ; 7 conduire la récupération factuelle et produire le registre exhaustif des sources factuelles ; 8 s'arrêter avant la qualification humaine du dogfood, avant toute conclusion d'expérience et avant toute décision de direction suivante."
         },
         "observed": {
-          "blob": "0f7ef0512cfbcaf976b45cea3dea23ef4ea02181"
+          "blob": "502a1cd787f592e17ed4d87b1260313db6beede2"
         }
       }
     ]
