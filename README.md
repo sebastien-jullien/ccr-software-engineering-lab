@@ -158,6 +158,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md`](33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md) — qualification indépendante de l'implémentation publiée de la console : PASS WITH LIMITATIONS, conformité fonctionnelle à l'autorité 32 établie, zéro défaut matériel, fidélité d'intégration historique byte-identique, frontières de sécurité et de lecture seule tenues, suite publiée remesurée 61/61 ; cinq limites non matérielles consignées, et l'utilité en usage réel reste non évaluée — conformité établie n'est pas utilité démontrée.
 - [`34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md`](34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md) — sélection de la prochaine mission authentique du Lab : étudier la frontière durable entre décision humaine ratifiée, conséquence déterministe et conséquence effectivement exécutée, à partir de cas historiques réels ; objet premier R&D d'orchestration, console employée seulement comme surface d'observation secondaire en usage réel ; méthode preuve-d'abord, aucune implémentation pré-autorisée, aucune nouvelle expérience d'outillage, contrat de mission bornée non encore gelé.
 - [`35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md`](35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md) — gel de la mission exécutable bornée : coupe du corpus historique, inventaire A–E exhaustif, cinq cas authentiques sélectionnés et leurs lignées factuelles, question de l'étude, vocabulaire de classification, porte d'écart concret en cinq parties, contrat de retour factuel, critères de succès, frontière de lecture / écriture de l'exécution, artefacts de mission gelés, et protocole d'observation de la console en usage réel ; l'étude est exécutable, sa conclusion n'est pas écrite.
+- [`36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md`](36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md) — réparation déterministe du protocole secondaire : destination durable des observations d'usage réel de la console, produites par l'humain ou l'orchestrateur et tenues séparées du retour de l'exécutant ; inventaire des surfaces existantes, artefact local à la mission retenu, champs exacts, cycle de vie par étape et sémantique de durabilité. Un record d'observation n'est pas une qualification d'utilité.
 
 ## Outillage
 
@@ -324,14 +325,18 @@ CURRENT PROGRAM DIRECTION
   missions/001-decision-consequence-boundary
 = mission execution : NOT STARTED
 = result instance : NOT YET PRODUCED
-= console real-use protocol : FROZEN
+= console real-use observation protocol : COMPLETE
+  36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md
+= durable capture destination : FROZEN
+  missions/001-decision-consequence-boundary/console-real-use-observations.md
+= panel A / B / C observations : NOT YET OBSERVED
 = console real-use utility : NOT YET EVALUATED
 = study conclusion : NOT YET KNOWN
 = concrete representation gap : NOT YET ESTABLISHED
 = implementation of a new representation : NOT AUTHORIZED
 = TE004 : NOT SELECTED
 = CCR System frontier : NOT SELECTED
-= next : execute the frozen genuine mission using the console real-use protocol
+= next : execute the frozen mission using authorities 35 + 36
 
 CURRENT LAB STREAM
 = NONE

@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T23:22:09Z"
+    "updated_at": "2026-09-13T23:36:08Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -915,7 +915,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter l'étude historique décision → conséquence déterministe → conséquence exécutée exactement contre l'autorité 35 et son Mission Object gelé. Avant la dépêche, employer LOCAL MISSION CONSOLE V0, panneaux A et B, selon le protocole d'usage réel gelé, et transmettre à un exécutant frais l'enveloppe de mission rendue par la console. L'exécutant ne doit inspecter que le corpus historique durable gelé et produire exactement l'instance de résultat réservée, sans aucune autre mutation du dépôt. Après production du résultat, employer le panneau C selon le protocole gelé. S'arrêter avant de qualifier le résultat de l'étude primaire, avant de qualifier l'utilité de la console, avant de concevoir toute nouvelle représentation, et avant de créer TOOLING-EXPERIMENT-004.",
+    "value": "Exécuter la mission authentique gelée contre l'autorité 35 et son Mission Object, en suivant désormais aussi l'autorité 36 pour la capture durable des observations d'usage réel de la console produites par l'humain / l'orchestrateur. Avant la dépêche, persister les observations des panneaux A puis B dans missions/001-decision-consequence-boundary/console-real-use-observations.md, une étape écrite puis committée à la fois, et vérifier que les deux sont durablement récupérables. Transmettre ensuite à un exécutant frais l'enveloppe de mission rendue par la console. L'exécutant ne produit que l'instance de résultat réservée et ne commite rien. Employer enfin le panneau C et persister son observation selon les mêmes règles d'attribution. S'arrêter avant la qualification de l'étude primaire, avant la qualification d'utilité de la console, avant toute conception de nouvelle représentation et avant TOOLING-EXPERIMENT-004.",
     "evidence": [
       {
         "id": "ev-065",
@@ -932,17 +932,17 @@
         }
       },
       {
-        "id": "ev-094",
+        "id": "ev-095",
         "kind": "repo-path",
-        "ref": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md",
+        "ref": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter l'étude historique décision → conséquence déterministe → conséquence exécutée exactement contre l'autorité 35 et son Mission Object gelé. Avant la dépêche, employer LOCAL MISSION CONSOLE V0, panneaux A et B, selon le protocole d'usage réel gelé, et transmettre à un exécutant frais l'enveloppe de mission rendue par la console. L'exécutant ne doit inspecter que le corpus historique durable gelé et produire exactement l'instance de résultat réservée, sans aucune autre mutation du dépôt. Après production du résultat, employer le panneau C selon le protocole gelé. S'arrêter avant de qualifier le résultat de l'étude primaire, avant de qualifier l'utilité de la console, avant de concevoir toute nouvelle représentation, et avant de créer TOOLING-EXPERIMENT-004."
+          "value": "Exécuter la mission authentique gelée contre l'autorité 35 et son Mission Object, en suivant désormais aussi l'autorité 36 pour la capture durable des observations d'usage réel de la console produites par l'humain / l'orchestrateur. Avant la dépêche, persister les observations des panneaux A puis B dans missions/001-decision-consequence-boundary/console-real-use-observations.md, une étape écrite puis committée à la fois, et vérifier que les deux sont durablement récupérables. Transmettre ensuite à un exécutant frais l'enveloppe de mission rendue par la console. L'exécutant ne produit que l'instance de résultat réservée et ne commite rien. Employer enfin le panneau C et persister son observation selon les mêmes règles d'attribution. S'arrêter avant la qualification de l'étude primaire, avant la qualification d'utilité de la console, avant toute conception de nouvelle représentation et avant TOOLING-EXPERIMENT-004."
         },
         "observed": {
-          "blob": "9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+          "blob": "dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
         }
       }
     ]
