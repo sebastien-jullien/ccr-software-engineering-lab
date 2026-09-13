@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T00:28:45Z"
+    "updated_at": "2026-09-13T02:26:22Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -577,20 +577,20 @@
     {
       "id": "post-te002-next-lab-direction",
       "question": "Quel doit être le prochain axe de travail du CCR Software Engineering Lab après la conclusion de TOOLING-EXPERIMENT-002 ?",
-      "state": "PENDING",
+      "state": "RATIFIED",
       "evidence": [
         {
-          "id": "ev-057",
+          "id": "ev-059",
           "kind": "repo-path",
-          "ref": "20-TOOLING-EXPERIMENT-002-CONCLUSION.md",
+          "ref": "21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md",
           "policy": "VERIFIABLE",
           "supports": {
             "subject": "decision:post-te002-next-lab-direction",
             "field": "state",
-            "value": "PENDING"
+            "value": "RATIFIED"
           },
           "observed": {
-            "blob": "d0f2f4d402f87e2ec083902715ec309e0719d3d5"
+            "blob": "4b3b9f20130d53368b5414fa0504e7e3e0b31544"
           }
         }
       ]
@@ -598,7 +598,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Obtenir la décision humaine sur le prochain axe de travail du CCR Software Engineering Lab après la conclusion de TOOLING-EXPERIMENT-002 ; ne commencer ni TE003, ni la phase D de TOOLING-EXPERIMENT-001, ni un nouveau dogfood, ni aucun autre travail substantiel du Lab avant cette décision.",
+    "value": "Exécuter la phase D de TOOLING-EXPERIMENT-001 comme essai gelé de reprise fraîche dans AGENT CCR LAB #14, selon le protocole et les critères TE001 existants ; n'introduire aucune conception nouvelle, n'employer aucune archéologie de transcription, puis évaluer ensuite le résultat brut de l'essai.",
     "evidence": [
       {
         "id": "ev-022",
@@ -615,17 +615,17 @@
         }
       },
       {
-        "id": "ev-058",
+        "id": "ev-060",
         "kind": "repo-path",
-        "ref": "20-TOOLING-EXPERIMENT-002-CONCLUSION.md",
+        "ref": "21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Obtenir la décision humaine sur le prochain axe de travail du CCR Software Engineering Lab après la conclusion de TOOLING-EXPERIMENT-002 ; ne commencer ni TE003, ni la phase D de TOOLING-EXPERIMENT-001, ni un nouveau dogfood, ni aucun autre travail substantiel du Lab avant cette décision."
+          "value": "Exécuter la phase D de TOOLING-EXPERIMENT-001 comme essai gelé de reprise fraîche dans AGENT CCR LAB #14, selon le protocole et les critères TE001 existants ; n'introduire aucune conception nouvelle, n'employer aucune archéologie de transcription, puis évaluer ensuite le résultat brut de l'essai."
         },
         "observed": {
-          "blob": "d0f2f4d402f87e2ec083902715ec309e0719d3d5"
+          "blob": "4b3b9f20130d53368b5414fa0504e7e3e0b31544"
         }
       }
     ]
