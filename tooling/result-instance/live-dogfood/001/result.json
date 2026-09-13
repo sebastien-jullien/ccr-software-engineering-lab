@@ -1,0 +1,161 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "te003-live-dogfood-001"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/result-instance/live-dogfood/001/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7358a63719036810222fe3d0c657f7192bd4f8c2"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/result-instance/live-dogfood/001/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7358a63719036810222fe3d0c657f7192bd4f8c2"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-starting-head"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4257e4ed8db75c6c8c14a24e19fc16628c88e3c7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-readme-final-blob"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "cba062a36ea30b408f864575495f221386e80726"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-modified-paths"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "README.md"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-commit-realized"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-commit-identifier"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a1d731ede86befaadfa2d8da6a022e3fd44f9ec4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-push-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REALIZED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remote-main-head"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a1d731ede86befaadfa2d8da6a022e3fd44f9ec4"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/result-instance/live-dogfood/001/evidence/remote-main-head.txt"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4b822a1f771898cd7883cf51c00fa63ff263104c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-task-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blocker-reason"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    }
+  ]
+}
