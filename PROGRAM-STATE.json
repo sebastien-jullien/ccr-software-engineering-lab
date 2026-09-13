@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T19:09:16Z"
+    "updated_at": "2026-09-13T20:55:55Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -848,11 +848,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "local-mission-console-v0-implementation-design-ratified",
+      "question": "Ratifier la conception d'implémentation corrigée de LOCAL MISSION CONSOLE V0 comme une intégration ordinaire des surfaces PROGRAM-STATE, Mission Object et Result Instance, sans nouvelle expérience d'outillage requise pour v0 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-088",
+          "kind": "repo-path",
+          "ref": "32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:local-mission-console-v0-implementation-design-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "788766873f64a942fe9f1c1f597653b46e76a2c6"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Concevoir et geler LOCAL MISSION CONSOLE V0 contre le périmètre produit sélectionné par l'humain à l'autorité 31. Déterminer l'architecture locale minimale et les points d'intégration exacts avec PROGRAM-STATE, Mission Object et Result Instance ; définir les frontières lecture/écriture et navigateur/dépôt ; définir l'acceptation de fidélité historique et l'acceptation ultérieure en usage réel ; classer chaque opération requise en capacité existante, code d'intégration ordinaire, ou capacité manquante concrète. Si le flux sélectionné se réalise par les surfaces existantes plus un code d'application ordinaire, préparer une conception prête à implémenter. Si un écart matériel concret est démontré, s'arrêter avant d'inventer la capacité manquante et la retourner pour décision produit humaine. S'arrêter avant toute implémentation.",
+    "value": "Implémenter LOCAL MISSION CONSOLE V0 exactement contre l'autorité 32. Créer l'application locale Node / navigateur et ses tests sans modifier les trois runtimes d'outillage établis. Préserver le périmètre produit à trois panneaux, l'autorité de dépôt en lecture seule, le modèle de capture unique et d'identité, la liaison à la version de mission, la sémantique d'association, la résolution de preuve bornée au contexte et les frontières de sécurité du navigateur. Appliquer la règle de fin de ligne .gitattributes pour la console. Exécuter la suite d'acceptation gelée de fidélité historique et d'acceptation applicative. S'arrêter après la qualification de l'implémentation, et avant toute sélection ou fabrication d'une mission réelle future.",
     "evidence": [
       {
         "id": "ev-065",
@@ -869,17 +890,17 @@
         }
       },
       {
-        "id": "ev-087",
+        "id": "ev-089",
         "kind": "repo-path",
-        "ref": "31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md",
+        "ref": "32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Concevoir et geler LOCAL MISSION CONSOLE V0 contre le périmètre produit sélectionné par l'humain à l'autorité 31. Déterminer l'architecture locale minimale et les points d'intégration exacts avec PROGRAM-STATE, Mission Object et Result Instance ; définir les frontières lecture/écriture et navigateur/dépôt ; définir l'acceptation de fidélité historique et l'acceptation ultérieure en usage réel ; classer chaque opération requise en capacité existante, code d'intégration ordinaire, ou capacité manquante concrète. Si le flux sélectionné se réalise par les surfaces existantes plus un code d'application ordinaire, préparer une conception prête à implémenter. Si un écart matériel concret est démontré, s'arrêter avant d'inventer la capacité manquante et la retourner pour décision produit humaine. S'arrêter avant toute implémentation."
+          "value": "Implémenter LOCAL MISSION CONSOLE V0 exactement contre l'autorité 32. Créer l'application locale Node / navigateur et ses tests sans modifier les trois runtimes d'outillage établis. Préserver le périmètre produit à trois panneaux, l'autorité de dépôt en lecture seule, le modèle de capture unique et d'identité, la liaison à la version de mission, la sémantique d'association, la résolution de preuve bornée au contexte et les frontières de sécurité du navigateur. Appliquer la règle de fin de ligne .gitattributes pour la console. Exécuter la suite d'acceptation gelée de fidélité historique et d'acceptation applicative. S'arrêter après la qualification de l'implémentation, et avant toute sélection ou fabrication d'une mission réelle future."
         },
         "observed": {
-          "blob": "ff916e29e2d3b03900ce2a5758df56530135f203"
+          "blob": "788766873f64a942fe9f1c1f597653b46e76a2c6"
         }
       }
     ]

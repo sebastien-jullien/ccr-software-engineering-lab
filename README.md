@@ -154,6 +154,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md`](29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md) — correction du séquençage durable de reprise, supersédant l'autorité 28 sur la base cible et sur l'action durable, et là seulement.
 - [`30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md`](30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md) — qualification finale du premier dogfood en usage réel et conclusion de TOOLING-EXPERIMENT-003 : tâche README PASS, dogfood PASS WITH LIMITATIONS, question sélectionnée répondue positivement pour le périmètre éprouvé, et clôture par décision de gouvernance humaine — un PASS ne ferme jamais un flux de lui-même.
 - [`31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md`](31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md) — sélection de la direction de programme suivante : une petite console web locale v0 pour suivre une mission dans un dépôt, avec son périmètre produit gelé ; conception technique et implantation non commencées, et aucune nouvelle expérience d'outillage sélectionnée.
+- [`32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md`](32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md) — conception d'implémentation gelée et ratifiée de la console : trois panneaux, autorité de dépôt en lecture seule, modèle de capture unique et d'identité, liaison à la version de mission, sémantique d'association, résolution de preuve bornée au contexte et frontières de sécurité du navigateur ; classée intégration ordinaire, sans nouvelle expérience d'outillage requise pour la v0.
 
 ## Outillage
 
@@ -287,11 +288,13 @@ CURRENT PROGRAM DIRECTION
 = small local web console to follow one Lab mission in one repository
 = product scope frozen :
   31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md
-= technical design : NOT YET FROZEN
+= technical design : FROZEN / RATIFIED
+  32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md
+= implementation class : ORDINARY INTEGRATION
+= concrete semantic gap : 0
+= new tooling experiment : NOT REQUIRED FOR V0
 = implementation : NOT STARTED
-= existing-stack sufficiency : NOT YET ESTABLISHED
-= next : design local mission console v0, then classify each required
-  operation as existing capability, ordinary integration or concrete gap
+= next : implement local mission console v0 against authority 32
 
 CURRENT LAB STREAM
 = NONE
