@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T20:55:55Z"
+    "updated_at": "2026-09-13T22:23:01Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -869,11 +869,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "local-mission-console-v0-independent-implementation-qualification-ratified",
+      "question": "Ratifier la qualification indépendante de l'implémentation publiée de LOCAL MISSION CONSOLE V0 comme PASS WITH LIMITATIONS, avec conformité fonctionnelle à l'autorité 32 établie, aucun défaut matériel, fidélité historique PASS, frontières de sécurité / lecture seule PASS, et utilité en usage réel restant non évaluée ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-090",
+          "kind": "repo-path",
+          "ref": "33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:local-mission-console-v0-independent-implementation-qualification-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "a0060090fa23a1db98c3ede8f60f0f02f75d99e1"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Implémenter LOCAL MISSION CONSOLE V0 exactement contre l'autorité 32. Créer l'application locale Node / navigateur et ses tests sans modifier les trois runtimes d'outillage établis. Préserver le périmètre produit à trois panneaux, l'autorité de dépôt en lecture seule, le modèle de capture unique et d'identité, la liaison à la version de mission, la sémantique d'association, la résolution de preuve bornée au contexte et les frontières de sécurité du navigateur. Appliquer la règle de fin de ligne .gitattributes pour la console. Exécuter la suite d'acceptation gelée de fidélité historique et d'acceptation applicative. S'arrêter après la qualification de l'implémentation, et avant toute sélection ou fabrication d'une mission réelle future.",
+    "value": "Obtenir la sélection humaine d'UNE prochaine mission authentique du Lab CCR dont l'objet PREMIER est un travail d'ingénierie ou de Lab utile, et non la couverture de la console, et pour laquelle LOCAL MISSION CONSOLE V0 puisse servir de surface de suivi de mission. Ne fabriquer aucune mission dans le seul but d'exercer la console. Ne sélectionner automatiquement aucune nouvelle expérience d'outillage. Une fois cette mission authentique sélectionnée par l'humain et gelée, employer la console sur cette mission pour évaluer la question d'usage réel encore ouverte : améliore-t-elle matériellement le suivi état → mission → résultat en préservant les frontières sémantiques établies ? S'arrêter avant de sélectionner cette mission automatiquement.",
     "evidence": [
       {
         "id": "ev-065",
@@ -890,17 +911,17 @@
         }
       },
       {
-        "id": "ev-089",
+        "id": "ev-091",
         "kind": "repo-path",
-        "ref": "32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md",
+        "ref": "33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Implémenter LOCAL MISSION CONSOLE V0 exactement contre l'autorité 32. Créer l'application locale Node / navigateur et ses tests sans modifier les trois runtimes d'outillage établis. Préserver le périmètre produit à trois panneaux, l'autorité de dépôt en lecture seule, le modèle de capture unique et d'identité, la liaison à la version de mission, la sémantique d'association, la résolution de preuve bornée au contexte et les frontières de sécurité du navigateur. Appliquer la règle de fin de ligne .gitattributes pour la console. Exécuter la suite d'acceptation gelée de fidélité historique et d'acceptation applicative. S'arrêter après la qualification de l'implémentation, et avant toute sélection ou fabrication d'une mission réelle future."
+          "value": "Obtenir la sélection humaine d'UNE prochaine mission authentique du Lab CCR dont l'objet PREMIER est un travail d'ingénierie ou de Lab utile, et non la couverture de la console, et pour laquelle LOCAL MISSION CONSOLE V0 puisse servir de surface de suivi de mission. Ne fabriquer aucune mission dans le seul but d'exercer la console. Ne sélectionner automatiquement aucune nouvelle expérience d'outillage. Une fois cette mission authentique sélectionnée par l'humain et gelée, employer la console sur cette mission pour évaluer la question d'usage réel encore ouverte : améliore-t-elle matériellement le suivi état → mission → résultat en préservant les frontières sémantiques établies ? S'arrêter avant de sélectionner cette mission automatiquement."
         },
         "observed": {
-          "blob": "788766873f64a942fe9f1c1f597653b46e76a2c6"
+          "blob": "a0060090fa23a1db98c3ede8f60f0f02f75d99e1"
         }
       }
     ]
