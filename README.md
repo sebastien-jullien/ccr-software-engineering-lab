@@ -159,6 +159,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md`](34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md) — sélection de la prochaine mission authentique du Lab : étudier la frontière durable entre décision humaine ratifiée, conséquence déterministe et conséquence effectivement exécutée, à partir de cas historiques réels ; objet premier R&D d'orchestration, console employée seulement comme surface d'observation secondaire en usage réel ; méthode preuve-d'abord, aucune implémentation pré-autorisée, aucune nouvelle expérience d'outillage, contrat de mission bornée non encore gelé.
 - [`35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md`](35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md) — gel de la mission exécutable bornée : coupe du corpus historique, inventaire A–E exhaustif, cinq cas authentiques sélectionnés et leurs lignées factuelles, question de l'étude, vocabulaire de classification, porte d'écart concret en cinq parties, contrat de retour factuel, critères de succès, frontière de lecture / écriture de l'exécution, artefacts de mission gelés, et protocole d'observation de la console en usage réel ; l'étude est exécutable, sa conclusion n'est pas écrite.
 - [`36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md`](36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md) — réparation déterministe du protocole secondaire : destination durable des observations d'usage réel de la console, produites par l'humain ou l'orchestrateur et tenues séparées du retour de l'exécutant ; inventaire des surfaces existantes, artefact local à la mission retenu, champs exacts, cycle de vie par étape et sémantique de durabilité. Un record d'observation n'est pas une qualification d'utilité.
+- [`37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md`](37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md) — réparation déterministe d'ordonnancement : l'observation du panneau C ne devient durable qu'après la matérialisation durable du résultat qu'elle a observé ; producteur sémantique et enregistreur Git distingués sur le précédent de persistance de TE003, porte de persistance, invariant d'octets exacts, séquençage des commits futurs et reprise après interruption. Persister le retour réel n'est pas le qualifier.
 
 ## Outillage
 
@@ -325,18 +326,22 @@ CURRENT PROGRAM DIRECTION
   missions/001-decision-consequence-boundary
 = mission execution : NOT STARTED
 = result instance : NOT YET PRODUCED
-= console real-use observation protocol : COMPLETE
+= console observation surface : FROZEN / UNCHANGED
   36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md
-= durable capture destination : FROZEN
   missions/001-decision-consequence-boundary/console-real-use-observations.md
+= result / panel-C durability ordering : REPAIRED / FROZEN
+  37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md
+= semantic result producer : FUTURE EXECUTOR
+= future result Git recorder : ORCHESTRATION
 = panel A / B / C observations : NOT YET OBSERVED
+= execution readiness : PASS
 = console real-use utility : NOT YET EVALUATED
 = study conclusion : NOT YET KNOWN
 = concrete representation gap : NOT YET ESTABLISHED
 = implementation of a new representation : NOT AUTHORIZED
 = TE004 : NOT SELECTED
 = CCR System frontier : NOT SELECTED
-= next : execute the frozen mission using authorities 35 + 36
+= next : execute under authorities 35 + 36 + 37
 
 CURRENT LAB STREAM
 = NONE
