@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-12T23:16:41Z"
+    "updated_at": "2026-09-13T00:06:40Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -531,11 +531,53 @@
           }
         }
       ]
+    },
+    {
+      "id": "dogfood-003-evaluation-ratified",
+      "question": "Ratifier l'évaluation de DOGFOOD-003 comme PASS, avec tâche README publiée, continuation de succès de DF001-01 et remédiation DF001-02 confirmées en usage réel, branche de non-réalisation non établie en usage réel, correction DF002-01 avec surface existante suffisante, et aucun nouveau gap Mission Object v0 démontré ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-052",
+          "kind": "repo-path",
+          "ref": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:dogfood-003-evaluation-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "5b9abf337fb33dae9d0da64930d3dccf1dfe1c25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tooling-experiment-002-conclusion",
+      "question": "Les preuves d'usage réel accumulées par TOOLING-EXPERIMENT-002 sont-elles désormais suffisantes pour conclure l'expérience sans nouveau dogfood ?",
+      "state": "PENDING",
+      "evidence": [
+        {
+          "id": "ev-053",
+          "kind": "repo-path",
+          "ref": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-002-conclusion",
+            "field": "state",
+            "value": "PENDING"
+          },
+          "observed": {
+            "blob": "5b9abf337fb33dae9d0da64930d3dccf1dfe1c25"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter DOGFOOD-003 dans AGENT CCR LAB #17 à partir de l'enveloppe générée et figée ; puis évaluer le comportement de DF001-01 et DF001-02, et la précision de DF002-01, sans augmentation normative manuelle.",
+    "value": "Obtenir la décision humaine sur la question de savoir si TOOLING-EXPERIMENT-002 dispose de preuves d'usage réel suffisantes pour conclure sans nouveau dogfood ; ne commencer aucun nouveau dogfood et ne sélectionner aucune nouvelle expérience du Lab avant cette décision.",
     "evidence": [
       {
         "id": "ev-022",
@@ -552,31 +594,17 @@
         }
       },
       {
-        "id": "ev-050",
+        "id": "ev-054",
         "kind": "repo-path",
-        "ref": "tooling/mission-object/dogfood/003/mission.json",
+        "ref": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter DOGFOOD-003 dans AGENT CCR LAB #17 à partir de l'enveloppe générée et figée ; puis évaluer le comportement de DF001-01 et DF001-02, et la précision de DF002-01, sans augmentation normative manuelle."
+          "value": "Obtenir la décision humaine sur la question de savoir si TOOLING-EXPERIMENT-002 dispose de preuves d'usage réel suffisantes pour conclure sans nouveau dogfood ; ne commencer aucun nouveau dogfood et ne sélectionner aucune nouvelle expérience du Lab avant cette décision."
         },
         "observed": {
-          "blob": "37818dcfdc0b5e8c41bd847b8751fbda6e482116"
-        }
-      },
-      {
-        "id": "ev-051",
-        "kind": "repo-path",
-        "ref": "tooling/mission-object/dogfood/003/envelope.md",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "value",
-          "value": "Exécuter DOGFOOD-003 dans AGENT CCR LAB #17 à partir de l'enveloppe générée et figée ; puis évaluer le comportement de DF001-01 et DF001-02, et la précision de DF002-01, sans augmentation normative manuelle."
-        },
-        "observed": {
-          "blob": "033d046c7e9840bc23edc1e51bcaef7a999a805f"
+          "blob": "5b9abf337fb33dae9d0da64930d3dccf1dfe1c25"
         }
       }
     ]
