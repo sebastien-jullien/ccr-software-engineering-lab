@@ -138,6 +138,20 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md`](12-TOOLING-EXPERIMENT-001-AMENDMENT-003-STREAM-CREATION.md) — amendement 003 : création d'un flux.
 - [`13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md`](13-TOOLING-EXPERIMENT-001-AMENDMENT-004-STREAM-OPEN-SEMANTICS.md) — amendement 004 : sens normatif de l'état de flux `OPEN`, sur un jeton déjà existant.
 - [`14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md`](14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md) — autorité sémantique et littérale de Mission Object v0, pour la seconde expérience d'outillage : la représentation durable de mission.
+- [`15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md`](15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md) — évaluation durable de DOGFOOD-001, premier usage réel de Mission Object v0.
+- [`16-TOOLING-EXPERIMENT-001-SELECTION-PROVENANCE.md`](16-TOOLING-EXPERIMENT-001-SELECTION-PROVENANCE.md) — provenance du fait humain qui soutient une décision de sélection déjà existante.
+- [`17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md`](17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md) — évaluation durable de DOGFOOD-002.
+- [`19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md`](19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md) — évaluation durable de DOGFOOD-003, et synthèse des preuves d'usage réel.
+- [`20-TOOLING-EXPERIMENT-002-CONCLUSION.md`](20-TOOLING-EXPERIMENT-002-CONCLUSION.md) — conclusion de la seconde expérience d'outillage, et réponse à sa question expérimentale.
+- [`21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md`](21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md) — sélection de la phase D de TOOLING-EXPERIMENT-001 comme direction suivante du Lab.
+- [`22-TOOLING-EXPERIMENT-003-SELECTION.md`](22-TOOLING-EXPERIMENT-003-SELECTION.md) — sélection de la troisième expérience d'outillage, sa question et ses limites.
+- [`23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md`](23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md) — autorité sémantique de Result Instance v0, et prédéclaration expérimentale.
+- [`24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md`](24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md) — design d'implémentation normatif de Result Instance v0.
+- [`25-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-QUALIFICATION.md`](25-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-QUALIFICATION.md) — record de qualification de l'implémentation d'origine, préservé et supersédé en portée exacte par l'autorité 26.
+- [`26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md`](26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md) — qualification historique corrective : autorité de qualification courante de Result Instance v0.
+- [`27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md`](27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md) — sélection et périmètre gelé de la première tâche de dogfood en usage réel.
+- [`28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md`](28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md) — conception du premier dogfood en usage réel.
+- [`29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md`](29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md) — correction du séquençage durable de reprise, supersédant l'autorité 28 sur la base cible et sur l'action durable, et là seulement.
 
 ## Outillage
 
@@ -145,6 +159,7 @@ Outils que le Lab s'applique à lui-même, sur sa propre conduite. Aucun n'est u
 
 - [`tooling/program-state/`](tooling/program-state/) — TOOLING-EXPERIMENT-001 : point de reprise d'état de programme durable. Trois commandes — `resume` · `check` · `update`. Aucune dépendance externe, aucune mutation Git, aucun réseau.
 - [`tooling/mission-object/`](tooling/mission-object/) — TOOLING-EXPERIMENT-002 : représentation durable de mission. L'outil charge un Mission Object, le valide et en rend l'enveloppe. Représenter n'est pas exécuter : il n'ordonnance rien et n'exécute aucune mission.
+- [`tooling/result-instance/`](tooling/result-instance/) — TOOLING-EXPERIMENT-003 : représentation durable de l'instance réelle de retour / résultat de mission. L'outil charge une instance de résultat, en valide la structure et les types, et la confronte mécaniquement au contrat de retour prospectif de son objet de mission. Consigner n'est pas qualifier : rapporté n'est pas vrai.
 
 ## État courant
 
@@ -213,12 +228,18 @@ TOOLING EXPERIMENT 001
 = IMPLEMENTED
 = 4 ratified amendments : 10 · 11 · 12 · 13
 = tooling/program-state
+= phase D EXECUTED, 6/6 frozen criteria PASS
+= result record : tooling/program-state/RESULT-001.md
+= experimental question ANSWERED FOR THE TESTED SCOPE
+= 1 resumption trial, universal resumption reliability not asserted
 
-CURRENT LAB STREAM
-= TOOLING EXPERIMENT 002
-= OPEN
-= subject : Durable Mission Representation
-= a Lab experiment on its own conduct, not a CCR System requirement
+TOOLING EXPERIMENT 002
+= durable mission representation
+= CLOSED
+= result : PASS WITH LIMITATIONS
+= conclusion authority : 20-TOOLING-EXPERIMENT-002-CONCLUSION.md
+= 3 real dogfood executions, each with its own durable evaluation : 15 · 17 · 19
+= Mission Object v0 schema gap : not demonstrated
 
 MISSION OBJECT v0
 = IMPLEMENTED AND QUALIFIED
@@ -226,12 +247,25 @@ MISSION OBJECT v0
   14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md
 = tooling/mission-object
 
-DOGFOOD-001
-= first real TE002 dogfood, run from a generated frozen envelope
-= sufficiency evaluation not pronounced
+CURRENT LAB STREAM
+= TOOLING EXPERIMENT 003
+= OPEN
+= subject : Durable Mission Result / Return Instance Representation
+= a Lab experiment on its own conduct, not a CCR System requirement
 
-EXPERIMENTAL QUESTION
-= UNANSWERED
+RESULT INSTANCE v0
+= IMPLEMENTED AND STRUCTURALLY QUALIFIED
+= semantic authority :
+  23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md
+= implementation design authority :
+  24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md
+= current qualification authority :
+  26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md
+= historical return-provenance qualification : positive but narrow
+= tooling/result-instance
+
+LIVE-USE CAPTURE BY AN EXECUTOR
+= NOT YET TESTED
 
 LAB ROADMAP
 = open
