@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T03:05:58Z"
+    "updated_at": "2026-09-13T03:56:30Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -367,6 +367,29 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003",
+      "title": "Durable Mission Result / Return Instance Representation",
+      "type": "TOOLING_EXPERIMENT",
+      "state": "OPEN",
+      "updated_at": "2026-09-13T03:56:10Z",
+      "evidence": [
+        {
+          "id": "ev-062",
+          "kind": "repo-path",
+          "ref": "22-TOOLING-EXPERIMENT-003-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "stream:tooling-experiment-003",
+            "field": "state",
+            "value": "OPEN"
+          },
+          "observed": {
+            "blob": "369a65c191cd3400f7c2a75d677eed8f12c8d532"
+          }
+        }
+      ]
     }
   ],
   "decisions": [
@@ -594,38 +617,59 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-selected",
+      "question": "Sélectionner TOOLING-EXPERIMENT-003 sur la représentation durable de l'instance réelle de retour / résultat de mission, avec la question expérimentale et les limites établies par l'autorité 22 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-063",
+          "kind": "repo-path",
+          "ref": "22-TOOLING-EXPERIMENT-003-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "369a65c191cd3400f7c2a75d677eed8f12c8d532"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
-    "state": "NOT_YET_SELECTED",
-    "value": "Exécuter la phase D de TOOLING-EXPERIMENT-001 comme essai gelé de reprise fraîche dans AGENT CCR LAB #14, selon le protocole et les critères TE001 existants ; n'introduire aucune conception nouvelle, n'employer aucune archéologie de transcription, puis évaluer ensuite le résultat brut de l'essai.",
+    "state": "SELECTED",
+    "value": "Concevoir et prédéclarer TOOLING-EXPERIMENT-003 à partir du corpus durable de retours réels, en préservant la distinction entre contrat de retour, instance réelle de retour et qualification du retour ; ne sélectionner ni schéma ni implémentation avant que la conception de l'expérience ne les établisse.",
     "evidence": [
       {
-        "id": "ev-060",
+        "id": "ev-064",
         "kind": "repo-path",
-        "ref": "21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md",
+        "ref": "22-TOOLING-EXPERIMENT-003-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter la phase D de TOOLING-EXPERIMENT-001 comme essai gelé de reprise fraîche dans AGENT CCR LAB #14, selon le protocole et les critères TE001 existants ; n'introduire aucune conception nouvelle, n'employer aucune archéologie de transcription, puis évaluer ensuite le résultat brut de l'essai."
+          "value": "Concevoir et prédéclarer TOOLING-EXPERIMENT-003 à partir du corpus durable de retours réels, en préservant la distinction entre contrat de retour, instance réelle de retour et qualification du retour ; ne sélectionner ni schéma ni implémentation avant que la conception de l'expérience ne les établisse."
         },
         "observed": {
-          "blob": "4b3b9f20130d53368b5414fa0504e7e3e0b31544"
+          "blob": "369a65c191cd3400f7c2a75d677eed8f12c8d532"
         }
       },
       {
-        "id": "ev-061",
+        "id": "ev-065",
         "kind": "repo-path",
-        "ref": "tooling/program-state/RESULT-001.md",
+        "ref": "22-TOOLING-EXPERIMENT-003-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "state",
-          "value": "NOT_YET_SELECTED"
+          "value": "SELECTED"
         },
         "observed": {
-          "blob": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
+          "blob": "369a65c191cd3400f7c2a75d677eed8f12c8d532"
         }
       }
     ]
