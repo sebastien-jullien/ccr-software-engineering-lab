@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T04:19:49Z"
+    "updated_at": "2026-09-13T12:10:57Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -659,11 +659,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-result-instance-v0-implementation-design",
+      "question": "Ratifier le design d'implémentation Result Instance v0 de TOOLING-EXPERIMENT-003 tel que gelé par l'autorité 24 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-068",
+          "kind": "repo-path",
+          "ref": "24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-result-instance-v0-implementation-design",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "9efe619e2872ed275d73897ff6444d90ef1b03d7"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Concevoir l'implémentation et la sérialisation minimales des sémantiques Result Instance v0 gelées par TOOLING-EXPERIMENT-003, les qualifier contre le corpus historique des quatre exécutions réelles sans reconstruire les retours bruts depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que l'implémentation n'est pas qualifiée.",
+    "value": "Implémenter Result Instance v0 exactement sous les autorités 23 et 24, qualifier l'implémentation contre le corpus historique de représentabilité A/B/C/D sans reconstruction depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que cette qualification n'est pas passée.",
     "evidence": [
       {
         "id": "ev-065",
@@ -680,17 +701,17 @@
         }
       },
       {
-        "id": "ev-067",
+        "id": "ev-069",
         "kind": "repo-path",
-        "ref": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md",
+        "ref": "24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Concevoir l'implémentation et la sérialisation minimales des sémantiques Result Instance v0 gelées par TOOLING-EXPERIMENT-003, les qualifier contre le corpus historique des quatre exécutions réelles sans reconstruire les retours bruts depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que l'implémentation n'est pas qualifiée."
+          "value": "Implémenter Result Instance v0 exactement sous les autorités 23 et 24, qualifier l'implémentation contre le corpus historique de représentabilité A/B/C/D sans reconstruction depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que cette qualification n'est pas passée."
         },
         "observed": {
-          "blob": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+          "blob": "9efe619e2872ed275d73897ff6444d90ef1b03d7"
         }
       }
     ]
