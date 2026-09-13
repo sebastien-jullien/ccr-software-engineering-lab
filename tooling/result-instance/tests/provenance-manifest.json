@@ -1,0 +1,303 @@
+{
+  "purpose": "Metadonnee de qualification uniquement. Ne fait pas partie de la semantique d'execution de Result Instance. Associe chaque element factuel synthetique des cas de representabilite A/B/C/D a la preuve durable committee qui etablit la semantique factuelle correspondante.",
+  "declarations": {
+    "execution_semantics": "NON — ce fichier n'est lu par aucun chemin d'execution de Result Instance.",
+    "historical_raw_return_evidence": "NON — aucun retour brut historique n'est durable dans ce depot ; la durabilite du retour brut reel reste 0 / 4.",
+    "proof_of_historical_bytes": "NON — rien ici ne prouve que des octets ont ete historiquement retournes, ni dans cet ordre, ni sous cette formulation.",
+    "representability_case_status": "Un cas de representabilite n'est PAS une instance de resultat historique. Son execution.id est prefixe 'representability-' precisement pour que les octets eux-memes ne puissent pas etre confondus.",
+    "synthetic_qualification_identifiers": "Les identifiants de fait portes par l'executant (defined_by = EXECUTOR) employes dans les cas sont des IDENTIFIANTS SYNTHETIQUES DE QUALIFICATION declares ici. Ils n'ont ete definis prospectivement par aucune autorite, et ils n'ont pas ete retournes sous cette forme par un executant historique.",
+    "case_d_limit": "L'autorite 09 ne definit aucun espace de noms factuel machine : sa section 19 enonce un jeu de questions de reprise, sa section 21 numerote six criteres de QUALIFICATION. Le cas D n'emploie donc aucune identite SOURCE, car fabriquer retroactivement une identite SOURCE est interdit par l'autorite 24 section 6. Tous ses identifiants sont synthetiques et declares ici.",
+    "excluded_from_case_d": "Sont exclus du cas D les enonces evaluatifs de RESULT-001 : la recuperation 'correcte' de next_action, les corrections factuelles manuelles = 0 (critere 6, etabli par l'evaluation de RESULT-001 section 4), et la classification 'informationnelle' de l'avance de HEAD. Ce sont des faits de qualification, non des faits rapportes.",
+    "transcript_use": "AUCUN — aucune transcription de session n'a servi a construire ces cas.",
+    "replay": "AUCUN — aucune execution historique n'a ete rejouee.",
+    "completeness": "Un cas de representabilite ne pretend pas enumerer tout ce qui fut retourne. Il porte les semantiques factuelles durablement etablies qu'il faut pour eprouver la representation."
+  },
+  "authorities": {
+    "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md": "dda39af84d833e7d160aba3ab6c77399abba1878",
+    "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md": "8d9104b9fd538ebddc8b7c6b769229b462aa2259",
+    "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md": "5b9abf337fb33dae9d0da64930d3dccf1dfe1c25",
+    "tooling/program-state/RESULT-001.md": "bc8da25c7611e0e12df7b04b733428dc8a898e63",
+    "tooling/mission-object/dogfood/001/mission.json": "a90773f89f85a2cb75bafe2155831d354fbe4ed5",
+    "tooling/mission-object/dogfood/002/mission.json": "4d1c6027d717bfc7b189a2889fb6b22b42b3d568",
+    "tooling/mission-object/dogfood/003/mission.json": "37818dcfdc0b5e8c41bd847b8751fbda6e482116",
+    "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+  },
+  "cases": {
+    "a": {
+      "case_path": "tooling/result-instance/representability/a.json",
+      "derived_from": "DOGFOOD-001",
+      "family": "CONTRACT_BACKED",
+      "elements": {
+        "RETURN_CONTRACT:rf-addressee": {
+          "authority": "tooling/mission-object/dogfood/001/mission.json",
+          "section": "return_contract.rf-addressee.predetermined_value",
+          "durable_statement": "AGENT_CCR_LAB_15"
+        },
+        "RETURN_CONTRACT:rf-mission-id": {
+          "authority": "tooling/mission-object/dogfood/001/mission.json",
+          "section": "return_contract.rf-mission-id.predetermined_value",
+          "durable_statement": "dogfood-001-readme-durable-record-refresh"
+        },
+        "RETURN_CONTRACT:rf-starting-readme-blob": {
+          "authority": "tooling/mission-object/dogfood/001/mission.json",
+          "section": "return_contract.rf-starting-readme-blob.predetermined_value",
+          "durable_statement": "759a1d2fe4a79a738c6cc04f7cb0316105a2d0c1"
+        },
+        "RETURN_CONTRACT:rf-readme-blob": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "EMPREINTE ATTEINTE DU README = ea62342d4ef45314b7331d9f212e057e88999d54"
+        },
+        "RETURN_CONTRACT:rf-modified-paths": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 5",
+          "durable_statement": "README.md porte les octets atteints par DOGFOOD-001, non commite, non indexe, preserve tel quel dans la copie de travail"
+        },
+        "NON_PRODUCTION:rf-commit": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "COMMIT = NON REALISE ; aucune valeur retournee pour commit.created n'est durablement etablie, et aucun jeton n'est invente ici"
+        },
+        "RETURN_CONTRACT:rf-remote-main": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "origin/main AU RETOUR DE L'EXECUTANT = 4c6f6c7a4e1f72c2884eeb9dade0fc24dd24cc1f"
+        },
+        "RETURN_CONTRACT:rf-outcome": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "RESULTAT TERMINAL RETOURNE PAR #15 = BLOCKED"
+        },
+        "RETURN_CONTRACT:rf-augmentation": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "sections 3 et 10",
+          "durable_statement": "AUGMENTATION NORMATIVE MANUELLE = 0"
+        },
+        "EXECUTOR:push.attempted": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "PUSH = NON TENTE ; le contrat de DOGFOOD-001 n'expose aucune exigence de retour sur le push, ce fait n'est donc exige prospectivement par rien"
+        },
+        "EXECUTOR:gates.failed": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "PORTES EN ECHEC = 0 ; hors du contrat de retour, c'est le fait meme que le constat DF001-01 oppose au resultat terminal"
+        },
+        "EXECUTOR:program_state.mutations": {
+          "authority": "15-TOOLING-EXPERIMENT-002-DOGFOOD-001-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "MUTATION DE PROGRAM-STATE PAR #15 = 0"
+        }
+      }
+    },
+    "b": {
+      "case_path": "tooling/result-instance/representability/b.json",
+      "derived_from": "DOGFOOD-002",
+      "family": "CONTRACT_BACKED",
+      "role": "cas canonique RAPPORTE N'EST PAS VRAI",
+      "elements": {
+        "RETURN_CONTRACT:rf-addressee": {
+          "authority": "tooling/mission-object/dogfood/002/mission.json",
+          "section": "return_contract.rf-addressee.predetermined_value",
+          "durable_statement": "AGENT_CCR_LAB_16"
+        },
+        "RETURN_CONTRACT:rf-mission-id": {
+          "authority": "tooling/mission-object/dogfood/002/mission.json",
+          "section": "return_contract.rf-mission-id.predetermined_value",
+          "durable_statement": "dogfood-002-readme-publication-continuation"
+        },
+        "RETURN_CONTRACT:rf-starting-readme-blob": {
+          "authority": "tooling/mission-object/dogfood/002/mission.json",
+          "section": "return_contract.rf-starting-readme-blob.predetermined_value",
+          "durable_statement": "ea62342d4ef45314b7331d9f212e057e88999d54"
+        },
+        "RETURN_CONTRACT:rf-readme-current-blob": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "EMPREINTE README A L'ARRIVEE = ea62342d4ef45314b7331d9f212e057e88999d54"
+        },
+        "RETURN_CONTRACT:rf-commit-realized": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "COMMIT REALISE = NON"
+        },
+        "RETURN_CONTRACT:rf-commit-identifier": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "IDENTIFIANT DE COMMIT = NOT_REALIZED"
+        },
+        "RETURN_CONTRACT:rf-blocker-reason": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "MOTIF DE BLOCAGE = PERMISSION_DENIED"
+        },
+        "RETURN_CONTRACT:rf-push-realized": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "PUSH REALISE = NO, tel que retourne par l'instance de mission. La valeur est conservee TELLE QUE RAPPORTEE ; le constat DF002-01 a etabli plus tard qu'elle etait semantiquement fausse, et cette qualification n'entre pas dans l'instance"
+        },
+        "RETURN_CONTRACT:rf-remote-main-head": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "VALEUR DE RETOUR DU DISTANT = NOT_MEASURED"
+        },
+        "RETURN_CONTRACT:rf-outcome": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "RESULTAT TERMINAL = BLOCKED_COMMIT_NOT_REALIZED"
+        },
+        "RETURN_CONTRACT:rf-augmentation": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "sections 3 et 9",
+          "durable_statement": "AUGMENTATION NORMATIVE MANUELLE = 0 / NON"
+        },
+        "RETURN_CONTRACT:rf-deviations": {
+          "authority": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md",
+          "section": "section 9",
+          "durable_statement": "Deviations procedurales observees, faits conserves tels quels : trois entrees"
+        }
+      }
+    },
+    "c": {
+      "case_path": "tooling/result-instance/representability/c.json",
+      "derived_from": "DOGFOOD-003",
+      "family": "CONTRACT_BACKED",
+      "elements": {
+        "RETURN_CONTRACT:rf-addressee": {
+          "authority": "tooling/mission-object/dogfood/003/mission.json",
+          "section": "return_contract.rf-addressee.predetermined_value",
+          "durable_statement": "AGENT_CCR_LAB_17"
+        },
+        "RETURN_CONTRACT:rf-mission-id": {
+          "authority": "tooling/mission-object/dogfood/003/mission.json",
+          "section": "return_contract.rf-mission-id.predetermined_value",
+          "durable_statement": "dogfood-003-readme-publication-continuation"
+        },
+        "RETURN_CONTRACT:rf-starting-readme-blob": {
+          "authority": "tooling/mission-object/dogfood/003/mission.json",
+          "section": "return_contract.rf-starting-readme-blob.predetermined_value",
+          "durable_statement": "ea62342d4ef45314b7331d9f212e057e88999d54"
+        },
+        "RETURN_CONTRACT:rf-readme-current-blob": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "EMPREINTE README A L'ARRIVEE = ea62342d4ef45314b7331d9f212e057e88999d54"
+        },
+        "RETURN_CONTRACT:rf-commit-realized": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "COMMIT REALISE = OUI"
+        },
+        "RETURN_CONTRACT:rf-commit-identifier": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "COMMIT = c60ac29cac954bada681734c5e16d8dcfd1ff69f"
+        },
+        "RETURN_CONTRACT:rf-push-status": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "STATUT DU PUSH = REALIZED"
+        },
+        "RETURN_CONTRACT:rf-remote-main-head": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "DISTANT origin/main APRES POUSSEE = c60ac29cac954bada681734c5e16d8dcfd1ff69f"
+        },
+        "RETURN_CONTRACT:rf-outcome": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "RESULTAT TERMINAL = PASS"
+        },
+        "RETURN_CONTRACT:rf-augmentation": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "AUGMENTATION NORMATIVE MANUELLE = 0"
+        },
+        "EXECUTOR:readme.reissued": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "REEDITION DU README = 0"
+        },
+        "EXECUTOR:post_push.verification": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "VERIFICATION POST-PUSH = EXECUTEE APRES LA POUSSEE = PASS"
+        },
+        "EXECUTOR:tracked_paths.modified_after_execution": {
+          "authority": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md",
+          "section": "section 3",
+          "durable_statement": "CHEMINS SUIVIS MODIFIES APRES EXECUTION = 0"
+        }
+      }
+    },
+    "d": {
+      "case_path": "tooling/result-instance/representability/d.json",
+      "derived_from": "TOOLING-EXPERIMENT-001 PHASE D",
+      "family": "PROTOCOL_BACKED",
+      "identifier_status": "IDENTIFIANTS SYNTHETIQUES DE QUALIFICATION — declares ici, definis prospectivement par aucune autorite, et non retournes sous cette forme par la session de phase D",
+      "return_contract": "ABSENT — la phase D ne dispose d aucun contrat de retour Mission Object",
+      "elements": {
+        "EXECUTOR:recovery_packet.provided": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 1",
+          "durable_statement": "TRANSCRIPT, PAQUET DE RECUPERATION, REPONSES ATTENDUES FOURNIS = AUCUN"
+        },
+        "EXECUTOR:repo.head_during_trial": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "HEAD PENDANT L'ESSAI = c58e16d4a34b46a85243d247732973e6bf58d24c"
+        },
+        "EXECUTOR:worktree.state": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "COPIE DE TRAVAIL AVANT / APRES = PROPRE / PROPRE"
+        },
+        "EXECUTOR:repo.mutations": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "MUTATIONS DU DEPOT PENDANT L'ESSAI = 0"
+        },
+        "EXECUTOR:tool.resume_exit": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "resume = exit 0"
+        },
+        "EXECUTOR:tool.check_exit": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "check = exit 0"
+        },
+        "EXECUTOR:tool.material_findings": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "constats materiels = 0"
+        },
+        "EXECUTOR:streams.recovered": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "FLUX RECUPERES = 10"
+        },
+        "EXECUTOR:decisions.pending_recovered": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "DECISIONS EN ATTENTE RECUPEREES = 0"
+        },
+        "EXECUTOR:decisions.ratified_recovered": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "DECISIONS RATIFIEES RECUPEREES = 11"
+        },
+        "EXECUTOR:evidence.opaque_but_established_unverified": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "OPAQUE_BUT_ESTABLISHED = 2 / UNVERIFIED"
+        },
+        "EXECUTOR:transcript_archaeology": {
+          "authority": "tooling/program-state/RESULT-001.md",
+          "section": "section 2",
+          "durable_statement": "ARCHEOLOGIE DE TRANSCRIPTION = 0"
+        }
+      }
+    }
+  }
+}

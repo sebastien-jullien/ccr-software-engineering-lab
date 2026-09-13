@@ -1,0 +1,196 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "representability-c"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/mission-object/dogfood/003/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "37818dcfdc0b5e8c41bd847b8751fbda6e482116"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "AGENT_CCR_LAB_17"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/mission-object/dogfood/003/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "37818dcfdc0b5e8c41bd847b8751fbda6e482116"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-addressee"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AGENT_CCR_LAB_17"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mission-id"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "dogfood-003-readme-publication-continuation"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-starting-readme-blob"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ea62342d4ef45314b7331d9f212e057e88999d54"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-readme-current-blob"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ea62342d4ef45314b7331d9f212e057e88999d54"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-commit-realized"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-commit-identifier"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "c60ac29cac954bada681734c5e16d8dcfd1ff69f"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-push-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REALIZED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remote-main-head"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "c60ac29cac954bada681734c5e16d8dcfd1ff69f"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REMOTE_REF",
+          "value": "origin/main"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-augmentation"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "readme.reissued"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "post_push.verification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "tracked_paths.modified_after_execution"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    }
+  ]
+}

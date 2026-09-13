@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T12:10:57Z"
+    "updated_at": "2026-09-13T12:40:12Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -684,7 +684,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Implémenter Result Instance v0 exactement sous les autorités 23 et 24, qualifier l'implémentation contre le corpus historique de représentabilité A/B/C/D sans reconstruction depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que cette qualification n'est pas passée.",
+    "value": "Obtenir la sélection humaine de la première tâche réelle authentique du Lab pour le dogfood en usage réel de TOOLING-EXPERIMENT-003 avec Result Instance v0 qualifiée ; ne présumer ni la maintenance du README ni aucune autre tâche, et ne revendiquer aucune validation de capture en usage réel avant l'exécution de ce dogfood.",
     "evidence": [
       {
         "id": "ev-065",
@@ -701,17 +701,17 @@
         }
       },
       {
-        "id": "ev-069",
+        "id": "ev-070",
         "kind": "repo-path",
-        "ref": "24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md",
+        "ref": "25-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-QUALIFICATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Implémenter Result Instance v0 exactement sous les autorités 23 et 24, qualifier l'implémentation contre le corpus historique de représentabilité A/B/C/D sans reconstruction depuis les transcripts, et ne sélectionner aucune tâche de dogfood réelle tant que cette qualification n'est pas passée."
+          "value": "Obtenir la sélection humaine de la première tâche réelle authentique du Lab pour le dogfood en usage réel de TOOLING-EXPERIMENT-003 avec Result Instance v0 qualifiée ; ne présumer ni la maintenance du README ni aucune autre tâche, et ne revendiquer aucune validation de capture en usage réel avant l'exécution de ce dogfood."
         },
         "observed": {
-          "blob": "9efe619e2872ed275d73897ff6444d90ef1b03d7"
+          "blob": "0c71fb0c5810a272535f0fb64a769880529244da"
         }
       }
     ]

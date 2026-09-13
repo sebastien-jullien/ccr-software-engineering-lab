@@ -5,3 +5,4 @@ cases/case-005-bounded-concurrency-task-pool/** text eol=lf
 PROGRAM-STATE.json text eol=lf
 tooling/program-state/** text eol=lf
 tooling/mission-object/** text eol=lf
+tooling/result-instance/** text eol=lf
