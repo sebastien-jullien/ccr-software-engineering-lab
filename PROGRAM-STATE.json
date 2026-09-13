@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T15:46:38Z"
+    "updated_at": "2026-09-13T17:51:36Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -372,21 +372,21 @@
       "id": "tooling-experiment-003",
       "title": "Durable Mission Result / Return Instance Representation",
       "type": "TOOLING_EXPERIMENT",
-      "state": "OPEN",
-      "updated_at": "2026-09-13T03:56:10Z",
+      "state": "CLOSED",
+      "updated_at": "2026-09-13T17:51:21Z",
       "evidence": [
         {
-          "id": "ev-062",
+          "id": "ev-082",
           "kind": "repo-path",
-          "ref": "22-TOOLING-EXPERIMENT-003-SELECTION.md",
+          "ref": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md",
           "policy": "VERIFIABLE",
           "supports": {
             "subject": "stream:tooling-experiment-003",
             "field": "state",
-            "value": "OPEN"
+            "value": "CLOSED"
           },
           "observed": {
-            "blob": "369a65c191cd3400f7c2a75d677eed8f12c8d532"
+            "blob": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
           }
         }
       ]
@@ -764,11 +764,74 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-readme-task-qualification",
+      "question": "Ratifier la qualification PASS de la tâche réelle de maintenance bornée du README exécutée comme premier dogfood live de TE003 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-079",
+          "kind": "repo-path",
+          "ref": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-readme-task-qualification",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tooling-experiment-003-first-live-dogfood-qualification",
+      "question": "Ratifier la qualification PASS WITH LIMITATIONS du premier dogfood en usage réel de TE003 et la conclusion que la question sélectionnée est répondue positivement pour le périmètre éprouvé ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-080",
+          "kind": "repo-path",
+          "ref": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-first-live-dogfood-qualification",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tooling-experiment-003-close",
+      "question": "Clore TOOLING-EXPERIMENT-003 après sa qualification finale, sans exiger de second run artificiel pour les limitations non exercées ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-081",
+          "kind": "repo-path",
+          "ref": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-close",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Conduire le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 sous les autorités 28 et 29, pour la tâche de maintenance bornée du README : 1 matérialiser le paquet de dépêche gelé contre la BASE CIBLE DU README courante ; 2 dépêcher un exécutant frais qualifié ; 3 exécuter la tâche bornée du README et ses effets Git portés par l'exécutant ; 4 obtenir l'instance de résultat produite, validée et gelée par l'exécutant ainsi que la preuve temporelle du distant ; 5 appliquer la règle de persistance sûre sans réaliser aucun effet README non réalisé ; 6 si la persistance durable réussit, remettre le paquet durable autorisé à un consommateur aval frais sous pare-feu d'entrée factuel ; 7 conduire la récupération factuelle et produire le registre exhaustif des sources factuelles ; 8 s'arrêter avant la qualification humaine du dogfood, avant toute conclusion d'expérience et avant toute décision de direction suivante.",
+    "value": "Réconcilier README.md contre l'état durable du Lab produit par le commit de matérialisation de la qualification finale et de la clôture de TOOLING-EXPERIMENT-003 : indexer chaque autorité racine numérotée présente à cette nouvelle base gelée, autorité 30 comprise ; préserver l'index d'aires d'outillage existant sauf si la base prouve le contraire ; mettre à jour l'état courant de TE003 pour refléter premier dogfood en usage réel = PASS WITH LIMITATIONS, question sélectionnée = répondue positivement pour le périmètre éprouvé, et flux TE003 = CLOSED ; remplacer l'énoncé désormais périmé « LIVE-USE CAPTURE BY AN EXECUTOR = NOT YET TESTED » ; préserver tout le contenu tourné vers CCR, les cas et les arcs de feedback ; ne conduire aucune maintenance sans rapport.",
     "evidence": [
       {
         "id": "ev-065",
@@ -785,17 +848,17 @@
         }
       },
       {
-        "id": "ev-078",
+        "id": "ev-083",
         "kind": "repo-path",
-        "ref": "29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md",
+        "ref": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Conduire le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 sous les autorités 28 et 29, pour la tâche de maintenance bornée du README : 1 matérialiser le paquet de dépêche gelé contre la BASE CIBLE DU README courante ; 2 dépêcher un exécutant frais qualifié ; 3 exécuter la tâche bornée du README et ses effets Git portés par l'exécutant ; 4 obtenir l'instance de résultat produite, validée et gelée par l'exécutant ainsi que la preuve temporelle du distant ; 5 appliquer la règle de persistance sûre sans réaliser aucun effet README non réalisé ; 6 si la persistance durable réussit, remettre le paquet durable autorisé à un consommateur aval frais sous pare-feu d'entrée factuel ; 7 conduire la récupération factuelle et produire le registre exhaustif des sources factuelles ; 8 s'arrêter avant la qualification humaine du dogfood, avant toute conclusion d'expérience et avant toute décision de direction suivante."
+          "value": "Réconcilier README.md contre l'état durable du Lab produit par le commit de matérialisation de la qualification finale et de la clôture de TOOLING-EXPERIMENT-003 : indexer chaque autorité racine numérotée présente à cette nouvelle base gelée, autorité 30 comprise ; préserver l'index d'aires d'outillage existant sauf si la base prouve le contraire ; mettre à jour l'état courant de TE003 pour refléter premier dogfood en usage réel = PASS WITH LIMITATIONS, question sélectionnée = répondue positivement pour le périmètre éprouvé, et flux TE003 = CLOSED ; remplacer l'énoncé désormais périmé « LIVE-USE CAPTURE BY AN EXECUTOR = NOT YET TESTED » ; préserver tout le contenu tourné vers CCR, les cas et les arcs de feedback ; ne conduire aucune maintenance sans rapport."
         },
         "observed": {
-          "blob": "502a1cd787f592e17ed4d87b1260313db6beede2"
+          "blob": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
         }
       }
     ]
