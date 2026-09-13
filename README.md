@@ -152,6 +152,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md`](27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md) — sélection et périmètre gelé de la première tâche de dogfood en usage réel.
 - [`28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md`](28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md) — conception du premier dogfood en usage réel.
 - [`29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md`](29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md) — correction du séquençage durable de reprise, supersédant l'autorité 28 sur la base cible et sur l'action durable, et là seulement.
+- [`30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md`](30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md) — qualification finale du premier dogfood en usage réel et conclusion de TOOLING-EXPERIMENT-003 : tâche README PASS, dogfood PASS WITH LIMITATIONS, question sélectionnée répondue positivement pour le périmètre éprouvé, et clôture par décision de gouvernance humaine — un PASS ne ferme jamais un flux de lui-même.
 
 ## Outillage
 
@@ -247,10 +248,13 @@ MISSION OBJECT v0
   14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md
 = tooling/mission-object
 
-CURRENT LAB STREAM
-= TOOLING EXPERIMENT 003
-= OPEN
-= subject : Durable Mission Result / Return Instance Representation
+TOOLING EXPERIMENT 003
+= durable mission result / return instance representation
+= CLOSED
+= selected experimental question ANSWERED POSITIVELY FOR THE TESTED SCOPE
+= final qualification / conclusion authority :
+  30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md
+= closed by human governance decision ; a PASS does not close a stream by itself
 = a Lab experiment on its own conduct, not a CCR System requirement
 
 RESULT INSTANCE v0
@@ -259,13 +263,26 @@ RESULT INSTANCE v0
   23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md
 = implementation design authority :
   24-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0-IMPLEMENTATION-DESIGN.md
-= current qualification authority :
+= historical qualification authority :
   26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md
 = historical return-provenance qualification : positive but narrow
 = tooling/result-instance
 
 LIVE-USE CAPTURE BY AN EXECUTOR
-= NOT YET TESTED
+= TESTED
+= first real live dogfood : PASS WITH LIMITATIONS
+= one genuine Mission-Object-backed README-maintenance mission
+= executor-produced Result Instance, validated and frozen before qualification
+= exact-byte durable persistence : demonstrated for that mission
+= downstream factual recovery from a sealed input packet : demonstrated for that mission
+= not exercised in live use : partial-execution fidelity,
+  protocol-backed capture, structural non-production
+= real missions exercised 1 · real task classes exercised 1
+= universal Result Instance reliability : not asserted
+
+CURRENT LAB STREAM
+= NONE
+= no next tooling experiment human-selected
 
 LAB ROADMAP
 = open

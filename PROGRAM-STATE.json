@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T17:51:36Z"
+    "updated_at": "2026-09-13T18:02:33Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -831,7 +831,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Réconcilier README.md contre l'état durable du Lab produit par le commit de matérialisation de la qualification finale et de la clôture de TOOLING-EXPERIMENT-003 : indexer chaque autorité racine numérotée présente à cette nouvelle base gelée, autorité 30 comprise ; préserver l'index d'aires d'outillage existant sauf si la base prouve le contraire ; mettre à jour l'état courant de TE003 pour refléter premier dogfood en usage réel = PASS WITH LIMITATIONS, question sélectionnée = répondue positivement pour le périmètre éprouvé, et flux TE003 = CLOSED ; remplacer l'énoncé désormais périmé « LIVE-USE CAPTURE BY AN EXECUTOR = NOT YET TESTED » ; préserver tout le contenu tourné vers CCR, les cas et les arcs de feedback ; ne conduire aucune maintenance sans rapport.",
+    "value": "Obtenir la sélection humaine de la prochaine direction de programme authentique du Lab CCR, maintenant que TOOLING-EXPERIMENT-003 est close et que le README a été réconcilié contre l'état durable courant. Ne sélectionner automatiquement aucun successeur de feuille de route ; ne rouvrir ni TE001, ni TE002, ni TE003 ; ne pas promouvoir un travail différé au seul motif que l'expérience courante est close ; ne commencer aucune expérience ni aucune implémentation avant la sélection humaine.",
     "evidence": [
       {
         "id": "ev-065",
@@ -848,17 +848,31 @@
         }
       },
       {
-        "id": "ev-083",
+        "id": "ev-084",
         "kind": "repo-path",
         "ref": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Réconcilier README.md contre l'état durable du Lab produit par le commit de matérialisation de la qualification finale et de la clôture de TOOLING-EXPERIMENT-003 : indexer chaque autorité racine numérotée présente à cette nouvelle base gelée, autorité 30 comprise ; préserver l'index d'aires d'outillage existant sauf si la base prouve le contraire ; mettre à jour l'état courant de TE003 pour refléter premier dogfood en usage réel = PASS WITH LIMITATIONS, question sélectionnée = répondue positivement pour le périmètre éprouvé, et flux TE003 = CLOSED ; remplacer l'énoncé désormais périmé « LIVE-USE CAPTURE BY AN EXECUTOR = NOT YET TESTED » ; préserver tout le contenu tourné vers CCR, les cas et les arcs de feedback ; ne conduire aucune maintenance sans rapport."
+          "value": "Obtenir la sélection humaine de la prochaine direction de programme authentique du Lab CCR, maintenant que TOOLING-EXPERIMENT-003 est close et que le README a été réconcilié contre l'état durable courant. Ne sélectionner automatiquement aucun successeur de feuille de route ; ne rouvrir ni TE001, ni TE002, ni TE003 ; ne pas promouvoir un travail différé au seul motif que l'expérience courante est close ; ne commencer aucune expérience ni aucune implémentation avant la sélection humaine."
         },
         "observed": {
           "blob": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+        }
+      },
+      {
+        "id": "ev-085",
+        "kind": "repo-path",
+        "ref": "README.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "value",
+          "value": "Obtenir la sélection humaine de la prochaine direction de programme authentique du Lab CCR, maintenant que TOOLING-EXPERIMENT-003 est close et que le README a été réconcilié contre l'état durable courant. Ne sélectionner automatiquement aucun successeur de feuille de route ; ne rouvrir ni TE001, ni TE002, ni TE003 ; ne pas promouvoir un travail différé au seul motif que l'expérience courante est close ; ne commencer aucune expérience ni aucune implémentation avant la sélection humaine."
+        },
+        "observed": {
+          "blob": "56372a088db1fbc4da2f47a39fc5a6364120055e"
         }
       }
     ]
