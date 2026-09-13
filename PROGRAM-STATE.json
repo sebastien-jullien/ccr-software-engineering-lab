@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T13:53:49Z"
+    "updated_at": "2026-09-13T14:40:49Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -701,11 +701,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "tooling-experiment-003-first-live-dogfood-task-selected",
+      "question": "Sélectionner la maintenance bornée de README.md comme première tâche réelle de dogfood en usage réel de TOOLING-EXPERIMENT-003, selon le périmètre gelé par l'autorité 27 ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-073",
+          "kind": "repo-path",
+          "ref": "27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:tooling-experiment-003-first-live-dogfood-task-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "420b4c5704d5f619852155d5d07276fa96330ae0"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Obtenir la sélection humaine de la première tâche réelle authentique du Lab pour le dogfood en usage réel de TOOLING-EXPERIMENT-003 avec Result Instance v0 qualifiée ; ne présumer ni la maintenance du README ni aucune autre tâche, et ne revendiquer aucune validation de capture en usage réel avant l'exécution de ce dogfood.",
+    "value": "Concevoir et prédéclarer le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 pour la tâche de maintenance bornée du README sélectionnée par l'humain : geler l'objet de mission prospectif, le contrat de retour, le protocole de production, de gel et de passation de l'instance de résultat, les restrictions de consommation factuelle en aval et la frontière d'évaluation ; ne sélectionner ni instancier aucun exécutant, et ne pas encore modifier README.md.",
     "evidence": [
       {
         "id": "ev-065",
@@ -722,17 +743,17 @@
         }
       },
       {
-        "id": "ev-072",
+        "id": "ev-074",
         "kind": "repo-path",
-        "ref": "26-TOOLING-EXPERIMENT-003-CORRECTIVE-HISTORICAL-QUALIFICATION.md",
+        "ref": "27-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-TASK-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Obtenir la sélection humaine de la première tâche réelle authentique du Lab pour le dogfood en usage réel de TOOLING-EXPERIMENT-003 avec Result Instance v0 qualifiée ; ne présumer ni la maintenance du README ni aucune autre tâche, et ne revendiquer aucune validation de capture en usage réel avant l'exécution de ce dogfood."
+          "value": "Concevoir et prédéclarer le premier dogfood en usage réel de TOOLING-EXPERIMENT-003 pour la tâche de maintenance bornée du README sélectionnée par l'humain : geler l'objet de mission prospectif, le contrat de retour, le protocole de production, de gel et de passation de l'instance de résultat, les restrictions de consommation factuelle en aval et la frontière d'évaluation ; ne sélectionner ni instancier aucun exécutant, et ne pas encore modifier README.md."
         },
         "observed": {
-          "blob": "ed18f78f5117fab3d7996541eaf31900db0de7d6"
+          "blob": "420b4c5704d5f619852155d5d07276fa96330ae0"
         }
       }
     ]
