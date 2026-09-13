@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LOCAL MISSION CONSOLE V0</title>
+    <link rel="stylesheet" href="/console.css" />
+  </head>
+  <body>
+    <!--
+      Bandeau de contexte partage : metadonnees de depot.
+      Ce n'est PAS un panneau produit. Il ne porte aucun workflow propre, et
+      il n'est pas compte comme un quatrieme panneau.
+    -->
+    <header id="context-band" data-band="repository">
+      <h1>LOCAL MISSION CONSOLE V0</h1>
+      <dl id="context-fields">
+        <div class="field"><dt>depot</dt><dd id="context-repository">—</dd></div>
+        <div class="field"><dt>HEAD</dt><dd id="context-head">—</dd></div>
+        <div class="field"><dt>format d'objet</dt><dd id="context-object-format">—</dd></div>
+      </dl>
+      <p id="context-error" class="fault" hidden></p>
+    </header>
+
+    <!-- PANNEAUX PRODUIT = 3. Ni plus, ni moins. -->
+    <main id="panels">
+      <!-- ------------------------------------------------------------ -->
+      <section class="panel" data-product-panel="A" id="panel-a">
+        <h2>A — ÉTAT DU LAB</h2>
+
+        <!--
+          Enonce obligatoire, en tete de panneau, non repliable et non
+          conditionnel. Il ne depend d'aucune reponse : il decrit ce que la
+          console NE FAIT PAS, et cela ne change jamais.
+        -->
+        <p class="statement" id="evidence-verification-statement">
+          PROGRAM-STATE EVIDENCE VERIFICATION = NOT EXECUTED BY CONSOLE V0
+        </p>
+        <p class="caveat">
+          RÉFÉRENCE AFFICHÉE ≠ RÉFÉRENCE VÉRIFIÉE — les blobs enregistrés sont
+          ceux du checkpoint, affichés tels quels ; aucun blob courant n'est
+          calculé, et aucune comparaison enregistré ↔ courant n'est exécutée.
+          ABSENCE DE VÉRIFICATION ≠ VÉRIFICATION RÉUSSIE.
+        </p>
+
+        <p class="fault" id="program-state-error" hidden></p>
+
+        <h3>capture</h3>
+        <dl id="program-state-capture" class="identity"></dl>
+
+        <h3>checkpoint</h3>
+        <dl id="program-state-checkpoint" class="identity"></dl>
+
+        <h3>git_context</h3>
+        <dl id="program-state-git-context" class="identity"></dl>
+
+        <h3>next_action</h3>
+        <div id="program-state-next-action"></div>
+
+        <h3>streams</h3>
+        <div id="program-state-streams"></div>
+
+        <h3>decisions</h3>
+        <div id="program-state-decisions"></div>
+
+        <h3>références enregistrées</h3>
+        <dl id="program-state-evidence-summary" class="identity"></dl>
+      </section>
+
+      <!-- ------------------------------------------------------------ -->
+      <section class="panel" data-product-panel="B" id="panel-b">
+        <h2>B — MISSION</h2>
+
+        <p class="caveat">
+          La chaîne remise au presse-papiers est EXACTEMENT
+          <code>render(mission).text</code>. Les octets ultérieurement collés
+          sont hors de la garantie de la console. Aucune dépêche automatique
+          d'agent.
+        </p>
+
+        <div class="controls">
+          <label for="mission-select">candidat</label>
+          <select id="mission-select"></select>
+          <button type="button" id="mission-copy" disabled>COPIER L'ENVELOPPE</button>
+          <span id="mission-copy-status" class="note"></span>
+        </div>
+
+        <p class="fault" id="mission-error" hidden></p>
+
+        <h3>capture</h3>
+        <dl id="mission-capture" class="identity"></dl>
+
+        <h3>snapshot</h3>
+        <dl id="mission-snapshot" class="identity"></dl>
+
+        <h3>validation</h3>
+        <div id="mission-validation"></div>
+
+        <h3>enveloppe rendue</h3>
+        <pre id="mission-envelope"></pre>
+      </section>
+
+      <!-- ------------------------------------------------------------ -->
+      <section class="panel" data-product-panel="C" id="panel-c">
+        <h2>C — RÉSULTAT</h2>
+
+        <p class="caveat">
+          EVIDENCE IDENTITY MATCH ≠ FAIT VRAI — une identité de preuve établit
+          qu'un fichier porte bien les octets annoncés, rien de plus. Une
+          preuve historique est comparée à son identité immuable historique ;
+          le distant courant n'est jamais interrogé, et son avance n'est pas
+          une contradiction.
+        </p>
+
+        <div class="controls">
+          <label for="result-select">candidat</label>
+          <select id="result-select"></select>
+          <span id="result-binding" class="note"></span>
+        </div>
+
+        <p class="fault" id="result-error" hidden></p>
+
+        <h3>capture</h3>
+        <dl id="result-capture" class="identity"></dl>
+
+        <h3>liaison de version de mission</h3>
+        <dl id="result-mission-recapture" class="identity"></dl>
+
+        <h3>associations</h3>
+        <div id="result-associations"></div>
+
+        <h3>validation de contrat</h3>
+        <div id="result-contract"></div>
+
+        <h3>valeurs rapportées</h3>
+        <div id="result-reported-values"></div>
+
+        <h3>non-production structurelle</h3>
+        <div id="result-non-production"></div>
+
+        <h3>preuves</h3>
+        <div id="result-evidence"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/console.mjs"></script>
+  </body>
+</html>

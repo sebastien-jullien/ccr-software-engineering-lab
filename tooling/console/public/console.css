@@ -1,0 +1,299 @@
+/*
+ * Mise en forme de la console.
+ *
+ * Aucune police distante, aucune image distante, aucun CDN : la politique de
+ * securite du serveur n'autorise que `'self'`, et rien ici n'essaie d'en
+ * sortir. Tout le style vit dans ce fichier -- il n'existe aucun style en
+ * ligne dans l'interface, pas meme un attribut `style`.
+ */
+
+:root {
+  --ink: #14171a;
+  --ink-soft: #4a5259;
+  --rule: #d4d8dc;
+  --ground: #f6f7f8;
+  --panel: #ffffff;
+  --accent: #1f4e79;
+  --fault: #8a1c1c;
+  --fault-ground: #fdf0f0;
+  --statement: #5a3b00;
+  --statement-ground: #fff6e5;
+  --match: #1d5e2f;
+  --mismatch: #8a1c1c;
+  --unresolved: #6a4a00;
+  --mono: ui-monospace, "Cascadia Mono", "Consolas", "DejaVu Sans Mono", monospace;
+  --sans: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 3rem;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* --- bandeau de contexte partage ------------------------------------ */
+
+#context-band {
+  padding: 1rem 1.5rem;
+  background: var(--panel);
+  border-bottom: 2px solid var(--rule);
+}
+
+#context-band h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+#context-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2rem;
+  margin: 0;
+}
+
+#context-fields .field {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+#context-fields dt {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+#context-fields dd {
+  margin: 0;
+  font-family: var(--mono);
+}
+
+/* --- panneaux produit ------------------------------------------------ */
+
+#panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  align-items: start;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1rem 1.25rem 1.5rem;
+  min-width: 0;
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.panel h3 {
+  margin: 1.25rem 0 0.35rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.2rem;
+}
+
+/* --- enonces et mises en garde --------------------------------------- */
+
+.statement {
+  margin: 0 0 0.75rem;
+  padding: 0.6rem 0.75rem;
+  background: var(--statement-ground);
+  border-left: 4px solid var(--statement);
+  color: var(--statement);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.caveat {
+  margin: 0 0 0.75rem;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.fault {
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.75rem;
+  background: var(--fault-ground);
+  border-left: 4px solid var(--fault);
+  color: var(--fault);
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.note {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+/* --- identites et listes --------------------------------------------- */
+
+dl.identity {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) 1fr;
+  gap: 0.15rem 0.75rem;
+  margin: 0.4rem 0 0;
+}
+
+dl.identity dt {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+dl.identity dd {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+
+.record {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+}
+
+.record > .head {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.record > .sub {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.record .value {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+ul.references {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+}
+
+ul.references li {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  overflow-wrap: anywhere;
+}
+
+/* --- vocabulaire d'association --------------------------------------- */
+
+.status {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.status[data-status="MATCH"] {
+  color: var(--match);
+  background: #eaf4ed;
+}
+
+.status[data-status="MISMATCH"] {
+  color: var(--mismatch);
+  background: var(--fault-ground);
+}
+
+.status[data-status="CANNOT_ESTABLISH"],
+.status[data-status="UNRESOLVED"],
+.status[data-status="NOT_APPLICABLE"],
+.status[data-status="NOT_APPLICABLE_TO_SELECTED_MISSION"] {
+  color: var(--unresolved);
+  background: var(--statement-ground);
+}
+
+/* --- controles et enveloppe ------------------------------------------ */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.controls label {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+select,
+button {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--panel);
+  color: var(--ink);
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  border-color: var(--rule);
+  color: var(--ink-soft);
+}
+
+pre#mission-envelope {
+  margin: 0.4rem 0 0;
+  padding: 0.6rem;
+  max-height: 26rem;
+  overflow: auto;
+  background: var(--ground);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+[hidden] {
+  display: none;
+}

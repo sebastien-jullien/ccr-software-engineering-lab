@@ -163,6 +163,7 @@ Outils que le Lab s'applique à lui-même, sur sa propre conduite. Aucun n'est u
 - [`tooling/program-state/`](tooling/program-state/) — TOOLING-EXPERIMENT-001 : point de reprise d'état de programme durable. Trois commandes — `resume` · `check` · `update`. Aucune dépendance externe, aucune mutation Git, aucun réseau.
 - [`tooling/mission-object/`](tooling/mission-object/) — TOOLING-EXPERIMENT-002 : représentation durable de mission. L'outil charge un Mission Object, le valide et en rend l'enveloppe. Représenter n'est pas exécuter : il n'ordonnance rien et n'exécute aucune mission.
 - [`tooling/result-instance/`](tooling/result-instance/) — TOOLING-EXPERIMENT-003 : représentation durable de l'instance réelle de retour / résultat de mission. L'outil charge une instance de résultat, en valide la structure et les types, et la confronte mécaniquement au contrat de retour prospectif de son objet de mission. Consigner n'est pas qualifier : rapporté n'est pas vrai.
+- [`tooling/console/`](tooling/console/) — LOCAL MISSION CONSOLE V0 : console web locale, en lecture seule, pour suivre une mission dans un dépôt. Trois panneaux — état du Lab · mission · résultat. Elle capture chaque artefact une fois, en calcule l'identité en Node sur ces octets-là, lie tout résultat à la version de mission affichée, et borne la résolution de preuve aux localisateurs portés par le résultat. Afficher n'est pas vérifier : la vérification des preuves de PROGRAM-STATE n'est pas exécutée, et une identité de preuve n'est pas un fait vrai. Aucune dépendance externe, aucune mutation du dépôt, aucune mutation Git, aucun réseau sortant.
 
 ## État courant
 
@@ -286,15 +287,20 @@ CURRENT PROGRAM DIRECTION
 = LOCAL MISSION CONSOLE V0
 = HUMAN-SELECTED
 = small local web console to follow one Lab mission in one repository
-= product scope frozen :
+= product scope : FROZEN
   31-LOCAL-MISSION-CONSOLE-V0-PROGRAM-DIRECTION-SELECTION.md
 = technical design : FROZEN / RATIFIED
   32-LOCAL-MISSION-CONSOLE-V0-IMPLEMENTATION-DESIGN.md
 = implementation class : ORDINARY INTEGRATION
 = concrete semantic gap : 0
 = new tooling experiment : NOT REQUIRED FOR V0
-= implementation : NOT STARTED
-= next : implement local mission console v0 against authority 32
+= implementation : PRESENT
+= tooling/console
+= implementation qualification : PENDING INDEPENDENT ORCHESTRATION /
+  COUNTER-EXPERT REVIEW
+= real-use utility : NOT DEMONSTRATED
+= no future genuine mission selected
+= next : qualify the implementation against authority 32
 
 CURRENT LAB STREAM
 = NONE
