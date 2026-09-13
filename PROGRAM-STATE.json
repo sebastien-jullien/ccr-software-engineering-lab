@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T02:26:22Z"
+    "updated_at": "2026-09-13T03:05:58Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -597,23 +597,9 @@
     }
   ],
   "next_action": {
-    "state": "SELECTED",
+    "state": "NOT_YET_SELECTED",
     "value": "Exécuter la phase D de TOOLING-EXPERIMENT-001 comme essai gelé de reprise fraîche dans AGENT CCR LAB #14, selon le protocole et les critères TE001 existants ; n'introduire aucune conception nouvelle, n'employer aucune archéologie de transcription, puis évaluer ensuite le résultat brut de l'essai.",
     "evidence": [
-      {
-        "id": "ev-022",
-        "kind": "repo-path",
-        "ref": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "state",
-          "value": "SELECTED"
-        },
-        "observed": {
-          "blob": "c94e03829e107b51f63efcdb950bfeff123f50d1"
-        }
-      },
       {
         "id": "ev-060",
         "kind": "repo-path",
@@ -626,6 +612,20 @@
         },
         "observed": {
           "blob": "4b3b9f20130d53368b5414fa0504e7e3e0b31544"
+        }
+      },
+      {
+        "id": "ev-061",
+        "kind": "repo-path",
+        "ref": "tooling/program-state/RESULT-001.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "state",
+          "value": "NOT_YET_SELECTED"
+        },
+        "observed": {
+          "blob": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
         }
       }
     ]
