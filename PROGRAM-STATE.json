@@ -1104,7 +1104,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter l'étude R&D bornée HANDOFF_ROUTING corrigée, avec un AGENT CCR LAB #27 frais, en employant le Mission Object et l'enveloppe canoniques de l'autorité 48 dans missions/003-handoff-routing-boundary/ ; la version de l'autorité 47 est historique et supersédée avant dépêche. Évaluer les surfaces techniques contre la ligne de base a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Évaluer EP-02, EP-03 et EP-04 ainsi que le contexte de récurrence conservé de 20 unités A, sans ajouter ni retirer d'épisode, d'unité ou de type de responsabilité R1..R8. Renseigner S, P, B et H pour chaque cas matériel, appliquer exactement les règles de cohérence C1 à C4 puis la partition ordonnée à cinq issues, règles 0 à 5, avec la priorité humain puis écart sémantique puis intégration bornée. Retourner exactement une issue parmi ORDINARY_ORCHESTRATION_SUFFICIENT, BOUNDED_INTEGRATION_OPPORTUNITY, HUMAN_DECISION_DOMINATES, CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE et INSUFFICIENT_DURABLE_EVIDENCE. Ne pas inventer de sixième issue, ne pas relabelliser un écart sémantique en intégration bornée ni en insuffisance de preuve, ne pas inférer une sélection humaine d'une absence sémantique. Produire exactement le contrat de retour corrigé de 328 champs. Ne créer que missions/003-handoff-routing-boundary/result.json. Commits 0, pushs 0. Ne pas reconstruire les faits depuis la conversation. Ne sélectionner ni moteur de routage, ni représentation, ni nouvelle primitive sémantique, ni API, ni expérience, ni TOOLING-EXPERIMENT-004, ni conception technique, ni implémentation.",
+    "value": "Qualifier indépendamment, avec un AGENT CCR LAB #28 frais, le résultat persisté de l'étude HANDOFF_ROUTING gelée par l'autorité 48. Cible de qualification : missions/003-handoff-routing-boundary/result.json, sha256 67cb8b79853facee46c1011c70e628c5a3ca8e80633771bef2156ae3c010704e, blob 92ff7ad329a329a372755c09bd6b292c810dea34. Base de l'exécutant : dc292430b462da97ff42c9188b2d33a01efbcd3b. Ligne de base des capacités techniques : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Dériver indépendamment, sans se fier à l'exécutant : les classifications d'EP-02, EP-03 et EP-04 ; S, P, B et H ; le test contrefactuel de suppression ; l'autorité humaine résiduelle ; G1 à G6 y compris G4A et G4B ; la règle de partition décisive ; l'issue analytique finale. Auditer explicitement quatre points portants : P contre G4 et G4A, c'est-à-dire déterminer si le résultat démontre réellement une dérivabilité déterministe courante mais une capacité de jointure ou de propagation bornée absente de la ligne de base et nécessaire pour supprimer la conséquence matérielle, ou bien si l'orchestration procédurale courante suffit déjà ; B contre G5 et G6, leurs portées gelées exactes et leur cohérence avec la règle 4 ou leur effet sur la branche analytique ; la suppression contrefactuelle rapportée YES sur les trois épisodes, à reconstruire causalement et non à accepter ; la cartographie exacte de preuve pour S = YES et H = NO par épisode matériel ; ainsi que les comptes de récurrence R1 à R8 et leur pertinence pour la conclusion globale. Classer les erreurs analytiques matérielles, les erreurs analytiques non matérielles et les limitations de qualification. Ne pas éditer result.json. Ne pas sélectionner de réponse produit, de représentation, de moteur de routage, d'API, d'expérience ni de TOOLING-EXPERIMENT-004. Ne pas autoriser d'implémentation. Ne retourner qu'une qualification.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1121,17 +1121,31 @@
         }
       },
       {
-        "id": "ev-117",
+        "id": "ev-118",
         "kind": "repo-path",
-        "ref": "48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md",
+        "ref": "missions/003-handoff-routing-boundary/result.json",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "qualification_target",
+          "value": "missions/003-handoff-routing-boundary/result.json — retour réel de CCR_LAB_FIX_1, sha256 67cb8b79853facee46c1011c70e628c5a3ca8e80633771bef2156ae3c010704e, blob 92ff7ad329a329a372755c09bd6b292c810dea34, 156216 octets, CR 0 / LF 6124 / NUL 0, persisté octet pour octet sans édition sémantique ; issue rapportée par l’exécutant BOUNDED_INTEGRATION_OPPORTUNITY, qualification indépendante PENDING"
+        },
+        "observed": {
+          "blob": "92ff7ad329a329a372755c09bd6b292c810dea34"
+        }
+      },
+      {
+        "id": "ev-119",
+        "kind": "repo-path",
+        "ref": "missions/003-handoff-routing-boundary/result.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter l'étude R&D bornée HANDOFF_ROUTING corrigée, avec un AGENT CCR LAB #27 frais, en employant le Mission Object et l'enveloppe canoniques de l'autorité 48 dans missions/003-handoff-routing-boundary/ ; la version de l'autorité 47 est historique et supersédée avant dépêche. Évaluer les surfaces techniques contre la ligne de base a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Évaluer EP-02, EP-03 et EP-04 ainsi que le contexte de récurrence conservé de 20 unités A, sans ajouter ni retirer d'épisode, d'unité ou de type de responsabilité R1..R8. Renseigner S, P, B et H pour chaque cas matériel, appliquer exactement les règles de cohérence C1 à C4 puis la partition ordonnée à cinq issues, règles 0 à 5, avec la priorité humain puis écart sémantique puis intégration bornée. Retourner exactement une issue parmi ORDINARY_ORCHESTRATION_SUFFICIENT, BOUNDED_INTEGRATION_OPPORTUNITY, HUMAN_DECISION_DOMINATES, CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE et INSUFFICIENT_DURABLE_EVIDENCE. Ne pas inventer de sixième issue, ne pas relabelliser un écart sémantique en intégration bornée ni en insuffisance de preuve, ne pas inférer une sélection humaine d'une absence sémantique. Produire exactement le contrat de retour corrigé de 328 champs. Ne créer que missions/003-handoff-routing-boundary/result.json. Commits 0, pushs 0. Ne pas reconstruire les faits depuis la conversation. Ne sélectionner ni moteur de routage, ni représentation, ni nouvelle primitive sémantique, ni API, ni expérience, ni TOOLING-EXPERIMENT-004, ni conception technique, ni implémentation."
+          "value": "Qualifier indépendamment, avec un AGENT CCR LAB #28 frais, le résultat persisté de l'étude HANDOFF_ROUTING gelée par l'autorité 48. Cible de qualification : missions/003-handoff-routing-boundary/result.json, sha256 67cb8b79853facee46c1011c70e628c5a3ca8e80633771bef2156ae3c010704e, blob 92ff7ad329a329a372755c09bd6b292c810dea34. Base de l'exécutant : dc292430b462da97ff42c9188b2d33a01efbcd3b. Ligne de base des capacités techniques : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Dériver indépendamment, sans se fier à l'exécutant : les classifications d'EP-02, EP-03 et EP-04 ; S, P, B et H ; le test contrefactuel de suppression ; l'autorité humaine résiduelle ; G1 à G6 y compris G4A et G4B ; la règle de partition décisive ; l'issue analytique finale. Auditer explicitement quatre points portants : P contre G4 et G4A, c'est-à-dire déterminer si le résultat démontre réellement une dérivabilité déterministe courante mais une capacité de jointure ou de propagation bornée absente de la ligne de base et nécessaire pour supprimer la conséquence matérielle, ou bien si l'orchestration procédurale courante suffit déjà ; B contre G5 et G6, leurs portées gelées exactes et leur cohérence avec la règle 4 ou leur effet sur la branche analytique ; la suppression contrefactuelle rapportée YES sur les trois épisodes, à reconstruire causalement et non à accepter ; la cartographie exacte de preuve pour S = YES et H = NO par épisode matériel ; ainsi que les comptes de récurrence R1 à R8 et leur pertinence pour la conclusion globale. Classer les erreurs analytiques matérielles, les erreurs analytiques non matérielles et les limitations de qualification. Ne pas éditer result.json. Ne pas sélectionner de réponse produit, de représentation, de moteur de routage, d'API, d'expérience ni de TOOLING-EXPERIMENT-004. Ne pas autoriser d'implémentation. Ne retourner qu'une qualification."
         },
         "observed": {
-          "blob": "465f9b03233b2a061c694b62a4207115b89fb6ad"
+          "blob": "92ff7ad329a329a372755c09bd6b292c810dea34"
         }
       }
     ]

@@ -1,0 +1,6124 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-boundary-bounded-rd-study-003"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/003-handoff-routing-boundary/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "f0c5bc3f84840d657011dc31b3ed2ce54f62c175"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/003-handoff-routing-boundary/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "f0c5bc3f84840d657011dc31b3ed2ce54f62c175"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-direction-authority"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "42a3a99d7aa53755971f5736904da2546d90b0e7"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "42a3a99d7aa53755971f5736904da2546d90b0e7"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-qualified-result"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-material-cases-evaluated"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-recurrence-units-evaluated"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "20"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-protected-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-trigger"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "gel de la mission exécutable bornée ordonné par la décision ratifiée decision-consequence-boundary-real-use-mission-selected (autorité 34 § 16) : la mission doit être rendue exécutable, transmise à un exécutant frais et observée par la console avant et après la dépêche (autorité 34 § 12 et § 13)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RATIFIED_DECISION_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_OBSERVATION_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_LOCAL_COMPANION_ARTIFACT_PRACTICE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DOWNSTREAM_PERSISTENCE_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STANDING_CONSTRAINT_RELEASE_CONDITION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md@4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5 § 12, § 13 et § 16"
+          },
+          {
+            "type": "SCALAR",
+            "value": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md@0f7ef0512cfbcaf976b45cea3dea23ef4ea02181 § 22 à § 24"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/dogfood/001/readme-reached.md@ea62342d4ef45314b7331d9f212e057e88999d54"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/result-instance/live-dogfood/001/evidence/remote-main-head.txt@4b822a1f771898cd7883cf51c00fa63ff263104c"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@42855407787454bd2ffcf9606df5ab36a13a11fd next_action"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit 4002d3cfab0b6b2ed2aed474c8e4708acd40f8a2 docs: select decision consequence boundary mission"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-carrying-surfaces"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NUMBERED_AUTHORITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROGRAM_STATE_NEXT_ACTION_FREE_PROSE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_EFFECT_BOUNDARIES_AND_DELIVERABLE_REFERENCE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_LOCAL_COMPANION_ARTIFACT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_COMMIT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_PANELS_READ_ONLY_EXPOSURE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-join-description"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "joindre l'exigence d'observation de l'autorité 34 § 12 et § 13 à la règle de durabilité adossée à Git et à la pratique d'artefact compagnon local à une mission, pour fixer au gel la destination durable des observations et un commit par étape"
+          },
+          {
+            "type": "SCALAR",
+            "value": "joindre la règle de persistance mécanique distincte de l'autorité 28 § 23, le précédent de persistance TE003 et la contrainte permanente sc-no-persistence-by-executor pour fixer au gel la persistance du résultat par l'orchestration avant le panneau C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "propager dans next_action l'étape suivante, l'exécutant frais, la frontière de mutation et l'arrêt avant qualification tels que gelés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "jointure ni effectuée ni exposée par une surface de la ligne de base : la sémantique de routage typée — Mission Object : destinataire, référence DELIVERABLE, actions interdites, ordre de procédure, règles d'arrêt, contrainte permanente et condition de levée ; Result Instance : reported_by — et les règles durables ne passent dans la passation d'orchestration, autorités et next_action en prose, que par reformulation manuelle"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-material-consequence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-counterfactual"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-counterfactual-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "le protocole d'observation de l'autorité 35 § 15 et la next_action de EP-02 ont été supersédés par les autorités 36 puis 37, et la next_action a été rétablie deux fois (EP03-A-3, EP04-A-2)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "les autorités 36 et 37 ont dérivé la destination d'observation, le commit par étape et la persistance du résultat avant le panneau C depuis des entrées durables antérieures au gel de l'autorité 35, sans changement d'outillage, sans invention de schéma et sans décision humaine (autorité 36 § 3.6 et § 4 ; autorité 37 § 5 et § 6)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "dérivées au gel, ces sorties auraient été portées par l'autorité 35 et par la next_action de EP-02 : aucune supersession ni aucun rétablissement de next_action n'aurait été requis"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/mission.json@e80bc3d250920cee66b4d26bef497b6094395144"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@42855407787454bd2ffcf9606df5ab36a13a11fd"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@d3806a0107db827bf033529e74c6459ef0e50e48"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit cbab8cbbc2b6a6764c0b5ee0ebfca9fe6b2060a0 docs: freeze decision consequence study mission"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-semantics-present"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-procedural-removal"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PARTIAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-bounded-integration-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-human-selection-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-g4a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-g4b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-trigger"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "le protocole d'observation en usage réel de l'autorité 35 § 15 exige des observations durables des panneaux A, B et C sans fixer leur destination durable : l'exécution ne peut commencer sans reconstruction depuis la prose (autorité 36 § 2)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_OBSERVATION_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_LOCAL_COMPANION_ARTIFACT_PRACTICE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_EFFECT_BOUNDARIES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_PREFLIGHT_PREDICATES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3 § 12 et § 15"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/mission.json@e80bc3d250920cee66b4d26bef497b6094395144 préflight et frontières d'effet"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/dogfood/001/readme-reached.md@ea62342d4ef45314b7331d9f212e057e88999d54"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/result-instance/live-dogfood/001/evidence/remote-main-head.txt@4b822a1f771898cd7883cf51c00fa63ff263104c"
+          },
+          {
+            "type": "SCALAR",
+            "value": "04-OBSERVATION-RECORD.md@b50abe296b00f30d5bd6e18c3b3e0860beb88053 registre O-NNN"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@d3806a0107db827bf033529e74c6459ef0e50e48 next_action"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit cbab8cbbc2b6a6764c0b5ee0ebfca9fe6b2060a0 docs: freeze decision consequence study mission"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-carrying-surfaces"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_LOCAL_COMPANION_ARTIFACT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NUMBERED_AUTHORITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROGRAM_STATE_NEXT_ACTION_FREE_PROSE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_COMMIT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_PANELS_READ_ONLY_EXPOSURE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-join-description"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "inventorier les surfaces durables existantes et retenir l'unique surface sémantiquement adéquate, l'artefact compagnon local à la mission (autorité 36 § 3 et § 4)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "joindre la règle de durabilité aux prédicats de préflight, qui ne fixent aucun parent de HEAD, pour autoriser un commit d'observation par étape avant la dépêche (autorité 36 § 9)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "propager la frontière d'écriture exécutant / orchestrateur et l'attribution de producteur (autorité 36 § 6 et § 10)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "jointure ni effectuée ni exposée par une surface de la ligne de base : la sémantique de routage typée — Mission Object : destinataire, référence DELIVERABLE, actions interdites, ordre de procédure, règles d'arrêt, contrainte permanente et condition de levée ; Result Instance : reported_by — et les règles durables ne passent dans la passation d'orchestration, autorités et next_action en prose, que par reformulation manuelle"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-material-consequence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-counterfactual"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-counterfactual-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'autorité 36 établit que la sélection de destination n'exigeait ni changement d'outillage, ni invention de schéma, ni choix humain, une seule surface adéquate demeurant (§ 3.6 et § 4)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ses entrées — protocole § 15 de l'autorité 35, préflight du Mission Object, pratique d'artefact compagnon, durabilité adossée à Git — existaient toutes au gel de l'autorité 35"
+          },
+          {
+            "type": "SCALAR",
+            "value": "fixée au gel, la destination aurait supprimé le blocage avant exécution et le rétablissement de next_action de EP-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/console-real-use-observations.md@af7c57778ba8b34ea814555d91448ef9ae24f1a2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@d3806a0107db827bf033529e74c6459ef0e50e48"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@2bdba40d614b39379977efba17b881b4c3e1fe25"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit 54382c950cd8fe735ece32491e11aecb327c49eb docs: freeze console real-use observation capture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-semantics-present"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-procedural-removal"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PARTIAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-bounded-integration-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-human-selection-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-g4a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-g4b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-trigger"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "l'autorité 36 § 8 fait committer l'observation du panneau C après la production du résultat sans exiger que ce résultat soit durable, et la persistance du résultat de l'exécutant reste sans titulaire, la condition de levée de sc-no-persistence-by-executor étant ouverte (autorité 37 § 2 et § 5.3)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_EFFECT_BOUNDARIES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DOWNSTREAM_PERSISTENCE_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_PRECEDENT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STANDING_CONSTRAINT_RELEASE_CONDITION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md@0f7ef0512cfbcaf976b45cea3dea23ef4ea02181 § 22 à § 24"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit b0a68a17d922170ef3f617523bd6f8f1ef83aa83 docs: persist first te003 live dogfood result"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/result-instance/live-dogfood/001/result.json@f0781cbea2a1bd773c95c7ebffc91915bb7c076d reported_by.executor"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/mission.json@e80bc3d250920cee66b4d26bef497b6094395144 sc-no-persistence-by-executor"
+          },
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2 § 8 et § 9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@2bdba40d614b39379977efba17b881b4c3e1fe25 next_action"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit 54382c950cd8fe735ece32491e11aecb327c49eb docs: freeze console real-use observation capture"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-carrying-surfaces"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NUMBERED_AUTHORITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_STANDING_CONSTRAINT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESULT_INSTANCE_REPORTED_BY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_COMMIT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROGRAM_STATE_NEXT_ACTION_FREE_PROSE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-join-description"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "joindre la règle de persistance mécanique distincte (autorité 28 § 23) et le précédent de persistance TE003 à la contrainte permanente de l'autorité 35 pour attribuer l'enregistrement Git à l'orchestration sans changer le producteur sémantique"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ordonner la persistance du résultat avant le panneau C par la règle de récupérabilité déjà appliquée aux étapes A et B (autorité 36 § 9)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "jointure ni effectuée ni exposée par une surface de la ligne de base : la sémantique de routage typée — Mission Object : destinataire, référence DELIVERABLE, actions interdites, ordre de procédure, règles d'arrêt, contrainte permanente et condition de levée ; Result Instance : reported_by — et les règles durables ne passent dans la passation d'orchestration, autorités et next_action en prose, que par reformulation manuelle"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-material-consequence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-counterfactual"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-counterfactual-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'autorité 37 sélectionne le cycle de manière déterministe, sans porte humaine, sur des critères déjà gelés (§ 6)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "chaque critère dérive d'une règle ou d'un précédent durables antérieurs : autorité 28 § 22 à § 24, persistance TE003, contrainte permanente de l'autorité 35, sémantique de durabilité de l'autorité 36 § 9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "dérivé au gel de l'autorité 36, l'ordonnancement aurait supprimé le blocage, la supersession de trois clauses de l'autorité 36 et le rétablissement de next_action de EP-04"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a"
+          },
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md@0f7ef0512cfbcaf976b45cea3dea23ef4ea02181"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@2bdba40d614b39379977efba17b881b4c3e1fe25"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@46b7fa42a4a67103885cedc7d9a81788b279b6b4"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit ee05eed6ad1d04acb7f86210c26117b2c742581b docs: freeze result panel c durability ordering"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-semantics-present"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-procedural-removal"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PARTIAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-bounded-integration-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-human-selection-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-g4a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-g4b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u01-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u01-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u01-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RATIFIED_DECISION_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u01-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md@4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5 § 16"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@42855407787454bd2ffcf9606df5ab36a13a11fd next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u01-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u01-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u01-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP01-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u02-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u02-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u02-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_DIRECTORY_CONVENTIONS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESERVED_RESULT_PATH"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESERVED_OR_SELECTED_RETURN_PATH"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u02-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md@4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
+          },
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3 § 12 et § 13"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/mission.json@e80bc3d250920cee66b4d26bef497b6094395144 ref-return DELIVERABLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u02-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u02-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u02-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP02-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u03-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u03-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u03-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_OBSERVATION_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u03-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md@4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5 § 12 et § 13"
+          },
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3 § 15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u03-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u03-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u03-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP02-A-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u04-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u04-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u04-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FROZEN_MISSION_OBJECT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERMITTED_AND_FORBIDDEN_ACTION_SET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u04-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/mission.json@e80bc3d250920cee66b4d26bef497b6094395144"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@d3806a0107db827bf033529e74c6459ef0e50e48 next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u04-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u04-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u04-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP02-A-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u05-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u05-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u05-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_OBSERVATION_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_LOCAL_COMPANION_ARTIFACT_PRACTICE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESERVED_OR_SELECTED_RETURN_PATH"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u05-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3 § 15"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/dogfood/001/readme-reached.md@ea62342d4ef45314b7331d9f212e057e88999d54"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/result-instance/live-dogfood/001/evidence/remote-main-head.txt@4b822a1f771898cd7883cf51c00fa63ff263104c"
+          },
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2 § 3 à § 6 et § 10"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u05-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u05-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u05-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP03-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_BLOCKING_AND_REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u06-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u06-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u06-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_PREFLIGHT_PREDICATES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_EFFECT_BOUNDARIES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u06-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/mission.json@e80bc3d250920cee66b4d26bef497b6094395144 g-preflight"
+          },
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2 § 9"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u06-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u06-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u06-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP03-A-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u07-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u07-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u07-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FROZEN_MISSION_OBJECT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERMITTED_AND_FORBIDDEN_ACTION_SET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u07-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+          },
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@2bdba40d614b39379977efba17b881b4c3e1fe25 next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u07-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u07-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u07-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP03-A-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u08-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u08-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u08-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DOWNSTREAM_PERSISTENCE_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_PRECEDENT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STANDING_CONSTRAINT_RELEASE_CONDITION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u08-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "28-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-DESIGN.md@0f7ef0512cfbcaf976b45cea3dea23ef4ea02181 § 22 à § 24"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit b0a68a17d922170ef3f617523bd6f8f1ef83aa83 docs: persist first te003 live dogfood result"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/mission.json@e80bc3d250920cee66b4d26bef497b6094395144 sc-no-persistence-by-executor"
+          },
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a § 4 à § 6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u08-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u08-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u08-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP04-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_BLOCKING_AND_REWORK_OR_CORRECTION_AND_SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u09-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u09-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u09-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FROZEN_MISSION_OBJECT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERMITTED_AND_FORBIDDEN_ACTION_SET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u09-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md@9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+          },
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@46b7fa42a4a67103885cedc7d9a81788b279b6b4 next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u09-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u09-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u09-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP04-A-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u10-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u10-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u10-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u10-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a § 9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/console-real-use-observations.md@dcc27e64c94d2614d1814d6531c0458a55eb5765 PANEL_A"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit fb614d2a2eb6923a91deb541fca831e42c8d501f docs: record console panel a observation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u10-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u10-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u10-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP05-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u11-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u11-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u11-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u11-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a § 9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/console-real-use-observations.md@b52eee0c78ac521efac9e01d19d67a4ebf437f59 PANEL_B"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit e39384c66d15ad0ecf1e6e4e4cb491cd7db6a5af docs: record console panel b observation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u11-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u11-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u11-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP06-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u12-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u12-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u12-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_RENDERED_ENVELOPE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_EFFECT_BOUNDARIES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERMITTED_AND_FORBIDDEN_ACTION_SET"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u12-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a § 9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/console-real-use-observations.md@b52eee0c78ac521efac9e01d19d67a4ebf437f59 ENVELOPPE TRANSMISE À L'EXÉCUTANT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/result.json@69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07 reported_by"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u12-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u12-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u12-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP07-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u13-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u13-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u13-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURNED_RESULT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DOWNSTREAM_PERSISTENCE_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u13-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a § 7 à § 9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/result.json@69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit 9ba99ae97c078567c887e0bfe2705c2f6ca3dd08 docs: persist decision consequence study result"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u13-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u13-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u13-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP08-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u14-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u14-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u14-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURNED_RESULT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u14-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md@0fff611a59dabef0ad1b067344287d48b740f74a § 9 et § 10"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/001-decision-consequence-boundary/console-real-use-observations.md@af7c57778ba8b34ea814555d91448ef9ae24f1a2 PANEL_C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit 532f4283f4c62140bfef2362c6e0b866190aec38 docs: record console panel c observation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u14-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u14-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u14-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP09-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u15-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u15-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u15-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RETURNED_RESULT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFICATION_VERDICT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u15-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md@dc77a8a561b9ec92d05e6996f69c7929beb2c5b2 § 12 et § 13"
+          },
+          {
+            "type": "SCALAR",
+            "value": "38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md@ba16dbc7c7aa0e133bc9f442ab1046ca82a1ce57 § 1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@1c471a194b3d02f9540c785239ae48fe15862b4b next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u15-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u15-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SUBSTANTIVE_SELECTION_REMAINS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u15-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP10-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u16-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u16-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u16-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RATIFIED_DECISION_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GOVERNING_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u16-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md@1f25eb85170d09853865ef0ee59c2eb7dee345de § 9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@d025466587b4a8f36818100524137fde3267369b next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u16-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u16-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u16-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP11-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u17-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u17-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u17-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RATIFIED_DECISION_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DESIGN_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACCEPTANCE_SUITE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERMITTED_AND_FORBIDDEN_ACTION_SET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u17-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md@6f161cbb8d852f52afe15848c1b88664cfb207e5"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@54d9ff52a3760b68d0adaea2c26ffb4914c9ada6 next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u17-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u17-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u17-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP12-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u18-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u18-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u18-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DESIGN_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUPERSESSION_SCOPE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACCEPTANCE_SUITE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERMITTED_AND_FORBIDDEN_ACTION_SET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u18-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md@6f161cbb8d852f52afe15848c1b88664cfb207e5"
+          },
+          {
+            "type": "SCALAR",
+            "value": "41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md@86a6f1fc565ef0c5b3a4d8b6a772e6610c3590db"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@0f7c27aa4a746a016aca0e2933a20f2fdc29725d next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u18-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u18-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u18-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP13-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u19-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u19-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u19-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DESIGN_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUPERSESSION_SCOPE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACCEPTANCE_SUITE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u19-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/console/repo.mjs@0dbbd293263b41074dec564b60e9e05092604452"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit 3de958d4c9c469c990a534fabd30189c9a03a704 fix: bound mission result discovery"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u19-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u19-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u19-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP14-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u20-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u20-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u20-required-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "IMPLEMENTATION_COMMIT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFICATION_VERDICT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RATIFIED_DECISION_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u20-durable-sources"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md@b3a24ab4c0e40e847962e28103fd3a0ff18bdb24 § 1 et § B.1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json@9172fb876d94f5fdb547cd4ffd7ee4f47688de99 next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u20-join-requirement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u20-residual-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SUBSTANTIVE_SELECTION_REMAINS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u20-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIT_ID_EP15-A-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EPISODE_ID_EP-15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_A_HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CURRENT_SURFACE_STATUS_STILL_MANUAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUALIFIED_CONSEQUENCE_NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/002-remaining-manual-orchestration-work/result.json@1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "9"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "9"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "énoncé nommé de l'étape suivante et de ses bornes, porté en prose par la valeur next_action de PROGRAM-STATE et dérivé d'une décision ratifiée ou d'une autorité gelée"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r1-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "8"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_ACTOR_REQUIREMENT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "désignation d'un acteur frais ou indépendant par son rôle — exécutant, qualifieur, implémenteur — sans identité d'agent imposée par une surface"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r2-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ACCEPTANCE_SUITE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DESIGN_AUTHORITY_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUPERSESSION_SCOPE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "base d'exécution désignée par les autorités de conception gouvernantes, portée de supersession comprise"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r3-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "6"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "6"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PERMITTED_AND_FORBIDDEN_ACTION_SET"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ensemble des actions permises et interdites au destinataire, porté par les frontières d'effet du Mission Object et repris par next_action"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r4-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRODUCER_ATTRIBUTION_SEPARATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "attribution producteur sémantique / enregistreur Git et règle de commit distinct, portées par une autorité et appliquées par l'orchestration"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r5-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RESERVED_OR_SELECTED_RETURN_PATH"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "chemin de dépôt réservé ou sélectionné pour le retour, porté par une référence DELIVERABLE ou par une autorité locale à la mission"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r6-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "9"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "9"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PRIOR_PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_PREDICATE_BEFORE_NAMED_STAGE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "prédicat d'arrêt avant une étape nommée, porté en prose par next_action et par les règles d'arrêt du Mission Object"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r7-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-distinct-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-material-core-episodes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-still-manual-units"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/002-remaining-manual-orchestration-work/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-classification-distribution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-common-inputs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DISPATCH_LIFECYCLE_ORDER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_BACKED_DURABILITY_RULE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-common-output-shape"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ordre d'étapes avec exigence de durabilité par commit entre étapes, porté par une autorité de cycle de vie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-g1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-g2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-g3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-g4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-g5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-g6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-r8-concrete-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_INTEGRATION_OPPORTUNITY"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "EP-02, EP-03 et EP-04 : S = YES, P = PARTIAL, B = YES, H = NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "sémantique présente : chaque sortie de routage dont l'absence a causé une conséquence matérielle — destination d'observation et frontières d'écriture, commit par étape, titulaire et ordre de persistance du résultat avant le panneau C, next_action — dérive d'entrées durables antérieures, sans invention de schéma, sans changement d'outillage et sans décision humaine (autorité 36 § 3.6 et § 4 ; autorité 37 § 5 et § 6)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "orchestration procédurale partielle : la part exécutant de la passation est typée dans le Mission Object et propagée par son rendu ; la part orchestration est reformulée à la main en prose dans les autorités et dans next_action, et c'est dans cette reformulation que les omissions de EP-02, EP-03 et EP-04 se sont produites"
+          },
+          {
+            "type": "SCALAR",
+            "value": "intégration bornée absente : aucune surface de la ligne de base n'effectue ni n'expose la jointure de la sémantique typée et des règles durables vers ces sorties de passation (console en lecture seule, update de PROGRAM-STATE persistant une valeur fournie, Mission Object validé et rendu seulement) ; unités STILL_MANUAL et CT5 satisfait au résultat qualifié 002"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucun cas ne porte de sélection humaine substantielle causalement requise ; aucune absence sémantique positivement établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "porte d'écart : G4 non satisfaite pour les huit types — une orchestration ou intégration ordinaire sur la sémantique présente peut dériver les sorties — donc aucune nouvelle primitive sémantique justifiée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-new-primitive"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_JUSTIFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-concrete-gap-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'issue n'établit ni moteur de routage, ni API, ni représentation, ni forme de l'intégration bornée ; elle constate seulement son absence à la ligne de base a5d72ed"
+          },
+          {
+            "type": "SCALAR",
+            "value": "les conséquences matérielles du noyau précèdent les autorités 36 et 37 ; les occurrences postérieures, sans conséquence qualifiée, montrent une exécution manuelle correcte et non une suppression de la charge"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune occurrence postérieure n'éprouve une mission nouvelle portant un protocole d'observation de console"
+          },
+          {
+            "type": "SCALAR",
+            "value": "les types ACTOR_OR_SESSION_SELECTION, EXECUTION_BASELINE_ASSIGNMENT, ACTION_AUTHORITY_PROPAGATION et STOP_BOUNDARY ne portent aucune conséquence matérielle propre ; leur porte d'écart est NOT_APPLICABLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "le contrefactuel est raisonné depuis des faits durables et n'est pas observé"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-partition-trace"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "EP-02 S=YES P=PARTIAL B=YES H=NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "EP-03 S=YES P=PARTIAL B=YES H=NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "EP-04 S=YES P=PARTIAL B=YES H=NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1 et C3 non déclenchées : aucun cas P = YES ; C2 tenue : B = YES implique S = YES sur les trois cas"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C4 déclenchée sur les trois cas : S = YES, P = PARTIAL, H = NO → B = YES ; violations 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "règle 0 : aucune variable S, P, B ou H à NOT_ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "règle 1 non satisfaite : P = PARTIAL ; règle 2 non satisfaite : H = NO partout ; règle 3 non satisfaite : S = YES partout"
+          },
+          {
+            "type": "SCALAR",
+            "value": "règle 4 satisfaite : B = YES sur les trois cas, chacun supprimable par l'orchestration procédurale courante et cette intégration bornée sur une sémantique présente, sans bloqueur de sélection humaine → BOUNDED_INTEGRATION_OPPORTUNITY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "issues appariées : 1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantic-gap-capability"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    }
+  ]
+}

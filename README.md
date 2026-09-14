@@ -427,7 +427,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT CCR LAB #27
+= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #28
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -538,7 +538,7 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
   47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md
 = authority 48 : FIVE-OUTCOME DOMAIN + DETERMINISTIC PARTITION CORRECTION
   48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md
-= corrected study : FROZEN / NOT YET EXECUTED
+= corrected study : EXECUTED BY CCR_LAB_FIX_1
 = question : can the handoff/routing responsibilities that caused the material
   consequences in EP-02 / EP-03 / EP-04 be deterministically derived and
   propagated from existing durable surfaces, by ordinary orchestration, so the
@@ -599,21 +599,28 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
 = return contract : 307 -> 328 fields
   307 retained · 21 added · 0 removed · 0 renamed
   rf-outcome domain widened by one member, no member lost
-= future executor : AGENT CCR LAB #27, fresh, read-only except result.json
+= executor : CCR_LAB_FIX_1, read-only except result.json
 = executor commits / pushes : 0 / 0
-= result.json : DOES NOT EXIST YET
+= executor actual result : DURABLY PERSISTED
+  missions/003-handoff-routing-boundary/result.json
+= persisted bytes : exactly as returned, no semantic edit
+= executor-reported outcome : BOUNDED_INTEGRATION_OPPORTUNITY
+= independent analytical qualification : PENDING
+= load-bearing questions left to the qualifier :
+  P versus G4 / G4A · B versus G5 / G6 · counterfactual removal ·
+  exact evidence mapping for S = YES and H = NO · R1..R8 recurrence counts
 = routing engine : NOT SELECTED
 = new API : NOT SELECTED
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT CCR LAB #27
+= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #28
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT CCR LAB #27
+= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #28
 
 CURRENT LAB STREAM
 = NONE
