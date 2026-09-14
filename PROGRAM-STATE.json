@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-14T02:59:32Z"
+    "updated_at": "2026-09-14T03:55:32Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -974,11 +974,53 @@
           }
         }
       ]
+    },
+    {
+      "id": "local-mission-console-v0-u01-remediation-independent-qualification-ratified",
+      "question": "Ratifier la qualification indépendante corrigée de l'implémentation publiée de la remédiation U-01 comme PASS WITH LIMITATIONS, avec 0 défaut matériel, confirmation dans le vrai DOM et pour seule limitation substantielle la non-exécution du comportement de symlink sur hôte POSIX ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-104",
+          "kind": "repo-path",
+          "ref": "42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:local-mission-console-v0-u01-remediation-independent-qualification-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "b3a24ab4c0e40e847962e28103fd3a0ff18bdb24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "local-mission-console-v0-u01-remediation-closed",
+      "question": "Clore humainement U-01 comme remédié sur la base de l'implémentation indépendamment qualifiée et de la confirmation dans le vrai DOM que la mission authentique et le résultat authentique entrent désormais par le chemin normal sans requête manuelle hors interface, sans exiger un nouveau rerun complet de la mission historique ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-105",
+          "kind": "repo-path",
+          "ref": "42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:local-mission-console-v0-u01-remediation-closed",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "b3a24ab4c0e40e847962e28103fd3a0ff18bdb24"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Implémenter la remédiation bornée de découvrabilité U-01 contre les parties valides de l'autorité 40 telles que corrigées par l'autorité 41. Découverte de mission : ajouter la couverture bornée de missions/ et conserver l'éligibilité au seul basename mission.json. Découverte de résultat : conserver toutes les racines et toute l'éligibilité héritées inchangées, ajouter la couverture bornée de missions/, et n'y exposer que le basename result.json. Ne changer que les fichiers source et de test gelés par l'autorité 41 : tooling/console/repo.mjs et tooling/console/tests/console.test.mjs. Exiger que tout .json sans rapport sous missions/** reste exclu. Conserver tous les candidats historiques. Préserver tous les invariants de sécurité, de validation et d'association de l'autorité 32, ainsi que la forme de charge utile de la route. Ne pas modifier les artefacts de mission historiques. Ne pas modifier .gitattributes. Ne remédier aucune autre observation. Exécuter la suite d'acceptation corrigée de l'autorité 41. S'arrêter après la vérification de l'implémentation, avant toute qualification ultérieure et avant toute autre sélection de réponse produit.",
+    "value": "Obtenir la sélection humaine de la prochaine direction authentique du Lab CCR, maintenant que l'étude décision → conséquence déterministe → conséquence exécutée est close et que U-01 est clos comme remédié. Le risque établi de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable et peut être sélectionné par l'humain, mais il n'est PAS promu automatiquement en travail courant. De même, les éléments de console restés au rang d'observation ne sont pas promus automatiquement. Ne pas inférer de nouvelle expérience, de nouvelle représentation, de remédiation de console ni de conséquence CCR System. S'arrêter à la porte de sélection humaine de direction de programme.",
     "evidence": [
       {
         "id": "ev-065",
@@ -995,17 +1037,17 @@
         }
       },
       {
-        "id": "ev-103",
+        "id": "ev-106",
         "kind": "repo-path",
-        "ref": "41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md",
+        "ref": "42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Implémenter la remédiation bornée de découvrabilité U-01 contre les parties valides de l'autorité 40 telles que corrigées par l'autorité 41. Découverte de mission : ajouter la couverture bornée de missions/ et conserver l'éligibilité au seul basename mission.json. Découverte de résultat : conserver toutes les racines et toute l'éligibilité héritées inchangées, ajouter la couverture bornée de missions/, et n'y exposer que le basename result.json. Ne changer que les fichiers source et de test gelés par l'autorité 41 : tooling/console/repo.mjs et tooling/console/tests/console.test.mjs. Exiger que tout .json sans rapport sous missions/** reste exclu. Conserver tous les candidats historiques. Préserver tous les invariants de sécurité, de validation et d'association de l'autorité 32, ainsi que la forme de charge utile de la route. Ne pas modifier les artefacts de mission historiques. Ne pas modifier .gitattributes. Ne remédier aucune autre observation. Exécuter la suite d'acceptation corrigée de l'autorité 41. S'arrêter après la vérification de l'implémentation, avant toute qualification ultérieure et avant toute autre sélection de réponse produit."
+          "value": "Obtenir la sélection humaine de la prochaine direction authentique du Lab CCR, maintenant que l'étude décision → conséquence déterministe → conséquence exécutée est close et que U-01 est clos comme remédié. Le risque établi de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable et peut être sélectionné par l'humain, mais il n'est PAS promu automatiquement en travail courant. De même, les éléments de console restés au rang d'observation ne sont pas promus automatiquement. Ne pas inférer de nouvelle expérience, de nouvelle représentation, de remédiation de console ni de conséquence CCR System. S'arrêter à la porte de sélection humaine de direction de programme."
         },
         "observed": {
-          "blob": "86a6f1fc565ef0c5b3a4d8b6a772e6610c3590db"
+          "blob": "b3a24ab4c0e40e847962e28103fd3a0ff18bdb24"
         }
       }
     ]

@@ -164,6 +164,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md`](39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md) — disposition humaine de U-01 : remédiation bornée de découvrabilité, classée intégration produit ordinaire, pour que les artefacts authentiques de mission et de résultat entrent dans le flux normal de sélection des panneaux B et C. Objectif borné et exclusions gelés ; aucune conception technique, aucune racine de candidats choisie, aucune implémentation autorisée, autorité 32 non rouverte, risque de fin de ligne tenu séparé.
 - [`40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md`](40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md) — conception bornée et déterministe de la remédiation : chaîne de découverte reconstruite depuis le code publié, cause racine gelée — couverture de racines uniquement, le filtre existant classant déjà correctement les quatre fichiers de la mission — conception minimale retenue, sémantique de candidats après remédiation, invariants de l'autorité 32 préservés, surface d'implémentation exacte, critères d'acceptation positifs et négatifs, plan de test, pare-feu de fin de ligne et pare-feu des autres observations. Sa conception D1 porte un défaut matériel, corrigé par l'autorité 41.
 - [`41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md`](41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md) — correction de conception : D1 aurait exposé, sous `missions/**`, tout JSON sans rapport comme candidat de résultat, ce que l'exigence gouvernante interdisait ; défaut démontré directement, resserrement global du filtre toujours rejeté pour non-régression, et éligibilité de résultat rendue sensible à la racine — `result.json` seul sous `missions/`, héritage inchangé ailleurs. Nommer honnêtement une largeur ne la rend pas conforme.
+- [`42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md`](42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md) — deux couches tenues distinctes : la qualification indépendante de l'implémentation publiée, PASS WITH LIMITATIONS, avec zéro défaut matériel, suite publiée 74 / 74, racine d'énumération d'origine préservée à travers la récursion, confirmation dans le vrai DOM, et pour seule limitation la non-exécution du comportement de symlink sur hôte POSIX ; puis la clôture humaine de U-01 comme remédié. La topologie du panneau C y est énoncée, et le succès d'une remédiation ne requalifie pas rétroactivement un usage historique.
 
 ## Outillage
 
@@ -378,22 +379,25 @@ U-01 HUMAN PRODUCT RESPONSE
 = security-boundary changes : 0
 = new candidate-type semantics : 0
 = generic repository discovery : NO
-= authority 32 : NOT REOPENED
-= implementation readiness : PASS AFTER AUTHORITY-41 CORRECTION
-= implementation : PRESENT / PUBLISHED
+= implementation : PUBLISHED
 = mission candidates : 4 -> 5, genuine missions/ mission.json discoverable
 = result candidates : 3 -> 4, genuine missions/ result.json discoverable
-= implementation verification : published test suite PASS
-  node --test tooling/console/tests/console.test.mjs
-= independent implementation qualification : PENDING
+= independent implementation qualification : PASS WITH LIMITATIONS
+  42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md
+= material implementation defects : 0
+= published test suite : 74 / 74 PASS
+= qualification limitation : POSIX-host symlink behavior NOT EXERCISED
+= real-DOM normal selection : PASS
+= panel topology : panel B owns the mission selector, panel C
+  owns the result selector, and panel C inherits the panel-B mission snapshot
+= U-01 : CLOSED / REMEDIATED
+= second full genuine-use rerun for U-01 : NOT REQUIRED
+= historical real-use utility : MIXED UTILITY / UNCHANGED
+= authority 32 : NOT REOPENED
 = new representation : NO
 = TE004 : NO
-= EOL response : SEPARATE / NOT SELECTED
-= real-use utility : REMAINS MIXED UTILITY from the completed genuine-use
-  evaluation
-= U-01 fixed : NOT YET HUMANLY / INDEPENDENTLY QUALIFIED
-= next : independently qualify the published implementation against
-  authority 40 valid parts + authority 41
+= EOL risk : SEPARATE / UNRESOLVED / NOT CURRENTLY SELECTED
+= next : human selection of the next genuine Lab direction
 
 CURRENT LAB STREAM
 = NONE
