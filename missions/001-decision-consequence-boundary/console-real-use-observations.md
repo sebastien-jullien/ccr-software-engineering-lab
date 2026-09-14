@@ -54,10 +54,10 @@ PANEL_B
 = OBSERVÉ
 
 PANEL_C
-= NON ENCORE OBSERVÉ
+= OBSERVÉ
 
 MISSION EXÉCUTÉE
-= NON
+= OUI
 
 OBSERVATIONS FABRIQUÉES
 = 0
@@ -246,49 +246,83 @@ manquait-elle matériellement à la tâche authentique ?
 
 ```text
 PRODUCTEUR
-= NON ENCORE OBSERVÉ
+= ORCHESTRATEUR — CCR LAB FIX #1
 
 ÉTAPE D'OBSERVATION
 = PANEL_C
 
 OBSERVATION
-= NON ENCORE OBSERVÉ
+= sélection du résultat : ÉCHEC PAR L'INTERFACE, pour la même cause qu'au
+  panneau B ; la liste de candidats du panneau C ne propose que les résultats
+  sous tooling/result-instance/live-dogfood/ et
+  tooling/result-instance/representability/ ; le result.json committé de
+  cette mission n'y figure pas
+= une fois le résultat capturé par le serveur de la console (voir
+  WORKAROUND) :
+  association mission / résultat compréhensible : liaison de version de mission
+  confirmée (blob e80bc3d2…), association de source MATCH, association de
+  contrat de retour MATCH, agrégat MATCH, aucune divergence de chemin
+  validation structurelle PASS ; validation de contrat PASS, 0 erreur
+  80 valeurs rapportées, faciles à localiser par identifiant de champ ;
+  aucune non-production structurelle
+  références de preuve utiles : 25 ; 19 MATCH ; 6 MISMATCH, toutes sur
+  PROGRAM-STATE.json, épinglé à la coupe du corpus (78d87e89…) alors que la
+  copie courante porte 46b7fa42… ; l'écart est l'évolution attendue du point
+  de reprise après la coupe, pas une identité fausse
+= repli sur le dépôt brut : NON pour lire le résultat
+= reconstruction depuis la conversation : NON
+= information matériellement manquante à la tâche : le résultat dans la liste
+  de candidats
 
 CONSEQUENCE
-= NON ENCORE OBSERVÉ
+= le panneau C a présenté association, validations, valeurs et preuves du
+  résultat committé, mais seulement après un repli hors interface pour le
+  sélectionner
 
 BLOCKING
-= NON ENCORE OBSERVÉ
+= NO
 
 WORKAROUND REQUIRED
-= NON ENCORE OBSERVÉ
+= YES
 
 WORKAROUND
-= NON ENCORE OBSERVÉ
+= requête de même origine, depuis la page de la console, vers la route
+  /api/result du serveur de la console, avec le chemin du résultat committé,
+  le chemin et le blob du Mission Object gelé
 
 WORKAROUND COST
-= NON ENCORE OBSERVÉ
+= une requête manuelle ; aucun outil hors console
 
 DÉFAILLANCE NAVIGATEUR / PLATEFORME
-= NON ENCORE OBSERVÉ
+= NONE
 
 RECONSTRUCTION DEPUIS LA CONVERSATION
-= NON ENCORE OBSERVÉ
+= NO
 
 INSPECTION BRUTE DU DÉPÔT
-= NON ENCORE OBSERVÉ
+= NO
 
 INFORMATION MATÉRIELLEMENT MANQUANTE
-= NON ENCORE OBSERVÉ
+= le result.json de la mission courante dans la liste de candidats du
+  panneau C
 
 CONFUSION INTRODUITE PAR L'INTERFACE
-= NON ENCORE OBSERVÉ
+= une preuve épinglée à une version antérieure d'un fichier qui a évolué
+  depuis est rendue MISMATCH, sans distinguer « fichier changé depuis
+  l'épinglage » de « identité fausse » ; la bannière rappelle qu'une identité
+  de preuve n'est pas un fait
 
 PREUVE
-= NON ENCORE OBSERVÉ
+= résultat capturé par le serveur de la console à HEAD 9ba99ae9 :
+  missions/001-decision-consequence-boundary/result.json, 32013 octets,
+  SHA-256 9f2c4a3c7aa4767acb3b875c243009320cc10fcff26b53411f039322df6fa57e,
+  blob 69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07 ; octets identiques au
+  retour de l'exécutant
+= attribution : reported_by.executor lu dans les octets du résultat ; ce
+  fichier d'observation n'écrit rien pour l'exécutant
 
 NON-CONCLUSIONS
-= NON ENCORE OBSERVÉ
+= aucune qualification de l'étude primaire ; aucune qualification d'utilité
 ```
 
 ---
