@@ -1,0 +1,7583 @@
+{
+  "identity": {
+    "id": "handoff-routing-boundary-bounded-rd-study-003",
+    "class": "HANDOFF_ROUTING_BOUNDED_RD_STUDY",
+    "addressee": "AGENT_CCR_LAB_27",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "study.program_direction",
+      "value": {
+        "type": "SYMBOL",
+        "value": "HANDOFF_ROUTING"
+      },
+      "semantics_unresolved": false,
+      "label": "direction selectionnee par l humain sur recommandation analytique independamment qualifiee ; elle n etablit ni moteur de routage, ni service, ni representation, ni orchestrateur autonome"
+    },
+    {
+      "subject": "study.material_core",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "EP-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EP-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EP-04"
+          }
+        ]
+      },
+      "semantics_unresolved": false,
+      "label": "trois epissodes a consequence materielle HANDOFF_ROUTING qualifies ; aucun autre episode n est ajoute au noyau materiel"
+    },
+    {
+      "subject": "study.recurrence_context",
+      "value": {
+        "type": "SCALAR",
+        "value": 20
+      },
+      "semantics_unresolved": false,
+      "label": "20 unites A encore manuelles, contexte de recurrence admissible ; 20 unites n est ni 20 defauts materiels ni 20 problemes produit"
+    },
+    {
+      "subject": "study.current_surface_sufficiency",
+      "value": {
+        "type": "SYMBOL",
+        "value": "SUFFICIENT_WITH_ORDINARY_ORCHESTRATION"
+      },
+      "semantics_unresolved": false,
+      "label": "hypothese de depart etablie par l autorite 46 : les surfaces existantes peuvent deja contenir toute la semantique requise ; l applicabilite se prouve cas par cas"
+    },
+    {
+      "subject": "study.human_authority_invariant",
+      "value": {
+        "type": "SYMBOL",
+        "value": "HUMAN_DECISION_IS_NOT_A_DETERMINISTIC_CONSEQUENCE"
+      },
+      "semantics_unresolved": false,
+      "label": "une responsabilite HUMAN_SUBSTANTIVE_DECISION n est jamais comptee comme supprimable au motif qu elle est repetitive ; action manuelle repetee n est pas decision humaine substantielle, et deterministe n est pas deja automatise"
+    },
+    {
+      "subject": "study.payload_is_not_friction",
+      "value": {
+        "type": "SYMBOL",
+        "value": "FORBIDDEN_PROXY"
+      },
+      "semantics_unresolved": false,
+      "label": "une charge utile volumineuse n est pas une friction de routage, et une selection de contexte n est pas une decision de handoff"
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth46",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "42a3a99d7aa53755971f5736904da2546d90b0e7"
+      }
+    },
+    {
+      "id": "ref-auth47",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-auth43",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "feda3a558c086ea1cc9c28c8f574aca1ff110c04"
+      }
+    },
+    {
+      "id": "ref-auth45",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "ce744f972223ba273abae5226d4b63eb6778360d"
+      }
+    },
+    {
+      "id": "ref-auth44",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "950a42805afcd4011e3a042152057f07ff1d82dc"
+      }
+    },
+    {
+      "id": "ref-auth09",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+      }
+    },
+    {
+      "id": "ref-auth14",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      }
+    },
+    {
+      "id": "ref-auth23",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    },
+    {
+      "id": "ref-program-state-live",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "PROGRAM-STATE.json"
+      },
+      "identity_required": false,
+      "label": "etat de programme courant, resolu a l execution ; deliberement NON epingle pour qu aucune identite perimee ne gouverne l analyse"
+    },
+    {
+      "id": "ref-program-state-at-freeze-parent",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "PROGRAM-STATE.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0e42d8a9fe1451101fb2a16ffc2784d6d6d08df8"
+      },
+      "label": "PIN HISTORIQUE EXPLICITE : etat durable au commit parent du gel cdd2fa3442e88d1a849932b8fbbf630a8ac7c324 ; l identite posterieure au commit de gel ne peut etre connue dans les octets que ce commit produit, le gel avancant lui-meme next_action"
+    },
+    {
+      "id": "ref-result002",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/002-remaining-manual-orchestration-work/result.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+      }
+    },
+    {
+      "id": "ref-mission002",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/002-remaining-manual-orchestration-work/mission.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "98817247d6bf140406f720385a95acd2b498432a"
+      }
+    },
+    {
+      "id": "ref-auth34",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
+      }
+    },
+    {
+      "id": "ref-auth35",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+      }
+    },
+    {
+      "id": "ref-auth36",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
+      }
+    },
+    {
+      "id": "ref-auth37",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0fff611a59dabef0ad1b067344287d48b740f74a"
+      }
+    },
+    {
+      "id": "ref-mission001",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/mission.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "e80bc3d250920cee66b4d26bef497b6094395144"
+      }
+    },
+    {
+      "id": "ref-observations001",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/console-real-use-observations.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "af7c57778ba8b34ea814555d91448ef9ae24f1a2"
+      }
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/003-handoff-routing-boundary/result.json"
+      },
+      "identity_required": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-read-qualified",
+      "mode": "REQUIRED",
+      "action": "READ_QUALIFIED_RESULT",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-result002"
+      }
+    },
+    {
+      "id": "e-read-underlying",
+      "mode": "REQUIRED",
+      "action": "READ_UNDERLYING_DURABLE_EVIDENCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-build-chains",
+      "mode": "REQUIRED",
+      "action": "BUILD_CAUSAL_CHAINS",
+      "cardinality": 1
+    },
+    {
+      "id": "e-separate-families",
+      "mode": "REQUIRED",
+      "action": "SEPARATE_ROUTING_FROM_CONTEXT_PACKAGE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-classify",
+      "mode": "REQUIRED",
+      "action": "CLASSIFY_RESPONSIBILITIES",
+      "cardinality": 1
+    },
+    {
+      "id": "e-existing-surface-test",
+      "mode": "REQUIRED",
+      "action": "TEST_EXISTING_SURFACES_FIRST",
+      "cardinality": 1
+    },
+    {
+      "id": "e-ordinary-join-test",
+      "mode": "REQUIRED",
+      "action": "TEST_ORDINARY_ORCHESTRATION",
+      "cardinality": 1
+    },
+    {
+      "id": "e-gap-gate",
+      "mode": "REQUIRED",
+      "action": "APPLY_CONCRETE_GAP_GATE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-counterfactual",
+      "mode": "REQUIRED",
+      "action": "RUN_COUNTERFACTUAL_REMOVAL_TEST",
+      "cardinality": 1
+    },
+    {
+      "id": "e-residual",
+      "mode": "REQUIRED",
+      "action": "DETERMINE_RESIDUAL_HUMAN_AUTHORITY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-outcome",
+      "mode": "REQUIRED",
+      "action": "DERIVE_FINAL_ANALYTICAL_OUTCOME",
+      "cardinality": 1
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-return"
+      }
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "FREEZE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-forbid-conversation",
+      "mode": "FORBIDDEN",
+      "action": "RECONSTRUCT_FROM_CONVERSATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-session-prose",
+      "mode": "FORBIDDEN",
+      "action": "USE_SESSION_PROSE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-ccr-system",
+      "mode": "FORBIDDEN",
+      "action": "READ_CCR_SYSTEM_REPOSITORY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-protected",
+      "mode": "FORBIDDEN",
+      "action": "READ_PROTECTED_SOURCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-external",
+      "mode": "FORBIDDEN",
+      "action": "READ_EXTERNAL_WEB",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-extra-case",
+      "mode": "FORBIDDEN",
+      "action": "ADD_MATERIAL_CORE_CASE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-invent-unit",
+      "mode": "FORBIDDEN",
+      "action": "INVENT_WORK_UNIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-extend-inventory",
+      "mode": "FORBIDDEN",
+      "action": "EXTEND_RESPONSIBILITY_INVENTORY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-manual-as-gap",
+      "mode": "FORBIDDEN",
+      "action": "INFER_GAP_FROM_MANUAL_WORK",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-repetition-as-human",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_REPETITION_AS_HUMAN_DECISION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-deterministic-as-automated",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_DETERMINISTIC_AS_AUTOMATED",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-remove-human-authority",
+      "mode": "FORBIDDEN",
+      "action": "COUNT_HUMAN_AUTHORITY_AS_REMOVABLE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-payload-as-friction",
+      "mode": "FORBIDDEN",
+      "action": "USE_PAYLOAD_SIZE_AS_PROXY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-score",
+      "mode": "FORBIDDEN",
+      "action": "INVENT_SYNTHETIC_SCORE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-routing-engine",
+      "mode": "FORBIDDEN",
+      "action": "SELECT_ROUTING_ENGINE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-api",
+      "mode": "FORBIDDEN",
+      "action": "SELECT_NEW_API",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-representation",
+      "mode": "FORBIDDEN",
+      "action": "DESIGN_REPRESENTATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-experiment",
+      "mode": "FORBIDDEN",
+      "action": "CREATE_TOOLING_EXPERIMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-design",
+      "mode": "FORBIDDEN",
+      "action": "DESIGN_TECHNICAL_RESPONSE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-implement",
+      "mode": "FORBIDDEN",
+      "action": "IMPLEMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-commit",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-push",
+      "mode": "FORBIDDEN",
+      "action": "PUSH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-other-mutation",
+      "mode": "FORBIDDEN",
+      "action": "MUTATE_REPOSITORY",
+      "cardinality": 0
+    }
+  ],
+  "content_requirements": [
+    {
+      "id": "cr-material-cases",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.material_core_cases_evaluated",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 3
+      }
+    },
+    {
+      "id": "cr-recurrence-units",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.recurrence_context_units_evaluated",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 20
+      }
+    },
+    {
+      "id": "cr-no-conversation",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.conversation_factual_reconstruction_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-session-prose",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.session_prose_fallback_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-ccr-system",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.ccr_system_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-protected",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.protected_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-external-web",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.external_web_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-mutation-boundary",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.repository_mutations_other_than_result",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-commits",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_commit_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-pushes",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_push_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-forbid-routing-engine",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.routing_engine_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-api",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_api_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-representation",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.representation_design",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESENT"
+      }
+    },
+    {
+      "id": "cr-forbid-experiment",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_tooling_experiment",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "SELECTED"
+      }
+    },
+    {
+      "id": "cr-forbid-technical-design",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.technical_response_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-implementation",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.implementation",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PERFORMED"
+      }
+    },
+    {
+      "id": "cr-forbid-gap-from-manual",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.gap_inferred_from_manual_work_alone",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-human-authority-removed",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.human_substantive_decision_counted_removable",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-payload-proxy",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.payload_size_used_as_proxy",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-score",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.synthetic_score",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESENT"
+      }
+    },
+    {
+      "id": "cr-forbid-extra-case",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.material_core_extended",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-extended-inventory",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.responsibility_inventory_extended",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-read-qualified",
+        "effect": "e-read-qualified",
+        "atomic": true,
+        "gated_by": "g-preflight"
+      },
+      {
+        "order": 2,
+        "id": "s-read-underlying",
+        "effect": "e-read-underlying",
+        "atomic": true,
+        "produces": [
+          "ev-underlying"
+        ]
+      },
+      {
+        "order": 3,
+        "id": "s-chains",
+        "effect": "e-build-chains",
+        "atomic": true,
+        "produces": [
+          "ev-chains"
+        ]
+      },
+      {
+        "order": 4,
+        "id": "s-separate",
+        "effect": "e-separate-families",
+        "atomic": true,
+        "gated_by": "g-scope-preserved"
+      },
+      {
+        "order": 5,
+        "id": "s-classify",
+        "effect": "e-classify",
+        "atomic": true,
+        "produces": [
+          "ev-classification"
+        ]
+      },
+      {
+        "order": 6,
+        "id": "s-surfaces",
+        "effect": "e-existing-surface-test",
+        "atomic": true,
+        "produces": [
+          "ev-surfaces"
+        ]
+      },
+      {
+        "order": 7,
+        "id": "s-join",
+        "effect": "e-ordinary-join-test",
+        "atomic": true
+      },
+      {
+        "order": 8,
+        "id": "s-gap",
+        "effect": "e-gap-gate",
+        "atomic": true,
+        "gated_by": "g-existing-surface-first"
+      },
+      {
+        "order": 9,
+        "id": "s-counterfactual",
+        "effect": "e-counterfactual",
+        "atomic": true
+      },
+      {
+        "order": 10,
+        "id": "s-residual",
+        "effect": "e-residual",
+        "atomic": true
+      },
+      {
+        "order": 11,
+        "id": "s-outcome",
+        "effect": "e-outcome",
+        "atomic": true,
+        "gated_by": "g-no-forbidden-source"
+      },
+      {
+        "order": 12,
+        "id": "s-produce",
+        "effect": "e-produce-result",
+        "atomic": true
+      },
+      {
+        "order": 13,
+        "id": "s-validate",
+        "effect": "e-validate-result",
+        "atomic": true,
+        "produces": [
+          "ev-result-validation"
+        ]
+      },
+      {
+        "order": 14,
+        "id": "s-freeze",
+        "effect": "e-freeze-result",
+        "atomic": true
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-preflight",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth46"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "42a3a99d7aa53755971f5736904da2546d90b0e7"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-result002"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "reserved_result_path_existing"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-scope-preserved",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-scope",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-build-chains",
+              "field": "material_core_case_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 3
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-build-chains",
+              "field": "recurrence_unit_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 20
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-build-chains",
+              "field": "responsibility_type_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-existing-surface-first",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-surface-first",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-existing-surface-test",
+              "field": "surfaces_tested_before_gap_claim"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-ordinary-join-test",
+              "field": "ordinary_join_tested_before_new_semantics"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-no-forbidden-source",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-forbidden-source",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "conversation_factual_reconstruction"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "session_prose_fallback"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "ccr_system_source_usage"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "protected_source_usage"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-ordinary-sufficient",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "ORDINARY_ORCHESTRATION_SUFFICIENT"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b1-forbid-impl",
+          "mode": "FORBIDDEN",
+          "action": "IMPLEMENT",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-ordinary-sufficient-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-ordinary-sufficient-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-ordinary-sufficient-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-ordinary-sufficient",
+          "scope": "br-ordinary-sufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "ORDINARY_ORCHESTRATION_SUFFICIENT"
+          }
+        }
+      ],
+      "terminal_outcome": "ORDINARY_ORCHESTRATION_SUFFICIENT",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-bounded-opportunity",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "BOUNDED_INTEGRATION_OPPORTUNITY"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b2-forbid-engine",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_ROUTING_ENGINE",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-bounded-opportunity-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-bounded-opportunity-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-bounded-opportunity-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-bounded-opportunity",
+          "scope": "br-bounded-opportunity",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "BOUNDED_INTEGRATION_OPPORTUNITY"
+          }
+        }
+      ],
+      "terminal_outcome": "BOUNDED_INTEGRATION_OPPORTUNITY",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-human-dominates",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "HUMAN_DECISION_DOMINATES"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b3-forbid-invalidate",
+          "mode": "FORBIDDEN",
+          "action": "INVALIDATE_PROGRAM_DIRECTION",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-human-dominates-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-human-dominates-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-human-dominates-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-human-dominates",
+          "scope": "br-human-dominates",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "HUMAN_DECISION_DOMINATES"
+          }
+        }
+      ],
+      "terminal_outcome": "HUMAN_DECISION_DOMINATES",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-insufficient-evidence",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "INSUFFICIENT_DURABLE_EVIDENCE"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b4-forbid-invent",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_FACT",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-insufficient-evidence-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-evidence-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-evidence-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-insufficient-evidence",
+          "scope": "br-insufficient-evidence",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "INSUFFICIENT_DURABLE_EVIDENCE"
+          }
+        }
+      ],
+      "terminal_outcome": "INSUFFICIENT_DURABLE_EVIDENCE",
+      "next": "nc-return"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "preflight_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pf-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-pf-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-pf-restore",
+          "mode": "FORBIDDEN",
+          "action": "RESTORE"
+        },
+        {
+          "id": "sp-pf-fetch",
+          "mode": "FORBIDDEN",
+          "action": "FETCH"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-scope",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-build-chains",
+          "field": "material_core_case_count"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 3
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-sc-add",
+          "mode": "FORBIDDEN",
+          "action": "ADD_MATERIAL_CORE_CASE"
+        },
+        {
+          "id": "sp-sc-extend",
+          "mode": "FORBIDDEN",
+          "action": "EXTEND_RESPONSIBILITY_INVENTORY"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-surface-first",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-existing-surface-test",
+          "field": "surfaces_tested_before_gap_claim"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-sf-gap",
+          "mode": "FORBIDDEN",
+          "action": "INFER_GAP_FROM_MANUAL_WORK"
+        },
+        {
+          "id": "sp-sf-primitive",
+          "mode": "FORBIDDEN",
+          "action": "POSIT_NEW_SEMANTIC_PRIMITIVE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-forbidden-source",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "MEASUREMENT",
+          "modifier": "COUNT_OF",
+          "ref": "forbidden_source_usage"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-src-conversation",
+          "mode": "FORBIDDEN",
+          "action": "RECONSTRUCT_FROM_CONVERSATION"
+        },
+        {
+          "id": "sp-src-prose",
+          "mode": "FORBIDDEN",
+          "action": "USE_SESSION_PROSE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-mutation",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "MEASUREMENT",
+          "modifier": "COUNT_OF",
+          "ref": "repository_mutations_other_than_result"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-mut-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT"
+        },
+        {
+          "id": "sp-mut-push",
+          "mode": "FORBIDDEN",
+          "action": "PUSH"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-handoff-routing-selected",
+        "subject": "handoff_routing_next_lab_direction_selected",
+        "authority": "ref-auth46"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-return"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-underlying",
+      "kind": "OBSERVATION",
+      "fact": "study.underlying_durable_evidence",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth35",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-chains",
+      "kind": "OBSERVATION",
+      "fact": "study.causal_chains",
+      "method": {
+        "op": "EQ",
+        "source": "ref-result002",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-classification",
+      "kind": "VERIFICATION",
+      "fact": "study.responsibility_classification",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth47",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-surfaces",
+      "kind": "VERIFICATION",
+      "fact": "study.existing_surface_capability",
+      "method": {
+        "op": "EQ",
+        "source": "ref-program-state-live",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "result_instance.structural_validation",
+      "method": {
+        "op": "EQ",
+        "source": "ref-return",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "ORDINARY_ORCHESTRATION_SUFFICIENT",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "ORDINARY_ORCHESTRATION_SUFFICIENT"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-ordinary_orchestration_sufficient-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BOUNDED_INTEGRATION_OPPORTUNITY",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "BOUNDED_INTEGRATION_OPPORTUNITY"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-bounded_integration_opportunity-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "HUMAN_DECISION_DOMINATES",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "HUMAN_DECISION_DOMINATES"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-human_decision_dominates-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "INSUFFICIENT_DURABLE_EVIDENCE",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "INSUFFICIENT_DURABLE_EVIDENCE"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-insufficient_durable_evidence-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BLOCKED_NON_CONFORMANT_EXECUTION",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-blocked-no-outcome",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome_forced",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    },
+    {
+      "label": "STOPPED_ON_PREFLIGHT",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "preflight_match"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-stopped-no-result",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-direction-authority",
+      "fact": "study.governing_direction_authority_identity",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-qualified-result",
+      "fact": "study.qualified_result_identity",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-material-cases-evaluated",
+      "fact": "study.material_core_cases_evaluated",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-recurrence-units-evaluated",
+      "fact": "study.recurrence_context_units_evaluated",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-conv-reconstruction",
+      "fact": "discipline.conversation_factual_reconstruction_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-session-prose",
+      "fact": "discipline.session_prose_fallback_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ccr-system-source",
+      "fact": "discipline.ccr_system_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-protected-source",
+      "fact": "discipline.protected_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-external-web",
+      "fact": "discipline.external_web_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ep02-trigger",
+      "fact": "ep_02.trigger",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ep02-responsibility",
+      "fact": "ep_02.required_handoff_routing_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-required-inputs",
+      "fact": "ep_02.inputs_needed_to_resolve_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep02-durable-sources",
+      "fact": "ep_02.existing_durable_sources_of_input",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep02-carrying-surfaces",
+      "fact": "ep_02.current_surfaces_able_to_expose_or_carry_input",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep02-classification",
+      "fact": "ep_02.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-join-requirement",
+      "fact": "ep_02.ordinary_join_or_propagation_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-join-description",
+      "fact": "ep_02.ordinary_join_or_propagation_description",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep02-material-consequence",
+      "fact": "ep_02.demonstrated_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-counterfactual",
+      "fact": "ep_02.counterfactual_consequence_removal",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PARTIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-counterfactual-basis",
+      "fact": "ep_02.counterfactual_causal_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep02-residual-authority",
+      "fact": "ep_02.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-evidence",
+      "fact": "ep_02.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep03-trigger",
+      "fact": "ep_03.trigger",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ep03-responsibility",
+      "fact": "ep_03.required_handoff_routing_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-required-inputs",
+      "fact": "ep_03.inputs_needed_to_resolve_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep03-durable-sources",
+      "fact": "ep_03.existing_durable_sources_of_input",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep03-carrying-surfaces",
+      "fact": "ep_03.current_surfaces_able_to_expose_or_carry_input",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep03-classification",
+      "fact": "ep_03.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-join-requirement",
+      "fact": "ep_03.ordinary_join_or_propagation_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-join-description",
+      "fact": "ep_03.ordinary_join_or_propagation_description",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep03-material-consequence",
+      "fact": "ep_03.demonstrated_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-counterfactual",
+      "fact": "ep_03.counterfactual_consequence_removal",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PARTIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-counterfactual-basis",
+      "fact": "ep_03.counterfactual_causal_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep03-residual-authority",
+      "fact": "ep_03.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-evidence",
+      "fact": "ep_03.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep04-trigger",
+      "fact": "ep_04.trigger",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ep04-responsibility",
+      "fact": "ep_04.required_handoff_routing_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-required-inputs",
+      "fact": "ep_04.inputs_needed_to_resolve_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep04-durable-sources",
+      "fact": "ep_04.existing_durable_sources_of_input",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep04-carrying-surfaces",
+      "fact": "ep_04.current_surfaces_able_to_expose_or_carry_input",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep04-classification",
+      "fact": "ep_04.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-join-requirement",
+      "fact": "ep_04.ordinary_join_or_propagation_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-join-description",
+      "fact": "ep_04.ordinary_join_or_propagation_description",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep04-material-consequence",
+      "fact": "ep_04.demonstrated_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-counterfactual",
+      "fact": "ep_04.counterfactual_consequence_removal",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PARTIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-counterfactual-basis",
+      "fact": "ep_04.counterfactual_causal_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ep04-residual-authority",
+      "fact": "ep_04.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-evidence",
+      "fact": "ep_04.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u01-responsibility",
+      "fact": "unit_u01.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u01-classification",
+      "fact": "unit_u01.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u01-required-inputs",
+      "fact": "unit_u01.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u01-durable-sources",
+      "fact": "unit_u01.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u01-join-requirement",
+      "fact": "unit_u01.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u01-residual-authority",
+      "fact": "unit_u01.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u01-evidence",
+      "fact": "unit_u01.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u02-responsibility",
+      "fact": "unit_u02.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u02-classification",
+      "fact": "unit_u02.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u02-required-inputs",
+      "fact": "unit_u02.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u02-durable-sources",
+      "fact": "unit_u02.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u02-join-requirement",
+      "fact": "unit_u02.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u02-residual-authority",
+      "fact": "unit_u02.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u02-evidence",
+      "fact": "unit_u02.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u03-responsibility",
+      "fact": "unit_u03.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u03-classification",
+      "fact": "unit_u03.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u03-required-inputs",
+      "fact": "unit_u03.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u03-durable-sources",
+      "fact": "unit_u03.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u03-join-requirement",
+      "fact": "unit_u03.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u03-residual-authority",
+      "fact": "unit_u03.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u03-evidence",
+      "fact": "unit_u03.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u04-responsibility",
+      "fact": "unit_u04.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u04-classification",
+      "fact": "unit_u04.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u04-required-inputs",
+      "fact": "unit_u04.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u04-durable-sources",
+      "fact": "unit_u04.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u04-join-requirement",
+      "fact": "unit_u04.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u04-residual-authority",
+      "fact": "unit_u04.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u04-evidence",
+      "fact": "unit_u04.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u05-responsibility",
+      "fact": "unit_u05.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u05-classification",
+      "fact": "unit_u05.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u05-required-inputs",
+      "fact": "unit_u05.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u05-durable-sources",
+      "fact": "unit_u05.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u05-join-requirement",
+      "fact": "unit_u05.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u05-residual-authority",
+      "fact": "unit_u05.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u05-evidence",
+      "fact": "unit_u05.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u06-responsibility",
+      "fact": "unit_u06.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u06-classification",
+      "fact": "unit_u06.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u06-required-inputs",
+      "fact": "unit_u06.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u06-durable-sources",
+      "fact": "unit_u06.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u06-join-requirement",
+      "fact": "unit_u06.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u06-residual-authority",
+      "fact": "unit_u06.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u06-evidence",
+      "fact": "unit_u06.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u07-responsibility",
+      "fact": "unit_u07.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u07-classification",
+      "fact": "unit_u07.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u07-required-inputs",
+      "fact": "unit_u07.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u07-durable-sources",
+      "fact": "unit_u07.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u07-join-requirement",
+      "fact": "unit_u07.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u07-residual-authority",
+      "fact": "unit_u07.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u07-evidence",
+      "fact": "unit_u07.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u08-responsibility",
+      "fact": "unit_u08.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u08-classification",
+      "fact": "unit_u08.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u08-required-inputs",
+      "fact": "unit_u08.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u08-durable-sources",
+      "fact": "unit_u08.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u08-join-requirement",
+      "fact": "unit_u08.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u08-residual-authority",
+      "fact": "unit_u08.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u08-evidence",
+      "fact": "unit_u08.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u09-responsibility",
+      "fact": "unit_u09.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u09-classification",
+      "fact": "unit_u09.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u09-required-inputs",
+      "fact": "unit_u09.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u09-durable-sources",
+      "fact": "unit_u09.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u09-join-requirement",
+      "fact": "unit_u09.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u09-residual-authority",
+      "fact": "unit_u09.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u09-evidence",
+      "fact": "unit_u09.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u10-responsibility",
+      "fact": "unit_u10.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u10-classification",
+      "fact": "unit_u10.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u10-required-inputs",
+      "fact": "unit_u10.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u10-durable-sources",
+      "fact": "unit_u10.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u10-join-requirement",
+      "fact": "unit_u10.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u10-residual-authority",
+      "fact": "unit_u10.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u10-evidence",
+      "fact": "unit_u10.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u11-responsibility",
+      "fact": "unit_u11.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u11-classification",
+      "fact": "unit_u11.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u11-required-inputs",
+      "fact": "unit_u11.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u11-durable-sources",
+      "fact": "unit_u11.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u11-join-requirement",
+      "fact": "unit_u11.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u11-residual-authority",
+      "fact": "unit_u11.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u11-evidence",
+      "fact": "unit_u11.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u12-responsibility",
+      "fact": "unit_u12.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u12-classification",
+      "fact": "unit_u12.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u12-required-inputs",
+      "fact": "unit_u12.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u12-durable-sources",
+      "fact": "unit_u12.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u12-join-requirement",
+      "fact": "unit_u12.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u12-residual-authority",
+      "fact": "unit_u12.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u12-evidence",
+      "fact": "unit_u12.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u13-responsibility",
+      "fact": "unit_u13.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u13-classification",
+      "fact": "unit_u13.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u13-required-inputs",
+      "fact": "unit_u13.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u13-durable-sources",
+      "fact": "unit_u13.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u13-join-requirement",
+      "fact": "unit_u13.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u13-residual-authority",
+      "fact": "unit_u13.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u13-evidence",
+      "fact": "unit_u13.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u14-responsibility",
+      "fact": "unit_u14.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u14-classification",
+      "fact": "unit_u14.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u14-required-inputs",
+      "fact": "unit_u14.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u14-durable-sources",
+      "fact": "unit_u14.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u14-join-requirement",
+      "fact": "unit_u14.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u14-residual-authority",
+      "fact": "unit_u14.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u14-evidence",
+      "fact": "unit_u14.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u15-responsibility",
+      "fact": "unit_u15.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u15-classification",
+      "fact": "unit_u15.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u15-required-inputs",
+      "fact": "unit_u15.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u15-durable-sources",
+      "fact": "unit_u15.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u15-join-requirement",
+      "fact": "unit_u15.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u15-residual-authority",
+      "fact": "unit_u15.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u15-evidence",
+      "fact": "unit_u15.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u16-responsibility",
+      "fact": "unit_u16.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u16-classification",
+      "fact": "unit_u16.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u16-required-inputs",
+      "fact": "unit_u16.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u16-durable-sources",
+      "fact": "unit_u16.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u16-join-requirement",
+      "fact": "unit_u16.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u16-residual-authority",
+      "fact": "unit_u16.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u16-evidence",
+      "fact": "unit_u16.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u17-responsibility",
+      "fact": "unit_u17.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u17-classification",
+      "fact": "unit_u17.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u17-required-inputs",
+      "fact": "unit_u17.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u17-durable-sources",
+      "fact": "unit_u17.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u17-join-requirement",
+      "fact": "unit_u17.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u17-residual-authority",
+      "fact": "unit_u17.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u17-evidence",
+      "fact": "unit_u17.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u18-responsibility",
+      "fact": "unit_u18.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u18-classification",
+      "fact": "unit_u18.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u18-required-inputs",
+      "fact": "unit_u18.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u18-durable-sources",
+      "fact": "unit_u18.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u18-join-requirement",
+      "fact": "unit_u18.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u18-residual-authority",
+      "fact": "unit_u18.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u18-evidence",
+      "fact": "unit_u18.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u19-responsibility",
+      "fact": "unit_u19.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u19-classification",
+      "fact": "unit_u19.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u19-required-inputs",
+      "fact": "unit_u19.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u19-durable-sources",
+      "fact": "unit_u19.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u19-join-requirement",
+      "fact": "unit_u19.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u19-residual-authority",
+      "fact": "unit_u19.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u19-evidence",
+      "fact": "unit_u19.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u20-responsibility",
+      "fact": "unit_u20.responsibility_types",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NEXT_CONTROL_STAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTOR_OR_SESSION_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTION_BASELINE_ASSIGNMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTION_AUTHORITY_PROPAGATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_OWNERSHIP"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RETURN_DESTINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STOP_BOUNDARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STAGE_ORDERING_DEPENDENCY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u20-classification",
+      "fact": "unit_u20.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u20-required-inputs",
+      "fact": "unit_u20.required_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u20-durable-sources",
+      "fact": "unit_u20.existing_durable_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-u20-join-requirement",
+      "fact": "unit_u20.ordinary_join_requirement",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u20-residual-authority",
+      "fact": "unit_u20.residual_human_authority",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_SELECTION_REMAINS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VERIFICATION_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-u20-evidence",
+      "fact": "unit_u20.durable_evidence_identities",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r1-distinct-episodes",
+      "fact": "resp_r1.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r1-material-core-episodes",
+      "fact": "resp_r1.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r1-still-manual-units",
+      "fact": "resp_r1.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r1-classification-distribution",
+      "fact": "resp_r1.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-common-inputs",
+      "fact": "resp_r1.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r1-common-output-shape",
+      "fact": "resp_r1.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r1-classification",
+      "fact": "resp_r1.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-g1",
+      "fact": "resp_r1.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-g2",
+      "fact": "resp_r1.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-g3",
+      "fact": "resp_r1.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-g4",
+      "fact": "resp_r1.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-g5",
+      "fact": "resp_r1.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-g6",
+      "fact": "resp_r1.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r1-concrete-gap",
+      "fact": "resp_r1.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-distinct-episodes",
+      "fact": "resp_r2.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r2-material-core-episodes",
+      "fact": "resp_r2.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r2-still-manual-units",
+      "fact": "resp_r2.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r2-classification-distribution",
+      "fact": "resp_r2.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-common-inputs",
+      "fact": "resp_r2.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r2-common-output-shape",
+      "fact": "resp_r2.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r2-classification",
+      "fact": "resp_r2.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-g1",
+      "fact": "resp_r2.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-g2",
+      "fact": "resp_r2.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-g3",
+      "fact": "resp_r2.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-g4",
+      "fact": "resp_r2.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-g5",
+      "fact": "resp_r2.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-g6",
+      "fact": "resp_r2.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r2-concrete-gap",
+      "fact": "resp_r2.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-distinct-episodes",
+      "fact": "resp_r3.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r3-material-core-episodes",
+      "fact": "resp_r3.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r3-still-manual-units",
+      "fact": "resp_r3.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r3-classification-distribution",
+      "fact": "resp_r3.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-common-inputs",
+      "fact": "resp_r3.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r3-common-output-shape",
+      "fact": "resp_r3.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r3-classification",
+      "fact": "resp_r3.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-g1",
+      "fact": "resp_r3.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-g2",
+      "fact": "resp_r3.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-g3",
+      "fact": "resp_r3.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-g4",
+      "fact": "resp_r3.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-g5",
+      "fact": "resp_r3.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-g6",
+      "fact": "resp_r3.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r3-concrete-gap",
+      "fact": "resp_r3.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-distinct-episodes",
+      "fact": "resp_r4.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r4-material-core-episodes",
+      "fact": "resp_r4.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r4-still-manual-units",
+      "fact": "resp_r4.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r4-classification-distribution",
+      "fact": "resp_r4.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-common-inputs",
+      "fact": "resp_r4.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r4-common-output-shape",
+      "fact": "resp_r4.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r4-classification",
+      "fact": "resp_r4.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-g1",
+      "fact": "resp_r4.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-g2",
+      "fact": "resp_r4.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-g3",
+      "fact": "resp_r4.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-g4",
+      "fact": "resp_r4.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-g5",
+      "fact": "resp_r4.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-g6",
+      "fact": "resp_r4.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r4-concrete-gap",
+      "fact": "resp_r4.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-distinct-episodes",
+      "fact": "resp_r5.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r5-material-core-episodes",
+      "fact": "resp_r5.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r5-still-manual-units",
+      "fact": "resp_r5.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r5-classification-distribution",
+      "fact": "resp_r5.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-common-inputs",
+      "fact": "resp_r5.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r5-common-output-shape",
+      "fact": "resp_r5.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r5-classification",
+      "fact": "resp_r5.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-g1",
+      "fact": "resp_r5.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-g2",
+      "fact": "resp_r5.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-g3",
+      "fact": "resp_r5.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-g4",
+      "fact": "resp_r5.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-g5",
+      "fact": "resp_r5.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-g6",
+      "fact": "resp_r5.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r5-concrete-gap",
+      "fact": "resp_r5.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-distinct-episodes",
+      "fact": "resp_r6.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r6-material-core-episodes",
+      "fact": "resp_r6.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r6-still-manual-units",
+      "fact": "resp_r6.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r6-classification-distribution",
+      "fact": "resp_r6.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-common-inputs",
+      "fact": "resp_r6.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r6-common-output-shape",
+      "fact": "resp_r6.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r6-classification",
+      "fact": "resp_r6.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-g1",
+      "fact": "resp_r6.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-g2",
+      "fact": "resp_r6.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-g3",
+      "fact": "resp_r6.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-g4",
+      "fact": "resp_r6.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-g5",
+      "fact": "resp_r6.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-g6",
+      "fact": "resp_r6.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r6-concrete-gap",
+      "fact": "resp_r6.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-distinct-episodes",
+      "fact": "resp_r7.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r7-material-core-episodes",
+      "fact": "resp_r7.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r7-still-manual-units",
+      "fact": "resp_r7.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r7-classification-distribution",
+      "fact": "resp_r7.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-common-inputs",
+      "fact": "resp_r7.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r7-common-output-shape",
+      "fact": "resp_r7.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r7-classification",
+      "fact": "resp_r7.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-g1",
+      "fact": "resp_r7.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-g2",
+      "fact": "resp_r7.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-g3",
+      "fact": "resp_r7.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-g4",
+      "fact": "resp_r7.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-g5",
+      "fact": "resp_r7.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-g6",
+      "fact": "resp_r7.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r7-concrete-gap",
+      "fact": "resp_r7.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-distinct-episodes",
+      "fact": "resp_r8.distinct_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r8-material-core-episodes",
+      "fact": "resp_r8.material_core_episodes_present",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r8-still-manual-units",
+      "fact": "resp_r8.qualified_still_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r8-classification-distribution",
+      "fact": "resp_r8.classification_distribution",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-common-inputs",
+      "fact": "resp_r8.common_durable_inputs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-r8-common-output-shape",
+      "fact": "resp_r8.common_output_shape",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-r8-classification",
+      "fact": "resp_r8.human_deterministic_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_SUBSTANTIVE_DECISION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_FROM_EXISTING_STATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_JOIN_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-g1",
+      "fact": "resp_r8.gap_gate_g1_materially_consequential_responsibility_remains_manual",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-g2",
+      "fact": "resp_r8.gap_gate_g2_stable_bounded_semantics_across_occurrences",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-g3",
+      "fact": "resp_r8.gap_gate_g3_required_inputs_identified",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-g4",
+      "fact": "resp_r8.gap_gate_g4_ordinary_orchestration_cannot_derive_output",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-g5",
+      "fact": "resp_r8.gap_gate_g5_insufficiency_demonstrated_not_inferred",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-g6",
+      "fact": "resp_r8.gap_gate_g6_missing_capability_statable_without_implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-r8-concrete-gap",
+      "fact": "resp_r8.concrete_handoff_routing_gap",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-outcome",
+      "fact": "study.final_analytical_outcome",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ORDINARY_ORCHESTRATION_SUFFICIENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BOUNDED_INTEGRATION_OPPORTUNITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_DECISION_DOMINATES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INSUFFICIENT_DURABLE_EVIDENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-outcome-basis",
+      "fact": "study.final_analytical_outcome_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-new-primitive",
+      "fact": "study.new_semantic_primitive",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "JUSTIFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_JUSTIFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-concrete-gap-count",
+      "fact": "study.concrete_gap_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-limitations",
+      "fact": "study.limitations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-blockers",
+      "fact": "study.blockers",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-study-success",
+      "fact": "study.procedural_success",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PROCEDURALLY_SUCCESSFUL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SUCCESSFUL"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "HUMAN_GATE",
+      "action": "RETURN_FROZEN_RESULT_INSTANCE",
+      "target": "handoff_routing_bounded_rd_study_qualification"
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-no-routing-engine",
+      "constraint": {
+        "id": "e-sc-sc-no-routing-engine",
+        "mode": "FORBIDDEN",
+        "action": "SELECT_ROUTING_ENGINE",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_technical_response_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-representation",
+      "constraint": {
+        "id": "e-sc-sc-no-representation",
+        "mode": "FORBIDDEN",
+        "action": "DESIGN_REPRESENTATION",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_design_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-experiment",
+      "constraint": {
+        "id": "e-sc-sc-no-experiment",
+        "mode": "FORBIDDEN",
+        "action": "CREATE_TOOLING_EXPERIMENT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_experiment_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-persistence-by-executor",
+      "constraint": {
+        "id": "e-sc-sc-no-persistence-by-executor",
+        "mode": "FORBIDDEN",
+        "action": "COMMIT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-eol-remediation",
+      "constraint": {
+        "id": "e-sc-sc-no-eol-remediation",
+        "mode": "FORBIDDEN",
+        "action": "MODIFY_GITATTRIBUTES",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_eol_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}

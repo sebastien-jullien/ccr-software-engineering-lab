@@ -169,6 +169,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md`](44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md) — gel de l'étude comparative bornée, exécutable et en lecture seule : fenêtre factuelle semi-ouverte de la qualification de console à la clôture de U-01, corpus admissible et pare-feu de sources, inventaire exhaustif de 27 candidats dont 15 épisodes admis et 12 rejetés ou fusionnés avec leur motif, unité atomique de travail manuel, frontière stricte d'attribution A / B et interdiction de double comptage, pare-feu de taille d'invite, inconnu n'est pas zéro, vocabulaires de preuve, de conséquence et de suffisance, porte de cas d'outillage en six critères, comparaison lexicographique sans score synthétique, quatre issues admises, Mission Object et enveloppe gelés pour un AGENT CCR LAB #25 frais, contrat de retour de 255 champs. L'étude est exécutable ; sa conclusion n'est pas écrite.
 - [`45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md`](45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md) — correction avant première dépêche : l'autorité 44 laissait des comptes historiques alimenter le départage sans vérifier que la responsabilité manuelle existe encore à la coupe, si bien qu'une friction close comme U-01 aurait pu peser sur la famille R&D choisie. Statut de surface courante obligatoire par unité, règle de preuve positive, éligibilité de besoin courant par épisode, synthèses historique et restante tenues séparées, comparaison de départage sur le travail encore manuel seulement. La vérification structurelle exigée avant toute édition a établi un second défaut, de mon fait : la grammaire Result Instance v0 n'admet pas de membre de SET structuré, ce que l'autorité 44 supposait. Encodage de registre corrigé et mesuré contre le validateur publié, sans étendre aucune grammaire. Nommer une structure ne la rend pas représentable.
 - [`46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md`](46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec registre de 31 unités reconstruit, DIM_1 reconstruit indépendamment à HANDOFF_ROUTING 3 contre CONTEXT_PACKAGE 2, absorption U-01 confirmée à contribution nulle, 0 erreur analytique matérielle, 5 erreurs non matérielles issues d'un unique défaut racine d'attribution des corrections de conception entre les familles, 0 ambiguïté de contrat, 2 défauts non matériels d'artefact gouvernant et 3 limitations réelles ; puis la sélection humaine de HANDOFF_ROUTING comme prochaine direction. Les deux familles restent SUFFICIENT_WITH_ORDINARY_ORCHESTRATION : une direction recommandée n'est pas un moteur de routage, et une recommandation qualifiée n'est pas une autorisation de construire.
+- [`47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md`](47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md) — gel de la question R&D bornée : les responsabilités de handoff / routage qui ont causé les conséquences matérielles d'EP-02, EP-03 et EP-04 peuvent-elles être dérivées et propagées déterministement depuis les surfaces durables existantes, par orchestration ordinaire, sans primitive sémantique nouvelle ? Noyau matériel de trois épisodes, contexte de récurrence des 20 unités A encore manuelles nommées une à une, inventaire fini de 8 types de responsabilité ancrés dans ces unités, pare-feu routage / paquet de contexte, modèle de chaîne causale en dix étapes, classification humain / déterministe en quatre termes, règle des surfaces existantes d'abord, porte d'écart G1..G6, test contrefactuel de suppression, autorité humaine résiduelle, quatre issues analytiques. Les défauts G1 et G2 relevés sur l'autorité 44 ne sont pas reproduits : couverture terminale complète et référence PROGRAM-STATE vivante. Un travail manuel n'est pas un écart, et une direction recommandée n'est pas une réponse technique.
 
 ## Outillage
 
@@ -425,7 +426,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FREEZE A BOUNDED HANDOFF/ROUTING R&D QUESTION
+= next : EXECUTE FROZEN STUDY WITH AGENT CCR LAB #27
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -529,12 +530,63 @@ BOUNDED COMPARATIVE STUDY
 = TE004 : NO
 = implementation : NOT AUTHORIZED
 = winner : HANDOFF_ROUTING (direction only, no technical response selected)
+
+HANDOFF / ROUTING BOUNDED R&D QUESTION
+= FROZEN / NOT YET EXECUTED
+  47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md
+= question : can the handoff/routing responsibilities that caused the material
+  consequences in EP-02 / EP-03 / EP-04 be deterministically derived and
+  propagated from existing durable surfaces, by ordinary orchestration, so the
+  demonstrated blocking / rework is removed, without a new semantic primitive,
+  a new representation, a routing engine, TE004 or an implementation decision
+= material core : EP-02 / EP-03 / EP-04
+= recurrence context : 20 still-manual A units, named exactly
+  EP01-A-1 EP02-A-1 EP02-A-2 EP02-A-3 EP03-A-1
+  EP03-A-2 EP03-A-3 EP04-A-1 EP04-A-2 EP05-A-1
+  EP06-A-1 EP07-A-1 EP08-A-1 EP09-A-1 EP10-A-1
+  EP11-A-1 EP12-A-1 EP13-A-1 EP14-A-1 EP15-A-1
+= 20 units : NOT 20 material defects, NOT 20 product problems
+= recurring responsibility inventory : 8 types, each anchored in a frozen unit
+  R1 next control stage · R2 actor/session selection ·
+  R3 execution baseline assignment · R4 action-authority propagation ·
+  R5 persistence ownership · R6 return destination · R7 stop boundary ·
+  R8 stage-ordering dependency
+= per-type recurrence measurements : NOT FROZEN, they belong to execution
+= working hypothesis : existing surfaces + ordinary orchestration may suffice
+= classification : HUMAN_SUBSTANTIVE_DECISION ·
+  DETERMINISTIC_FROM_EXISTING_STATE · ORDINARY_JOIN_REQUIRED · NOT_ESTABLISHED
+= repeated manual action : NOT a human substantive decision
+= deterministic : NOT already automated
+= human substantive decision counted as removable : FORBIDDEN
+= concrete-gap gate : G1..G6, G4 failure means no new primitive justified
+= counterfactual removal test : YES / NO / PARTIAL / NOT_ESTABLISHED
+= residual human authority : returned per case and per unit
+= final outcomes : ORDINARY_ORCHESTRATION_SUFFICIENT ·
+  BOUNDED_INTEGRATION_OPPORTUNITY · HUMAN_DECISION_DOMINATES ·
+  INSUFFICIENT_DURABLE_EVIDENCE
+= demonstrating a tooling opportunity : NOT required for success
+= terminal-outcome coverage : COMPLETE, authority-44 G1 defect not repeated
+= PROGRAM-STATE reference : live unpinned target plus one explicitly labelled
+  historical pin, authority-44 G2 defect not repeated
+= mission object : missions/003-handoff-routing-boundary/mission.json
+= envelope : missions/003-handoff-routing-boundary/envelope.md
+= mission validation : ok, 0 errors · render coverage complete 397 / 397
+= return contract : 307 fields, frozen
+= future executor : AGENT CCR LAB #27, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result.json : DOES NOT EXIST YET
+= routing engine : NOT SELECTED
+= new API : NOT SELECTED
+= new representation : NO
+= TE004 : NO
+= implementation : NOT AUTHORIZED
+= next : EXECUTE FROZEN STUDY WITH AGENT CCR LAB #27
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FREEZE A BOUNDED HANDOFF/ROUTING R&D QUESTION
+= next : EXECUTE FROZEN STUDY WITH AGENT CCR LAB #27
 
 CURRENT LAB STREAM
 = NONE
