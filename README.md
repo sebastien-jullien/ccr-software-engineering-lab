@@ -380,12 +380,20 @@ U-01 HUMAN PRODUCT RESPONSE
 = generic repository discovery : NO
 = authority 32 : NOT REOPENED
 = implementation readiness : PASS AFTER AUTHORITY-41 CORRECTION
-= implementation : AUTHORIZED / NOT STARTED
+= implementation : PRESENT / PUBLISHED
+= mission candidates : 4 -> 5, genuine missions/ mission.json discoverable
+= result candidates : 3 -> 4, genuine missions/ result.json discoverable
+= implementation verification : published test suite PASS
+  node --test tooling/console/tests/console.test.mjs
+= independent implementation qualification : PENDING
 = new representation : NO
 = TE004 : NO
 = EOL response : SEPARATE / NOT SELECTED
-= finding fixed : NO
-= next : implement authority 40 as corrected by authority 41
+= real-use utility : REMAINS MIXED UTILITY from the completed genuine-use
+  evaluation
+= U-01 fixed : NOT YET HUMANLY / INDEPENDENTLY QUALIFIED
+= next : independently qualify the published implementation against
+  authority 40 valid parts + authority 41
 
 CURRENT LAB STREAM
 = NONE

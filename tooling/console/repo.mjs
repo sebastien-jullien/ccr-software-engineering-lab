@@ -185,22 +185,39 @@ const CANDIDATE_ROOTS = Object.freeze({
   MISSION: Object.freeze([
     'tooling/mission-object/dogfood',
     'tooling/result-instance/live-dogfood',
+    'missions',
   ]),
   RESULT: Object.freeze([
     'tooling/result-instance/live-dogfood',
     'tooling/result-instance/representability',
+    'missions',
   ]),
 });
+
+/**
+ * Racines ou l'eligibilite RESULT est STRICTE : `result.json`, et rien d'autre.
+ *
+ * `missions/` porte des artefacts VOISINS de la mission -- enveloppe, notes,
+ * JSON sans rapport. Le filtre RESULT herite, « tout `.json` sauf
+ * `mission.json` », les exposerait tous comme candidats. La racine D'ORIGINE
+ * de l'enumeration tranche donc, et elle seule : les racines heritees gardent
+ * leur eligibilite INCHANGEE, `representability/a.json` et `b.json` compris.
+ *
+ * Liste bornee, pas une architecture de racines futures.
+ */
+const STRICT_RESULT_ROOTS = Object.freeze(['missions']);
 
 const MAX_DEPTH = 3;
 const MAX_CANDIDATES = 200;
 
-function selected(candidateClass, name) {
+function selected(candidateClass, name, enumerationRoot) {
   if (!name.endsWith('.json')) return false;
-  return candidateClass === 'MISSION' ? name === 'mission.json' : name !== 'mission.json';
+  if (candidateClass === 'MISSION') return name === 'mission.json';
+  if (STRICT_RESULT_ROOTS.includes(enumerationRoot)) return name === 'result.json';
+  return name !== 'mission.json';
 }
 
-function walk(repository, relativeDirectory, candidateClass, depth, out) {
+function walk(repository, relativeDirectory, candidateClass, enumerationRoot, depth, out) {
   if (depth > MAX_DEPTH || out.length >= MAX_CANDIDATES) return;
   const absolute = join(repository.realRoot, relativeDirectory);
   let dirents;
@@ -214,8 +231,8 @@ function walk(repository, relativeDirectory, candidateClass, depth, out) {
     if (dirent.isSymbolicLink()) continue; /* l'enumeration ne suit aucun lien */
     const childRelative = relativeDirectory + '/' + dirent.name;
     if (dirent.isDirectory()) {
-      walk(repository, childRelative, candidateClass, depth + 1, out);
-    } else if (dirent.isFile() && selected(candidateClass, dirent.name)) {
+      walk(repository, childRelative, candidateClass, enumerationRoot, depth + 1, out);
+    } else if (dirent.isFile() && selected(candidateClass, dirent.name, enumerationRoot)) {
       try {
         out.push({ path: childRelative, bytes: statSync(join(absolute, dirent.name)).size });
       } catch {
@@ -236,7 +253,10 @@ export function listCandidates(repository, candidateClass) {
   }
   const roots = CANDIDATE_ROOTS[candidateClass];
   const out = [];
-  for (const root of roots) walk(repository, root, candidateClass, 0, out);
+  /* La racine D'ORIGINE descend avec le parcours : l'eligibilite ne se deduit
+     JAMAIS du repertoire courant, qui a perdu cette identite des le premier
+     niveau de descente. */
+  for (const root of roots) walk(repository, root, candidateClass, root, 0, out);
   out.sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
   return { roots: roots.slice(), candidates: out };
 }

@@ -1432,6 +1432,305 @@ test('l enumeration de candidats est bornee, et n est pas une frontiere', async 
   assert.equal(listCandidates(openRepository(LAB_ROOT), 'MISSION').candidates.length >= 4, true);
 });
 
+/* ================================================================== *
+ * DECOUVERTE BORNEE DE missions/
+ * autorite 40 parties valides + autorite 41
+ * ================================================================== */
+
+/** La fixture de regression authentique, publiee sous `missions/`. */
+const GENUINE = Object.freeze({
+  missionPath: 'missions/001-decision-consequence-boundary/mission.json',
+  resultPath: 'missions/001-decision-consequence-boundary/result.json',
+  missionBytes: 54357,
+  missionBlob: 'e80bc3d250920cee66b4d26bef497b6094395144',
+  resultBytes: 32013,
+  resultBlob: '69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07',
+  envelope: 'missions/001-decision-consequence-boundary/envelope.md',
+  observations: 'missions/001-decision-consequence-boundary/console-real-use-observations.md',
+});
+
+/** Les candidats PREEXISTANTS, mesures avant la remediation. */
+const PRE_EXISTING = Object.freeze({
+  MISSION: Object.freeze([
+    'tooling/mission-object/dogfood/001/mission.json',
+    'tooling/mission-object/dogfood/002/mission.json',
+    'tooling/mission-object/dogfood/003/mission.json',
+    'tooling/result-instance/live-dogfood/001/mission.json',
+  ]),
+  RESULT: Object.freeze([
+    'tooling/result-instance/live-dogfood/001/result.json',
+    'tooling/result-instance/representability/a.json',
+    'tooling/result-instance/representability/b.json',
+  ]),
+});
+
+const labCandidates = (candidateClass) =>
+  listCandidates(openRepository(LAB_ROOT), candidateClass).candidates.map(
+    (candidate) => candidate.path,
+  );
+
+/**
+ * Depot jetable de DECOUVERTE, hors du depot du Lab.
+ *
+ * Il porte le voisinage complet d'une mission -- l'artefact, son resultat, et
+ * tout ce qui cohabite avec eux -- a DEUX profondeurs differentes. La seconde
+ * n'est pas decorative : si l'eligibilite se deduisait du repertoire COURANT
+ * plutot que de la racine D'ORIGINE de l'enumeration, `missions/y/z` ne serait
+ * plus reconnu comme racine stricte et `missions/y/z/metadata.json`
+ * ressortirait candidat RESULT.
+ */
+function buildDiscoveryRepository() {
+  const root = mkdtempSync(join(tmpdir(), 'local-mission-console-v0-decouverte-'));
+  const repository = join(root, 'repository');
+  const outside = join(root, 'outside');
+  mkdirSync(repository);
+  mkdirSync(outside);
+  writeFileSync(join(outside, 'result.json'), '{}\n');
+
+  execFileSync('git', ['init', '-q'], { cwd: repository, windowsHide: true });
+  execFileSync(
+    'git',
+    [
+      '-c',
+      'user.email=fixture@local',
+      '-c',
+      'user.name=fixture',
+      'commit',
+      '-q',
+      '--allow-empty',
+      '-m',
+      'fixture',
+    ],
+    { cwd: repository, windowsHide: true },
+  );
+
+  const voisinage = (directory) => {
+    mkdirSync(directory, { recursive: true });
+    writeFileSync(join(directory, 'mission.json'), '{}\n');
+    writeFileSync(join(directory, 'result.json'), '{}\n');
+    writeFileSync(join(directory, 'metadata.json'), '{}\n');
+    writeFileSync(join(directory, 'unrelated.json'), '{}\n');
+    writeFileSync(join(directory, 'envelope.md'), 'enveloppe\n');
+    writeFileSync(join(directory, 'console-real-use-observations.md'), 'observations\n');
+  };
+  voisinage(join(repository, 'missions', 'x'));
+  voisinage(join(repository, 'missions', 'y', 'z'));
+
+  /* Racine RESULT HERITEE : son eligibilite large n'est pas touchee. */
+  const legacy = join(repository, 'tooling', 'result-instance', 'representability');
+  mkdirSync(legacy, { recursive: true });
+  writeFileSync(join(legacy, 'a.json'), '{}\n');
+  writeFileSync(join(legacy, 'metadata.json'), '{}\n');
+  writeFileSync(join(legacy, 'mission.json'), '{}\n');
+
+  /* Echappement par lien SOUS la nouvelle racine : l'enumeration ne suit rien. */
+  symlinkSync(
+    outside,
+    join(repository, 'missions', 'escape'),
+    process.platform === 'win32' ? 'junction' : 'dir',
+  );
+
+  return { root, repository };
+}
+
+const discovery = buildDiscoveryRepository();
+const discovered = (candidateClass) =>
+  listCandidates(openRepository(discovery.repository), candidateClass).candidates.map(
+    (candidate) => candidate.path,
+  );
+
+after(() => {
+  try {
+    unlinkSync(join(discovery.repository, 'missions', 'escape'));
+  } catch {
+    /* le lien peut deja avoir disparu */
+  }
+  rmSync(discovery.root, { recursive: true, force: true });
+});
+
+test('T-E1 : la mission authentique de missions/ est enumeree', () => {
+  const paths = labCandidates('MISSION');
+  assert.ok(paths.includes(GENUINE.missionPath), paths.join(' '));
+  assert.equal(paths.length, 5);
+});
+
+test('T-E2 : le resultat authentique de missions/ est enumere', () => {
+  const paths = labCandidates('RESULT');
+  assert.ok(paths.includes(GENUINE.resultPath), paths.join(' '));
+  assert.equal(paths.length, 4);
+});
+
+test('T-E3 : les quatre candidats MISSION preexistants demeurent', () => {
+  const paths = labCandidates('MISSION');
+  for (const path of PRE_EXISTING.MISSION) assert.ok(paths.includes(path), path);
+});
+
+test('T-E4 : les trois candidats RESULT preexistants demeurent', () => {
+  const paths = labCandidates('RESULT');
+  for (const path of PRE_EXISTING.RESULT) assert.ok(paths.includes(path), path);
+  /* Un resserrement GLOBAL du filtre RESULT aurait efface ces deux-la. */
+  assert.ok(paths.includes('tooling/result-instance/representability/a.json'));
+  assert.ok(paths.includes('tooling/result-instance/representability/b.json'));
+});
+
+test('T-E5 : les compagnons du repertoire de mission ne sont candidats d aucune classe', () => {
+  for (const candidateClass of ['MISSION', 'RESULT']) {
+    const paths = labCandidates(candidateClass);
+    assert.ok(!paths.includes(GENUINE.envelope), candidateClass);
+    assert.ok(!paths.includes(GENUINE.observations), candidateClass);
+    for (const path of paths) assert.ok(!path.endsWith('.md'), path);
+  }
+});
+
+test('T-E6 : sous missions/, RESULT est STRICTEMENT result.json', () => {
+  const results = discovered('RESULT');
+  const missions = discovered('MISSION');
+  const sousMissions = (paths) => paths.filter((path) => path.startsWith('missions/'));
+
+  /* La table normative tenue SIMULTANEMENT, aux deux profondeurs, et rien
+     d'autre ne ressort. */
+  assert.deepEqual(sousMissions(results), [
+    'missions/x/result.json',
+    'missions/y/z/result.json',
+  ]);
+  assert.deepEqual(sousMissions(missions), [
+    'missions/x/mission.json',
+    'missions/y/z/mission.json',
+  ]);
+
+  for (const prefix of ['missions/x/', 'missions/y/z/']) {
+    assert.ok(!results.includes(prefix + 'mission.json'), prefix);
+    assert.ok(!results.includes(prefix + 'metadata.json'), prefix);
+    assert.ok(!results.includes(prefix + 'unrelated.json'), prefix);
+    assert.ok(!results.includes(prefix + 'envelope.md'), prefix);
+    assert.ok(!results.includes(prefix + 'console-real-use-observations.md'), prefix);
+    assert.ok(!missions.includes(prefix + 'result.json'), prefix);
+    assert.ok(!missions.includes(prefix + 'metadata.json'), prefix);
+    assert.ok(!missions.includes(prefix + 'unrelated.json'), prefix);
+  }
+});
+
+test('T-E7 : sous une racine RESULT HERITEE, l eligibilite large est intacte', () => {
+  const results = discovered('RESULT');
+  assert.ok(results.includes('tooling/result-instance/representability/a.json'));
+  /* Un JSON sans rapport reste candidat SOUS UNE RACINE HERITEE : la
+     strictesse est portee par la racine d'origine, elle n'est pas globale. */
+  assert.ok(results.includes('tooling/result-instance/representability/metadata.json'));
+  assert.ok(!results.includes('tooling/result-instance/representability/mission.json'));
+});
+
+test('T-E8 : la nouvelle racine ne suit aucun echappement par lien', () => {
+  for (const candidateClass of ['MISSION', 'RESULT']) {
+    for (const path of discovered(candidateClass)) {
+      assert.ok(!path.startsWith('missions/escape'), path);
+    }
+  }
+});
+
+test('T-H1 : /api/candidates?class=MISSION expose la mission authentique', async () => {
+  const response = await labGet('/api/candidates?class=MISSION');
+  assert.equal(response.status, 200);
+  const candidate = response.json.candidates.find((entry) => entry.path === GENUINE.missionPath);
+  assert.ok(candidate, 'mission authentique enumeree');
+  assert.equal(candidate.bytes, GENUINE.missionBytes);
+});
+
+test('T-H2 : /api/candidates?class=RESULT expose le resultat authentique', async () => {
+  const response = await labGet('/api/candidates?class=RESULT');
+  assert.equal(response.status, 200);
+  const candidate = response.json.candidates.find((entry) => entry.path === GENUINE.resultPath);
+  assert.ok(candidate, 'resultat authentique enumere');
+  assert.equal(candidate.bytes, GENUINE.resultBytes);
+});
+
+test('T-H3 : la mission authentique entre dans le pipeline MISSION inchange', async () => {
+  const response = await labGet('/api/mission?path=' + encodeURIComponent(GENUINE.missionPath));
+  assert.equal(response.status, 200);
+  assert.deepEqual(Object.keys(response.json).sort(), [
+    'capture',
+    'render',
+    'snapshot',
+    'validation',
+  ]);
+  assert.equal(response.json.capture.bytes, GENUINE.missionBytes);
+  assert.equal(response.json.capture.blob, GENUINE.missionBlob);
+  assert.deepEqual(response.json.snapshot, {
+    path: GENUINE.missionPath,
+    blob: GENUINE.missionBlob,
+  });
+  assert.equal(response.json.validation.ok, true);
+  assert.deepEqual(response.json.validation.errors, []);
+  assert.equal(typeof response.json.render.text, 'string');
+  assert.ok(response.json.render.text.length > 0);
+});
+
+test('T-H4 : le couple authentique entre dans le pipeline RESULT inchange', async () => {
+  const response = await labGet(
+    resultQuery(GENUINE.resultPath, GENUINE.missionPath, GENUINE.missionBlob),
+  );
+  assert.equal(response.status, 200);
+  assert.equal(response.json.capture.bytes, GENUINE.resultBytes);
+  assert.equal(response.json.capture.blob, GENUINE.resultBlob);
+  assert.equal(response.json.validation.ok, true);
+  /* Associations rendues SEPAREMENT, jamais fusionnees en un booleen. */
+  assert.equal(response.json.sourceAssociation.status, 'MATCH');
+  assert.equal(response.json.returnContractAssociation.status, 'MATCH');
+  assert.deepEqual(response.json.pathDivergence, []);
+  assert.equal(response.json.aggregate, 'MATCH');
+  assert.deepEqual(response.json.missionRecapture, {
+    path: GENUINE.missionPath,
+    blob: GENUINE.missionBlob,
+    confirmed: true,
+  });
+  assert.equal(response.json.contractValidation.run, true);
+  assert.equal(response.json.contractValidation.ok, true);
+  assert.equal(response.json.reportedValues.length, 80);
+  assert.deepEqual(response.json.nonProduction, []);
+
+  /* La liaison de version reste obligatoire sur cette mission comme sur les
+     autres : une version silencieuse vaut 409, jamais une validation. */
+  const stale = await labGet(resultQuery(GENUINE.resultPath, GENUINE.missionPath, OTHER_BLOB));
+  assert.equal(stale.status, 409);
+});
+
+test('T-H5 : ni le contrat de route ni la frontiere de securite ne bougent', async () => {
+  const candidates = await labGet('/api/candidates?class=RESULT');
+  assert.deepEqual(Object.keys(candidates.json).sort(), ['candidates', 'roots']);
+  for (const root of candidates.json.roots) assert.equal(typeof root, 'string');
+  for (const candidate of candidates.json.candidates) {
+    assert.deepEqual(Object.keys(candidate).sort(), ['bytes', 'path']);
+  }
+  assert.equal(
+    candidates.headers['content-security-policy'],
+    SECURITY_HEADERS['Content-Security-Policy'],
+  );
+
+  /* Enumerer `missions/` n'ouvre aucun chemin de lecture : le confinement
+     reste la seule autorite, sur les DEUX routes de chargement. */
+  const missionEscape = await labGet(
+    '/api/mission?path=' + encodeURIComponent('missions/../../secret.txt'),
+  );
+  assert.equal(missionEscape.status, 403);
+  assert.equal(missionEscape.json.code, 'PATH_OUT_OF_ROOT');
+
+  const resultEscape = await labGet(
+    resultQuery('missions/../../secret.txt', GENUINE.missionPath, GENUINE.missionBlob),
+  );
+  assert.equal(resultEscape.status, 403);
+  assert.equal(resultEscape.json.code, 'PATH_OUT_OF_ROOT');
+
+  assert.deepEqual([...ROUTES], [
+    '/',
+    '/console.css',
+    '/console.mjs',
+    '/api/context',
+    '/api/program-state',
+    '/api/candidates',
+    '/api/mission',
+    '/api/result',
+  ]);
+});
+
 test('les actifs statiques sont servis par liste blanche de noms', async () => {
   const page = await labGet('/');
   assert.equal(page.status, 200);
