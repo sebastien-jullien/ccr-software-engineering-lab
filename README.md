@@ -161,6 +161,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md`](36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md) — réparation déterministe du protocole secondaire : destination durable des observations d'usage réel de la console, produites par l'humain ou l'orchestrateur et tenues séparées du retour de l'exécutant ; inventaire des surfaces existantes, artefact local à la mission retenu, champs exacts, cycle de vie par étape et sémantique de durabilité. Un record d'observation n'est pas une qualification d'utilité.
 - [`37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md`](37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md) — réparation déterministe d'ordonnancement : l'observation du panneau C ne devient durable qu'après la matérialisation durable du résultat qu'elle a observé ; producteur sémantique et enregistreur Git distingués sur le précédent de persistance de TE003, porte de persistance, invariant d'octets exacts, séquençage des commits futurs et reprise après interruption. Persister le retour réel n'est pas le qualifier.
 - [`38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md`](38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md) — deux qualifications tenues séparées : l'étude historique primaire PASS WITH LIMITATIONS, avec 76 champs soutenus, 4 soutenus avec limitation évidentielle, aucun contredit, 15 jointures reproductibles sans invention sémantique et aucun écart concret de représentation démontré ; et l'usage réel de la console MIXED UTILITY, avec U-01 découvrabilité par énumération comme seul finding qualifié, classé limitation conforme. Observation n'est pas finding, et finding n'est pas remédiation.
+- [`39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md`](39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md) — disposition humaine de U-01 : remédiation bornée de découvrabilité, classée intégration produit ordinaire, pour que les artefacts authentiques de mission et de résultat entrent dans le flux normal de sélection des panneaux B et C. Objectif borné et exclusions gelés ; aucune conception technique, aucune racine de candidats choisie, aucune implémentation autorisée, autorité 32 non rouverte, risque de fin de ligne tenu séparé.
 
 ## Outillage
 
@@ -341,19 +342,30 @@ PRIMARY STUDY QUALIFICATION
 = concrete representation gap : NOT DEMONSTRATED
 = bounded to the frozen historical study
 
-LOCAL MISSION CONSOLE V0 REAL-USE UTILITY
-= MIXED UTILITY
+LOCAL MISSION CONSOLE V0
+= IMPLEMENTED / QUALIFIED / REAL-USE EVALUATED
+= real-use utility : MIXED UTILITY
 = qualified real-use findings : 1
 = U-01 enumeration / discoverability : CONFORMANT LIMITATION
 = conformance defects discovered by real use : 0
 = context-banner staleness : OBSERVATION ONLY
 = evidence-mismatch presentation : OBSERVATION ONLY
-= missions/** EOL : FUTURE CHECKOUT / REPLAY RISK ESTABLISHED,
-  CURRENT RUN FAILURE NO
-= new representation : NOT JUSTIFIED
-= TE004 : NOT JUSTIFIED
-= remediation : NOT SELECTED
-= next : human product-response decision for U-01
+= new representation : NOT SELECTED
+= TE004 : NOT SELECTED
+
+U-01 HUMAN PRODUCT RESPONSE
+= BOUNDED DISCOVERY REMEDIATION SELECTED
+  39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md
+= response class : ORDINARY PRODUCT INTEGRATION
+= objective : genuine mission / result artifacts reachable through the normal
+  panel-B / panel-C candidate-selection workflow
+= technical design : NOT YET FROZEN
+= implementation : NOT STARTED
+= candidate roots : NOT CHOSEN
+= authority 32 : NOT REOPENED
+= EOL risk under missions/** : SEPARATE, response NOT SELECTED
+= finding fixed : NO
+= next : design and freeze the bounded U-01 discovery remediation
 
 CURRENT LAB STREAM
 = NONE

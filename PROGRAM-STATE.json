@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-14T01:57:17Z"
+    "updated_at": "2026-09-14T02:14:39Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -953,11 +953,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "local-mission-console-v0-u01-bounded-discovery-remediation-selected",
+      "question": "Ratifier comme réponse produit à U-01 une remédiation bornée de découvrabilité permettant aux artefacts authentiques de mission / résultat du Lab d'entrer dans le flux normal de sélection des panneaux B et C, sans nouvelle représentation, sans TOOLING-EXPERIMENT-004, sans changement des sémantiques Mission Object / Result Instance et sans relâchement des frontières de sécurité ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-100",
+          "kind": "repo-path",
+          "ref": "39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:local-mission-console-v0-u01-bounded-discovery-remediation-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "1f25eb85170d09853865ef0ee59c2eb7dee345de"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Obtenir une décision produit humaine en réponse au seul finding d'usage réel qualifié de LOCAL MISSION CONSOLE V0, U-01 : les artefacts authentiques de mission et de résultat situés hors des racines de candidats gelées ne sont pas découvrables par le flux de sélection normal des panneaux B et C, et une requête manuelle de même origine vers le serveur de la console a été nécessaire pendant un usage authentique. Ne pas inférer de remédiation automatiquement. Ne pas modifier automatiquement les racines de candidats. Ne pas rouvrir automatiquement l'autorité 32. Conserver la péremption du bandeau de contexte et la présentation des divergences de preuve comme observations durables, non comme findings. Conserver le risque de fin de ligne sous missions/** comme observation de durabilité établie et distincte ; ne pas la combiner automatiquement avec U-01 ni la réparer. Ne pas créer TOOLING-EXPERIMENT-004. S'arrêter à la porte de sélection de réponse humaine.",
+    "value": "Concevoir et geler la plus petite remédiation bornée de U-01. Partir de l'implémentation publiée de LOCAL MISSION CONSOLE V0 et des contrats de l'autorité 32. Déterminer exactement pourquoi l'aire d'artefacts de mission authentique établie se trouve hors de l'énumération de candidats courante, et identifier le changement de découverte minimal nécessaire pour la découvrabilité de la mission authentique au panneau B, qui fournit le contexte de mission du panneau C, et du résultat authentique à la sélection de résultat du panneau C. Préserver le confinement au dépôt, le confinement des liens symboliques, l'absence de lecteur de fichiers générique, l'autorité d'exécution en lecture seule, les politiques Host / Origin / Sec-Fetch-Site existantes, la validation Mission Object, la validation Result Instance, la liaison de snapshot et de version de mission, les associations de source et de contrat de retour, l'autorité de lecture de preuve, exactement trois panneaux produit, et l'absence de vérification de PROGRAM-STATE par la console. Ne pas implémenter. Ne pas élargir en découverte générique du dépôt, sauf preuve concrète que la réponse bornée est autrement inatteignable. Ne pas inclure le risque de fin de ligne sous missions/** dans cette conception. S'arrêter après le gel de la conception technique et des critères d'acceptation, avant toute modification de code.",
     "evidence": [
       {
         "id": "ev-065",
@@ -974,17 +995,17 @@
         }
       },
       {
-        "id": "ev-099",
+        "id": "ev-101",
         "kind": "repo-path",
-        "ref": "38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md",
+        "ref": "39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Obtenir une décision produit humaine en réponse au seul finding d'usage réel qualifié de LOCAL MISSION CONSOLE V0, U-01 : les artefacts authentiques de mission et de résultat situés hors des racines de candidats gelées ne sont pas découvrables par le flux de sélection normal des panneaux B et C, et une requête manuelle de même origine vers le serveur de la console a été nécessaire pendant un usage authentique. Ne pas inférer de remédiation automatiquement. Ne pas modifier automatiquement les racines de candidats. Ne pas rouvrir automatiquement l'autorité 32. Conserver la péremption du bandeau de contexte et la présentation des divergences de preuve comme observations durables, non comme findings. Conserver le risque de fin de ligne sous missions/** comme observation de durabilité établie et distincte ; ne pas la combiner automatiquement avec U-01 ni la réparer. Ne pas créer TOOLING-EXPERIMENT-004. S'arrêter à la porte de sélection de réponse humaine."
+          "value": "Concevoir et geler la plus petite remédiation bornée de U-01. Partir de l'implémentation publiée de LOCAL MISSION CONSOLE V0 et des contrats de l'autorité 32. Déterminer exactement pourquoi l'aire d'artefacts de mission authentique établie se trouve hors de l'énumération de candidats courante, et identifier le changement de découverte minimal nécessaire pour la découvrabilité de la mission authentique au panneau B, qui fournit le contexte de mission du panneau C, et du résultat authentique à la sélection de résultat du panneau C. Préserver le confinement au dépôt, le confinement des liens symboliques, l'absence de lecteur de fichiers générique, l'autorité d'exécution en lecture seule, les politiques Host / Origin / Sec-Fetch-Site existantes, la validation Mission Object, la validation Result Instance, la liaison de snapshot et de version de mission, les associations de source et de contrat de retour, l'autorité de lecture de preuve, exactement trois panneaux produit, et l'absence de vérification de PROGRAM-STATE par la console. Ne pas implémenter. Ne pas élargir en découverte générique du dépôt, sauf preuve concrète que la réponse bornée est autrement inatteignable. Ne pas inclure le risque de fin de ligne sous missions/** dans cette conception. S'arrêter après le gel de la conception technique et des critères d'acceptation, avant toute modification de code."
         },
         "observed": {
-          "blob": "ba16dbc7c7aa0e133bc9f442ab1046ca82a1ce57"
+          "blob": "1f25eb85170d09853865ef0ee59c2eb7dee345de"
         }
       }
     ]
