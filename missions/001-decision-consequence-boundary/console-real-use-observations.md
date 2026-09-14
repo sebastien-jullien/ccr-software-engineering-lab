@@ -48,7 +48,7 @@ INSUFFICIENT OBSERVATION
 
 ```text
 PANEL_A
-= NON ENCORE OBSERVÉ
+= OBSERVÉ
 
 PANEL_B
 = NON ENCORE OBSERVÉ
@@ -63,9 +63,8 @@ OBSERVATIONS FABRIQUÉES
 = 0
 ```
 
-Aucune observation n'existe encore : l'exécution de la mission n'a pas
-commencé. Chaque étape est écrite puis committée au moment où elle est
-réellement observée, selon l'autorité 36 § 8.
+Chaque étape est écrite puis committée au moment où elle est réellement
+observée, selon l'autorité 36 § 8.
 
 ---
 
@@ -79,49 +78,68 @@ le panneau A a-t-il introduit une ambiguïté ?
 
 ```text
 PRODUCTEUR
-= NON ENCORE OBSERVÉ
+= ORCHESTRATEUR — CCR LAB FIX #1
 
 ÉTAPE D'OBSERVATION
 = PANEL_A
 
 OBSERVATION
-= NON ENCORE OBSERVÉ
+= le panneau A a rendu l'état durable du point de reprise en une lecture :
+  capture de PROGRAM-STATE.json (chemin, octets, SHA-256, blob), git_context
+  enregistré, next_action SELECTED avec sa valeur complète et ses deux
+  références de support (ev-065 → autorité 22, ev-096 → autorité 37), onze
+  flux avec leur état, vingt-cinq décisions toutes RATIFIED, aucune PENDING,
+  et le recensement des références enregistrées (48 : repo-path 42 ·
+  observation 3 · session 1 · decision 2)
+= inspection brute du dépôt nécessaire pour comprendre l'état : NON
+= reconstruction depuis la conversation : NON
+= état durable pertinent difficile ou impossible à localiser : NON ; la
+  next_action et ses supports sont en tête du panneau
+= ambiguïté introduite par le panneau A : aucune de fond ; le git_context
+  enregistré (observed_base_head 7e9ae01…) est affiché tel qu'enregistré, sans
+  comparaison à la HEAD courante, et le panneau le dit explicitement
+  (RÉFÉRENCE AFFICHÉE ≠ RÉFÉRENCE VÉRIFIÉE)
 
 CONSEQUENCE
-= NON ENCORE OBSERVÉ
+= l'état et l'action suivante requis avant la dépêche ont été établis depuis
+  la console seule
 
 BLOCKING
-= NON ENCORE OBSERVÉ
+= NO
 
 WORKAROUND REQUIRED
-= NON ENCORE OBSERVÉ
+= NO
 
 WORKAROUND
-= NON ENCORE OBSERVÉ
+= NONE
 
 WORKAROUND COST
-= NON ENCORE OBSERVÉ
+= NONE
 
 DÉFAILLANCE NAVIGATEUR / PLATEFORME
-= NON ENCORE OBSERVÉ
+= NONE
 
 RECONSTRUCTION DEPUIS LA CONVERSATION
-= NON ENCORE OBSERVÉ
+= NO
 
 INSPECTION BRUTE DU DÉPÔT
-= NON ENCORE OBSERVÉ
+= NO
 
 INFORMATION MATÉRIELLEMENT MANQUANTE
-= NON ENCORE OBSERVÉ
+= NONE
 
 CONFUSION INTRODUITE PAR L'INTERFACE
-= NON ENCORE OBSERVÉ
+= NONE ; la vérification des preuves est annoncée NON EXÉCUTÉE par la console,
+  et elle ne l'est pas
 
 PREUVE
-= NON ENCORE OBSERVÉ
+= capture affichée par le panneau A : PROGRAM-STATE.json, 33778 octets,
+  SHA-256 76dcdd2deca4606f8104b4ba0c580d356d197bdeecfb39235f0201e1fb0d2865,
+  blob 46b7fa42a4a67103885cedc7d9a81788b279b6b4, à HEAD ee05eed6
 
 NON-CONCLUSIONS
-= NON ENCORE OBSERVÉ
+= aucune qualification d'utilité ; aucune vérification des blobs enregistrés
+  n'a été exécutée ni revendiquée
 ```
 
 ---
