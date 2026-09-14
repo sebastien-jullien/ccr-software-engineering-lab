@@ -51,7 +51,7 @@ PANEL_A
 = OBSERVÉ
 
 PANEL_B
-= NON ENCORE OBSERVÉ
+= OBSERVÉ
 
 PANEL_C
 = NON ENCORE OBSERVÉ
@@ -153,52 +153,83 @@ COPIER L'ENVELOPPE a-t-elle réussi ? un repli manuel a-t-il été nécessaire ?
 
 ```text
 PRODUCTEUR
-= NON ENCORE OBSERVÉ
+= ORCHESTRATEUR — CCR LAB FIX #1
 
 ÉTAPE D'OBSERVATION
 = PANEL_B
 
 OBSERVATION
-= NON ENCORE OBSERVÉ
+= sélection de mission : ÉCHEC PAR L'INTERFACE ; la liste de candidats du
+  panneau B ne propose que les quatre mission.json sous
+  tooling/mission-object/dogfood/ et tooling/result-instance/live-dogfood/ ;
+  le Mission Object gelé de cette mission,
+  missions/001-decision-consequence-boundary/mission.json, n'y figure pas, et
+  l'interface n'offre aucune saisie de chemin
+= la cause est lisible dans le code publié : les racines de découverte des
+  candidats MISSION sont figées à ces deux répertoires ; missions/ n'en fait
+  pas partie
+= validation : compréhensible et PASS, 0 erreur, une fois la mission capturée
+  par le serveur de la console
+= enveloppe : compréhensible ; rendu serveur de 22495 octets UTF-8, SHA-256
+  identique à celui de envelope.md gelé
+= COPIER L'ENVELOPPE : NON EXERÇABLE pour cette mission, faute de pouvoir la
+  sélectionner
+= repli manuel : OUI, voir WORKAROUND
 
 CONSEQUENCE
-= NON ENCORE OBSERVÉ
+= la console n'a pas pu remplir, par son interface, le rôle de transfert de
+  l'enveloppe prévu par l'autorité 35 § 15 pour une mission hors des racines
+  de découverte
 
 BLOCKING
-= NON ENCORE OBSERVÉ
+= NO
 
 WORKAROUND REQUIRED
-= NON ENCORE OBSERVÉ
+= YES
 
 WORKAROUND
-= NON ENCORE OBSERVÉ
+= requête de même origine, depuis la page de la console, vers la route
+  /api/mission du serveur de la console, avec le chemin du Mission Object gelé ;
+  capture, validation et rendu sont ceux du serveur de la console ; une
+  navigation directe vers la route est refusée par la politique Sec-Fetch-Site
+  (403 CROSS_SITE_REJECTED), comme prévu
 
 WORKAROUND COST
-= NON ENCORE OBSERVÉ
+= une requête manuelle et une comparaison d'empreintes ; aucun outil hors
+  console
 
 DÉFAILLANCE NAVIGATEUR / PLATEFORME
-= NON ENCORE OBSERVÉ
+= NONE
 
 RECONSTRUCTION DEPUIS LA CONVERSATION
-= NON ENCORE OBSERVÉ
+= NO
 
 INSPECTION BRUTE DU DÉPÔT
-= NON ENCORE OBSERVÉ
+= YES, limitée à la lecture du code de découverte des candidats pour établir
+  la cause de l'absence
 
 INFORMATION MATÉRIELLEMENT MANQUANTE
-= NON ENCORE OBSERVÉ
+= le Mission Object gelé de la mission courante dans la liste de candidats du
+  panneau B
 
 CONFUSION INTRODUITE PAR L'INTERFACE
-= NON ENCORE OBSERVÉ
+= la liste de candidats n'annonce pas ses racines de découverte : l'absence
+  d'une mission hors racines n'est pas signalée
 
 ENVELOPPE TRANSMISE À L'EXÉCUTANT
-= NON ENCORE OBSERVÉ
+= le rendu du serveur de la console pour
+  missions/001-decision-consequence-boundary/mission.json
+  (blob e80bc3d250920cee66b4d26bef497b6094395144) ; 22495 octets ;
+  SHA-256 4fc4cffdce791fed9734e73882d3d23c379650c436029695c37602b2af8721e1 ;
+  octets identiques à envelope.md gelé
 
 PREUVE
-= NON ENCORE OBSERVÉ
+= liste de candidats du panneau B à HEAD fb614d2a ; route /api/mission : 200,
+  capture blob e80bc3d2…, validation 0 erreur, rendu SHA-256 4fc4cffd… ;
+  navigation directe : 403 CROSS_SITE_REJECTED
 
 NON-CONCLUSIONS
-= NON ENCORE OBSERVÉ
+= aucune qualification d'utilité ; aucun correctif proposé ni appliqué
 ```
 
 ---
