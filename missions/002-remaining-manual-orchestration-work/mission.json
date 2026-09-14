@@ -1,0 +1,7049 @@
+{
+  "identity": {
+    "id": "remaining-manual-orchestration-work-comparative-study-002",
+    "class": "REMAINING_MANUAL_ORCHESTRATION_WORK_BOUNDED_COMPARATIVE_STUDY",
+    "addressee": "AGENT_CCR_LAB_25",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "study.factual_baseline",
+      "value": {
+        "type": "SCALAR",
+        "value": "70ca6d43aca5f07aafdc9e1b112d5991f2bf974a"
+      },
+      "semantics_unresolved": false,
+      "label": "ligne de base factuelle gelée : état de capacité établi par l’autorité 33 ; aucune occurrence de travail manuel ne peut être créée avant ce point"
+    },
+    {
+      "subject": "study.factual_corpus_cut",
+      "value": {
+        "type": "SCALAR",
+        "value": "168e7d811d05ae663923c50c6704f7db6eaac5b1"
+      },
+      "semantics_unresolved": false,
+      "label": "coupe factuelle gelée : clôture de U-01 par l’autorité 42 ; la fenêtre d’occurrence est (ligne de base, coupe]"
+    },
+    {
+      "subject": "study.governance_not_occurrence",
+      "value": {
+        "type": "SYMBOL",
+        "value": "AUTHORITIES_43_AND_44_ARE_GOVERNANCE_ONLY"
+      },
+      "semantics_unresolved": false,
+      "label": "les autorités 43 et 44 gouvernent cette étude ; elles ne sont jamais une preuve factuelle d’occurrence de travail manuel pour l’une ou l’autre famille"
+    },
+    {
+      "subject": "study.admitted_episode_count",
+      "value": {
+        "type": "SCALAR",
+        "value": 15
+      },
+      "semantics_unresolved": false,
+      "label": "inventaire exhaustif gelé par l’autorité 44 ; tout épisode admissible est évalué, sans échantillonnage"
+    },
+    {
+      "subject": "study.unknown_is_not_zero",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED_NEVER_COLLAPSES_TO_ZERO"
+      },
+      "semantics_unresolved": false,
+      "label": "absence de trace durable n’établit pas l’absence d’occurrence : NOT_ESTABLISHED, jamais 0, sauf zéro positivement établi"
+    },
+    {
+      "subject": "study.prompt_size_is_not_a_proxy",
+      "value": {
+        "type": "SYMBOL",
+        "value": "FORBIDDEN_PROXY"
+      },
+      "semantics_unresolved": false,
+      "label": "longueur d’invite, nombre de références, longueur de mission, complexité de cas et taille de résultat ne mesurent aucun travail manuel"
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth43",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "feda3a558c086ea1cc9c28c8f574aca1ff110c04"
+      }
+    },
+    {
+      "id": "ref-auth44",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md"
+      },
+      "identity_required": false
+    },
+    {
+      "id": "ref-auth09",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+      }
+    },
+    {
+      "id": "ref-auth14",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      }
+    },
+    {
+      "id": "ref-auth23",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    },
+    {
+      "id": "ref-auth33",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "33-LOCAL-MISSION-CONSOLE-V0-INDEPENDENT-IMPLEMENTATION-QUALIFICATION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "a0060090fa23a1db98c3ede8f60f0f02f75d99e1"
+      }
+    },
+    {
+      "id": "ref-program-state",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "PROGRAM-STATE.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "d184076b1d8327a8327f4c2c538ec9efd208324d"
+      }
+    },
+    {
+      "id": "ref-auth34",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
+      }
+    },
+    {
+      "id": "ref-auth35",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+      }
+    },
+    {
+      "id": "ref-auth36",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
+      }
+    },
+    {
+      "id": "ref-auth37",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0fff611a59dabef0ad1b067344287d48b740f74a"
+      }
+    },
+    {
+      "id": "ref-auth38",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "ba16dbc7c7aa0e133bc9f442ab1046ca82a1ce57"
+      }
+    },
+    {
+      "id": "ref-auth39",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1f25eb85170d09853865ef0ee59c2eb7dee345de"
+      }
+    },
+    {
+      "id": "ref-auth40",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "6f161cbb8d852f52afe15848c1b88664cfb207e5"
+      }
+    },
+    {
+      "id": "ref-auth41",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "86a6f1fc565ef0c5b3a4d8b6a772e6610c3590db"
+      }
+    },
+    {
+      "id": "ref-auth42",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "b3a24ab4c0e40e847962e28103fd3a0ff18bdb24"
+      }
+    },
+    {
+      "id": "ref-mission001",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/mission.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "e80bc3d250920cee66b4d26bef497b6094395144"
+      }
+    },
+    {
+      "id": "ref-envelope001",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/envelope.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "a5320c00c20ec0b1f7f4c8f99515bd5a133b619e"
+      }
+    },
+    {
+      "id": "ref-result001",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/result.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07"
+      }
+    },
+    {
+      "id": "ref-observations001",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/console-real-use-observations.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "af7c57778ba8b34ea814555d91448ef9ae24f1a2"
+      }
+    },
+    {
+      "id": "ref-console-repo",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/console/repo.mjs"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0dbbd293263b41074dec564b60e9e05092604452"
+      }
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/002-remaining-manual-orchestration-work/result.json"
+      },
+      "identity_required": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-read-corpus",
+      "mode": "REQUIRED",
+      "action": "READ_DURABLE_CORPUS",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-program-state"
+      }
+    },
+    {
+      "id": "e-verify-inventory",
+      "mode": "REQUIRED",
+      "action": "VERIFY_EPISODE_INVENTORY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-build-units",
+      "mode": "REQUIRED",
+      "action": "BUILD_ATOMIC_WORK_UNIT_LEDGER",
+      "cardinality": 1
+    },
+    {
+      "id": "e-attribute",
+      "mode": "REQUIRED",
+      "action": "ATTRIBUTE_UNITS_TO_FAMILIES",
+      "cardinality": 1
+    },
+    {
+      "id": "e-consequences",
+      "mode": "REQUIRED",
+      "action": "CLASSIFY_DEMONSTRATED_CONSEQUENCES",
+      "cardinality": 1
+    },
+    {
+      "id": "e-sufficiency",
+      "mode": "REQUIRED",
+      "action": "CLASSIFY_EXISTING_SURFACE_SUFFICIENCY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-tooling-gate",
+      "mode": "REQUIRED",
+      "action": "EVALUATE_TOOLING_CASE_GATE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-compare",
+      "mode": "REQUIRED",
+      "action": "COMPARE_FAMILIES_LEXICOGRAPHICALLY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-return"
+      }
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "FREEZE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-forbid-conversation",
+      "mode": "FORBIDDEN",
+      "action": "RECONSTRUCT_FROM_CONVERSATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-session-prose",
+      "mode": "FORBIDDEN",
+      "action": "USE_SESSION_PROSE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-ccr-system",
+      "mode": "FORBIDDEN",
+      "action": "READ_CCR_SYSTEM_REPOSITORY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-protected",
+      "mode": "FORBIDDEN",
+      "action": "READ_PROTECTED_SOURCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-external",
+      "mode": "FORBIDDEN",
+      "action": "READ_EXTERNAL_WEB",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-sample",
+      "mode": "FORBIDDEN",
+      "action": "SAMPLE_EPISODE_INVENTORY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-contract-change",
+      "mode": "FORBIDDEN",
+      "action": "ALTER_RETURN_CONTRACT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-score",
+      "mode": "FORBIDDEN",
+      "action": "INVENT_SYNTHETIC_SCORE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-prompt-proxy",
+      "mode": "FORBIDDEN",
+      "action": "USE_PROMPT_SIZE_AS_PROXY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-double-count",
+      "mode": "FORBIDDEN",
+      "action": "DOUBLE_COUNT_ATOMIC_UNIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-unknown-zero",
+      "mode": "FORBIDDEN",
+      "action": "REPORT_UNKNOWN_AS_ZERO",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-design",
+      "mode": "FORBIDDEN",
+      "action": "DESIGN_TOOLING",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-experiment",
+      "mode": "FORBIDDEN",
+      "action": "CREATE_TOOLING_EXPERIMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-representation",
+      "mode": "FORBIDDEN",
+      "action": "DESIGN_REPRESENTATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-implement",
+      "mode": "FORBIDDEN",
+      "action": "IMPLEMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-qualify",
+      "mode": "FORBIDDEN",
+      "action": "QUALIFY_OWN_RETURN",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-commit",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-push",
+      "mode": "FORBIDDEN",
+      "action": "PUSH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-other-mutation",
+      "mode": "FORBIDDEN",
+      "action": "MUTATE_REPOSITORY",
+      "cardinality": 0
+    }
+  ],
+  "content_requirements": [
+    {
+      "id": "cr-baseline",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "PRESERVE",
+      "subject": "study.factual_baseline",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": "70ca6d43aca5f07aafdc9e1b112d5991f2bf974a"
+      }
+    },
+    {
+      "id": "cr-cut",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "PRESERVE",
+      "subject": "study.factual_corpus_cut",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": "168e7d811d05ae663923c50c6704f7db6eaac5b1"
+      }
+    },
+    {
+      "id": "cr-window-commits",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.factual_window_commit_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 14
+      }
+    },
+    {
+      "id": "cr-episodes-admitted",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.admitted_episode_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 15
+      }
+    },
+    {
+      "id": "cr-episodes-evaluated",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.evaluated_episode_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 15
+      }
+    },
+    {
+      "id": "cr-no-conversation-reconstruction",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.conversation_factual_reconstruction_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-session-prose",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.session_prose_fallback_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-ccr-system-source",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.ccr_system_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-protected-source",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.protected_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-mutation-boundary",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.repository_mutations_other_than_result",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-commits",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_commit_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-pushes",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_push_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-forbid-winner-without-eligibility",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "comparison.winner_selected_without_eligibility",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-synthetic-score",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "comparison.synthetic_score",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESENT"
+      }
+    },
+    {
+      "id": "cr-forbid-new-experiment",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_tooling_experiment",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "SELECTED"
+      }
+    },
+    {
+      "id": "cr-forbid-representation-design",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.representation_design",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESENT"
+      }
+    },
+    {
+      "id": "cr-forbid-qualification",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.self_qualification_verdict",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESENT"
+      }
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-read",
+        "effect": "e-read-corpus",
+        "atomic": true,
+        "gated_by": "g-preflight"
+      },
+      {
+        "order": 2,
+        "id": "s-inventory",
+        "effect": "e-verify-inventory",
+        "atomic": true,
+        "produces": [
+          "ev-inventory"
+        ]
+      },
+      {
+        "order": 3,
+        "id": "s-units",
+        "effect": "e-build-units",
+        "atomic": true,
+        "gated_by": "g-inventory-executable",
+        "produces": [
+          "ev-units"
+        ]
+      },
+      {
+        "order": 4,
+        "id": "s-attribute",
+        "effect": "e-attribute",
+        "atomic": true,
+        "produces": [
+          "ev-attribution"
+        ]
+      },
+      {
+        "order": 5,
+        "id": "s-consequences",
+        "effect": "e-consequences",
+        "atomic": true,
+        "gated_by": "g-attribution-disjoint",
+        "produces": [
+          "ev-consequences"
+        ]
+      },
+      {
+        "order": 6,
+        "id": "s-sufficiency",
+        "effect": "e-sufficiency",
+        "atomic": true
+      },
+      {
+        "order": 7,
+        "id": "s-tooling-gate",
+        "effect": "e-tooling-gate",
+        "atomic": true
+      },
+      {
+        "order": 8,
+        "id": "s-compare",
+        "effect": "e-compare",
+        "atomic": true,
+        "gated_by": "g-no-forbidden-source"
+      },
+      {
+        "order": 9,
+        "id": "s-produce",
+        "effect": "e-produce-result",
+        "atomic": true
+      },
+      {
+        "order": 10,
+        "id": "s-validate",
+        "effect": "e-validate-result",
+        "atomic": true,
+        "produces": [
+          "ev-result-validation"
+        ]
+      },
+      {
+        "order": 11,
+        "id": "s-freeze",
+        "effect": "e-freeze-result",
+        "atomic": true
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-preflight",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth43"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "feda3a558c086ea1cc9c28c8f574aca1ff110c04"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-result001"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "reserved_result_path_existing"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-inventory-executable",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-inventory",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-verify-inventory",
+              "field": "inventory_matches_authority"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-verify-inventory",
+              "field": "exhaustive_evaluation_executable"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-no-forbidden-source",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-forbidden-source",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "conversation_factual_reconstruction"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "session_prose_fallback"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "ccr_system_source_usage"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "protected_source_usage"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-attribution-disjoint",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-attribution",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-attribute",
+              "field": "double_counted_unit_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-attribute",
+              "field": "ambiguous_units_excluded_from_counts"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-inventory-not-executable",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-verify-inventory",
+          "field": "exhaustive_evaluation_executable"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": false
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b1-forbid-sample",
+          "mode": "FORBIDDEN",
+          "action": "SAMPLE_EPISODE_INVENTORY",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b1-forbid-invent",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_SAMPLE",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b1-report",
+          "order": 1,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b1-blockers",
+          "scope": "br-inventory-not-executable",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_comparative_recommendation",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "INCONCLUSIVE_ON_DURABLE_EVIDENCE"
+          }
+        }
+      ],
+      "terminal_outcome": "BLOCKED",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-neither-eligible",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-compare",
+          "field": "eligible_family_count"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b2-forbid-winner",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_WINNING_FAMILY",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b2-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b2-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b2-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b2-outcome",
+          "scope": "br-neither-eligible",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.procedural_success",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "PROCEDURALLY_SUCCESSFUL"
+          }
+        }
+      ],
+      "terminal_outcome": "NO_FAMILY_CURRENTLY_JUSTIFIED",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-tie-or-undermined",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-compare",
+          "field": "decided_at_dimension"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "NONE"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b3-forbid-weight",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_SEVERITY_WEIGHT",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b3-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b3-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-b3-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b3-outcome",
+          "scope": "br-tie-or-undermined",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_comparative_recommendation",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "INCONCLUSIVE_ON_DURABLE_EVIDENCE"
+          }
+        }
+      ],
+      "terminal_outcome": "INCONCLUSIVE_ON_DURABLE_EVIDENCE",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-representation-gap-appears",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-tooling-gate",
+          "field": "representation_gap_candidate_present"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b4-forbid-design",
+          "mode": "FORBIDDEN",
+          "action": "DESIGN_REPRESENTATION",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b4-forbid-experiment",
+          "mode": "FORBIDDEN",
+          "action": "CREATE_TOOLING_EXPERIMENT",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-b4-record",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-b4-record",
+          "scope": "br-representation-gap-appears",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.concrete_representation_gap_candidate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "PRESENT"
+          }
+        }
+      ],
+      "terminal_outcome": "PASS",
+      "next": "nc-return"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "preflight_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-preflight-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-preflight-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-preflight-restore",
+          "mode": "FORBIDDEN",
+          "action": "RESTORE"
+        },
+        {
+          "id": "sp-preflight-fetch",
+          "mode": "FORBIDDEN",
+          "action": "FETCH"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-inventory",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-verify-inventory",
+          "field": "inventory_matches_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-inventory-extend",
+          "mode": "FORBIDDEN",
+          "action": "EXTEND_EPISODE_INVENTORY"
+        },
+        {
+          "id": "sp-inventory-sample",
+          "mode": "FORBIDDEN",
+          "action": "SAMPLE_EPISODE_INVENTORY"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-forbidden-source",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "MEASUREMENT",
+          "modifier": "COUNT_OF",
+          "ref": "forbidden_source_usage"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-src-conversation",
+          "mode": "FORBIDDEN",
+          "action": "RECONSTRUCT_FROM_CONVERSATION"
+        },
+        {
+          "id": "sp-src-prose",
+          "mode": "FORBIDDEN",
+          "action": "USE_SESSION_PROSE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-attribution",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-attribute",
+          "field": "double_counted_unit_count"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-attr-both",
+          "mode": "FORBIDDEN",
+          "action": "CREDIT_UNIT_TO_BOTH_FAMILIES"
+        },
+        {
+          "id": "sp-attr-invent",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_SEMANTIC_SPLIT"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-mutation",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "MEASUREMENT",
+          "modifier": "COUNT_OF",
+          "ref": "repository_mutations_other_than_result"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-mut-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT"
+        },
+        {
+          "id": "sp-mut-push",
+          "mode": "FORBIDDEN",
+          "action": "PUSH"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-direction-selected",
+        "subject": "remaining_manual_orchestration_work_study_direction_selected",
+        "authority": "ref-auth43"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-return"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-inventory",
+      "kind": "OBSERVATION",
+      "fact": "study.episode_inventory",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth44",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-units",
+      "kind": "OBSERVATION",
+      "fact": "study.atomic_work_units",
+      "method": {
+        "op": "EQ",
+        "source": "ref-program-state",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-attribution",
+      "kind": "VERIFICATION",
+      "fact": "study.family_attribution",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth44",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-consequences",
+      "kind": "OBSERVATION",
+      "fact": "study.demonstrated_consequences",
+      "method": {
+        "op": "EQ",
+        "source": "ref-observations001",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "result_instance.structural_validation",
+      "method": {
+        "op": "EQ",
+        "source": "ref-return",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "PASS",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-verify-inventory",
+              "field": "exhaustive_evaluation_executable"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-compare",
+              "field": "eligible_family_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 1
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-pass-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "NO_FAMILY_CURRENTLY_JUSTIFIED",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-compare",
+              "field": "eligible_family_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-neither-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "INCONCLUSIVE_ON_DURABLE_EVIDENCE",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-compare",
+              "field": "decided_at_dimension"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "NONE"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-inconclusive-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BLOCKED",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-verify-inventory",
+              "field": "exhaustive_evaluation_executable"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": false
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-blocked-no-sample",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.sampled_inventory",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    },
+    {
+      "label": "STOPPED_ON_PREFLIGHT",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "preflight_match"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-stopped-no-result",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-baseline",
+      "fact": "study.factual_baseline",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-cut",
+      "fact": "study.factual_corpus_cut",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-window-commits",
+      "fact": "study.factual_window_commit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-episodes-admitted",
+      "fact": "study.admitted_episode_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-episodes-evaluated",
+      "fact": "study.evaluated_episode_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-conv-reconstruction",
+      "fact": "discipline.conversation_factual_reconstruction_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-session-prose",
+      "fact": "discipline.session_prose_fallback_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ccr-system-source",
+      "fact": "discipline.ccr_system_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-protected-source",
+      "fact": "discipline.protected_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e01-a-present",
+      "fact": "ep_01.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-b-present",
+      "fact": "ep_01.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-a-units",
+      "fact": "ep_01.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e01-b-units",
+      "fact": "ep_01.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e01-ambiguous-units",
+      "fact": "ep_01.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e01-a-evidence",
+      "fact": "ep_01.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-b-evidence",
+      "fact": "ep_01.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-a-consequences",
+      "fact": "ep_01.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-b-consequences",
+      "fact": "ep_01.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-a-drift",
+      "fact": "ep_01.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-b-drift",
+      "fact": "ep_01.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-recovery",
+      "fact": "ep_01.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e01-ledger",
+      "fact": "ep_01.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e02-a-present",
+      "fact": "ep_02.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-b-present",
+      "fact": "ep_02.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-a-units",
+      "fact": "ep_02.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e02-b-units",
+      "fact": "ep_02.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e02-ambiguous-units",
+      "fact": "ep_02.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e02-a-evidence",
+      "fact": "ep_02.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-b-evidence",
+      "fact": "ep_02.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-a-consequences",
+      "fact": "ep_02.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-b-consequences",
+      "fact": "ep_02.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-a-drift",
+      "fact": "ep_02.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-b-drift",
+      "fact": "ep_02.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-recovery",
+      "fact": "ep_02.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e02-ledger",
+      "fact": "ep_02.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e03-a-present",
+      "fact": "ep_03.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-b-present",
+      "fact": "ep_03.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-a-units",
+      "fact": "ep_03.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e03-b-units",
+      "fact": "ep_03.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e03-ambiguous-units",
+      "fact": "ep_03.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e03-a-evidence",
+      "fact": "ep_03.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-b-evidence",
+      "fact": "ep_03.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-a-consequences",
+      "fact": "ep_03.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-b-consequences",
+      "fact": "ep_03.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-a-drift",
+      "fact": "ep_03.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-b-drift",
+      "fact": "ep_03.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-recovery",
+      "fact": "ep_03.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e03-ledger",
+      "fact": "ep_03.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e04-a-present",
+      "fact": "ep_04.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-b-present",
+      "fact": "ep_04.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-a-units",
+      "fact": "ep_04.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e04-b-units",
+      "fact": "ep_04.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e04-ambiguous-units",
+      "fact": "ep_04.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e04-a-evidence",
+      "fact": "ep_04.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-b-evidence",
+      "fact": "ep_04.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-a-consequences",
+      "fact": "ep_04.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-b-consequences",
+      "fact": "ep_04.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-a-drift",
+      "fact": "ep_04.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-b-drift",
+      "fact": "ep_04.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-recovery",
+      "fact": "ep_04.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e04-ledger",
+      "fact": "ep_04.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e05-a-present",
+      "fact": "ep_05.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-b-present",
+      "fact": "ep_05.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-a-units",
+      "fact": "ep_05.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e05-b-units",
+      "fact": "ep_05.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e05-ambiguous-units",
+      "fact": "ep_05.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e05-a-evidence",
+      "fact": "ep_05.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-b-evidence",
+      "fact": "ep_05.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-a-consequences",
+      "fact": "ep_05.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-b-consequences",
+      "fact": "ep_05.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-a-drift",
+      "fact": "ep_05.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-b-drift",
+      "fact": "ep_05.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-recovery",
+      "fact": "ep_05.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e05-ledger",
+      "fact": "ep_05.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e06-a-present",
+      "fact": "ep_06.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-b-present",
+      "fact": "ep_06.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-a-units",
+      "fact": "ep_06.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e06-b-units",
+      "fact": "ep_06.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e06-ambiguous-units",
+      "fact": "ep_06.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e06-a-evidence",
+      "fact": "ep_06.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-b-evidence",
+      "fact": "ep_06.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-a-consequences",
+      "fact": "ep_06.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-b-consequences",
+      "fact": "ep_06.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-a-drift",
+      "fact": "ep_06.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-b-drift",
+      "fact": "ep_06.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-recovery",
+      "fact": "ep_06.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e06-ledger",
+      "fact": "ep_06.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e07-a-present",
+      "fact": "ep_07.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-b-present",
+      "fact": "ep_07.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-a-units",
+      "fact": "ep_07.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e07-b-units",
+      "fact": "ep_07.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e07-ambiguous-units",
+      "fact": "ep_07.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e07-a-evidence",
+      "fact": "ep_07.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-b-evidence",
+      "fact": "ep_07.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-a-consequences",
+      "fact": "ep_07.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-b-consequences",
+      "fact": "ep_07.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-a-drift",
+      "fact": "ep_07.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-b-drift",
+      "fact": "ep_07.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-recovery",
+      "fact": "ep_07.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e07-ledger",
+      "fact": "ep_07.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e08-a-present",
+      "fact": "ep_08.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-b-present",
+      "fact": "ep_08.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-a-units",
+      "fact": "ep_08.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e08-b-units",
+      "fact": "ep_08.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e08-ambiguous-units",
+      "fact": "ep_08.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e08-a-evidence",
+      "fact": "ep_08.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-b-evidence",
+      "fact": "ep_08.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-a-consequences",
+      "fact": "ep_08.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-b-consequences",
+      "fact": "ep_08.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-a-drift",
+      "fact": "ep_08.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-b-drift",
+      "fact": "ep_08.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-recovery",
+      "fact": "ep_08.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e08-ledger",
+      "fact": "ep_08.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e09-a-present",
+      "fact": "ep_09.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-b-present",
+      "fact": "ep_09.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-a-units",
+      "fact": "ep_09.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e09-b-units",
+      "fact": "ep_09.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e09-ambiguous-units",
+      "fact": "ep_09.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e09-a-evidence",
+      "fact": "ep_09.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-b-evidence",
+      "fact": "ep_09.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-a-consequences",
+      "fact": "ep_09.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-b-consequences",
+      "fact": "ep_09.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-a-drift",
+      "fact": "ep_09.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-b-drift",
+      "fact": "ep_09.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-recovery",
+      "fact": "ep_09.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e09-ledger",
+      "fact": "ep_09.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e10-a-present",
+      "fact": "ep_10.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-b-present",
+      "fact": "ep_10.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-a-units",
+      "fact": "ep_10.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e10-b-units",
+      "fact": "ep_10.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e10-ambiguous-units",
+      "fact": "ep_10.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e10-a-evidence",
+      "fact": "ep_10.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-b-evidence",
+      "fact": "ep_10.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-a-consequences",
+      "fact": "ep_10.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-b-consequences",
+      "fact": "ep_10.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-a-drift",
+      "fact": "ep_10.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-b-drift",
+      "fact": "ep_10.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-recovery",
+      "fact": "ep_10.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e10-ledger",
+      "fact": "ep_10.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e11-a-present",
+      "fact": "ep_11.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-b-present",
+      "fact": "ep_11.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-a-units",
+      "fact": "ep_11.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e11-b-units",
+      "fact": "ep_11.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e11-ambiguous-units",
+      "fact": "ep_11.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e11-a-evidence",
+      "fact": "ep_11.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-b-evidence",
+      "fact": "ep_11.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-a-consequences",
+      "fact": "ep_11.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-b-consequences",
+      "fact": "ep_11.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-a-drift",
+      "fact": "ep_11.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-b-drift",
+      "fact": "ep_11.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-recovery",
+      "fact": "ep_11.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e11-ledger",
+      "fact": "ep_11.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e12-a-present",
+      "fact": "ep_12.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-b-present",
+      "fact": "ep_12.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-a-units",
+      "fact": "ep_12.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e12-b-units",
+      "fact": "ep_12.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e12-ambiguous-units",
+      "fact": "ep_12.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e12-a-evidence",
+      "fact": "ep_12.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-b-evidence",
+      "fact": "ep_12.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-a-consequences",
+      "fact": "ep_12.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-b-consequences",
+      "fact": "ep_12.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-a-drift",
+      "fact": "ep_12.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-b-drift",
+      "fact": "ep_12.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-recovery",
+      "fact": "ep_12.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e12-ledger",
+      "fact": "ep_12.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e13-a-present",
+      "fact": "ep_13.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-b-present",
+      "fact": "ep_13.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-a-units",
+      "fact": "ep_13.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e13-b-units",
+      "fact": "ep_13.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e13-ambiguous-units",
+      "fact": "ep_13.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e13-a-evidence",
+      "fact": "ep_13.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-b-evidence",
+      "fact": "ep_13.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-a-consequences",
+      "fact": "ep_13.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-b-consequences",
+      "fact": "ep_13.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-a-drift",
+      "fact": "ep_13.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-b-drift",
+      "fact": "ep_13.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-recovery",
+      "fact": "ep_13.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e13-ledger",
+      "fact": "ep_13.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e14-a-present",
+      "fact": "ep_14.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-b-present",
+      "fact": "ep_14.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-a-units",
+      "fact": "ep_14.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e14-b-units",
+      "fact": "ep_14.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e14-ambiguous-units",
+      "fact": "ep_14.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e14-a-evidence",
+      "fact": "ep_14.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-b-evidence",
+      "fact": "ep_14.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-a-consequences",
+      "fact": "ep_14.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-b-consequences",
+      "fact": "ep_14.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-a-drift",
+      "fact": "ep_14.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-b-drift",
+      "fact": "ep_14.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-recovery",
+      "fact": "ep_14.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e14-ledger",
+      "fact": "ep_14.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-e15-a-present",
+      "fact": "ep_15.family_a_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-b-present",
+      "fact": "ep_15.family_b_work_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-a-units",
+      "fact": "ep_15.family_a_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e15-b-units",
+      "fact": "ep_15.family_b_atomic_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e15-ambiguous-units",
+      "fact": "ep_15.attribution_ambiguous_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-e15-a-evidence",
+      "fact": "ep_15.family_a_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-b-evidence",
+      "fact": "ep_15.family_b_evidence_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIRECT_DURABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DETERMINISTIC_DERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-a-consequences",
+      "fact": "ep_15.family_a_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-b-consequences",
+      "fact": "ep_15.family_b_consequences",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REWORK_OR_CORRECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "WORKAROUND"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RECOVERY_OR_RESUMPTION_COST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXTRA_MANUAL_VERIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEQUENCING_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-a-drift",
+      "fact": "ep_15.family_a_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-b-drift",
+      "fact": "ep_15.family_b_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-recovery",
+      "fact": "ep_15.reconstruction_recovery_demonstrated",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRESH_SESSION_RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESUMPTION_AFTER_STOP_OR_BLOCK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_CONTEXT_REASSEMBLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-e15-ledger",
+      "fact": "ep_15.atomic_work_unit_ledger",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-a-episodes-with-work",
+      "fact": "family_a_handoff_routing.admissible_episodes_with_family_work",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-atomic-units",
+      "fact": "family_a_handoff_routing.atomic_manual_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-episodes-consequence",
+      "fact": "family_a_handoff_routing.episodes_with_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-episodes-blocking",
+      "fact": "family_a_handoff_routing.episodes_with_blocking",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-episodes-rework",
+      "fact": "family_a_handoff_routing.episodes_with_rework_or_correction",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-episodes-workaround",
+      "fact": "family_a_handoff_routing.episodes_with_workaround",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-episodes-recovery",
+      "fact": "family_a_handoff_routing.episodes_with_recovery_or_resumption_cost",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-episodes-drift",
+      "fact": "family_a_handoff_routing.episodes_with_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-episodes-not-established",
+      "fact": "family_a_handoff_routing.episodes_with_not_established_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-ambiguous-excluded",
+      "fact": "family_a_handoff_routing.attribution_ambiguous_units_excluded",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a-sufficiency",
+      "fact": "family_a_handoff_routing.existing_surface_sufficiency",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SUFFICIENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUFFICIENT_WITH_ORDINARY_ORCHESTRATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONCRETE_TOOLING_GAP_CANDIDATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INCONCLUSIVE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a-tooling-case",
+      "fact": "family_a_handoff_routing.automation_tooling_case",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INCONCLUSIVE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a-t1",
+      "fact": "family_a_handoff_routing.tooling_case_gate_t1_repeated_in_two_episodes",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a-t2",
+      "fact": "family_a_handoff_routing.tooling_case_gate_t2_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a-t3",
+      "fact": "family_a_handoff_routing.tooling_case_gate_t3_stable_bounded_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a-t4",
+      "fact": "family_a_handoff_routing.tooling_case_gate_t4_not_prompt_size_or_missing_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a-t5",
+      "fact": "family_a_handoff_routing.tooling_case_gate_t5_existing_surfaces_insufficient",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a-t6",
+      "fact": "family_a_handoff_routing.tooling_case_gate_t6_bounded_opportunity_without_new_semantics",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-episodes-with-work",
+      "fact": "family_b_context_package.admissible_episodes_with_family_work",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-atomic-units",
+      "fact": "family_b_context_package.atomic_manual_unit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-episodes-consequence",
+      "fact": "family_b_context_package.episodes_with_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-episodes-blocking",
+      "fact": "family_b_context_package.episodes_with_blocking",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-episodes-rework",
+      "fact": "family_b_context_package.episodes_with_rework_or_correction",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-episodes-workaround",
+      "fact": "family_b_context_package.episodes_with_workaround",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-episodes-recovery",
+      "fact": "family_b_context_package.episodes_with_recovery_or_resumption_cost",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-episodes-drift",
+      "fact": "family_b_context_package.episodes_with_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-episodes-not-established",
+      "fact": "family_b_context_package.episodes_with_not_established_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-ambiguous-excluded",
+      "fact": "family_b_context_package.attribution_ambiguous_units_excluded",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b-sufficiency",
+      "fact": "family_b_context_package.existing_surface_sufficiency",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SUFFICIENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUFFICIENT_WITH_ORDINARY_ORCHESTRATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONCRETE_TOOLING_GAP_CANDIDATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INCONCLUSIVE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-tooling-case",
+      "fact": "family_b_context_package.automation_tooling_case",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_DEMONSTRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INCONCLUSIVE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-t1",
+      "fact": "family_b_context_package.tooling_case_gate_t1_repeated_in_two_episodes",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-t2",
+      "fact": "family_b_context_package.tooling_case_gate_t2_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-t3",
+      "fact": "family_b_context_package.tooling_case_gate_t3_stable_bounded_responsibility",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-t4",
+      "fact": "family_b_context_package.tooling_case_gate_t4_not_prompt_size_or_missing_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-t5",
+      "fact": "family_b_context_package.tooling_case_gate_t5_existing_surfaces_insufficient",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-b-t6",
+      "fact": "family_b_context_package.tooling_case_gate_t6_bounded_opportunity_without_new_semantics",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-eligible-a",
+      "fact": "comparison.winner_eligibility_family_a",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-eligible-b",
+      "fact": "comparison.winner_eligibility_family_b",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cmp-d1",
+      "fact": "comparison.dimension_1_episodes_with_material_consequence",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "A_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "B_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TIE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cmp-d2",
+      "fact": "comparison.dimension_2_episodes_with_severe_consequence_classes",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "A_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "B_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TIE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cmp-d3",
+      "fact": "comparison.dimension_3_episodes_with_realized_drift_or_error",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "A_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "B_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TIE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cmp-d4",
+      "fact": "comparison.dimension_4_distinct_episodes_with_family_work",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "A_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "B_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TIE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cmp-d5",
+      "fact": "comparison.dimension_5_atomic_manual_units",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "A_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "B_HIGHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TIE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cmp-decided-at",
+      "fact": "comparison.decided_at_dimension",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIM_1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DIM_2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DIM_3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DIM_4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DIM_5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-recommendation",
+      "fact": "study.final_comparative_recommendation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HANDOFF_ROUTING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTEXT_PACKAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NEITHER_CURRENTLY_JUSTIFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INCONCLUSIVE_ON_DURABLE_EVIDENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-recommendation-basis",
+      "fact": "study.recommendation_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-representation-gap",
+      "fact": "study.concrete_representation_gap_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PRESENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ABSENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-representation-gap-record",
+      "fact": "study.concrete_representation_gap_record",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-limitations",
+      "fact": "study.limitations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-blockers",
+      "fact": "study.blockers",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-study-success",
+      "fact": "study.procedural_success",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PROCEDURALLY_SUCCESSFUL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SUCCESSFUL"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "HUMAN_GATE",
+      "action": "RETURN_FROZEN_RESULT_INSTANCE",
+      "target": "remaining_manual_orchestration_work_study_qualification"
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-no-representation-design",
+      "constraint": {
+        "id": "e-sc-representation",
+        "mode": "FORBIDDEN",
+        "action": "DESIGN_REPRESENTATION",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_design_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-tooling-experiment",
+      "constraint": {
+        "id": "e-sc-experiment",
+        "mode": "FORBIDDEN",
+        "action": "CREATE_TOOLING_EXPERIMENT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_experiment_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-persistence-by-executor",
+      "constraint": {
+        "id": "e-sc-persist",
+        "mode": "FORBIDDEN",
+        "action": "COMMIT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-eol-remediation",
+      "constraint": {
+        "id": "e-sc-eol",
+        "mode": "FORBIDDEN",
+        "action": "MODIFY_GITATTRIBUTES",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_eol_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}

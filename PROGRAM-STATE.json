@@ -1041,7 +1041,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Geler une étude comparative bornée, exécutable et en lecture seule du travail manuel d'orchestration restant, avant toute exécution comparative et avant toute décision d'outillage. Le gel devra définir le corpus historique admissible, les cas exacts, les règles de preuve, les dimensions mesurables, le contrat de retour, les critères de succès et la frontière de lecture / écriture. Aucune famille gagnante n'est présumée entre handoff / routage et construction du paquet de contexte, et les issues NEITHER_CURRENTLY_JUSTIFIED et INCONCLUSIVE_ON_DURABLE_EVIDENCE restent admissibles. Le risque de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable séparé : il n'est ni une famille candidate, ni fusionné avec elles, ni promu automatiquement en travail courant. Travail manuel observé n'implique pas nouvel outillage requis. Ne pas implémenter, ne pas créer d'expérience d'outillage, ne pas concevoir de représentation et ne pas sélectionner de conséquence CCR System. S'arrêter à la porte du gel d'étude bornée.",
+    "value": "Exécuter l'étude comparative gelée du travail manuel d'orchestration restant avec un AGENT CCR LAB #25 frais. Dépêcher exactement le Mission Object et l'enveloppe gelés de missions/002-remaining-manual-orchestration-work/. N'employer que le corpus factuel et le pare-feu de sources de l'autorité 44 : ligne de base 70ca6d43aca5f07aafdc9e1b112d5991f2bf974a, coupe 168e7d811d05ae663923c50c6704f7db6eaac5b1, fenêtre semi-ouverte. Évaluer les quinze épisodes admis, sans échantillonnage, sans re-découpage et sans extension de l'inventaire. Produire exactement le contrat de retour gelé de 255 champs dans missions/002-remaining-manual-orchestration-work/result.json. Ne pas reconstruire les faits depuis la conversation. Ne pas créer d'expérience d'outillage. Ne pas concevoir d'outillage ni de représentation. Ne pas sélectionner de direction produit ni de conséquence CCR System. Ne pas commiter, ne pas pousser. S'arrêter avec exactement un result.json non suivi et le retourner pour persistance des octets exacts, puis qualification indépendante ultérieure.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1058,17 +1058,17 @@
         }
       },
       {
-        "id": "ev-108",
+        "id": "ev-109",
         "kind": "repo-path",
-        "ref": "43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md",
+        "ref": "44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Geler une étude comparative bornée, exécutable et en lecture seule du travail manuel d'orchestration restant, avant toute exécution comparative et avant toute décision d'outillage. Le gel devra définir le corpus historique admissible, les cas exacts, les règles de preuve, les dimensions mesurables, le contrat de retour, les critères de succès et la frontière de lecture / écriture. Aucune famille gagnante n'est présumée entre handoff / routage et construction du paquet de contexte, et les issues NEITHER_CURRENTLY_JUSTIFIED et INCONCLUSIVE_ON_DURABLE_EVIDENCE restent admissibles. Le risque de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable séparé : il n'est ni une famille candidate, ni fusionné avec elles, ni promu automatiquement en travail courant. Travail manuel observé n'implique pas nouvel outillage requis. Ne pas implémenter, ne pas créer d'expérience d'outillage, ne pas concevoir de représentation et ne pas sélectionner de conséquence CCR System. S'arrêter à la porte du gel d'étude bornée."
+          "value": "Exécuter l'étude comparative gelée du travail manuel d'orchestration restant avec un AGENT CCR LAB #25 frais. Dépêcher exactement le Mission Object et l'enveloppe gelés de missions/002-remaining-manual-orchestration-work/. N'employer que le corpus factuel et le pare-feu de sources de l'autorité 44 : ligne de base 70ca6d43aca5f07aafdc9e1b112d5991f2bf974a, coupe 168e7d811d05ae663923c50c6704f7db6eaac5b1, fenêtre semi-ouverte. Évaluer les quinze épisodes admis, sans échantillonnage, sans re-découpage et sans extension de l'inventaire. Produire exactement le contrat de retour gelé de 255 champs dans missions/002-remaining-manual-orchestration-work/result.json. Ne pas reconstruire les faits depuis la conversation. Ne pas créer d'expérience d'outillage. Ne pas concevoir d'outillage ni de représentation. Ne pas sélectionner de direction produit ni de conséquence CCR System. Ne pas commiter, ne pas pousser. S'arrêter avec exactement un result.json non suivi et le retourner pour persistance des octets exacts, puis qualification indépendante ultérieure."
         },
         "observed": {
-          "blob": "feda3a558c086ea1cc9c28c8f574aca1ff110c04"
+          "blob": "950a42805afcd4011e3a042152057f07ff1d82dc"
         }
       }
     ]

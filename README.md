@@ -166,6 +166,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md`](41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md) — correction de conception : D1 aurait exposé, sous `missions/**`, tout JSON sans rapport comme candidat de résultat, ce que l'exigence gouvernante interdisait ; défaut démontré directement, resserrement global du filtre toujours rejeté pour non-régression, et éligibilité de résultat rendue sensible à la racine — `result.json` seul sous `missions/`, héritage inchangé ailleurs. Nommer honnêtement une largeur ne la rend pas conforme.
 - [`42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md`](42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md) — deux couches tenues distinctes : la qualification indépendante de l'implémentation publiée, PASS WITH LIMITATIONS, avec zéro défaut matériel, suite publiée 74 / 74, racine d'énumération d'origine préservée à travers la récursion, confirmation dans le vrai DOM, et pour seule limitation la non-exécution du comportement de symlink sur hôte POSIX ; puis la clôture humaine de U-01 comme remédié. La topologie du panneau C y est énoncée, et le succès d'une remédiation ne requalifie pas rétroactivement un usage historique.
 - [`43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md`](43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md) — sélection humaine de la prochaine direction authentique du Lab : mesurer le travail manuel d'orchestration restant. Question comparative première, famille A handoff / routage et famille B construction du paquet de contexte, pare-feu de fin de ligne et pare-feu des travaux clos, aucune conclusion d'outillage automatique, aucun vainqueur présumé. Ordre de feuille de route n'est pas preuve de besoin courant, et travail manuel observé n'est pas nouvel outillage requis. Le corpus, les cas, le modèle de comparaison et le contrat de retour appartiennent au gel d'étude bornée suivant.
+- [`44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md`](44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md) — gel de l'étude comparative bornée, exécutable et en lecture seule : fenêtre factuelle semi-ouverte de la qualification de console à la clôture de U-01, corpus admissible et pare-feu de sources, inventaire exhaustif de 27 candidats dont 15 épisodes admis et 12 rejetés ou fusionnés avec leur motif, unité atomique de travail manuel, frontière stricte d'attribution A / B et interdiction de double comptage, pare-feu de taille d'invite, inconnu n'est pas zéro, vocabulaires de preuve, de conséquence et de suffisance, porte de cas d'outillage en six critères, comparaison lexicographique sans score synthétique, quatre issues admises, Mission Object et enveloppe gelés pour un AGENT CCR LAB #25 frais, contrat de retour de 255 champs. L'étude est exécutable ; sa conclusion n'est pas écrite.
 
 ## Outillage
 
@@ -422,7 +423,51 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : freeze a bounded, executable, read-only comparative study
+= next : EXECUTE FROZEN STUDY WITH FRESH AGENT #25
+
+BOUNDED COMPARATIVE STUDY
+= FROZEN / NOT YET EXECUTED
+  44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md
+= factual window : post-Authority-33 capability baseline
+  through Authority-42 closure, half-open (baseline, cut]
+= factual baseline : 70ca6d43aca5f07aafdc9e1b112d5991f2bf974a
+= factual corpus cut : 168e7d811d05ae663923c50c6704f7db6eaac5b1
+= window commits : 14
+= authorities 43 / 44 as occurrence evidence : NO, governance only
+= episode inventory : 27 candidates
+= admitted episodes : 15, EP-01 .. EP-15, ALL EVALUATED
+= rejected / merged candidates : 12, RC-01 .. RC-12, reasons recorded
+= sampling : FORBIDDEN
+= candidate A : HANDOFF / ROUTING
+= candidate B : CONTEXT-PACKAGE CONSTRUCTION
+= atomic manual orchestration work unit : FROZEN
+= double counting : FORBIDDEN
+= ambiguous attribution : retained in ledger, excluded from A-vs-B counts
+= prompt size : NOT A PROXY
+= durable evidence only : YES
+= unknown : NOT ZERO
+= evidence statuses : DIRECT_DURABLE · DETERMINISTIC_DERIVATION ·
+  NOT_ESTABLISHED · CONTRADICTED
+= existing-surface sufficiency : SUFFICIENT ·
+  SUFFICIENT_WITH_ORDINARY_ORCHESTRATION ·
+  CONCRETE_TOOLING_GAP_CANDIDATE · INCONCLUSIVE
+= tooling-case gate : T1..T6, all required for DEMONSTRATED
+= synthetic score : NONE
+= mission object : missions/002-remaining-manual-orchestration-work/mission.json
+= envelope : missions/002-remaining-manual-orchestration-work/envelope.md
+= mission object validation : ok, 0 errors
+= render coverage : complete, 391 / 391
+= return contract : 255 fields, frozen
+= future executor : AGENT CCR LAB #25, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result.json : DOES NOT EXIST YET
+= winner : NOT SELECTED
+= new tooling experiment : NONE
+= TE004 : NO
+= new representation : NO
+= implementation : NOT AUTHORIZED
+= EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
+= next : EXECUTE FROZEN STUDY WITH FRESH AGENT #25
 
 CURRENT LAB STREAM
 = NONE
