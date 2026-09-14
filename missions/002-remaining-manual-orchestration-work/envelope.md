@@ -12,12 +12,16 @@ CONTEXTE — NON NORMATIF
   study.governance_not_occurrence = AUTHORITIES_43_AND_44_ARE_GOVERNANCE_ONLY
   study.admitted_episode_count = 15
   study.unknown_is_not_zero = NOT_ESTABLISHED_NEVER_COLLAPSES_TO_ZERO
+  study.current_surface_persistence_filter = REQUIRED_PER_ATOMIC_UNIT
+  study.historical_occurrence_is_not_current_need = HISTORICAL_OCCURRENCE_NEVER_IMPLIES_CURRENT_NEED
+  study.atomic_unit_ledger_encoding = ROSTER_SET_PLUS_EXECUTOR_DEFINED_FACT_PER_PROPERTY
   study.prompt_size_is_not_a_proxy = FORBIDDEN_PROXY
 
 AUTORITÉS ET RÉFÉRENCES
 -----------------------
   ref-auth43  [AUTHORITY]  REPO_PATH 43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md  GIT_BLOB feda3a558c086ea1cc9c28c8f574aca1ff110c04  identité EXIGÉE
   ref-auth44  [AUTHORITY]  REPO_PATH 44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md  identité non exigée
+  ref-auth45  [AUTHORITY]  REPO_PATH 45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md  identité non exigée
   ref-auth09  [CONTEXT]  REPO_PATH 09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md  GIT_BLOB c94e03829e107b51f63efcdb950bfeff123f50d1  identité EXIGÉE
   ref-auth14  [CONTEXT]  REPO_PATH 14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md  GIT_BLOB 7d634c855ab9de8c66a21c134b03de8f118c3de4  identité EXIGÉE
   ref-auth23  [CONTEXT]  REPO_PATH 23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md  GIT_BLOB 1676b3de4546b40a801d0a400b4c47ddd9b82062  identité EXIGÉE
@@ -46,6 +50,9 @@ FRONTIÈRES D’EFFET
   REQUIRED              BUILD_ATOMIC_WORK_UNIT_LEDGER  cardinalité 1
   REQUIRED              ATTRIBUTE_UNITS_TO_FAMILIES  cardinalité 1
   REQUIRED              CLASSIFY_DEMONSTRATED_CONSEQUENCES  cardinalité 1
+  REQUIRED              CLASSIFY_CURRENT_SURFACE_STATUS  cardinalité 1
+  REQUIRED              CLASSIFY_CURRENT_NEED_ELIGIBILITY  cardinalité 1
+  REQUIRED              BUILD_REMAINING_WORK_COUNTS  cardinalité 1
   REQUIRED              CLASSIFY_EXISTING_SURFACE_SUFFICIENCY  cardinalité 1
   REQUIRED              EVALUATE_TOOLING_CASE_GATE  cardinalité 1
   REQUIRED              COMPARE_FAMILIES_LEXICOGRAPHICALLY  cardinalité 1
@@ -63,6 +70,14 @@ FRONTIÈRES D’EFFET
   FORBIDDEN             USE_PROMPT_SIZE_AS_PROXY  cardinalité 0
   FORBIDDEN             DOUBLE_COUNT_ATOMIC_UNIT  cardinalité 0
   FORBIDDEN             REPORT_UNKNOWN_AS_ZERO  cardinalité 0
+  FORBIDDEN             COUNT_ABSORBED_WORK_IN_WINNER  cardinalité 0
+  FORBIDDEN             COUNT_HISTORICAL_ONLY_WORK_IN_WINNER  cardinalité 0
+  FORBIDDEN             INFER_STILL_MANUAL_FROM_SILENCE  cardinalité 0
+  FORBIDDEN             TREAT_UNKNOWN_AS_ABSORBED  cardinalité 0
+  FORBIDDEN             TREAT_UNKNOWN_AS_STILL_MANUAL  cardinalité 0
+  FORBIDDEN             INVENT_FOURTH_CURRENT_STATUS  cardinalité 0
+  FORBIDDEN             OVERWRITE_HISTORICAL_COUNTS  cardinalité 0
+  FORBIDDEN             ENCODE_LEDGER_AS_OPAQUE_VALUE  cardinalité 0
   FORBIDDEN             DESIGN_TOOLING  cardinalité 0
   FORBIDDEN             CREATE_TOOLING_EXPERIMENT  cardinalité 0
   FORBIDDEN             DESIGN_REPRESENTATION  cardinalité 0
@@ -86,6 +101,13 @@ EXIGENCES DE CONTENU
   CLAIM / ASSERT  discipline.repository_mutations_other_than_result  EQUALS  0   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  discipline.executor_commit_count  EQUALS  0   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  discipline.executor_push_count  EQUALS  0   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  study.u01_manual_workaround_remaining_winner_contribution  EQUALS  0   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  study.atomic_unit_id_scheme_conformant  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  comparison.absorbed_work_counted_in_winner  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  comparison.historical_counts_entered_winner_ordering  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.current_status_unknown_collapsed_to_a_verdict  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.still_manual_inferred_from_silence  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.atomic_unit_ledger_opaque_encoding  EQUALS  PRESENT   [cible ref-return · portée MISSION]
   FORBID_CLAIM  comparison.winner_selected_without_eligibility  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  comparison.synthetic_score  EQUALS  PRESENT   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.new_tooling_experiment  EQUALS  SELECTED   [cible ref-return · portée MISSION]
@@ -100,12 +122,15 @@ PROCÉDURE
   3. s-units  effet e-build-units  [atomique]  [après porte g-inventory-executable]  [produit ev-units]
   4. s-attribute  effet e-attribute  [atomique]  [produit ev-attribution]
   5. s-consequences  effet e-consequences  [atomique]  [après porte g-attribution-disjoint]  [produit ev-consequences]
-  6. s-sufficiency  effet e-sufficiency  [atomique]
-  7. s-tooling-gate  effet e-tooling-gate  [atomique]
-  8. s-compare  effet e-compare  [atomique]  [après porte g-no-forbidden-source]
-  9. s-produce  effet e-produce-result  [atomique]
-  10. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
-  11. s-freeze  effet e-freeze-result  [atomique]
+  6. s-current-status  effet e-current-status  [atomique]  [produit ev-current-status]
+  7. s-current-need  effet e-current-need  [atomique]  [après porte g-current-status-complete]
+  8. s-remaining-counts  effet e-remaining-counts  [atomique]
+  9. s-sufficiency  effet e-sufficiency  [atomique]
+  10. s-tooling-gate  effet e-tooling-gate  [atomique]
+  11. s-compare  effet e-compare  [atomique]  [après porte g-no-forbidden-source]
+  12. s-produce  effet e-produce-result  [atomique]
+  13. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
+  14. s-freeze  effet e-freeze-result  [atomique]
 
 PORTES
 ------
@@ -118,6 +143,9 @@ PORTES
   g-no-forbidden-source  [portée ALL_PRECEDING]
       exige   COUNT_OF(MEASUREMENT(conversation_factual_reconstruction)) EQ 0  ET  COUNT_OF(MEASUREMENT(session_prose_fallback)) EQ 0  ET  COUNT_OF(MEASUREMENT(ccr_system_source_usage)) EQ 0  ET  COUNT_OF(MEASUREMENT(protected_source_usage)) EQ 0
       échec → sr-forbidden-source
+  g-current-status-complete  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-current-status).units_without_current_status EQ 0  ET  OPERATION_RESULT(e-current-status).status_inferred_from_silence_count EQ 0  ET  OPERATION_RESULT(e-remaining-counts).absorbed_units_in_winner_counts EQ 0  ET  OPERATION_RESULT(e-remaining-counts).historical_counts_preserved EQ true
+      échec → sr-current-status
   g-attribution-disjoint  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-attribute).double_counted_unit_count EQ 0  ET  OPERATION_RESULT(e-attribute).ambiguous_units_excluded_from_counts EQ true
       échec → sr-attribution
@@ -144,6 +172,11 @@ CONDITIONS D’ARRÊT
   sr-attribution  si  OPERATION_RESULT(e-attribute).double_counted_unit_count NEQ 0
       FORBIDDEN             CREDIT_UNIT_TO_BOTH_FAMILIES
       FORBIDDEN             INVENT_SEMANTIC_SPLIT
+      exigé   REPORT
+      STOP
+  sr-current-status  si  OPERATION_RESULT(e-current-status).units_without_current_status NEQ 0
+      FORBIDDEN             INFER_STILL_MANUAL_FROM_SILENCE
+      FORBIDDEN             INVENT_FOURTH_CURRENT_STATUS
       exigé   REPORT
       STOP
   sr-mutation  si  COUNT_OF(MEASUREMENT(repository_mutations_other_than_result)) NEQ 0
@@ -181,6 +214,16 @@ BRANCHES
       FORBIDDEN             INVENT_SEVERITY_WEIGHT  cardinalité 0
       CLAIM / ASSERT  study.final_comparative_recommendation  EQUALS  INCONCLUSIVE_ON_DURABLE_EVIDENCE   [cible ref-return · portée br-tie-or-undermined]
 
+  BRANCHE br-current-unknown-material  si  OPERATION_RESULT(e-current-status).unknown_could_change_verdict EQ true
+      résultat terminal   INCONCLUSIVE_ON_DURABLE_EVIDENCE
+      conséquence         nc-return
+      étape 1. s-b5-produce  effet e-produce-result
+      étape 2. s-b5-validate  effet e-validate-result
+      étape 3. s-b5-freeze  effet e-freeze-result
+      FORBIDDEN             TREAT_UNKNOWN_AS_ABSORBED  cardinalité 0
+      FORBIDDEN             TREAT_UNKNOWN_AS_STILL_MANUAL  cardinalité 0
+      CLAIM / ASSERT  study.final_comparative_recommendation  EQUALS  INCONCLUSIVE_ON_DURABLE_EVIDENCE   [cible ref-return · portée br-current-unknown-material]
+
   BRANCHE br-representation-gap-appears  si  OPERATION_RESULT(e-tooling-gate).representation_gap_candidate_present EQ true
       résultat terminal   PASS
       conséquence         nc-return
@@ -204,13 +247,15 @@ EXIGENCES DE PREUVE
       source interdite  session_prose · conversation_transcript
   ev-consequences  [OBSERVATION]  study.demonstrated_consequences   méthode EQ depuis ref-observations001 · recalcul exigé
       source interdite  session_prose · conversation_transcript
+  ev-current-status  [VERIFICATION]  study.current_surface_status   méthode EQ depuis ref-auth42 · recalcul exigé
+      source interdite  session_prose · conversation_transcript
   ev-result-validation  [VERIFICATION]  result_instance.structural_validation   méthode EQ depuis ref-return · recalcul exigé
       source interdite  session_prose · conversation_transcript
 
 RÉSULTATS TERMINAUX ET SUCCÈS PARTIEL
 -------------------------------------
 
-  PASS  valide si  OPERATION_RESULT(e-verify-inventory).exhaustive_evaluation_executable EQ true  ET  OPERATION_RESULT(e-compare).eligible_family_count EQ 1  ET  OPERATION_RESULT(e-validate-result).status EQ PASS
+  PASS  valide si  OPERATION_RESULT(e-verify-inventory).exhaustive_evaluation_executable EQ true  ET  OPERATION_RESULT(e-compare).eligible_family_count EQ 1  ET  OPERATION_RESULT(e-compare).winner_inputs_are_remaining_only EQ true  ET  OPERATION_RESULT(e-validate-result).status EQ PASS
       état partiel admis            NON
       état atteint à préserver      OUI
       conséquence                   nc-return
@@ -263,7 +308,13 @@ RETOUR OBLIGATOIRE
   ep_01.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_01.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_01.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_01.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_01.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_01.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_01.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_01.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_01.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_01.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_01.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_02.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_02.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_02.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -276,7 +327,13 @@ RETOUR OBLIGATOIRE
   ep_02.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_02.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_02.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_02.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_02.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_02.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_02.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_02.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_02.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_02.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_02.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_03.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_03.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_03.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -289,7 +346,13 @@ RETOUR OBLIGATOIRE
   ep_03.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_03.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_03.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_03.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_03.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_03.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_03.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_03.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_03.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_03.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_03.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_04.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_04.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_04.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -302,7 +365,13 @@ RETOUR OBLIGATOIRE
   ep_04.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_04.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_04.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_04.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_04.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_04.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_04.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_04.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_04.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_04.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_04.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_05.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_05.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_05.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -315,7 +384,13 @@ RETOUR OBLIGATOIRE
   ep_05.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_05.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_05.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_05.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_05.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_05.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_05.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_05.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_05.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_05.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_05.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_06.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_06.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_06.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -328,7 +403,13 @@ RETOUR OBLIGATOIRE
   ep_06.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_06.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_06.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_06.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_06.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_06.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_06.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_06.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_06.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_06.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_06.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_07.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_07.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_07.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -341,7 +422,13 @@ RETOUR OBLIGATOIRE
   ep_07.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_07.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_07.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_07.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_07.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_07.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_07.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_07.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_07.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_07.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_07.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_08.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_08.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_08.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -354,7 +441,13 @@ RETOUR OBLIGATOIRE
   ep_08.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_08.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_08.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_08.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_08.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_08.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_08.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_08.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_08.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_08.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_08.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_09.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_09.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_09.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -367,7 +460,13 @@ RETOUR OBLIGATOIRE
   ep_09.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_09.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_09.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_09.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_09.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_09.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_09.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_09.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_09.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_09.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_09.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_10.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_10.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_10.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -380,7 +479,13 @@ RETOUR OBLIGATOIRE
   ep_10.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_10.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_10.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_10.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_10.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_10.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_10.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_10.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_10.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_10.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_10.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_11.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_11.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_11.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -393,7 +498,13 @@ RETOUR OBLIGATOIRE
   ep_11.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_11.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_11.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_11.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_11.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_11.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_11.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_11.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_11.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_11.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_11.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_12.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_12.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_12.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -406,7 +517,13 @@ RETOUR OBLIGATOIRE
   ep_12.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_12.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_12.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_12.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_12.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_12.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_12.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_12.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_12.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_12.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_12.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_13.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_13.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_13.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -419,7 +536,13 @@ RETOUR OBLIGATOIRE
   ep_13.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_13.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_13.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_13.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_13.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_13.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_13.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_13.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_13.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_13.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_13.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_14.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_14.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_14.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -432,7 +555,13 @@ RETOUR OBLIGATOIRE
   ep_14.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_14.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_14.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_14.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_14.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_14.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_14.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_14.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_14.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_14.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_14.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   ep_15.family_a_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_15.family_b_work_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_15.family_a_atomic_unit_count  [MEASURED · SCALAR]
@@ -445,7 +574,13 @@ RETOUR OBLIGATOIRE
   ep_15.family_a_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_15.family_b_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   ep_15.reconstruction_recovery_demonstrated  [MEASURED · SET]  parmi { FRESH_SESSION_RECONSTRUCTION · RESUMPTION_AFTER_STOP_OR_BLOCK · MANUAL_CONTEXT_REASSEMBLY · MANUAL_ROUTE_OR_RESPONSIBILITY_REESTABLISHMENT · NONE_DEMONSTRATED · NOT_ESTABLISHED }
-  ep_15.atomic_work_unit_ledger  [MEASURED · SET]
+  ep_15.atomic_work_unit_id_roster  [MEASURED · SET]
+  ep_15.current_need_eligibility  [MEASURED · SYMBOL]  parmi { ELIGIBLE · NOT_ELIGIBLE · NOT_ESTABLISHED }
+  ep_15.still_manual_unit_count  [MEASURED · SCALAR]
+  ep_15.absorbed_unit_count  [MEASURED · SCALAR]
+  ep_15.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  ep_15.remaining_family_a_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
+  ep_15.remaining_family_b_consequences  [MEASURED · SET]  parmi { BLOCKING · REWORK_OR_CORRECTION · WORKAROUND · RECOVERY_OR_RESUMPTION_COST · EXTRA_MANUAL_VERIFICATION · SEQUENCING_DEPENDENCY · NONE_DEMONSTRATED · NOT_ESTABLISHED }
   family_a_handoff_routing.admissible_episodes_with_family_work  [MEASURED · SCALAR]
   family_a_handoff_routing.atomic_manual_unit_count  [MEASURED · SCALAR]
   family_a_handoff_routing.episodes_with_material_consequence  [MEASURED · SCALAR]
@@ -464,6 +599,27 @@ RETOUR OBLIGATOIRE
   family_a_handoff_routing.tooling_case_gate_t4_not_prompt_size_or_missing_evidence  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
   family_a_handoff_routing.tooling_case_gate_t5_existing_surfaces_insufficient  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
   family_a_handoff_routing.tooling_case_gate_t6_bounded_opportunity_without_new_semantics  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_a_handoff_routing.absorbed_atomic_unit_count  [MEASURED · SCALAR]
+  family_a_handoff_routing.still_manual_atomic_unit_count  [MEASURED · SCALAR]
+  family_a_handoff_routing.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  family_a_handoff_routing.current_need_eligible_episode_count  [MEASURED · SCALAR]
+  family_a_handoff_routing.current_need_not_eligible_episode_count  [MEASURED · SCALAR]
+  family_a_handoff_routing.current_need_not_established_episode_count  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_material_consequence  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_blocking  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_rework_or_correction  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_workaround  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_recovery_or_resumption_cost  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_extra_manual_verification  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_sequencing_dependency  [MEASURED · SCALAR]
+  family_a_handoff_routing.remaining_episodes_with_realized_drift_or_error  [MEASURED · SCALAR]
+  family_a_handoff_routing.current_automation_tooling_case  [MEASURED · SYMBOL]  parmi { DEMONSTRATED · NOT_DEMONSTRATED · INCONCLUSIVE }
+  family_a_handoff_routing.current_gate_ct1_still_manual_in_two_eligible_episodes  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_a_handoff_routing.current_gate_ct2_remaining_material_consequence  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_a_handoff_routing.current_gate_ct3_stable_bounded_remaining_responsibility  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_a_handoff_routing.current_gate_ct4_not_prompt_size_history_missing_evidence_or_absorbed  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_a_handoff_routing.current_gate_ct5_cut_surfaces_do_not_absorb_remaining_burden  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_a_handoff_routing.current_gate_ct6_bounded_opportunity_without_new_semantics  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
   family_b_context_package.admissible_episodes_with_family_work  [MEASURED · SCALAR]
   family_b_context_package.atomic_manual_unit_count  [MEASURED · SCALAR]
   family_b_context_package.episodes_with_material_consequence  [MEASURED · SCALAR]
@@ -482,13 +638,34 @@ RETOUR OBLIGATOIRE
   family_b_context_package.tooling_case_gate_t4_not_prompt_size_or_missing_evidence  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
   family_b_context_package.tooling_case_gate_t5_existing_surfaces_insufficient  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
   family_b_context_package.tooling_case_gate_t6_bounded_opportunity_without_new_semantics  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
-  comparison.winner_eligibility_family_a  [MEASURED · SYMBOL]  parmi { YES · NO }
-  comparison.winner_eligibility_family_b  [MEASURED · SYMBOL]  parmi { YES · NO }
-  comparison.dimension_1_episodes_with_material_consequence  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
-  comparison.dimension_2_episodes_with_severe_consequence_classes  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
-  comparison.dimension_3_episodes_with_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
-  comparison.dimension_4_distinct_episodes_with_family_work  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
-  comparison.dimension_5_atomic_manual_units  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
+  family_b_context_package.absorbed_atomic_unit_count  [MEASURED · SCALAR]
+  family_b_context_package.still_manual_atomic_unit_count  [MEASURED · SCALAR]
+  family_b_context_package.current_status_not_established_unit_count  [MEASURED · SCALAR]
+  family_b_context_package.current_need_eligible_episode_count  [MEASURED · SCALAR]
+  family_b_context_package.current_need_not_eligible_episode_count  [MEASURED · SCALAR]
+  family_b_context_package.current_need_not_established_episode_count  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_material_consequence  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_blocking  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_rework_or_correction  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_workaround  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_recovery_or_resumption_cost  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_extra_manual_verification  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_sequencing_dependency  [MEASURED · SCALAR]
+  family_b_context_package.remaining_episodes_with_realized_drift_or_error  [MEASURED · SCALAR]
+  family_b_context_package.current_automation_tooling_case  [MEASURED · SYMBOL]  parmi { DEMONSTRATED · NOT_DEMONSTRATED · INCONCLUSIVE }
+  family_b_context_package.current_gate_ct1_still_manual_in_two_eligible_episodes  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_b_context_package.current_gate_ct2_remaining_material_consequence  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_b_context_package.current_gate_ct3_stable_bounded_remaining_responsibility  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_b_context_package.current_gate_ct4_not_prompt_size_history_missing_evidence_or_absorbed  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_b_context_package.current_gate_ct5_cut_surfaces_do_not_absorb_remaining_burden  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  family_b_context_package.current_gate_ct6_bounded_opportunity_without_new_semantics  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  comparison.remaining_work_winner_eligibility_family_a  [MEASURED · SYMBOL]  parmi { YES · NO }
+  comparison.remaining_work_winner_eligibility_family_b  [MEASURED · SYMBOL]  parmi { YES · NO }
+  comparison.dimension_1_remaining_episodes_with_material_consequence  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
+  comparison.dimension_2_remaining_episodes_with_severe_consequence_classes  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
+  comparison.dimension_3_remaining_episodes_with_realized_drift_or_error  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
+  comparison.dimension_4_current_need_eligible_episodes  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
+  comparison.dimension_5_still_manual_atomic_units  [MEASURED · SYMBOL]  parmi { A_HIGHER · B_HIGHER · TIE · NOT_APPLICABLE }
   comparison.decided_at_dimension  [MEASURED · SYMBOL]  parmi { DIM_1 · DIM_2 · DIM_3 · DIM_4 · DIM_5 · NONE }
   study.final_comparative_recommendation  [MEASURED · SYMBOL]  parmi { HANDOFF_ROUTING · CONTEXT_PACKAGE · NEITHER_CURRENTLY_JUSTIFIED · INCONCLUSIVE_ON_DURABLE_EVIDENCE }
   study.recommendation_basis  [MEASURED · SET]
@@ -497,6 +674,15 @@ RETOUR OBLIGATOIRE
   study.limitations  [MEASURED · SET]
   study.blockers  [MEASURED · SET]
   study.procedural_success  [MEASURED · SYMBOL]  parmi { PROCEDURALLY_SUCCESSFUL · NOT_SUCCESSFUL }
+  study.atomic_unit_id_scheme_conformant  [MEASURED · SYMBOL]  parmi { YES · NO }
+  study.total_atomic_manual_unit_count  [MEASURED · SCALAR]
+  study.total_still_manual_unit_count  [MEASURED · SCALAR]
+  study.total_absorbed_unit_count  [MEASURED · SCALAR]
+  study.total_current_status_not_established_unit_count  [MEASURED · SCALAR]
+  study.current_status_unknown_materiality  [MEASURED · SYMBOL]  parmi { COULD_CHANGE_VERDICT · COULD_NOT_CHANGE_VERDICT · NOT_ESTABLISHED }
+  study.u01_manual_workaround_unit_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  study.u01_manual_workaround_unit_current_surface_status  [MEASURED · SYMBOL]  parmi { STILL_MANUAL · ABSORBED_BY_CURRENT_SURFACE · NOT_ESTABLISHED · NOT_APPLICABLE }
+  study.u01_manual_workaround_remaining_winner_contribution  [MEASURED · SCALAR]
 
 CONSÉQUENCES SUIVANTES
 ----------------------

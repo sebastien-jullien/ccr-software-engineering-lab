@@ -167,6 +167,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md`](42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md) — deux couches tenues distinctes : la qualification indépendante de l'implémentation publiée, PASS WITH LIMITATIONS, avec zéro défaut matériel, suite publiée 74 / 74, racine d'énumération d'origine préservée à travers la récursion, confirmation dans le vrai DOM, et pour seule limitation la non-exécution du comportement de symlink sur hôte POSIX ; puis la clôture humaine de U-01 comme remédié. La topologie du panneau C y est énoncée, et le succès d'une remédiation ne requalifie pas rétroactivement un usage historique.
 - [`43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md`](43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md) — sélection humaine de la prochaine direction authentique du Lab : mesurer le travail manuel d'orchestration restant. Question comparative première, famille A handoff / routage et famille B construction du paquet de contexte, pare-feu de fin de ligne et pare-feu des travaux clos, aucune conclusion d'outillage automatique, aucun vainqueur présumé. Ordre de feuille de route n'est pas preuve de besoin courant, et travail manuel observé n'est pas nouvel outillage requis. Le corpus, les cas, le modèle de comparaison et le contrat de retour appartiennent au gel d'étude bornée suivant.
 - [`44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md`](44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md) — gel de l'étude comparative bornée, exécutable et en lecture seule : fenêtre factuelle semi-ouverte de la qualification de console à la clôture de U-01, corpus admissible et pare-feu de sources, inventaire exhaustif de 27 candidats dont 15 épisodes admis et 12 rejetés ou fusionnés avec leur motif, unité atomique de travail manuel, frontière stricte d'attribution A / B et interdiction de double comptage, pare-feu de taille d'invite, inconnu n'est pas zéro, vocabulaires de preuve, de conséquence et de suffisance, porte de cas d'outillage en six critères, comparaison lexicographique sans score synthétique, quatre issues admises, Mission Object et enveloppe gelés pour un AGENT CCR LAB #25 frais, contrat de retour de 255 champs. L'étude est exécutable ; sa conclusion n'est pas écrite.
+- [`45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md`](45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md) — correction avant première dépêche : l'autorité 44 laissait des comptes historiques alimenter le départage sans vérifier que la responsabilité manuelle existe encore à la coupe, si bien qu'une friction close comme U-01 aurait pu peser sur la famille R&D choisie. Statut de surface courante obligatoire par unité, règle de preuve positive, éligibilité de besoin courant par épisode, synthèses historique et restante tenues séparées, comparaison de départage sur le travail encore manuel seulement. La vérification structurelle exigée avant toute édition a établi un second défaut, de mon fait : la grammaire Result Instance v0 n'admet pas de membre de SET structuré, ce que l'autorité 44 supposait. Encodage de registre corrigé et mesuré contre le validateur publié, sans étendre aucune grammaire. Nommer une structure ne la rend pas représentable.
 
 ## Outillage
 
@@ -423,11 +424,14 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : EXECUTE FROZEN STUDY WITH FRESH AGENT #25
+= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT #25
 
 BOUNDED COMPARATIVE STUDY
-= FROZEN / NOT YET EXECUTED
+= authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
   44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md
+= authority 45 : CURRENT-SURFACE PERSISTENCE CORRECTION
+  45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md
+= corrected study : FROZEN / NOT YET EXECUTED
 = factual window : post-Authority-33 capability baseline
   through Authority-42 closure, half-open (baseline, cut]
 = factual baseline : 70ca6d43aca5f07aafdc9e1b112d5991f2bf974a
@@ -457,7 +461,30 @@ BOUNDED COMPARATIVE STUDY
 = envelope : missions/002-remaining-manual-orchestration-work/envelope.md
 = mission object validation : ok, 0 errors
 = render coverage : complete, 391 / 391
-= return contract : 255 fields, frozen
+= episode inventory : RETAINED
+= historical occurrences : RETAINED
+= historical counts : RETAINED, never overwritten
+= current-need filter : FROZEN
+= CURRENT_SURFACE_STATUS : required per atomic unit
+  STILL_MANUAL / ABSORBED_BY_CURRENT_SURFACE / NOT_ESTABLISHED
+= absorbed : NOT the same as never occurred
+= still-manual : requires positive cut-time evidence, never silence
+= unknown current status : neither absorbed nor still manual
+= current-need eligibility : required per episode
+= winner comparison : STILL-MANUAL WORK ONLY
+= historical counts in winner ordering : FORBIDDEN
+= cut-relative surface sufficiency : FROZEN
+= current tooling-case gate : CT1..CT6
+= U-01 out-of-interface manual request : historical WORKAROUND,
+  ABSORBED_BY_CURRENT_SURFACE at the cut, 0 remaining winner contribution
+= atomic-unit ledger encoding : per-episode id roster +
+  one executor-defined reported entry per unit property
+= structural capacity : verified against the published validator, PASS
+= mission-object / result-instance grammar : NOT EXTENDED
+= old mission bytes : SUPERSEDED BEFORE DISPATCH
+  mission.json 4b72a9d8… · envelope.md 17539114…
+= return contract : 255 -> 396 fields
+  255 retained · 141 added · 0 removed · 0 renamed
 = future executor : AGENT CCR LAB #25, fresh, read-only except result.json
 = executor commits / pushes : 0 / 0
 = result.json : DOES NOT EXIST YET
@@ -467,7 +494,7 @@ BOUNDED COMPARATIVE STUDY
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : EXECUTE FROZEN STUDY WITH FRESH AGENT #25
+= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT #25
 
 CURRENT LAB STREAM
 = NONE

@@ -1041,7 +1041,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter l'étude comparative gelée du travail manuel d'orchestration restant avec un AGENT CCR LAB #25 frais. Dépêcher exactement le Mission Object et l'enveloppe gelés de missions/002-remaining-manual-orchestration-work/. N'employer que le corpus factuel et le pare-feu de sources de l'autorité 44 : ligne de base 70ca6d43aca5f07aafdc9e1b112d5991f2bf974a, coupe 168e7d811d05ae663923c50c6704f7db6eaac5b1, fenêtre semi-ouverte. Évaluer les quinze épisodes admis, sans échantillonnage, sans re-découpage et sans extension de l'inventaire. Produire exactement le contrat de retour gelé de 255 champs dans missions/002-remaining-manual-orchestration-work/result.json. Ne pas reconstruire les faits depuis la conversation. Ne pas créer d'expérience d'outillage. Ne pas concevoir d'outillage ni de représentation. Ne pas sélectionner de direction produit ni de conséquence CCR System. Ne pas commiter, ne pas pousser. S'arrêter avec exactement un result.json non suivi et le retourner pour persistance des octets exacts, puis qualification indépendante ultérieure.",
+    "value": "Exécuter l'étude comparative corrigée du travail manuel d'orchestration restant avec un AGENT CCR LAB #25 frais. Employer le Mission Object et l'enveloppe canoniques corrigés, gelés par l'autorité 45 dans missions/002-remaining-manual-orchestration-work/ ; la version de l'autorité 44 est historique et supersédée avant dépêche. Évaluer chacun des quinze épisodes historiques admis par l'autorité 44, sans échantillonnage, sans re-découpage et sans extension de l'inventaire. Préserver chaque occurrence historique et chaque compte historique. Pour chaque unité atomique A / B, évaluer en outre CURRENT_SURFACE_STATUS à la coupe factuelle 168e7d811d05ae663923c50c6704f7db6eaac5b1. Ne compter que le travail STILL_MANUAL dans la comparaison de départage ; conserver le travail absorbé dans les synthèses historiques et l'exclure des comptes de départage. Ne jamais inférer STILL_MANUAL du silence, ne jamais traiter une inconnue comme absorbée ni comme encore manuelle : une incertitude matérielle de statut courant reste une incertitude, jamais un zéro. Employer exactement le contrat de retour corrigé de 396 champs, le registre d'unités atomiques étant porté par un roster par épisode et une entrée rapportée définie par l'exécutant pour chaque propriété d'unité. Ne pas reconstruire les faits depuis la conversation. Ne pas concevoir d'outillage. Ne pas créer d'expérience ni de représentation. Ne créer que missions/002-remaining-manual-orchestration-work/result.json. Commits 0, pushs 0. S'arrêter avec exactement ce seul fichier de retour non suivi.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1058,17 +1058,17 @@
         }
       },
       {
-        "id": "ev-109",
+        "id": "ev-110",
         "kind": "repo-path",
-        "ref": "44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md",
+        "ref": "45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter l'étude comparative gelée du travail manuel d'orchestration restant avec un AGENT CCR LAB #25 frais. Dépêcher exactement le Mission Object et l'enveloppe gelés de missions/002-remaining-manual-orchestration-work/. N'employer que le corpus factuel et le pare-feu de sources de l'autorité 44 : ligne de base 70ca6d43aca5f07aafdc9e1b112d5991f2bf974a, coupe 168e7d811d05ae663923c50c6704f7db6eaac5b1, fenêtre semi-ouverte. Évaluer les quinze épisodes admis, sans échantillonnage, sans re-découpage et sans extension de l'inventaire. Produire exactement le contrat de retour gelé de 255 champs dans missions/002-remaining-manual-orchestration-work/result.json. Ne pas reconstruire les faits depuis la conversation. Ne pas créer d'expérience d'outillage. Ne pas concevoir d'outillage ni de représentation. Ne pas sélectionner de direction produit ni de conséquence CCR System. Ne pas commiter, ne pas pousser. S'arrêter avec exactement un result.json non suivi et le retourner pour persistance des octets exacts, puis qualification indépendante ultérieure."
+          "value": "Exécuter l'étude comparative corrigée du travail manuel d'orchestration restant avec un AGENT CCR LAB #25 frais. Employer le Mission Object et l'enveloppe canoniques corrigés, gelés par l'autorité 45 dans missions/002-remaining-manual-orchestration-work/ ; la version de l'autorité 44 est historique et supersédée avant dépêche. Évaluer chacun des quinze épisodes historiques admis par l'autorité 44, sans échantillonnage, sans re-découpage et sans extension de l'inventaire. Préserver chaque occurrence historique et chaque compte historique. Pour chaque unité atomique A / B, évaluer en outre CURRENT_SURFACE_STATUS à la coupe factuelle 168e7d811d05ae663923c50c6704f7db6eaac5b1. Ne compter que le travail STILL_MANUAL dans la comparaison de départage ; conserver le travail absorbé dans les synthèses historiques et l'exclure des comptes de départage. Ne jamais inférer STILL_MANUAL du silence, ne jamais traiter une inconnue comme absorbée ni comme encore manuelle : une incertitude matérielle de statut courant reste une incertitude, jamais un zéro. Employer exactement le contrat de retour corrigé de 396 champs, le registre d'unités atomiques étant porté par un roster par épisode et une entrée rapportée définie par l'exécutant pour chaque propriété d'unité. Ne pas reconstruire les faits depuis la conversation. Ne pas concevoir d'outillage. Ne pas créer d'expérience ni de représentation. Ne créer que missions/002-remaining-manual-orchestration-work/result.json. Commits 0, pushs 0. S'arrêter avec exactement ce seul fichier de retour non suivi."
         },
         "observed": {
-          "blob": "950a42805afcd4011e3a042152057f07ff1d82dc"
+          "blob": "ce744f972223ba273abae5226d4b63eb6778360d"
         }
       }
     ]
