@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-14T02:36:30Z"
+    "updated_at": "2026-09-14T02:59:32Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -978,7 +978,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Implémenter la remédiation bornée de découvrabilité U-01 exactement contre l'autorité 40. Ne changer que les chemins gelés : tooling/console/repo.mjs, uniquement la constante CANDIDATE_ROOTS, et tooling/console/tests/console.test.mjs, uniquement par ajout de cas. Rendre le Mission Object authentique de missions/ découvrable par la sélection normale de mission du panneau B, dont hérite le contexte de mission du panneau C, et la Result Instance authentique de missions/ découvrable par la sélection normale de résultat du panneau C. Préserver tous les invariants gelés de l'autorité 32 : confinement au dépôt et aux liens symboliques, absence de lecteur de fichiers générique, autorité d'exécution en lecture seule, politiques Host / Origin / Sec-Fetch-Site, validations Mission Object et Result Instance, liaison de snapshot et de version de mission, associations de source et de contrat de retour, autorité de lecture de preuve, exactement trois panneaux produit, et absence de vérification de PROGRAM-STATE par la console. Conserver toute la couverture de candidats historique. Ne pas modifier les fixtures historiques de mission et de résultat. Ne pas modifier .gitattributes. Ne pas remédier le bandeau de contexte ni la présentation des divergences de preuve. Exécuter la suite d'acceptation de l'autorité 40. S'arrêter après l'implémentation et sa vérification ; ne pas requalifier l'utilité de la console et ne sélectionner aucune autre réponse produit.",
+    "value": "Implémenter la remédiation bornée de découvrabilité U-01 contre les parties valides de l'autorité 40 telles que corrigées par l'autorité 41. Découverte de mission : ajouter la couverture bornée de missions/ et conserver l'éligibilité au seul basename mission.json. Découverte de résultat : conserver toutes les racines et toute l'éligibilité héritées inchangées, ajouter la couverture bornée de missions/, et n'y exposer que le basename result.json. Ne changer que les fichiers source et de test gelés par l'autorité 41 : tooling/console/repo.mjs et tooling/console/tests/console.test.mjs. Exiger que tout .json sans rapport sous missions/** reste exclu. Conserver tous les candidats historiques. Préserver tous les invariants de sécurité, de validation et d'association de l'autorité 32, ainsi que la forme de charge utile de la route. Ne pas modifier les artefacts de mission historiques. Ne pas modifier .gitattributes. Ne remédier aucune autre observation. Exécuter la suite d'acceptation corrigée de l'autorité 41. S'arrêter après la vérification de l'implémentation, avant toute qualification ultérieure et avant toute autre sélection de réponse produit.",
     "evidence": [
       {
         "id": "ev-065",
@@ -995,17 +995,17 @@
         }
       },
       {
-        "id": "ev-102",
+        "id": "ev-103",
         "kind": "repo-path",
-        "ref": "40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md",
+        "ref": "41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Implémenter la remédiation bornée de découvrabilité U-01 exactement contre l'autorité 40. Ne changer que les chemins gelés : tooling/console/repo.mjs, uniquement la constante CANDIDATE_ROOTS, et tooling/console/tests/console.test.mjs, uniquement par ajout de cas. Rendre le Mission Object authentique de missions/ découvrable par la sélection normale de mission du panneau B, dont hérite le contexte de mission du panneau C, et la Result Instance authentique de missions/ découvrable par la sélection normale de résultat du panneau C. Préserver tous les invariants gelés de l'autorité 32 : confinement au dépôt et aux liens symboliques, absence de lecteur de fichiers générique, autorité d'exécution en lecture seule, politiques Host / Origin / Sec-Fetch-Site, validations Mission Object et Result Instance, liaison de snapshot et de version de mission, associations de source et de contrat de retour, autorité de lecture de preuve, exactement trois panneaux produit, et absence de vérification de PROGRAM-STATE par la console. Conserver toute la couverture de candidats historique. Ne pas modifier les fixtures historiques de mission et de résultat. Ne pas modifier .gitattributes. Ne pas remédier le bandeau de contexte ni la présentation des divergences de preuve. Exécuter la suite d'acceptation de l'autorité 40. S'arrêter après l'implémentation et sa vérification ; ne pas requalifier l'utilité de la console et ne sélectionner aucune autre réponse produit."
+          "value": "Implémenter la remédiation bornée de découvrabilité U-01 contre les parties valides de l'autorité 40 telles que corrigées par l'autorité 41. Découverte de mission : ajouter la couverture bornée de missions/ et conserver l'éligibilité au seul basename mission.json. Découverte de résultat : conserver toutes les racines et toute l'éligibilité héritées inchangées, ajouter la couverture bornée de missions/, et n'y exposer que le basename result.json. Ne changer que les fichiers source et de test gelés par l'autorité 41 : tooling/console/repo.mjs et tooling/console/tests/console.test.mjs. Exiger que tout .json sans rapport sous missions/** reste exclu. Conserver tous les candidats historiques. Préserver tous les invariants de sécurité, de validation et d'association de l'autorité 32, ainsi que la forme de charge utile de la route. Ne pas modifier les artefacts de mission historiques. Ne pas modifier .gitattributes. Ne remédier aucune autre observation. Exécuter la suite d'acceptation corrigée de l'autorité 41. S'arrêter après la vérification de l'implémentation, avant toute qualification ultérieure et avant toute autre sélection de réponse produit."
         },
         "observed": {
-          "blob": "6f161cbb8d852f52afe15848c1b88664cfb207e5"
+          "blob": "86a6f1fc565ef0c5b3a4d8b6a772e6610c3590db"
         }
       }
     ]
