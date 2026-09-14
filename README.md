@@ -162,6 +162,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md`](37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md) — réparation déterministe d'ordonnancement : l'observation du panneau C ne devient durable qu'après la matérialisation durable du résultat qu'elle a observé ; producteur sémantique et enregistreur Git distingués sur le précédent de persistance de TE003, porte de persistance, invariant d'octets exacts, séquençage des commits futurs et reprise après interruption. Persister le retour réel n'est pas le qualifier.
 - [`38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md`](38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md) — deux qualifications tenues séparées : l'étude historique primaire PASS WITH LIMITATIONS, avec 76 champs soutenus, 4 soutenus avec limitation évidentielle, aucun contredit, 15 jointures reproductibles sans invention sémantique et aucun écart concret de représentation démontré ; et l'usage réel de la console MIXED UTILITY, avec U-01 découvrabilité par énumération comme seul finding qualifié, classé limitation conforme. Observation n'est pas finding, et finding n'est pas remédiation.
 - [`39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md`](39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md) — disposition humaine de U-01 : remédiation bornée de découvrabilité, classée intégration produit ordinaire, pour que les artefacts authentiques de mission et de résultat entrent dans le flux normal de sélection des panneaux B et C. Objectif borné et exclusions gelés ; aucune conception technique, aucune racine de candidats choisie, aucune implémentation autorisée, autorité 32 non rouverte, risque de fin de ligne tenu séparé.
+- [`40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md`](40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md) — conception bornée et déterministe de la remédiation : chaîne de découverte reconstruite depuis le code publié, cause racine gelée — couverture de racines uniquement, le filtre existant classant déjà correctement les quatre fichiers de la mission — conception minimale retenue, sémantique de candidats après remédiation, invariants de l'autorité 32 préservés, surface d'implémentation exacte, critères d'acceptation positifs et négatifs, plan de test, pare-feu de fin de ligne et pare-feu des autres observations.
 
 ## Outillage
 
@@ -359,13 +360,21 @@ U-01 HUMAN PRODUCT RESPONSE
 = response class : ORDINARY PRODUCT INTEGRATION
 = objective : genuine mission / result artifacts reachable through the normal
   panel-B / panel-C candidate-selection workflow
-= technical design : NOT YET FROZEN
-= implementation : NOT STARTED
-= candidate roots : NOT CHOSEN
+= technical design : FROZEN
+  40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md
+= root cause : CANDIDATE-ROOT COVERAGE ONLY
+= implementation surface : tooling/console/repo.mjs CANDIDATE_ROOTS
+  + added cases in tooling/console/tests/console.test.mjs
+= route contract changes : 0
+= new candidate-type semantics : 0
+= generic repository discovery : NO
 = authority 32 : NOT REOPENED
-= EOL risk under missions/** : SEPARATE, response NOT SELECTED
+= implementation : AUTHORIZED / NOT STARTED
+= new representation : NO
+= TE004 : NO
+= EOL response : SEPARATE / NOT SELECTED
 = finding fixed : NO
-= next : design and freeze the bounded U-01 discovery remediation
+= next : implement the authority-40 bounded discovery remediation
 
 CURRENT LAB STREAM
 = NONE

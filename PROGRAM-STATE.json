@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-14T02:14:39Z"
+    "updated_at": "2026-09-14T02:36:30Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -978,7 +978,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Concevoir et geler la plus petite remédiation bornée de U-01. Partir de l'implémentation publiée de LOCAL MISSION CONSOLE V0 et des contrats de l'autorité 32. Déterminer exactement pourquoi l'aire d'artefacts de mission authentique établie se trouve hors de l'énumération de candidats courante, et identifier le changement de découverte minimal nécessaire pour la découvrabilité de la mission authentique au panneau B, qui fournit le contexte de mission du panneau C, et du résultat authentique à la sélection de résultat du panneau C. Préserver le confinement au dépôt, le confinement des liens symboliques, l'absence de lecteur de fichiers générique, l'autorité d'exécution en lecture seule, les politiques Host / Origin / Sec-Fetch-Site existantes, la validation Mission Object, la validation Result Instance, la liaison de snapshot et de version de mission, les associations de source et de contrat de retour, l'autorité de lecture de preuve, exactement trois panneaux produit, et l'absence de vérification de PROGRAM-STATE par la console. Ne pas implémenter. Ne pas élargir en découverte générique du dépôt, sauf preuve concrète que la réponse bornée est autrement inatteignable. Ne pas inclure le risque de fin de ligne sous missions/** dans cette conception. S'arrêter après le gel de la conception technique et des critères d'acceptation, avant toute modification de code.",
+    "value": "Implémenter la remédiation bornée de découvrabilité U-01 exactement contre l'autorité 40. Ne changer que les chemins gelés : tooling/console/repo.mjs, uniquement la constante CANDIDATE_ROOTS, et tooling/console/tests/console.test.mjs, uniquement par ajout de cas. Rendre le Mission Object authentique de missions/ découvrable par la sélection normale de mission du panneau B, dont hérite le contexte de mission du panneau C, et la Result Instance authentique de missions/ découvrable par la sélection normale de résultat du panneau C. Préserver tous les invariants gelés de l'autorité 32 : confinement au dépôt et aux liens symboliques, absence de lecteur de fichiers générique, autorité d'exécution en lecture seule, politiques Host / Origin / Sec-Fetch-Site, validations Mission Object et Result Instance, liaison de snapshot et de version de mission, associations de source et de contrat de retour, autorité de lecture de preuve, exactement trois panneaux produit, et absence de vérification de PROGRAM-STATE par la console. Conserver toute la couverture de candidats historique. Ne pas modifier les fixtures historiques de mission et de résultat. Ne pas modifier .gitattributes. Ne pas remédier le bandeau de contexte ni la présentation des divergences de preuve. Exécuter la suite d'acceptation de l'autorité 40. S'arrêter après l'implémentation et sa vérification ; ne pas requalifier l'utilité de la console et ne sélectionner aucune autre réponse produit.",
     "evidence": [
       {
         "id": "ev-065",
@@ -995,17 +995,17 @@
         }
       },
       {
-        "id": "ev-101",
+        "id": "ev-102",
         "kind": "repo-path",
-        "ref": "39-LOCAL-MISSION-CONSOLE-V0-U01-PRODUCT-RESPONSE-SELECTION.md",
+        "ref": "40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Concevoir et geler la plus petite remédiation bornée de U-01. Partir de l'implémentation publiée de LOCAL MISSION CONSOLE V0 et des contrats de l'autorité 32. Déterminer exactement pourquoi l'aire d'artefacts de mission authentique établie se trouve hors de l'énumération de candidats courante, et identifier le changement de découverte minimal nécessaire pour la découvrabilité de la mission authentique au panneau B, qui fournit le contexte de mission du panneau C, et du résultat authentique à la sélection de résultat du panneau C. Préserver le confinement au dépôt, le confinement des liens symboliques, l'absence de lecteur de fichiers générique, l'autorité d'exécution en lecture seule, les politiques Host / Origin / Sec-Fetch-Site existantes, la validation Mission Object, la validation Result Instance, la liaison de snapshot et de version de mission, les associations de source et de contrat de retour, l'autorité de lecture de preuve, exactement trois panneaux produit, et l'absence de vérification de PROGRAM-STATE par la console. Ne pas implémenter. Ne pas élargir en découverte générique du dépôt, sauf preuve concrète que la réponse bornée est autrement inatteignable. Ne pas inclure le risque de fin de ligne sous missions/** dans cette conception. S'arrêter après le gel de la conception technique et des critères d'acceptation, avant toute modification de code."
+          "value": "Implémenter la remédiation bornée de découvrabilité U-01 exactement contre l'autorité 40. Ne changer que les chemins gelés : tooling/console/repo.mjs, uniquement la constante CANDIDATE_ROOTS, et tooling/console/tests/console.test.mjs, uniquement par ajout de cas. Rendre le Mission Object authentique de missions/ découvrable par la sélection normale de mission du panneau B, dont hérite le contexte de mission du panneau C, et la Result Instance authentique de missions/ découvrable par la sélection normale de résultat du panneau C. Préserver tous les invariants gelés de l'autorité 32 : confinement au dépôt et aux liens symboliques, absence de lecteur de fichiers générique, autorité d'exécution en lecture seule, politiques Host / Origin / Sec-Fetch-Site, validations Mission Object et Result Instance, liaison de snapshot et de version de mission, associations de source et de contrat de retour, autorité de lecture de preuve, exactement trois panneaux produit, et absence de vérification de PROGRAM-STATE par la console. Conserver toute la couverture de candidats historique. Ne pas modifier les fixtures historiques de mission et de résultat. Ne pas modifier .gitattributes. Ne pas remédier le bandeau de contexte ni la présentation des divergences de preuve. Exécuter la suite d'acceptation de l'autorité 40. S'arrêter après l'implémentation et sa vérification ; ne pas requalifier l'utilité de la console et ne sélectionner aucune autre réponse produit."
         },
         "observed": {
-          "blob": "1f25eb85170d09853865ef0ee59c2eb7dee345de"
+          "blob": "6f161cbb8d852f52afe15848c1b88664cfb207e5"
         }
       }
     ]
