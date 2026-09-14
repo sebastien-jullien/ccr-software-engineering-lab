@@ -1,7 +1,7 @@
 {
   "checkpoint": {
     "format_version": 1,
-    "updated_at": "2026-09-13T23:53:28Z"
+    "updated_at": "2026-09-14T01:57:17Z"
   },
   "git_context": {
     "repository": "ccr-software-engineering-lab",
@@ -911,11 +911,53 @@
           }
         }
       ]
+    },
+    {
+      "id": "decision-consequence-boundary-primary-study-qualification-ratified",
+      "question": "Ratifier la qualification indépendante de l'étude historique décision → conséquence déterministe → conséquence exécutée comme PASS WITH LIMITATIONS, confirmer les cinq classifications de cas, les 15 jointures reproductibles sans invention sémantique, et conclure dans le périmètre étudié que les surfaces existantes sont suffisantes avec une logique d'orchestration ordinaire, sans écart concret de représentation démontré ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-097",
+          "kind": "repo-path",
+          "ref": "38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:decision-consequence-boundary-primary-study-qualification-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "ba16dbc7c7aa0e133bc9f442ab1046ca82a1ce57"
+          }
+        }
+      ]
+    },
+    {
+      "id": "local-mission-console-v0-real-use-utility-qualification-ratified",
+      "question": "Ratifier l'évaluation en usage réel de LOCAL MISSION CONSOLE V0 comme MIXED UTILITY, avec U-01 enumeration / discoverability comme seul finding qualifié, aucun défaut de conformité démontré par l'usage réel, et les autres comportements conservés comme observations non promues ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-098",
+          "kind": "repo-path",
+          "ref": "38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:local-mission-console-v0-real-use-utility-qualification-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "ba16dbc7c7aa0e133bc9f442ab1046ca82a1ce57"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter la mission authentique gelée sous les autorités 35, 36 et 37. Employer le panneau A, écrire son observation et la matérialiser durablement. Employer le panneau B, écrire son observation et la matérialiser durablement. Transmettre à un exécutant frais l'enveloppe de mission rendue par la console. L'exécutant ne produit que le result.json réservé et n'effectue ni commit ni push. L'orchestrateur matérialise ensuite durablement les octets exacts et non modifiés de ce result.json comme retour réel de l'exécutant, sans les qualifier et sans changer l'attribution du producteur sémantique. Seulement après cette matérialisation durable du résultat, employer le panneau C contre le résultat exactement committé, écrire son observation et la matérialiser durablement. S'arrêter avant la qualification de l'étude primaire, avant la qualification d'utilité de la console, avant toute conception de nouvelle représentation, avant TOOLING-EXPERIMENT-004 et avant toute conséquence CCR System.",
+    "value": "Obtenir une décision produit humaine en réponse au seul finding d'usage réel qualifié de LOCAL MISSION CONSOLE V0, U-01 : les artefacts authentiques de mission et de résultat situés hors des racines de candidats gelées ne sont pas découvrables par le flux de sélection normal des panneaux B et C, et une requête manuelle de même origine vers le serveur de la console a été nécessaire pendant un usage authentique. Ne pas inférer de remédiation automatiquement. Ne pas modifier automatiquement les racines de candidats. Ne pas rouvrir automatiquement l'autorité 32. Conserver la péremption du bandeau de contexte et la présentation des divergences de preuve comme observations durables, non comme findings. Conserver le risque de fin de ligne sous missions/** comme observation de durabilité établie et distincte ; ne pas la combiner automatiquement avec U-01 ni la réparer. Ne pas créer TOOLING-EXPERIMENT-004. S'arrêter à la porte de sélection de réponse humaine.",
     "evidence": [
       {
         "id": "ev-065",
@@ -932,17 +974,17 @@
         }
       },
       {
-        "id": "ev-096",
+        "id": "ev-099",
         "kind": "repo-path",
-        "ref": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md",
+        "ref": "38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter la mission authentique gelée sous les autorités 35, 36 et 37. Employer le panneau A, écrire son observation et la matérialiser durablement. Employer le panneau B, écrire son observation et la matérialiser durablement. Transmettre à un exécutant frais l'enveloppe de mission rendue par la console. L'exécutant ne produit que le result.json réservé et n'effectue ni commit ni push. L'orchestrateur matérialise ensuite durablement les octets exacts et non modifiés de ce result.json comme retour réel de l'exécutant, sans les qualifier et sans changer l'attribution du producteur sémantique. Seulement après cette matérialisation durable du résultat, employer le panneau C contre le résultat exactement committé, écrire son observation et la matérialiser durablement. S'arrêter avant la qualification de l'étude primaire, avant la qualification d'utilité de la console, avant toute conception de nouvelle représentation, avant TOOLING-EXPERIMENT-004 et avant toute conséquence CCR System."
+          "value": "Obtenir une décision produit humaine en réponse au seul finding d'usage réel qualifié de LOCAL MISSION CONSOLE V0, U-01 : les artefacts authentiques de mission et de résultat situés hors des racines de candidats gelées ne sont pas découvrables par le flux de sélection normal des panneaux B et C, et une requête manuelle de même origine vers le serveur de la console a été nécessaire pendant un usage authentique. Ne pas inférer de remédiation automatiquement. Ne pas modifier automatiquement les racines de candidats. Ne pas rouvrir automatiquement l'autorité 32. Conserver la péremption du bandeau de contexte et la présentation des divergences de preuve comme observations durables, non comme findings. Conserver le risque de fin de ligne sous missions/** comme observation de durabilité établie et distincte ; ne pas la combiner automatiquement avec U-01 ni la réparer. Ne pas créer TOOLING-EXPERIMENT-004. S'arrêter à la porte de sélection de réponse humaine."
         },
         "observed": {
-          "blob": "0fff611a59dabef0ad1b067344287d48b740f74a"
+          "blob": "ba16dbc7c7aa0e133bc9f442ab1046ca82a1ce57"
         }
       }
     ]

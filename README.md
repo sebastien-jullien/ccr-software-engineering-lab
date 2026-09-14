@@ -160,6 +160,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md`](35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md) — gel de la mission exécutable bornée : coupe du corpus historique, inventaire A–E exhaustif, cinq cas authentiques sélectionnés et leurs lignées factuelles, question de l'étude, vocabulaire de classification, porte d'écart concret en cinq parties, contrat de retour factuel, critères de succès, frontière de lecture / écriture de l'exécution, artefacts de mission gelés, et protocole d'observation de la console en usage réel ; l'étude est exécutable, sa conclusion n'est pas écrite.
 - [`36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md`](36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md) — réparation déterministe du protocole secondaire : destination durable des observations d'usage réel de la console, produites par l'humain ou l'orchestrateur et tenues séparées du retour de l'exécutant ; inventaire des surfaces existantes, artefact local à la mission retenu, champs exacts, cycle de vie par étape et sémantique de durabilité. Un record d'observation n'est pas une qualification d'utilité.
 - [`37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md`](37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md) — réparation déterministe d'ordonnancement : l'observation du panneau C ne devient durable qu'après la matérialisation durable du résultat qu'elle a observé ; producteur sémantique et enregistreur Git distingués sur le précédent de persistance de TE003, porte de persistance, invariant d'octets exacts, séquençage des commits futurs et reprise après interruption. Persister le retour réel n'est pas le qualifier.
+- [`38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md`](38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md) — deux qualifications tenues séparées : l'étude historique primaire PASS WITH LIMITATIONS, avec 76 champs soutenus, 4 soutenus avec limitation évidentielle, aucun contredit, 15 jointures reproductibles sans invention sémantique et aucun écart concret de représentation démontré ; et l'usage réel de la console MIXED UTILITY, avec U-01 découvrabilité par énumération comme seul finding qualifié, classé limitation conforme. Observation n'est pas finding, et finding n'est pas remédiation.
 
 ## Outillage
 
@@ -324,24 +325,35 @@ CURRENT PROGRAM DIRECTION
   category B without authentic example
 = mission object : CREATED / VALIDATED / RENDERED
   missions/001-decision-consequence-boundary
-= mission execution : NOT STARTED
-= result instance : NOT YET PRODUCED
-= console observation surface : FROZEN / UNCHANGED
+= mission execution : EXECUTED / INDEPENDENTLY QUALIFIED
+= result instance : PRODUCED / PERSISTED EXACT-BYTE
+= console observation surface : FROZEN
   36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md
-  missions/001-decision-consequence-boundary/console-real-use-observations.md
-= result / panel-C durability ordering : REPAIRED / FROZEN
+= result / panel-C durability ordering : FROZEN
   37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md
-= semantic result producer : FUTURE EXECUTOR
-= future result Git recorder : ORCHESTRATION
-= panel A / B / C observations : NOT YET OBSERVED
-= execution readiness : PASS
-= console real-use utility : NOT YET EVALUATED
-= study conclusion : NOT YET KNOWN
-= concrete representation gap : NOT YET ESTABLISHED
-= implementation of a new representation : NOT AUTHORIZED
-= TE004 : NOT SELECTED
-= CCR System frontier : NOT SELECTED
-= next : execute under authorities 35 + 36 + 37
+= panel A / B / C observations : OBSERVED / DURABLE
+
+PRIMARY STUDY QUALIFICATION
+= PASS WITH LIMITATIONS
+  38-DECISION-CONSEQUENCE-BOUNDARY-PRIMARY-STUDY-AND-CONSOLE-REAL-USE-QUALIFICATION.md
+= independent overall classification :
+  EXISTING_SURFACES_SUFFICIENT_WITH_ORDINARY_ORCHESTRATION_LOGIC
+= concrete representation gap : NOT DEMONSTRATED
+= bounded to the frozen historical study
+
+LOCAL MISSION CONSOLE V0 REAL-USE UTILITY
+= MIXED UTILITY
+= qualified real-use findings : 1
+= U-01 enumeration / discoverability : CONFORMANT LIMITATION
+= conformance defects discovered by real use : 0
+= context-banner staleness : OBSERVATION ONLY
+= evidence-mismatch presentation : OBSERVATION ONLY
+= missions/** EOL : FUTURE CHECKOUT / REPLAY RISK ESTABLISHED,
+  CURRENT RUN FAILURE NO
+= new representation : NOT JUSTIFIED
+= TE004 : NOT JUSTIFIED
+= remediation : NOT SELECTED
+= next : human product-response decision for U-01
 
 CURRENT LAB STREAM
 = NONE
