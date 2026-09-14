@@ -171,6 +171,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md`](46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec registre de 31 unités reconstruit, DIM_1 reconstruit indépendamment à HANDOFF_ROUTING 3 contre CONTEXT_PACKAGE 2, absorption U-01 confirmée à contribution nulle, 0 erreur analytique matérielle, 5 erreurs non matérielles issues d'un unique défaut racine d'attribution des corrections de conception entre les familles, 0 ambiguïté de contrat, 2 défauts non matériels d'artefact gouvernant et 3 limitations réelles ; puis la sélection humaine de HANDOFF_ROUTING comme prochaine direction. Les deux familles restent SUFFICIENT_WITH_ORDINARY_ORCHESTRATION : une direction recommandée n'est pas un moteur de routage, et une recommandation qualifiée n'est pas une autorisation de construire.
 - [`47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md`](47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md) — gel de la question R&D bornée : les responsabilités de handoff / routage qui ont causé les conséquences matérielles d'EP-02, EP-03 et EP-04 peuvent-elles être dérivées et propagées déterministement depuis les surfaces durables existantes, par orchestration ordinaire, sans primitive sémantique nouvelle ? Noyau matériel de trois épisodes, contexte de récurrence des 20 unités A encore manuelles nommées une à une, inventaire fini de 8 types de responsabilité ancrés dans ces unités, pare-feu routage / paquet de contexte, modèle de chaîne causale en dix étapes, classification humain / déterministe en quatre termes, règle des surfaces existantes d'abord, porte d'écart G1..G6, test contrefactuel de suppression, autorité humaine résiduelle, quatre issues analytiques. Les défauts G1 et G2 relevés sur l'autorité 44 ne sont pas reproduits : couverture terminale complète et référence PROGRAM-STATE vivante. Un travail manuel n'est pas un écart, et une direction recommandée n'est pas une réponse technique.
 - [`48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md`](48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md) — deux couches tenues distinctes : la décision humaine d'ajouter une cinquième issue analytique, et la correction déterministe du contrat qui la rend exécutable. L'énumération mécanique de l'espace d'états avait laissé 6 272 états admissibles sans issue, dont 98 entièrement concrets, tous porteurs d'un cas où la sémantique de routage requise est positivement absente sans qu'une sélection humaine substantielle soit causalement requise — un état que ni l'intégration bornée, ni la suffisance procédurale, ni la domination humaine, ni l'insuffisance de preuve ne pouvaient porter honnêtement. CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE le représente séparément, variables S/P/B/H par cas, règles de cohérence C1..C4, partition ordonnée en règles 0 à 5, G4A/G4B, et réénumération complète : zéro état sans issue, zéro état à issues multiples. Sémantique manquante n'est pas intégration manquante, et le mot CANDIDATE est porteur.
+- [`49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md`](49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec EP-02, EP-03 et EP-04 reconstruits indépendamment à S = YES, P = PARTIAL, B = YES, H = NO, règle décisive RULE_4, récurrence R1..R8 confirmée sans divergence, 0 erreur analytique matérielle, 2 erreurs non matérielles et 6 limitations réelles ; puis la réponse humaine, une étude de conception d'intégration bornée sur la sémantique existante. Les deux points portants sont résolus : déterministiquement dérivable n'est pas pleinement réalisable par les surfaces courantes, et une porte d'écart sémantique non satisfaite ne contredit pas une intégration bornée manquante. Investiguer une conception n'est pas l'implémenter.
 
 ## Outillage
 
@@ -427,7 +428,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #28
+= next : FREEZE THE BOUNDED INTEGRATION DESIGN-STUDY CONTRACT
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -605,22 +606,46 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
   missions/003-handoff-routing-boundary/result.json
 = persisted bytes : exactly as returned, no semantic edit
 = executor-reported outcome : BOUNDED_INTEGRATION_OPPORTUNITY
-= independent analytical qualification : PENDING
-= load-bearing questions left to the qualifier :
-  P versus G4 / G4A · B versus G5 / G6 · counterfactual removal ·
-  exact evidence mapping for S = YES and H = NO · R1..R8 recurrence counts
+= independent analytical qualification : PASS WITH LIMITATIONS
+  49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md
+= qualifier : CCR LAB FIX #1
+= executor outcome disposition : CONFIRMED_WITH_LIMITATIONS
+= qualified final outcome : BOUNDED_INTEGRATION_OPPORTUNITY
+= independent decisive partition rule : RULE_4
+= EP-02 / EP-03 / EP-04 independently reconstructed :
+  S YES · P PARTIAL · B YES · H NO ·
+  counterfactual removal YES · residual human authority NONE
+= consistency rule violations : 0 · material NOT_ESTABLISHED variables : 0
+= P versus G4 / G4A : RESOLVED — deterministically derivable is NOT
+  fully realizable through current baseline surfaces
+= B versus G5 / G6 : RESOLVED — a semantic-gap gate concerns absent semantics,
+  B concerns missing bounded integration over semantics already present
+= recurrence confirmed : R1 9/9 · R2 8/8 · R3 2/2 · R4 6/6 ·
+  R5 10/10 · R6 2/2 · R7 9/9 · R8 10/10 · discrepancies 0
+= material analytical errors : 0
+= non-material analytical errors : 2
+= qualification limitations : 6, REAL, changing neither the qualified outcome
+  nor requiring result correction or re-run
+= bundled persistence of the three authorized paths : CONFORMANT
+= persisted result.json : UNCHANGED, no semantic edit
+= human selected response : BOUNDED INTEGRATION DESIGN STUDY OVER EXISTING
+  ROUTING SEMANTICS
+= exact technical design : NOT YET SELECTED
+= new semantic primitive : NOT SELECTED
+= wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
+  not yet a qualified finding, no product consequence selected
 = routing engine : NOT SELECTED
 = new API : NOT SELECTED
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #28
+= next : FREEZE THE BOUNDED INTEGRATION DESIGN-STUDY CONTRACT
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #28
+= next : FREEZE THE BOUNDED INTEGRATION DESIGN-STUDY CONTRACT
 
 CURRENT LAB STREAM
 = NONE

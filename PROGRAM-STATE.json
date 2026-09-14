@@ -1100,11 +1100,53 @@
           }
         }
       ]
+    },
+    {
+      "id": "handoff-routing-authority48-independent-qualification-ratified",
+      "question": "Ratifier la qualification analytique indépendante de CCR LAB FIX #1 sur le résultat persisté de l'étude HANDOFF_ROUTING de l'autorité 48, comme PASS WITH LIMITATIONS, avec disposition de l'issue de l'exécutant CONFIRMED_WITH_LIMITATIONS, issue finale qualifiée BOUNDED_INTEGRATION_OPPORTUNITY atteinte par la règle de partition décisive RULE_4, EP-02, EP-03 et EP-04 indépendamment reconstruits à S = YES, P = PARTIAL, B = YES, H = NO, suppression contrefactuelle YES et autorité humaine résiduelle NONE, 0 violation de règle de cohérence, 0 variable NOT_ESTABLISHED matérielle, récurrence R1 à R8 confirmée sans divergence, 0 erreur analytique matérielle, 2 erreurs analytiques non matérielles et 6 limitations de qualification réelles qui ne changent pas l'issue, n'exigent ni correction du résultat ni réexécution, la persistance groupée des trois chemins autorisés étant conforme ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-120",
+          "kind": "repo-path",
+          "ref": "49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-authority48-independent-qualification-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "bf767588dc5931b69f53e61475d3f426e28b7f46"
+          }
+        }
+      ]
+    },
+    {
+      "id": "handoff-routing-bounded-integration-design-study-selected",
+      "question": "Sélectionner, en réponse humaine au constat analytique qualifié BOUNDED_INTEGRATION_OPPORTUNITY, l'autorisation d'une étude de conception d'intégration bornée sur la sémantique de routage existante, dont l'objet est de déterminer la plus petite intégration conforme capable de joindre et de propager la sémantique HANDOFF_ROUTING déjà durable et de supprimer la charge matérielle qualifiée d'EP-02, EP-03 et EP-04, sans autoriser d'implémentation, sans sélectionner de moteur de routage, de nouvelle représentation, de nouvelle primitive sémantique, de TOOLING-EXPERIMENT-004, de nouvelle expérience ni de conception technique exacte, l'étude étant autorisée à investiguer une conception et non à l'implémenter ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-121",
+          "kind": "repo-path",
+          "ref": "49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-bounded-integration-design-study-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "bf767588dc5931b69f53e61475d3f426e28b7f46"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Qualifier indépendamment, avec un AGENT CCR LAB #28 frais, le résultat persisté de l'étude HANDOFF_ROUTING gelée par l'autorité 48. Cible de qualification : missions/003-handoff-routing-boundary/result.json, sha256 67cb8b79853facee46c1011c70e628c5a3ca8e80633771bef2156ae3c010704e, blob 92ff7ad329a329a372755c09bd6b292c810dea34. Base de l'exécutant : dc292430b462da97ff42c9188b2d33a01efbcd3b. Ligne de base des capacités techniques : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Dériver indépendamment, sans se fier à l'exécutant : les classifications d'EP-02, EP-03 et EP-04 ; S, P, B et H ; le test contrefactuel de suppression ; l'autorité humaine résiduelle ; G1 à G6 y compris G4A et G4B ; la règle de partition décisive ; l'issue analytique finale. Auditer explicitement quatre points portants : P contre G4 et G4A, c'est-à-dire déterminer si le résultat démontre réellement une dérivabilité déterministe courante mais une capacité de jointure ou de propagation bornée absente de la ligne de base et nécessaire pour supprimer la conséquence matérielle, ou bien si l'orchestration procédurale courante suffit déjà ; B contre G5 et G6, leurs portées gelées exactes et leur cohérence avec la règle 4 ou leur effet sur la branche analytique ; la suppression contrefactuelle rapportée YES sur les trois épisodes, à reconstruire causalement et non à accepter ; la cartographie exacte de preuve pour S = YES et H = NO par épisode matériel ; ainsi que les comptes de récurrence R1 à R8 et leur pertinence pour la conclusion globale. Classer les erreurs analytiques matérielles, les erreurs analytiques non matérielles et les limitations de qualification. Ne pas éditer result.json. Ne pas sélectionner de réponse produit, de représentation, de moteur de routage, d'API, d'expérience ni de TOOLING-EXPERIMENT-004. Ne pas autoriser d'implémentation. Ne retourner qu'une qualification.",
+    "value": "Geler le contrat de l'étude de conception d'intégration bornée HANDOFF_ROUTING, sur la sémantique de routage existante. L'étude doit répondre à : quelle est la plus petite intégration conforme, sur sémantique existante, capable de joindre et de propager la sémantique HANDOFF_ROUTING déjà durable et de supprimer la charge matérielle qualifiée d'EP-02, EP-03 et EP-04, sans introduire de sémantique de routage nouvelle ? Partir de l'état matériel qualifié par l'autorité 49 : S = YES, P = PARTIAL, B = YES, H = NO sur les trois épisodes, suppression contrefactuelle YES, autorité humaine résiduelle NONE, et récurrence confirmée R1 à R8. Préserver la distinction gelée par l'autorité 48 entre orchestration procédurale courante et intégration bornée absente, et la portée distincte des portes G5 et G6. L'action suivante est un gel de contrat d'étude et de question de conception, non une implémentation. Ne pas assigner de conception technique exacte dans PROGRAM-STATE. Ne pas sélectionner de moteur de routage, de nouvelle représentation, de nouvelle primitive sémantique, d'API, d'expérience ni de TOOLING-EXPERIMENT-004. Ne pas implémenter. Ne pas ouvrir la revue d'incident de cible erronée, qui demeure une observation opérationnelle séparée et différée.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1121,31 +1163,17 @@
         }
       },
       {
-        "id": "ev-118",
+        "id": "ev-122",
         "kind": "repo-path",
-        "ref": "missions/003-handoff-routing-boundary/result.json",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "qualification_target",
-          "value": "missions/003-handoff-routing-boundary/result.json — retour réel de CCR_LAB_FIX_1, sha256 67cb8b79853facee46c1011c70e628c5a3ca8e80633771bef2156ae3c010704e, blob 92ff7ad329a329a372755c09bd6b292c810dea34, 156216 octets, CR 0 / LF 6124 / NUL 0, persisté octet pour octet sans édition sémantique ; issue rapportée par l’exécutant BOUNDED_INTEGRATION_OPPORTUNITY, qualification indépendante PENDING"
-        },
-        "observed": {
-          "blob": "92ff7ad329a329a372755c09bd6b292c810dea34"
-        }
-      },
-      {
-        "id": "ev-119",
-        "kind": "repo-path",
-        "ref": "missions/003-handoff-routing-boundary/result.json",
+        "ref": "49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Qualifier indépendamment, avec un AGENT CCR LAB #28 frais, le résultat persisté de l'étude HANDOFF_ROUTING gelée par l'autorité 48. Cible de qualification : missions/003-handoff-routing-boundary/result.json, sha256 67cb8b79853facee46c1011c70e628c5a3ca8e80633771bef2156ae3c010704e, blob 92ff7ad329a329a372755c09bd6b292c810dea34. Base de l'exécutant : dc292430b462da97ff42c9188b2d33a01efbcd3b. Ligne de base des capacités techniques : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Dériver indépendamment, sans se fier à l'exécutant : les classifications d'EP-02, EP-03 et EP-04 ; S, P, B et H ; le test contrefactuel de suppression ; l'autorité humaine résiduelle ; G1 à G6 y compris G4A et G4B ; la règle de partition décisive ; l'issue analytique finale. Auditer explicitement quatre points portants : P contre G4 et G4A, c'est-à-dire déterminer si le résultat démontre réellement une dérivabilité déterministe courante mais une capacité de jointure ou de propagation bornée absente de la ligne de base et nécessaire pour supprimer la conséquence matérielle, ou bien si l'orchestration procédurale courante suffit déjà ; B contre G5 et G6, leurs portées gelées exactes et leur cohérence avec la règle 4 ou leur effet sur la branche analytique ; la suppression contrefactuelle rapportée YES sur les trois épisodes, à reconstruire causalement et non à accepter ; la cartographie exacte de preuve pour S = YES et H = NO par épisode matériel ; ainsi que les comptes de récurrence R1 à R8 et leur pertinence pour la conclusion globale. Classer les erreurs analytiques matérielles, les erreurs analytiques non matérielles et les limitations de qualification. Ne pas éditer result.json. Ne pas sélectionner de réponse produit, de représentation, de moteur de routage, d'API, d'expérience ni de TOOLING-EXPERIMENT-004. Ne pas autoriser d'implémentation. Ne retourner qu'une qualification."
+          "value": "Geler le contrat de l'étude de conception d'intégration bornée HANDOFF_ROUTING, sur la sémantique de routage existante. L'étude doit répondre à : quelle est la plus petite intégration conforme, sur sémantique existante, capable de joindre et de propager la sémantique HANDOFF_ROUTING déjà durable et de supprimer la charge matérielle qualifiée d'EP-02, EP-03 et EP-04, sans introduire de sémantique de routage nouvelle ? Partir de l'état matériel qualifié par l'autorité 49 : S = YES, P = PARTIAL, B = YES, H = NO sur les trois épisodes, suppression contrefactuelle YES, autorité humaine résiduelle NONE, et récurrence confirmée R1 à R8. Préserver la distinction gelée par l'autorité 48 entre orchestration procédurale courante et intégration bornée absente, et la portée distincte des portes G5 et G6. L'action suivante est un gel de contrat d'étude et de question de conception, non une implémentation. Ne pas assigner de conception technique exacte dans PROGRAM-STATE. Ne pas sélectionner de moteur de routage, de nouvelle représentation, de nouvelle primitive sémantique, d'API, d'expérience ni de TOOLING-EXPERIMENT-004. Ne pas implémenter. Ne pas ouvrir la revue d'incident de cible erronée, qui demeure une observation opérationnelle séparée et différée."
         },
         "observed": {
-          "blob": "92ff7ad329a329a372755c09bd6b292c810dea34"
+          "blob": "bf767588dc5931b69f53e61475d3f426e28b7f46"
         }
       }
     ]
