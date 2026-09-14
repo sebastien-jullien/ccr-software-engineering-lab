@@ -173,6 +173,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md`](48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md) — deux couches tenues distinctes : la décision humaine d'ajouter une cinquième issue analytique, et la correction déterministe du contrat qui la rend exécutable. L'énumération mécanique de l'espace d'états avait laissé 6 272 états admissibles sans issue, dont 98 entièrement concrets, tous porteurs d'un cas où la sémantique de routage requise est positivement absente sans qu'une sélection humaine substantielle soit causalement requise — un état que ni l'intégration bornée, ni la suffisance procédurale, ni la domination humaine, ni l'insuffisance de preuve ne pouvaient porter honnêtement. CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE le représente séparément, variables S/P/B/H par cas, règles de cohérence C1..C4, partition ordonnée en règles 0 à 5, G4A/G4B, et réénumération complète : zéro état sans issue, zéro état à issues multiples. Sémantique manquante n'est pas intégration manquante, et le mot CANDIDATE est porteur.
 - [`49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md`](49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec EP-02, EP-03 et EP-04 reconstruits indépendamment à S = YES, P = PARTIAL, B = YES, H = NO, règle décisive RULE_4, récurrence R1..R8 confirmée sans divergence, 0 erreur analytique matérielle, 2 erreurs non matérielles et 6 limitations réelles ; puis la réponse humaine, une étude de conception d'intégration bornée sur la sémantique existante. Les deux points portants sont résolus : déterministiquement dérivable n'est pas pleinement réalisable par les surfaces courantes, et une porte d'écart sémantique non satisfaite ne contredit pas une intégration bornée manquante. Investiguer une conception n'est pas l'implémenter.
 - [`50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md`](50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md) — gel du contrat analytique, sans la réponse : quelle est la plus petite intégration conforme sur une sémantique HANDOFF_ROUTING déjà durable capable de supprimer la charge matérielle qualifiée d'EP-02, EP-03 et EP-04 sans introduire de sémantique nouvelle ? Noyau matériel de trois cas, contexte de récurrence des 20 unités A et R1..R8 employé pour écarter un correctif propre à un épisode, ligne de base de capacité technique gelée, pare-feu de sémantique existante avec traçabilité par élément, suffisance M1..M11 puis minimalité par retrait de composant, composition de surfaces et extension bornée laissées toutes deux ouvertes, pare-feu de choix humain, cinq issues fermées et partition ordonnée mécaniquement close. Besoin qualifié n'est pas résultat de conception, et résultat de conception n'est pas décision d'implémentation.
+- [`51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md`](51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md) — correction avant première dépêche : l'ordre d'issues de l'autorité 50 déclenchait sur l'existence d'un seul candidat de composition conforme, si bien qu'un choix de conception humain authentique pouvait être préempté par une issue de classe alors que plusieurs candidats minimaux matériellement distincts demeuraient. Le pare-feu de choix humain existait dans la prose, pas dans la règle. Modèle ensembliste : ensemble minimal conforme, dominance adossée à la preuve et non préférentielle — aucune classe ne domine l'autre —, ensemble restant après dominance, puis partition ordonnée où la multiplicité prime sur la classe. Preuve mécanique reconstruite sur une abstraction représentant la multiplicité : 288 états bruts, 124 admissibles, zéro sans issue, zéro assignation multiple, zéro masquage.
 
 ## Outillage
 
@@ -429,7 +430,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -635,8 +636,12 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
 = exact technical design : NOT YET SELECTED
 
 BOUNDED INTEGRATION DESIGN STUDY
-= CONTRACT FROZEN / NOT YET EXECUTED
+= authority 50 : HISTORICAL CONTRACT FREEZE · PROCEDURALLY VALID ·
+  OUTCOME-SELECTION SEMANTICS SUPERSEDED IN PART BY AUTHORITY 51
   50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md
+= authority 51 : CORRECTED CANDIDATE-SET / PARTITION CONTRACT
+  51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md
+= corrected contract : FROZEN / NOT YET EXECUTED
 = question : what is the smallest conformant integration over already-durable
   HANDOFF_ROUTING semantics that can join / propagate those semantics and
   remove the qualified EP-02 / EP-03 / EP-04 material burden without
@@ -658,15 +663,38 @@ BOUNDED INTEGRATION DESIGN STUDY
 = human-choice firewall : dominated alternatives may be eliminated, materially
   distinct minimal ones require human selection, no manufactured gate
 = outcome domain : 5 closed outcomes, no sixth
-= outcome partition : ordered rules 0..5, mechanically closed
-  108 raw · 67 admissible · 0 zero-outcome · 0 multi-outcome
-  0 rule-5 states hiding a positively established branch
+= authority-50 material defect : the outcome order could mask multiple
+  materially distinct minimal designs — a class outcome could preempt a
+  genuine human design choice
+= retained authority-50 core : EP-02 / EP-03 / EP-04 · existing-semantics
+  firewall · M1..M11 · component minimality · the five outcome labels
+= corrected by authority 51 : candidate multiplicity · dominance ·
+  human-selection precedence · ordered partition · the return relations
+  needed to reconstruct them
+= candidate set model : minimal conformant set, then remaining set after
+  dominance; outcome selection reads the REMAINING cardinality, never the mere
+  existence of a candidate of one class
+= dominance : evidence-backed, reproducible, non-preferential; neither class
+  dominates the other; unproven dominance leaves the candidate in place
+= multiplicity precedence : >= 2 remaining materially distinct minimal
+  candidates with no frozen deterministic tie-break
+  -> MULTIPLE_MINIMAL_CONFORMANT_DESIGNS_REQUIRE_HUMAN_SELECTION,
+  which no class outcome may preempt
+= manufactured tie-break : FORBIDDEN
+= outcome partition : ordered rules 0..5, mechanically closed on an
+  abstraction that represents multiplicity explicitly
+  288 raw · 124 admissible · 0 zero-outcome · 0 multi-outcome
+  0 states where multiplicity is masked by a class outcome
+  S1..S7 and both tie-break states each resolve uniquely
 = mission object : missions/004-handoff-routing-bounded-integration-design-study/mission.json
 = envelope : missions/004-handoff-routing-bounded-integration-design-study/envelope.md
 = mission index 004 : NOT TE004
-= mission validation : ok, 0 errors · render coverage complete 242 / 242
+= old mission bytes : SUPERSEDED BEFORE DISPATCH
+  mission.json 96acd8ff… · envelope.md caf0dbdc…
+= mission validation : ok, 0 errors · render coverage complete 264 / 264
 = mission-object schema extended : NO
-= return contract : 67 frozen relations
+= return contract : 67 -> 75 relations
+  64 retained · 11 added · 3 removed by logical necessity · 0 renamed
 = implementation authorization field : PREDETERMINED = NO
 = future executor : AGENT CCR LAB #29, fresh, read-only except result.json
 = executor commits / pushes : 0 / 0
@@ -676,7 +704,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -685,13 +713,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
 
 CURRENT LAB STREAM
 = NONE

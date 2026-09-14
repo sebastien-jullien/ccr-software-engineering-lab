@@ -13,11 +13,15 @@ CONTEXTE — NON NORMATIF
   study.technical_capability_baseline = a5d72edc806ac76f8f2f84ebb213215cf15dd22d
   study.recurrence_role = GENERALIZATION_CHECK_ONLY
   study.smallest_is_load_bearing = M1_TO_M11_PLUS_COMPONENT_REMOVAL
+  study.candidate_set_model = REMAINING_MINIMAL_CANDIDATE_SET_AFTER_DOMINANCE
+  study.multiplicity_precedence = MULTIPLICITY_OUTRANKS_CLASS
+  study.no_class_preference = NEITHER_CLASS_DOMINATES_THE_OTHER
   study.human_choice_firewall = NO_PREFERENCE_NO_MANUFACTURED_GATE
 
 AUTORITÉS ET RÉFÉRENCES
 -----------------------
   ref-auth49  [AUTHORITY]  REPO_PATH 49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md  GIT_BLOB bf767588dc5931b69f53e61475d3f426e28b7f46  identité EXIGÉE
+  ref-auth51  [AUTHORITY]  REPO_PATH 51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md  identité non exigée
   ref-auth50  [AUTHORITY]  REPO_PATH 50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md  identité non exigée
   ref-auth48  [AUTHORITY]  REPO_PATH 48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md  GIT_BLOB 465f9b03233b2a061c694b62a4207115b89fb6ad  identité EXIGÉE
   ref-auth47  [CONTEXT]  REPO_PATH 47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md  GIT_BLOB 0102cccb42cabba9060f6380eeafe2e213159bfe  identité EXIGÉE
@@ -46,6 +50,7 @@ FRONTIÈRES D’EFFET
   REQUIRED              APPLY_COMPONENT_REMOVAL_MINIMALITY_TEST  cardinalité 1
   REQUIRED              ASSESS_MATERIAL_DISTINCTNESS  cardinalité 1
   REQUIRED              ASSESS_INHERITED_LIMITATION_DEPENDENCE  cardinalité 1
+  REQUIRED              BUILD_REMAINING_MINIMAL_CANDIDATE_SET  cardinalité 1
   REQUIRED              APPLY_ORDERED_OUTCOME_PARTITION  cardinalité 1
   REQUIRED              DERIVE_FINAL_ANALYTICAL_OUTCOME  cardinalité 1
   REQUIRED              PRODUCE_RESULT_INSTANCE → ref-return  cardinalité 1
@@ -68,6 +73,10 @@ FRONTIÈRES D’EFFET
   FORBIDDEN             SELECT_DAEMON  cardinalité 0
   FORBIDDEN             ADD_GRATUITOUS_IMPLEMENTATION_DETAIL  cardinalité 0
   FORBIDDEN             CHOOSE_BETWEEN_DISTINCT_DESIGNS_BY_PREFERENCE  cardinalité 0
+  FORBIDDEN             PREFER_CANDIDATE_CLASS  cardinalité 0
+  FORBIDDEN             ASSERT_DOMINANCE_WITHOUT_PROOF  cardinalité 0
+  FORBIDDEN             MASK_CANDIDATE_MULTIPLICITY  cardinalité 0
+  FORBIDDEN             MANUFACTURE_TIEBREAK  cardinalité 0
   FORBIDDEN             MANUFACTURE_HUMAN_GATE  cardinalité 0
   FORBIDDEN             INVENT_SYNTHETIC_SCORE  cardinalité 0
   FORBIDDEN             ERASE_INHERITED_LIMITATION  cardinalité 0
@@ -105,6 +114,10 @@ EXIGENCES DE CONTENU
   FORBID_CLAIM  study.implementation  EQUALS  PERFORMED   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.design_chosen_by_preference  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.human_gate_manufactured  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.candidate_class_preference_applied  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.dominance_asserted_without_proof  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.candidate_multiplicity_masked  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.tiebreak_manufactured  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.synthetic_score  EQUALS  PRESENT   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.inherited_limitation_erased  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.governance_treated_as_capability  EQUALS  YES   [cible ref-return · portée MISSION]
@@ -122,11 +135,12 @@ PROCÉDURE
   7. s-minimality  effet e-minimality  [atomique]  [produit ev-minimality]
   8. s-distinct  effet e-distinctness  [atomique]  [après porte g-minimality-applied]
   9. s-limitations  effet e-limitations  [atomique]
-  10. s-partition  effet e-partition  [atomique]  [après porte g-no-forbidden-source]
-  11. s-outcome  effet e-outcome  [atomique]  [après porte g-partition-single]
-  12. s-produce  effet e-produce-result  [atomique]
-  13. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
-  14. s-freeze  effet e-freeze-result  [atomique]
+  10. s-candidate-set  effet e-candidate-set  [atomique]  [après porte g-dominance-proven]  [produit ev-candidate-set]
+  11. s-partition  effet e-partition  [atomique]  [après porte g-no-forbidden-source]
+  12. s-outcome  effet e-outcome  [atomique]  [après porte g-partition-single]
+  13. s-produce  effet e-produce-result  [atomique]
+  14. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
+  15. s-freeze  effet e-freeze-result  [atomique]
 
 PORTES
 ------
@@ -139,6 +153,9 @@ PORTES
   g-minimality-applied  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-minimality).component_removal_test_applied EQ true  ET  OPERATION_RESULT(e-minimality).candidates_declared_minimal_without_test EQ 0
       échec → sr-minimality
+  g-dominance-proven  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-candidate-set).dominated_without_proof_count EQ 0  ET  OPERATION_RESULT(e-candidate-set).class_preference_applied EQ false  ET  OPERATION_RESULT(e-candidate-set).manufactured_tiebreak_count EQ 0
+      échec → sr-dominance
   g-partition-single  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-partition).matched_outcome_count EQ 1
       échec → sr-partition
@@ -176,6 +193,12 @@ CONDITIONS D’ARRÊT
   sr-representation-blocker  si  OPERATION_RESULT(e-produce-result).representable_under_existing_grammar NEQ true
       FORBIDDEN             EXTEND_SCHEMA
       FORBIDDEN             INVENT_FIELD
+      exigé   REPORT
+      STOP
+  sr-dominance  si  OPERATION_RESULT(e-candidate-set).dominated_without_proof_count NEQ 0
+      FORBIDDEN             PREFER_CANDIDATE_CLASS
+      FORBIDDEN             ASSERT_DOMINANCE_WITHOUT_PROOF
+      FORBIDDEN             MASK_CANDIDATE_MULTIPLICITY
       exigé   REPORT
       STOP
   sr-mutation  si  COUNT_OF(MEASUREMENT(repository_mutations_other_than_result)) NEQ 0
@@ -246,6 +269,8 @@ EXIGENCES DE PREUVE
   ev-traceability  [VERIFICATION]  study.existing_semantics_traceability   méthode EQ depuis ref-auth48 · recalcul exigé
       source interdite  session_prose · conversation_transcript
   ev-minimality  [VERIFICATION]  study.component_removal_minimality   méthode EQ depuis ref-auth50 · recalcul exigé
+      source interdite  session_prose · conversation_transcript
+  ev-candidate-set  [VERIFICATION]  candidate_set.remaining_minimal_candidate_set   méthode EQ depuis ref-auth51 · recalcul exigé
       source interdite  session_prose · conversation_transcript
   ev-result-validation  [VERIFICATION]  result_instance.structural_validation   méthode EQ depuis ref-return · recalcul exigé
       source interdite  session_prose · conversation_transcript
@@ -356,9 +381,17 @@ RETOUR OBLIGATOIRE
   inherited_limitation.l4_dependence  [MEASURED · SYMBOL]  parmi { MATERIAL · NON_MATERIAL · NONE · NOT_ESTABLISHED }
   inherited_limitation.l5_dependence  [MEASURED · SYMBOL]  parmi { MATERIAL · NON_MATERIAL · NONE · NOT_ESTABLISHED }
   inherited_limitation.l6_dependence  [MEASURED · SYMBOL]  parmi { MATERIAL · NON_MATERIAL · NONE · NOT_ESTABLISHED }
-  partition.minimal_conformant_composition_candidate_exists  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
-  partition.minimal_conformant_bounded_extension_class_count  [MEASURED · SYMBOL]  parmi { ZERO · ONE · MANY · NOT_ESTABLISHED }
-  partition.multiple_distinct_minimal_designs_without_tiebreak  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  candidate_set.minimal_conformant_candidate_ids  [MEASURED · SET]
+  candidate_set.material_distinctness_relations  [MEASURED · SET]
+  candidate_set.deterministic_dominance_relations  [MEASURED · SET]
+  candidate_set.deterministically_dominated_candidate_count  [MEASURED · SCALAR]
+  candidate_set.dominance_basis  [MEASURED · SET]
+  candidate_set.remaining_minimal_candidate_ids  [MEASURED · SET]
+  candidate_set.remaining_minimal_candidate_count  [MEASURED · SCALAR]
+  candidate_set.effective_singleton_candidate_class  [MEASURED · SYMBOL]  parmi { COMPOSITION · BOUNDED_EXTENSION · NOT_APPLICABLE · NOT_ESTABLISHED }
+  candidate_set.frozen_deterministic_tiebreak_exists  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  candidate_set.frozen_deterministic_tiebreak_basis  [MEASURED · SET]
+  partition.outcome_changing_material_unknown  [MEASURED · SYMBOL]  parmi { YES · NO }
   partition.no_conformant_candidate_positively_established  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   study.material_unknowns  [MEASURED · SET]
   study.candidate_dominance  [MEASURED · SYMBOL]  parmi { ONE_DOMINATES · NO_DOMINANCE · NOT_APPLICABLE · NOT_ESTABLISHED }

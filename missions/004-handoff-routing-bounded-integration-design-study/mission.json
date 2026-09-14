@@ -61,6 +61,33 @@
       "label": "suffisance par M1..M11, puis minimalite par retrait de composant : si un composant materiel peut etre retire sans qu une propriete M requise echoue, le candidat n est pas minimal"
     },
     {
+      "subject": "study.candidate_set_model",
+      "value": {
+        "type": "SYMBOL",
+        "value": "REMAINING_MINIMAL_CANDIDATE_SET_AFTER_DOMINANCE"
+      },
+      "semantics_unresolved": false,
+      "label": "la selection d issue se fait sur la CARDINALITE de l ensemble minimal conforme restant apres dominance, jamais sur la seule existence d un candidat d une classe ; correction gelee par l autorite 51"
+    },
+    {
+      "subject": "study.multiplicity_precedence",
+      "value": {
+        "type": "SYMBOL",
+        "value": "MULTIPLICITY_OUTRANKS_CLASS"
+      },
+      "semantics_unresolved": false,
+      "label": "si au moins deux candidats minimaux conformes materiellement distincts demeurent apres dominance et qu aucun departage deterministe gele n en designe exactement un, l issue est MULTIPLE_MINIMAL_CONFORMANT_DESIGNS_REQUIRE_HUMAN_SELECTION ; aucune issue de classe ne peut la preempter"
+    },
+    {
+      "subject": "study.no_class_preference",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NEITHER_CLASS_DOMINATES_THE_OTHER"
+      },
+      "semantics_unresolved": false,
+      "label": "EXISTING_SURFACE_COMPOSITION ne domine pas automatiquement BOUNDED_SURFACE_EXTENSION, et reciproquement ; la dominance doit etre adossee a la preuve, reproductible et non preferentielle, jamais deduite de simplicite, de gout, de nombre de fichiers, de familiarite, de commodite ni de classe"
+    },
+    {
       "subject": "study.human_choice_firewall",
       "value": {
         "type": "SYMBOL",
@@ -84,6 +111,16 @@
         "value": "bf767588dc5931b69f53e61475d3f426e28b7f46"
       },
       "label": "qualification independante et reponse humaine ; base qualifiee de cette etude"
+    },
+    {
+      "id": "ref-auth51",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md"
+      },
+      "identity_required": false,
+      "label": "correction gouvernante de l ensemble de candidats et de la partition ; identite non epinglee, le commit de correction la produit"
     },
     {
       "id": "ref-auth50",
@@ -359,6 +396,12 @@
       "cardinality": 1
     },
     {
+      "id": "e-candidate-set",
+      "mode": "REQUIRED",
+      "action": "BUILD_REMAINING_MINIMAL_CANDIDATE_SET",
+      "cardinality": 1
+    },
+    {
       "id": "e-partition",
       "mode": "REQUIRED",
       "action": "APPLY_ORDERED_OUTCOME_PARTITION",
@@ -491,6 +534,30 @@
       "id": "e-forbid-preference-choice",
       "mode": "FORBIDDEN",
       "action": "CHOOSE_BETWEEN_DISTINCT_DESIGNS_BY_PREFERENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-class-preference",
+      "mode": "FORBIDDEN",
+      "action": "PREFER_CANDIDATE_CLASS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-unproven-dominance",
+      "mode": "FORBIDDEN",
+      "action": "ASSERT_DOMINANCE_WITHOUT_PROOF",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-mask-multiplicity",
+      "mode": "FORBIDDEN",
+      "action": "MASK_CANDIDATE_MULTIPLICITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-manufacture-tiebreak",
+      "mode": "FORBIDDEN",
+      "action": "MANUFACTURE_TIEBREAK",
       "cardinality": 0
     },
     {
@@ -862,6 +929,54 @@
       }
     },
     {
+      "id": "cr-forbid-class-preference",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.candidate_class_preference_applied",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-unproven-dominance",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.dominance_asserted_without_proof",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-masked-multiplicity",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.candidate_multiplicity_masked",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-manufactured-tiebreak",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.tiebreak_manufactured",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
       "id": "cr-forbid-score",
       "scope": "MISSION",
       "target": "ref-return",
@@ -984,26 +1099,36 @@
       },
       {
         "order": 10,
+        "id": "s-candidate-set",
+        "effect": "e-candidate-set",
+        "atomic": true,
+        "gated_by": "g-dominance-proven",
+        "produces": [
+          "ev-candidate-set"
+        ]
+      },
+      {
+        "order": 11,
         "id": "s-partition",
         "effect": "e-partition",
         "atomic": true,
         "gated_by": "g-no-forbidden-source"
       },
       {
-        "order": 11,
+        "order": 12,
         "id": "s-outcome",
         "effect": "e-outcome",
         "atomic": true,
         "gated_by": "g-partition-single"
       },
       {
-        "order": 12,
+        "order": 13,
         "id": "s-produce",
         "effect": "e-produce-result",
         "atomic": true
       },
       {
-        "order": 13,
+        "order": 14,
         "id": "s-validate",
         "effect": "e-validate-result",
         "atomic": true,
@@ -1012,7 +1137,7 @@
         ]
       },
       {
-        "order": 14,
+        "order": 15,
         "id": "s-freeze",
         "effect": "e-freeze-result",
         "atomic": true
@@ -1142,6 +1267,51 @@
               "kind": "OPERATION_RESULT",
               "ref": "e-minimality",
               "field": "candidates_declared_minimal_without_test"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-dominance-proven",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-dominance",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-candidate-set",
+              "field": "dominated_without_proof_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-candidate-set",
+              "field": "class_preference_applied"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": false
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-candidate-set",
+              "field": "manufactured_tiebreak_count"
             },
             "value": {
               "type": "SCALAR",
@@ -1695,6 +1865,42 @@
       "terminal": "STOP"
     },
     {
+      "id": "sr-dominance",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-candidate-set",
+          "field": "dominated_without_proof_count"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-dom-preference",
+          "mode": "FORBIDDEN",
+          "action": "PREFER_CANDIDATE_CLASS"
+        },
+        {
+          "id": "sp-dom-unproven",
+          "mode": "FORBIDDEN",
+          "action": "ASSERT_DOMINANCE_WITHOUT_PROOF"
+        },
+        {
+          "id": "sp-dom-mask",
+          "mode": "FORBIDDEN",
+          "action": "MASK_CANDIDATE_MULTIPLICITY"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
       "id": "sr-mutation",
       "trigger": {
         "op": "NEQ",
@@ -1788,6 +1994,20 @@
       "method": {
         "op": "EQ",
         "source": "ref-auth50",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-candidate-set",
+      "kind": "VERIFICATION",
+      "fact": "candidate_set.remaining_minimal_candidate_set",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth51",
         "recompute": true
       },
       "forbidden_sources": [
@@ -2881,8 +3101,77 @@
       }
     },
     {
-      "id": "rf-partition-comp",
-      "fact": "partition.minimal_conformant_composition_candidate_exists",
+      "id": "rf-minimal-conformant-set",
+      "fact": "candidate_set.minimal_conformant_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-material-distinctness",
+      "fact": "candidate_set.material_distinctness_relations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-relations",
+      "fact": "candidate_set.deterministic_dominance_relations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominated-count",
+      "fact": "candidate_set.deterministically_dominated_candidate_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-dominance-basis",
+      "fact": "candidate_set.dominance_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-remaining-minimal-set",
+      "fact": "candidate_set.remaining_minimal_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-remaining-count",
+      "fact": "candidate_set.remaining_minimal_candidate_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-effective-singleton-class",
+      "fact": "candidate_set.effective_singleton_candidate_class",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "COMPOSITION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BOUNDED_EXTENSION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_APPLICABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-tiebreak-exists",
+      "fact": "candidate_set.frozen_deterministic_tiebreak_exists",
       "acquisition": "MEASURED",
       "value_type": "SYMBOL",
       "allowed_values": {
@@ -2904,35 +3193,14 @@
       }
     },
     {
-      "id": "rf-partition-ext",
-      "fact": "partition.minimal_conformant_bounded_extension_class_count",
+      "id": "rf-tiebreak-basis",
+      "fact": "candidate_set.frozen_deterministic_tiebreak_basis",
       "acquisition": "MEASURED",
-      "value_type": "SYMBOL",
-      "allowed_values": {
-        "type": "SET",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "value": "ZERO"
-          },
-          {
-            "type": "SYMBOL",
-            "value": "ONE"
-          },
-          {
-            "type": "SYMBOL",
-            "value": "MANY"
-          },
-          {
-            "type": "SYMBOL",
-            "value": "NOT_ESTABLISHED"
-          }
-        ]
-      }
+      "value_type": "SET"
     },
     {
-      "id": "rf-partition-distinct",
-      "fact": "partition.multiple_distinct_minimal_designs_without_tiebreak",
+      "id": "rf-outcome-changing-unknown",
+      "fact": "partition.outcome_changing_material_unknown",
       "acquisition": "MEASURED",
       "value_type": "SYMBOL",
       "allowed_values": {
@@ -2945,10 +3213,6 @@
           {
             "type": "SYMBOL",
             "value": "NO"
-          },
-          {
-            "type": "SYMBOL",
-            "value": "NOT_ESTABLISHED"
           }
         ]
       }
