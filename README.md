@@ -172,6 +172,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md`](47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md) — gel de la question R&D bornée : les responsabilités de handoff / routage qui ont causé les conséquences matérielles d'EP-02, EP-03 et EP-04 peuvent-elles être dérivées et propagées déterministement depuis les surfaces durables existantes, par orchestration ordinaire, sans primitive sémantique nouvelle ? Noyau matériel de trois épisodes, contexte de récurrence des 20 unités A encore manuelles nommées une à une, inventaire fini de 8 types de responsabilité ancrés dans ces unités, pare-feu routage / paquet de contexte, modèle de chaîne causale en dix étapes, classification humain / déterministe en quatre termes, règle des surfaces existantes d'abord, porte d'écart G1..G6, test contrefactuel de suppression, autorité humaine résiduelle, quatre issues analytiques. Les défauts G1 et G2 relevés sur l'autorité 44 ne sont pas reproduits : couverture terminale complète et référence PROGRAM-STATE vivante. Un travail manuel n'est pas un écart, et une direction recommandée n'est pas une réponse technique.
 - [`48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md`](48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md) — deux couches tenues distinctes : la décision humaine d'ajouter une cinquième issue analytique, et la correction déterministe du contrat qui la rend exécutable. L'énumération mécanique de l'espace d'états avait laissé 6 272 états admissibles sans issue, dont 98 entièrement concrets, tous porteurs d'un cas où la sémantique de routage requise est positivement absente sans qu'une sélection humaine substantielle soit causalement requise — un état que ni l'intégration bornée, ni la suffisance procédurale, ni la domination humaine, ni l'insuffisance de preuve ne pouvaient porter honnêtement. CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE le représente séparément, variables S/P/B/H par cas, règles de cohérence C1..C4, partition ordonnée en règles 0 à 5, G4A/G4B, et réénumération complète : zéro état sans issue, zéro état à issues multiples. Sémantique manquante n'est pas intégration manquante, et le mot CANDIDATE est porteur.
 - [`49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md`](49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec EP-02, EP-03 et EP-04 reconstruits indépendamment à S = YES, P = PARTIAL, B = YES, H = NO, règle décisive RULE_4, récurrence R1..R8 confirmée sans divergence, 0 erreur analytique matérielle, 2 erreurs non matérielles et 6 limitations réelles ; puis la réponse humaine, une étude de conception d'intégration bornée sur la sémantique existante. Les deux points portants sont résolus : déterministiquement dérivable n'est pas pleinement réalisable par les surfaces courantes, et une porte d'écart sémantique non satisfaite ne contredit pas une intégration bornée manquante. Investiguer une conception n'est pas l'implémenter.
+- [`50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md`](50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md) — gel du contrat analytique, sans la réponse : quelle est la plus petite intégration conforme sur une sémantique HANDOFF_ROUTING déjà durable capable de supprimer la charge matérielle qualifiée d'EP-02, EP-03 et EP-04 sans introduire de sémantique nouvelle ? Noyau matériel de trois cas, contexte de récurrence des 20 unités A et R1..R8 employé pour écarter un correctif propre à un épisode, ligne de base de capacité technique gelée, pare-feu de sémantique existante avec traçabilité par élément, suffisance M1..M11 puis minimalité par retrait de composant, composition de surfaces et extension bornée laissées toutes deux ouvertes, pare-feu de choix humain, cinq issues fermées et partition ordonnée mécaniquement close. Besoin qualifié n'est pas résultat de conception, et résultat de conception n'est pas décision d'implémentation.
 
 ## Outillage
 
@@ -428,7 +429,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FREEZE THE BOUNDED INTEGRATION DESIGN-STUDY CONTRACT
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -630,7 +631,52 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
 = persisted result.json : UNCHANGED, no semantic edit
 = human selected response : BOUNDED INTEGRATION DESIGN STUDY OVER EXISTING
   ROUTING SEMANTICS
+= authority 49 : CLOSED
 = exact technical design : NOT YET SELECTED
+
+BOUNDED INTEGRATION DESIGN STUDY
+= CONTRACT FROZEN / NOT YET EXECUTED
+  50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md
+= question : what is the smallest conformant integration over already-durable
+  HANDOFF_ROUTING semantics that can join / propagate those semantics and
+  remove the qualified EP-02 / EP-03 / EP-04 material burden without
+  introducing new routing semantics
+= qualified need : BOUNDED_INTEGRATION_OPPORTUNITY, established
+= design result : NOT YET ESTABLISHED
+= implementation decision : NOT AUTHORIZED
+= material test core : EP-02 / EP-03 / EP-04, all three must be removed
+= recurrence context : 20 A units, R1..R8, used only as a
+  not-an-episode-specific-patch check, NOT as eight mandatory product features
+= technical capability baseline : a5d72edc806ac76f8f2f84ebb213215cf15dd22d
+= governance state : NOT technical capability
+= existing-semantic traceability : MANDATORY per candidate element
+= useful new concept : NOT an authorized new semantic
+= explicit minimality test : MANDATORY, M1..M11 then component removal
+= candidate classes : EXISTING_SURFACE_COMPOSITION ·
+  BOUNDED_SURFACE_EXTENSION, neither preselected
+= bounded surface extension : NOT a new semantic primitive
+= human-choice firewall : dominated alternatives may be eliminated, materially
+  distinct minimal ones require human selection, no manufactured gate
+= outcome domain : 5 closed outcomes, no sixth
+= outcome partition : ordered rules 0..5, mechanically closed
+  108 raw · 67 admissible · 0 zero-outcome · 0 multi-outcome
+  0 rule-5 states hiding a positively established branch
+= mission object : missions/004-handoff-routing-bounded-integration-design-study/mission.json
+= envelope : missions/004-handoff-routing-bounded-integration-design-study/envelope.md
+= mission index 004 : NOT TE004
+= mission validation : ok, 0 errors · render coverage complete 242 / 242
+= mission-object schema extended : NO
+= return contract : 67 frozen relations
+= implementation authorization field : PREDETERMINED = NO
+= future executor : AGENT CCR LAB #29, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result.json : DOES NOT EXIST YET
+= routing engine : NOT SELECTED
+= new representation : NOT SELECTED
+= new semantic primitive : NOT SELECTED
+= TE004 : NONE
+= wrong-target incident review : DEFERRED, excluded from this study's corpus
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -639,13 +685,13 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FREEZE THE BOUNDED INTEGRATION DESIGN-STUDY CONTRACT
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FREEZE THE BOUNDED INTEGRATION DESIGN-STUDY CONTRACT
+= next : FRESH AGENT CCR LAB #29 EXECUTES THE FROZEN DESIGN STUDY
 
 CURRENT LAB STREAM
 = NONE
