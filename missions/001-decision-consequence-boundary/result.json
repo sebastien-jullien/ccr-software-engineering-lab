@@ -1,0 +1,1264 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "decision-consequence-boundary-historical-study-001"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "e80bc3d250920cee66b4d26bef497b6094395144"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "e80bc3d250920cee66b4d26bef497b6094395144"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-decision-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "PROGRAM-STATE.json@78d87e89 decisions[tooling-experiment-003-first-live-dogfood-task-selected, tooling-experiment-003-first-live-dogfood-design, tooling-experiment-003-live-dogfood-resumption-sequencing-correction]"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "PROGRAM-STATE.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "78d87e89a8bbc88662b9687672076f6177ff7c21"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-consequence-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md@502a1cd7 § 8 action durable couvrant l'arc exécutable"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "29-TOOLING-EXPERIMENT-003-LIVE-DOGFOOD-RESUMPTION-SEQUENCING-CORRECTION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "502a1cd787f592e17ed4d87b1260313db6beede2"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-execution-intent"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-execution-intent-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/result-instance/live-dogfood/001/mission.json@7358a637 Mission Object gelé"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/result-instance/live-dogfood/001/mission.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "7358a63719036810222fe3d0c657f7192bd4f8c2"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-execution-state"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-execution-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/result-instance/live-dogfood/001/result.json@f0781cbe rf-task-outcome PASS · commit a1d731ede86befaadfa2d8da6a022e3fd44f9ec4 · rf-push-status REALIZED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/result-instance/live-dogfood/001/result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f0781cbea2a1bd773c95c7ebffc91915bb7c076d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-advancement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADVANCED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-advancement-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md@d840cf1f qualification finale et clôture ; PROGRAM-STATE stream tooling-experiment-003 CLOSED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-supersession"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-remaining-due"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-sufficiency"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-joins"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "décision PROGRAM-STATE → evidence.ref → autorité 29 § 8 (conséquence)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "autorité 28 § 19 chemin de mission → mission.json (intention)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "result.json source.authority.identity = blob de mission.json (exécution ↔ intention)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "stream tooling-experiment-003 evidence.ref → autorité 30 (avancement)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c01-unresolved"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-decision-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "PROGRAM-STATE.json@78d87e89 decisions[dogfood-002-evaluation-ratified]"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "PROGRAM-STATE.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "78d87e89a8bbc88662b9687672076f6177ff7c21"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-consequence-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md@8d9104b9 § 13 et § 14 continuation objet d'abord du README"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "17-TOOLING-EXPERIMENT-002-DOGFOOD-002-EVALUATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8d9104b9fd538ebddc8b7c6b769229b462aa2259"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-execution-intent"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-execution-intent-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/mission-object/dogfood/003/mission.json@37818dcf Mission Object ; human_authority rd-dogfood-002-evaluation → autorité 17"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/mission-object/dogfood/003/mission.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "37818dcfdc0b5e8c41bd847b8751fbda6e482116"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-execution-state"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-execution-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md@5b9abf33 § 3 commit c60ac29cac954bada681734c5e16d8dcfd1ff69f · push REALIZED · vérification post-push PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "19-TOOLING-EXPERIMENT-002-DOGFOOD-003-EVALUATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "5b9abf337fb33dae9d0da64930d3dccf1dfe1c25"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-advancement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADVANCED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-advancement-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "PROGRAM-STATE.json@78d87e89 decisions[dogfood-003-evaluation-ratified] → autorité 19"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "PROGRAM-STATE.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "78d87e89a8bbc88662b9687672076f6177ff7c21"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-supersession"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-remaining-due"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-sufficiency"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-joins"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "décision PROGRAM-STATE → evidence.ref → autorité 17 § 13 (conséquence)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "mission.json dogfood/003 human_authority → autorité 17 (intention ↔ décision)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "autorité 19 § 2 identité de mission + § 3 faits d'exécution en prose (exécution ↔ intention)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commit Git c60ac29 présent localement (corroboration de l'exécution)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c02-unresolved"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-decision-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "PROGRAM-STATE.json@78d87e89 decisions[tooling-experiment-003-close]"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "PROGRAM-STATE.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "78d87e89a8bbc88662b9687672076f6177ff7c21"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-consequence-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md@d840cf1f § 14 réconciliation du README : maintenance ordinaire actuellement due"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-execution-intent"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-execution-intent-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md@d840cf1f § 15 aucun objet de mission créé au point d'observation"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-execution-state"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ATTEMPTED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-execution-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md@d840cf1f § 15 README MODIFIÉ NON au point d'observation"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-advancement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-advancement-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md@d840cf1f point d'observation"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "30-TOOLING-EXPERIMENT-003-FIRST-LIVE-DOGFOOD-QUALIFICATION-AND-CONCLUSION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "d840cf1fab2a1e2f330d5e9524f57ea8079b6eb0"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-supersession"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-remaining-due"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RECOVERED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-sufficiency"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-joins"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "décision PROGRAM-STATE → evidence.ref → autorité 30 § 14 (conséquence)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json à la version introduisant l'autorité 30 : next_action SELECTED « Réconcilier README.md … » (reste dû)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c03-unresolved"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-decision-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "PROGRAM-STATE.json@78d87e89 decisions[post-te002-next-lab-direction]"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "PROGRAM-STATE.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "78d87e89a8bbc88662b9687672076f6177ff7c21"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-consequence-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md@4b3b9f20 § 2 et § 3 essai de reprise de la phase D"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "21-TOOLING-EXPERIMENT-001-PHASE-D-SELECTION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4b3b9f20130d53368b5414fa0504e7e3e0b31544"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-execution-intent"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-execution-intent-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md@c94e0382 § 19 à § 22 protocole de phase D gelé"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-execution-state"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-execution-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/program-state/RESULT-001.md@bc8da25c § 2 à § 4 phase D exécutée, 6 / 6 critères PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/program-state/RESULT-001.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-advancement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ADVANCED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-advancement-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/program-state/RESULT-001.md@bc8da25c § 6 flux tooling-experiment-001 inchangé, IMPLEMENTED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/program-state/RESULT-001.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-supersession"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SUPERSEDED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-remaining-due"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RECOVERED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-sufficiency"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-joins"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "décision PROGRAM-STATE → evidence.ref → autorité 21 § 2 (conséquence)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "autorité 21 § 3 → autorité 09 protocole de phase D (intention)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "PROGRAM-STATE.json à la version introduisant RESULT-001 : next_action NOT_YET_SELECTED, evidence → RESULT-001 (supersession)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c04-unresolved"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-decision-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "PROGRAM-STATE.json@78d87e89 decisions[post-te002-next-lab-direction]"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "PROGRAM-STATE.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "78d87e89a8bbc88662b9687672076f6177ff7c21"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-consequence-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md@c94e0382 § 21 six critères gelés de la reprise"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-execution-intent"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-execution-intent-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md@c94e0382 § 19 protocole de phase D"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-execution-state"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-execution-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/program-state/RESULT-001.md@bc8da25c § 1 et § 2 coupe d'entrée scellée, aucun paquet ; 10 flux, 11 décisions ratifiées, 0 en attente"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/program-state/RESULT-001.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-advancement"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADVANCED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-advancement-ref"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/program-state/RESULT-001.md@bc8da25c § 4 et § 5 6 / 6 PASS ; question répondue pour le périmètre éprouvé"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "tooling/program-state/RESULT-001.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "bc8da25c7611e0e12df7b04b733428dc8a898e63"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-supersession"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-remaining-due"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RECOVERED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-sufficiency"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDINARY_JOIN_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-joins"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "décision PROGRAM-STATE → evidence.ref → autorité 21 → autorité 09 § 21 (conséquence)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RESULT-001 § 2 faits bruts ↔ § 3 réponses ↔ § 4 évaluation (exécution ↔ avancement)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-c05-unresolved"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-selected-case-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-categories-represented"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "A"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D"
+          },
+          {
+            "type": "SCALAR",
+            "value": "E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-categories-without-example"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "B"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-direct-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-join-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-gap-candidate-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cannot-establish-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-overall-classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_SURFACES_SUFFICIENT_WITH_ORDINARY_ORCHESTRATION_LOGIC"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-gap-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conversation-reconstruction-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose-fallback-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-protected-source-usage-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source-usage-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-repository-mutations-other"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blocker"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    }
+  ]
+}
