@@ -165,6 +165,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md`](40-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-REMEDIATION-DESIGN.md) — conception bornée et déterministe de la remédiation : chaîne de découverte reconstruite depuis le code publié, cause racine gelée — couverture de racines uniquement, le filtre existant classant déjà correctement les quatre fichiers de la mission — conception minimale retenue, sémantique de candidats après remédiation, invariants de l'autorité 32 préservés, surface d'implémentation exacte, critères d'acceptation positifs et négatifs, plan de test, pare-feu de fin de ligne et pare-feu des autres observations. Sa conception D1 porte un défaut matériel, corrigé par l'autorité 41.
 - [`41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md`](41-LOCAL-MISSION-CONSOLE-V0-U01-BOUNDED-DISCOVERY-DESIGN-CORRECTION.md) — correction de conception : D1 aurait exposé, sous `missions/**`, tout JSON sans rapport comme candidat de résultat, ce que l'exigence gouvernante interdisait ; défaut démontré directement, resserrement global du filtre toujours rejeté pour non-régression, et éligibilité de résultat rendue sensible à la racine — `result.json` seul sous `missions/`, héritage inchangé ailleurs. Nommer honnêtement une largeur ne la rend pas conforme.
 - [`42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md`](42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md) — deux couches tenues distinctes : la qualification indépendante de l'implémentation publiée, PASS WITH LIMITATIONS, avec zéro défaut matériel, suite publiée 74 / 74, racine d'énumération d'origine préservée à travers la récursion, confirmation dans le vrai DOM, et pour seule limitation la non-exécution du comportement de symlink sur hôte POSIX ; puis la clôture humaine de U-01 comme remédié. La topologie du panneau C y est énoncée, et le succès d'une remédiation ne requalifie pas rétroactivement un usage historique.
+- [`43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md`](43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md) — sélection humaine de la prochaine direction authentique du Lab : mesurer le travail manuel d'orchestration restant. Question comparative première, famille A handoff / routage et famille B construction du paquet de contexte, pare-feu de fin de ligne et pare-feu des travaux clos, aucune conclusion d'outillage automatique, aucun vainqueur présumé. Ordre de feuille de route n'est pas preuve de besoin courant, et travail manuel observé n'est pas nouvel outillage requis. Le corpus, les cas, le modèle de comparaison et le contrat de retour appartiennent au gel d'étude bornée suivant.
 
 ## Outillage
 
@@ -397,7 +398,31 @@ U-01 HUMAN PRODUCT RESPONSE
 = new representation : NO
 = TE004 : NO
 = EOL risk : SEPARATE / UNRESOLVED / NOT CURRENTLY SELECTED
-= next : human selection of the next genuine Lab direction
+= next : SELECTED — see NEXT GENUINE LAB DIRECTION
+
+NEXT GENUINE LAB DIRECTION
+= MEASURE REMAINING MANUAL ORCHESTRATION WORK
+  43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md
+= selected by : HUMAN
+= primary comparative question : which still-repeated human orchestration
+  activity carries the strongest empirical case for the next R&D step
+= candidate family A : HANDOFF / ROUTING
+= candidate family B : CONTEXT-PACKAGE CONSTRUCTION
+= winning family : NOT SELECTED
+= admissible outcomes : HANDOFF_ROUTING · CONTEXT_PACKAGE ·
+  NEITHER_CURRENTLY_JUSTIFIED · INCONCLUSIVE_ON_DURABLE_EVIDENCE
+= roadmap order : NOT EVIDENCE OF CURRENT NEED
+= manual work observed : NOT new tooling required
+= EOL : NOT A CANDIDATE FAMILY / NOT MERGED / SEPARATE
+= closed work : NOT REOPENED, inspectable only as historical evidence
+= historical corpus : NOT FROZEN
+= cases : NOT SELECTED
+= comparison model : NONE
+= return contract : NONE
+= new tooling experiment : NONE
+= TE004 : NO
+= implementation : NOT AUTHORIZED
+= next : freeze a bounded, executable, read-only comparative study
 
 CURRENT LAB STREAM
 = NONE

@@ -1016,11 +1016,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "remaining-manual-orchestration-work-study-direction-selected",
+      "question": "Sélectionner la prochaine direction authentique du Lab CCR — mesurer le travail manuel d'orchestration restant — et en borner la question comparative entre la famille handoff / routage et la famille construction du paquet de contexte, sans geler le corpus historique, sans sélectionner de cas, sans présumer du vainqueur, sans promouvoir la fin de ligne en famille candidate, et sans autoriser ni implémentation, ni nouvelle représentation, ni nouvelle expérience d'outillage ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-107",
+          "kind": "repo-path",
+          "ref": "43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:remaining-manual-orchestration-work-study-direction-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "feda3a558c086ea1cc9c28c8f574aca1ff110c04"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Obtenir la sélection humaine de la prochaine direction authentique du Lab CCR, maintenant que l'étude décision → conséquence déterministe → conséquence exécutée est close et que U-01 est clos comme remédié. Le risque établi de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable et peut être sélectionné par l'humain, mais il n'est PAS promu automatiquement en travail courant. De même, les éléments de console restés au rang d'observation ne sont pas promus automatiquement. Ne pas inférer de nouvelle expérience, de nouvelle représentation, de remédiation de console ni de conséquence CCR System. S'arrêter à la porte de sélection humaine de direction de programme.",
+    "value": "Geler une étude comparative bornée, exécutable et en lecture seule du travail manuel d'orchestration restant, avant toute exécution comparative et avant toute décision d'outillage. Le gel devra définir le corpus historique admissible, les cas exacts, les règles de preuve, les dimensions mesurables, le contrat de retour, les critères de succès et la frontière de lecture / écriture. Aucune famille gagnante n'est présumée entre handoff / routage et construction du paquet de contexte, et les issues NEITHER_CURRENTLY_JUSTIFIED et INCONCLUSIVE_ON_DURABLE_EVIDENCE restent admissibles. Le risque de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable séparé : il n'est ni une famille candidate, ni fusionné avec elles, ni promu automatiquement en travail courant. Travail manuel observé n'implique pas nouvel outillage requis. Ne pas implémenter, ne pas créer d'expérience d'outillage, ne pas concevoir de représentation et ne pas sélectionner de conséquence CCR System. S'arrêter à la porte du gel d'étude bornée.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1037,17 +1058,17 @@
         }
       },
       {
-        "id": "ev-106",
+        "id": "ev-108",
         "kind": "repo-path",
-        "ref": "42-LOCAL-MISSION-CONSOLE-V0-U01-REMEDIATION-INDEPENDENT-QUALIFICATION-AND-CLOSURE.md",
+        "ref": "43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Obtenir la sélection humaine de la prochaine direction authentique du Lab CCR, maintenant que l'étude décision → conséquence déterministe → conséquence exécutée est close et que U-01 est clos comme remédié. Le risque établi de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable et peut être sélectionné par l'humain, mais il n'est PAS promu automatiquement en travail courant. De même, les éléments de console restés au rang d'observation ne sont pas promus automatiquement. Ne pas inférer de nouvelle expérience, de nouvelle représentation, de remédiation de console ni de conséquence CCR System. S'arrêter à la porte de sélection humaine de direction de programme."
+          "value": "Geler une étude comparative bornée, exécutable et en lecture seule du travail manuel d'orchestration restant, avant toute exécution comparative et avant toute décision d'outillage. Le gel devra définir le corpus historique admissible, les cas exacts, les règles de preuve, les dimensions mesurables, le contrat de retour, les critères de succès et la frontière de lecture / écriture. Aucune famille gagnante n'est présumée entre handoff / routage et construction du paquet de contexte, et les issues NEITHER_CURRENTLY_JUSTIFIED et INCONCLUSIVE_ON_DURABLE_EVIDENCE restent admissibles. Le risque de durabilité et de rejeu de fin de ligne sous missions/** demeure un contexte durable séparé : il n'est ni une famille candidate, ni fusionné avec elles, ni promu automatiquement en travail courant. Travail manuel observé n'implique pas nouvel outillage requis. Ne pas implémenter, ne pas créer d'expérience d'outillage, ne pas concevoir de représentation et ne pas sélectionner de conséquence CCR System. S'arrêter à la porte du gel d'étude bornée."
         },
         "observed": {
-          "blob": "b3a24ab4c0e40e847962e28103fd3a0ff18bdb24"
+          "blob": "feda3a558c086ea1cc9c28c8f574aca1ff110c04"
         }
       }
     ]
