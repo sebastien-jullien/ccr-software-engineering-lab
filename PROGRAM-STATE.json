@@ -1037,11 +1037,53 @@
           }
         }
       ]
+    },
+    {
+      "id": "remaining-manual-orchestration-study-independent-qualification-ratified",
+      "question": "Ratifier la qualification analytique indépendante comme PASS WITH LIMITATIONS, avec DIM_1 confirmé indépendamment à HANDOFF_ROUTING 3 contre CONTEXT_PACKAGE 2, recommandation HANDOFF_ROUTING indépendamment confirmée à la dimension décisive, 0 erreur analytique matérielle, 5 erreurs analytiques non matérielles issues d'un unique défaut racine d'attribution des corrections de conception entre les familles, 0 ambiguïté de contrat, 2 défauts non matériels d'artefact gouvernant et 3 limitations de qualification réelles, le tout porté par l'autorité 46, sans éditer les octets persistés du result.json ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-112",
+          "kind": "repo-path",
+          "ref": "46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:remaining-manual-orchestration-study-independent-qualification-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "42a3a99d7aa53755971f5736904da2546d90b0e7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "handoff-routing-next-lab-direction-selected",
+      "question": "Sélectionner HANDOFF_ROUTING comme prochaine direction authentique du Lab CCR, sur la base de la recommandation analytique indépendamment qualifiée, sans sélectionner encore de moteur de routage, de représentation, d'API, d'expérience, de TOOLING-EXPERIMENT-004, de conception technique ni d'implémentation, et en conservant la construction du paquet de contexte comme famille mesurée non gagnante, ni invalidée ni close ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-113",
+          "kind": "repo-path",
+          "ref": "46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-next-lab-direction-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "42a3a99d7aa53755971f5736904da2546d90b0e7"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Qualifier indépendamment le résultat analytique persisté de l'étude comparative du travail manuel d'orchestration restant, avec un AGENT CCR LAB #26 frais. Employer les octets exacts du résultat persisté, blob 1b191ad7e0b3c15195aaafd17b36a52aabf5989f, et le Mission Object canonique de l'autorité 45, blob 98817247d6bf140406f720385a95acd2b498432a. Reconstruire la conclusion analytique indépendamment depuis la preuve durable, sans se fier aux synthèses de l'exécutant. Vérifications portantes : reconstruire les 31 unités atomiques depuis le résultat structuré et ses preuves ; confirmer A = 20, B = 11, AMBIGUOUS = 0, ou rapporter la divergence exacte ; reproduire indépendamment les statuts de surface courante ; reproduire indépendamment les comptes d'unités absorbées et encore manuelles ; reproduire indépendamment l'éligibilité de besoin courant par épisode ; reconstruire indépendamment les comptes de conséquence matérielle restante ; établir la sémantique exacte, au contrat, des « épisodes à conséquence sévère » ; déterminer si B = 7 désigne une union d'épisodes distincts ou des incidences par catégorie ; reproduire indépendamment les comptes de dérive réalisée ; rebâtir DIM_1 depuis la preuve d'épisode et d'unité plutôt que depuis les résumés de l'exécutant ; ne progresser de DIM_2 à DIM_5 que selon la règle lexicographique gelée ; dériver indépendamment la recommandation finale à quatre issues. Ne pas présumer HANDOFF_ROUTING. Ne pas sélectionner de direction humaine de programme. Ne pas créer d'expérience, de représentation ni d'implémentation. Ne retourner qu'une qualification.",
+    "value": "Geler une question R&D bornée pour la direction HANDOFF_ROUTING sélectionnée par l'humain. Le gel doit employer la preuve de travail restant indépendamment qualifiée et identifier le plus petit problème authentique de handoff / routage qui mérite d'être étudié ensuite. Il doit : partir des 20 unités A encore manuelles et des 3 épisodes à conséquence matérielle restante EP-02, EP-03 et EP-04 ; identifier les responsabilités récurrentes de handoff et de routage réellement à l'origine de la charge démontrée ; distinguer les décisions de routage et de contrôle de l'assemblage de paquet de contexte ; préserver la preuve courante selon laquelle les surfaces existantes sont SUFFICIENT_WITH_ORDINARY_ORCHESTRATION pour les deux familles mesurées ; demander si une réponse bornée d'orchestration ou d'intégration ordinaire supprime la charge démontrée avant de postuler la moindre primitive sémantique nouvelle ; définir une question R&D exacte, un corpus de preuve et des critères de succès ; s'arrêter avant de sélectionner un moteur de routage, une API, une représentation, une implémentation, TOOLING-EXPERIMENT-004 ou toute autre solution technique. Ne pas promouvoir automatiquement tout le travail de handoff / routage en une seule fonctionnalité produit. Ne pas présumer que la réponse appropriée est un logiciel.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1058,17 +1100,17 @@
         }
       },
       {
-        "id": "ev-111",
+        "id": "ev-114",
         "kind": "repo-path",
-        "ref": "missions/002-remaining-manual-orchestration-work/result.json",
+        "ref": "46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Qualifier indépendamment le résultat analytique persisté de l'étude comparative du travail manuel d'orchestration restant, avec un AGENT CCR LAB #26 frais. Employer les octets exacts du résultat persisté, blob 1b191ad7e0b3c15195aaafd17b36a52aabf5989f, et le Mission Object canonique de l'autorité 45, blob 98817247d6bf140406f720385a95acd2b498432a. Reconstruire la conclusion analytique indépendamment depuis la preuve durable, sans se fier aux synthèses de l'exécutant. Vérifications portantes : reconstruire les 31 unités atomiques depuis le résultat structuré et ses preuves ; confirmer A = 20, B = 11, AMBIGUOUS = 0, ou rapporter la divergence exacte ; reproduire indépendamment les statuts de surface courante ; reproduire indépendamment les comptes d'unités absorbées et encore manuelles ; reproduire indépendamment l'éligibilité de besoin courant par épisode ; reconstruire indépendamment les comptes de conséquence matérielle restante ; établir la sémantique exacte, au contrat, des « épisodes à conséquence sévère » ; déterminer si B = 7 désigne une union d'épisodes distincts ou des incidences par catégorie ; reproduire indépendamment les comptes de dérive réalisée ; rebâtir DIM_1 depuis la preuve d'épisode et d'unité plutôt que depuis les résumés de l'exécutant ; ne progresser de DIM_2 à DIM_5 que selon la règle lexicographique gelée ; dériver indépendamment la recommandation finale à quatre issues. Ne pas présumer HANDOFF_ROUTING. Ne pas sélectionner de direction humaine de programme. Ne pas créer d'expérience, de représentation ni d'implémentation. Ne retourner qu'une qualification."
+          "value": "Geler une question R&D bornée pour la direction HANDOFF_ROUTING sélectionnée par l'humain. Le gel doit employer la preuve de travail restant indépendamment qualifiée et identifier le plus petit problème authentique de handoff / routage qui mérite d'être étudié ensuite. Il doit : partir des 20 unités A encore manuelles et des 3 épisodes à conséquence matérielle restante EP-02, EP-03 et EP-04 ; identifier les responsabilités récurrentes de handoff et de routage réellement à l'origine de la charge démontrée ; distinguer les décisions de routage et de contrôle de l'assemblage de paquet de contexte ; préserver la preuve courante selon laquelle les surfaces existantes sont SUFFICIENT_WITH_ORDINARY_ORCHESTRATION pour les deux familles mesurées ; demander si une réponse bornée d'orchestration ou d'intégration ordinaire supprime la charge démontrée avant de postuler la moindre primitive sémantique nouvelle ; définir une question R&D exacte, un corpus de preuve et des critères de succès ; s'arrêter avant de sélectionner un moteur de routage, une API, une représentation, une implémentation, TOOLING-EXPERIMENT-004 ou toute autre solution technique. Ne pas promouvoir automatiquement tout le travail de handoff / routage en une seule fonctionnalité produit. Ne pas présumer que la réponse appropriée est un logiciel."
         },
         "observed": {
-          "blob": "1b191ad7e0b3c15195aaafd17b36a52aabf5989f"
+          "blob": "42a3a99d7aa53755971f5736904da2546d90b0e7"
         }
       }
     ]

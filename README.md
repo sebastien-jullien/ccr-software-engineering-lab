@@ -168,6 +168,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md`](43-REMAINING-MANUAL-ORCHESTRATION-WORK-NEXT-DIRECTION-SELECTION.md) — sélection humaine de la prochaine direction authentique du Lab : mesurer le travail manuel d'orchestration restant. Question comparative première, famille A handoff / routage et famille B construction du paquet de contexte, pare-feu de fin de ligne et pare-feu des travaux clos, aucune conclusion d'outillage automatique, aucun vainqueur présumé. Ordre de feuille de route n'est pas preuve de besoin courant, et travail manuel observé n'est pas nouvel outillage requis. Le corpus, les cas, le modèle de comparaison et le contrat de retour appartiennent au gel d'étude bornée suivant.
 - [`44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md`](44-REMAINING-MANUAL-ORCHESTRATION-WORK-BOUNDED-COMPARATIVE-STUDY-FREEZE.md) — gel de l'étude comparative bornée, exécutable et en lecture seule : fenêtre factuelle semi-ouverte de la qualification de console à la clôture de U-01, corpus admissible et pare-feu de sources, inventaire exhaustif de 27 candidats dont 15 épisodes admis et 12 rejetés ou fusionnés avec leur motif, unité atomique de travail manuel, frontière stricte d'attribution A / B et interdiction de double comptage, pare-feu de taille d'invite, inconnu n'est pas zéro, vocabulaires de preuve, de conséquence et de suffisance, porte de cas d'outillage en six critères, comparaison lexicographique sans score synthétique, quatre issues admises, Mission Object et enveloppe gelés pour un AGENT CCR LAB #25 frais, contrat de retour de 255 champs. L'étude est exécutable ; sa conclusion n'est pas écrite.
 - [`45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md`](45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md) — correction avant première dépêche : l'autorité 44 laissait des comptes historiques alimenter le départage sans vérifier que la responsabilité manuelle existe encore à la coupe, si bien qu'une friction close comme U-01 aurait pu peser sur la famille R&D choisie. Statut de surface courante obligatoire par unité, règle de preuve positive, éligibilité de besoin courant par épisode, synthèses historique et restante tenues séparées, comparaison de départage sur le travail encore manuel seulement. La vérification structurelle exigée avant toute édition a établi un second défaut, de mon fait : la grammaire Result Instance v0 n'admet pas de membre de SET structuré, ce que l'autorité 44 supposait. Encodage de registre corrigé et mesuré contre le validateur publié, sans étendre aucune grammaire. Nommer une structure ne la rend pas représentable.
+- [`46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md`](46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec registre de 31 unités reconstruit, DIM_1 reconstruit indépendamment à HANDOFF_ROUTING 3 contre CONTEXT_PACKAGE 2, absorption U-01 confirmée à contribution nulle, 0 erreur analytique matérielle, 5 erreurs non matérielles issues d'un unique défaut racine d'attribution des corrections de conception entre les familles, 0 ambiguïté de contrat, 2 défauts non matériels d'artefact gouvernant et 3 limitations réelles ; puis la sélection humaine de HANDOFF_ROUTING comme prochaine direction. Les deux familles restent SUFFICIENT_WITH_ORDINARY_ORCHESTRATION : une direction recommandée n'est pas un moteur de routage, et une recommandation qualifiée n'est pas une autorisation de construire.
 
 ## Outillage
 
@@ -424,7 +425,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #26
+= next : FREEZE A BOUNDED HANDOFF/ROUTING R&D QUESTION
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -492,15 +493,48 @@ BOUNDED COMPARATIVE STUDY
 = persisted bytes : exactly as returned, no semantic edit
 = return contract : 396 fields / EXECUTOR-REPORTED PASS
 = executor recommendation : HANDOFF_ROUTING
-= independent analytical qualification : PENDING
-= human next-direction decision : NONE
-= winner : NOT SELECTED
+= independent analytical qualification : PASS WITH LIMITATIONS
+  46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md
+= qualifier : CCR LAB FIX #1
+= atomic units reconstructed : 31 · A 20 · B 11 · AMBIGUOUS 0
+= absorbed : A 0 / B 2 · still manual : A 20 / B 9 · unknown : A 0 / B 0
+= current-need eligible episodes : A 15 / B 7
+= U-01 out-of-interface manual request : 2 units, historical WORKAROUND,
+  ABSORBED_BY_CURRENT_SURFACE at the cut, remaining contribution 0
+= DIM_1 : HANDOFF_ROUTING 3 (EP-02 EP-03 EP-04) /
+  CONTEXT_PACKAGE 2 (EP-12 EP-13) · A_HIGHER · first decisive dimension
+= DIM_2 executor value : NOT_APPLICABLE, comparison stopped at DIM_1
+  independent value : A 3 / B 2, A_HIGHER, never verdict-bearing
+= root analytical defect : inconsistent attribution of design
+  corrections between families
+= material analytical errors : 0
+= non-material analytical errors : 5
+= contract ambiguities : 0
+= non-material governing-artifact defects : 2
+  G1 terminal-outcome coverage incomplete · G2 stale ref-program-state
+= qualification limitations : 3, REAL, no final-recommendation uncertainty
+= realized drift : A 3 / B 1, NOT the same as material consequence
+= current-surface sufficiency : SUFFICIENT_WITH_ORDINARY_ORCHESTRATION
+  for both measured families
+= current tooling case : DEMONSTRATED for both, CT1..CT6 satisfied
+= qualified analytical recommendation : HANDOFF_ROUTING
+= persisted result.json : UNCHANGED, no semantic edit
+= human next Lab direction : HANDOFF_ROUTING
+= context-package construction : measured non-winning family,
+  neither invalidated nor closed
+= exact product problem : NOT YET FROZEN
+= routing engine : NOT SELECTED
+= new API : NOT SELECTED
+= new representation : NO
+= TE004 : NO
+= implementation : NOT AUTHORIZED
+= winner : HANDOFF_ROUTING (direction only, no technical response selected)
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH INDEPENDENT QUALIFICATION BY AGENT CCR LAB #26
+= next : FREEZE A BOUNDED HANDOFF/ROUTING R&D QUESTION
 
 CURRENT LAB STREAM
 = NONE
