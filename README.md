@@ -430,7 +430,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
+= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -641,7 +641,7 @@ BOUNDED INTEGRATION DESIGN STUDY
   50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md
 = authority 51 : CORRECTED CANDIDATE-SET / PARTITION CONTRACT
   51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md
-= corrected contract : FROZEN / NOT YET EXECUTED
+= corrected contract : EXECUTED BY CCR_LAB_FIX_1
 = question : what is the smallest conformant integration over already-durable
   HANDOFF_ROUTING semantics that can join / propagate those semantics and
   remove the qualified EP-02 / EP-03 / EP-04 material burden without
@@ -696,15 +696,35 @@ BOUNDED INTEGRATION DESIGN STUDY
 = return contract : 67 -> 75 relations
   64 retained · 11 added · 3 removed by logical necessity · 0 renamed
 = implementation authorization field : PREDETERMINED = NO
-= future executor : AGENT CCR LAB #29, fresh, read-only except result.json
+= executor : CCR_LAB_FIX_1, read-only except result.json
 = executor commits / pushes : 0 / 0
-= result.json : DOES NOT EXIST YET
+= executor actual result : DURABLY PERSISTED
+  missions/004-handoff-routing-bounded-integration-design-study/result.json
+= persisted bytes : exactly as returned, no semantic edit
+= executor-reported candidate count : 9
+= executor-reported minimal conformant set : CAND-01 + CAND-02 + CAND-08 + CAND-09
+= executor-reported remaining set : CAND-01 + CAND-02 + CAND-08 + CAND-09
+= executor-reported dominated : 0 · frozen deterministic tie-break : NONE
+= executor-reported class preference used : NO
+= executor-reported decisive rule : RULE_1
+= executor-reported outcome :
+  MULTIPLE_MINIMAL_CONFORMANT_DESIGNS_REQUIRE_HUMAN_SELECTION
+= independent qualification : PENDING
+= human design-selection gate : NOT YET OPEN
+= load-bearing questions left to the qualifier :
+  common freeze-time derivation of CAND-01 / 02 / 08 / 09 versus an actually
+  realized join — a designated derivation is NOT a realized join, and a carried
+  output is NOT a material burden removed ·
+  CAND-03 validator obligation versus the untyped observation requirement ·
+  candidate inventory completeness · component minimality granularity ·
+  material distinctness · dominance · inherited-limitations effect ·
+  remaining candidate set · final partition outcome
 = routing engine : NOT SELECTED
 = new representation : NOT SELECTED
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
+= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -713,13 +733,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
+= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #29 EXECUTES THE CORRECTED DESIGN STUDY
+= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
 
 CURRENT LAB STREAM
 = NONE
