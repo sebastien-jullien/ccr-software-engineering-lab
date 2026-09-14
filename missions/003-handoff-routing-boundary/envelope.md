@@ -12,6 +12,9 @@ CONTEXTE — NON NORMATIF
   study.recurrence_context = 20
   study.current_surface_sufficiency = SUFFICIENT_WITH_ORDINARY_ORCHESTRATION
   study.human_authority_invariant = HUMAN_DECISION_IS_NOT_A_DETERMINISTIC_CONSEQUENCE
+  study.analytical_outcome_domain = 5
+  study.outcome_partition = ORDERED_RULES_0_TO_5_DETERMINISTIC
+  study.semantic_gap_is_not_a_response = CANDIDATE_ONLY
   study.payload_is_not_friction = FORBIDDEN_PROXY
 
 AUTORITÉS ET RÉFÉRENCES
@@ -48,6 +51,7 @@ FRONTIÈRES D’EFFET
   REQUIRED              APPLY_CONCRETE_GAP_GATE  cardinalité 1
   REQUIRED              RUN_COUNTERFACTUAL_REMOVAL_TEST  cardinalité 1
   REQUIRED              DETERMINE_RESIDUAL_HUMAN_AUTHORITY  cardinalité 1
+  REQUIRED              APPLY_ORDERED_OUTCOME_PARTITION  cardinalité 1
   REQUIRED              DERIVE_FINAL_ANALYTICAL_OUTCOME  cardinalité 1
   REQUIRED              PRODUCE_RESULT_INSTANCE → ref-return  cardinalité 1
   REQUIRED              VALIDATE_RESULT_INSTANCE  cardinalité 1
@@ -66,6 +70,11 @@ FRONTIÈRES D’EFFET
   FORBIDDEN             COUNT_HUMAN_AUTHORITY_AS_REMOVABLE  cardinalité 0
   FORBIDDEN             USE_PAYLOAD_SIZE_AS_PROXY  cardinalité 0
   FORBIDDEN             INVENT_SYNTHETIC_SCORE  cardinalité 0
+  FORBIDDEN             INVENT_SIXTH_OUTCOME  cardinalité 0
+  FORBIDDEN             RELABEL_SEMANTIC_GAP_AS_INTEGRATION  cardinalité 0
+  FORBIDDEN             RELABEL_SEMANTIC_GAP_AS_INSUFFICIENT_EVIDENCE  cardinalité 0
+  FORBIDDEN             SELECT_NEW_SEMANTIC_PRIMITIVE  cardinalité 0
+  FORBIDDEN             INFER_HUMAN_SELECTION_FROM_SEMANTIC_ABSENCE  cardinalité 0
   FORBIDDEN             SELECT_ROUTING_ENGINE  cardinalité 0
   FORBIDDEN             SELECT_NEW_API  cardinalité 0
   FORBIDDEN             DESIGN_REPRESENTATION  cardinalité 0
@@ -100,6 +109,10 @@ EXIGENCES DE CONTENU
   FORBID_CLAIM  study.synthetic_score  EQUALS  PRESENT   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.material_core_extended  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.responsibility_inventory_extended  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.sixth_analytical_outcome  EQUALS  PRESENT   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.semantic_gap_relabelled  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.new_semantic_primitive_selected  EQUALS  YES   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  study.matched_outcome_count  EQUALS  1   [cible ref-return · portée MISSION]
 
 PROCÉDURE
 ---------
@@ -114,10 +127,11 @@ PROCÉDURE
   8. s-gap  effet e-gap-gate  [atomique]  [après porte g-existing-surface-first]
   9. s-counterfactual  effet e-counterfactual  [atomique]
   10. s-residual  effet e-residual  [atomique]
-  11. s-outcome  effet e-outcome  [atomique]  [après porte g-no-forbidden-source]
-  12. s-produce  effet e-produce-result  [atomique]
-  13. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
-  14. s-freeze  effet e-freeze-result  [atomique]
+  11. s-partition  effet e-partition  [atomique]  [après porte g-partition-consistent]
+  12. s-outcome  effet e-outcome  [atomique]  [après porte g-no-forbidden-source]
+  13. s-produce  effet e-produce-result  [atomique]
+  14. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
+  15. s-freeze  effet e-freeze-result  [atomique]
 
 PORTES
 ------
@@ -130,6 +144,9 @@ PORTES
   g-existing-surface-first  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-existing-surface-test).surfaces_tested_before_gap_claim EQ true  ET  OPERATION_RESULT(e-ordinary-join-test).ordinary_join_tested_before_new_semantics EQ true
       échec → sr-surface-first
+  g-partition-consistent  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-partition).consistency_rule_violations EQ 0  ET  OPERATION_RESULT(e-partition).matched_outcome_count EQ 1
+      échec → sr-partition
   g-no-forbidden-source  [portée ALL_PRECEDING]
       exige   COUNT_OF(MEASUREMENT(conversation_factual_reconstruction)) EQ 0  ET  COUNT_OF(MEASUREMENT(session_prose_fallback)) EQ 0  ET  COUNT_OF(MEASUREMENT(ccr_system_source_usage)) EQ 0  ET  COUNT_OF(MEASUREMENT(protected_source_usage)) EQ 0
       échec → sr-forbidden-source
@@ -156,6 +173,11 @@ CONDITIONS D’ARRÊT
   sr-forbidden-source  si  COUNT_OF(MEASUREMENT(forbidden_source_usage)) NEQ 0
       FORBIDDEN             RECONSTRUCT_FROM_CONVERSATION
       FORBIDDEN             USE_SESSION_PROSE
+      exigé   REPORT
+      STOP
+  sr-partition  si  OPERATION_RESULT(e-partition).matched_outcome_count NEQ 1
+      FORBIDDEN             INVENT_SIXTH_OUTCOME
+      FORBIDDEN             RELABEL_SEMANTIC_GAP_AS_INTEGRATION
       exigé   REPORT
       STOP
   sr-mutation  si  COUNT_OF(MEASUREMENT(repository_mutations_other_than_result)) NEQ 0
@@ -193,6 +215,17 @@ BRANCHES
       étape 3. s-br-human-dominates-freeze  effet e-freeze-result
       FORBIDDEN             INVALIDATE_PROGRAM_DIRECTION  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  HUMAN_DECISION_DOMINATES   [cible ref-return · portée br-human-dominates]
+
+  BRANCHE br-semantic-gap  si  OPERATION_RESULT(e-outcome).outcome EQ CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE
+      résultat terminal   CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE
+      conséquence         nc-return
+      étape 1. s-br-semantic-gap-produce  effet e-produce-result
+      étape 2. s-br-semantic-gap-validate  effet e-validate-result
+      étape 3. s-br-semantic-gap-freeze  effet e-freeze-result
+      FORBIDDEN             DESIGN_REPRESENTATION  cardinalité 0
+      FORBIDDEN             SELECT_NEW_SEMANTIC_PRIMITIVE  cardinalité 0
+      FORBIDDEN             CREATE_TOOLING_EXPERIMENT  cardinalité 0
+      CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE   [cible ref-return · portée br-semantic-gap]
 
   BRANCHE br-insufficient-evidence  si  OPERATION_RESULT(e-outcome).outcome EQ INSUFFICIENT_DURABLE_EVIDENCE
       résultat terminal   INSUFFICIENT_DURABLE_EVIDENCE
@@ -242,6 +275,12 @@ RÉSULTATS TERMINAUX ET SUCCÈS PARTIEL
       conséquence                   nc-return
       état résultant  CLAIM / ASSERT  result_instance.frozen  EQUALS  YES   [cible ref-return · portée MISSION]
 
+  CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE  valide si  OPERATION_RESULT(e-outcome).outcome EQ CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE  ET  OPERATION_RESULT(e-validate-result).status EQ PASS
+      état partiel admis            NON
+      état atteint à préserver      OUI
+      conséquence                   nc-return
+      état résultant  CLAIM / ASSERT  result_instance.frozen  EQUALS  YES   [cible ref-return · portée MISSION]
+
   INSUFFICIENT_DURABLE_EVIDENCE  valide si  OPERATION_RESULT(e-outcome).outcome EQ INSUFFICIENT_DURABLE_EVIDENCE  ET  OPERATION_RESULT(e-validate-result).status EQ PASS
       état partiel admis            NON
       état atteint à préserver      OUI
@@ -284,6 +323,12 @@ RETOUR OBLIGATOIRE
   ep_02.counterfactual_causal_basis  [MEASURED · SET]
   ep_02.residual_human_authority  [MEASURED · SYMBOL]  parmi { NONE · SUBSTANTIVE_SELECTION_REMAINS · VERIFICATION_ONLY · NOT_ESTABLISHED }
   ep_02.durable_evidence_identities  [MEASURED · SET]
+  ep_02.required_routing_semantics_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_02.removal_by_existing_procedural_orchestration  [MEASURED · SYMBOL]  parmi { YES · NO · PARTIAL · NOT_ESTABLISHED }
+  ep_02.bounded_integration_required  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_02.substantive_human_selection_causally_required  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_02.gap_gate_g4a_procedural_orchestration_does_not_fully_remove_burden  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  ep_02.gap_gate_g4b_remaining_cause_classification  [MEASURED · SYMBOL]  parmi { BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT · REQUIRED_ROUTING_SEMANTICS_ABSENT · SUBSTANTIVE_HUMAN_SELECTION_REQUIRED · NOT_ESTABLISHED }
   ep_03.trigger  [MEASURED · SCALAR]
   ep_03.required_handoff_routing_responsibility  [MEASURED · SET]  parmi { NEXT_CONTROL_STAGE · ACTOR_OR_SESSION_SELECTION · EXECUTION_BASELINE_ASSIGNMENT · ACTION_AUTHORITY_PROPAGATION · PERSISTENCE_OWNERSHIP · RETURN_DESTINATION · STOP_BOUNDARY · STAGE_ORDERING_DEPENDENCY }
   ep_03.inputs_needed_to_resolve_responsibility  [MEASURED · SET]
@@ -297,6 +342,12 @@ RETOUR OBLIGATOIRE
   ep_03.counterfactual_causal_basis  [MEASURED · SET]
   ep_03.residual_human_authority  [MEASURED · SYMBOL]  parmi { NONE · SUBSTANTIVE_SELECTION_REMAINS · VERIFICATION_ONLY · NOT_ESTABLISHED }
   ep_03.durable_evidence_identities  [MEASURED · SET]
+  ep_03.required_routing_semantics_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_03.removal_by_existing_procedural_orchestration  [MEASURED · SYMBOL]  parmi { YES · NO · PARTIAL · NOT_ESTABLISHED }
+  ep_03.bounded_integration_required  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_03.substantive_human_selection_causally_required  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_03.gap_gate_g4a_procedural_orchestration_does_not_fully_remove_burden  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  ep_03.gap_gate_g4b_remaining_cause_classification  [MEASURED · SYMBOL]  parmi { BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT · REQUIRED_ROUTING_SEMANTICS_ABSENT · SUBSTANTIVE_HUMAN_SELECTION_REQUIRED · NOT_ESTABLISHED }
   ep_04.trigger  [MEASURED · SCALAR]
   ep_04.required_handoff_routing_responsibility  [MEASURED · SET]  parmi { NEXT_CONTROL_STAGE · ACTOR_OR_SESSION_SELECTION · EXECUTION_BASELINE_ASSIGNMENT · ACTION_AUTHORITY_PROPAGATION · PERSISTENCE_OWNERSHIP · RETURN_DESTINATION · STOP_BOUNDARY · STAGE_ORDERING_DEPENDENCY }
   ep_04.inputs_needed_to_resolve_responsibility  [MEASURED · SET]
@@ -310,6 +361,12 @@ RETOUR OBLIGATOIRE
   ep_04.counterfactual_causal_basis  [MEASURED · SET]
   ep_04.residual_human_authority  [MEASURED · SYMBOL]  parmi { NONE · SUBSTANTIVE_SELECTION_REMAINS · VERIFICATION_ONLY · NOT_ESTABLISHED }
   ep_04.durable_evidence_identities  [MEASURED · SET]
+  ep_04.required_routing_semantics_present  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_04.removal_by_existing_procedural_orchestration  [MEASURED · SYMBOL]  parmi { YES · NO · PARTIAL · NOT_ESTABLISHED }
+  ep_04.bounded_integration_required  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_04.substantive_human_selection_causally_required  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  ep_04.gap_gate_g4a_procedural_orchestration_does_not_fully_remove_burden  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
+  ep_04.gap_gate_g4b_remaining_cause_classification  [MEASURED · SYMBOL]  parmi { BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT · REQUIRED_ROUTING_SEMANTICS_ABSENT · SUBSTANTIVE_HUMAN_SELECTION_REQUIRED · NOT_ESTABLISHED }
   unit_u01.responsibility_types  [MEASURED · SET]  parmi { NEXT_CONTROL_STAGE · ACTOR_OR_SESSION_SELECTION · EXECUTION_BASELINE_ASSIGNMENT · ACTION_AUTHORITY_PROPAGATION · PERSISTENCE_OWNERSHIP · RETURN_DESTINATION · STOP_BOUNDARY · STAGE_ORDERING_DEPENDENCY }
   unit_u01.human_deterministic_classification  [MEASURED · SYMBOL]  parmi { HUMAN_SUBSTANTIVE_DECISION · DETERMINISTIC_FROM_EXISTING_STATE · ORDINARY_JOIN_REQUIRED · NOT_ESTABLISHED }
   unit_u01.required_inputs  [MEASURED · SET]
@@ -562,13 +619,16 @@ RETOUR OBLIGATOIRE
   resp_r8.gap_gate_g5_insufficiency_demonstrated_not_inferred  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
   resp_r8.gap_gate_g6_missing_capability_statable_without_implementation  [MEASURED · SYMBOL]  parmi { SATISFIED · NOT_SATISFIED · NOT_ESTABLISHED }
   resp_r8.concrete_handoff_routing_gap  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED · NOT_APPLICABLE }
-  study.final_analytical_outcome  [MEASURED · SYMBOL]  parmi { ORDINARY_ORCHESTRATION_SUFFICIENT · BOUNDED_INTEGRATION_OPPORTUNITY · HUMAN_DECISION_DOMINATES · INSUFFICIENT_DURABLE_EVIDENCE }
+  study.final_analytical_outcome  [MEASURED · SYMBOL]  parmi { ORDINARY_ORCHESTRATION_SUFFICIENT · BOUNDED_INTEGRATION_OPPORTUNITY · HUMAN_DECISION_DOMINATES · CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE · INSUFFICIENT_DURABLE_EVIDENCE }
   study.final_analytical_outcome_basis  [MEASURED · SET]
   study.new_semantic_primitive  [MEASURED · SYMBOL]  parmi { JUSTIFIED · NOT_JUSTIFIED · NOT_ESTABLISHED }
   study.concrete_gap_count  [MEASURED · SCALAR]
   study.limitations  [MEASURED · SET]
   study.blockers  [MEASURED · SET]
   study.procedural_success  [MEASURED · SYMBOL]  parmi { PROCEDURALLY_SUCCESSFUL · NOT_SUCCESSFUL }
+  study.decisive_partition_rule  [MEASURED · SYMBOL]  parmi { RULE_0 · RULE_1 · RULE_2 · RULE_3 · RULE_4 · RULE_5 }
+  study.partition_variable_trace  [MEASURED · SET]
+  study.concrete_missing_routing_capability_candidate  [MEASURED · SET]
 
 CONSÉQUENCES SUIVANTES
 ----------------------

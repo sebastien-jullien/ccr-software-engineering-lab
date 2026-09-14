@@ -1079,11 +1079,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "handoff-routing-concrete-semantic-gap-analytical-outcome-selected",
+      "question": "Ratifier l'ajout de CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE comme cinquième issue analytique de l'étude HANDOFF_ROUTING, afin de représenter séparément un état positivement établi où la sémantique de routage requise manque aux surfaces courantes sans qu'une sélection humaine substantielle soit causalement requise, plutôt que de redéfinir BOUNDED_INTEGRATION_OPPORTUNITY, d'exclure ces états du périmètre ou de les forcer dans INSUFFICIENT_DURABLE_EVIDENCE, et sans sélectionner pour autant de nouvelle représentation, de nouvelle primitive sémantique, de moteur de routage, d'API, de TOOLING-EXPERIMENT-004, de conception technique ni d'implémentation ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-116",
+          "kind": "repo-path",
+          "ref": "48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-concrete-semantic-gap-analytical-outcome-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "465f9b03233b2a061c694b62a4207115b89fb6ad"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter l'étude R&D bornée HANDOFF_ROUTING gelée, avec un AGENT CCR LAB #27 frais. N'employer que le Mission Object et l'enveloppe exacts de l'autorité 47, dans missions/003-handoff-routing-boundary/. Évaluer EP-02, EP-03 et EP-04 comme noyau matériel, et le contexte de récurrence gelé de 20 unités A encore manuelles, sans ajouter d'épisode au noyau, sans inventer d'unité et sans étendre l'inventaire de 8 types de responsabilité. Séparer le routage et le contrôle de l'assemblage de paquet de contexte. Classer chaque responsabilité en HUMAN_SUBSTANTIVE_DECISION, DETERMINISTIC_FROM_EXISTING_STATE, ORDINARY_JOIN_REQUIRED ou NOT_ESTABLISHED, en préservant que action manuelle répétée n'est pas décision humaine substantielle et que déterministe n'est pas déjà automatisé. Tester les surfaces existantes et l'orchestration ordinaire avant toute prétention d'écart. Appliquer G1 à G6 ; l'échec de G4 signifie qu'aucune primitive sémantique nouvelle n'est justifiée. Exécuter le test contrefactuel de suppression et retourner l'autorité humaine résiduelle. Produire exactement le contrat de retour gelé de 307 champs. Ne créer que missions/003-handoff-routing-boundary/result.json. Commits 0, pushs 0. Ne pas reconstruire les faits depuis la conversation. Ne sélectionner ni moteur de routage, ni API, ni représentation, ni expérience, ni TOOLING-EXPERIMENT-004, ni conception technique, ni implémentation.",
+    "value": "Exécuter l'étude R&D bornée HANDOFF_ROUTING corrigée, avec un AGENT CCR LAB #27 frais, en employant le Mission Object et l'enveloppe canoniques de l'autorité 48 dans missions/003-handoff-routing-boundary/ ; la version de l'autorité 47 est historique et supersédée avant dépêche. Évaluer les surfaces techniques contre la ligne de base a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Évaluer EP-02, EP-03 et EP-04 ainsi que le contexte de récurrence conservé de 20 unités A, sans ajouter ni retirer d'épisode, d'unité ou de type de responsabilité R1..R8. Renseigner S, P, B et H pour chaque cas matériel, appliquer exactement les règles de cohérence C1 à C4 puis la partition ordonnée à cinq issues, règles 0 à 5, avec la priorité humain puis écart sémantique puis intégration bornée. Retourner exactement une issue parmi ORDINARY_ORCHESTRATION_SUFFICIENT, BOUNDED_INTEGRATION_OPPORTUNITY, HUMAN_DECISION_DOMINATES, CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE et INSUFFICIENT_DURABLE_EVIDENCE. Ne pas inventer de sixième issue, ne pas relabelliser un écart sémantique en intégration bornée ni en insuffisance de preuve, ne pas inférer une sélection humaine d'une absence sémantique. Produire exactement le contrat de retour corrigé de 328 champs. Ne créer que missions/003-handoff-routing-boundary/result.json. Commits 0, pushs 0. Ne pas reconstruire les faits depuis la conversation. Ne sélectionner ni moteur de routage, ni représentation, ni nouvelle primitive sémantique, ni API, ni expérience, ni TOOLING-EXPERIMENT-004, ni conception technique, ni implémentation.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1100,17 +1121,17 @@
         }
       },
       {
-        "id": "ev-115",
+        "id": "ev-117",
         "kind": "repo-path",
-        "ref": "47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md",
+        "ref": "48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter l'étude R&D bornée HANDOFF_ROUTING gelée, avec un AGENT CCR LAB #27 frais. N'employer que le Mission Object et l'enveloppe exacts de l'autorité 47, dans missions/003-handoff-routing-boundary/. Évaluer EP-02, EP-03 et EP-04 comme noyau matériel, et le contexte de récurrence gelé de 20 unités A encore manuelles, sans ajouter d'épisode au noyau, sans inventer d'unité et sans étendre l'inventaire de 8 types de responsabilité. Séparer le routage et le contrôle de l'assemblage de paquet de contexte. Classer chaque responsabilité en HUMAN_SUBSTANTIVE_DECISION, DETERMINISTIC_FROM_EXISTING_STATE, ORDINARY_JOIN_REQUIRED ou NOT_ESTABLISHED, en préservant que action manuelle répétée n'est pas décision humaine substantielle et que déterministe n'est pas déjà automatisé. Tester les surfaces existantes et l'orchestration ordinaire avant toute prétention d'écart. Appliquer G1 à G6 ; l'échec de G4 signifie qu'aucune primitive sémantique nouvelle n'est justifiée. Exécuter le test contrefactuel de suppression et retourner l'autorité humaine résiduelle. Produire exactement le contrat de retour gelé de 307 champs. Ne créer que missions/003-handoff-routing-boundary/result.json. Commits 0, pushs 0. Ne pas reconstruire les faits depuis la conversation. Ne sélectionner ni moteur de routage, ni API, ni représentation, ni expérience, ni TOOLING-EXPERIMENT-004, ni conception technique, ni implémentation."
+          "value": "Exécuter l'étude R&D bornée HANDOFF_ROUTING corrigée, avec un AGENT CCR LAB #27 frais, en employant le Mission Object et l'enveloppe canoniques de l'autorité 48 dans missions/003-handoff-routing-boundary/ ; la version de l'autorité 47 est historique et supersédée avant dépêche. Évaluer les surfaces techniques contre la ligne de base a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Évaluer EP-02, EP-03 et EP-04 ainsi que le contexte de récurrence conservé de 20 unités A, sans ajouter ni retirer d'épisode, d'unité ou de type de responsabilité R1..R8. Renseigner S, P, B et H pour chaque cas matériel, appliquer exactement les règles de cohérence C1 à C4 puis la partition ordonnée à cinq issues, règles 0 à 5, avec la priorité humain puis écart sémantique puis intégration bornée. Retourner exactement une issue parmi ORDINARY_ORCHESTRATION_SUFFICIENT, BOUNDED_INTEGRATION_OPPORTUNITY, HUMAN_DECISION_DOMINATES, CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE et INSUFFICIENT_DURABLE_EVIDENCE. Ne pas inventer de sixième issue, ne pas relabelliser un écart sémantique en intégration bornée ni en insuffisance de preuve, ne pas inférer une sélection humaine d'une absence sémantique. Produire exactement le contrat de retour corrigé de 328 champs. Ne créer que missions/003-handoff-routing-boundary/result.json. Commits 0, pushs 0. Ne pas reconstruire les faits depuis la conversation. Ne sélectionner ni moteur de routage, ni représentation, ni nouvelle primitive sémantique, ni API, ni expérience, ni TOOLING-EXPERIMENT-004, ni conception technique, ni implémentation."
         },
         "observed": {
-          "blob": "0102cccb42cabba9060f6380eeafe2e213159bfe"
+          "blob": "465f9b03233b2a061c694b62a4207115b89fb6ad"
         }
       }
     ]

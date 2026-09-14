@@ -170,6 +170,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md`](45-REMAINING-MANUAL-ORCHESTRATION-WORK-CURRENT-SURFACE-PERSISTENCE-CORRECTION.md) — correction avant première dépêche : l'autorité 44 laissait des comptes historiques alimenter le départage sans vérifier que la responsabilité manuelle existe encore à la coupe, si bien qu'une friction close comme U-01 aurait pu peser sur la famille R&D choisie. Statut de surface courante obligatoire par unité, règle de preuve positive, éligibilité de besoin courant par épisode, synthèses historique et restante tenues séparées, comparaison de départage sur le travail encore manuel seulement. La vérification structurelle exigée avant toute édition a établi un second défaut, de mon fait : la grammaire Result Instance v0 n'admet pas de membre de SET structuré, ce que l'autorité 44 supposait. Encodage de registre corrigé et mesuré contre le validateur publié, sans étendre aucune grammaire. Nommer une structure ne la rend pas représentable.
 - [`46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md`](46-REMAINING-MANUAL-ORCHESTRATION-WORK-INDEPENDENT-QUALIFICATION-AND-HANDOFF-ROUTING-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec registre de 31 unités reconstruit, DIM_1 reconstruit indépendamment à HANDOFF_ROUTING 3 contre CONTEXT_PACKAGE 2, absorption U-01 confirmée à contribution nulle, 0 erreur analytique matérielle, 5 erreurs non matérielles issues d'un unique défaut racine d'attribution des corrections de conception entre les familles, 0 ambiguïté de contrat, 2 défauts non matériels d'artefact gouvernant et 3 limitations réelles ; puis la sélection humaine de HANDOFF_ROUTING comme prochaine direction. Les deux familles restent SUFFICIENT_WITH_ORDINARY_ORCHESTRATION : une direction recommandée n'est pas un moteur de routage, et une recommandation qualifiée n'est pas une autorisation de construire.
 - [`47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md`](47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md) — gel de la question R&D bornée : les responsabilités de handoff / routage qui ont causé les conséquences matérielles d'EP-02, EP-03 et EP-04 peuvent-elles être dérivées et propagées déterministement depuis les surfaces durables existantes, par orchestration ordinaire, sans primitive sémantique nouvelle ? Noyau matériel de trois épisodes, contexte de récurrence des 20 unités A encore manuelles nommées une à une, inventaire fini de 8 types de responsabilité ancrés dans ces unités, pare-feu routage / paquet de contexte, modèle de chaîne causale en dix étapes, classification humain / déterministe en quatre termes, règle des surfaces existantes d'abord, porte d'écart G1..G6, test contrefactuel de suppression, autorité humaine résiduelle, quatre issues analytiques. Les défauts G1 et G2 relevés sur l'autorité 44 ne sont pas reproduits : couverture terminale complète et référence PROGRAM-STATE vivante. Un travail manuel n'est pas un écart, et une direction recommandée n'est pas une réponse technique.
+- [`48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md`](48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md) — deux couches tenues distinctes : la décision humaine d'ajouter une cinquième issue analytique, et la correction déterministe du contrat qui la rend exécutable. L'énumération mécanique de l'espace d'états avait laissé 6 272 états admissibles sans issue, dont 98 entièrement concrets, tous porteurs d'un cas où la sémantique de routage requise est positivement absente sans qu'une sélection humaine substantielle soit causalement requise — un état que ni l'intégration bornée, ni la suffisance procédurale, ni la domination humaine, ni l'insuffisance de preuve ne pouvaient porter honnêtement. CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE le représente séparément, variables S/P/B/H par cas, règles de cohérence C1..C4, partition ordonnée en règles 0 à 5, G4A/G4B, et réénumération complète : zéro état sans issue, zéro état à issues multiples. Sémantique manquante n'est pas intégration manquante, et le mot CANDIDATE est porteur.
 
 ## Outillage
 
@@ -426,7 +427,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : EXECUTE FROZEN STUDY WITH AGENT CCR LAB #27
+= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT CCR LAB #27
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -532,8 +533,12 @@ BOUNDED COMPARATIVE STUDY
 = winner : HANDOFF_ROUTING (direction only, no technical response selected)
 
 HANDOFF / ROUTING BOUNDED R&D QUESTION
-= FROZEN / NOT YET EXECUTED
+= authority 47 : QUESTION / CORPUS FREEZE WITH INCOMPLETE
+  FOUR-OUTCOME ANALYTICAL DOMAIN
   47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md
+= authority 48 : FIVE-OUTCOME DOMAIN + DETERMINISTIC PARTITION CORRECTION
+  48-HANDOFF-ROUTING-FIVE-OUTCOME-DOMAIN-AND-PARTITION-CORRECTION.md
+= corrected study : FROZEN / NOT YET EXECUTED
 = question : can the handoff/routing responsibilities that caused the material
   consequences in EP-02 / EP-03 / EP-04 be deterministically derived and
   propagated from existing durable surfaces, by ordinary orchestration, so the
@@ -561,17 +566,39 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
 = concrete-gap gate : G1..G6, G4 failure means no new primitive justified
 = counterfactual removal test : YES / NO / PARTIAL / NOT_ESTABLISHED
 = residual human authority : returned per case and per unit
+= mechanical blocker detection : 6272 unmapped admissible states,
+  98 of them fully concrete, all carrying a case where the required routing
+  semantics are positively absent with no causal human selection
+= human decision : ADD FIFTH ANALYTICAL OUTCOME
+= fifth outcome : CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE
+  missing semantics is NOT missing integration; CANDIDATE is load-bearing
 = final outcomes : ORDINARY_ORCHESTRATION_SUFFICIENT ·
   BOUNDED_INTEGRATION_OPPORTUNITY · HUMAN_DECISION_DOMINATES ·
-  INSUFFICIENT_DURABLE_EVIDENCE
+  CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE · INSUFFICIENT_DURABLE_EVIDENCE
+= sixth analytical outcome : NONE
+= per-case variables : S required semantics present · P procedural removal ·
+  B bounded integration required · H substantive human selection required
+= consistency rules : C1..C4
+= outcome partition : ordered rules 0..5, FIVE-WAY / DETERMINISTIC
+= mixed-case priority : HUMAN -> SEMANTIC GAP -> BOUNDED INTEGRATION
+= state space : 1 259 712 raw · 238 328 admissible
+= zero-outcome states : 0 · multi-outcome states : 0
+= S1..S5 and both priority tests : each resolves uniquely
+= technical current-surface baseline : a5d72edc806ac76f8f2f84ebb213215cf15dd22d
+= fifth outcome observed in the historical cases : NOT ESTABLISHED,
+  it is an allowed analytical conclusion, not a study result
 = demonstrating a tooling opportunity : NOT required for success
 = terminal-outcome coverage : COMPLETE, authority-44 G1 defect not repeated
 = PROGRAM-STATE reference : live unpinned target plus one explicitly labelled
   historical pin, authority-44 G2 defect not repeated
 = mission object : missions/003-handoff-routing-boundary/mission.json
 = envelope : missions/003-handoff-routing-boundary/envelope.md
-= mission validation : ok, 0 errors · render coverage complete 397 / 397
-= return contract : 307 fields, frozen
+= old mission bytes : SUPERSEDED BEFORE DISPATCH
+  mission.json 5f29a63e… · envelope.md 6d3e91a4…
+= mission validation : ok, 0 errors · render coverage complete 441 / 441
+= return contract : 307 -> 328 fields
+  307 retained · 21 added · 0 removed · 0 renamed
+  rf-outcome domain widened by one member, no member lost
 = future executor : AGENT CCR LAB #27, fresh, read-only except result.json
 = executor commits / pushes : 0 / 0
 = result.json : DOES NOT EXIST YET
@@ -580,13 +607,13 @@ HANDOFF / ROUTING BOUNDED R&D QUESTION
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : EXECUTE FROZEN STUDY WITH AGENT CCR LAB #27
+= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT CCR LAB #27
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : EXECUTE FROZEN STUDY WITH AGENT CCR LAB #27
+= next : EXECUTE CORRECTED STUDY WITH FRESH AGENT CCR LAB #27
 
 CURRENT LAB STREAM
 = NONE

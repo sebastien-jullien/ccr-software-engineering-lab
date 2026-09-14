@@ -65,6 +65,33 @@
       "label": "une responsabilite HUMAN_SUBSTANTIVE_DECISION n est jamais comptee comme supprimable au motif qu elle est repetitive ; action manuelle repetee n est pas decision humaine substantielle, et deterministe n est pas deja automatise"
     },
     {
+      "subject": "study.analytical_outcome_domain",
+      "value": {
+        "type": "SCALAR",
+        "value": 5
+      },
+      "semantics_unresolved": false,
+      "label": "domaine a cinq issues ratifie par l humain ; la cinquieme, CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE, represente un etat positivement etabli ou la semantique de routage requise manque aux surfaces courantes sans qu une selection humaine substantielle soit causalement requise ; le mot CANDIDATE est porteur"
+    },
+    {
+      "subject": "study.outcome_partition",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORDERED_RULES_0_TO_5_DETERMINISTIC"
+      },
+      "semantics_unresolved": false,
+      "label": "regles ordonnees : 0 incertitude materielle, 1 suffisance procedurale, 2 selection humaine causale, 3 semantique de routage requise absente, 4 integration deterministe bornee absente, 5 reste evidentiaire ; priorite humain puis ecart semantique puis integration bornee"
+    },
+    {
+      "subject": "study.semantic_gap_is_not_a_response",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_ONLY"
+      },
+      "semantics_unresolved": false,
+      "label": "un ecart semantique concret n etablit ni champ, ni objet, ni API, ni modele de routage, ni moteur, ni representation, ni TE004, ni implementation ; ce sont des questions humaines et produit ulterieures"
+    },
+    {
       "subject": "study.payload_is_not_friction",
       "value": {
         "type": "SYMBOL",
@@ -378,6 +405,12 @@
       "cardinality": 1
     },
     {
+      "id": "e-partition",
+      "mode": "REQUIRED",
+      "action": "APPLY_ORDERED_OUTCOME_PARTITION",
+      "cardinality": 1
+    },
+    {
       "id": "e-outcome",
       "mode": "REQUIRED",
       "action": "DERIVE_FINAL_ANALYTICAL_OUTCOME",
@@ -486,6 +519,36 @@
       "id": "e-forbid-score",
       "mode": "FORBIDDEN",
       "action": "INVENT_SYNTHETIC_SCORE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-sixth-outcome",
+      "mode": "FORBIDDEN",
+      "action": "INVENT_SIXTH_OUTCOME",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-gap-as-integration",
+      "mode": "FORBIDDEN",
+      "action": "RELABEL_SEMANTIC_GAP_AS_INTEGRATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-gap-as-unknown",
+      "mode": "FORBIDDEN",
+      "action": "RELABEL_SEMANTIC_GAP_AS_INSUFFICIENT_EVIDENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-new-primitive",
+      "mode": "FORBIDDEN",
+      "action": "SELECT_NEW_SEMANTIC_PRIMITIVE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-infer-human-from-gap",
+      "mode": "FORBIDDEN",
+      "action": "INFER_HUMAN_SELECTION_FROM_SEMANTIC_ABSENCE",
       "cardinality": 0
     },
     {
@@ -817,6 +880,55 @@
         "type": "SYMBOL",
         "value": "YES"
       }
+    },
+    {
+      "id": "cr-forbid-sixth-outcome",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.sixth_analytical_outcome",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESENT"
+      }
+    },
+    {
+      "id": "cr-forbid-gap-relabelled",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.semantic_gap_relabelled",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-new-primitive-selected",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_semantic_primitive_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-matched-outcome",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.matched_outcome_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 1
+      }
     }
   ],
   "procedure": {
@@ -899,19 +1011,26 @@
       },
       {
         "order": 11,
+        "id": "s-partition",
+        "effect": "e-partition",
+        "atomic": true,
+        "gated_by": "g-partition-consistent"
+      },
+      {
+        "order": 12,
         "id": "s-outcome",
         "effect": "e-outcome",
         "atomic": true,
         "gated_by": "g-no-forbidden-source"
       },
       {
-        "order": 12,
+        "order": 13,
         "id": "s-produce",
         "effect": "e-produce-result",
         "atomic": true
       },
       {
-        "order": 13,
+        "order": 14,
         "id": "s-validate",
         "effect": "e-validate-result",
         "atomic": true,
@@ -920,7 +1039,7 @@
         ]
       },
       {
-        "order": 14,
+        "order": 15,
         "id": "s-freeze",
         "effect": "e-freeze-result",
         "atomic": true
@@ -1066,6 +1185,39 @@
             "value": {
               "type": "SCALAR",
               "value": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-partition-consistent",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-partition",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-partition",
+              "field": "consistency_rule_violations"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-partition",
+              "field": "matched_outcome_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 1
             }
           }
         ]
@@ -1311,6 +1463,78 @@
       "next": "nc-return"
     },
     {
+      "id": "br-semantic-gap",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b5-forbid-representation",
+          "mode": "FORBIDDEN",
+          "action": "DESIGN_REPRESENTATION",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b5-forbid-primitive",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_NEW_SEMANTIC_PRIMITIVE",
+          "cardinality": 0
+        },
+        {
+          "id": "e-b5-forbid-experiment",
+          "mode": "FORBIDDEN",
+          "action": "CREATE_TOOLING_EXPERIMENT",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-semantic-gap-produce",
+          "order": 1,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-semantic-gap-validate",
+          "order": 2,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-semantic-gap-freeze",
+          "order": 3,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-semantic-gap",
+          "scope": "br-semantic-gap",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE"
+          }
+        }
+      ],
+      "terminal_outcome": "CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE",
+      "next": "nc-return"
+    },
+    {
       "id": "br-insufficient-evidence",
       "condition": {
         "op": "EQ",
@@ -1498,6 +1722,37 @@
           "id": "sp-src-prose",
           "mode": "FORBIDDEN",
           "action": "USE_SESSION_PROSE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-partition",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-partition",
+          "field": "matched_outcome_count"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 1
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pt-sixth",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_SIXTH_OUTCOME"
+        },
+        {
+          "id": "sp-pt-relabel",
+          "mode": "FORBIDDEN",
+          "action": "RELABEL_SEMANTIC_GAP_AS_INTEGRATION"
         }
       ],
       "required": [
@@ -1756,6 +2011,55 @@
       "post_state": [
         {
           "id": "cr-human_decision_dominates-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-concrete_routing_semantic_gap_candidate-frozen",
           "scope": "MISSION",
           "target": "ref-return",
           "kind": "CLAIM",
@@ -2180,6 +2484,152 @@
       "value_type": "SET"
     },
     {
+      "id": "rf-ep02-semantics-present",
+      "fact": "ep_02.required_routing_semantics_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-procedural-removal",
+      "fact": "ep_02.removal_by_existing_procedural_orchestration",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PARTIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-bounded-integration-required",
+      "fact": "ep_02.bounded_integration_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-human-selection-required",
+      "fact": "ep_02.substantive_human_selection_causally_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-g4a",
+      "fact": "ep_02.gap_gate_g4a_procedural_orchestration_does_not_fully_remove_burden",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep02-g4b",
+      "fact": "ep_02.gap_gate_g4b_remaining_cause_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED_ROUTING_SEMANTICS_ABSENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_HUMAN_SELECTION_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
       "id": "rf-ep03-trigger",
       "fact": "ep_03.trigger",
       "acquisition": "MEASURED",
@@ -2412,6 +2862,152 @@
       "value_type": "SET"
     },
     {
+      "id": "rf-ep03-semantics-present",
+      "fact": "ep_03.required_routing_semantics_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-procedural-removal",
+      "fact": "ep_03.removal_by_existing_procedural_orchestration",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PARTIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-bounded-integration-required",
+      "fact": "ep_03.bounded_integration_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-human-selection-required",
+      "fact": "ep_03.substantive_human_selection_causally_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-g4a",
+      "fact": "ep_03.gap_gate_g4a_procedural_orchestration_does_not_fully_remove_burden",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep03-g4b",
+      "fact": "ep_03.gap_gate_g4b_remaining_cause_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED_ROUTING_SEMANTICS_ABSENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_HUMAN_SELECTION_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
       "id": "rf-ep04-trigger",
       "fact": "ep_04.trigger",
       "acquisition": "MEASURED",
@@ -2642,6 +3238,152 @@
       "fact": "ep_04.durable_evidence_identities",
       "acquisition": "MEASURED",
       "value_type": "SET"
+    },
+    {
+      "id": "rf-ep04-semantics-present",
+      "fact": "ep_04.required_routing_semantics_present",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-procedural-removal",
+      "fact": "ep_04.removal_by_existing_procedural_orchestration",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PARTIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-bounded-integration-required",
+      "fact": "ep_04.bounded_integration_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-human-selection-required",
+      "fact": "ep_04.substantive_human_selection_causally_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-g4a",
+      "fact": "ep_04.gap_gate_g4a_procedural_orchestration_does_not_fully_remove_burden",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SATISFIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ep04-g4b",
+      "fact": "ep_04.gap_gate_g4b_remaining_cause_classification",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BOUNDED_INTEGRATION_ABSENT_SEMANTICS_PRESENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REQUIRED_ROUTING_SEMANTICS_ABSENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SUBSTANTIVE_HUMAN_SELECTION_REQUIRED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
     },
     {
       "id": "rf-u01-responsibility",
@@ -7385,6 +8127,10 @@
           },
           {
             "type": "SYMBOL",
+            "value": "CONCRETE_ROUTING_SEMANTIC_GAP_CANDIDATE"
+          },
+          {
+            "type": "SYMBOL",
             "value": "INSUFFICIENT_DURABLE_EVIDENCE"
           }
         ]
@@ -7455,6 +8201,53 @@
           }
         ]
       }
+    },
+    {
+      "id": "rf-decisive-rule",
+      "fact": "study.decisive_partition_rule",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RULE_0"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-partition-trace",
+      "fact": "study.partition_variable_trace",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-semantic-gap-capability",
+      "fact": "study.concrete_missing_routing_capability_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
     }
   ],
   "next_consequences": [
