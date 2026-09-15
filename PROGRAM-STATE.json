@@ -1184,11 +1184,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "handoff-routing-gather-new-durable-evidence-selected",
+      "question": "Sélectionner GATHER_NEW_DURABLE_EVIDENCE comme direction R&D humaine pour la ligne de conception HANDOFF_ROUTING, c'est-à-dire poursuivre cette ligne de recherche en cessant de traiter une passe d'analyse de plus sur le même corpus gelé comme une preuve nouvelle, plutôt que de garer la ligne ou de revenir à la sélection générale de direction du Lab, l'issue qualifiée demeurant INSUFFICIENT_DURABLE_EVIDENCE et cette sélection n'emportant ni méthode d'acquisition de preuve, ni expérience nouvelle, ni prototype, ni sélection de CAND-01 à CAND-09 ou Q-CAND-A, ni moteur de routage, ni représentation nouvelle, ni primitive sémantique nouvelle, ni TOOLING-EXPERIMENT-004, ni autorisation d'implémentation ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-136",
+          "kind": "repo-path",
+          "ref": "54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-gather-new-durable-evidence-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "ac556b763e22ab5664aa790e714e0c1c190a61c9"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Obtenir la sélection humaine de direction R&D pour la ligne de conception HANDOFF_ROUTING, maintenant que l'issue qualifiée est INSUFFICIENT_DURABLE_EVIDENCE. Alternatives courantes admises : A = GATHER_NEW_DURABLE_EVIDENCE, poursuivre la ligne HANDOFF_ROUTING en exigeant une étape nouvelle d'acquisition de preuve capable de résoudre une ou plusieurs inconnues matérielles, sans sélectionner pour autant de méthode d'acquisition, d'expérience, d'implémentation, de conception, de moteur de routage, de représentation ni de TOOLING-EXPERIMENT-004 ; B = PARK_HANDOFF_ROUTING_DESIGN_LINE, clore ou garer la ligne de conception courante à l'issue qualifiée, aucune mission d'espace de conception n'étant ouverte automatiquement ensuite et toute réouverture exigeant une entrée humaine fraîche ou une preuve matériellement nouvelle ; C = SELECT_ANOTHER_LAB_DIRECTION, cesser d'avancer cette ligne et revenir à la sélection de direction de programme du Lab, sans identifier pour autant la direction suivante. Aucune règle déterministe du Lab ne tranche entre A, B et C : preuve insuffisante qualifiée n'oblige ni à rassembler plus de preuve, ni à garer, ni à changer de direction. L'action suivante est d'OBTENIR LA DÉCISION HUMAINE, et non de sélectionner une branche R&D : la mission 006 n'est pas sélectionnée, aucune expérience, méthode de preuve ni direction de Lab nouvelle n'est sélectionnée, la porte humaine de sélection de conception demeure NOT OPEN, l'implémentation demeure non autorisée, et la revue différée de l'incident de cible erronée ne peut être automatiquement retenue comme direction de l'option C.",
+    "value": "Exécuter la mission 006, l'étude gelée d'exigences de preuve durable HANDOFF_ROUTING, avec un AGENT CCR LAB #33 frais. Autorité gouvernante : 54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md. Mission Object canonique : missions/006-handoff-routing-evidence-requirement-study/mission.json, blob 4a16343dfdaa20fab0897cda2f02a1bf14db7d68, sha256 513ec0a6b5c6360bc69a2a8a8c500b8cfe7b4fe94e2dc8d512b7c9fb059c32d1. Enveloppe canonique : missions/006-handoff-routing-evidence-requirement-study/envelope.md, blob fe7f7698cbf02b0cf4315d5b67aaaf3279260948, sha256 1986a7b8f48f5f9a16eeaa326acf8fda973149c32dfa4b5960b2683c9da029d8. Chemin de résultat futur : missions/006-handoff-routing-evidence-requirement-study/result.json, actuellement absent. Ligne de base de capacité technique : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. L'index de mission 006 n'est pas TE006. Répondre à la question canonique gelée : quel est le plus petit ensemble d'exigences de preuve durable nouvelle, s'il en existe un, capable de résoudre l'incertitude matérielle de conception assez pour avancer au-delà de l'état qualifié RULE_0 / INSUFFICIENT_DURABLE_EVIDENCE. Déterminer ce qui doit devenir durablement connu, jamais comment l'acquérir. Reconstruire l'incertitude matérielle et sa structure de dépendance à partir de U1 à U5 et des familles F1 à F3, sans présumer que toutes doivent être résolues ni qu'une seule suffit. Traiter RC7 et RC8 comme cibles prioritaires sans paquet prédéterminé, en montrant si elles sont nécessaires, suffisantes, les deux ou aucune. Appliquer le pare-feu de nouveauté : réemballage, réinterprétation et synthèse d'anciennes revendications ne sont pas une preuve nouvelle, un fait courant omis se classant CURRENT_CORPUS_CORRECTION avec sa conséquence comptée à part. Appliquer le test de pouvoir discriminant, la classification de progrès de décision, la distinction PARTIAL_PROGRESS_SET contre RULE0_EXIT_CAPABLE_SET, puis la minimalité par retrait d'item, la distinction matérielle et la dominance sans préférence de coût, de commodité, d'architecture ni de familiarité. Appliquer la partition ordonnée en règles 0 à 4 et retourner exactement une issue parmi UNIQUE_MINIMAL_DURABLE_EVIDENCE_REQUIREMENT_SET_ESTABLISHED, MULTIPLE_MINIMAL_DURABLE_EVIDENCE_REQUIREMENT_SETS_REQUIRE_HUMAN_SELECTION, NO_BOUNDED_NEW_EVIDENCE_REQUIREMENT_CAN_RESOLVE_CURRENT_UNCERTAINTY et INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT. Produire exactement le contrat de retour gelé de 96 relations. Ne créer que le result.json réservé. Commits 0, pushs 0. Ne pas acquérir de preuve, ne pas exécuter ni sélectionner d'expérience, ne pas construire de prototype, ne pas sélectionner de méthode d'acquisition, ne pas sélectionner de candidat de conception, ne pas concevoir de représentation, ne pas sélectionner de moteur de routage, ne pas créer TOOLING-EXPERIMENT-004 et n'autoriser aucune implémentation.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1205,17 +1226,31 @@
         }
       },
       {
-        "id": "ev-135",
+        "id": "ev-137",
         "kind": "repo-path",
-        "ref": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md",
+        "ref": "54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "evidence_requirement_study_contract",
+          "value": "54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md couche B — contrat gelé de l'étude d'exigences de preuve : question canonique du plus petit ensemble d'exigences durables nouvelles, base d'incertitude qualifiée, cibles U1 à U5 et familles F1 à F3 avec structure de dépendance, RC7 et RC8 en cibles prioritaires sans présélection, forme d'item d'exigence en quatorze champs, pare-feu de nouveauté, test de pouvoir discriminant, test de progrès de décision, distinction PARTIAL_PROGRESS_SET contre RULE0_EXIT_CAPABLE_SET, minimalité par retrait d'item, pare-feu exigence contre méthode, aucune présélection de candidat, preuve d'exhaustivité d'espace, preuve de suppression de charge, domaine fermé à quatre issues, partition ordonnée 0 à 4, Mission 006 blob 4a16343dfdaa20fab0897cda2f02a1bf14db7d68, enveloppe blob fe7f7698cbf02b0cf4315d5b67aaaf3279260948, contrat de retour de 96 relations, exécutant futur AGENT CCR LAB #33, méthode d'acquisition NON SÉLECTIONNÉE, implémentation NON AUTORISÉE"
+        },
+        "observed": {
+          "blob": "ac556b763e22ab5664aa790e714e0c1c190a61c9"
+        }
+      },
+      {
+        "id": "ev-138",
+        "kind": "repo-path",
+        "ref": "54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Obtenir la sélection humaine de direction R&D pour la ligne de conception HANDOFF_ROUTING, maintenant que l'issue qualifiée est INSUFFICIENT_DURABLE_EVIDENCE. Alternatives courantes admises : A = GATHER_NEW_DURABLE_EVIDENCE, poursuivre la ligne HANDOFF_ROUTING en exigeant une étape nouvelle d'acquisition de preuve capable de résoudre une ou plusieurs inconnues matérielles, sans sélectionner pour autant de méthode d'acquisition, d'expérience, d'implémentation, de conception, de moteur de routage, de représentation ni de TOOLING-EXPERIMENT-004 ; B = PARK_HANDOFF_ROUTING_DESIGN_LINE, clore ou garer la ligne de conception courante à l'issue qualifiée, aucune mission d'espace de conception n'étant ouverte automatiquement ensuite et toute réouverture exigeant une entrée humaine fraîche ou une preuve matériellement nouvelle ; C = SELECT_ANOTHER_LAB_DIRECTION, cesser d'avancer cette ligne et revenir à la sélection de direction de programme du Lab, sans identifier pour autant la direction suivante. Aucune règle déterministe du Lab ne tranche entre A, B et C : preuve insuffisante qualifiée n'oblige ni à rassembler plus de preuve, ni à garer, ni à changer de direction. L'action suivante est d'OBTENIR LA DÉCISION HUMAINE, et non de sélectionner une branche R&D : la mission 006 n'est pas sélectionnée, aucune expérience, méthode de preuve ni direction de Lab nouvelle n'est sélectionnée, la porte humaine de sélection de conception demeure NOT OPEN, l'implémentation demeure non autorisée, et la revue différée de l'incident de cible erronée ne peut être automatiquement retenue comme direction de l'option C."
+          "value": "Exécuter la mission 006, l'étude gelée d'exigences de preuve durable HANDOFF_ROUTING, avec un AGENT CCR LAB #33 frais. Autorité gouvernante : 54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md. Mission Object canonique : missions/006-handoff-routing-evidence-requirement-study/mission.json, blob 4a16343dfdaa20fab0897cda2f02a1bf14db7d68, sha256 513ec0a6b5c6360bc69a2a8a8c500b8cfe7b4fe94e2dc8d512b7c9fb059c32d1. Enveloppe canonique : missions/006-handoff-routing-evidence-requirement-study/envelope.md, blob fe7f7698cbf02b0cf4315d5b67aaaf3279260948, sha256 1986a7b8f48f5f9a16eeaa326acf8fda973149c32dfa4b5960b2683c9da029d8. Chemin de résultat futur : missions/006-handoff-routing-evidence-requirement-study/result.json, actuellement absent. Ligne de base de capacité technique : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. L'index de mission 006 n'est pas TE006. Répondre à la question canonique gelée : quel est le plus petit ensemble d'exigences de preuve durable nouvelle, s'il en existe un, capable de résoudre l'incertitude matérielle de conception assez pour avancer au-delà de l'état qualifié RULE_0 / INSUFFICIENT_DURABLE_EVIDENCE. Déterminer ce qui doit devenir durablement connu, jamais comment l'acquérir. Reconstruire l'incertitude matérielle et sa structure de dépendance à partir de U1 à U5 et des familles F1 à F3, sans présumer que toutes doivent être résolues ni qu'une seule suffit. Traiter RC7 et RC8 comme cibles prioritaires sans paquet prédéterminé, en montrant si elles sont nécessaires, suffisantes, les deux ou aucune. Appliquer le pare-feu de nouveauté : réemballage, réinterprétation et synthèse d'anciennes revendications ne sont pas une preuve nouvelle, un fait courant omis se classant CURRENT_CORPUS_CORRECTION avec sa conséquence comptée à part. Appliquer le test de pouvoir discriminant, la classification de progrès de décision, la distinction PARTIAL_PROGRESS_SET contre RULE0_EXIT_CAPABLE_SET, puis la minimalité par retrait d'item, la distinction matérielle et la dominance sans préférence de coût, de commodité, d'architecture ni de familiarité. Appliquer la partition ordonnée en règles 0 à 4 et retourner exactement une issue parmi UNIQUE_MINIMAL_DURABLE_EVIDENCE_REQUIREMENT_SET_ESTABLISHED, MULTIPLE_MINIMAL_DURABLE_EVIDENCE_REQUIREMENT_SETS_REQUIRE_HUMAN_SELECTION, NO_BOUNDED_NEW_EVIDENCE_REQUIREMENT_CAN_RESOLVE_CURRENT_UNCERTAINTY et INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT. Produire exactement le contrat de retour gelé de 96 relations. Ne créer que le result.json réservé. Commits 0, pushs 0. Ne pas acquérir de preuve, ne pas exécuter ni sélectionner d'expérience, ne pas construire de prototype, ne pas sélectionner de méthode d'acquisition, ne pas sélectionner de candidat de conception, ne pas concevoir de représentation, ne pas sélectionner de moteur de routage, ne pas créer TOOLING-EXPERIMENT-004 et n'autoriser aucune implémentation."
         },
         "observed": {
-          "blob": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+          "blob": "ac556b763e22ab5664aa790e714e0c1c190a61c9"
         }
       }
     ]

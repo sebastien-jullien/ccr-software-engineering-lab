@@ -176,6 +176,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md`](51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md) — correction avant première dépêche : l'ordre d'issues de l'autorité 50 déclenchait sur l'existence d'un seul candidat de composition conforme, si bien qu'un choix de conception humain authentique pouvait être préempté par une issue de classe alors que plusieurs candidats minimaux matériellement distincts demeuraient. Le pare-feu de choix humain existait dans la prose, pas dans la règle. Modèle ensembliste : ensemble minimal conforme, dominance adossée à la preuve et non préférentielle — aucune classe ne domine l'autre —, ensemble restant après dominance, puis partition ordonnée où la multiplicité prime sur la classe. Preuve mécanique reconstruite sur une abstraction représentant la multiplicité : 288 états bruts, 124 admissibles, zéro sans issue, zéro assignation multiple, zéro masquage.
 - [`52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md`](52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md) — deux couches tenues distinctes : la qualification ratifiée, puis le contrat de l'étude de reconstruction. La qualification conclut FAIL : un besoin qualifié n'est pas la preuve qu'une conception conforme existe, et B = YES n'implique pas une cardinalité de choix supérieure ou égale à deux. Quatre erreurs matérielles établies dans le résultat — CAND-01, CAND-02, CAND-08 et CAND-09 surqualifiés faute de réalisation établie de leur dérivation au gel commune, minimalité comptée sans conformité établie, inventaire incomplet avec Q-CAND-A omis, dépendance aux limitations L-2 et L-3 sous-évaluée. Règle décisive RULE_0, issue qualifiée INSUFFICIENT_DURABLE_EVIDENCE, porte humaine NOT OPEN. La mission 004 et son résultat ne sont pas réécrits. La chaîne de réalisation RC1..RC8 devient portante : une référence n'est pas une jointure, et ajouter un composant crée un candidat nouveau, jamais une simple complétion.
 - [`53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md`](53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification indépendante du résultat de la mission 005, PASS WITH LIMITATIONS, règle qualifiée RULE_0 et issue INSUFFICIENT_DURABLE_EVIDENCE, avec 0 erreur matérielle, 2 non matérielles et 3 limitations, les quatre candidats de dérivation étant non conformes faute de déclencheur typé et Q-CAND-A à conformité non établie ; puis la porte humaine de direction R&D qu'elle ouvre. Une dérivation lisant une prose n'est pas une jointure réalisée, une famille non résolue n'est pas une conception qualifiée, et davantage d'analyse du même corpus n'est pas une preuve durable nouvelle. Trois branches gelées sans qu'aucune soit sélectionnée : rassembler de la preuve nouvelle, garer la ligne, ou choisir une autre direction du Lab.
+- [`54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md`](54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction R&D, GATHER_NEW_DURABLE_EVIDENCE, qui poursuit la ligne HANDOFF_ROUTING en cessant de traiter une passe d'analyse de plus sur le même corpus comme une preuve nouvelle ; puis le contrat de l'étude d'exigences de preuve qu'elle ouvre. Le bloqueur courant est évidentiaire, donc la question suivante n'est plus quelle conception l'emporte mais quelle preuve durable nouvelle serait assez discriminante. Exigence n'est pas méthode, pare-feu de nouveauté, test de pouvoir discriminant, progrès de décision, minimalité par retrait d'item, RC7 et RC8 en cibles prioritaires sans paquet prédéterminé, quatre issues fermées. L'étude dit ce qui doit devenir durablement connu, jamais comment l'acquérir.
 
 ## Outillage
 
@@ -432,10 +433,10 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : OBTAIN HUMAN R&D-DIRECTION SELECTION
+= next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
 
 HUMAN R&D-DIRECTION GATE
-= OPEN
+= CLOSED / SELECTED
   53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md
 = question : what should the Lab do with the HANDOFF_ROUTING design line now
   that the qualified outcome is INSUFFICIENT_DURABLE_EVIDENCE
@@ -446,12 +447,64 @@ HUMAN R&D-DIRECTION GATE
   reopening would need fresh human input or materially new evidence
 = option C : SELECT_ANOTHER_LAB_DIRECTION — return to Lab program-direction
   selection; selecting C does not identify the next direction
-= option selected : NONE
-= no deterministic Lab rule chooses among A / B / C
-= qualified insufficient evidence obliges neither gathering, nor parking,
-  nor changing direction — this is a genuine human R&D decision
+= option selected : A — GATHER_NEW_DURABLE_EVIDENCE, RATIFIED
+= authority 53 : CLOSED
+= same-corpus analysis : NOT NEW EVIDENCE
+= qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : OBTAIN HUMAN R&D-DIRECTION SELECTION
+= next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
+
+EVIDENCE-REQUIREMENT STUDY
+= CONTRACT FROZEN / NOT YET EXECUTED
+  54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md
+= question : what is the smallest new durable evidence requirement set, if any,
+  capable of resolving the material HANDOFF_ROUTING design uncertainty
+  sufficiently to advance beyond the qualified RULE_0 /
+  INSUFFICIENT_DURABLE_EVIDENCE state
+= the study determines WHAT MUST BECOME DURABLY KNOWN, never HOW TO ACQUIRE IT
+= evidence requirement : NOT a method, NOT an experiment, NOT an implementation
+= material uncertainty targets : U1..U5 plus families F1..F3, with their
+  dependency structure; neither all-must-be-resolved nor one-suffices presumed
+= RC7 / RC8 : explicit evidence-priority targets, NOT a predetermined package —
+  the analyst must show whether they are necessary, sufficient, both or neither
+= candidate-space exhaustiveness : explicit evidence target; another analyst
+  searching and finding nothing is NOT positive exhaustive evidence
+= newness firewall : repackaging, reinterpretation and a summary of old claims
+  are NOT new evidence; an overlooked current fact is a
+  CURRENT_CORPUS_CORRECTION, its consequence accounted separately
+= discriminating-power test : possible durable values must separate currently
+  admissible analytical states
+= decision progress · PARTIAL_PROGRESS_SET versus RULE0_EXIT_CAPABLE_SET
+= minimality : component-removal over evidence items; a convenient extra
+  observation is not a minimal requirement, and more data is not a better set
+= no candidate preselection : evidence targeting a candidate is NOT candidate
+  selection; choosing a design to ease evidence collection is FORBIDDEN
+= information available is NOT material routing work removed; a presentation
+  existing is NOT the qualified burden removed
+= outcome domain : 4 closed outcomes, no fifth
+= outcome partition : ordered rules 0..4; no preference by cost, convenience,
+  architecture or implementation familiarity
+= human gate : openable only on
+  MULTIPLE_MINIMAL_DURABLE_EVIDENCE_REQUIREMENT_SETS_REQUIRE_HUMAN_SELECTION,
+  and it would concern WHICH EVIDENCE REQUIREMENT, not which method or design
+= mission 006 : missions/006-handoff-routing-evidence-requirement-study/mission.json
+= envelope : missions/006-handoff-routing-evidence-requirement-study/envelope.md
+= mission index 006 : NOT TE006
+= mission validation : ok, 0 errors · render coverage complete 269 / 269
+= mission-object schema extended : NO
+= return contract : 96 frozen relations
+= acquisition-method and implementation-authorization fields :
+  PREDETERMINED = NO
+= future executor : AGENT CCR LAB #33, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result006 : DOES NOT EXIST YET
+= acquisition method : NOT SELECTED
+= experiment : NOT SELECTED
+= implementation : NOT AUTHORIZED
+= routing engine : NOT SELECTED
+= new representation : NOT SELECTED
+= TE004 : NONE
+= next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -547,7 +600,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : OBTAIN HUMAN R&D-DIRECTION SELECTION
+= next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -867,7 +920,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : OBTAIN HUMAN R&D-DIRECTION SELECTION
+= next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -876,13 +929,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : OBTAIN HUMAN R&D-DIRECTION SELECTION
+= next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : OBTAIN HUMAN R&D-DIRECTION SELECTION
+= next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
 
 CURRENT LAB STREAM
 = NONE
