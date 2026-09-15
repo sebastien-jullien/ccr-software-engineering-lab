@@ -1,0 +1,2392 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-evidence-requirement-space-closure-007"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/007-handoff-routing-evidence-requirement-space-closure/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "b3d8e3ec0b1b23abf26cbd626fc1dc35ca5e7fe9"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/007-handoff-routing-evidence-requirement-space-closure/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "b3d8e3ec0b1b23abf26cbd626fc1dc35ca5e7fe9"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "handoff-routing-evidence-requirement-space-closure-007 @ e2991585c4a7479f663604c0afbf5a0faeba40cb"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-cut"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "e2991585c4a7479f663604c0afbf5a0faeba40cb"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-technical-baseline"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-counter-expert-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-incident-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-set-q-members"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f116399f0b23b40e68dbb44e7153bc984f01631f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-set-q-capable"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f116399f0b23b40e68dbb44e7153bc984f01631f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-set-q-minimal"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f116399f0b23b40e68dbb44e7153bc984f01631f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-set-q-eligible"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f116399f0b23b40e68dbb44e7153bc984f01631f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-set-q-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "branche MISSION_LOCAL_REDERIVATION_REQUIRED · RECONSTRUCTION_REQUIRED · CLOSED_COMPLETE : dérivations génériques RC2 NO, dérivations locales côté orchestration RC7 NO, conceptions qui typent dès la décision RC7 NO, univers clos → règle 4 de la mission 005 atteignable"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f116399f0b23b40e68dbb44e7153bc984f01631f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-other-capable-sets"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-eligible-lower-bound"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-exhaustiveness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-mu-q1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-divergences"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-definition"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "univers des propositions d'exigence admissibles au sens des autorités 54 et 55 dont une valeur durable peut décider une propriété RC1 à RC8 ou M1 à M11 d'une classe de conception encore ouverte de la frontière de la mission 005, ou la clôture de cette frontière"
+          },
+          {
+            "type": "SCALAR",
+            "value": "classes de conception de la frontière, par moment de typage (aucun, décision, gel, passation) et par lieu de dérivation (générique, fourni, à la main) : D1 dérivation lisant la prose du protocole (CAND-01, 02, 08, 09) — RC7 NO qualifié ; D2 CAND-03 à CAND-07 — NON_CONFORMANT qualifiés ; D3 exigence typée consignée au gel dans le Mission Object, dérivation générique (Q-CAND-A) et ses variantes par porteur de sortie (F1) ; D4 déclencheur typé hors du Mission Object consigné au gel ou à la passation, dérivation générique (F3) ; D5a intention typée dès la décision ratifiée, destination et ordre dérivés génériquement (F2) ; D5b destination et ordre propres à la mission fournis typés par la ratification humaine (F2) ; D6 dérivation locale à la main par l'orchestration — RC7 NO par définition"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-completeness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "toute sortie de routage existe soit dérivée par règle, soit fournie par un acteur, soit reconstruite à la main : la partition D1 à D6 est complète pour la frontière gelée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "une sortie de la règle 0 de la mission 005 exige soit la clôture négative de toute classe ouverte avec exhaustivité (règle 4), soit une conformité positive et une cardinalité déterminée ; pour chaque classe ouverte D3, D4, D5a, D5b, chaque propriété RC ou M est examinée pour savoir quelle proposition admissible peut la décider indépendamment du candidat"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-class-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PC-RULE0-BLOCKERS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-UNRESOLVED-FAMILIES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-RC7-RC8"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-CANDIDATE-SPACE-CLOSURE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-COMPONENT-SET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-REALIZED-CHAIN"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-MANUAL-RECONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-BURDEN-OBSERVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-HANDOFF-EVENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-CORPUS-IMPLIED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PC-NORMATIVE-ACT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-class-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "11"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-rule0-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "U1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "U2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "U3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "U4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "U5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "F1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "F2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "F3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-unresolved-families"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "F1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "F2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "F3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-minimum-classes"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "bloqueurs de règle 0 : U1 → AT-01 · U2 → AT-02 · U3 → AT-05 · U4 → AT-06 · U5 → AT-03"
+          },
+          {
+            "type": "SCALAR",
+            "value": "familles non résolues : F1 et F3 → AT-01, AT-02 · F2 → AT-01, AT-04, et AT-07 sous condition"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RC7 et RC8 : RC7 → AT-02, AT-04, AT-07 sous condition · RC8 → AT-06, seule observation admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "clôture d'espace de candidats → AT-03"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ensemble de composants et chaîne réalisée → AT-05 pour le Mission Object ; pour F2, question de conception, non d'exigence"
+          },
+          {
+            "type": "SCALAR",
+            "value": "reconstruction manuelle → AT-02 au gel et à la passation, AT-04 et AT-07 à la ratification"
+          },
+          {
+            "type": "SCALAR",
+            "value": "observation de suppression de charge → AT-06 ; propre à une réalisation, jamais de classe"
+          },
+          {
+            "type": "SCALAR",
+            "value": "événement de handoff → AT-02 et AT-04, qui observent chacun un acte de handoff"
+          },
+          {
+            "type": "SCALAR",
+            "value": "proposition impliquée par le corpus → CC-1, correction déjà comptée ; aucune autre"
+          },
+          {
+            "type": "SCALAR",
+            "value": "acte normatif — règle générique ratifiée, exclusion ratifiée d'une famille → admissibilité NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-universe-exclusion-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "une classe omise ne peut créer un ensemble capable de sortie que si elle décide, indépendamment du candidat, une propriété RC ou M de D5a sans U1 négative, ou de D5b sans AT-04 ; pour D5a : RC1 existe, RC2 ne tombe que par U1, RC3 à RC6 et M5 M6 existent par la prémisse qualifiée d'un porteur par extension bornée, RC8 n'est observable que par réalisation, M4 M7 à M11 ne dépendent d'aucune valeur durable nouvelle ; RC7 seule reste, et c'est AT-07 ; pour D5b, de même, RC7 seule reste, et c'est AT-04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "une proposition dont la valeur se lit dans le corpus gelé est une correction, non un atome ; une proposition propre à une famille non concrète est exclue par l'autorité 54 ; une proposition de méthode n'est pas un atome"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AT-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-06"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "6"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-canonical-form"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "un atome = un fait durable nouveau à connaître, l'inconnue matérielle qu'il résout, sa portée, sa sémantique d'association et de durabilité, et la branche de sortie qu'il rend atteignable"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-difference-dimensions"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FAIT_REQUIS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INCONNUE_RESOLUE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PORTEE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ASSOCIATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DURABILITE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BRANCHE_DE_SORTIE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-equivalence-classes"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "EQ-01 {ER-02, tout précédent postérieur à la mission 001 portant un protocole d'observation} → AT-01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "EQ-02 {ER-03 au gel, même acte à la passation} → AT-02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "EQ-03 {ER-05, toute clôture du même univers quel qu'en soit le support} → AT-03"
+          },
+          {
+            "type": "SCALAR",
+            "value": "EQ-04 {QR-1 à la décision, ratification humaine de la même fourniture au gel} → AT-04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "EQ-05 {ER-01} → AT-05"
+          },
+          {
+            "type": "SCALAR",
+            "value": "EQ-06 {ER-04, toute observation de la même réalisation} → AT-06"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-equivalence-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "6"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-excluded"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "XA-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "XA-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "XA-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "XA-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "XA-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "XA-06"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-excluded-reasons"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "XA-01 : capacité de PROGRAM-STATE à porter une exigence typée vérifiée — se lit dans la ligne de base : correction CC-1, non atome"
+          },
+          {
+            "type": "SCALAR",
+            "value": "XA-02 : source de la charge EP-02 à EP-04, détermination elle-même contre reconstruction — tranchée par le corpus qualifié de la mission 003 : suppression contrefactuelle par dérivation déterministe"
+          },
+          {
+            "type": "SCALAR",
+            "value": "XA-03 : preuve descriptive de la portée générique d'U1 — aucune acquisition finie ne ferme l'ensemble ouvert des missions futures"
+          },
+          {
+            "type": "SCALAR",
+            "value": "XA-04 : observation de charge sous une réalisation de F2 — propre à une famille non concrète, exclue par l'autorité 54"
+          },
+          {
+            "type": "SCALAR",
+            "value": "XA-05 : synthèse des autorités 28 et 36 comme portée générique — réemballage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "XA-06 : porteur de F2 par représentation existante — tranché par la prémisse qualifiée : un porteur existe par extension bornée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-method-rejected"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-atom-normalization-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-norm-bundling-rejected"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-norm-splitting-rejected"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-norm-duplicate-pairs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "ER-03 au gel / même acte à la passation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "QR-1 à la décision / ratification de la même fourniture au gel"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-norm-duplicates-collapsed"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-norm-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "regroupement refusé : AT-01 et AT-03 présentés comme un atome de clôture négative"
+          },
+          {
+            "type": "SCALAR",
+            "value": "découpage refusé : AT-04 scindé en destination et ordre, même acte de ratification"
+          },
+          {
+            "type": "SCALAR",
+            "value": "méthodes refusées : choix de la mission du second précédent, support de la clôture, forme de fichier de l'instance, moyen d'observation de la réalisation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-map-proposition-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "P-U1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-U2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-U3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-U4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-U5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-D3-RC7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-D4-RC7"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-D5b-RC7"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-D5a-RC7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-D5-RC8"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "P-U1-GENERIC-POSITIVE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-map-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "P-U1 → AT-01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-U2 → AT-02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-U3 → AT-05"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-U4 → AT-06"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-U5 → AT-03"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-D3-RC7 → AT-02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-D4-RC7 → AT-02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-D5b-RC7 → AT-04"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-map-unmapped-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-map-unmapped-reasons"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "P-D5a-RC7 : sa valeur négative n'est admissible que si RC7 s'applique à la ratification humaine de sa propre intention : SU-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-D5-RC8 : propre à une réalisation d'une famille non concrète : exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "P-U1-GENERIC-POSITIVE : aucune acquisition descriptive finie ; par acte normatif seulement : SU-1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-construction-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "ensemble = combinaison d'atomes admissibles ; capacité de sortie montrée par couverture des classes ouvertes D3, D4, D5a, D5b sur au moins une branche admissible, jusqu'à la règle 4 ou à une conformité positive de cardinalité déterminée de la mission 005 ; minimalité par retrait d'atome"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-constructed-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-Q"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "K-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "K-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "K-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "K-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "K-5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-constructed-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "6"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exit-capable-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-Q"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "K-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exit-capable-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-additional-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-additional-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exit-capability-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SET-Q : prémisse qualifiée : U1 négative ferme D3, D4, D5a ; AT-04 négatif ferme D5b ; clôture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "K-4 : contient SET-Q ; sa branche positive laisse D5a ouverte"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-removal-tests"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "9"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-Q"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "K-4 ⊃ SET-Q : non minimal, aucune distinction à évaluer"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-dimensions"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CLASSE_DE_PROPOSITION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOQUEUR_ELIMINE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MECANISME_DE_CLOTURE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BRANCHE_DE_SORTIE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "un seul ensemble minimal établi : aucune dominance à évaluer"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominated-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-unknown-kept"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-Q"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-exists"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun départage déterministe gelé"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exhaustiveness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-proof-elements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "A univers borné : ÉTABLI"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B complétude : ÉTABLIE pour les classes de conception D1 à D6"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C atomes canoniques : ÉTABLIS sous la sémantique gelée, AT-01 à AT-06"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D correspondance : ÉTABLIE sauf P-D5a-RC7 et P-U1-GENERIC-POSITIVE, dont l'admissibilité dépend de SU-2 et de SU-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "E exclusion : ÉTABLIE sauf pour les classes PC-NORMATIVE-ACT et la reconstruction à la ratification de l'intention"
+          },
+          {
+            "type": "SCALAR",
+            "value": "F règle de construction : ÉTABLIE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "G énumération des ensembles capables de sortie : NON ÉTABLIE — conditionnelle à SU-1 et SU-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "H minimalité : ÉTABLIE pour les ensembles construits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "I normalisation : ÉTABLIE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "J dominance et ensemble restant : ÉTABLIS pour les ensembles construits"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-negative-search"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SU-1 — admissibilité des actes normatifs comme atomes d'exigence : une règle générique ratifiée de destination et d'ordre, ou une exclusion ratifiée d'une famille, est-elle un fait durable à connaître au sens de l'autorité 54, ou une décision hors de l'espace d'exigence ; si admissible, { N-F2, AT-01, AT-03 }, où N-F2 exclut par ratification le typage dès la décision, est capable de sortie, minimal et matériellement distinct de SET-Q"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SU-2 — portée de RC7 sur la ratification humaine : le typage par le décideur de sa propre intention peut-il être une reconstruction manuelle résiduelle ; si oui, AT-07, sa contrepartie observable, ferme D5a sans U1, et { AT-02, AT-04, AT-07, AT-03 } est capable de sortie, minimal et matériellement distinct de SET-Q"
+          },
+          {
+            "type": "SCALAR",
+            "value": "sous une sémantique stricte — ni acte normatif, ni RC7 sur l'intention ratifiée — l'espace se clôt avec SET-Q seul ; sous l'une ou l'autre sémantique admissive, deux ensembles minimaux au moins : aucune invariance"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-changing-unknown"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-material-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SU-1 — admissibilité des actes normatifs comme atomes d'exigence : une règle générique ratifiée de destination et d'ordre, ou une exclusion ratifiée d'une famille, est-elle un fait durable à connaître au sens de l'autorité 54, ou une décision hors de l'espace d'exigence ; si admissible, { N-F2, AT-01, AT-03 }, où N-F2 exclut par ratification le typage dès la décision, est capable de sortie, minimal et matériellement distinct de SET-Q"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SU-2 — portée de RC7 sur la ratification humaine : le typage par le décideur de sa propre intention peut-il être une reconstruction manuelle résiduelle ; si oui, AT-07, sa contrepartie observable, ferme D5a sans U1, et { AT-02, AT-04, AT-07, AT-03 } est capable de sortie, minimal et matériellement distinct de SET-Q"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-partial-only-leakage"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SET-Q préservé : capable de sortie et minimal ; aucun autre ensemble minimal établi sous la sémantique gelée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "la clôture ne dépend plus d'aucun fait durable manquant mais de deux questions de sémantique non tranchées par le corpus gelé, SU-1 et SU-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "leur résolution fait passer l'issue de la règle 2 à la règle 1 : exhaustivité NOT_ESTABLISHED → règle 0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-selection-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_OPEN"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-selection-gate-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'issue MULTIPLE n'est pas établie"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-requirement-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-acquisition-method-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-authorization"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SU-1 et SU-2 sont des questions de sémantique : aucune preuve durable ne les tranche, et l'étude n'a pas autorité pour les trancher"
+          },
+          {
+            "type": "SCALAR",
+            "value": "la couverture repose sur les prémisses qualifiées de l'autorité 56 : porteur de F2 par extension bornée, SET-Q minimal"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-01.ATOM_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AT-01"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-01.SOURCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-02"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-01.REQUIRED_FACT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "second précédent durable : application sans dérivation locale ou dérivation locale nouvelle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-01.RESOLVED_UNKNOWN"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "U1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-01.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-01.ADMISSIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-02.ATOM_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AT-02"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-02.SOURCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-03"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-02.REQUIRED_FACT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "acte de consignation au gel ou à la passation : consignation seule ou reconstruction résiduelle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-02.RESOLVED_UNKNOWN"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "U2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-02.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-02.ADMISSIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-03.ATOM_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AT-03"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-03.SOURCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-05"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-03.REQUIRED_FACT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "clôture gelée de l'univers borné des conceptions"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-03.RESOLVED_UNKNOWN"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "U5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-03.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-03.ADMISSIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-04.ATOM_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AT-04"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-04.SOURCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "QR-1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-04.REQUIRED_FACT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ratification fournissant destination et ordre propres à la mission : décision ou reconstruction"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-04.RESOLVED_UNKNOWN"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "F2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-04.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-04.ADMISSIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-05.ATOM_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AT-05"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-05.SOURCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-01"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-05.REQUIRED_FACT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "instance Mission Object v0 portant les étapes de Q-CAND-A : portée fidèlement ou non"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-05.RESOLVED_UNKNOWN"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "U3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-05.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_SPECIFIC"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-05.ADMISSIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-06.ATOM_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AT-06"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-06.SOURCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-04"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-06.REQUIRED_FACT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "observation en usage réel d'une réalisation de Q-CAND-A : charge absente ou récurrente"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-06.RESOLVED_UNKNOWN"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "U4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-06.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_SPECIFIC"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "atom.AT-06.ADMISSIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-Q.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AT-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-Q.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-Q.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "prémisse qualifiée : U1 négative ferme D3, D4, D5a ; AT-04 négatif ferme D5b ; clôture"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-Q.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-1.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AT-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-1.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-1.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D5a reste ouverte tant qu'U1 n'est pas résolue"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-1.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-2.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AT-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-2.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-2.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D5b reste ouverte"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-2.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-3.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AT-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-3.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-3.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D5a et D5b restent ouvertes"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-3.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-4.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AT-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-06"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-4.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-4.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "contient SET-Q ; sa branche positive laisse D5a ouverte"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-4.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-5.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AT-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AT-04"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-5.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-5.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune clôture : la règle 4 de la mission 005 manque de son exhaustivité"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.K-5.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    }
+  ]
+}
