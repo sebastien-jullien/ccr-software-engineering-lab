@@ -1,0 +1,4163 @@
+{
+  "identity": {
+    "id": "handoff-routing-normative-option-space-closure-009",
+    "class": "HANDOFF_ROUTING_NORMATIVE_OPTION_SPACE_POSITIVE_CLOSURE_STUDY",
+    "addressee": "AGENT_CCR_LAB_39",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "study.canonical_question",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAN_THE_AUTHORIZED_NORMATIVE_QUANTIFICATION_SEMANTICS_OPTION_SPACE_BE_POSITIVELY_CLOSED_UNDER_THE_CURRENT_GOVERNING_SEMANTICS"
+      },
+      "semantics_unresolved": false,
+      "label": "l espace d options de semantique normative de quantification autorise peut-il etre positivement clos sous la semantique gouvernante courante, de telle sorte que toute option admissible materiellement distincte corresponde soit a une option canonique enumeree, soit a une exclusion positivement justifiee ; puis, seulement si la cloture est positivement etablie, quel est le registre complet et positif d options minimales conformes apres normalisation d equivalence, minimalite, distinction materielle, traitement de dominance actuellement autorise et traitement de departage deterministe"
+    },
+    {
+      "subject": "study.category",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NORMATIVE_OPTION_SPACE_POSITIVE_CLOSURE_STUDY"
+      },
+      "semantics_unresolved": false,
+      "label": "la mission 009 est une etude de cloture positive d espace d options normatives ; elle n est ni une etude de conception normative repartant de zero, ni une reexecution de la mission 008, ni une etude de definition de dominance, ni une mission d acquisition de preuve, ni une experience, ni une tache d implementation, ni une creation d autorite gouvernante ; sa tache est de determiner si l univers des options semantiques normatives materiellement distinctes peut etre positivement et reproductiblement clos sous la semantique deja gouvernante a l autorite 60"
+    },
+    {
+      "subject": "study.human_direction",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS"
+      },
+      "semantics_unresolved": false,
+      "label": "la direction humaine ratifiee est CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS ; ADDRESS_NORMATIVE_DOMINANCE_SEMANTICS n est pas selectionnee ; une selection de direction n est pas une selection d option normative, et cette direction n autorise ni relation de dominance nouvelle, ni metrique de dominance, ni classement de preference semantique, ni selection de NQ-A, NQ-B, NQ-C ou NQ-D, ni adoption de regle semantique normative, ni creation d autorite gouvernante, ni implementation"
+    },
+    {
+      "subject": "study.qualified_start",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CURRENT_POSITIVE_ROSTER_IS_NOT_THE_UNIVERSE"
+      },
+      "semantics_unresolved": false,
+      "label": "NQ-A, NQ-B, NQ-C et NQ-D entrent comme constats positifs courants d options minimales conformes ; elles ne sont ni l univers complet d options, ni le registre final de survivants, ni une regle semantique choisie par l humain ; la distinction entre NQ-B et NQ-D demeure etablie sauf lecture de regroupement, dans la mesure deja ratifiee par l etat qualifie corrige de l autorite 60, et cette disposition n est pas rouverte gratuitement"
+    },
+    {
+      "subject": "study.anti_search_exhaustion",
+      "value": {
+        "type": "SYMBOL",
+        "value": "SEARCH_EXHAUSTION_IS_NOT_OPTION_SPACE_CLOSURE"
+      },
+      "semantics_unresolved": false,
+      "label": "avoir cherche encore sans trouver d option nouvelle n est pas une cloture d espace d options, aucune septieme option trouvee n est pas une exhaustivite positive, et un registre de familles courant qui semble complet n est pas une completude semantique ; la mission 009 exige une preuve positive de construction et d exclusion"
+    },
+    {
+      "subject": "study.closure_obligations",
+      "value": {
+        "type": "SYMBOL",
+        "value": "POSITIVE_CLOSURE_CHAIN_A_TO_L"
+      },
+      "semantics_unresolved": false,
+      "label": "avant de rapporter une completude ETABLIE, la mission 009 doit positivement etablir l univers borne des dimensions semantiques gouvernantes, sa base de completude positive, le domaine de valeurs canonique de chaque dimension materielle, les dependances et incompatibilites entre dimensions, une regle de construction d options deterministe et complete, l enumeration de toute combinaison materielle coherente, la normalisation semantique des variantes de formulation et de representation, l exclusion positive des cellules incoherentes, non materielles ou dupliquees, la preuve que toute option admissible materiellement distincte correspond a une option canonique enumeree ou a une exclusion positivement justifiee, le traitement complet de conformite, de minimalite et de distinction sur le registre clos, l application des seules semantiques de dominance et de conservation par defaut existantes, et l application de tout departage deterministe deja gele"
+    },
+    {
+      "subject": "study.dimension_reconstruction",
+      "value": {
+        "type": "SYMBOL",
+        "value": "MANDATED_MINIMUM_DIMENSION_INSPECTION"
+      },
+      "semantics_unresolved": false,
+      "label": "la reconstruction des dimensions doit au minimum inspecter l existence d objets d exigence quantifies au niveau de l ensemble, leur selectionnabilite independante, le caractere seulement derive de la semantique universelle, l equivalence a la famille complete d instances, la base d identite semantique, l identite par reference de domaine contre appartenance effective, la liaison de domaine de candidat, l association de cloture universelle, le comportement sur domaine vide, singleton et multi-membres, la direction de canonicalisation, l appartenance d ensemble selectionnable, la representation de famille d instances, le comportement de regroupement et de decoupage, la normalisation de doublons semantiques, la relation a la cloture d espace de candidats, la compatibilite historique et l effet de gouvernance prospective ; toute dimension supplementaire positivement impliquee par le corpus admis doit etre eprouvee, et cette liste n est pas presumee exhaustive"
+    },
+    {
+      "subject": "study.completeness_basis",
+      "value": {
+        "type": "SYMBOL",
+        "value": "GENERATIVE_NOT_OBSERVATIONAL"
+      },
+      "semantics_unresolved": false,
+      "label": "la preuve de completude de l univers de dimensions doit etre semantique et generative, non simplement observationnelle ; la stabilite a travers les options courantes, le fait que les options courantes couvrent de nombreux axes et l absence d axe supplementaire trouve ne valent pas completude ; la preuve doit deriver l univers de dimensions admissibles des responsabilites et distinctions gouvernantes gelees"
+    },
+    {
+      "subject": "study.construction_discipline",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO_HAND_PICKING_NO_UNCONSTRAINED_CARTESIAN"
+      },
+      "semantics_unresolved": false,
+      "label": "la regle de construction va des dimensions canoniques, de leurs domaines de valeurs et des contraintes de dependance vers toutes les cellules d options semantiques brutes coherentes ; il est interdit de choisir a la main les combinaisons qui paraissent interessantes, comme d employer un produit cartesien naif lorsque des contraintes semantiques l invalident sans appliquer explicitement ces contraintes ; aucune valeur de representation seule ne compte comme variante semantique"
+    },
+    {
+      "subject": "study.exclusion_ledger",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED_EXCLUSION_BLOCKS_CLOSURE"
+      },
+      "semantics_unresolved": false,
+      "label": "toute cellule brute exclue avant qualification porte son identifiant, sa combinaison semantique exacte, sa classe d exclusion, sa base durable exacte et la reponse a la question de savoir si elle pourrait representer une option admissible materiellement distincte ; une exclusion dont cette reponse est NOT_ESTABLISHED empeche la cloture positive"
+    },
+    {
+      "subject": "study.dominance_firewall",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_DOMINANCE_SEMANTICS_ONLY"
+      },
+      "semantics_unresolved": false,
+      "label": "la mission 009 ne peut appliquer que les semantiques de dominance deja gelees avant elle ; elle ne peut ni definir ce que la dominance devrait signifier, ni introduire une metrique de classement, ni eriger la subsomption stricte en regle nouvelle, ni employer un compte d engagements comme classement, ni traiter l elegance, la simplicite ou la representabilite comme dominance, ni inferer une dominance parce qu une option parait preferable ; pour chaque paire du registre clos, retourner POSITIVELY_ESTABLISHED ou NOT_ESTABLISHED avec sa base deja autorisee exacte, et conserver les deux options faute de base gelee etablissant la dominance"
+    },
+    {
+      "subject": "study.stop_on_hidden_dominance_need",
+      "value": {
+        "type": "SYMBOL",
+        "value": "REPORT_NEW_DOMINANCE_SEMANTICS_REQUIRED_DO_NOT_DEFINE_IT"
+      },
+      "semantics_unresolved": false,
+      "label": "si, apres cloture positive de l espace d options, l issue analytique finale ne peut etre determinee parce que resoudre la dominance par paires exigerait une relation normative non definie a ce jour, ne pas la definir, rapporter le bloqueur exact NEW_DOMINANCE_SEMANTICS_REQUIRED et classer l issue finale selon la partition gelee ; ce resultat pourra justifier plus tard la direction B, mais la mission 009 ne peut pas y transiter d elle-meme, ce qui exigerait une decision humaine de direction ulterieure"
+    },
+    {
+      "subject": "study.outcome_domain",
+      "value": {
+        "type": "SYMBOL",
+        "value": "FOUR_EXISTING_MISSION_008_LABELS_UNCHANGED"
+      },
+      "semantics_unresolved": false,
+      "label": "les quatre issues analytiques de la mission 008 sont conservees telles quelles et aucune etiquette terminale analytique nouvelle n est creee pour la seule mission 009 ; les bloqueurs operationnels tels qu une limite de representation demeurent separes des issues analytiques"
+    },
+    {
+      "subject": "study.human_authority_mapping",
+      "value": {
+        "type": "SYMBOL",
+        "value": "RESULT_LEVEL_GATE_ONLY_NEVER_PROGRAM_LEVEL"
+      },
+      "semantics_unresolved": false,
+      "label": "l autorite 59 demeure gouvernante : sur UNIQUE la porte impliquee de niveau resultat est OPEN de type ADOPTION, sur MULTIPLE elle est OPEN de type SELECTION, sur NO_CONFORMANT et INSUFFICIENT elle est NOT_OPEN de type NONE ; dans tous les cas, pendant la mission 009, la porte humaine normative de niveau programme n est pas ouverte, aucune option normative n est selectionnee, aucune regle gouvernante n est selectionnee et aucune autorite normative nouvelle n est creee"
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth61",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md"
+      },
+      "identity_required": false,
+      "label": "autorite gouvernante de cette etude ; identite non epinglee, le commit de gel la produit"
+    },
+    {
+      "id": "ref-auth60",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "3fe5181b740443593676b85cd1341ff3d1bd3916"
+      },
+      "label": "qualification corrigee de la mission 008 et etat qualifie de depart de cette etude"
+    },
+    {
+      "id": "ref-auth59",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "d6638cd5e7b3c5023d71c5fec54f62ab1de8df92"
+      },
+      "label": "semantique gouvernante d autorite humaine post-issue, adoption contre selection"
+    },
+    {
+      "id": "ref-auth58",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "a3a5af1d4ef079de9839c2c35ba2f0190c314012"
+      },
+      "label": "criteres NS1 a NS15, minimalite, distinction materielle, dominance non preferentielle"
+    },
+    {
+      "id": "ref-auth57",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+      },
+      "label": "CU-Q, CU-Q2 et niveaux classe, instance, quantification"
+    },
+    {
+      "id": "ref-auth56",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "f116399f0b23b40e68dbb44e7153bc984f01631f"
+      },
+      "label": "pare-feu de regroupement et de decoupage, obligation de preuve positive de cloture"
+    },
+    {
+      "id": "ref-auth55",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7dad5b112e8ad1a1cd04a94cf32855f74242f1f0"
+      },
+      "label": "semantique de sortie de la regle 0 et d eligibilite de partition"
+    },
+    {
+      "id": "ref-mission008",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/008-handoff-routing-normative-quantification-semantics-study/mission.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "54a7814f3d82974d72d126accbaefda1f3890122"
+      },
+      "label": "contrat historique execute ; NON MODIFIE"
+    },
+    {
+      "id": "ref-result008",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/008-handoff-routing-normative-quantification-semantics-study/result.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "8a9dc8aa91c9365abec0eb352f2a90f3cf476732"
+      },
+      "label": "retour reel de CCR_LAB_FIX_1 ; NQ-A, NQ-B, NQ-C, NQ-D ; base analytique finale materiellement contredite par l autorite 60 ; NON MODIFIE"
+    },
+    {
+      "id": "ref-auth14",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      },
+      "label": "semantique de representation existante : Mission Object, pour la seule evaluation de compatibilite"
+    },
+    {
+      "id": "ref-auth23",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      },
+      "label": "semantique de representation existante : Result Instance, pour la seule evaluation de compatibilite"
+    },
+    {
+      "id": "ref-auth09",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+      },
+      "label": "semantique durable existante : etat de programme"
+    },
+    {
+      "id": "ref-program-state-live",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "PROGRAM-STATE.json"
+      },
+      "identity_required": false,
+      "label": "etat de programme courant, resolu a l execution ; deliberement NON epingle"
+    },
+    {
+      "id": "ref-technical-baseline",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REMOTE_REF",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "COMMIT",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      },
+      "label": "LIGNE DE BASE DE CAPACITE TECHNIQUE, employee la ou une affirmation de capacite est necessaire"
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/009-handoff-routing-normative-option-space-closure/result.json"
+      },
+      "identity_required": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-read-qualified",
+      "mode": "REQUIRED",
+      "action": "READ_QUALIFIED_START_STATE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-auth61"
+      }
+    },
+    {
+      "id": "e-dimensions",
+      "mode": "REQUIRED",
+      "action": "RECONSTRUCT_SEMANTIC_DIMENSION_UNIVERSE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-value-domains",
+      "mode": "REQUIRED",
+      "action": "DEFINE_CANONICAL_VALUE_DOMAINS",
+      "cardinality": 1
+    },
+    {
+      "id": "e-dependencies",
+      "mode": "REQUIRED",
+      "action": "BUILD_DIMENSION_DEPENDENCY_GRAPH",
+      "cardinality": 1
+    },
+    {
+      "id": "e-construct-cells",
+      "mode": "REQUIRED",
+      "action": "CONSTRUCT_RAW_SEMANTIC_OPTION_CELLS",
+      "cardinality": 1
+    },
+    {
+      "id": "e-exclusion",
+      "mode": "REQUIRED",
+      "action": "APPLY_POSITIVE_EXCLUSION_LEDGER",
+      "cardinality": 1
+    },
+    {
+      "id": "e-canonical",
+      "mode": "REQUIRED",
+      "action": "BUILD_CANONICAL_OPTION_ROSTER",
+      "cardinality": 1
+    },
+    {
+      "id": "e-map-historical",
+      "mode": "REQUIRED",
+      "action": "MAP_HISTORICAL_OPTIONS_INTO_CANONICAL_GRID",
+      "cardinality": 1
+    },
+    {
+      "id": "e-closure",
+      "mode": "REQUIRED",
+      "action": "ESTABLISH_OPTION_SPACE_CLOSURE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-conformance",
+      "mode": "REQUIRED",
+      "action": "APPLY_FROZEN_NORMATIVE_CONFORMANCE_CRITERIA",
+      "cardinality": 1
+    },
+    {
+      "id": "e-minimality",
+      "mode": "REQUIRED",
+      "action": "APPLY_COMPONENT_REMOVAL_MINIMALITY_TEST",
+      "cardinality": 1
+    },
+    {
+      "id": "e-distinctness",
+      "mode": "REQUIRED",
+      "action": "ASSESS_MATERIAL_DISTINCTNESS",
+      "cardinality": 1
+    },
+    {
+      "id": "e-dominance",
+      "mode": "REQUIRED",
+      "action": "APPLY_EXISTING_DOMINANCE_SEMANTICS_ONLY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-tiebreak",
+      "mode": "REQUIRED",
+      "action": "DETERMINE_FROZEN_DETERMINISTIC_TIEBREAK",
+      "cardinality": 1
+    },
+    {
+      "id": "e-partition",
+      "mode": "REQUIRED",
+      "action": "APPLY_ORDERED_OUTCOME_PARTITION",
+      "cardinality": 1
+    },
+    {
+      "id": "e-outcome",
+      "mode": "REQUIRED",
+      "action": "DERIVE_FINAL_ANALYTICAL_OUTCOME",
+      "cardinality": 1
+    },
+    {
+      "id": "e-gate-derivation",
+      "mode": "REQUIRED",
+      "action": "DERIVE_POST_OUTCOME_HUMAN_GATE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-return"
+      }
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "FREEZE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-forbid-define-dominance",
+      "mode": "FORBIDDEN",
+      "action": "DEFINE_NEW_DOMINANCE_SEMANTICS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-ranking-metric",
+      "mode": "FORBIDDEN",
+      "action": "INTRODUCE_RANKING_METRIC",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-subsumption-rule",
+      "mode": "FORBIDDEN",
+      "action": "INTRODUCE_STRICT_SUBSUMPTION_AS_DOMINANCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-commitment-count",
+      "mode": "FORBIDDEN",
+      "action": "INTRODUCE_COMMITMENT_COUNT_AS_RANKING",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-elegance",
+      "mode": "FORBIDDEN",
+      "action": "INTRODUCE_ELEGANCE_OR_SIMPLICITY_AS_DOMINANCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-infer-dominance",
+      "mode": "FORBIDDEN",
+      "action": "INFER_DOMINANCE_FROM_APPARENT_PREFERABILITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-search-as-closure",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_SEARCH_FAILURE_AS_OPTION_SPACE_CLOSURE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-observational-basis",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_OBSERVATIONAL_STABILITY_AS_COMPLETENESS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-naive-cartesian",
+      "mode": "FORBIDDEN",
+      "action": "USE_NAIVE_CARTESIAN_WITHOUT_CONSTRAINTS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-hand-picked",
+      "mode": "FORBIDDEN",
+      "action": "HAND_PICK_INTERESTING_COMBINATIONS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-representation-variant",
+      "mode": "FORBIDDEN",
+      "action": "COUNT_REPRESENTATION_VARIANT_AS_SEMANTIC_OPTION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-collapse-convenience",
+      "mode": "FORBIDDEN",
+      "action": "COLLAPSE_OPTIONS_FOR_CONVENIENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-new-conformance",
+      "mode": "FORBIDDEN",
+      "action": "ADD_NEW_CONFORMANCE_REQUIREMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-new-minimality",
+      "mode": "FORBIDDEN",
+      "action": "ADD_NEW_MINIMALITY_SEMANTICS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-new-terminal-label",
+      "mode": "FORBIDDEN",
+      "action": "INVENT_NEW_TERMINAL_ANALYTICAL_LABEL",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-direction-b",
+      "mode": "FORBIDDEN",
+      "action": "TRANSITION_TO_DOMINANCE_SEMANTICS_DIRECTION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-select-option",
+      "mode": "FORBIDDEN",
+      "action": "SELECT_NORMATIVE_OPTION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-create-authority",
+      "mode": "FORBIDDEN",
+      "action": "CREATE_GOVERNING_SEMANTIC_AUTHORITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-open-program-gate",
+      "mode": "FORBIDDEN",
+      "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-count-unestablished",
+      "mode": "FORBIDDEN",
+      "action": "COUNT_NOT_ESTABLISHED_AS_POSITIVE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-rewrite-result008",
+      "mode": "FORBIDDEN",
+      "action": "REWRITE_HISTORICAL_RESULT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-schema",
+      "mode": "FORBIDDEN",
+      "action": "EXTEND_SCHEMA",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-representation-change",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_REPRESENTATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-acquire",
+      "mode": "FORBIDDEN",
+      "action": "ACQUIRE_EVIDENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-experiment",
+      "mode": "FORBIDDEN",
+      "action": "CREATE_TOOLING_EXPERIMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-implement",
+      "mode": "FORBIDDEN",
+      "action": "IMPLEMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-conversation",
+      "mode": "FORBIDDEN",
+      "action": "RECONSTRUCT_FROM_CONVERSATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-counter-expert-prose",
+      "mode": "FORBIDDEN",
+      "action": "USE_COUNTER_EXPERT_PROSE_AS_EVIDENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-incident",
+      "mode": "FORBIDDEN",
+      "action": "USE_WRONG_TARGET_INCIDENT_AS_EVIDENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-modify-history",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_HISTORICAL_MISSION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-qualify-own",
+      "mode": "FORBIDDEN",
+      "action": "QUALIFY_OWN_RETURN",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-commit",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-push",
+      "mode": "FORBIDDEN",
+      "action": "PUSH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-other-mutation",
+      "mode": "FORBIDDEN",
+      "action": "MUTATE_REPOSITORY",
+      "cardinality": 0
+    }
+  ],
+  "content_requirements": [
+    {
+      "id": "cr-technical-baseline",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "PRESERVE",
+      "subject": "study.technical_capability_baseline",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "id": "cr-no-conversation",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.conversation_factual_reconstruction_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-session-prose",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.session_prose_fallback_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-counter-expert-prose",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.counter_expert_prose_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-ccr-system",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.ccr_system_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-external-web",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.external_web_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-incident",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.wrong_target_incident_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-mutation-boundary",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.repository_mutations_other_than_result",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-commits",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_commit_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-pushes",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_push_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-direction",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "qualified_start.human_normative_option_closure_direction",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS"
+      }
+    },
+    {
+      "id": "cr-normative-option",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.normative_option_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-governing-rule",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.governing_normative_semantic_rule_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-governing-rule-id",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.governing_normative_semantic_rule_id",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "id": "cr-new-authority",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.new_normative_authority_created",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-implementation",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.implementation_authorization",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-direction-b",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.direction_b_transitioned",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-new-dominance",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "dominance.new_semantics_defined",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-ranking-metric",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "dominance.new_ranking_metric_introduced",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-conformance-unchanged",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "conformance.criteria_changed",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-minimality-applied",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "minimality.component_removal_test_applied",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-no-search-closure",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "closure.search_exhaustion_used_as_closure",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-incomplete-generator",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "closure.complete_enumeration_under_incomplete_generator",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-generative-basis",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "dimension.completeness_basis_is_generative",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-no-naive-cartesian",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "construction.naive_cartesian_used_without_constraints",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-hand-picking",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "construction.hand_picked_combination_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-forbid-dominance-defined",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_dominance_semantics_defined",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-subsumption",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.strict_subsumption_introduced_as_dominance",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-commitment-count",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.commitment_count_used_as_ranking",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-elegance",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.elegance_or_simplicity_used_as_dominance",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-preferability",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.dominance_inferred_from_preferability",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-representation-variant",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.representation_variant_counted_as_option",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-collapse-convenience",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.options_collapsed_for_convenience",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-new-conformance",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_conformance_requirement_added",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-new-label",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_terminal_label_invented",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-program-gate",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.program_level_human_gate_opened",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-unestablished-counted",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.not_established_counted_as_positive",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-result008-rewritten",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.historical_result_rewritten",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-schema-extended",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.schema_extended",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-acquisition",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.evidence_acquired",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-experiment",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_tooling_experiment",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "SELECTED"
+      }
+    },
+    {
+      "id": "cr-forbid-history-modified",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.historical_mission_modified",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-qualified",
+        "effect": "e-read-qualified",
+        "atomic": true,
+        "gated_by": "g-preflight",
+        "produces": [
+          "ev-qualified-start"
+        ]
+      },
+      {
+        "order": 2,
+        "id": "s-dimensions",
+        "effect": "e-dimensions",
+        "atomic": true,
+        "produces": [
+          "ev-dimensions"
+        ]
+      },
+      {
+        "order": 3,
+        "id": "s-value-domains",
+        "effect": "e-value-domains",
+        "atomic": true,
+        "gated_by": "g-generative-basis"
+      },
+      {
+        "order": 4,
+        "id": "s-dependencies",
+        "effect": "e-dependencies",
+        "atomic": true
+      },
+      {
+        "order": 5,
+        "id": "s-construct",
+        "effect": "e-construct-cells",
+        "atomic": true
+      },
+      {
+        "order": 6,
+        "id": "s-exclusion",
+        "effect": "e-exclusion",
+        "atomic": true,
+        "gated_by": "g-construction-disciplined"
+      },
+      {
+        "order": 7,
+        "id": "s-canonical",
+        "effect": "e-canonical",
+        "atomic": true
+      },
+      {
+        "order": 8,
+        "id": "s-map-historical",
+        "effect": "e-map-historical",
+        "atomic": true
+      },
+      {
+        "order": 9,
+        "id": "s-closure",
+        "effect": "e-closure",
+        "atomic": true,
+        "gated_by": "g-exclusion-positive",
+        "produces": [
+          "ev-closure"
+        ]
+      },
+      {
+        "order": 10,
+        "id": "s-conformance",
+        "effect": "e-conformance",
+        "atomic": true
+      },
+      {
+        "order": 11,
+        "id": "s-minimality",
+        "effect": "e-minimality",
+        "atomic": true
+      },
+      {
+        "order": 12,
+        "id": "s-distinctness",
+        "effect": "e-distinctness",
+        "atomic": true,
+        "gated_by": "g-minimality-applied"
+      },
+      {
+        "order": 13,
+        "id": "s-dominance",
+        "effect": "e-dominance",
+        "atomic": true,
+        "produces": [
+          "ev-dominance"
+        ]
+      },
+      {
+        "order": 14,
+        "id": "s-tiebreak",
+        "effect": "e-tiebreak",
+        "atomic": true,
+        "gated_by": "g-dominance-firewall"
+      },
+      {
+        "order": 15,
+        "id": "s-partition",
+        "effect": "e-partition",
+        "atomic": true
+      },
+      {
+        "order": 16,
+        "id": "s-outcome",
+        "effect": "e-outcome",
+        "atomic": true,
+        "gated_by": "g-partition-single"
+      },
+      {
+        "order": 17,
+        "id": "s-gate-derivation",
+        "effect": "e-gate-derivation",
+        "atomic": true
+      },
+      {
+        "order": 18,
+        "id": "s-produce",
+        "effect": "e-produce-result",
+        "atomic": true,
+        "gated_by": "g-gate-derivation"
+      },
+      {
+        "order": 19,
+        "id": "s-validate",
+        "effect": "e-validate-result",
+        "atomic": true,
+        "produces": [
+          "ev-result-validation"
+        ]
+      },
+      {
+        "order": 20,
+        "id": "s-freeze",
+        "effect": "e-freeze-result",
+        "atomic": true
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-preflight",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth60"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "3fe5181b740443593676b85cd1341ff3d1bd3916"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-result008"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "8a9dc8aa91c9365abec0eb352f2a90f3cf476732"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "reserved_result_path_existing"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-generative-basis",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-search-exhaustion",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-dimensions",
+              "field": "completeness_basis_is_generative"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-dimensions",
+              "field": "observational_stability_used_as_completeness"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-construction-disciplined",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-construction",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-construct-cells",
+              "field": "hand_picked_combinations"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-construct-cells",
+              "field": "naive_cartesian_without_constraints"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-exclusion-positive",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-exclusion",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-exclusion",
+              "field": "exclusions_without_durable_basis"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-closure",
+              "field": "completeness_claimed_with_not_established_exclusion"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-minimality-applied",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-minimality",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-minimality",
+              "field": "component_removal_test_applied"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-conformance",
+              "field": "criteria_changed"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-dominance-firewall",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-dominance-invention",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-dominance",
+              "field": "new_dominance_semantics_defined"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-dominance",
+              "field": "new_ranking_metric_introduced"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-dominance",
+              "field": "dominance_inferred_from_preferability"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-partition-single",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-partition",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-partition",
+              "field": "matched_outcome_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 1
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-partition",
+              "field": "new_terminal_label_invented"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "forbidden_source_usage"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-gate-derivation",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-gate-semantics",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "terminal_paths_without_gate_state"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "terminal_paths_without_gate_type"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "program_level_gate_opened"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "paths_with_governing_rule_selected"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-unique",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b1-forbid-authority",
+          "mode": "FORBIDDEN",
+          "action": "CREATE_GOVERNING_SEMANTIC_AUTHORITY",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-unique-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-unique-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-unique-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-unique-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-unique",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+          }
+        },
+        {
+          "id": "cr-br-unique-gate",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          }
+        },
+        {
+          "id": "cr-br-unique-gate-type",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "ADOPTION"
+          }
+        },
+        {
+          "id": "cr-br-unique-governing",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-multiple",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b2-forbid-select",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_NORMATIVE_OPTION",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-multiple-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-multiple-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-multiple-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-multiple-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-multiple",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+          }
+        },
+        {
+          "id": "cr-br-multiple-gate",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          }
+        },
+        {
+          "id": "cr-br-multiple-gate-type",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "SELECTION"
+          }
+        },
+        {
+          "id": "cr-br-multiple-governing",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-none",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b3-forbid-search",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_SEARCH_FAILURE_AS_OPTION_SPACE_CLOSURE",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-none-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-none-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-none-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-none-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-none",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+          }
+        },
+        {
+          "id": "cr-br-none-gate",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        },
+        {
+          "id": "cr-br-none-gate-type",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        },
+        {
+          "id": "cr-br-none-governing",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-insufficient",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b4-forbid-direction-b",
+          "mode": "FORBIDDEN",
+          "action": "TRANSITION_TO_DOMINANCE_SEMANTICS_DIRECTION",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-insufficient-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-insufficient",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-gate",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-gate-type",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-governing",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS",
+      "next": "nc-return"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "preflight_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pf-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-pf-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-pf-fetch",
+          "mode": "FORBIDDEN",
+          "action": "FETCH"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-search-exhaustion",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-dimensions",
+          "field": "completeness_basis_is_generative"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-se-search",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_SEARCH_FAILURE_AS_OPTION_SPACE_CLOSURE"
+        },
+        {
+          "id": "sp-se-observational",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_OBSERVATIONAL_STABILITY_AS_COMPLETENESS"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-construction",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-construct-cells",
+          "field": "hand_picked_combinations"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-co-handpick",
+          "mode": "FORBIDDEN",
+          "action": "HAND_PICK_INTERESTING_COMBINATIONS"
+        },
+        {
+          "id": "sp-co-cartesian",
+          "mode": "FORBIDDEN",
+          "action": "USE_NAIVE_CARTESIAN_WITHOUT_CONSTRAINTS"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-exclusion",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-exclusion",
+          "field": "exclusions_without_durable_basis"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-ex-unestablished",
+          "mode": "FORBIDDEN",
+          "action": "COUNT_NOT_ESTABLISHED_AS_POSITIVE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-minimality",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-minimality",
+          "field": "component_removal_test_applied"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-min-declare",
+          "mode": "FORBIDDEN",
+          "action": "DECLARE_MINIMAL_WITHOUT_TEST"
+        },
+        {
+          "id": "sp-min-new",
+          "mode": "FORBIDDEN",
+          "action": "ADD_NEW_MINIMALITY_SEMANTICS"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-dominance-invention",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-dominance",
+          "field": "new_dominance_semantics_defined"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-do-define",
+          "mode": "FORBIDDEN",
+          "action": "DEFINE_NEW_DOMINANCE_SEMANTICS"
+        },
+        {
+          "id": "sp-do-metric",
+          "mode": "FORBIDDEN",
+          "action": "INTRODUCE_RANKING_METRIC"
+        },
+        {
+          "id": "sp-do-infer",
+          "mode": "FORBIDDEN",
+          "action": "INFER_DOMINANCE_FROM_APPARENT_PREFERABILITY"
+        },
+        {
+          "id": "sp-do-direction",
+          "mode": "FORBIDDEN",
+          "action": "TRANSITION_TO_DOMINANCE_SEMANTICS_DIRECTION"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-partition",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-partition",
+          "field": "matched_outcome_count"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 1
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pt-label",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_NEW_TERMINAL_ANALYTICAL_LABEL"
+        },
+        {
+          "id": "sp-pt-gate",
+          "mode": "FORBIDDEN",
+          "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-gate-semantics",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-gate-derivation",
+          "field": "program_level_gate_opened"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-gs-program",
+          "mode": "FORBIDDEN",
+          "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE"
+        },
+        {
+          "id": "sp-gs-select",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_NORMATIVE_OPTION"
+        },
+        {
+          "id": "sp-gs-authority",
+          "mode": "FORBIDDEN",
+          "action": "CREATE_GOVERNING_SEMANTIC_AUTHORITY"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-representation-blocker",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-produce-result",
+          "field": "representable_under_existing_grammar"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-rep-extend",
+          "mode": "FORBIDDEN",
+          "action": "EXTEND_SCHEMA"
+        },
+        {
+          "id": "sp-rep-invent",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_FIELD"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-mutation",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "MEASUREMENT",
+          "modifier": "COUNT_OF",
+          "ref": "repository_mutations_other_than_result"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-mut-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT"
+        },
+        {
+          "id": "sp-mut-history",
+          "mode": "FORBIDDEN",
+          "action": "REWRITE_HISTORICAL_RESULT"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-close-normative-option-space",
+        "subject": "handoff_routing_close_normative_option_space_under_current_semantics_selected",
+        "authority": "ref-auth61"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-return"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-qualified-start",
+      "kind": "OBSERVATION",
+      "fact": "qualified_start.current_positive_minimal_conformant_option_ids",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth60",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-dimensions",
+      "kind": "OBSERVATION",
+      "fact": "dimension.id_roster",
+      "method": {
+        "op": "EQ",
+        "source": "ref-result008",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-closure",
+      "kind": "VERIFICATION",
+      "fact": "closure.option_space_completeness",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth61",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-dominance",
+      "kind": "VERIFICATION",
+      "fact": "dominance.pairwise_results",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth58",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "result_instance.structural_validation",
+      "method": {
+        "op": "EQ",
+        "source": "ref-return",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-unique_conformant_normative_quantification_semantics_established-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-multiple_conformant_normative_quantification_semantics_require_human_selection-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-no_conformant_bounded_normative_quantification_semantics_established-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-insufficient_durable_basis_to_specify_normative_quantification_semantics-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BLOCKED_REPRESENTATION_LIMIT",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-produce-result",
+              "field": "representable_under_existing_grammar"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-blocked-no-schema-extension",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.schema_extended",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BLOCKED_NON_CONFORMANT_EXECUTION",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-blocked-no-outcome-forced",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome_forced",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    },
+    {
+      "label": "STOPPED_ON_PREFLIGHT",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "preflight_match"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-stopped-no-result",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-execution-identity",
+      "fact": "study.execution_identity",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-evidence-cut",
+      "fact": "study.admitted_evidence_cut",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-technical-baseline",
+      "fact": "study.technical_capability_baseline",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-conv-reconstruction",
+      "fact": "discipline.conversation_factual_reconstruction_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-session-prose",
+      "fact": "discipline.session_prose_fallback_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-counter-expert-prose",
+      "fact": "discipline.counter_expert_prose_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ccr-system-source",
+      "fact": "discipline.ccr_system_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-external-web",
+      "fact": "discipline.external_web_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-incident-source",
+      "fact": "discipline.wrong_target_incident_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-start-option-ids",
+      "fact": "qualified_start.current_positive_minimal_conformant_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-start-option-count",
+      "fact": "qualified_start.current_positive_minimal_conformant_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-start-completeness",
+      "fact": "qualified_start.option_space_completeness_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-future-dominance",
+      "fact": "qualified_start.future_option_dominance_effect_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-survivor-invariance",
+      "fact": "qualified_start.survivor_invariance_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-direction",
+      "fact": "qualified_start.human_normative_option_closure_direction",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-divergences",
+      "fact": "qualified_start.divergences_from_qualified_state",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-dimension-roster",
+      "fact": "dimension.id_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dimension-count",
+      "fact": "dimension.count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-dimension-questions",
+      "fact": "dimension.governing_question_per_dimension",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dimension-mandated-minimum",
+      "fact": "dimension.mandated_minimum_inspection_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dimension-completeness-basis",
+      "fact": "dimension.completeness_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dimension-basis-generative",
+      "fact": "dimension.completeness_basis_is_generative",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dimension-additional",
+      "fact": "dimension.additional_dimensions_derived_from_corpus",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dimension-universe-completeness",
+      "fact": "dimension.universe_completeness",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-value-domain-per-dimension",
+      "fact": "value_domain.per_dimension",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-value-domain-basis",
+      "fact": "value_domain.completeness_basis_per_dimension",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-value-domain-invalid",
+      "fact": "value_domain.invalid_values_per_dimension",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-value-domain-representation-only-rejected",
+      "fact": "value_domain.representation_only_values_rejected_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-value-domain-total",
+      "fact": "value_domain.total_admissible_value_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-dependency-relations",
+      "fact": "dependency.relations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dependency-incompatibilities",
+      "fact": "dependency.incompatibility_relations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dependency-regenerable",
+      "fact": "dependency.graph_regenerable_by_fresh_qualifier",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dependency-basis",
+      "fact": "dependency.basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-construction-rule",
+      "fact": "construction.rule",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-construction-naive-cartesian",
+      "fact": "construction.naive_cartesian_used_without_constraints",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-construction-raw-cells",
+      "fact": "construction.raw_cell_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-construction-raw-count",
+      "fact": "construction.raw_cell_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-construction-hand-picked",
+      "fact": "construction.hand_picked_combination_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-construction-coherent-count",
+      "fact": "construction.coherent_cell_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-exclusion-roster",
+      "fact": "exclusion.cell_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-exclusion-count",
+      "fact": "exclusion.count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-exclusion-class",
+      "fact": "exclusion.class_per_cell",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "INCOHERENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEMANTIC_DUPLICATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REPRESENTATION_ONLY_VARIANT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "OUTSIDE_AUTHORIZED_QUESTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "POSITIVELY_NON_MATERIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-exclusion-basis",
+      "fact": "exclusion.basis_per_cell",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-exclusion-can-represent",
+      "fact": "exclusion.can_represent_materially_distinct_option_per_cell",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-exclusion-not-established",
+      "fact": "exclusion.not_established_exclusion_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-canonical-roster",
+      "fact": "canonical.option_id_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-canonical-count",
+      "fact": "canonical.option_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-canonical-historical-mapping",
+      "fact": "canonical.mapping_of_historical_options",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-canonical-historical-status",
+      "fact": "canonical.historical_option_status_per_option",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-canonical-new-roster",
+      "fact": "canonical.new_option_id_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-canonical-new-count",
+      "fact": "canonical.new_option_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-canonical-equivalence-classes",
+      "fact": "canonical.equivalence_class_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-canonical-equivalence-count",
+      "fact": "canonical.equivalence_class_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-closure-completeness",
+      "fact": "closure.option_space_completeness",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-closure-obligations",
+      "fact": "closure.obligation_status_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-closure-first-failure",
+      "fact": "closure.first_load_bearing_failure",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-closure-search-exhaustion",
+      "fact": "closure.search_exhaustion_used_as_closure",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-closure-incomplete-generator",
+      "fact": "closure.complete_enumeration_under_incomplete_generator",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-conformance-criteria",
+      "fact": "conformance.ns_criterion_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-conformant-options",
+      "fact": "conformance.conformant_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-conformant-count",
+      "fact": "conformance.conformant_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-non-conformant-options",
+      "fact": "conformance.non_conformant_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-conformance-not-established",
+      "fact": "conformance.not_established_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-conformance-criteria-changed",
+      "fact": "conformance.criteria_changed",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-minimality-applied",
+      "fact": "minimality.component_removal_test_applied",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-minimal-options",
+      "fact": "minimality.minimal_conformant_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-minimal-count",
+      "fact": "minimality.minimal_conformant_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-distinctness-relations",
+      "fact": "distinctness.material_distinctness_relations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-pairwise",
+      "fact": "dominance.pairwise_results",
+      "acquisition": "MEASURED",
+      "value_type": "SET",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "POSITIVELY_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dominance-established-pairs",
+      "fact": "dominance.positively_established_pairs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-not-established-pairs",
+      "fact": "dominance.not_established_pairs",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-basis",
+      "fact": "dominance.basis_per_established_pair",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-new-semantics",
+      "fact": "dominance.new_semantics_defined",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dominance-new-metric",
+      "fact": "dominance.new_ranking_metric_introduced",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dominated-options",
+      "fact": "dominance.dominated_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-new-required",
+      "fact": "dominance.new_dominance_semantics_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-remaining-options",
+      "fact": "remaining.option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-remaining-cardinality",
+      "fact": "remaining.cardinality",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ZERO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TWO_OR_MORE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-remaining-count",
+      "fact": "remaining.count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-tiebreak-exists",
+      "fact": "remaining.frozen_deterministic_tiebreak_exists",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-tiebreak-basis",
+      "fact": "remaining.frozen_deterministic_tiebreak_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-outcome-changing-unknown",
+      "fact": "partition.outcome_changing_unknown",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-partition-unknowns",
+      "fact": "partition.unknowns",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-decisive-rule",
+      "fact": "study.decisive_partition_rule",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RULE_0"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-outcome",
+      "fact": "study.final_analytical_outcome",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-outcome-basis",
+      "fact": "study.final_analytical_outcome_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-implied-gate",
+      "fact": "study.result_level_implied_gate",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-implied-gate-type",
+      "fact": "study.result_level_implied_gate_type",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ADOPTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-gate-candidate-options",
+      "fact": "study.human_gate_candidate_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-limitations",
+      "fact": "study.limitations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-blockers",
+      "fact": "study.blockers",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-normative-option-selected",
+      "fact": "study.normative_option_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-governing-rule-selected",
+      "fact": "study.governing_normative_semantic_rule_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-governing-rule-id",
+      "fact": "study.governing_normative_semantic_rule_id",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-new-normative-authority",
+      "fact": "study.new_normative_authority_created",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-evidence-requirement-selected",
+      "fact": "study.evidence_requirement_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-implementation-authorization",
+      "fact": "study.implementation_authorization",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-direction-b-transition",
+      "fact": "study.direction_b_transitioned",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-study-success",
+      "fact": "study.procedural_success",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PROCEDURALLY_SUCCESSFUL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SUCCESSFUL"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "HUMAN_GATE",
+      "action": "RETURN_FROZEN_RESULT_INSTANCE",
+      "target": "handoff_routing_normative_option_space_closure_qualification"
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-no-dominance-definition",
+      "constraint": {
+        "id": "e-sc-sc-no-dominance-definition",
+        "mode": "FORBIDDEN",
+        "action": "DEFINE_NEW_DOMINANCE_SEMANTICS",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_dominance_semantics_direction"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-option-selection",
+      "constraint": {
+        "id": "e-sc-sc-no-option-selection",
+        "mode": "FORBIDDEN",
+        "action": "SELECT_NORMATIVE_OPTION",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_normative_option_selection"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-authority-creation",
+      "constraint": {
+        "id": "e-sc-sc-no-authority-creation",
+        "mode": "FORBIDDEN",
+        "action": "CREATE_GOVERNING_SEMANTIC_AUTHORITY",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_semantic_authority_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-program-gate",
+      "constraint": {
+        "id": "e-sc-sc-no-program-gate",
+        "mode": "FORBIDDEN",
+        "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_gate_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-acquisition",
+      "constraint": {
+        "id": "e-sc-sc-no-acquisition",
+        "mode": "FORBIDDEN",
+        "action": "ACQUIRE_EVIDENCE",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_acquisition_authorization"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-experiment",
+      "constraint": {
+        "id": "e-sc-sc-no-experiment",
+        "mode": "FORBIDDEN",
+        "action": "CREATE_TOOLING_EXPERIMENT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_experiment_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-representation",
+      "constraint": {
+        "id": "e-sc-sc-no-representation",
+        "mode": "FORBIDDEN",
+        "action": "MODIFY_REPRESENTATION",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_representation_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-implementation",
+      "constraint": {
+        "id": "e-sc-sc-no-implementation",
+        "mode": "FORBIDDEN",
+        "action": "IMPLEMENT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_implementation_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-persistence-by-executor",
+      "constraint": {
+        "id": "e-sc-sc-no-persistence-by-executor",
+        "mode": "FORBIDDEN",
+        "action": "COMMIT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-eol-remediation",
+      "constraint": {
+        "id": "e-sc-sc-no-eol-remediation",
+        "mode": "FORBIDDEN",
+        "action": "MODIFY_GITATTRIBUTES",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_eol_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}

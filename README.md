@@ -183,6 +183,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, ADDRESS_NORMATIVE_QUANTIFICATION_SEMANTICS, qui autorise enfin de poser la question sémantique elle-même ; puis le contrat de l'étude normative bornée qu'elle ouvre. Une sélection de direction n'est pas une réponse sémantique : ni l'admissibilité ni l'interdiction de la forme quantifiée n'y sont tranchées, ni le statut de SET-U, ni aucune exigence de preuve. L'étude construit des options sémantiques matériellement distinctes, les éprouve contre quinze critères de conformité, sépare la règle de sa représentation, préserve les artefacts historiques et interdit toute ingénierie d'issue. Une option candidate n'est pas une règle gouvernante.
 - [`59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md`](59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md) — correction d'autorité humaine : l'autorité 58 n'ouvrait la porte que sur MULTIPLE, de sorte qu'une option analytiquement unique n'avait aucune étape humaine explicite à franchir avant de pouvoir devenir gouvernante ; sous l'objet d'origine, aucun chemin terminal ne portait d'état de porte. Deux champs post-issue portent désormais la conséquence, la porte de décision et son type, ADOPTION sur une issue unique et SELECTION sur une issue multiple, la règle gouvernante restant non sélectionnée dans les quatre cas. Le refus humain demeure possible et la sortie d'un exécutant ne transfère aucune autorité de programme. La partition analytique n'est pas retouchée. L'unicité analytique n'est pas une adoption, et le silence n'est pas un consentement.
 - [`60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md`](60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée du résultat de la mission 008, ratifiée, puis une porte humaine de direction. L'exécution et la qualification structurelle sont PASS, mais le verdict analytique de la qualification est rejeté : sa preuve d'invariance confond la saturation de conformité et de minimalité avec l'immunité contre une dominance établie plus tard, alors que l'autorité 58 range la dominance après la minimalité et la distinction matérielle. NQ-A, NQ-B, NQ-C et NQ-D restent conformes et minimales, mais l'espace d'options n'est pas clos et l'effet d'une option omise par dominance n'est pas établi, donc RULE_0 gouverne. Saturation d'éligibilité n'est pas immunité contre la dominance, et conserver par défaut n'est pas prouver l'impossibilité.
+- [`61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md`](61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS, puis le contrat de l'étude de clôture positive qu'elle ouvre. L'étude doit borner l'univers des dimensions sémantiques par une preuve générative, en dériver toutes les cellules cohérentes, exclure positivement chaque cellule écartée et montrer que toute option admissible correspond à une option canonique ou à une exclusion justifiée. Le pare-feu portant est la dominance : seules les sémantiques déjà gelées s'appliquent, et si résoudre les paires exigeait une relation non définie, l'étude le rapporte au lieu de l'inventer. Chercher sans trouver n'est pas clore.
 
 ## Outillage
 
@@ -439,7 +440,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -458,7 +459,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -610,7 +611,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -762,7 +763,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -804,7 +805,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -998,10 +999,10 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
-= OPEN
+= CLOSED / SELECTED
   60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md
 = this is NOT the human normative-semantics adoption / selection gate, which
   stays NOT OPEN — two different gates
@@ -1025,11 +1026,103 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   remains mere preference and stays forbidden; selecting B declares no current
   pair dominated, chooses no option, authorizes no implementation and changes
   no historical return
-= option selected : NONE — no deterministic frozen rule chooses between A and B
-= parking the line or changing overall Lab direction would be a separate
-  program-direction decision, not silently encoded here
-= mission 009 : NONE · no executor reserved · no new study frozen
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= option selected : A — CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS,
+  RATIFIED
+  61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md
+= option B : NOT SELECTED — dominance semantics direction stays unopened
+= authority 60 : CLOSED
+= A DIRECTION SELECTION IS NOT A NORMATIVE OPTION SELECTION — it authorizes no
+  new dominance relation, no dominance metric, no semantic preference ranking,
+  no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
+  authority, no implementation
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
+
+NORMATIVE OPTION-SPACE CLOSURE STUDY
+= CONTRACT FROZEN / NOT YET EXECUTED
+  61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md
+= category : NORMATIVE OPTION-SPACE POSITIVE CLOSURE STUDY — not a design study
+  from zero, not a Mission-008 rerun, not a dominance-definition study, not
+  evidence acquisition, not an experiment, not an implementation, not an
+  authority-creation task
+= question : can the authorized normative quantification-semantics option space
+  be POSITIVELY closed under the current governing semantics, such that every
+  materially distinct admissible option maps to an enumerated canonical option
+  or to a positively justified exclusion? — and only then, what is the complete
+  positive minimal conformant roster after equivalence normalization,
+  minimality, material distinctness, currently authorized dominance processing
+  and deterministic tie-break processing
+= the study must not manufacture a new dominance rule in order to answer
+= starting state : NQ-A / NQ-B / NQ-C / NQ-D are CURRENT POSITIVE FINDINGS —
+  not the complete universe, not the final survivor roster, not a
+  human-selected rule; the NQ-B / NQ-D distinction, established unless a
+  principled quantified object reads as a bundle, is retained as already
+  ratified and not gratuitously reopened
+= SEARCHED AGAIN AND FOUND NOTHING IS NOT OPTION-SPACE CLOSURE
+= NO FIFTH OPTION FOUND IS NOT POSITIVE EXHAUSTIVENESS
+= positive closure chain A..L : bounded semantic-dimension universe ·
+  positive completeness basis · canonical value domains · dependencies and
+  incompatibilities · deterministic complete construction rule · enumeration of
+  every coherent material combination · semantic normalization of wording and
+  representation variants · positive exclusion of incoherent, non-material and
+  duplicate cells · proof that every admissible materially distinct option maps
+  to a canonical option or a justified exclusion · complete conformance,
+  minimality and distinctness processing · EXISTING dominance and keep-default
+  semantics only · any already-frozen deterministic tie-break
+= dimension reconstruction : 19 mandated minimum inspections, plus any further
+  dimension positively implied by the admitted corpus; the list is NOT presumed
+  exhaustive
+= completeness basis must be GENERATIVE, not observational — stability across
+  current options and "no extra axis found" are not completeness
+= construction discipline : no hand-picked combinations, no unconstrained
+  Cartesian product, no representation-only value as a semantic variant
+= exclusion ledger : per cell, exact combination, class, durable basis, and
+  whether it could represent a materially distinct admissible option; a
+  NOT_ESTABLISHED exclusion BLOCKS positive closure
+= current options NQ-A..NQ-D are mapped into the canonical grid;
+  historical identities preserved, result008 NOT rewritten
+= newly generated options are not conformant merely for being new
+= NS1..NS15 unchanged · no new conformance requirement · Mission-008 minimality
+  unchanged · no collapsing options for convenience
+= DOMINANCE FIREWALL : only dominance semantics frozen before this mission may
+  be applied — no defining what dominance ought to mean, no ranking metric, no
+  strict subsumption as a new rule, no commitment count, no elegance /
+  simplicity / representability, no inference from apparent preferability;
+  per pair return POSITIVELY_ESTABLISHED or NOT_ESTABLISHED with exact basis,
+  and with no frozen basis, KEEP BOTH
+= if resolving pairwise dominance would require a relation not currently
+  defined : DO NOT DEFINE IT — report NEW_DOMINANCE_SEMANTICS_REQUIRED and
+  classify the outcome under the frozen partition; that may justify direction B
+  later, but Mission 009 cannot transition there by itself
+= outcome domain : the 4 existing Mission-008 labels, unchanged · ordered
+  rules 0..4 · no option-family preference
+= human authority mapping : UNIQUE -> result-level gate OPEN / ADOPTION,
+  MULTIPLE -> OPEN / SELECTION, NO_CONFORMANT and INSUFFICIENT -> NOT_OPEN /
+  NONE; in every case the PROGRAM-LEVEL gate stays NOT OPEN, no option is
+  selected, no governing rule is selected, no new normative authority exists
+= mission 009 : missions/009-handoff-routing-normative-option-space-closure/mission.json
+  blob bb8403a49774d59d46a3fee7dff9c26995569697
+= envelope : missions/009-handoff-routing-normative-option-space-closure/envelope.md
+  blob 3f459b789520d7ee03092bbfc4dbe818c0bd86a0
+  rendered by the published renderer, never hand-patched
+= mission index 009 : NOT TE009, NOT EXPERIMENT, NOT IMPLEMENTATION
+= mission validation : ok, 0 errors · render coverage complete 323 / 323
+= mission-object schema extended : NO · vocabulary changed : NO ·
+  tooling modified : NO
+= return contract : 99 frozen relations
+= direction, conformance-criteria, dominance-semantics, option-selection,
+  governing-rule, new-authority, evidence-requirement, implementation and
+  direction-B fields : PREDETERMINED
+= future executor : AGENT CCR LAB #39, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result009 : DOES NOT EXIST YET
+= option-space completeness : NOT_ESTABLISHED
+= future-option dominance effect : NOT_ESTABLISHED pending closure
+= dominance semantics direction : NOT SELECTED
+= normative option selected : NO · governing rule selected : NO
+= program-level human normative gate : NOT OPEN
+= implementation : NOT AUTHORIZED
+= wrong-target incident : DEFERRED
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -1125,7 +1218,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -1445,7 +1538,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -1454,13 +1547,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : OBTAIN HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #39 EXECUTES MISSION 009
 
 CURRENT LAB STREAM
 = NONE
