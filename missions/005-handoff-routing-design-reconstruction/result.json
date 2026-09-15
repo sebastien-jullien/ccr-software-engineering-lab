@@ -1,0 +1,5311 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-design-reconstruction-005"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/005-handoff-routing-design-reconstruction/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "d82b048559cd613e9ab0d8ffcbf547df2ea1a930"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/005-handoff-routing-design-reconstruction/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "d82b048559cd613e9ab0d8ffcbf547df2ea1a930"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "handoff-routing-design-reconstruction-005 @ b6a66cf09766d9acd4844844706ecc12b9060c07"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-cut"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "b6a66cf09766d9acd4844844706ecc12b9060c07"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-technical-baseline"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-protected-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-incident-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-mutation-as-completion"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-search-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md@68f7c7b37c97a6cab1bf258a3369c662397e3774 § B.5 : hypothèses CAND-01 à CAND-09 et Q-CAND-A"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/004-handoff-routing-bounded-integration-design-study/result.json@24c67f16bd6c650989b516e41eb3de4485f2d64a candidats et propriétés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/003-handoff-routing-boundary/result.json@92ff7ad329a329a372755c09bd6b292c810dea34 sources durables et surfaces porteuses par cas"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ligne de base technique a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-carrying-surfaces"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROGRAM_STATE_NEXT_ACTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROGRAM_STATE_DECISIONS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NUMBERED_AUTHORITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_LOCAL_COMPANION_ARTIFACT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESULT_INSTANCE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_PANELS_READ_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GIT_COMMIT_IDENTITY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-derivation-locations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ORCHESTRATION_AT_FREEZE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_VALIDATOR"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROGRAM_STATE_CHECK"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_OBJECT_RENDERER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONSOLE_SERVER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTOR_PREFLIGHT_GATE_EVALUATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-propagation-boundaries"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FREEZE_COMMIT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ENVELOPE_RENDER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROGRAM_STATE_UPDATE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "COMPANION_ARTIFACT_COMMIT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PERSISTENCE_COMMIT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-consuming-surfaces"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTOR_ENVELOPE_AND_PREFLIGHT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORCHESTRATOR_VIA_CONSOLE_PANEL_A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORCHESTRATOR_VIA_CONSOLE_PANEL_B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORCHESTRATOR_READING_AUTHORITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ORCHESTRATOR_READING_COMPANION_ARTIFACT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unresolved-families"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "variantes de Q-CAND-A par porteur de sortie : déclencheur typé dans le Mission Object, sorties dérivées portées par next_action, l'autorité de gel ou un artefact compagnon ; chacune serait un candidat nouveau, non une complétion, et hérite des deux inconnues de Q-CAND-A"
+          },
+          {
+            "type": "SCALAR",
+            "value": "typage de l'exigence d'observation dès la décision humaine ratifiée : les décisions de PROGRAM-STATE ne portent qu'une question en prose"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-space-exhaustiveness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-burden-statement"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "supersession du protocole d'observation de l'autorité 35 § 15 et de la next_action de EP-02, faute de destination, de commit par étape et de persistance avant le panneau C dérivés au gel ; next_action rétablie deux fois"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-removing-candidate-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep02-removal-established"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-burden-statement"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "blocage avant exécution faute de destination durable des observations et de frontières d'écriture gelées ; réparation par l'autorité 36 ; commit par étape imposé ; next_action rétablie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-removing-candidate-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep03-removal-established"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-burden-statement"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "blocage faute de titulaire et d'ordre de persistance avant le panneau C ; réparation par l'autorité 37 ; trois clauses de l'autorité 36 supersédées ; next_action rétablie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-removing-candidate-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ep04-removal-established"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc1-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc1-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc2-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc2-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc3-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc3-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc4-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc4-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc5-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "8"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc5-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc6-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc6-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc7-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc7-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc8-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc8-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m1-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m2-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m3-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m4-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m5-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m6-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m7-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m8-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m9-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m10-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-satisfied-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-revised-candidate-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-non-conformant-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "9"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformance-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-test-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-component-removal-tests"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-conformant-set"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-material-distinctness"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "Q-CAND-A ≠ CAND-01 : exigence d'observation typée dans les constructions v0 comme déclencheur, contre dérivation lisant la prose"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CAND-01 ≠ CAND-02 ≠ CAND-08 ≠ CAND-09 : frontière de contrat de surface et de propagation du porteur de sortie"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominated-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme : la dominance ne s'évalue pas"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-minimal-set"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-effective-singleton-class"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-exists"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun départage déterministe gelé par les autorités 50, 51 et 52"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-impossibility-established"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-changing-unknown"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-material-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "durabilité générique des règles de destination d'observation et d'ordre avant le panneau C, établies seulement pour la mission 001 (autorité 36 § 5, autorité 37)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "qualification de la rédaction au gel d'une exigence d'observation typée : reconstruction manuelle résiduelle (RC7 NO) ou consignation de l'intention ratifiée (RC7 YES)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "capacité des constructions v0 — porte sur mesure, conséquences DETERMINED, référence VERIFICATION_TARGET — à porter fidèlement des étapes d'orchestration antérieures à la dépêche"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-l1-dependence"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "68f7c7b37c97a6cab1bf258a3369c662397e3774"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-l2-dependence"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MATERIAL"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "68f7c7b37c97a6cab1bf258a3369c662397e3774"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-l3-dependence"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MATERIAL"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "68f7c7b37c97a6cab1bf258a3369c662397e3774"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-l4-dependence"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "68f7c7b37c97a6cab1bf258a3369c662397e3774"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-l5-dependence"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "68f7c7b37c97a6cab1bf258a3369c662397e3774"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-l6-dependence"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "68f7c7b37c97a6cab1bf258a3369c662397e3774"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "INSUFFICIENT_DURABLE_EVIDENCE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "dix hypothèses évaluées de zéro contre RC1..RC8 et M1..M11 ; aucune conformité positivement établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CAND-01, CAND-02, CAND-08 et CAND-09 : RC7 NO — leur dérivation lit le protocole d'observation en prose ; NON_CONFORMANT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CAND-03 à CAND-07 : au moins un lien requis NO ; NON_CONFORMANT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "Q-CAND-A : conformité NOT_ESTABLISHED sur trois inconnues matérielles ; ses variantes par porteur forment une famille non résolue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "cardinalité restante possible 0, 1 ou davantage selon ces inconnues ; impossibilité non prouvée, espace non exhaustif → règle 0 → INSUFFICIENT_DURABLE_EVIDENCE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-human-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_OPEN"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-human-gate-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme, minimal et subsistant ; les hypothèses ne créent jamais de choix humain"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-authorization"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'exigence d'observation n'existe qu'en prose dans les surfaces de la ligne de base ; toute conclusion de conformité en dépend"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune mission postérieure à l'autorité 37 ne porte de protocole d'observation (L-3 héritée, matérielle)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "le contrefactuel de suppression reste raisonné, non observé (L-2 héritée, matérielle)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-ledger-conformant"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-01"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "dérivation au gel lisant le protocole dans l'autorité de gel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "portage par les constructions v0 du Mission Object"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_SURFACE_COMPOSITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC7 NO : la dérivation lit le protocole d'observation en prose dans l'autorité de gel ; interpréter une prose est une reconstruction manuelle résiduelle, celle-là même qualifiée PARTIAL ; RC2 à RC4 non établis : règles de destination et d'ordre établies seulement comme décisions locales à la mission 001 (autorité 36 § 5)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-01.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-02"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "dérivation au gel lisant le protocole dans l'autorité de gel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "portage par affirmations typées de next_action"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_SURFACE_COMPOSITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC7 NO : la dérivation lit le protocole d'observation en prose dans l'autorité de gel ; interpréter une prose est une reconstruction manuelle résiduelle, celle-là même qualifiée PARTIAL ; RC2 à RC4 non établis : règles de destination et d'ordre établies seulement comme décisions locales à la mission 001 (autorité 36 § 5)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-02.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-03"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "obligation de validateur liée à la contrainte permanente"
+          },
+          {
+            "type": "SCALAR",
+            "value": "portage rédigé dans le Mission Object"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_SURFACE_EXTENSION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC2 NO : aucune entrée typée dont exiger la destination d'observation ; l'obligation liée à la contrainte permanente exige un titulaire de persistance, non l'ordre avant le panneau C"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-03.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-04"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "comparaison next_action / Mission Object dans program-state check"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_SURFACE_EXTENSION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC4 NO : une comparaison ne produit aucune sortie de routage dérivée ; une omission commune reste invisible"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-04.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-05"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "section de rendu dérivée des champs typés"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_SURFACE_EXTENSION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC2 NO pour l'exigence d'observation non typée ; RC8 NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-05.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-06"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "section de routage rédigée en prose dans l'autorité de gel"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_SURFACE_COMPOSITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC2 NO : aucune dérivation ; la reformulation manuelle en prose est le mode d'omission qualifié"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-06.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-07"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "exposition console en lecture seule d'une passation dérivée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BOUNDED_SURFACE_EXTENSION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC5 NO : exposition en lecture seule sans porteur durable ; RC2 NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-07.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-08"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "dérivation au gel lisant le protocole dans l'autorité de gel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "section de routage dérivée de l'autorité de gel"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_SURFACE_COMPOSITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC7 NO : la dérivation lit le protocole d'observation en prose dans l'autorité de gel ; interpréter une prose est une reconstruction manuelle résiduelle, celle-là même qualifiée PARTIAL ; RC2 à RC4 non établis : règles de destination et d'ordre établies seulement comme décisions locales à la mission 001 (autorité 36 § 5)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-08.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CAND-09"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "dérivation au gel lisant le protocole dans l'autorité de gel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "artefact compagnon de passation local à la mission"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_SURFACE_COMPOSITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC7 NO : la dérivation lit le protocole d'observation en prose dans l'autorité de gel ; interpréter une prose est une reconstruction manuelle résiduelle, celle-là même qualifiée PARTIAL ; RC2 à RC4 non établis : règles de destination et d'ordre établies seulement comme décisions locales à la mission 001 (autorité 36 § 5)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q-CAND-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CAND-09.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.CANDIDATE_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "Q-CAND-A"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.PARENT_CANDIDATE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.REVISION_REASON"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.MATERIAL_COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "étapes d'orchestration typées dans les constructions v0 : référence VERIFICATION_TARGET vers l'artefact d'observation, prédicat de porte sur la mesure des étapes durables avant dépêche, conséquences DETERMINED de persistance puis de panneau C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "dérivation mécanique des sorties de passation depuis ces étapes typées et les règles durables"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.CLASS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXISTING_SURFACE_COMPOSITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.RC8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.M11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SATISFIED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.CONFORMANCE_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RC2 à RC4 NOT_ESTABLISHED : les règles de destination et d'ordre ne sont durables que comme décisions locales à la mission 001 ; RC7 NOT_ESTABLISHED : la rédaction de l'exigence typée au gel est-elle une reconstruction manuelle résiduelle ou la simple consignation de l'intention ratifiée ? la preuve admise ne tranche pas"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.COMPONENT_REMOVAL_RESULT"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "non évaluée : minimalité après conformité positivement établie seulement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.MATERIAL_DISTINCTNESS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CAND-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CAND-09"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.DOMINANCE_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_EVALUATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.Q-CAND-A.DOMINANCE_BASIS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme"
+          }
+        ]
+      }
+    }
+  ]
+}
