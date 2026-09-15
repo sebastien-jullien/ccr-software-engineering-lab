@@ -180,6 +180,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md`](55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md) — correction d'éligibilité : l'autorité 54 définissait la suffisance comme progrès de décision et faisait déclencher les règles positives sur les ensembles suffisants, de sorte qu'un ensemble ne faisant que progresser pouvait remporter une issue positive. Trois classes tenues distinctes, PROGRESS_CAPABLE, PARTIAL_PROGRESS rapportable mais jamais gagnant, RULE0_EXIT_CAPABLE seul éligible ; PARTITION_ELIGIBLE_SET égale RULE0_EXIT_CAPABLE_SET ; base explicite de capacité de sortie sur au moins une branche admissible, sans exiger de garantie universelle ; deux minimalités séparées ; partition 0 à 4 close sur 148 états, 0 fuite, contre 2 sous l'ancienne sémantique. La sélection humaine de direction de l'autorité 54 est intacte. Pouvoir être utile n'est pas pouvoir faire sortir de la règle 0.
 - [`56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md`](56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md) — deux couches tenues distinctes : la qualification de la mission 006, ratifiée, puis le contrat de l'étude de clôture qu'elle ouvre. L'exécution est PASS et la base analytique matérielle de l'exécutant est contredite : SET-F n'est pas capable de sortie, une conception où le décideur fournit à la ratification la destination et l'ordre propres à la mission ne reconstruisant rien. Avec l'exigence qualifiée QR-1, SET-Q = ER-02 + QR-1 + ER-05 est positivement établi capable de sortie de la règle 0 et minimal pour cette sortie, ce qui donne une borne inférieure de 1 et non une unicité ; MU-Q1, l'exhaustivité d'espace d'exigence, reste NOT_ESTABLISHED, donc RULE_0 gouverne encore. L'étude suivante doit clore l'espace par une preuve positive : chercher encore sans rien trouver n'est pas une exhaustivité sémantique. Même étiquette terminale n'est pas confirmation matérielle.
 - [`57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md`](57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification ratifiée de la mission 007, puis une porte humaine authentique de direction. L'exécution est PASS mais la qualification est FAIL, avec 3 erreurs matérielles : les deux inconnues de clôture rapportées sont tranchées par le corpus gelé, et l'inconnue portante CU-Q, quantification au niveau de l'ensemble sur des instances paramétrées, n'avait pas été nommée ; le premier échec de clôture portant est l'obligation C. SET-U reste conditionnel et SET-Q reste capable, minimal, non sélectionné et d'unicité non établie. Le blocage restant n'est pas analytique : le contrat gelé ne licencie ni n'interdit la forme d'exigence quantifiée dont dépend CU-Q. Silence normatif n'est pas déficit de preuve, et un analyste n'est pas une autorité habilitée à créer de la sémantique — d'où une porte humaine A / B, sans présélection.
+- [`58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, ADDRESS_NORMATIVE_QUANTIFICATION_SEMANTICS, qui autorise enfin de poser la question sémantique elle-même ; puis le contrat de l'étude normative bornée qu'elle ouvre. Une sélection de direction n'est pas une réponse sémantique : ni l'admissibilité ni l'interdiction de la forme quantifiée n'y sont tranchées, ni le statut de SET-U, ni aucune exigence de preuve. L'étude construit des options sémantiques matériellement distinctes, les éprouve contre quinze critères de conformité, sépare la règle de sa représentation, préserve les artefacts historiques et interdit toute ingénierie d'issue. Une option candidate n'est pas une règle gouvernante.
 
 ## Outillage
 
@@ -436,7 +437,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -455,7 +456,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -607,7 +608,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -759,10 +760,10 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
-= OPEN
+= CLOSED / SELECTED
   57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md
 = this is NOT the human evidence-requirement selection gate, which stays
   NOT OPEN — two different gates
@@ -792,11 +793,94 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   in which the qualification found no obligation establishable without
   settling CU-Q; selecting B authorizes no analyst to invent an answer to
   CU-Q, and if CU-Q stays load-bearing RULE_0 remains
-= option selected : NONE — no deterministic Lab rule chooses between A and B
-= parking the line or changing Lab direction would be a separate
-  program-direction decision, not silently encoded here
-= no mission 008 identity, no executor reserved
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= option selected : A — ADDRESS_NORMATIVE_QUANTIFICATION_SEMANTICS, RATIFIED
+  58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
+= option B : NOT SELECTED
+= authority 57 : CLOSED
+= A NORMATIVE DIRECTION SELECTION IS NOT A NORMATIVE SEMANTIC ANSWER — it
+  settles neither admissibility nor prohibition of universal quantification,
+  neither whether quantified requirements are distinct objects or derived
+  predicates, neither SET-U's admissibility nor its Rule0-exit capability,
+  and no evidence requirement
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+
+NORMATIVE QUANTIFICATION-SEMANTICS STUDY
+= CONTRACT FROZEN / NOT YET EXECUTED
+  58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
+= category : NORMATIVE SEMANTIC DESIGN-SPACE STUDY — not a Mission-007 rerun,
+  not evidence acquisition, not design, not schema extension, not an
+  experiment, not a product implementation
+= question : what normative semantic rule, if any, should govern SET-LEVEL
+  QUANTIFICATION over parameterized candidate-specific evidence-requirement
+  instances in the authorized HANDOFF_ROUTING requirement model?
+= the study determines which materially distinct conformant semantic options
+  exist, and whether existing governing principles deterministically select one
+= it presumes NEITHER YES NOR NO about quantified requirement objects
+= starting semantics : ATOM CLASS != PARAMETERIZED ATOM INSTANCE != SET-LEVEL
+  QUANTIFIED REQUIREMENT; the quantified form's admissibility is NOT_ESTABLISHED
+= CU-Q primary · CU-Q2 conditional · no analytical closure unknown independent
+  of CU-Q
+= option families : at minimum ADMISSIBLE and NOT_ADMISSIBLE, not presumed to
+  exhaust the space; any other positively derivable model must be included,
+  e.g. quantification existing only as a DERIVED ANALYTICAL PREDICATE over a
+  complete family of candidate-specific instances
+= wording variants are not distinct options
+= candidate completion firewall : A CANDIDATE OPTION IS NOT A GOVERNING RULE —
+  create a new or revised option rather than mutating one during comparison
+= 25 required specification dimensions per option
+= conformance : NS1..NS15, all positively established or the option does not
+  enter the conformant set; NOT_ESTABLISHED never counts positively
+= representation vs authority : a rule and its encoding are separate questions;
+  NO CURRENT ENCODING IS NOT SEMANTIC INVALIDITY; representation is not modified
+= historical compatibility : HISTORICAL ARTIFACTS REMAIN HISTORICAL — a new
+  rule is materialized prospectively, never by rewriting executor returns
+= SET-Q firewall : its qualification is NOT reopened; only the exact impact on
+  its future interpretation is reported, and any contradiction is reported
+  explicitly rather than normalized away
+= SET-U consequence reported per option; the study establishes SEMANTIC RULES,
+  NOT requirement-space cardinality
+= no outcome engineering : no rule chosen because it makes SET-Q unique,
+  creates multiple sets, or eases closure
+= minimality by component removal; MORE SEMANTIC RULES IS NOT A BETTER OPTION
+= material distinctness by governing semantic fact, never terminology,
+  serialization, field naming or documentation layout
+= dominance evidence-backed, reproducible, non-preferential
+= tie-break observed, never invented
+= outcome domain : 4 closed outcomes · ordered rules 0..2 then 3, then 4
+= human normative-semantics selection gate : openable only on MULTIPLE; on
+  UNIQUE the study still materializes nothing and returns for exact
+  persistence and independent qualification first
+= executor creates no authority : no schema, vocabulary or representation
+  change, no edit of Authority 58, no selection of the winning rule
+= source firewall : no session prose, NO COUNTER-EXPERT PROSE, no human or
+  model memory, no wrong-target dispatch, no CCR System, no external web
+= mission 008 : missions/008-handoff-routing-normative-quantification-semantics-study/mission.json
+  blob eec8c77c21f396d4a0b146a215194be21c7d0ee0
+= envelope : missions/008-handoff-routing-normative-quantification-semantics-study/envelope.md
+  blob 031b5971f9f92bec2edff5ed71e056b2d910ce1b
+  rendered by the published renderer, never hand-patched
+= mission index 008 : NOT TE008, NOT EXPERIMENT, NOT IMPLEMENTATION
+= mission validation : ok, 0 errors · render coverage complete 297 / 297
+= mission-object schema extended : NO · vocabulary changed : NO ·
+  tooling modified : NO
+= return contract : 97 frozen relations
+= normative-semantic-rule, evidence-requirement, acquisition-method and
+  implementation-authorization fields : PREDETERMINED = NO
+= future executor : AGENT CCR LAB #37, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result008 : DOES NOT EXIST YET
+= CU-Q : authorized for bounded study, STILL UNANSWERED
+= CU-Q2 : conditional
+= SET-Q : qualified · not selected · uniqueness NOT_ESTABLISHED
+= SET-U : conditional · not selected
+= normative semantic rule : NOT SELECTED
+= human evidence-requirement gate : NOT OPEN
+= evidence acquisition : NO
+= acquisition method : NOT SELECTED
+= experiment : NO
+= implementation : NOT AUTHORIZED
+= wrong-target incident : DEFERRED
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -892,7 +976,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -1212,7 +1296,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -1221,13 +1305,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
 
 CURRENT LAB STREAM
 = NONE
