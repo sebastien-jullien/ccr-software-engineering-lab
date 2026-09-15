@@ -174,6 +174,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md`](49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md) — deux couches tenues distinctes : la qualification analytique indépendante du résultat persisté, PASS WITH LIMITATIONS, avec EP-02, EP-03 et EP-04 reconstruits indépendamment à S = YES, P = PARTIAL, B = YES, H = NO, règle décisive RULE_4, récurrence R1..R8 confirmée sans divergence, 0 erreur analytique matérielle, 2 erreurs non matérielles et 6 limitations réelles ; puis la réponse humaine, une étude de conception d'intégration bornée sur la sémantique existante. Les deux points portants sont résolus : déterministiquement dérivable n'est pas pleinement réalisable par les surfaces courantes, et une porte d'écart sémantique non satisfaite ne contredit pas une intégration bornée manquante. Investiguer une conception n'est pas l'implémenter.
 - [`50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md`](50-HANDOFF-ROUTING-BOUNDED-INTEGRATION-DESIGN-STUDY-FREEZE.md) — gel du contrat analytique, sans la réponse : quelle est la plus petite intégration conforme sur une sémantique HANDOFF_ROUTING déjà durable capable de supprimer la charge matérielle qualifiée d'EP-02, EP-03 et EP-04 sans introduire de sémantique nouvelle ? Noyau matériel de trois cas, contexte de récurrence des 20 unités A et R1..R8 employé pour écarter un correctif propre à un épisode, ligne de base de capacité technique gelée, pare-feu de sémantique existante avec traçabilité par élément, suffisance M1..M11 puis minimalité par retrait de composant, composition de surfaces et extension bornée laissées toutes deux ouvertes, pare-feu de choix humain, cinq issues fermées et partition ordonnée mécaniquement close. Besoin qualifié n'est pas résultat de conception, et résultat de conception n'est pas décision d'implémentation.
 - [`51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md`](51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md) — correction avant première dépêche : l'ordre d'issues de l'autorité 50 déclenchait sur l'existence d'un seul candidat de composition conforme, si bien qu'un choix de conception humain authentique pouvait être préempté par une issue de classe alors que plusieurs candidats minimaux matériellement distincts demeuraient. Le pare-feu de choix humain existait dans la prose, pas dans la règle. Modèle ensembliste : ensemble minimal conforme, dominance adossée à la preuve et non préférentielle — aucune classe ne domine l'autre —, ensemble restant après dominance, puis partition ordonnée où la multiplicité prime sur la classe. Preuve mécanique reconstruite sur une abstraction représentant la multiplicité : 288 états bruts, 124 admissibles, zéro sans issue, zéro assignation multiple, zéro masquage.
+- [`52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md`](52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md) — deux couches tenues distinctes : la qualification ratifiée, puis le contrat de l'étude de reconstruction. La qualification conclut FAIL : un besoin qualifié n'est pas la preuve qu'une conception conforme existe, et B = YES n'implique pas une cardinalité de choix supérieure ou égale à deux. Quatre erreurs matérielles établies dans le résultat — CAND-01, CAND-02, CAND-08 et CAND-09 surqualifiés faute de réalisation établie de leur dérivation au gel commune, minimalité comptée sans conformité établie, inventaire incomplet avec Q-CAND-A omis, dépendance aux limitations L-2 et L-3 sous-évaluée. Règle décisive RULE_0, issue qualifiée INSUFFICIENT_DURABLE_EVIDENCE, porte humaine NOT OPEN. La mission 004 et son résultat ne sont pas réécrits. La chaîne de réalisation RC1..RC8 devient portante : une référence n'est pas une jointure, et ajouter un composant crée un candidat nouveau, jamais une simple complétion.
 
 ## Outillage
 
@@ -430,7 +431,48 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
+= next : FRESH AGENT CCR LAB #31 EXECUTES MISSION 005
+
+DESIGN-SPACE RECONSTRUCTION STUDY
+= CONTRACT FROZEN / NOT YET EXECUTED
+  52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md
+= question : which concrete candidates, if any, positively establish the
+  complete realization chain required to remove the qualified
+  EP-02 / EP-03 / EP-04 burden using only already-durable routing semantics
+= presumes nothing : no conformant design, no two designs, no surviving
+  CAND-01 / 02 / 08 / 09 / Q-CAND-A, no human selection, no winning class
+= complete realization chain RC1..RC8 : REQUIRED
+  reference is NOT a join · derived output is NOT propagated ·
+  propagated output is NOT consumed · consumed output is NOT burden removed
+= positive-membership rule : NOT_ESTABLISHED never counts positively
+= candidate mutation : NOT an admissible completion — adding a component
+  creates a new or revised candidate, evaluated from zero, no inherited
+  conformance
+= candidate hypotheses to evaluate : CAND-01..CAND-09 + Q-CAND-A,
+  none privileged, none presumed conformant
+= speculative architecture generation : FORBIDDEN
+= exhaustiveness : no additional candidate found is NOT impossibility proof
+= minimality : only after positive conformance
+= distinctness and dominance : authority-51 semantics, no class preference
+= human gate : reportable only on two positively established, minimal,
+  distinct, surviving candidates with no tie-break and no outcome-changing
+  uncertainty
+= mission 005 : missions/005-handoff-routing-design-reconstruction/mission.json
+= envelope : missions/005-handoff-routing-design-reconstruction/envelope.md
+= mission index 005 : NOT TE005
+= mission validation : ok, 0 errors · render coverage complete 272 / 272
+= mission-object schema extended : NO
+= return contract : 92 frozen relations
+= implementation authorization field : PREDETERMINED = NO
+= future executor : AGENT CCR LAB #31, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result005 : DOES NOT EXIST YET
+= implementation : NOT AUTHORIZED
+= routing engine : NOT SELECTED
+= new representation : NOT SELECTED
+= TE004 : NONE
+= wrong-target incident review : DEFERRED
+= next : FRESH AGENT CCR LAB #31 EXECUTES MISSION 005
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -642,6 +684,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = authority 51 : CORRECTED CANDIDATE-SET / PARTITION CONTRACT
   51-HANDOFF-ROUTING-DESIGN-STUDY-CANDIDATE-SET-AND-PARTITION-CORRECTION.md
 = corrected contract : EXECUTED BY CCR_LAB_FIX_1
+= mission 004 : HISTORICAL EXECUTED CONTRACT, NOT MODIFIED
 = question : what is the smallest conformant integration over already-durable
   HANDOFF_ROUTING semantics that can join / propagate those semantics and
   remove the qualified EP-02 / EP-03 / EP-04 material burden without
@@ -709,9 +752,34 @@ BOUNDED INTEGRATION DESIGN STUDY
 = executor-reported decisive rule : RULE_1
 = executor-reported outcome :
   MULTIPLE_MINIMAL_CONFORMANT_DESIGNS_REQUIRE_HUMAN_SELECTION
-= independent qualification : PENDING
-= human design-selection gate : NOT YET OPEN
-= load-bearing questions left to the qualifier :
+= independent qualification : FAIL
+  52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md
+= qualifier : CCR LAB FIX #1
+= qualification verdict : FAIL, RATIFIED
+= executor material analytical errors : 4
+  ME-1 CAND-01 / 02 / 08 / 09 overqualified — common freeze-time derivation
+  NOT realized: untyped observation-protocol trigger, actor-performed
+  derivation = procedural orchestration qualified PARTIAL,
+  EP-02 / EP-03 / EP-04 removal NOT_ESTABLISHED
+  ME-2 minimality counted positively without established conformance
+  ME-3 candidate inventory incomplete — Q-CAND-A omitted
+  ME-4 inherited limitations L-2 / L-3 reported NON_MATERIAL although the
+  removal claims rest on them
+= executor outcome disposition : CONTRADICTED_MATERIALLY
+= qualified decisive rule : RULE_0
+= qualified final outcome : INSUFFICIENT_DURABLE_EVIDENCE
+= human design-selection gate : NOT OPEN
+= qualified need is NOT proof that a conformant design exists;
+  B = YES does NOT imply design-choice cardinality >= 2
+= CAND-01 / 02 / 08 / 09 conformance : NOT_ESTABLISHED
+= CAND-03 : NON_CONFORMANT, its M3 overstated (non-material error)
+= Q-CAND-A : candidate hypothesis, NOT a qualified design
+= qualified minimal conformant set : NOT_ESTABLISHED
+= qualified remaining cardinality : NOT_ESTABLISHED
+= qualification limitations : QL-1 QL-2 QL-3, which do not excuse the executor's
+  material analytical errors
+= result004 : UNCHANGED, no semantic edit
+= earlier load-bearing questions, now answered by the qualification :
   common freeze-time derivation of CAND-01 / 02 / 08 / 09 versus an actually
   realized join — a designated derivation is NOT a realized join, and a carried
   output is NOT a material burden removed ·
@@ -724,7 +792,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
+= next : FRESH AGENT CCR LAB #31 EXECUTES MISSION 005
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -733,13 +801,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
+= next : FRESH AGENT CCR LAB #31 EXECUTES MISSION 005
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #30 INDEPENDENTLY QUALIFIES THE RESULT
+= next : FRESH AGENT CCR LAB #31 EXECUTES MISSION 005
 
 CURRENT LAB STREAM
 = NONE
