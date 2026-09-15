@@ -178,6 +178,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md`](53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification indépendante du résultat de la mission 005, PASS WITH LIMITATIONS, règle qualifiée RULE_0 et issue INSUFFICIENT_DURABLE_EVIDENCE, avec 0 erreur matérielle, 2 non matérielles et 3 limitations, les quatre candidats de dérivation étant non conformes faute de déclencheur typé et Q-CAND-A à conformité non établie ; puis la porte humaine de direction R&D qu'elle ouvre. Une dérivation lisant une prose n'est pas une jointure réalisée, une famille non résolue n'est pas une conception qualifiée, et davantage d'analyse du même corpus n'est pas une preuve durable nouvelle. Trois branches gelées sans qu'aucune soit sélectionnée : rassembler de la preuve nouvelle, garer la ligne, ou choisir une autre direction du Lab.
 - [`54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md`](54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction R&D, GATHER_NEW_DURABLE_EVIDENCE, qui poursuit la ligne HANDOFF_ROUTING en cessant de traiter une passe d'analyse de plus sur le même corpus comme une preuve nouvelle ; puis le contrat de l'étude d'exigences de preuve qu'elle ouvre. Le bloqueur courant est évidentiaire, donc la question suivante n'est plus quelle conception l'emporte mais quelle preuve durable nouvelle serait assez discriminante. Exigence n'est pas méthode, pare-feu de nouveauté, test de pouvoir discriminant, progrès de décision, minimalité par retrait d'item, RC7 et RC8 en cibles prioritaires sans paquet prédéterminé, quatre issues fermées. L'étude dit ce qui doit devenir durablement connu, jamais comment l'acquérir.
 - [`55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md`](55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md) — correction d'éligibilité : l'autorité 54 définissait la suffisance comme progrès de décision et faisait déclencher les règles positives sur les ensembles suffisants, de sorte qu'un ensemble ne faisant que progresser pouvait remporter une issue positive. Trois classes tenues distinctes, PROGRESS_CAPABLE, PARTIAL_PROGRESS rapportable mais jamais gagnant, RULE0_EXIT_CAPABLE seul éligible ; PARTITION_ELIGIBLE_SET égale RULE0_EXIT_CAPABLE_SET ; base explicite de capacité de sortie sur au moins une branche admissible, sans exiger de garantie universelle ; deux minimalités séparées ; partition 0 à 4 close sur 148 états, 0 fuite, contre 2 sous l'ancienne sémantique. La sélection humaine de direction de l'autorité 54 est intacte. Pouvoir être utile n'est pas pouvoir faire sortir de la règle 0.
+- [`56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md`](56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md) — deux couches tenues distinctes : la qualification de la mission 006, ratifiée, puis le contrat de l'étude de clôture qu'elle ouvre. L'exécution est PASS et la base analytique matérielle de l'exécutant est contredite : SET-F n'est pas capable de sortie, une conception où le décideur fournit à la ratification la destination et l'ordre propres à la mission ne reconstruisant rien. Avec l'exigence qualifiée QR-1, SET-Q = ER-02 + QR-1 + ER-05 est positivement établi capable de sortie de la règle 0 et minimal pour cette sortie, ce qui donne une borne inférieure de 1 et non une unicité ; MU-Q1, l'exhaustivité d'espace d'exigence, reste NOT_ESTABLISHED, donc RULE_0 gouverne encore. L'étude suivante doit clore l'espace par une preuve positive : chercher encore sans rien trouver n'est pas une exhaustivité sémantique. Même étiquette terminale n'est pas confirmation matérielle.
 
 ## Outillage
 
@@ -434,7 +435,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #34 INDEPENDENTLY QUALIFIES RESULT006
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -453,7 +454,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #34 INDEPENDENTLY QUALIFIES RESULT006
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -555,8 +556,47 @@ EVIDENCE-REQUIREMENT STUDY
 = executor-reported decisive rule : RULE_0
 = executor-reported outcome :
   INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT
-= independent qualification : PENDING
-= THE EXECUTOR-REPORTED OUTCOME IS NOT A QUALIFIED OUTCOME
+= independent qualification : DONE — CCR LAB FIX #1, verdict FAIL
+  56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md
+= execution / result production / result persistence : PASS / PASS / PASS
+= executor material analytical basis : CONTRADICTED_MATERIALLY
+= diagnosis that SET-F's Rule0-exit basis is not established : RATIFIED —
+  a design where the human decider supplies the mission-local destination
+  and order in typed form at ratification reconstructs nothing
+= SAME TERMINAL LABEL IS NOT MATERIAL CONFIRMATION — the qualified label
+  coincides with the executor's because the space is not closed, not because
+  the executor's set is exit-capable
+= executor materially wrong on : SET-F / SET-E Rule0-exit capability ·
+  partition-eligible roster · Rule0-exit minimality · remaining eligible set ·
+  requirement roster, QR-1 missing · RC7 necessity · decisive-rule basis
+= non-material : CC-1 wording — supports relations on other fields enter
+  contradiction detection; the conclusion stands
+= QR-1 : whether a ratified human decision can supply the mission-local
+  observation destination and order in typed form as a decision, or only by
+  reconstructing them — candidate-independent, actual observation required
+= SET-Q = { ER-02, QR-1, ER-05 }
+= SET-Q RULE0_EXIT_CAPABLE : YES, positively established
+= SET-Q RULE0_EXIT_MINIMAL : YES, positively established
+= SET-Q PARTITION_ELIGIBLE : YES
+= SET-A .. SET-G Rule0-exit-capable : NO
+= other established minimal exit-capable sets : NONE CURRENTLY
+= positively established partition-eligible set : { SET-Q } · count 1
+= reported RC7-negative second route : not a constructed exit route
+= reported positive route : not specifiable today as a set — F2 is not
+  concrete enough
+= MU-Q1 : requirement-space exhaustiveness / existence of an additional
+  materially distinct minimal Rule0-exit-capable set — NOT_ESTABLISHED,
+  MATERIAL, BRANCH-CHANGING (formerly QL-3, reclassified)
+= requirement-space exhaustiveness : NOT_ESTABLISHED
+= exact partition-eligible cardinality : NOT_ESTABLISHED
+  lower bound 1 · upper bound NOT_ESTABLISHED
+= AT LEAST ONE IS NOT EXACTLY ONE — one positively known member is not a
+  positively established unique member
+= positive exhaustive impossibility : NOT APPLICABLE as a current branch —
+  SET-Q already exists
+= qualified decisive rule : RULE_0
+= qualified final outcome :
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT
 = human evidence-requirement selection gate : NOT OPEN
 = evidence acquisition : NOT STARTED
 = acquisition method : NOT SELECTED
@@ -565,8 +605,68 @@ EVIDENCE-REQUIREMENT STUDY
 = routing engine : NOT SELECTED
 = new representation : NOT SELECTED
 = TE004 : NONE
-= authority 56 : NONE
-= next : FRESH AGENT CCR LAB #34 INDEPENDENTLY QUALIFIES RESULT006
+= wrong-target incident : DEFERRED
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
+
+EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
+= CONTRACT FROZEN / NOT YET EXECUTED
+  56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md
+= the next problem is NOT whether any Rule0-exit-capable set exists — that is
+  positively answered, and the answer is SET-Q
+= question : can the authorized evidence-requirement space be positively
+  closed well enough to determine whether SET-Q is the UNIQUE remaining
+  minimal Rule0-exit-capable set, or whether at least one additional
+  materially distinct minimal Rule0-exit-capable set exists
+= closure is a POSITIVE PROOF OBLIGATION — searched again and found none,
+  a fresh analyst found none, the roster holds eight sets, no ninth is named :
+  none of these is closure
+= SEARCH EXHAUSTION IS NOT SEMANTIC EXHAUSTIVENESS
+= ABSENCE OF ANOTHER FOUND SET IS NOT POSITIVE PROOF OF UNIQUENESS
+= closure universe : independently reconstructed, with a mandated minimum
+  accounting of design-level Rule-0 blockers, unresolved candidate families,
+  RC7 / RC8 burden-removal propositions, candidate-space closure, component
+  sets, realized chains, manual reconstruction, burden-removal observations,
+  handoff events, and any materially distinct proposition already durably
+  implied — plus why no omitted class could create another set
+= evidence-atom normalization : an atom differs materially only by what fact
+  must become known, which material unknown it resolves, candidate scope,
+  association semantics, durability semantics, or the Rule0-exit branch it
+  enables; filename, collection mechanism, UI surface, API choice, experiment
+  style, wording, packaging and implementation convenience create no atom
+= METHOD DIFFERENCE IS NOT EVIDENCE-REQUIREMENT DIFFERENCE
+= bundling / splitting firewall : arbitrary bundling or splitting is not a
+  new materially distinct requirement
+= positive closure proof : ten elements A..J, from the bounded universe to
+  dominance and remaining-set processing; a negative search does not satisfy it
+= SET-Q enters as QUALIFIED INPUT, not as preferred, selected, unique,
+  dominant, cheapest or easiest — no preference from discovery order
+= dominance : evidence-backed, reproducible, non-preferential; unknown
+  dominance KEEPS the set; tie-break observed, never invented
+= outcome domain : 3 closed outcomes — the impossibility outcome is excluded
+  because SET-Q is already qualified Rule0-exit-capable; if that premise
+  cannot be preserved, REPORT BLOCKED, do not reopen it analytically
+= outcome partition : ordered rules 0..2
+= human gate : openable only on MULTIPLE; on UNIQUE the study still selects
+  and acquires nothing
+= acquisition firewall : the study closes or fails to close the space,
+  and acquires nothing
+= source firewall : no session prose, NO COUNTER-EXPERT PROSE, no human or
+  model memory, no wrong-target dispatch, no CCR System, no external web
+= mission 007 : missions/007-handoff-routing-evidence-requirement-space-closure/mission.json
+  blob b3d8e3ec0b1b23abf26cbd626fc1dc35ca5e7fe9
+= envelope : missions/007-handoff-routing-evidence-requirement-space-closure/envelope.md
+  blob fafe9380db83322d3132021c6147d68e8eb0ca8e
+  rendered by the published renderer, never hand-patched
+= mission index 007 : NOT TE007, NOT EXPERIMENT 007, NOT IMPLEMENTATION
+= mission validation : ok, 0 errors · render coverage complete 278 / 278
+= mission-object schema extended : NO · tooling modified : NO
+= return contract : 87 frozen relations
+= evidence-requirement-selection, acquisition-method and
+  implementation-authorization fields : PREDETERMINED = NO
+= future executor : AGENT CCR LAB #35, fresh, read-only except result.json
+= executor commits / pushes : 0 / 0
+= result007 : DOES NOT EXIST YET
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -662,7 +762,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #34 INDEPENDENTLY QUALIFIES RESULT006
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -982,7 +1082,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #34 INDEPENDENTLY QUALIFIES RESULT006
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -991,13 +1091,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #34 INDEPENDENTLY QUALIFIES RESULT006
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #34 INDEPENDENTLY QUALIFIES RESULT006
+= next : FRESH AGENT CCR LAB #35 EXECUTES MISSION 007
 
 CURRENT LAB STREAM
 = NONE
