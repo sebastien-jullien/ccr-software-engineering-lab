@@ -1,0 +1,4513 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-normative-option-space-closure-009"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/009-handoff-routing-normative-option-space-closure/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "bb8403a49774d59d46a3fee7dff9c26995569697"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/009-handoff-routing-normative-option-space-closure/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "bb8403a49774d59d46a3fee7dff9c26995569697"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "handoff-routing-normative-option-space-closure-009 @ ccf804896891915e2c1b09c692c16d0d9c00b71f"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-cut"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ccf804896891915e2c1b09c692c16d0d9c00b71f"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-technical-baseline"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-counter-expert-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-incident-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-option-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "3fe5181b740443593676b85cd1341ff3d1bd3916"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-option-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "3fe5181b740443593676b85cd1341ff3d1bd3916"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-future-dominance"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "3fe5181b740443593676b85cd1341ff3d1bd3916"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-survivor-invariance"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "3fe5181b740443593676b85cd1341ff3d1bd3916"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-direction"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-divergences"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "D01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D16"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D17"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D18"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D19"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D20"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D21"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "21"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-questions"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "D01 : existence d'objets d'exigence quantifiés au niveau de l'ensemble"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D02 : quantification indépendamment sélectionnable ou non"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 : sémantique universelle seulement dérivée ou non"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D04 : équivalence à la famille complète d'instances"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D05 : base d'identité sémantique"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D06 : identité par référence de domaine contre appartenance effective"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D07 : liaison de domaine de candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D08 : association de clôture universelle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D09 : comportement sur domaine vide"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D10 : comportement sur domaine singleton"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D11 : comportement multi-membres"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D12 : direction de canonicalisation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D13 : appartenance d'ensemble sélectionnable"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D14 : représentation de famille d'instances"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D15 : comportement de regroupement et de découpage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D16 : normalisation de doublons sémantiques"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D17 : relation à la clôture d'espace de candidats"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D18 : compatibilité historique"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D19 : effet de gouvernance prospective"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D20 : portée dans la grammaire d'item : troisième valeur de portée pour l'objet quantifié (autorité 54 B.6)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D21 : lecture d'un objet quantifié sur domaine clos au regard du pare-feu de regroupement (autorité 56 B.5)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-mandated-minimum"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "D01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D16"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D17"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D18"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D19"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-completeness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'autorité 58 B.15 définit la distinction matérielle par sept faits sémantiques gouvernants ; lue comme exhaustive, elle engendre l'univers des dimensions matérielles ; lue comme illustrative, elle n'engendre rien"
+          },
+          {
+            "type": "SCALAR",
+            "value": "l'autorité 61 B.6 déclare la liste imposée non présumée exhaustive et B.7 exige une preuve dérivée des responsabilités gelées ; aucun texte gelé ne tranche entre les deux lectures de B.15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-basis-generative"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-additional"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "D20"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D21"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dimension-universe-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-value-domain-per-dimension"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "D01 : YES | NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D02 : SELECTABLE | NOT_SELECTABLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 : DERIVED_ONLY | OBJECT | NONE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D04 : EQUIVALENT | NOT_EQUIVALENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D05 : CLASS_AND_DOMAIN_REFERENCE | CLASS_AND_ACTUAL_MEMBERSHIP"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D06 : DOMAIN_REFERENCE | ACTUAL_MEMBERSHIP"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D07 : FUTURE_CLOSURE | CLOSED_DOMAIN_ONLY | NONE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D08 : BY_CLOSURE_DEFINITION | BY_CLOSURE_VALUE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D09 : VACUOUS | INADMISSIBLE | UNSATISFIABLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D10 : EQUIVALENT_TO_INSTANCE | DISTINCT_FROM_INSTANCE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D11 : ONE_ATOM | FAMILY_UNIT | INDIVIDUAL_INSTANCES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D12 : TOWARD_QUANTIFIED_FORM | TOWARD_INSTANCES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D13 : SELECTABLE_MEMBER | NOT_SELECTABLE_MEMBER"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D14 : UNFOLDED | FOLDED | NONE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D15 : NOT_A_BUNDLE | BUNDLE_OF_INSTANCES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D16 : BY_CANONICAL_Q | BY_INSTANCE_FAMILY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D17 : SPECIFIABLE_BEFORE_CLOSURE | SPECIFIABLE_AFTER_CLOSURE_ONLY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D18 : PROSPECTIVE_ONLY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D19 : NON BORNÉ"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D20 : THIRD_SCOPE | BINARY_SCOPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D21 : PRINCIPLED_NOT_ARBITRARY | ARBITRARY_BUNDLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-value-domain-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "D01 : dichotomie de la question gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D02 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 : trois lieux possibles de la quantification : objet, prédicat dérivé, nulle part"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D04 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D05 : la classe est fixée par l'atome ; la composante de domaine se réduit à D06"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D06 : dichotomie posée par la question"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D07 : trois états de liaison : clôture future, domaine déjà clos, aucune"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D08 : l'association à l'atome de clôture se fait par sa définition ou par sa valeur : réduite à D06 et D07"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D09 : trichotomie des valeurs de vérité sur domaine vide"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D10 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D11 : trois modes d'entrée d'une obligation multi-instances"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D12 : réduite à D16 ; une forme mixte n'est pas une canonicalisation déterministe (NS5)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D13 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D14 : trois états"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D15 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D16 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D17 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D18 : unique valeur admissible : autorité 58 B.9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D19 : ouvert : effet de gouvernance dérivé des autres dimensions, non générateur"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D20 : dichotomie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D21 : dichotomie"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-value-domain-invalid"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "D18 : toute valeur réécrivant un sens historique — autorité 58 B.9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 : OBJECT avec D01 = NO — contradiction"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D07 : NONE avec D03 = OBJECT — objet sans domaine"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-value-domain-representation-only-rejected"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-value-domain-total"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "44"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dependency-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "D03 = OBJECT ⇔ D01 = YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 = NONE ⇒ D07 = NONE et D11 = INDIVIDUAL_INSTANCES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 = DERIVED_ONLY ⇒ D11 = FAMILY_UNIT et D02 = NOT_SELECTABLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 = OBJECT ⇒ D11 = ONE_ATOM et D02 = SELECTABLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D07 = FUTURE_CLOSURE ⇒ D17 = SPECIFIABLE_BEFORE_CLOSURE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D07 = CLOSED_DOMAIN_ONLY ⇒ D17 = SPECIFIABLE_AFTER_CLOSURE_ONLY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D01 = YES ⇒ D20 = THIRD_SCOPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D15 = BUNDLE_OF_INSTANCES ⇒ D16 = BY_INSTANCE_FAMILY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dependency-incompatibilities"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "D01 = NO avec D03 = OBJECT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 = NONE avec D07 ≠ NONE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 = OBJECT avec D07 = NONE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D03 = DERIVED_ONLY avec D11 = ONE_ATOM"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dependency-regenerable"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dependency-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "dépendances tirées des définitions de l'autorité 58 B.6 et B.15 et de l'autorité 59 : régénérables sur la sous-grille bornée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-construction-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "dimensions × domaines × contraintes de dépendance, appliqué sur la sous-grille structurelle D01 × D03 × D07 × D11 ; les variations des autres dimensions sur chaque cellule ne sont matérielles ou non que selon GEN-1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-construction-naive-cartesian"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-construction-raw-cells"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CELL-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-16"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-17"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-18"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-19"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-20"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-21"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-22"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-23"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-24"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-25"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-26"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-27"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-28"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-29"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-30"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-31"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-32"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-33"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-34"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-35"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-36"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-37"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-38"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-39"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-40"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-41"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-42"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-43"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-44"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-45"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-46"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-47"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-48"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-49"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-50"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-51"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-52"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-53"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-54"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-construction-raw-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "54"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-construction-hand-picked"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-construction-coherent-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CELL-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-16"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-17"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-18"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-19"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-20"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-21"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-22"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-23"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-24"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-25"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-26"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-27"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-28"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-29"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-30"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-31"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-32"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-33"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-34"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-35"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-36"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-37"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-39"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-40"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-42"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-43"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-44"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-45"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-46"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-47"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-48"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-49"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-50"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-51"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-52"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-53"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "X-VAR-BEHAVIOR"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "X-VAR-D21"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "51"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-class"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "INCOHERENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "49 cellules INCOHERENT : contraintes de dépendance ci-dessus"
+          },
+          {
+            "type": "SCALAR",
+            "value": "X-VAR-BEHAVIOR : variantes de comportement sur domaine vide et singleton (D09, D10) des cellules à objet ou prédicat — matérialité NOT_ESTABLISHED, selon la lecture de l'autorité 58 B.15"
+          },
+          {
+            "type": "SCALAR",
+            "value": "X-VAR-D21 : lecture de regroupement d'un objet quantifié sur domaine clos — matérialité NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-can-represent"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "cellules incohérentes : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "X-VAR-BEHAVIOR, X-VAR-D21 : NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-not-established"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-historical-mapping"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A → CELL-01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D → CELL-04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C → CELL-38"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B → CELL-54"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-historical-status"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A : CANONIQUE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B : CANONIQUE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C : CANONIQUE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D : CANONIQUE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-new-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-new-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-equivalence-classes"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A = { CELL-01 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D = { CELL-04 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C = { CELL-38 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-E = { CELL-41 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B = { CELL-54 }"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-canonical-equivalence-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-obligations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "A univers borné des dimensions : ÉTABLI comme inventaire de 21 dimensions"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B base de complétude générative : NON ÉTABLIE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C domaines de valeurs : ÉTABLIS, D19 étant un effet dérivé et non une dimension génératrice"
+          },
+          {
+            "type": "SCALAR",
+            "value": "D dépendances : ÉTABLIES sur la sous-grille"
+          },
+          {
+            "type": "SCALAR",
+            "value": "E règle de construction : ÉTABLIE sur la sous-grille"
+          },
+          {
+            "type": "SCALAR",
+            "value": "F énumération : ÉTABLIE sous un générateur incomplet seulement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "G normalisation : ÉTABLIE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "H exclusion positive : NON ÉTABLIE — 2 exclusions NOT_ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "I correspondance de toute option admissible : NON ÉTABLIE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "J conformité, minimalité, distinction : ÉTABLIES sur le registre engendré"
+          },
+          {
+            "type": "SCALAR",
+            "value": "K dominance existante : appliquée, aucune paire établie, conservation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "L départage gelé : AUCUN"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-first-failure"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "B — aucune base générative : la liste des faits gouvernants de l'autorité 58 B.15 n'est fixée ni comme exhaustive ni comme illustrative par le corpus gelé"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-search-exhaustion"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-incomplete-generator"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformance-criteria"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NS1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS8"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS9"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-non-conformant-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformance-not-established"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformance-criteria-changed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-D : liaison"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C / NQ-E : liaison"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-C et NQ-D / NQ-E : lieu de la quantification"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B / NQ-C, NQ-B / NQ-E : entrée des obligations multi-instances"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B / NQ-D : existence d'objets quantifiés, sous la lecture D21 = PRINCIPLED_NOT_ARBITRARY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-B, NQ-A / NQ-E, NQ-C / NQ-D : plusieurs faits gouvernants"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-pairwise"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-established-pairs"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-not-established-pairs"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-B"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-D"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-E"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B / NQ-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B / NQ-D"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B / NQ-E"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C / NQ-D"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C / NQ-E"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D / NQ-E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-new-semantics"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-new-metric"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominated-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-new-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-exists"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun départage normatif gelé"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-changing-unknown"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-partition-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "GEN-1 — sémantique du générateur : la liste des faits gouvernants de l'autorité 58 B.15 est-elle exhaustive, fixant l'univers des dimensions matérielles, ou illustrative ; l'autorité 61 B.6 tient la liste imposée pour non exhaustive"
+          },
+          {
+            "type": "SCALAR",
+            "value": "GEN-2 — matérialité des variantes de comportement (D09, D10) et de la lecture de regroupement (D21), dépendante de GEN-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "DOM-F — tant que l'espace n'est pas clos, l'effet de dominance d'une option omise demeure NOT_ESTABLISHED (autorité 60)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "complétude d'espace d'options NOT_ESTABLISHED : premier échec portant B, faute de base générative"
+          },
+          {
+            "type": "SCALAR",
+            "value": "sous-grille bornée : cinq options canoniques conformes et minimales, dont NQ-E nouvelle, dérivée sur domaine clos seulement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune dominance établie ; registre final non établi → règle 0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implied-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_OPEN"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implied-gate-type"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-gate-candidate-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "la sous-grille D01 × D03 × D07 × D11 est engendrée positivement ; le reste de l'espace ne l'est pas"
+          },
+          {
+            "type": "SCALAR",
+            "value": "le choix entre les lectures exhaustive et illustrative de l'autorité 58 B.15 n'appartient pas à l'étude"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-normative-option-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-governing-rule-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-governing-rule-id"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-new-normative-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-requirement-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-authorization"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-direction-b-transition"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D01.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "existence d'objets d'exigence quantifiés au niveau de l'ensemble"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D01.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D01.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D02.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "quantification indépendamment sélectionnable ou non"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D02.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SELECTABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SELECTABLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D02.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D03.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "sémantique universelle seulement dérivée ou non"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D03.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DERIVED_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "OBJECT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D03.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D04.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "équivalence à la famille complète d'instances"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D04.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "EQUIVALENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_EQUIVALENT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D04.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D05.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "base d'identité sémantique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D05.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CLASS_AND_DOMAIN_REFERENCE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CLASS_AND_ACTUAL_MEMBERSHIP"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D05.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D06.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "identité par référence de domaine contre appartenance effective"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D06.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DOMAIN_REFERENCE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ACTUAL_MEMBERSHIP"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D06.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D07.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "liaison de domaine de candidat"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D07.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FUTURE_CLOSURE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CLOSED_DOMAIN_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D07.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D08.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "association de clôture universelle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D08.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BY_CLOSURE_DEFINITION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BY_CLOSURE_VALUE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D08.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D09.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "comportement sur domaine vide"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D09.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "VACUOUS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INADMISSIBLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "UNSATISFIABLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D09.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D10.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "comportement sur domaine singleton"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D10.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "EQUIVALENT_TO_INSTANCE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISTINCT_FROM_INSTANCE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D10.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D11.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "comportement multi-membres"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D11.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ONE_ATOM"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAMILY_UNIT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INDIVIDUAL_INSTANCES"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D11.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D12.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "direction de canonicalisation"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D12.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "TOWARD_QUANTIFIED_FORM"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TOWARD_INSTANCES"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D12.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D13.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "appartenance d'ensemble sélectionnable"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D13.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SELECTABLE_MEMBER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SELECTABLE_MEMBER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D13.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D14.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "représentation de famille d'instances"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D14.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNFOLDED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FOLDED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D14.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D15.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "comportement de regroupement et de découpage"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D15.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NOT_A_BUNDLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BUNDLE_OF_INSTANCES"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D15.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D16.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "normalisation de doublons sémantiques"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D16.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BY_CANONICAL_Q"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BY_INSTANCE_FAMILY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D16.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D17.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "relation à la clôture d'espace de candidats"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D17.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SPECIFIABLE_BEFORE_CLOSURE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SPECIFIABLE_AFTER_CLOSURE_ONLY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D17.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D18.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "compatibilité historique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D18.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PROSPECTIVE_ONLY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D18.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D19.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "effet de gouvernance prospective"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D19.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NON_BORNE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D19.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D20.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "portée dans la grammaire d'item : troisième valeur de portée pour l'objet quantifié (autorité 54 B.6)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D20.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "THIRD_SCOPE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BINARY_SCOPE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D20.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D21.QUESTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "lecture d'un objet quantifié sur domaine clos au regard du pare-feu de regroupement (autorité 56 B.5)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D21.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PRINCIPLED_NOT_ARBITRARY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ARBITRARY_BUNDLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "dimension.D21.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-01"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D01=YES · D03=OBJECT · D07=FUTURE_CLOSURE · D11=ONE_ATOM"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANONICAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MINIMAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-04"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D01=YES · D03=OBJECT · D07=CLOSED_DOMAIN_ONLY · D11=ONE_ATOM"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANONICAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MINIMAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-38"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D01=NO · D03=DERIVED_ONLY · D07=FUTURE_CLOSURE · D11=FAMILY_UNIT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANONICAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MINIMAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-41"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D01=NO · D03=DERIVED_ONLY · D07=CLOSED_DOMAIN_ONLY · D11=FAMILY_UNIT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NEW"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-E.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MINIMAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-54"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "D01=NO · D03=NONE · D07=NONE · D11=INDIVIDUAL_INSTANCES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANONICAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MINIMAL"
+      }
+    }
+  ]
+}
