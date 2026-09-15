@@ -1,0 +1,4032 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-normative-quantification-semantics-study-008"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/008-handoff-routing-normative-quantification-semantics-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "54a7814f3d82974d72d126accbaefda1f3890122"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/008-handoff-routing-normative-quantification-semantics-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "54a7814f3d82974d72d126accbaefda1f3890122"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "handoff-routing-normative-quantification-semantics-study-008 @ 0a93c346e19c67581339c7f3c0b01faf33cfce41"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-cut"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0a93c346e19c67581339c7f3c0b01faf33cfce41"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-technical-baseline"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-counter-expert-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-incident-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-class-vs-instance"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-instance-vs-quantified"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-instances-one-class"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-quantified-admissibility"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-cuq-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-cuq2-conditional"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-set-q-premise"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-set-u-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-divergences"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-boundary-cuq"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-boundary-cuq2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "LEFT_AS_LATER_ANALYTICAL_GRANULARITY"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-boundary-closure-claimed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-family-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FAM-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAM-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAM-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAM-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-family-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-family-exhaustiveness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-family-exhaustiveness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun générateur ne clôt l'espace des familles : chaque dimension de comportement — domaine vide, domaine non clos, liaison — admet des variantes gouvernantes que seules quatre familles exhibées ne couvrent pas positivement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "l'absence d'autre famille trouvée n'est pas une clôture"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-wording-variants-rejected"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-component-inventory"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A : objet quantifié admissible comme atome propre · liaison dynamique du domaine à la valeur d'un atome de clôture · identité (classe, domaine) · domaine vide : exigence vide, sans effet de sortie · domaine singleton : équivalent à l'instance · regroupement et découpage : l'objet quantifié n'est ni un regroupement d'instances ni découpable par membre"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B : objet quantifié inadmissible · obligation multi-candidats exprimée par instances nommées seulement · instances spécifiables seulement sur une hypothèse déjà définie · regroupement d'instances non distinct"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C : quantification comme prédicat analytique dérivé seulement · famille complète d'instances sur le domaine lié · identité de famille · regroupement de la famille sans distinction nouvelle · minimalité calculée par instance"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D : objet quantifié admissible sur domaine déjà clos seulement · liaison dynamique interdite · identité (classe, domaine clos) · regroupement et découpage comme NQ-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-required-dimensions"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SEMANTIC_OPTION_ID"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "STATUS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ATOM_CLASS_SEMANTICS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PARAMETERIZED_INSTANCE_SEMANTICS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INSTANCE_DOMAIN_BINDING"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "QUANTIFIER_SEMANTICS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET_LEVEL_REQUIREMENT_IDENTITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MATERIAL_DISTINCTNESS_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EQUIVALENCE_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BUNDLING_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SPLITTING_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CANONICALIZATION_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DEPENDENCY_ON_CANDIDATE_SPACE_CLOSURE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BEHAVIOR_WHEN_DOMAIN_IS_NOT_CLOSED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BEHAVIOR_WHEN_DOMAIN_IS_EMPTY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BEHAVIOR_WHEN_DOMAIN_HAS_ONE_MEMBER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BEHAVIOR_WHEN_DOMAIN_HAS_MULTIPLE_MEMBERS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RELATION_TO_CANDIDATE_SCOPE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RELATION_TO_SET_CONSTRUCTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RELATION_TO_RULE0_EXIT_MINIMALITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RELATION_TO_SEMANTIC_DUPLICATE_NORMALIZATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "HISTORICAL_COMPATIBILITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PROSPECTIVE_GOVERNANCE_EFFECT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REPRESENTATION_REQUIREMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "IMPLEMENTATION_REQUIREMENT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-ledger-conformant"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns1-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns2-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns3-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns4-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns5-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns6-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns7-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns8-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns9-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns10-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns11-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns12-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns13-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns14-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ns15-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformance-criterion-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NS1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS8"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS9"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NS15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-non-conformant-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-not-established-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-representation-consequence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A : unité EXECUTOR portant classe et référence à l'atome de clôture : encodage courant suffisant"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B : aucune : encodage courant suffisant"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C : une unité par instance dépliée : encodage courant suffisant"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D : unité EXECUTOR portant classe et domaine : encodage courant suffisant"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-representation-established"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-representation-not-established"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-representation-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-representation-modified"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-history-reinterprets"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-history-alters-results"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-history-prospective-only"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-history-set-q-contradiction"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-history-edited"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-q-future-interpretation"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A : SET-Q inchangé — sa branche ferme par atomes de classe, non par exigences quantifiées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B : SET-Q inchangé — sa branche ferme par atomes de classe, non par exigences quantifiées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C : SET-Q inchangé — sa branche ferme par atomes de classe, non par exigences quantifiées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D : SET-Q inchangé — sa branche ferme par atomes de classe, non par exigences quantifiées"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-q-premise-reopened"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-u-admissibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A : ADMISSIBLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B : NOT_ADMISSIBLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C : ADMISSIBLE_AS_DERIVED_FAMILY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D : NOT_ADMISSIBLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-u-canonical-identity"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A : { AT-03, Q(RC8, AT-03) }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B : sans objet"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C : { AT-03 } ∪ { RC8(x) : x membre de l'univers clos }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D : sans objet"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-u-alternative"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A : sans objet"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B : après acquisition de la clôture, une étude d'exigence nouvelle spécifie les instances RC8 des membres nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C : sans objet"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-D : une fois la clôture acquise, la forme quantifiée sur l'univers clos devient admissible"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-tests"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "19"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-B : existence d'objets quantifiés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-C : où vit la quantification — objet ou prédicat dérivé"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-A / NQ-D : liaison du domaine — clôture future ou domaine déjà clos"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B / NQ-C : entrée des obligations multi-instances dans la construction"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-B / NQ-D : existence d'objets quantifiés sur domaine clos"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NQ-C / NQ-D : où vit la quantification et liaison du domaine"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-dimensions"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "EXISTENCE_OBJETS_QUANTIFIES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "LIEU_DE_LA_QUANTIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "LIAISON_DU_DOMAINE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ENTREE_DANS_LA_CONSTRUCTION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun critère gelé ne classe les options entre elles : NS1 à NS15 sont satisfaits par les quatre"
+          },
+          {
+            "type": "SCALAR",
+            "value": "l'autorité 54 B.13 ne départage pas sans présupposer la réponse à CU-Q : elle vise les exigences propres à un candidat, catégorie que NQ-A et NQ-D contestent pour l'objet quantifié"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominated-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-unknown-kept"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "TWO_OR_MORE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-exists"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun départage normatif déterministe gelé"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-impossibility"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-changing-unknown"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantic-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "exhaustivité de l'espace des familles d'options : NOT_ESTABLISHED ; une option supplémentaire ne réduit pas la pluralité, aucune dominance gelée n'existant : toutes les complétions admissibles donnent MULTIPLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-engineering"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "quatre options conformes, minimales et matériellement distinctes : NQ-A, NQ-B, NQ-C, NQ-D"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune dominance ni départage gelé"
+          },
+          {
+            "type": "SCALAR",
+            "value": "règle 0 écartée par son exception : l'exhaustivité non établie de l'espace des familles laisse la pluralité invariante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "porte post-issue : OPEN / SELECTION ; règle gouvernante NON sélectionnée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantics-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "OPEN"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantics-gate-type"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SELECTION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantics-gate-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "issue MULTIPLE : toutes les options minimales conformes restantes sont présentées, après persistance exacte et qualification indépendante"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-gate-candidate-options"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unique-option-id"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantic-rule-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-governing-rule-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-governing-rule-id"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-new-normative-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-requirement-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-acquisition-method-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-authorization"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "le registre présenté à la porte de sélection n'est pas prouvé exhaustif : l'exhaustivité de l'espace des familles n'est pas établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CU-Q2 laissée comme question de granularité ultérieure : aucune option ne l'entraîne logiquement"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.SEMANTIC_OPTION_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NQ-A"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.STATUS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "candidate only"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.ATOM_CLASS_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une classe d'atome est une proposition durable paramétrable ; elle n'est pas elle-même une exigence"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.PARAMETERIZED_INSTANCE_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance paramétrée est la classe appliquée à un membre nommé ; deux instances d'une même classe forment une seule classe sémantique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.INSTANCE_DOMAIN_BINDING"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "le domaine est l'univers que produit l'atome de clôture désigné ; la liaison se fait par la définition de cet atome, non par ses membres"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.QUANTIFIER_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "universel sur le domaine lié ; un seul fait durable exigé : la valeur de la classe pour chaque membre"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.SET_LEVEL_REQUIREMENT_IDENTITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "couple (classe, atome de clôture liant le domaine)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.MATERIAL_DISTINCTNESS_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "deux objets quantifiés sont distincts s'ils diffèrent de classe ou de domaine lié"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.EQUIVALENCE_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "même classe et même atome de clôture : équivalents"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.BUNDLING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "l'objet quantifié n'est pas le regroupement de ses instances et ne compte pas comme tel"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.SPLITTING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "le découper par membre est un découpage arbitraire interdit"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.CANONICALIZATION_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "forme canonique Q(classe, clôture)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.DEPENDENCY_ON_CANDIDATE_SPACE_CLOSURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "spécifiable avant l'acquisition de la clôture ; évaluable seulement après"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.BEHAVIOR_WHEN_DOMAIN_IS_NOT_CLOSED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "l'objet reste spécifié ; sa valeur est NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.BEHAVIOR_WHEN_DOMAIN_IS_EMPTY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "exigence vide, sans effet de sortie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.BEHAVIOR_WHEN_DOMAIN_HAS_ONE_MEMBER"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "équivalent à l'instance sur ce membre"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.BEHAVIOR_WHEN_DOMAIN_HAS_MULTIPLE_MEMBERS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un seul atome, quel que soit le nombre de membres"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.RELATION_TO_CANDIDATE_SCOPE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "troisième portée, ni propre à un candidat ni indépendante ; l'autorité 54 B.13 ne s'applique pas"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.RELATION_TO_SET_CONSTRUCTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "atome membre ordinaire d'un ensemble"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.RELATION_TO_RULE0_EXIT_MINIMALITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "retiré comme un atome : SET-U = { AT-03, U-RC8 } minimal à deux atomes"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.RELATION_TO_SEMANTIC_DUPLICATE_NORMALIZATION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "normalisé par l'équivalence (classe, clôture)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.HISTORICAL_COMPATIBILITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "prospective seulement : aucune revendication des autorités 54 à 57 ni aucun sens de result006 ou result007 n'est réécrit"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.PROSPECTIVE_GOVERNANCE_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un objet de type SET-U devient admissible dans une étude de clôture ultérieure ; la portée binaire de la grammaire d'item de l'autorité 54 B.6 reçoit prospectivement une troisième valeur"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.REPRESENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "unité EXECUTOR portant classe et référence à l'atome de clôture : encodage courant suffisant"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.IMPLEMENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE IN THIS STUDY"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.FAMILY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "FAM-A"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "objet quantifié admissible comme atome propre"
+          },
+          {
+            "type": "SCALAR",
+            "value": "liaison dynamique du domaine à la valeur d'un atome de clôture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "identité (classe, domaine)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "domaine vide : exigence vide, sans effet de sortie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "domaine singleton : équivalent à l'instance"
+          },
+          {
+            "type": "SCALAR",
+            "value": "regroupement et découpage : l'objet quantifié n'est ni un regroupement d'instances ni découpable par membre"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-A.MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.SEMANTIC_OPTION_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NQ-B"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.STATUS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "candidate only"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.ATOM_CLASS_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une classe d'atome est une proposition durable paramétrable ; elle n'est pas elle-même une exigence"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.PARAMETERIZED_INSTANCE_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance paramétrée est la classe appliquée à un membre nommé ; deux instances d'une même classe forment une seule classe sémantique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.INSTANCE_DOMAIN_BINDING"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune liaison dynamique : chaque instance nomme son membre"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.QUANTIFIER_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucun quantificateur dans le modèle d'exigence"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.SET_LEVEL_REQUIREMENT_IDENTITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "sans objet"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.MATERIAL_DISTINCTNESS_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "instances de même classe sur des membres distincts : instances d'une classe, non atomes distincts"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.EQUIVALENCE_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "même classe et même membre : équivalentes"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.BUNDLING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une famille d'instances n'est pas une exigence distincte"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.SPLITTING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance ne se découpe pas"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.CANONICALIZATION_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "forme canonique I(classe, membre)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.DEPENDENCY_ON_CANDIDATE_SPACE_CLOSURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "les instances sur les membres ne deviennent spécifiables qu'après la clôture acquise et une nouvelle étude d'exigence"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.BEHAVIOR_WHEN_DOMAIN_IS_NOT_CLOSED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune exigence spécifiable sur les membres"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.BEHAVIOR_WHEN_DOMAIN_IS_EMPTY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune instance"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.BEHAVIOR_WHEN_DOMAIN_HAS_ONE_MEMBER"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.BEHAVIOR_WHEN_DOMAIN_HAS_MULTIPLE_MEMBERS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "autant d'instances que de membres, dans une étude postérieure à la clôture"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.RELATION_TO_CANDIDATE_SCOPE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "chaque instance est propre à un candidat ; l'autorité 54 B.13 s'applique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.RELATION_TO_SET_CONSTRUCTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ensembles d'atomes de classe et d'instances nommées seulement"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.RELATION_TO_RULE0_EXIT_MINIMALITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "par retrait d'instance"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.RELATION_TO_SEMANTIC_DUPLICATE_NORMALIZATION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "normalisé par l'équivalence (classe, membre)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.HISTORICAL_COMPATIBILITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "prospective seulement : aucune revendication des autorités 54 à 57 ni aucun sens de result006 ou result007 n'est réécrit"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.PROSPECTIVE_GOVERNANCE_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un objet de type SET-U est inadmissible ; l'exclusion XA-04 de l'exécutant de la mission 007 vaut"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.REPRESENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune : encodage courant suffisant"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.IMPLEMENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE IN THIS STUDY"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.FAMILY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "FAM-B"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "objet quantifié inadmissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "obligation multi-candidats exprimée par instances nommées seulement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "instances spécifiables seulement sur une hypothèse déjà définie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "regroupement d'instances non distinct"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-B.MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.SEMANTIC_OPTION_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NQ-C"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.STATUS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "candidate only"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.ATOM_CLASS_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une classe d'atome est une proposition durable paramétrable ; elle n'est pas elle-même une exigence"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.PARAMETERIZED_INSTANCE_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance paramétrée est la classe appliquée à un membre nommé ; deux instances d'une même classe forment une seule classe sémantique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.INSTANCE_DOMAIN_BINDING"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "le domaine est l'univers que produit l'atome de clôture ; la famille se lie à lui"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.QUANTIFIER_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "prédicat dérivé « la classe vaut pour chaque membre », jamais objet d'exigence sélectionnable"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.SET_LEVEL_REQUIREMENT_IDENTITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "la famille des instances de la classe sur le domaine, non un atome"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.MATERIAL_DISTINCTNESS_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "deux familles sont distinctes si elles diffèrent de classe ou de domaine"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.EQUIVALENCE_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "même classe, même domaine : même famille"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.BUNDLING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "la famille regroupe des instances sans créer d'exigence distincte"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.SPLITTING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "la famille se décompose en ses instances sans créer d'exigence nouvelle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.CANONICALIZATION_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "forme canonique F(classe, clôture) dépliée en instances"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.DEPENDENCY_ON_CANDIDATE_SPACE_CLOSURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "la famille est définie avant la clôture, dépliée après"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.BEHAVIOR_WHEN_DOMAIN_IS_NOT_CLOSED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "famille définie, instances non dépliées, valeur NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.BEHAVIOR_WHEN_DOMAIN_IS_EMPTY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "famille vide"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.BEHAVIOR_WHEN_DOMAIN_HAS_ONE_MEMBER"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.BEHAVIOR_WHEN_DOMAIN_HAS_MULTIPLE_MEMBERS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "autant d'instances que de membres"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.RELATION_TO_CANDIDATE_SCOPE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "les instances sont propres à un candidat ; l'autorité 54 B.13 s'applique à elles une fois dépliées"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.RELATION_TO_SET_CONSTRUCTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un ensemble contient la clôture et toute la famille"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.RELATION_TO_RULE0_EXIT_MINIMALITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "par retrait d'instance : SET-U compte la clôture et une instance par membre"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.RELATION_TO_SEMANTIC_DUPLICATE_NORMALIZATION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "normalisé par famille puis par instance"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.HISTORICAL_COMPATIBILITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "prospective seulement : aucune revendication des autorités 54 à 57 ni aucun sens de result006 ou result007 n'est réécrit"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.PROSPECTIVE_GOVERNANCE_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un objet de type SET-U est admissible comme famille dérivée, de taille fixée par la clôture"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.REPRESENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une unité par instance dépliée : encodage courant suffisant"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.IMPLEMENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE IN THIS STUDY"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.FAMILY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "FAM-C"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "quantification comme prédicat analytique dérivé seulement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "famille complète d'instances sur le domaine lié"
+          },
+          {
+            "type": "SCALAR",
+            "value": "identité de famille"
+          },
+          {
+            "type": "SCALAR",
+            "value": "regroupement de la famille sans distinction nouvelle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "minimalité calculée par instance"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-C.MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.SEMANTIC_OPTION_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NQ-D"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.STATUS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "candidate only"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.ATOM_CLASS_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une classe d'atome est une proposition durable paramétrable ; elle n'est pas elle-même une exigence"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.PARAMETERIZED_INSTANCE_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance paramétrée est la classe appliquée à un membre nommé ; deux instances d'une même classe forment une seule classe sémantique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.INSTANCE_DOMAIN_BINDING"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "le domaine doit être durablement clos au moment de la spécification ; aucune liaison à une clôture future"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.QUANTIFIER_SEMANTICS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "universel sur un domaine clos et nommé"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.SET_LEVEL_REQUIREMENT_IDENTITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "couple (classe, domaine clos nommé)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.MATERIAL_DISTINCTNESS_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "classe ou domaine différents"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.EQUIVALENCE_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "même classe, même domaine clos"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.BUNDLING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "comme NQ-A"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.SPLITTING_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "comme NQ-A"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.CANONICALIZATION_RULE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "forme canonique Q(classe, domaine clos)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.DEPENDENCY_ON_CANDIDATE_SPACE_CLOSURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "spécifiable seulement après la clôture acquise"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.BEHAVIOR_WHEN_DOMAIN_IS_NOT_CLOSED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "inadmissible"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.BEHAVIOR_WHEN_DOMAIN_IS_EMPTY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "exigence vide, sans effet de sortie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.BEHAVIOR_WHEN_DOMAIN_HAS_ONE_MEMBER"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "équivalent à l'instance"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.BEHAVIOR_WHEN_DOMAIN_HAS_MULTIPLE_MEMBERS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un seul atome"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.RELATION_TO_CANDIDATE_SCOPE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "troisième portée, admise seulement sur domaine clos"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.RELATION_TO_SET_CONSTRUCTION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "atome membre ordinaire, après clôture"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.RELATION_TO_RULE0_EXIT_MINIMALITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "retiré comme un atome"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.RELATION_TO_SEMANTIC_DUPLICATE_NORMALIZATION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "normalisé par l'équivalence (classe, domaine clos)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.HISTORICAL_COMPATIBILITY"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "prospective seulement : aucune revendication des autorités 54 à 57 ni aucun sens de result006 ou result007 n'est réécrit"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.PROSPECTIVE_GOVERNANCE_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un objet de type SET-U est inadmissible tant que la clôture n'est pas acquise ; la portée binaire de la grammaire d'item de l'autorité 54 B.6 reçoit prospectivement une troisième valeur, sur domaine clos seulement"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.REPRESENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "unité EXECUTOR portant classe et domaine : encodage courant suffisant"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.IMPLEMENTATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE IN THIS STUDY"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.FAMILY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "FAM-D"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.COMPONENTS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "objet quantifié admissible sur domaine déjà clos seulement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "liaison dynamique interdite"
+          },
+          {
+            "type": "SCALAR",
+            "value": "identité (classe, domaine clos)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "regroupement et découpage comme NQ-A"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.NS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "option.NQ-D.MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    }
+  ]
+}
