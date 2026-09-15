@@ -1,0 +1,4617 @@
+{
+  "identity": {
+    "id": "handoff-routing-normative-closure-generator-semantics-study-010",
+    "class": "HANDOFF_ROUTING_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_STUDY",
+    "addressee": "AGENT_CCR_LAB_41",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "study.canonical_question",
+      "value": {
+        "type": "SYMBOL",
+        "value": "WHAT_NORMATIVE_CLOSURE_GENERATOR_SEMANTIC_RULE_SET_IF_ANY_SHOULD_GOVERN_THE_MODEL_SO_THAT_CG1_AND_CG2_ARE_BOTH_POSITIVELY_BOUNDED"
+      },
+      "semantics_unresolved": false,
+      "label": "quel ensemble de regles semantiques de generateur de cloture normative, s il en existe un, doit gouverner le modele de semantique normative de quantification HANDOFF_ROUTING pour que soient positivement bornes CG-1, l univers complet des responsabilites semantiques gouvernantes capables de rendre deux modeles normatifs de quantification materiellement distincts, et CG-2, le domaine de valeurs materiel complet ou la factorisation complete des directions de canonicalisation actuellement exposees par D12 / D16 ; puis quels ensembles de regles conformes materiellement distincts existent, et si des principes gouvernants deja ratifies en exigent deterministement un ou si plusieurs choix normatifs conformes demeurent ; aucune reponse a CG-1 ni a CG-2 n est presumee"
+    },
+    {
+      "subject": "study.category",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_STUDY"
+      },
+      "semantics_unresolved": false,
+      "label": "la mission 010 est une etude de semantique de generateur de cloture normative ; elle n est ni une nouvelle enumeration d options de la mission 009, ni une execution de cloture d espace d options, ni une recherche de dimensions D supplementaires sous le generateur ouvert existant, ni une nouvelle enumeration de grille, ni une etude de dominance, ni une selection d option normative, ni une etude d implementation ; son sujet est la semantique normative manquante que la mission 009 avait interdiction de creer"
+    },
+    {
+      "subject": "study.qualified_start",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CURRENT_POSITIVE_FINDINGS_ARE_NOT_CLOSURE"
+      },
+      "semantics_unresolved": false,
+      "label": "etat qualifie de depart : obligation A etablie, obligations B et C non etablies, premier echec portant OBLIGATION_B, completude d univers de dimensions non etablie, completude de domaine de valeurs des directions de canonicalisation de D12 / D16 non etablie, completude d espace d options non etablie ; D01, D03, D04, D07, D11 et D16 sont les dimensions positivement etablies a ce jour mais ne sont pas un univers de dimensions complet ; le registre canonique engendre courant de neuf options et le registre minimal conforme engendre courant NQ-A, NQ-A-F, NQ-A-I, NQ-B, NQ-C, NQ-D, NQ-D-F, NQ-D-I et NQ-E sont des entrees analytiques historiques et ne sont pas le registre complet ; la mission 010 ne rejoue pas ces registres comme si davantage d enumeration pouvait fournir l autorite manquante"
+    },
+    {
+      "subject": "study.human_direction",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+      },
+      "semantics_unresolved": false,
+      "label": "la direction humaine ratifiee est ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS ; ADDRESS_NORMATIVE_DOMINANCE_SEMANTICS n est pas selectionnee ; une selection de direction n est pas une reponse semantique normative, et l humain n a decide ni que D01 a D21 sont exhaustives, ni que D12 / D16 comporte une seule classe de directions, ni qu il en comporte plusieurs, ni que D12 / D16 doit conserver sa factorisation courante, ni quel principe constitutif de cloture gouverne le modele, ni quelle sera une future regle de cloture gouvernante"
+    },
+    {
+      "subject": "study.d12_factorization_firewall",
+      "value": {
+        "type": "SYMBOL",
+        "value": "D12_AXIS_EXISTS_BUT_ITS_VALUE_MODEL_IS_NOT_FINAL"
+      },
+      "semantics_unresolved": false,
+      "label": "l existence de D12 / D16 comme axe materiel courant est etablie, mais son modele de valeurs courant n est pas etabli comme factorisation normative finale ; la mission 010 doit permettre des semantiques de cloture candidates materiellement distinctes ou, par exemple, les directions de canonicalisation forment une classe semantique close unique, ou plusieurs classes materiellement distinctes existent, ou le concept de direction de canonicalisation courant se decompose en plusieurs responsabilites gouvernantes independantes, ou certaines variations apparentes sont derivees, non materielles ou de seule representation, ou un autre modele borne est positivement soutenu ; ce sont des sujets d etude possibles et non des gagnants predetermines"
+    },
+    {
+      "subject": "study.no_analytical_repair",
+      "value": {
+        "type": "SYMBOL",
+        "value": "MORE_ENUMERATION_IS_NOT_A_NORMATIVE_CLOSURE_RULE"
+      },
+      "semantics_unresolved": false,
+      "label": "la mission 010 ne repond pas a CG-1 en trouvant davantage de dimensions jusqu a ce qu aucune nouvelle n apparaisse, en stabilisant une liste sur des recherches repetees, en prenant l union de toutes les listes historiques, ni en declarant D01 a D21 exhaustives parce qu elles expliquent les exemples courants ; elle ne repond pas a CG-2 en eprouvant davantage de directions candidates pour la minimalite, en ne trouvant aucun type de direction nouveau, ni en traitant les deux directions inconditionnelles courantes comme representatives de toute direction de canonicalisation possible ; davantage d enumeration n est pas une regle de cloture normative, et davantage de tests de minimalite n est pas une autorite de domaine de valeurs"
+    },
+    {
+      "subject": "study.candidate_is_not_authority",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_CLOSURE_RULE_IS_NOT_A_GOVERNING_CLOSURE_RULE"
+      },
+      "semantics_unresolved": false,
+      "label": "toute regle de generateur de cloture proposee est un ensemble de regles semantiques normatives candidat et non une autorite normative gouvernante ; l executant peut formuler des regles candidates completes pour comparaison analytique et ne peut en rendre aucune gouvernante ; une unicite analytique n est pas une adoption humaine, et une pluralite analytique n est pas une selection humaine deja faite"
+    },
+    {
+      "subject": "study.candidate_completeness",
+      "value": {
+        "type": "SYMBOL",
+        "value": "A_CANDIDATE_MUST_SPECIFY_BOTH_CG1_AND_CG2"
+      },
+      "semantics_unresolved": false,
+      "label": "tout ensemble de regles candidat doit specifier CG-1 et CG-2 ; un candidat qui ne resout que B sans C, ou que C sans B, est un candidat incomplet ; il est interdit de combiner des fragments independamment incomplets en heritant leur conformite, et l ajout d un composant de regle materiel exige une identite de candidat nouvelle ou revisee, qualifiee depuis zero"
+    },
+    {
+      "subject": "study.cg1_required_semantics",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG1_REQUIRED_SPECIFICATION"
+      },
+      "semantics_unresolved": false,
+      "label": "tout candidat complet specifie son principe de cloture CG-1, ce qui compte comme responsabilite semantique gouvernante et ce qui n en est pas, l objet et le niveau semantique vises, la determination de l independance materielle d une responsabilite, la reconnaissance des consequences derivees, la decomposition des responsabilites composites, le traitement des responsabilites constantes, l exclusion des variantes de seule representation, la maniere dont l univers complet de responsabilites est positivement borne, la raison pour laquelle aucune responsabilite materielle supplementaire ne peut exister hors de cette borne, la correspondance de D01 a D21 dans cet univers, le maintien, la refactorisation ou la derivation de D01 a D21 depuis un modele constitutif plus profond, et l effet prospectif sur la generation ulterieure d espace d options ; TOUTES LES RESPONSABILITES ACTUELLEMENT CONNUES n est pas un principe de cloture admissible"
+    },
+    {
+      "subject": "study.cg2_required_semantics",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG2_REQUIRED_SPECIFICATION"
+      },
+      "semantics_unresolved": false,
+      "label": "tout candidat complet specifie son principe de direction de canonicalisation CG-2, ce qui qualifie une direction de canonicalisation, si celle-ci est une classe de valeurs materielle unique ou une famille, et dans ce dernier cas quelle factorisation complete en definit les membres, ce qui rend deux directions de canonicalisation materiellement distinctes, quelles differences sont derivees, non materielles, de seule representation ou de seul choix d implementation, la maniere dont le domaine de valeurs est positivement clos, la correspondance de toute variante apparente future vers une valeur canonique ou une exclusion positive, l interaction avec D04, D07 et D11, le maintien, la scission, l effondrement ou le remplacement de l axe D12 / D16 courant, et l effet prospectif sur la generation ulterieure d options ; la minimalite ulterieure ne peut jamais prouver la completude de ce domaine amont"
+    },
+    {
+      "subject": "study.coupling",
+      "value": {
+        "type": "SYMBOL",
+        "value": "COUPLING_ARCHITECTURE_IS_ITSELF_A_CANDIDATE_FACT"
+      },
+      "semantics_unresolved": false,
+      "label": "determiner si CG-1 et CG-2 forment une regle constitutive integree unique, deux regles normatives independantes, deux regles couplees par une dependance deterministe ou une autre architecture bornee materiellement distincte ; ne pas presumer une decomposition en deux regles au seul motif que la mission 009 a exhibe deux echecs ; l identite de candidat doit refleter une semantique de couplage materiellement differente"
+    },
+    {
+      "subject": "study.conformance_criteria",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CGS1_TO_CGS16_POSITIVE_ONLY"
+      },
+      "semantics_unresolved": false,
+      "label": "les seize criteres CGS1 a CGS16 exigent qu un candidat resolve completement CG-1 et CG-2, soit positivement borne et generatif plutot qu observationnel, n emploie aucune preuve circulaire ou les options engendrees prouveraient la completude du generateur qui les engendre, ne fasse dependre aucune cloture de domaine de valeurs amont d issues aval de minimalite, de dominance ou de compte d options, preserve les distinctions de niveau semantique, soit reproductible par un analyste independant depuis la meme coupe durable, distingue la responsabilite semantique materielle de la representation, de la serialisation et de la notation, definisse des regles positives d inclusion et d exclusion pour les classes de responsabilites comme pour les valeurs de direction de canonicalisation, traite les variantes futures apparentes sans rouvrir une queue AUTRE non bornee, ne reecrive retroactivement aucune semantique historique d executant ou de resultat, ne selectionne aucune option de quantification normative, ne definisse ni ne depende d une dominance nouvelle, ne depende ni de commodite d implementation, ni d outillage, ni de cout de serialisation, ni d une issue analytique desiree, fournisse une semantique prospective suffisante en principe pour qu une future etude de cloture fraiche construise un generateur borne sans inventer d autorite semantique supplementaire, et soit assez explicite pour etre materialise comme autorite normative si l humain l adoptait plus tard ; un critere requis a NO rend le candidat non conforme et un critere a NOT_ESTABLISHED le rend non positivement conforme"
+    },
+    {
+      "subject": "study.dominance_firewall",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO_NEW_DOMINANCE_NO_TRANSPLANTED_DOMINANCE"
+      },
+      "semantics_unresolved": false,
+      "label": "la mission 010 ne definit aucune semantique de dominance nouvelle ; si le corpus gele contient deja un departage ou une dominance deterministe applicable aux regles semantiques de generateur de cloture, elle peut l identifier et ne l appliquer que s il est positivement autorise pour ce type d objet ; il est interdit de transplanter la dominance d exigence de preuve, la dominance d option normative ou toute autre relation de dominance sur des regles de generateur de cloture sans autorite positive ; une dominance inconnue conserve le candidat, et faute de semantique applicable il ne faut pas en inventer"
+    },
+    {
+      "subject": "study.no_option_space_execution",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NORMATIVE_STUDY_FIRST_APPLICATION_LATER"
+      },
+      "semantics_unresolved": false,
+      "label": "la mission 010 ne regenere pas l univers de cellules brutes de la mission 009 sous une semantique candidate, ne recalcule pas le registre complet d options normatives, ne declare aucune completude d espace d options etablie, ne selectionne aucune des neuf options engendrees, et ne calcule aucune issue finale de regle 1 ou de regle 2 pour la mission 009 ; elle ne peut enoncer qu une consequence prospective, a savoir que tel candidat, s il etait adopte plus tard, fournirait ou ne fournirait pas les entrees semantiques requises par une future etude fraiche de cloture d espace d options"
+    },
+    {
+      "subject": "study.human_authority_mapping",
+      "value": {
+        "type": "SYMBOL",
+        "value": "RESULT_LEVEL_GATE_ONLY_NEVER_PROGRAM_LEVEL"
+      },
+      "semantics_unresolved": false,
+      "label": "l autorite 59 demeure gouvernante : sur une issue UNIQUE la porte impliquee de niveau resultat est OPEN de type ADOPTION avec l unique ensemble de regles analytiquement qualifie presente, sur MULTIPLE elle est OPEN de type SELECTION avec tous les candidats minimaux conformes restants presentes, sur NO_CONFORMANT et INSUFFICIENT elle est NOT_OPEN de type NONE ; dans toutes les branches, aucune autorite normative gouvernante nouvelle n est creee et le resultat de l executant n ouvre par lui-meme aucune porte de niveau programme"
+    },
+    {
+      "subject": "study.qualification_before_decision",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTOR_OUTPUT_TRANSFERS_NO_AUTHORITY"
+      },
+      "semantics_unresolved": false,
+      "label": "flux gele : retour reel de AGENT CCR LAB #41, puis persistance octet pour octet, puis qualification independante fraiche, puis materialisation de l issue qualifiee, et alors seulement, si elle le justifie, la porte humaine reelle d adoption ou de selection de niveau programme ; une issue UNIQUE de l executant n est pas une regle gouvernante, une confirmation d unicite par le qualificateur non plus, et une issue MULTIPLE n est pas une porte de selection humaine effective ; meme sur une future issue UNIQUE qualifiee, l humain peut adopter, refuser, garer ou changer de direction R&D, l unicite analytique n obligeant a aucune adoption normative"
+    },
+    {
+      "subject": "study.dominance_direction_boundary",
+      "value": {
+        "type": "SYMBOL",
+        "value": "DIRECTION_B_REMAINS_UNSELECTED"
+      },
+      "semantics_unresolved": false,
+      "label": "ADDRESS_NORMATIVE_DOMINANCE_SEMANTICS demeure non selectionnee ; la mission 010 peut decouvrir qu une cloture ulterieure exposerait encore une lacune de semantique de dominance et peut le rapporter prospectivement, mais elle ne peut ni definir une dominance, ni selectionner la direction B, ni creer une mission de dominance, ni reserver un executant de dominance"
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth63",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+      },
+      "identity_required": false,
+      "label": "autorite gouvernante de cette etude ; identite non epinglee, le commit de gel la produit"
+    },
+    {
+      "id": "ref-auth62",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+      },
+      "label": "qualification corrigee de la mission 009 et etat qualifie de depart ; lacunes B et C"
+    },
+    {
+      "id": "ref-auth61",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "3765fc29feec0d5de11e59041bf17e214040c3bb"
+      },
+      "label": "contrat historique execute de cloture d espace d options ; obligations A a L"
+    },
+    {
+      "id": "ref-auth59",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "d6638cd5e7b3c5023d71c5fec54f62ab1de8df92"
+      },
+      "label": "semantique gouvernante d autorite humaine post-issue, adoption contre selection"
+    },
+    {
+      "id": "ref-auth58",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "a3a5af1d4ef079de9839c2c35ba2f0190c314012"
+      },
+      "label": "semantique d option normative, criteres NS1 a NS15, dominance non preferentielle"
+    },
+    {
+      "id": "ref-auth57",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "23130d35ed13bc0866409178efc90c4da3788a5b"
+      },
+      "label": "niveaux classe, instance et quantification ; CU-Q, CU-Q2"
+    },
+    {
+      "id": "ref-auth56",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "f116399f0b23b40e68dbb44e7153bc984f01631f"
+      },
+      "label": "couche d exigence de preuve ; employee pour la seule distinction de niveau semantique"
+    },
+    {
+      "id": "ref-mission009",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/009-handoff-routing-normative-option-space-closure/mission.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "bb8403a49774d59d46a3fee7dff9c26995569697"
+      },
+      "label": "contrat historique execute ; NON MODIFIE"
+    },
+    {
+      "id": "ref-result009",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/009-handoff-routing-normative-option-space-closure/result.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7e1b03c653a26f5a9494885bd2afb81eff25735b"
+      },
+      "label": "retour reel de CCR_LAB_FIX_1 ; D01..D21, registre engendre, exclusions ; base finale materiellement contredite par l autorite 62 ; NON MODIFIE"
+    },
+    {
+      "id": "ref-result008",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/008-handoff-routing-normative-quantification-semantics-study/result.json"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "8a9dc8aa91c9365abec0eb352f2a90f3cf476732"
+      },
+      "label": "retour reel de CCR_LAB_FIX_1 ; NQ-A a NQ-D ; NON MODIFIE"
+    },
+    {
+      "id": "ref-auth14",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      },
+      "label": "semantique de representation existante : Mission Object, pour la seule evaluation de compatibilite"
+    },
+    {
+      "id": "ref-auth23",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      },
+      "label": "semantique de representation existante : Result Instance, pour la seule evaluation de compatibilite"
+    },
+    {
+      "id": "ref-auth09",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "09-TOOLING-EXPERIMENT-001-PROGRAM-STATE.md"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "c94e03829e107b51f63efcdb950bfeff123f50d1"
+      },
+      "label": "semantique durable existante : etat de programme"
+    },
+    {
+      "id": "ref-program-state-live",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "PROGRAM-STATE.json"
+      },
+      "identity_required": false,
+      "label": "etat de programme courant, resolu a l execution ; deliberement NON epingle"
+    },
+    {
+      "id": "ref-technical-baseline",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REMOTE_REF",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      },
+      "identity_required": true,
+      "identity": {
+        "kind": "COMMIT",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      },
+      "label": "LIGNE DE BASE DE CAPACITE TECHNIQUE, employee la ou une affirmation de capacite est necessaire"
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/010-handoff-routing-normative-closure-generator-semantics-study/result.json"
+      },
+      "identity_required": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-read-qualified",
+      "mode": "REQUIRED",
+      "action": "READ_QUALIFIED_START_STATE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-auth63"
+      }
+    },
+    {
+      "id": "e-state-questions",
+      "mode": "REQUIRED",
+      "action": "STATE_CG1_AND_CG2_QUESTIONS",
+      "cardinality": 1
+    },
+    {
+      "id": "e-construct-candidates",
+      "mode": "REQUIRED",
+      "action": "CONSTRUCT_CANDIDATE_CLOSURE_GENERATOR_RULE_SETS",
+      "cardinality": 1
+    },
+    {
+      "id": "e-specify-cg1",
+      "mode": "REQUIRED",
+      "action": "SPECIFY_CG1_SEMANTICS_PER_CANDIDATE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-specify-cg2",
+      "mode": "REQUIRED",
+      "action": "SPECIFY_CG2_SEMANTICS_PER_CANDIDATE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-coupling",
+      "mode": "REQUIRED",
+      "action": "DETERMINE_CG1_CG2_COUPLING_ARCHITECTURE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-completion",
+      "mode": "REQUIRED",
+      "action": "APPLY_CANDIDATE_COMPLETION_FIREWALL",
+      "cardinality": 1
+    },
+    {
+      "id": "e-conformance",
+      "mode": "REQUIRED",
+      "action": "APPLY_CGS_CONFORMANCE_CRITERIA",
+      "cardinality": 1
+    },
+    {
+      "id": "e-equivalence",
+      "mode": "REQUIRED",
+      "action": "NORMALIZE_SEMANTIC_EQUIVALENCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-distinctness",
+      "mode": "REQUIRED",
+      "action": "ASSESS_MATERIAL_DISTINCTNESS",
+      "cardinality": 1
+    },
+    {
+      "id": "e-minimality",
+      "mode": "REQUIRED",
+      "action": "APPLY_CLOSURE_RULE_COMPONENT_REMOVAL_MINIMALITY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-dominance",
+      "mode": "REQUIRED",
+      "action": "APPLY_POSITIVELY_AUTHORIZED_DOMINANCE_ONLY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-tiebreak",
+      "mode": "REQUIRED",
+      "action": "DETERMINE_FROZEN_DETERMINISTIC_TIEBREAK",
+      "cardinality": 1
+    },
+    {
+      "id": "e-prospective",
+      "mode": "REQUIRED",
+      "action": "REPORT_PROSPECTIVE_CONSEQUENCE_ONLY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-partition",
+      "mode": "REQUIRED",
+      "action": "APPLY_ORDERED_OUTCOME_PARTITION",
+      "cardinality": 1
+    },
+    {
+      "id": "e-outcome",
+      "mode": "REQUIRED",
+      "action": "DERIVE_FINAL_ANALYTICAL_OUTCOME",
+      "cardinality": 1
+    },
+    {
+      "id": "e-gate-derivation",
+      "mode": "REQUIRED",
+      "action": "DERIVE_POST_OUTCOME_HUMAN_GATE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": {
+        "ref": "ref-return"
+      }
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "FREEZE_RESULT_INSTANCE",
+      "cardinality": 1
+    },
+    {
+      "id": "e-forbid-adopt-rule",
+      "mode": "FORBIDDEN",
+      "action": "ADOPT_CLOSURE_GENERATOR_RULE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-create-authority",
+      "mode": "FORBIDDEN",
+      "action": "CREATE_GOVERNING_NORMATIVE_AUTHORITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-presume-cg1",
+      "mode": "FORBIDDEN",
+      "action": "PRESUME_CG1_ANSWER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-presume-cg2",
+      "mode": "FORBIDDEN",
+      "action": "PRESUME_CG2_ANSWER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-declare-dimensions-exhaustive",
+      "mode": "FORBIDDEN",
+      "action": "DECLARE_D01_TO_D21_EXHAUSTIVE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-enumeration-as-closure",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_ENUMERATION_AS_NORMATIVE_CLOSURE_RULE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-minimality-as-authority",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_MINIMALITY_TESTING_AS_VALUE_DOMAIN_AUTHORITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-stabilized-list",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_STABILIZED_LIST_AS_COMPLETENESS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-union-of-lists",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_UNION_OF_HISTORICAL_LISTS_AS_CLOSURE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-current-known",
+      "mode": "FORBIDDEN",
+      "action": "USE_ALL_CURRENTLY_KNOWN_AS_CLOSURE_PRINCIPLE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-incomplete-fragment",
+      "mode": "FORBIDDEN",
+      "action": "COMBINE_INCOMPLETE_FRAGMENTS_AND_INHERIT_CONFORMANCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-mutate-candidate",
+      "mode": "FORBIDDEN",
+      "action": "MUTATE_CANDIDATE_DURING_COMPARISON",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-wording-candidate",
+      "mode": "FORBIDDEN",
+      "action": "COUNT_WORDING_VARIANT_AS_DISTINCT_CANDIDATE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-assume-coupling",
+      "mode": "FORBIDDEN",
+      "action": "ASSUME_TWO_RULE_DECOMPOSITION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-circular-proof",
+      "mode": "FORBIDDEN",
+      "action": "PROVE_GENERATOR_COMPLETENESS_FROM_ITS_OWN_OUTPUT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-define-dominance",
+      "mode": "FORBIDDEN",
+      "action": "DEFINE_NEW_DOMINANCE_SEMANTICS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-transplant-dominance",
+      "mode": "FORBIDDEN",
+      "action": "TRANSPLANT_DOMINANCE_FROM_OTHER_OBJECT_TYPE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-select-direction-b",
+      "mode": "FORBIDDEN",
+      "action": "SELECT_DOMINANCE_SEMANTICS_DIRECTION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-regenerate-option-space",
+      "mode": "FORBIDDEN",
+      "action": "REGENERATE_OPTION_SPACE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-claim-option-closure",
+      "mode": "FORBIDDEN",
+      "action": "CLAIM_OPTION_SPACE_COMPLETENESS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-select-option",
+      "mode": "FORBIDDEN",
+      "action": "SELECT_NORMATIVE_QUANTIFICATION_OPTION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-open-program-gate",
+      "mode": "FORBIDDEN",
+      "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-count-unestablished",
+      "mode": "FORBIDDEN",
+      "action": "COUNT_NOT_ESTABLISHED_AS_POSITIVE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-rewrite-history",
+      "mode": "FORBIDDEN",
+      "action": "REWRITE_HISTORICAL_RESULT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-schema",
+      "mode": "FORBIDDEN",
+      "action": "EXTEND_SCHEMA",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-representation-change",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_REPRESENTATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-acquire",
+      "mode": "FORBIDDEN",
+      "action": "ACQUIRE_EVIDENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-experiment",
+      "mode": "FORBIDDEN",
+      "action": "CREATE_TOOLING_EXPERIMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-implement",
+      "mode": "FORBIDDEN",
+      "action": "IMPLEMENT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-convenience",
+      "mode": "FORBIDDEN",
+      "action": "PREFER_BY_IMPLEMENTATION_CONVENIENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-outcome-engineering",
+      "mode": "FORBIDDEN",
+      "action": "SELECT_BY_DESIRED_ANALYTICAL_OUTCOME",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-conversation",
+      "mode": "FORBIDDEN",
+      "action": "RECONSTRUCT_FROM_CONVERSATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-counter-expert-prose",
+      "mode": "FORBIDDEN",
+      "action": "USE_COUNTER_EXPERT_PROSE_AS_EVIDENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-incident",
+      "mode": "FORBIDDEN",
+      "action": "USE_WRONG_TARGET_INCIDENT_AS_EVIDENCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-modify-history",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_HISTORICAL_MISSION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-qualify-own",
+      "mode": "FORBIDDEN",
+      "action": "QUALIFY_OWN_RETURN",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-commit",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-push",
+      "mode": "FORBIDDEN",
+      "action": "PUSH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-other-mutation",
+      "mode": "FORBIDDEN",
+      "action": "MUTATE_REPOSITORY",
+      "cardinality": 0
+    }
+  ],
+  "content_requirements": [
+    {
+      "id": "cr-technical-baseline",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "PRESERVE",
+      "subject": "study.technical_capability_baseline",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "id": "cr-no-conversation",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.conversation_factual_reconstruction_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-session-prose",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.session_prose_fallback_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-counter-expert-prose",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.counter_expert_prose_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-ccr-system",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.ccr_system_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-external-web",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.external_web_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-no-incident",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.wrong_target_incident_source_usage_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-mutation-boundary",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.repository_mutations_other_than_result",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-commits",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_commit_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-pushes",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "discipline.executor_push_count",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SCALAR",
+        "value": 0
+      }
+    },
+    {
+      "id": "cr-direction",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "qualified_start.human_normative_closure_semantics_direction",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+      }
+    },
+    {
+      "id": "cr-cg1-not-presumed",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "question.cg1_answer_presumed",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-cg2-not-presumed",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "question.cg2_answer_presumed",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-d12-not-final",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "question.d12_current_value_model_treated_as_final",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-coupling-not-assumed",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "coupling.two_rule_decomposition_assumed",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-new-dominance",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "dominance.new_semantics_defined",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-transplant",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "dominance.transplanted_from_other_object_type",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-option-regeneration",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.option_space_regenerated",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-no-option-closure-claim",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.option_space_completeness_claimed",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-governing-rule",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.governing_closure_generator_rule_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-governing-rule-id",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.governing_closure_generator_rule_id",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "id": "cr-new-authority",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.new_normative_authority_created",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-option-selected",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.normative_quantification_option_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-dominance-selected",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.dominance_semantics_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-direction-b",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.direction_b_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-implementation",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.implementation_authorization",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-ledger-conformant",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "candidate.ledger_encoding_conformant",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-adopt",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.closure_generator_rule_adopted",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-declare-exhaustive",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.d01_to_d21_declared_exhaustive",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-enumeration-closure",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.enumeration_used_as_closure_rule",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-minimality-authority",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.minimality_used_as_value_domain_authority",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-stabilized-list",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.stabilized_list_used_as_completeness",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-union-lists",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.union_of_historical_lists_used_as_closure",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-currently-known",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.all_currently_known_used_as_closure_principle",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-circular",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.generator_completeness_proved_from_own_output",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-incomplete-counted",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.incomplete_candidate_counted_positively",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-candidate-mutated",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "candidate.mutated_during_comparison",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-wording-candidate",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "candidate.wording_variant_counted_as_distinct",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-unestablished-counted",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.not_established_counted_as_positive",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-program-gate",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.program_level_human_gate_opened",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-history-rewritten",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.historical_result_rewritten",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-schema-extended",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.schema_extended",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-acquisition",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.evidence_acquired",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-experiment",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.new_tooling_experiment",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "SELECTED"
+      }
+    },
+    {
+      "id": "cr-forbid-convenience",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.preference_by_implementation_convenience_applied",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-outcome-engineering",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.outcome_engineering_applied",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-history-modified",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.historical_mission_modified",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-qualified",
+        "effect": "e-read-qualified",
+        "atomic": true,
+        "gated_by": "g-preflight",
+        "produces": [
+          "ev-qualified-start"
+        ]
+      },
+      {
+        "order": 2,
+        "id": "s-questions",
+        "effect": "e-state-questions",
+        "atomic": true
+      },
+      {
+        "order": 3,
+        "id": "s-candidates",
+        "effect": "e-construct-candidates",
+        "atomic": true,
+        "gated_by": "g-no-presumption",
+        "produces": [
+          "ev-candidates"
+        ]
+      },
+      {
+        "order": 4,
+        "id": "s-cg1",
+        "effect": "e-specify-cg1",
+        "atomic": true,
+        "gated_by": "g-no-analytical-repair"
+      },
+      {
+        "order": 5,
+        "id": "s-cg2",
+        "effect": "e-specify-cg2",
+        "atomic": true
+      },
+      {
+        "order": 6,
+        "id": "s-coupling",
+        "effect": "e-coupling",
+        "atomic": true
+      },
+      {
+        "order": 7,
+        "id": "s-completion",
+        "effect": "e-completion",
+        "atomic": true
+      },
+      {
+        "order": 8,
+        "id": "s-conformance",
+        "effect": "e-conformance",
+        "atomic": true,
+        "gated_by": "g-candidate-completion",
+        "produces": [
+          "ev-conformance"
+        ]
+      },
+      {
+        "order": 9,
+        "id": "s-equivalence",
+        "effect": "e-equivalence",
+        "atomic": true,
+        "gated_by": "g-conformance-positive"
+      },
+      {
+        "order": 10,
+        "id": "s-distinctness",
+        "effect": "e-distinctness",
+        "atomic": true
+      },
+      {
+        "order": 11,
+        "id": "s-minimality",
+        "effect": "e-minimality",
+        "atomic": true
+      },
+      {
+        "order": 12,
+        "id": "s-dominance",
+        "effect": "e-dominance",
+        "atomic": true,
+        "produces": [
+          "ev-dominance"
+        ]
+      },
+      {
+        "order": 13,
+        "id": "s-tiebreak",
+        "effect": "e-tiebreak",
+        "atomic": true,
+        "gated_by": "g-dominance-firewall"
+      },
+      {
+        "order": 14,
+        "id": "s-prospective",
+        "effect": "e-prospective",
+        "atomic": true
+      },
+      {
+        "order": 15,
+        "id": "s-partition",
+        "effect": "e-partition",
+        "atomic": true,
+        "gated_by": "g-no-option-execution"
+      },
+      {
+        "order": 16,
+        "id": "s-outcome",
+        "effect": "e-outcome",
+        "atomic": true,
+        "gated_by": "g-partition-single"
+      },
+      {
+        "order": 17,
+        "id": "s-gate-derivation",
+        "effect": "e-gate-derivation",
+        "atomic": true
+      },
+      {
+        "order": 18,
+        "id": "s-produce",
+        "effect": "e-produce-result",
+        "atomic": true,
+        "gated_by": "g-gate-derivation"
+      },
+      {
+        "order": 19,
+        "id": "s-validate",
+        "effect": "e-validate-result",
+        "atomic": true,
+        "produces": [
+          "ev-result-validation"
+        ]
+      },
+      {
+        "order": 20,
+        "id": "s-freeze",
+        "effect": "e-freeze-result",
+        "atomic": true
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-preflight",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth62"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-result009"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "7e1b03c653a26f5a9494885bd2afb81eff25735b"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "reserved_result_path_existing"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-no-presumption",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-presumption",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-state-questions",
+              "field": "cg1_or_cg2_answer_presumed"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-state-questions",
+              "field": "d12_value_model_treated_as_final"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-no-analytical-repair",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-analytical-repair",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-construct-candidates",
+              "field": "enumeration_used_as_closure_rule"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-construct-candidates",
+              "field": "minimality_used_as_value_domain_authority"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-construct-candidates",
+              "field": "all_currently_known_used_as_closure_principle"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-candidate-completion",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-completion",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-completion",
+              "field": "incomplete_candidates_counted_positively"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-completion",
+              "field": "candidates_mutated_during_comparison"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-coupling",
+              "field": "two_rule_decomposition_assumed"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-conformance-positive",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-conformance",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-conformance",
+              "field": "criteria_applied"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 16
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-conformance",
+              "field": "not_established_counted_as_conformant"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-conformance",
+              "field": "circular_generator_proof_accepted"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-dominance-firewall",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-dominance",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-dominance",
+              "field": "new_dominance_semantics_defined"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-dominance",
+              "field": "dominance_transplanted_without_authority"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-no-option-execution",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-option-execution",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-prospective",
+              "field": "option_space_regenerated"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-prospective",
+              "field": "option_space_completeness_claimed"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-prospective",
+              "field": "direction_b_selected"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-partition-single",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-partition",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-partition",
+              "field": "matched_outcome_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 1
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-partition",
+              "field": "outcome_engineering_applied"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "modifier": "COUNT_OF",
+              "ref": "forbidden_source_usage"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-gate-derivation",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-gate-semantics",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "terminal_paths_without_gate_state"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "terminal_paths_without_gate_type"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "program_level_gate_opened"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "paths_with_governing_rule_selected"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-unique",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "UNIQUE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b1-forbid-adopt",
+          "mode": "FORBIDDEN",
+          "action": "ADOPT_CLOSURE_GENERATOR_RULE",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-unique-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-unique-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-unique-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-unique-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-unique",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "UNIQUE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+          }
+        },
+        {
+          "id": "cr-br-unique-gate",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          }
+        },
+        {
+          "id": "cr-br-unique-gate-type",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "ADOPTION"
+          }
+        },
+        {
+          "id": "cr-br-unique-governing",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_closure_generator_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        },
+        {
+          "id": "cr-br-unique-authority",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.new_normative_authority_created",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "UNIQUE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-multiple",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b2-forbid-select",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_BY_DESIRED_ANALYTICAL_OUTCOME",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-multiple-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-multiple-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-multiple-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-multiple-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-multiple",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+          }
+        },
+        {
+          "id": "cr-br-multiple-gate",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          }
+        },
+        {
+          "id": "cr-br-multiple-gate-type",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "SELECTION"
+          }
+        },
+        {
+          "id": "cr-br-multiple-governing",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_closure_generator_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        },
+        {
+          "id": "cr-br-multiple-authority",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.new_normative_authority_created",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-none",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b3-forbid-enumeration",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_ENUMERATION_AS_NORMATIVE_CLOSURE_RULE",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-none-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-none-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-none-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-none-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-none",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+          }
+        },
+        {
+          "id": "cr-br-none-gate",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        },
+        {
+          "id": "cr-br-none-gate-type",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        },
+        {
+          "id": "cr-br-none-governing",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_closure_generator_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        },
+        {
+          "id": "cr-br-none-authority",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.new_normative_authority_created",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-insufficient",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-outcome",
+          "field": "outcome"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-b4-forbid-direction-b",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_DOMINANCE_SEMANTICS_DIRECTION",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-br-insufficient-gate",
+          "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-produce",
+          "order": 2,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-validate",
+          "order": 3,
+          "effect": "e-validate-result",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-freeze",
+          "order": 4,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "requirements": [
+        {
+          "id": "cr-br-insufficient",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-gate",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-gate-type",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.result_level_implied_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-governing",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_closure_generator_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-authority",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.new_normative_authority_created",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ],
+      "terminal_outcome": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS",
+      "next": "nc-return"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "preflight_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pf-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN"
+        },
+        {
+          "id": "sp-pf-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET"
+        },
+        {
+          "id": "sp-pf-fetch",
+          "mode": "FORBIDDEN",
+          "action": "FETCH"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-presumption",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-state-questions",
+          "field": "cg1_or_cg2_answer_presumed"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-ps-cg1",
+          "mode": "FORBIDDEN",
+          "action": "PRESUME_CG1_ANSWER"
+        },
+        {
+          "id": "sp-ps-cg2",
+          "mode": "FORBIDDEN",
+          "action": "PRESUME_CG2_ANSWER"
+        },
+        {
+          "id": "sp-ps-exhaustive",
+          "mode": "FORBIDDEN",
+          "action": "DECLARE_D01_TO_D21_EXHAUSTIVE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-analytical-repair",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-construct-candidates",
+          "field": "enumeration_used_as_closure_rule"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-ar-enum",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_ENUMERATION_AS_NORMATIVE_CLOSURE_RULE"
+        },
+        {
+          "id": "sp-ar-min",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_MINIMALITY_TESTING_AS_VALUE_DOMAIN_AUTHORITY"
+        },
+        {
+          "id": "sp-ar-stable",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_STABILIZED_LIST_AS_COMPLETENESS"
+        },
+        {
+          "id": "sp-ar-known",
+          "mode": "FORBIDDEN",
+          "action": "USE_ALL_CURRENTLY_KNOWN_AS_CLOSURE_PRINCIPLE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-completion",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-completion",
+          "field": "incomplete_candidates_counted_positively"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-cp-fragment",
+          "mode": "FORBIDDEN",
+          "action": "COMBINE_INCOMPLETE_FRAGMENTS_AND_INHERIT_CONFORMANCE"
+        },
+        {
+          "id": "sp-cp-mutate",
+          "mode": "FORBIDDEN",
+          "action": "MUTATE_CANDIDATE_DURING_COMPARISON"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-conformance",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-conformance",
+          "field": "circular_generator_proof_accepted"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-cf-circular",
+          "mode": "FORBIDDEN",
+          "action": "PROVE_GENERATOR_COMPLETENESS_FROM_ITS_OWN_OUTPUT"
+        },
+        {
+          "id": "sp-cf-unestablished",
+          "mode": "FORBIDDEN",
+          "action": "COUNT_NOT_ESTABLISHED_AS_POSITIVE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-dominance",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-dominance",
+          "field": "new_dominance_semantics_defined"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-do-define",
+          "mode": "FORBIDDEN",
+          "action": "DEFINE_NEW_DOMINANCE_SEMANTICS"
+        },
+        {
+          "id": "sp-do-transplant",
+          "mode": "FORBIDDEN",
+          "action": "TRANSPLANT_DOMINANCE_FROM_OTHER_OBJECT_TYPE"
+        },
+        {
+          "id": "sp-do-direction",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_DOMINANCE_SEMANTICS_DIRECTION"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-option-execution",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-prospective",
+          "field": "option_space_regenerated"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-oe-regenerate",
+          "mode": "FORBIDDEN",
+          "action": "REGENERATE_OPTION_SPACE"
+        },
+        {
+          "id": "sp-oe-claim",
+          "mode": "FORBIDDEN",
+          "action": "CLAIM_OPTION_SPACE_COMPLETENESS"
+        },
+        {
+          "id": "sp-oe-select",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_NORMATIVE_QUANTIFICATION_OPTION"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-partition",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-partition",
+          "field": "matched_outcome_count"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 1
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pt-engineering",
+          "mode": "FORBIDDEN",
+          "action": "SELECT_BY_DESIRED_ANALYTICAL_OUTCOME"
+        },
+        {
+          "id": "sp-pt-gate",
+          "mode": "FORBIDDEN",
+          "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-gate-semantics",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-gate-derivation",
+          "field": "program_level_gate_opened"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-gs-program",
+          "mode": "FORBIDDEN",
+          "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE"
+        },
+        {
+          "id": "sp-gs-adopt",
+          "mode": "FORBIDDEN",
+          "action": "ADOPT_CLOSURE_GENERATOR_RULE"
+        },
+        {
+          "id": "sp-gs-authority",
+          "mode": "FORBIDDEN",
+          "action": "CREATE_GOVERNING_NORMATIVE_AUTHORITY"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-representation-blocker",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-produce-result",
+          "field": "representable_under_existing_grammar"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-rep-extend",
+          "mode": "FORBIDDEN",
+          "action": "EXTEND_SCHEMA"
+        },
+        {
+          "id": "sp-rep-weaken",
+          "mode": "FORBIDDEN",
+          "action": "WEAKEN_SEMANTIC_CONTRACT"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-mutation",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "MEASUREMENT",
+          "modifier": "COUNT_OF",
+          "ref": "repository_mutations_other_than_result"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-mut-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT"
+        },
+        {
+          "id": "sp-mut-history",
+          "mode": "FORBIDDEN",
+          "action": "REWRITE_HISTORICAL_RESULT"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-address-normative-closure-generator-semantics",
+        "subject": "handoff_routing_address_normative_closure_generator_semantics_selected",
+        "authority": "ref-auth63"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-return"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-qualified-start",
+      "kind": "OBSERVATION",
+      "fact": "qualified_start.first_load_bearing_failure",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth62",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-candidates",
+      "kind": "OBSERVATION",
+      "fact": "candidate.id_roster",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth63",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-conformance",
+      "kind": "VERIFICATION",
+      "fact": "conformance.criterion_roster",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth63",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-dominance",
+      "kind": "VERIFICATION",
+      "fact": "dominance.applicable_frozen_semantics_exist",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth58",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "result_instance.structural_validation",
+      "method": {
+        "op": "EQ",
+        "source": "ref-return",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "UNIQUE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "UNIQUE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-unique_conformant_normative_closure_generator_semantics_established-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-multiple_conformant_normative_closure_generator_semantics_require_human_selection-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-no_conformant_bounded_normative_closure_generator_semantics_established-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-outcome",
+              "field": "outcome"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-insufficient_durable_basis_to_specify_normative_closure_generator_semantics-frozen",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BLOCKED_REPRESENTATION_LIMIT",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-produce-result",
+              "field": "representable_under_existing_grammar"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-blocked-no-schema-extension",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.schema_extended",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    },
+    {
+      "label": "BLOCKED_NON_CONFORMANT_EXECUTION",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-blocked-no-outcome-forced",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.final_analytical_outcome_forced",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    },
+    {
+      "label": "STOPPED_ON_PREFLIGHT",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "NEQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "preflight_match"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return",
+      "post_state": [
+        {
+          "id": "cr-stopped-no-result",
+          "scope": "MISSION",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "result_instance.frozen",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        }
+      ]
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-execution-identity",
+      "fact": "study.execution_identity",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-evidence-cut",
+      "fact": "study.admitted_evidence_cut",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-technical-baseline",
+      "fact": "study.technical_capability_baseline",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-conv-reconstruction",
+      "fact": "discipline.conversation_factual_reconstruction_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-session-prose",
+      "fact": "discipline.session_prose_fallback_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-counter-expert-prose",
+      "fact": "discipline.counter_expert_prose_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-ccr-system-source",
+      "fact": "discipline.ccr_system_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-external-web",
+      "fact": "discipline.external_web_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-incident-source",
+      "fact": "discipline.wrong_target_incident_source_usage_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-start-obligation-a",
+      "fact": "qualified_start.obligation_a_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-obligation-b",
+      "fact": "qualified_start.obligation_b_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-obligation-c",
+      "fact": "qualified_start.obligation_c_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-first-failure",
+      "fact": "qualified_start.first_load_bearing_failure",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-start-dimension-universe",
+      "fact": "qualified_start.dimension_universe_completeness_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-d12-value-domain",
+      "fact": "qualified_start.d12_value_domain_completeness_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-option-space",
+      "fact": "qualified_start.option_space_completeness_not_established_confirmed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-dimension-ids",
+      "fact": "qualified_start.current_positive_dimension_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-start-canonical-count",
+      "fact": "qualified_start.current_generated_canonical_roster_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-start-minimal-option-ids",
+      "fact": "qualified_start.current_generated_minimal_conformant_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-start-direction",
+      "fact": "qualified_start.human_normative_closure_semantics_direction",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-start-divergences",
+      "fact": "qualified_start.divergences_from_qualified_state",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-question-cg1",
+      "fact": "question.cg1_statement",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-question-cg2",
+      "fact": "question.cg2_statement",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-question-cg1-presumed",
+      "fact": "question.cg1_answer_presumed",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-question-cg2-presumed",
+      "fact": "question.cg2_answer_presumed",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-question-d12-final",
+      "fact": "question.d12_current_value_model_treated_as_final",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-question-coupling",
+      "fact": "question.coupling_architecture",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ONE_INTEGRATED_CONSTITUTIVE_RULE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TWO_INDEPENDENT_NORMATIVE_RULES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TWO_COUPLED_RULES_WITH_DETERMINISTIC_DEPENDENCY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "OTHER_BOUNDED_ARCHITECTURE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-candidate-roster",
+      "fact": "candidate.id_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-candidate-count",
+      "fact": "candidate.count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-candidate-components",
+      "fact": "candidate.material_component_inventory",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-candidate-incomplete-ids",
+      "fact": "candidate.incomplete_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-candidate-incomplete-count",
+      "fact": "candidate.incomplete_candidate_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-candidate-wording-rejected",
+      "fact": "candidate.wording_variants_rejected_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-candidate-required-dimensions",
+      "fact": "candidate.required_specification_dimension_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-candidate-ledger-conformant",
+      "fact": "candidate.ledger_encoding_conformant",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cg1-closure-principle",
+      "fact": "cg1.closure_principle_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg1-inclusion-rule",
+      "fact": "cg1.responsibility_inclusion_rule_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg1-exclusion-rule",
+      "fact": "cg1.responsibility_exclusion_rule_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg1-bounding-basis",
+      "fact": "cg1.universe_bounding_basis_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg1-dimension-mapping",
+      "fact": "cg1.d01_to_d21_mapping_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg1-dimension-disposition",
+      "fact": "cg1.d01_to_d21_disposition_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg1-prospective-effect",
+      "fact": "cg1.prospective_effect_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-qualification-rule",
+      "fact": "cg2.direction_qualification_rule_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-class-or-family",
+      "fact": "cg2.single_class_or_family_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-family-factorization",
+      "fact": "cg2.family_factorization_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-distinctness-rule",
+      "fact": "cg2.material_distinctness_rule_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-derived-rule",
+      "fact": "cg2.derived_and_non_material_rule_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-closure-basis",
+      "fact": "cg2.value_domain_closure_basis_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-future-variant-rule",
+      "fact": "cg2.future_variant_mapping_rule_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cg2-d12-disposition",
+      "fact": "cg2.d12_axis_disposition_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-coupling-architecture",
+      "fact": "coupling.architecture_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-coupling-dependencies",
+      "fact": "coupling.dependency_relations_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-coupling-assumed",
+      "fact": "coupling.two_rule_decomposition_assumed",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-cgs1-established-candidates",
+      "fact": "conformance.cgs1_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs2-established-candidates",
+      "fact": "conformance.cgs2_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs3-established-candidates",
+      "fact": "conformance.cgs3_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs4-established-candidates",
+      "fact": "conformance.cgs4_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs5-established-candidates",
+      "fact": "conformance.cgs5_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs6-established-candidates",
+      "fact": "conformance.cgs6_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs7-established-candidates",
+      "fact": "conformance.cgs7_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs8-established-candidates",
+      "fact": "conformance.cgs8_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs9-established-candidates",
+      "fact": "conformance.cgs9_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs10-established-candidates",
+      "fact": "conformance.cgs10_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs11-established-candidates",
+      "fact": "conformance.cgs11_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs12-established-candidates",
+      "fact": "conformance.cgs12_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs13-established-candidates",
+      "fact": "conformance.cgs13_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs14-established-candidates",
+      "fact": "conformance.cgs14_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs15-established-candidates",
+      "fact": "conformance.cgs15_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cgs16-established-candidates",
+      "fact": "conformance.cgs16_positively_established_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-conformance-criteria",
+      "fact": "conformance.criterion_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-conformant-candidates",
+      "fact": "conformance.conformant_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-conformant-count",
+      "fact": "conformance.conformant_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-non-conformant-candidates",
+      "fact": "conformance.non_conformant_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-not-positively-conformant",
+      "fact": "conformance.not_positively_conformant_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-equivalence-classes",
+      "fact": "equivalence.class_roster",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-equivalence-collapsed",
+      "fact": "equivalence.collapsed_duplicate_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-equivalence-basis",
+      "fact": "equivalence.normalization_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-distinctness-relations",
+      "fact": "distinctness.material_distinctness_relations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-distinctness-governing-facts",
+      "fact": "distinctness.governing_semantic_facts_used",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-minimality-tests",
+      "fact": "minimality.component_removal_tests_run",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-minimal-candidates",
+      "fact": "minimality.minimal_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-minimal-count",
+      "fact": "minimality.minimal_candidate_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-dominance-applicable",
+      "fact": "dominance.applicable_frozen_semantics_exist",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dominance-basis",
+      "fact": "dominance.applicable_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-pairwise",
+      "fact": "dominance.pairwise_results",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominated-candidates",
+      "fact": "dominance.dominated_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-dominance-new-semantics",
+      "fact": "dominance.new_semantics_defined",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dominance-transplanted",
+      "fact": "dominance.transplanted_from_other_object_type",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-remaining-candidates",
+      "fact": "remaining.candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-remaining-cardinality",
+      "fact": "remaining.cardinality",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ZERO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "TWO_OR_MORE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-remaining-count",
+      "fact": "remaining.count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-tiebreak-exists",
+      "fact": "remaining.frozen_deterministic_tiebreak_exists",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-tiebreak-basis",
+      "fact": "remaining.frozen_deterministic_tiebreak_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-unique-candidate-id",
+      "fact": "remaining.unique_candidate_id",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-outcome-changing-unknown",
+      "fact": "partition.outcome_changing_unknown",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-partition-unknowns",
+      "fact": "partition.unknowns",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-decisive-rule",
+      "fact": "study.decisive_partition_rule",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RULE_0"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RULE_4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-outcome",
+      "fact": "study.final_analytical_outcome",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNIQUE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-outcome-basis",
+      "fact": "study.final_analytical_outcome_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-implied-gate",
+      "fact": "study.result_level_implied_gate",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-implied-gate-type",
+      "fact": "study.result_level_implied_gate_type",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ADOPTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-gate-candidates",
+      "fact": "study.human_gate_candidate_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-prospective-consequence",
+      "fact": "prospective.consequence_per_candidate",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-prospective-dominance-gap",
+      "fact": "prospective.dominance_gap_reported",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-option-space-regenerated",
+      "fact": "study.option_space_regenerated",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-option-space-claimed",
+      "fact": "study.option_space_completeness_claimed",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-governing-rule-selected",
+      "fact": "study.governing_closure_generator_rule_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-governing-rule-id",
+      "fact": "study.governing_closure_generator_rule_id",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-new-normative-authority",
+      "fact": "study.new_normative_authority_created",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-option-selected",
+      "fact": "study.normative_quantification_option_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-dominance-selected",
+      "fact": "study.dominance_semantics_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-direction-b-selected",
+      "fact": "study.direction_b_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-implementation-authorization",
+      "fact": "study.implementation_authorization",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-limitations",
+      "fact": "study.limitations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-blockers",
+      "fact": "study.blockers",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-study-success",
+      "fact": "study.procedural_success",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PROCEDURALLY_SUCCESSFUL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_SUCCESSFUL"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "HUMAN_GATE",
+      "action": "RETURN_FROZEN_RESULT_INSTANCE",
+      "target": "handoff_routing_normative_closure_generator_semantics_qualification"
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-no-rule-adoption",
+      "constraint": {
+        "id": "e-sc-sc-no-rule-adoption",
+        "mode": "FORBIDDEN",
+        "action": "ADOPT_CLOSURE_GENERATOR_RULE",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_closure_generator_adoption"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-authority-creation",
+      "constraint": {
+        "id": "e-sc-sc-no-authority-creation",
+        "mode": "FORBIDDEN",
+        "action": "CREATE_GOVERNING_NORMATIVE_AUTHORITY",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_semantic_authority_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-dominance-definition",
+      "constraint": {
+        "id": "e-sc-sc-no-dominance-definition",
+        "mode": "FORBIDDEN",
+        "action": "DEFINE_NEW_DOMINANCE_SEMANTICS",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_dominance_semantics_direction"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-option-selection",
+      "constraint": {
+        "id": "e-sc-sc-no-option-selection",
+        "mode": "FORBIDDEN",
+        "action": "SELECT_NORMATIVE_QUANTIFICATION_OPTION",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_normative_option_selection"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-program-gate",
+      "constraint": {
+        "id": "e-sc-sc-no-program-gate",
+        "mode": "FORBIDDEN",
+        "action": "OPEN_PROGRAM_LEVEL_HUMAN_GATE",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_gate_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-acquisition",
+      "constraint": {
+        "id": "e-sc-sc-no-acquisition",
+        "mode": "FORBIDDEN",
+        "action": "ACQUIRE_EVIDENCE",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_acquisition_authorization"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-experiment",
+      "constraint": {
+        "id": "e-sc-sc-no-experiment",
+        "mode": "FORBIDDEN",
+        "action": "CREATE_TOOLING_EXPERIMENT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_experiment_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-representation",
+      "constraint": {
+        "id": "e-sc-sc-no-representation",
+        "mode": "FORBIDDEN",
+        "action": "MODIFY_REPRESENTATION",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_representation_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-implementation",
+      "constraint": {
+        "id": "e-sc-sc-no-implementation",
+        "mode": "FORBIDDEN",
+        "action": "IMPLEMENT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_implementation_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-persistence-by-executor",
+      "constraint": {
+        "id": "e-sc-sc-no-persistence-by-executor",
+        "mode": "FORBIDDEN",
+        "action": "COMMIT",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-eol-remediation",
+      "constraint": {
+        "id": "e-sc-sc-no-eol-remediation",
+        "mode": "FORBIDDEN",
+        "action": "MODIFY_GITATTRIBUTES",
+        "target": {
+          "ref": "ref-return"
+        }
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_human_eol_decision"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}
