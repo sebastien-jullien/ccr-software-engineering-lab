@@ -179,6 +179,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md`](54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction R&D, GATHER_NEW_DURABLE_EVIDENCE, qui poursuit la ligne HANDOFF_ROUTING en cessant de traiter une passe d'analyse de plus sur le même corpus comme une preuve nouvelle ; puis le contrat de l'étude d'exigences de preuve qu'elle ouvre. Le bloqueur courant est évidentiaire, donc la question suivante n'est plus quelle conception l'emporte mais quelle preuve durable nouvelle serait assez discriminante. Exigence n'est pas méthode, pare-feu de nouveauté, test de pouvoir discriminant, progrès de décision, minimalité par retrait d'item, RC7 et RC8 en cibles prioritaires sans paquet prédéterminé, quatre issues fermées. L'étude dit ce qui doit devenir durablement connu, jamais comment l'acquérir.
 - [`55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md`](55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md) — correction d'éligibilité : l'autorité 54 définissait la suffisance comme progrès de décision et faisait déclencher les règles positives sur les ensembles suffisants, de sorte qu'un ensemble ne faisant que progresser pouvait remporter une issue positive. Trois classes tenues distinctes, PROGRESS_CAPABLE, PARTIAL_PROGRESS rapportable mais jamais gagnant, RULE0_EXIT_CAPABLE seul éligible ; PARTITION_ELIGIBLE_SET égale RULE0_EXIT_CAPABLE_SET ; base explicite de capacité de sortie sur au moins une branche admissible, sans exiger de garantie universelle ; deux minimalités séparées ; partition 0 à 4 close sur 148 états, 0 fuite, contre 2 sous l'ancienne sémantique. La sélection humaine de direction de l'autorité 54 est intacte. Pouvoir être utile n'est pas pouvoir faire sortir de la règle 0.
 - [`56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md`](56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md) — deux couches tenues distinctes : la qualification de la mission 006, ratifiée, puis le contrat de l'étude de clôture qu'elle ouvre. L'exécution est PASS et la base analytique matérielle de l'exécutant est contredite : SET-F n'est pas capable de sortie, une conception où le décideur fournit à la ratification la destination et l'ordre propres à la mission ne reconstruisant rien. Avec l'exigence qualifiée QR-1, SET-Q = ER-02 + QR-1 + ER-05 est positivement établi capable de sortie de la règle 0 et minimal pour cette sortie, ce qui donne une borne inférieure de 1 et non une unicité ; MU-Q1, l'exhaustivité d'espace d'exigence, reste NOT_ESTABLISHED, donc RULE_0 gouverne encore. L'étude suivante doit clore l'espace par une preuve positive : chercher encore sans rien trouver n'est pas une exhaustivité sémantique. Même étiquette terminale n'est pas confirmation matérielle.
+- [`57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md`](57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification ratifiée de la mission 007, puis une porte humaine authentique de direction. L'exécution est PASS mais la qualification est FAIL, avec 3 erreurs matérielles : les deux inconnues de clôture rapportées sont tranchées par le corpus gelé, et l'inconnue portante CU-Q, quantification au niveau de l'ensemble sur des instances paramétrées, n'avait pas été nommée ; le premier échec de clôture portant est l'obligation C. SET-U reste conditionnel et SET-Q reste capable, minimal, non sélectionné et d'unicité non établie. Le blocage restant n'est pas analytique : le contrat gelé ne licencie ni n'interdit la forme d'exigence quantifiée dont dépend CU-Q. Silence normatif n'est pas déficit de preuve, et un analyste n'est pas une autorité habilitée à créer de la sémantique — d'où une porte humaine A / B, sans présélection.
 
 ## Outillage
 
@@ -435,7 +436,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -454,7 +455,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -606,7 +607,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -698,9 +699,58 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = executor-reported decisive rule : RULE_0
 = executor-reported outcome :
   INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT
-= independent qualification : PENDING
-= THE EXECUTOR-REPORTED OUTCOME IS NOT A QUALIFIED OUTCOME
+= independent qualification : DONE — CCR LAB FIX #1
+  FAIL
+  57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md
+= authority 56 : CLOSED as a study contract; its semantics stay governing
+= execution / result production / result persistence : PASS / PASS / PASS
+= executor outcome disposition : CONTRADICTED_MATERIALLY
+= material analytical errors : 3
+= non-material analytical errors : 0
+= qualification limitations : 2
+= SAME TERMINAL LABEL IS NOT MATERIAL CONFIRMATION — the executor's Rule 0
+  rests on two unknowns the frozen corpus settles; the qualified Rule 0 rests
+  on a third it did not name
+= SU-1, normative acts as requirement atoms : NOT a valid closure unknown —
+  a ratified rule or exclusion changes the frozen frontier by decision
+= SU-2, RC7 over the ratifying human's typing of their own intention : NOT a
+  valid closure unknown — authorities 54 U2 and 56 A.3 settle it
+= CU-Q : VALID MATERIAL CLOSURE UNKNOWN — its semantic level is
+  SET-LEVEL QUANTIFICATION OVER A PARAMETERIZED ATOM-INSTANCE DOMAIN,
+  NOT a new atom type; ATOM CLASS != PARAMETERIZED ATOM INSTANCE !=
+  SET-LEVEL QUANTIFIED REQUIREMENT; RC8(X) and RC8(Y) are parameterized
+  instances of one semantic class, RC8(all members of the universe AT-03
+  closes) is a potential set-level quantified requirement whose semantic
+  admissibility is NOT_ESTABLISHED
+= CU-Q2 : VALID CLOSURE UNKNOWN, materiality conditional on CU-Q —
+  RC-link granularity on the quantified refutation route
+= closure obligations, qualified : A ESTABLISHED · B ESTABLISHED ·
+  C NOT_ESTABLISHED · D NOT_ESTABLISHED · E NOT_ESTABLISHED ·
+  F ESTABLISHED · G NOT_ESTABLISHED · H established only for the
+  positively established sets · I ESTABLISHED · J NOT_ESTABLISHED
+= first qualified load-bearing failure : C, with downstream D / E / G / J
+= executor's claim on C : NOT retained as qualified
+= SET-U = { AT-03, U-RC8 } : CONDITIONAL ONLY — semantic admissibility
+  NOT_ESTABLISHED, RULE0_EXIT_CAPABLE NOT_ESTABLISHED, positive membership NO,
+  not counted in eligible cardinality; the conditional finding that it would
+  require neither AT-01 nor AT-04 on the exhibited all-members burden-recurs
+  branch is NOT an admission of SET-U into the requirement space
+= SET-Q : capable YES · minimal YES · eligible YES · SELECTED NO ·
+  UNIQUE NOT_ESTABLISHED; its exit branch closes design classes through class
+  atoms, not quantified member requirements — CU-Q does not touch it, and
+  SET-Q is not reopened
+= atom-class space / atom-instance domain / set-construction space /
+  requirement-space exhaustiveness : all NOT_ESTABLISHED
+= MU-Q1 : NOT_ESTABLISHED
+= positively established minimal eligible sets : { SET-Q } · lower bound 1 ·
+  exact cardinality NOT_ESTABLISHED · upper bound NOT_ESTABLISHED
+= ONE POSITIVELY ESTABLISHED MEMBER IS NOT A UNIQUE MEMBER
+= qualified decisive rule : RULE_0
+= qualified final outcome :
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT
+= RULE_1 / RULE_2 : NOT QUALIFIED
 = human evidence-requirement selection gate : NOT OPEN
+= mission 008 : NOT SELECTED
 = evidence acquisition : NO
 = acquisition method : NOT SELECTED
 = experiment : NO
@@ -708,8 +758,45 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = routing engine : NOT SELECTED
 = new representation : NOT SELECTED
 = TE004 : NONE
-= authority 57 : NONE
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= wrong-target incident : DEFERRED
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
+
+HUMAN SEMANTIC-CLOSURE DIRECTION GATE
+= OPEN
+  57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md
+= this is NOT the human evidence-requirement selection gate, which stays
+  NOT OPEN — two different gates
+= question : which class of work should govern the next HANDOFF_ROUTING step?
+= the remaining state holds a genuine normative semantic gap that analytical
+  work under the existing contract can record but not close, so choosing
+  whether to address it or to hold the line under the existing contract is a
+  substantive R&D / governance decision, not a deduction
+= CATEGORY A — ANALYTICAL CLOSURE WORK : closure work under the existing
+  semantics, WITHOUT changing normative semantics; the qualification found no
+  obligation it could establish without settling CU-Q; this authorizes no
+  semantic rule for quantification
+= CATEGORY B — NORMATIVE SEMANTIC GAP : the frozen model neither licenses nor
+  forbids the set-level quantified requirement form over candidate-
+  parameterized atom instances on which CU-Q turns
+= NORMATIVE SILENCE IS NOT AN ANALYTICAL EVIDENCE DEFICIT
+= AN ANALYST IS NOT AN AUTHORITY TO CREATE NEW SEMANTICS
+= option A : ADDRESS_NORMATIVE_QUANTIFICATION_SEMANTICS — authorize a bounded
+  semantic-definition / authority question on whether and how set-level
+  quantification over candidate-parameterized evidence-requirement instances
+  belongs to the admissible requirement model; selecting A does NOT choose the
+  semantic answer, and means neither RC8-for-all admissible nor forbidden,
+  neither SET-U valid nor selected, no schema change, no new representation,
+  no implementation
+= option B : CONTINUE_ANALYTICAL_CLOSURE_WITHOUT_NEW_SEMANTIC_AUTHORITY —
+  continue only the work performable under the existing semantic contract,
+  in which the qualification found no obligation establishable without
+  settling CU-Q; selecting B authorizes no analyst to invent an answer to
+  CU-Q, and if CU-Q stays load-bearing RULE_0 remains
+= option selected : NONE — no deterministic Lab rule chooses between A and B
+= parking the line or changing Lab direction would be a separate
+  program-direction decision, not silently encoded here
+= no mission 008 identity, no executor reserved
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -805,7 +892,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -1125,7 +1212,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -1134,13 +1221,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #36 INDEPENDENTLY QUALIFIES RESULT007
+= next : OBTAIN HUMAN SEMANTIC-CLOSURE DIRECTION
 
 CURRENT LAB STREAM
 = NONE
