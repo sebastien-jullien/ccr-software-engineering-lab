@@ -14,10 +14,15 @@ CONTEXTE — NON NORMATIF
   study.rc7_rc8_priority_without_preselection = PRIORITY_TARGETS_NOT_A_PREDETERMINED_PACKAGE
   study.discriminating_power = POSSIBLE_VALUES_MUST_SEPARATE_ADMISSIBLE_STATES
   study.information_is_not_burden_removal = AVAILABILITY_IS_NOT_REMOVAL
+  study.positive_outcome_eligibility = RULE0_EXIT_CAPABLE_SETS_ONLY
+  study.progress_is_not_exit = DECISION_PROGRESS_IS_NOT_RULE0_EXIT_CAPABILITY
+  study.exit_capability_basis = EXPLICIT_PROOF_REQUIRED_ON_ONE_ADMISSIBLE_BRANCH
+  study.two_minimality_questions = PROGRESS_MINIMALITY_AND_RULE0_EXIT_MINIMALITY
   study.no_candidate_preselection = EVIDENCE_TARGETING_A_CANDIDATE_IS_NOT_CANDIDATE_SELECTION
 
 AUTORITÉS ET RÉFÉRENCES
 -----------------------
+  ref-auth55  [AUTHORITY]  REPO_PATH 55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md  identité non exigée
   ref-auth54  [AUTHORITY]  REPO_PATH 54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md  identité non exigée
   ref-auth53  [AUTHORITY]  REPO_PATH 53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md  GIT_BLOB 4bbd174c35ad108ed21bb6c43fd8db28280e713d  identité EXIGÉE
   ref-auth52  [AUTHORITY]  REPO_PATH 52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md  GIT_BLOB 68f7c7b37c97a6cab1bf258a3369c662397e3774  identité EXIGÉE
@@ -47,6 +52,8 @@ FRONTIÈRES D’EFFET
   REQUIRED              CLASSIFY_DECISION_PROGRESS  cardinalité 1
   REQUIRED              BUILD_REQUIREMENT_SETS  cardinalité 1
   REQUIRED              ASSESS_SET_SUFFICIENCY  cardinalité 1
+  REQUIRED              ESTABLISH_RULE0_EXIT_CAPABILITY  cardinalité 1
+  REQUIRED              DETERMINE_PARTITION_ELIGIBILITY  cardinalité 1
   REQUIRED              APPLY_COMPONENT_REMOVAL_MINIMALITY_TEST  cardinalité 1
   REQUIRED              ASSESS_MATERIAL_DISTINCTNESS  cardinalité 1
   REQUIRED              APPLY_DETERMINISTIC_DOMINANCE  cardinalité 1
@@ -72,6 +79,10 @@ FRONTIÈRES D’EFFET
   FORBIDDEN             CHOOSE_DESIGN_TO_EASE_EVIDENCE_COLLECTION  cardinalité 0
   FORBIDDEN             MANUFACTURE_HUMAN_GATE  cardinalité 0
   FORBIDDEN             COUNT_NOT_ESTABLISHED_AS_POSITIVE  cardinalité 0
+  FORBIDDEN             COUNT_PARTIAL_PROGRESS_AS_PARTITION_ELIGIBLE  cardinalité 0
+  FORBIDDEN             TREAT_DECISION_PROGRESS_AS_RULE0_EXIT_CAPABILITY  cardinalité 0
+  FORBIDDEN             ASSERT_RULE0_EXIT_WITHOUT_BASIS  cardinalité 0
+  FORBIDDEN             REQUIRE_RULE0_EXIT_UNDER_EVERY_OBSERVATION  cardinalité 0
   FORBIDDEN             RECONSTRUCT_FROM_CONVERSATION  cardinalité 0
   FORBIDDEN             USE_WRONG_TARGET_INCIDENT_AS_EVIDENCE  cardinalité 0
   FORBIDDEN             MODIFY_HISTORICAL_MISSION  cardinalité 0
@@ -96,7 +107,11 @@ EXIGENCES DE CONTENU
   CLAIM / ASSERT  study.implementation_authorization  EQUALS  NO   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  study.design_candidate_selected  EQUALS  NO   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  requirement.newness_firewall_applied  EQUALS  YES   [cible ref-return · portée MISSION]
-  CLAIM / ASSERT  requirement_set.component_removal_minimality_applied  EQUALS  YES   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  requirement_set.rule0_exit_minimality_applied  EQUALS  YES   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  partition.partial_only_set_fed_a_positive_outcome  EQUALS  NO   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  requirement_set.partial_progress_counted_partition_eligible  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.decision_progress_treated_as_rule0_exit_capability  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  requirement_set.rule0_exit_asserted_without_basis  EQUALS  YES   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  requirement.item_ledger_encoding_conformant  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.evidence_acquired  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.new_tooling_experiment  EQUALS  SELECTED   [cible ref-return · portée MISSION]
@@ -125,14 +140,16 @@ PROCÉDURE
   7. s-progress  effet e-decision-progress  [atomique]
   8. s-sets  effet e-build-sets  [atomique]  [après porte g-requirement-method-firewall]
   9. s-sufficiency  effet e-set-sufficiency  [atomique]  [produit ev-sufficiency]
-  10. s-minimality  effet e-set-minimality  [atomique]
-  11. s-distinct  effet e-set-distinctness  [atomique]  [après porte g-minimality-applied]
-  12. s-dominance  effet e-set-dominance  [atomique]
-  13. s-partition  effet e-partition  [atomique]
-  14. s-outcome  effet e-outcome  [atomique]  [après porte g-partition-single]
-  15. s-produce  effet e-produce-result  [atomique]
-  16. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
-  17. s-freeze  effet e-freeze-result  [atomique]
+  10. s-rule0-exit  effet e-rule0-exit  [atomique]  [produit ev-rule0-exit]
+  11. s-eligibility  effet e-partition-eligibility  [atomique]
+  12. s-minimality  effet e-set-minimality  [atomique]  [après porte g-no-partial-leakage]
+  13. s-distinct  effet e-set-distinctness  [atomique]  [après porte g-minimality-applied]
+  14. s-dominance  effet e-set-dominance  [atomique]
+  15. s-partition  effet e-partition  [atomique]
+  16. s-outcome  effet e-outcome  [atomique]  [après porte g-partition-single]
+  17. s-produce  effet e-produce-result  [atomique]
+  18. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
+  19. s-freeze  effet e-freeze-result  [atomique]
 
 PORTES
 ------
@@ -146,8 +163,11 @@ PORTES
       exige   OPERATION_RESULT(e-enumerate-requirements).acquisition_methods_selected EQ 0  ET  OPERATION_RESULT(e-enumerate-requirements).design_candidates_selected EQ 0
       échec → sr-method
   g-minimality-applied  [portée ALL_PRECEDING]
-      exige   OPERATION_RESULT(e-set-minimality).component_removal_test_applied EQ true  ET  OPERATION_RESULT(e-set-minimality).sets_declared_minimal_without_test EQ 0
+      exige   OPERATION_RESULT(e-set-minimality).component_removal_test_applied EQ true  ET  OPERATION_RESULT(e-set-minimality).sets_declared_minimal_without_test EQ 0  ET  OPERATION_RESULT(e-set-minimality).rule0_exit_minimality_targeted EQ true
       échec → sr-minimality
+  g-no-partial-leakage  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-partition-eligibility).partial_only_sets_counted_eligible EQ 0  ET  OPERATION_RESULT(e-rule0-exit).exit_capability_asserted_without_basis EQ 0
+      échec → sr-leakage
   g-partition-single  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-partition).matched_outcome_count EQ 1  ET  OPERATION_RESULT(e-set-dominance).preference_based_elimination_count EQ 0  ET  COUNT_OF(MEASUREMENT(forbidden_source_usage)) EQ 0
       échec → sr-partition
@@ -172,6 +192,11 @@ CONDITIONS D’ARRÊT
       STOP
   sr-minimality  si  OPERATION_RESULT(e-set-minimality).component_removal_test_applied NEQ true
       FORBIDDEN             DECLARE_MINIMAL_WITHOUT_TEST
+      exigé   REPORT
+      STOP
+  sr-leakage  si  OPERATION_RESULT(e-partition-eligibility).partial_only_sets_counted_eligible NEQ 0
+      FORBIDDEN             COUNT_PARTIAL_PROGRESS_AS_PARTITION_ELIGIBLE
+      FORBIDDEN             TREAT_DECISION_PROGRESS_AS_RULE0_EXIT_CAPABILITY
       exigé   REPORT
       STOP
   sr-partition  si  OPERATION_RESULT(e-partition).matched_outcome_count NEQ 1
@@ -241,6 +266,8 @@ EXIGENCES DE PREUVE
   ev-requirements  [OBSERVATION]  requirement.item_inventory   méthode EQ depuis ref-auth54 · recalcul exigé
       source interdite  session_prose · conversation_transcript
   ev-sufficiency  [VERIFICATION]  requirement_set.sufficiency   méthode EQ depuis ref-auth52 · recalcul exigé
+      source interdite  session_prose · conversation_transcript
+  ev-rule0-exit  [VERIFICATION]  requirement_set.rule0_exit_capability   méthode EQ depuis ref-auth55 · recalcul exigé
       source interdite  session_prose · conversation_transcript
   ev-result-validation  [VERIFICATION]  result_instance.structural_validation   méthode EQ depuis ref-return · recalcul exigé
       source interdite  session_prose · conversation_transcript
@@ -359,19 +386,28 @@ RETOUR OBLIGATOIRE
   requirement.durability_requirement_specified_count  [MEASURED · SCALAR]
   requirement_set.id_roster  [MEASURED · SET]
   requirement_set.count  [MEASURED · SCALAR]
-  requirement_set.sufficient_count  [MEASURED · SCALAR]
+  requirement_set.progress_capable_count  [MEASURED · SCALAR]
+  requirement_set.progress_sufficient_count  [MEASURED · SCALAR]
   requirement_set.rule0_exit_capable_count  [MEASURED · SCALAR]
+  requirement_set.rule0_exit_capability_basis  [MEASURED · SET]
+  requirement_set.partition_eligible_ids  [MEASURED · SET]
+  requirement_set.partition_eligible_count  [MEASURED · SCALAR]
+  requirement_set.progress_minimality_applied  [MEASURED · SYMBOL]  parmi { YES · NO }
+  requirement_set.positively_progress_minimal_count  [MEASURED · SCALAR]
   requirement_set.partial_progress_count  [MEASURED · SCALAR]
-  requirement_set.component_removal_minimality_applied  [MEASURED · SYMBOL]  parmi { YES · NO }
+  requirement_set.partial_progress_ids  [MEASURED · SET]
+  requirement_set.partial_progress_findings  [MEASURED · SET]
+  requirement_set.rule0_exit_minimality_applied  [MEASURED · SYMBOL]  parmi { YES · NO }
   requirement_set.component_removal_tests_run  [MEASURED · SCALAR]
-  requirement_set.positively_minimal_count  [MEASURED · SCALAR]
-  requirement_set.material_distinctness_relations  [MEASURED · SET]
-  requirement_set.deterministic_dominance_relations  [MEASURED · SET]
+  requirement_set.rule0_exit_component_removal_tests_run  [MEASURED · SCALAR]
+  requirement_set.positively_rule0_exit_minimal_count  [MEASURED · SCALAR]
+  requirement_set.material_distinctness_relations_among_partition_eligible  [MEASURED · SET]
+  requirement_set.deterministic_dominance_relations_among_partition_eligible  [MEASURED · SET]
   requirement_set.dominance_basis  [MEASURED · SET]
-  requirement_set.deterministically_dominated_count  [MEASURED · SCALAR]
-  requirement_set.remaining_minimal_ids  [MEASURED · SET]
-  requirement_set.remaining_minimal_cardinality  [MEASURED · SYMBOL]  parmi { ZERO · ONE · TWO_OR_MORE · NOT_ESTABLISHED }
-  requirement_set.remaining_minimal_count  [MEASURED · SCALAR]
+  requirement_set.deterministically_dominated_partition_eligible_count  [MEASURED · SCALAR]
+  requirement_set.remaining_partition_eligible_minimal_ids  [MEASURED · SET]
+  requirement_set.remaining_partition_eligible_minimal_cardinality  [MEASURED · SYMBOL]  parmi { ZERO · ONE · TWO_OR_MORE · NOT_ESTABLISHED }
+  requirement_set.remaining_partition_eligible_minimal_count  [MEASURED · SCALAR]
   requirement_set.frozen_deterministic_tiebreak_exists  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
   requirement_set.frozen_deterministic_tiebreak_basis  [MEASURED · SET]
   partition.no_bounded_requirement_can_resolve_positively_established  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
@@ -387,6 +423,7 @@ RETOUR OBLIGATOIRE
   study.design_candidate_selected  [MEASURED · SYMBOL]  parmi { YES · NO }
   study.limitations  [MEASURED · SET]
   study.blockers  [MEASURED · SET]
+  partition.partial_only_set_fed_a_positive_outcome  [MEASURED · SYMBOL]  parmi { YES · NO }
   study.procedural_success  [MEASURED · SYMBOL]  parmi { PROCEDURALLY_SUCCESSFUL · NOT_SUCCESSFUL }
 
 CONSÉQUENCES SUIVANTES

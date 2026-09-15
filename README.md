@@ -177,6 +177,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md`](52-HANDOFF-ROUTING-DESIGN-QUALIFICATION-AND-RECONSTRUCTION-STUDY-FREEZE.md) — deux couches tenues distinctes : la qualification ratifiée, puis le contrat de l'étude de reconstruction. La qualification conclut FAIL : un besoin qualifié n'est pas la preuve qu'une conception conforme existe, et B = YES n'implique pas une cardinalité de choix supérieure ou égale à deux. Quatre erreurs matérielles établies dans le résultat — CAND-01, CAND-02, CAND-08 et CAND-09 surqualifiés faute de réalisation établie de leur dérivation au gel commune, minimalité comptée sans conformité établie, inventaire incomplet avec Q-CAND-A omis, dépendance aux limitations L-2 et L-3 sous-évaluée. Règle décisive RULE_0, issue qualifiée INSUFFICIENT_DURABLE_EVIDENCE, porte humaine NOT OPEN. La mission 004 et son résultat ne sont pas réécrits. La chaîne de réalisation RC1..RC8 devient portante : une référence n'est pas une jointure, et ajouter un composant crée un candidat nouveau, jamais une simple complétion.
 - [`53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md`](53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification indépendante du résultat de la mission 005, PASS WITH LIMITATIONS, règle qualifiée RULE_0 et issue INSUFFICIENT_DURABLE_EVIDENCE, avec 0 erreur matérielle, 2 non matérielles et 3 limitations, les quatre candidats de dérivation étant non conformes faute de déclencheur typé et Q-CAND-A à conformité non établie ; puis la porte humaine de direction R&D qu'elle ouvre. Une dérivation lisant une prose n'est pas une jointure réalisée, une famille non résolue n'est pas une conception qualifiée, et davantage d'analyse du même corpus n'est pas une preuve durable nouvelle. Trois branches gelées sans qu'aucune soit sélectionnée : rassembler de la preuve nouvelle, garer la ligne, ou choisir une autre direction du Lab.
 - [`54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md`](54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction R&D, GATHER_NEW_DURABLE_EVIDENCE, qui poursuit la ligne HANDOFF_ROUTING en cessant de traiter une passe d'analyse de plus sur le même corpus comme une preuve nouvelle ; puis le contrat de l'étude d'exigences de preuve qu'elle ouvre. Le bloqueur courant est évidentiaire, donc la question suivante n'est plus quelle conception l'emporte mais quelle preuve durable nouvelle serait assez discriminante. Exigence n'est pas méthode, pare-feu de nouveauté, test de pouvoir discriminant, progrès de décision, minimalité par retrait d'item, RC7 et RC8 en cibles prioritaires sans paquet prédéterminé, quatre issues fermées. L'étude dit ce qui doit devenir durablement connu, jamais comment l'acquérir.
+- [`55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md`](55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md) — correction d'éligibilité : l'autorité 54 définissait la suffisance comme progrès de décision et faisait déclencher les règles positives sur les ensembles suffisants, de sorte qu'un ensemble ne faisant que progresser pouvait remporter une issue positive. Trois classes tenues distinctes, PROGRESS_CAPABLE, PARTIAL_PROGRESS rapportable mais jamais gagnant, RULE0_EXIT_CAPABLE seul éligible ; PARTITION_ELIGIBLE_SET égale RULE0_EXIT_CAPABLE_SET ; base explicite de capacité de sortie sur au moins une branche admissible, sans exiger de garantie universelle ; deux minimalités séparées ; partition 0 à 4 close sur 148 états, 0 fuite, contre 2 sous l'ancienne sémantique. La sélection humaine de direction de l'autorité 54 est intacte. Pouvoir être utile n'est pas pouvoir faire sortir de la règle 0.
 
 ## Outillage
 
@@ -455,8 +456,12 @@ HUMAN R&D-DIRECTION GATE
 = next : FRESH AGENT CCR LAB #33 EXECUTES MISSION 006
 
 EVIDENCE-REQUIREMENT STUDY
-= CONTRACT FROZEN / NOT YET EXECUTED
+= CONTRACT CORRECTED / FROZEN / NOT YET EXECUTED
+= governing authority
+  55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md
+= origin authority : PROCEDURALLY VALID, contract layer PARTIALLY SUPERSEDED
   54-HANDOFF-ROUTING-NEW-DURABLE-EVIDENCE-DIRECTION-AND-REQUIREMENT-STUDY-FREEZE.md
+= authority 54 direction layer : INTACT — GATHER_NEW_DURABLE_EVIDENCE stands
 = question : what is the smallest new durable evidence requirement set, if any,
   capable of resolving the material HANDOFF_ROUTING design uncertainty
   sufficiently to advance beyond the qualified RULE_0 /
@@ -474,7 +479,23 @@ EVIDENCE-REQUIREMENT STUDY
   CURRENT_CORPUS_CORRECTION, its consequence accounted separately
 = discriminating-power test : possible durable values must separate currently
   admissible analytical states
-= decision progress · PARTIAL_PROGRESS_SET versus RULE0_EXIT_CAPABLE_SET
+= three set classes held distinct :
+  PROGRESS_CAPABLE_SET resolves material uncertainty or creates decision
+  progress — reportable, never winning by that fact alone;
+  PARTIAL_PROGRESS_SET is progress-capable whose Rule-0-exit capability is
+  NOT established — reportable, never eligible for a positive outcome;
+  RULE0_EXIT_CAPABLE_SET carries an explicit basis — the only winning class
+= PARTITION_ELIGIBLE_SET = RULE0_EXIT_CAPABLE_SET, with no exception
+= DECISION PROGRESS IS NOT RULE0_EXIT_CAPABILITY
+= MIGHT BE USEFUL IS NOT RULE0_EXIT_CAPABLE
+= Rule-0-exit basis : targeted Rule-0 unknowns, the members targeting them,
+  admissible durable observation values, and for AT LEAST ONE admissible
+  branch which unknowns resolve, which facts change, which blockers stop
+  governing, which non-Rule-0 branch becomes reachable, and why no other
+  unknown necessarily keeps Rule 0 — a guarantee under EVERY observation is
+  NOT required, but the branch must be shown, not asserted
+= two separate minimality questions : PROGRESS_MINIMALITY is reported only;
+  RULE0_EXIT_MINIMALITY is the one that feeds rules 1 and 2
 = minimality : component-removal over evidence items; a convenient extra
   observation is not a minimal requirement, and more data is not a better set
 = no candidate preselection : evidence targeting a candidate is NOT candidate
@@ -482,17 +503,27 @@ EVIDENCE-REQUIREMENT STUDY
 = information available is NOT material routing work removed; a presentation
   existing is NOT the qualified burden removed
 = outcome domain : 4 closed outcomes, no fifth
-= outcome partition : ordered rules 0..4; no preference by cost, convenience,
-  architecture or implementation familiarity
+= outcome partition : ordered rules 0..4 over PARTITION-ELIGIBLE sets only;
+  no preference by cost, convenience, architecture or implementation
+  familiarity; NO partition-eligible set and NO positive impossibility proof
+  gives RULE 4, however many PARTIAL_PROGRESS_SETs exist
+= partition proof : 288 raw · 148 admissible · 0 zero-outcome ·
+  0 multi-outcome · 0 partial-only positive leakage ·
+  2 states leaked under the superseded semantics
 = human gate : openable only on
-  MULTIPLE_MINIMAL_DURABLE_EVIDENCE_REQUIREMENT_SETS_REQUIRE_HUMAN_SELECTION,
-  and it would concern WHICH EVIDENCE REQUIREMENT, not which method or design
+  MULTIPLE_MINIMAL_DURABLE_EVIDENCE_REQUIREMENT_SETS_REQUIRE_HUMAN_SELECTION
+  among PARTITION-ELIGIBLE sets, and it would concern WHICH EVIDENCE
+  REQUIREMENT, not which method or design
 = mission 006 : missions/006-handoff-routing-evidence-requirement-study/mission.json
+  blob 623a2e79b728a2db390a2d34007993be35b7ce82
 = envelope : missions/006-handoff-routing-evidence-requirement-study/envelope.md
+  blob 11ec9a96c7ef151880d60669ee4a1bfb0b265cce
+  rendered by the published renderer, never hand-patched
 = mission index 006 : NOT TE006
-= mission validation : ok, 0 errors · render coverage complete 269 / 269
+= mission validation : ok, 0 errors · render coverage complete 295 / 295
 = mission-object schema extended : NO
-= return contract : 96 frozen relations
+= return contract : 106 frozen relations
+  96 -> 106 · 10 added · 0 removed · 9 renamed · 11 semantically superseded
 = acquisition-method and implementation-authorization fields :
   PREDETERMINED = NO
 = future executor : AGENT CCR LAB #33, fresh, read-only except result.json

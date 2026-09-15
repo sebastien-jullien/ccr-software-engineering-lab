@@ -70,6 +70,42 @@
       "label": "information disponible n est pas travail manuel de routage supprime, et presentation existante n est pas charge EP-02 / EP-03 / EP-04 qualifiee supprimee ; la ou une observation reelle est necessaire, le dire sans choisir comment elle sera produite"
     },
     {
+      "subject": "study.positive_outcome_eligibility",
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE0_EXIT_CAPABLE_SETS_ONLY"
+      },
+      "semantics_unresolved": false,
+      "label": "seuls les ensembles RULE0_EXIT_CAPABLE sont PARTITION_ELIGIBLE et participent a la minimalite positive, a l ensemble restant, aux regles 1 et 2 et a la porte humaine ; un PARTIAL_PROGRESS_SET est rapportable mais n est jamais un ensemble gagnant"
+    },
+    {
+      "subject": "study.progress_is_not_exit",
+      "value": {
+        "type": "SYMBOL",
+        "value": "DECISION_PROGRESS_IS_NOT_RULE0_EXIT_CAPABILITY"
+      },
+      "semantics_unresolved": false,
+      "label": "PROGRESS_CAPABLE_SET resout au moins une incertitude materielle ou cree un progres de decision ; PARTIAL_PROGRESS_SET est un tel ensemble dont la capacite de rendre la sortie de la regle 0 analytiquement possible n est PAS etablie ; RULE0_EXIT_CAPABLE_SET exige une preuve positive sur au moins une branche d observation admissible"
+    },
+    {
+      "subject": "study.exit_capability_basis",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXPLICIT_PROOF_REQUIRED_ON_ONE_ADMISSIBLE_BRANCH"
+      },
+      "semantics_unresolved": false,
+      "label": "toute revendication RULE0_EXIT_CAPABLE porte sa base : inconnues de regle 0 visees, membres de l ensemble, valeurs d observation admissibles, et pour au moins une branche admissible quelles inconnues sont resolues, quels faits changent, quels bloqueurs cessent de gouverner, quelle branche non-regle-0 devient atteignable et pourquoi aucune autre inconnue ne maintient necessairement la regle 0 ; une garantie sous TOUTE observation n est pas exigee, et POURRAIT ETRE UTILE n est pas RULE0_EXIT_CAPABLE"
+    },
+    {
+      "subject": "study.two_minimality_questions",
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROGRESS_MINIMALITY_AND_RULE0_EXIT_MINIMALITY"
+      },
+      "semantics_unresolved": false,
+      "label": "la minimalite d issue positive est la RULE0_EXIT_MINIMALITY, non la seule PROGRESS_MINIMALITY ; un ensemble peut etre PARTIAL_PROGRESS et progress-minimal tout en n etant pas eligible a une issue positive"
+    },
+    {
       "subject": "study.no_candidate_preselection",
       "value": {
         "type": "SYMBOL",
@@ -80,6 +116,16 @@
     }
   ],
   "references": [
+    {
+      "id": "ref-auth55",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "55-HANDOFF-ROUTING-EVIDENCE-STUDY-RULE0-EXIT-ELIGIBILITY-CORRECTION.md"
+      },
+      "identity_required": false,
+      "label": "correction gouvernante de l eligibilite d issue positive ; identite non epinglee, le commit de correction la produit"
+    },
     {
       "id": "ref-auth54",
       "role": "AUTHORITY",
@@ -365,6 +411,18 @@
       "cardinality": 1
     },
     {
+      "id": "e-rule0-exit",
+      "mode": "REQUIRED",
+      "action": "ESTABLISH_RULE0_EXIT_CAPABILITY",
+      "cardinality": 1
+    },
+    {
+      "id": "e-partition-eligibility",
+      "mode": "REQUIRED",
+      "action": "DETERMINE_PARTITION_ELIGIBILITY",
+      "cardinality": 1
+    },
+    {
       "id": "e-set-minimality",
       "mode": "REQUIRED",
       "action": "APPLY_COMPONENT_REMOVAL_MINIMALITY_TEST",
@@ -515,6 +573,30 @@
       "id": "e-forbid-count-unestablished",
       "mode": "FORBIDDEN",
       "action": "COUNT_NOT_ESTABLISHED_AS_POSITIVE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-partial-as-positive",
+      "mode": "FORBIDDEN",
+      "action": "COUNT_PARTIAL_PROGRESS_AS_PARTITION_ELIGIBLE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-progress-as-exit",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_DECISION_PROGRESS_AS_RULE0_EXIT_CAPABILITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-unproven-exit",
+      "mode": "FORBIDDEN",
+      "action": "ASSERT_RULE0_EXIT_WITHOUT_BASIS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-exit-guarantee",
+      "mode": "FORBIDDEN",
+      "action": "REQUIRE_RULE0_EXIT_UNDER_EVERY_OBSERVATION",
       "cardinality": 0
     },
     {
@@ -748,7 +830,56 @@
       "target": "ref-return",
       "kind": "CLAIM",
       "polarity": "ASSERT",
-      "subject": "requirement_set.component_removal_minimality_applied",
+      "subject": "requirement_set.rule0_exit_minimality_applied",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-no-leakage",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "partition.partial_only_set_fed_a_positive_outcome",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-forbid-partial-as-eligible",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "requirement_set.partial_progress_counted_partition_eligible",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-progress-as-exit",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.decision_progress_treated_as_rule0_exit_capability",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-unproven-exit",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "requirement_set.rule0_exit_asserted_without_basis",
       "relation": "EQUALS",
       "value": {
         "type": "SYMBOL",
@@ -1008,44 +1139,60 @@
       },
       {
         "order": 10,
-        "id": "s-minimality",
-        "effect": "e-set-minimality",
-        "atomic": true
+        "id": "s-rule0-exit",
+        "effect": "e-rule0-exit",
+        "atomic": true,
+        "produces": [
+          "ev-rule0-exit"
+        ]
       },
       {
         "order": 11,
+        "id": "s-eligibility",
+        "effect": "e-partition-eligibility",
+        "atomic": true
+      },
+      {
+        "order": 12,
+        "id": "s-minimality",
+        "effect": "e-set-minimality",
+        "atomic": true,
+        "gated_by": "g-no-partial-leakage"
+      },
+      {
+        "order": 13,
         "id": "s-distinct",
         "effect": "e-set-distinctness",
         "atomic": true,
         "gated_by": "g-minimality-applied"
       },
       {
-        "order": 12,
+        "order": 14,
         "id": "s-dominance",
         "effect": "e-set-dominance",
         "atomic": true
       },
       {
-        "order": 13,
+        "order": 15,
         "id": "s-partition",
         "effect": "e-partition",
         "atomic": true
       },
       {
-        "order": 14,
+        "order": 16,
         "id": "s-outcome",
         "effect": "e-outcome",
         "atomic": true,
         "gated_by": "g-partition-single"
       },
       {
-        "order": 15,
+        "order": 17,
         "id": "s-produce",
         "effect": "e-produce-result",
         "atomic": true
       },
       {
-        "order": 16,
+        "order": 18,
         "id": "s-validate",
         "effect": "e-validate-result",
         "atomic": true,
@@ -1054,7 +1201,7 @@
         ]
       },
       {
-        "order": 17,
+        "order": 19,
         "id": "s-freeze",
         "effect": "e-freeze-result",
         "atomic": true
@@ -1217,6 +1364,51 @@
               "kind": "OPERATION_RESULT",
               "ref": "e-set-minimality",
               "field": "sets_declared_minimal_without_test"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-set-minimality",
+              "field": "rule0_exit_minimality_targeted"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-no-partial-leakage",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-leakage",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-partition-eligibility",
+              "field": "partial_only_sets_counted_eligible"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-rule0-exit",
+              "field": "exit_capability_asserted_without_basis"
             },
             "value": {
               "type": "SCALAR",
@@ -1639,6 +1831,37 @@
       "terminal": "STOP"
     },
     {
+      "id": "sr-leakage",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-partition-eligibility",
+          "field": "partial_only_sets_counted_eligible"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-lk-partial",
+          "mode": "FORBIDDEN",
+          "action": "COUNT_PARTIAL_PROGRESS_AS_PARTITION_ELIGIBLE"
+        },
+        {
+          "id": "sp-lk-progress",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_DECISION_PROGRESS_AS_RULE0_EXIT_CAPABILITY"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
       "id": "sr-partition",
       "trigger": {
         "op": "NEQ",
@@ -1780,6 +2003,20 @@
       "method": {
         "op": "EQ",
         "source": "ref-auth52",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript"
+      ]
+    },
+    {
+      "id": "ev-rule0-exit",
+      "kind": "VERIFICATION",
+      "fact": "requirement_set.rule0_exit_capability",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth55",
         "recompute": true
       },
       "forbidden_sources": [
@@ -2880,8 +3117,14 @@
       "value_type": "SCALAR"
     },
     {
+      "id": "rf-set-progress-capable-count",
+      "fact": "requirement_set.progress_capable_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
       "id": "rf-set-sufficient-count",
-      "fact": "requirement_set.sufficient_count",
+      "fact": "requirement_set.progress_sufficient_count",
       "acquisition": "MEASURED",
       "value_type": "SCALAR"
     },
@@ -2892,14 +3135,69 @@
       "value_type": "SCALAR"
     },
     {
+      "id": "rf-set-rule0-exit-basis",
+      "fact": "requirement_set.rule0_exit_capability_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-set-partition-eligible-ids",
+      "fact": "requirement_set.partition_eligible_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-set-partition-eligible-count",
+      "fact": "requirement_set.partition_eligible_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-set-progress-minimality-applied",
+      "fact": "requirement_set.progress_minimality_applied",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-set-progress-minimal-count",
+      "fact": "requirement_set.positively_progress_minimal_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
       "id": "rf-set-partial-progress-count",
       "fact": "requirement_set.partial_progress_count",
       "acquisition": "MEASURED",
       "value_type": "SCALAR"
     },
     {
+      "id": "rf-partial-progress-ids",
+      "fact": "requirement_set.partial_progress_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-partial-progress-findings",
+      "fact": "requirement_set.partial_progress_findings",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
       "id": "rf-set-minimality-applied",
-      "fact": "requirement_set.component_removal_minimality_applied",
+      "fact": "requirement_set.rule0_exit_minimality_applied",
       "acquisition": "MEASURED",
       "value_type": "SYMBOL",
       "allowed_values": {
@@ -2923,20 +3221,26 @@
       "value_type": "SCALAR"
     },
     {
+      "id": "rf-set-rule0-exit-removal-tests",
+      "fact": "requirement_set.rule0_exit_component_removal_tests_run",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
       "id": "rf-set-minimal-count",
-      "fact": "requirement_set.positively_minimal_count",
+      "fact": "requirement_set.positively_rule0_exit_minimal_count",
       "acquisition": "MEASURED",
       "value_type": "SCALAR"
     },
     {
       "id": "rf-set-material-distinctness",
-      "fact": "requirement_set.material_distinctness_relations",
+      "fact": "requirement_set.material_distinctness_relations_among_partition_eligible",
       "acquisition": "MEASURED",
       "value_type": "SET"
     },
     {
       "id": "rf-set-dominance-relations",
-      "fact": "requirement_set.deterministic_dominance_relations",
+      "fact": "requirement_set.deterministic_dominance_relations_among_partition_eligible",
       "acquisition": "MEASURED",
       "value_type": "SET"
     },
@@ -2948,19 +3252,19 @@
     },
     {
       "id": "rf-set-dominated-count",
-      "fact": "requirement_set.deterministically_dominated_count",
+      "fact": "requirement_set.deterministically_dominated_partition_eligible_count",
       "acquisition": "MEASURED",
       "value_type": "SCALAR"
     },
     {
       "id": "rf-remaining-set-ids",
-      "fact": "requirement_set.remaining_minimal_ids",
+      "fact": "requirement_set.remaining_partition_eligible_minimal_ids",
       "acquisition": "MEASURED",
       "value_type": "SET"
     },
     {
       "id": "rf-remaining-cardinality",
-      "fact": "requirement_set.remaining_minimal_cardinality",
+      "fact": "requirement_set.remaining_partition_eligible_minimal_cardinality",
       "acquisition": "MEASURED",
       "value_type": "SYMBOL",
       "allowed_values": {
@@ -2987,7 +3291,7 @@
     },
     {
       "id": "rf-remaining-count",
-      "fact": "requirement_set.remaining_minimal_count",
+      "fact": "requirement_set.remaining_partition_eligible_minimal_count",
       "acquisition": "MEASURED",
       "value_type": "SCALAR"
     },
@@ -3225,6 +3529,25 @@
       "fact": "study.blockers",
       "acquisition": "MEASURED",
       "value_type": "SET"
+    },
+    {
+      "id": "rf-partial-only-leakage",
+      "fact": "partition.partial_only_set_fed_a_positive_outcome",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
     },
     {
       "id": "rf-study-success",
