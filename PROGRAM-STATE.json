@@ -1163,11 +1163,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "handoff-routing-mission005-independent-qualification-ratified",
+      "question": "Ratifier la qualification indépendante du résultat de la mission 005 comme PASS WITH LIMITATIONS, avec disposition de l'issue de l'exécutant CONFIRMED_WITH_LIMITATIONS, règle de partition décisive qualifiée RULE_0, issue finale qualifiée INSUFFICIENT_DURABLE_EVIDENCE, porte humaine de sélection de conception NOT OPEN, 0 erreur analytique matérielle, 2 erreurs analytiques non matérielles — statut d'impossibilité positive rapporté NOT_ESTABLISHED au lieu de NO, et famille non résolue des variantes de Q-CAND-A à déclencheur typé hors du Mission Object omise —, 3 limitations de qualification, l'inventaire qualifié comptant 10 candidats dont 9 non conformes et Q-CAND-A à conformité non établie, un ensemble conforme positif vide, une cardinalité réelle de conception NOT_ESTABLISHED, une exhaustivité d'espace NOT_ESTABLISHED et aucune preuve positive d'impossibilité, et sans modifier ni réécrire la mission 005 ni son résultat persisté ?",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-134",
+          "kind": "repo-path",
+          "ref": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-mission005-independent-qualification-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Qualifier indépendamment, avec un AGENT CCR LAB #32 frais, le résultat persisté de l'étude de reconstruction de l'espace de conception HANDOFF_ROUTING de la mission 005. Cible : missions/005-handoff-routing-design-reconstruction/result.json, sha256 2a6dfa6d7b2e1a7f34acd8eb076304aac64ff30dbbbe2cd9c3ba17400f038d5a, blob a57be17d4b901fb21123826e61cdec1968613324. Base de l'exécutant : b6a66cf09766d9acd4844844706ecc12b9060c07. Ligne de base de capacité technique : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Reconstruire indépendamment l'analyse de la mission 005, sans se fier à l'exécutant et sans se borner à comparer des champs JSON. Audits portants. A — Q-CAND-A, liens RC2 à RC4 et RC7 : l'exécutant les rapporte NOT_ESTABLISHED sur trois inconnues ; vérifier si une preuve durable admise tranche l'une d'elles sans importer une logique d'orchestration absente de la ligne de base technique gelée. B — les deux familles de candidats non résolues, variantes de Q-CAND-A par porteur de sortie et typage de l'exigence d'observation dès la décision humaine ratifiée : déterminer si une preuve durable admise rend déjà l'une d'elles assez concrète pour qu'elle eût dû être instanciée en candidat supplémentaire ; une famille non résolue n'est pas automatiquement un candidat nouveau, mais une conception concrète adossée à la preuve n'a pas le droit de rester cachée derrière une simple étiquette de famille. C — discipline d'appartenance positive : vérifier qu'aucun candidat n'est compté positivement sans RC1 à RC8 positivement établis et M1 à M11 satisfaites, et qu'un candidat portant un fait requis NOT_ESTABLISHED ne contribue ni à l'ensemble minimal, ni à l'ensemble restant, ni à la cardinalité, ni à la porte humaine. D — exhaustivité de l'espace de candidats rapportée NOT_ESTABLISHED : vérifier que c'est matériellement correct, et ne pas inférer une impossibilité exhaustive du seul échec des dix hypothèses explicites. E — dérivation de la règle 0 : vérifier indépendamment les inconnues matérielles rapportées — durabilité générique des règles de destination et d'ordre, qualification de la rédaction au gel d'une exigence typée au regard de RC7, capacité des constructions v0 à porter des étapes d'orchestration antérieures à la dépêche — et déterminer si l'une au moins peut changer la conformité d'un candidat, sa minimalité, la cardinalité restante ou la branche finale ; si oui et faute d'une preuve d'invariance valide sur les mêmes candidats, la règle 0 gouverne. Reconstruire en outre RC1 à RC8 pour CAND-01, CAND-02, CAND-08, CAND-09 et Q-CAND-A, les dispositions de CAND-03 à CAND-07, M1 à M11, l'inventaire de candidats, le traitement des révisions, la porte de minimalité par composant, la porte de distinction matérielle, la porte de dominance, la construction de l'ensemble restant, le statut de départage, le statut d'impossibilité positive exhaustive et la porte humaine de sélection de conception. Ne pas éditer result005 ni la mission 005. Ne pas sélectionner Q-CAND-A ni aucun candidat. Ne pas ouvrir de porte humaine de sélection de conception. Ne pas créer l'autorité 53, ni TOOLING-EXPERIMENT-004, ni représentation, ni moteur de routage. Ne pas autoriser d'implémentation. Ne pas employer les dépêches de cible erronée comme preuve. Ne retourner qu'une qualification.",
+    "value": "Obtenir la sélection humaine de direction R&D pour la ligne de conception HANDOFF_ROUTING, maintenant que l'issue qualifiée est INSUFFICIENT_DURABLE_EVIDENCE. Alternatives courantes admises : A = GATHER_NEW_DURABLE_EVIDENCE, poursuivre la ligne HANDOFF_ROUTING en exigeant une étape nouvelle d'acquisition de preuve capable de résoudre une ou plusieurs inconnues matérielles, sans sélectionner pour autant de méthode d'acquisition, d'expérience, d'implémentation, de conception, de moteur de routage, de représentation ni de TOOLING-EXPERIMENT-004 ; B = PARK_HANDOFF_ROUTING_DESIGN_LINE, clore ou garer la ligne de conception courante à l'issue qualifiée, aucune mission d'espace de conception n'étant ouverte automatiquement ensuite et toute réouverture exigeant une entrée humaine fraîche ou une preuve matériellement nouvelle ; C = SELECT_ANOTHER_LAB_DIRECTION, cesser d'avancer cette ligne et revenir à la sélection de direction de programme du Lab, sans identifier pour autant la direction suivante. Aucune règle déterministe du Lab ne tranche entre A, B et C : preuve insuffisante qualifiée n'oblige ni à rassembler plus de preuve, ni à garer, ni à changer de direction. L'action suivante est d'OBTENIR LA DÉCISION HUMAINE, et non de sélectionner une branche R&D : la mission 006 n'est pas sélectionnée, aucune expérience, méthode de preuve ni direction de Lab nouvelle n'est sélectionnée, la porte humaine de sélection de conception demeure NOT OPEN, l'implémentation demeure non autorisée, et la revue différée de l'incident de cible erronée ne peut être automatiquement retenue comme direction de l'option C.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1184,31 +1205,17 @@
         }
       },
       {
-        "id": "ev-132",
+        "id": "ev-135",
         "kind": "repo-path",
-        "ref": "missions/005-handoff-routing-design-reconstruction/result.json",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "qualification_target",
-          "value": "missions/005-handoff-routing-design-reconstruction/result.json — retour réel de CCR_LAB_FIX_1, sha256 2a6dfa6d7b2e1a7f34acd8eb076304aac64ff30dbbbe2cd9c3ba17400f038d5a, blob a57be17d4b901fb21123826e61cdec1968613324, 117558 octets, 5311 lignes, CR 0 / LF 5311 / NUL 0, persisté octet pour octet sans édition sémantique ; lié au Mission Object canonique d82b048559cd613e9ab0d8ffcbf547df2ea1a930 ; rapporté par l'exécutant : 0 candidat positivement conforme, 9 non conformes, 1 à conformité NOT_ESTABLISHED, ensemble minimal conforme positif VIDE, aucun candidat restant positif, cardinalité restante NOT_ESTABLISHED, exhaustivité de l'espace NOT_ESTABLISHED, impossibilité positive exhaustive NO, inconnues matérielles changeant l'issue YES, règle décisive RULE_0, issue INSUFFICIENT_DURABLE_EVIDENCE, porte humaine NOT_OPEN ; qualification indépendante PENDING"
-        },
-        "observed": {
-          "blob": "a57be17d4b901fb21123826e61cdec1968613324"
-        }
-      },
-      {
-        "id": "ev-133",
-        "kind": "repo-path",
-        "ref": "missions/005-handoff-routing-design-reconstruction/result.json",
+        "ref": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Qualifier indépendamment, avec un AGENT CCR LAB #32 frais, le résultat persisté de l'étude de reconstruction de l'espace de conception HANDOFF_ROUTING de la mission 005. Cible : missions/005-handoff-routing-design-reconstruction/result.json, sha256 2a6dfa6d7b2e1a7f34acd8eb076304aac64ff30dbbbe2cd9c3ba17400f038d5a, blob a57be17d4b901fb21123826e61cdec1968613324. Base de l'exécutant : b6a66cf09766d9acd4844844706ecc12b9060c07. Ligne de base de capacité technique : a5d72edc806ac76f8f2f84ebb213215cf15dd22d. Reconstruire indépendamment l'analyse de la mission 005, sans se fier à l'exécutant et sans se borner à comparer des champs JSON. Audits portants. A — Q-CAND-A, liens RC2 à RC4 et RC7 : l'exécutant les rapporte NOT_ESTABLISHED sur trois inconnues ; vérifier si une preuve durable admise tranche l'une d'elles sans importer une logique d'orchestration absente de la ligne de base technique gelée. B — les deux familles de candidats non résolues, variantes de Q-CAND-A par porteur de sortie et typage de l'exigence d'observation dès la décision humaine ratifiée : déterminer si une preuve durable admise rend déjà l'une d'elles assez concrète pour qu'elle eût dû être instanciée en candidat supplémentaire ; une famille non résolue n'est pas automatiquement un candidat nouveau, mais une conception concrète adossée à la preuve n'a pas le droit de rester cachée derrière une simple étiquette de famille. C — discipline d'appartenance positive : vérifier qu'aucun candidat n'est compté positivement sans RC1 à RC8 positivement établis et M1 à M11 satisfaites, et qu'un candidat portant un fait requis NOT_ESTABLISHED ne contribue ni à l'ensemble minimal, ni à l'ensemble restant, ni à la cardinalité, ni à la porte humaine. D — exhaustivité de l'espace de candidats rapportée NOT_ESTABLISHED : vérifier que c'est matériellement correct, et ne pas inférer une impossibilité exhaustive du seul échec des dix hypothèses explicites. E — dérivation de la règle 0 : vérifier indépendamment les inconnues matérielles rapportées — durabilité générique des règles de destination et d'ordre, qualification de la rédaction au gel d'une exigence typée au regard de RC7, capacité des constructions v0 à porter des étapes d'orchestration antérieures à la dépêche — et déterminer si l'une au moins peut changer la conformité d'un candidat, sa minimalité, la cardinalité restante ou la branche finale ; si oui et faute d'une preuve d'invariance valide sur les mêmes candidats, la règle 0 gouverne. Reconstruire en outre RC1 à RC8 pour CAND-01, CAND-02, CAND-08, CAND-09 et Q-CAND-A, les dispositions de CAND-03 à CAND-07, M1 à M11, l'inventaire de candidats, le traitement des révisions, la porte de minimalité par composant, la porte de distinction matérielle, la porte de dominance, la construction de l'ensemble restant, le statut de départage, le statut d'impossibilité positive exhaustive et la porte humaine de sélection de conception. Ne pas éditer result005 ni la mission 005. Ne pas sélectionner Q-CAND-A ni aucun candidat. Ne pas ouvrir de porte humaine de sélection de conception. Ne pas créer l'autorité 53, ni TOOLING-EXPERIMENT-004, ni représentation, ni moteur de routage. Ne pas autoriser d'implémentation. Ne pas employer les dépêches de cible erronée comme preuve. Ne retourner qu'une qualification."
+          "value": "Obtenir la sélection humaine de direction R&D pour la ligne de conception HANDOFF_ROUTING, maintenant que l'issue qualifiée est INSUFFICIENT_DURABLE_EVIDENCE. Alternatives courantes admises : A = GATHER_NEW_DURABLE_EVIDENCE, poursuivre la ligne HANDOFF_ROUTING en exigeant une étape nouvelle d'acquisition de preuve capable de résoudre une ou plusieurs inconnues matérielles, sans sélectionner pour autant de méthode d'acquisition, d'expérience, d'implémentation, de conception, de moteur de routage, de représentation ni de TOOLING-EXPERIMENT-004 ; B = PARK_HANDOFF_ROUTING_DESIGN_LINE, clore ou garer la ligne de conception courante à l'issue qualifiée, aucune mission d'espace de conception n'étant ouverte automatiquement ensuite et toute réouverture exigeant une entrée humaine fraîche ou une preuve matériellement nouvelle ; C = SELECT_ANOTHER_LAB_DIRECTION, cesser d'avancer cette ligne et revenir à la sélection de direction de programme du Lab, sans identifier pour autant la direction suivante. Aucune règle déterministe du Lab ne tranche entre A, B et C : preuve insuffisante qualifiée n'oblige ni à rassembler plus de preuve, ni à garer, ni à changer de direction. L'action suivante est d'OBTENIR LA DÉCISION HUMAINE, et non de sélectionner une branche R&D : la mission 006 n'est pas sélectionnée, aucune expérience, méthode de preuve ni direction de Lab nouvelle n'est sélectionnée, la porte humaine de sélection de conception demeure NOT OPEN, l'implémentation demeure non autorisée, et la revue différée de l'incident de cible erronée ne peut être automatiquement retenue comme direction de l'option C."
         },
         "observed": {
-          "blob": "a57be17d4b901fb21123826e61cdec1968613324"
+          "blob": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
         }
       }
     ]
