@@ -181,6 +181,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md`](56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md) — deux couches tenues distinctes : la qualification de la mission 006, ratifiée, puis le contrat de l'étude de clôture qu'elle ouvre. L'exécution est PASS et la base analytique matérielle de l'exécutant est contredite : SET-F n'est pas capable de sortie, une conception où le décideur fournit à la ratification la destination et l'ordre propres à la mission ne reconstruisant rien. Avec l'exigence qualifiée QR-1, SET-Q = ER-02 + QR-1 + ER-05 est positivement établi capable de sortie de la règle 0 et minimal pour cette sortie, ce qui donne une borne inférieure de 1 et non une unicité ; MU-Q1, l'exhaustivité d'espace d'exigence, reste NOT_ESTABLISHED, donc RULE_0 gouverne encore. L'étude suivante doit clore l'espace par une preuve positive : chercher encore sans rien trouver n'est pas une exhaustivité sémantique. Même étiquette terminale n'est pas confirmation matérielle.
 - [`57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md`](57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification ratifiée de la mission 007, puis une porte humaine authentique de direction. L'exécution est PASS mais la qualification est FAIL, avec 3 erreurs matérielles : les deux inconnues de clôture rapportées sont tranchées par le corpus gelé, et l'inconnue portante CU-Q, quantification au niveau de l'ensemble sur des instances paramétrées, n'avait pas été nommée ; le premier échec de clôture portant est l'obligation C. SET-U reste conditionnel et SET-Q reste capable, minimal, non sélectionné et d'unicité non établie. Le blocage restant n'est pas analytique : le contrat gelé ne licencie ni n'interdit la forme d'exigence quantifiée dont dépend CU-Q. Silence normatif n'est pas déficit de preuve, et un analyste n'est pas une autorité habilitée à créer de la sémantique — d'où une porte humaine A / B, sans présélection.
 - [`58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, ADDRESS_NORMATIVE_QUANTIFICATION_SEMANTICS, qui autorise enfin de poser la question sémantique elle-même ; puis le contrat de l'étude normative bornée qu'elle ouvre. Une sélection de direction n'est pas une réponse sémantique : ni l'admissibilité ni l'interdiction de la forme quantifiée n'y sont tranchées, ni le statut de SET-U, ni aucune exigence de preuve. L'étude construit des options sémantiques matériellement distinctes, les éprouve contre quinze critères de conformité, sépare la règle de sa représentation, préserve les artefacts historiques et interdit toute ingénierie d'issue. Une option candidate n'est pas une règle gouvernante.
+- [`59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md`](59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md) — correction d'autorité humaine : l'autorité 58 n'ouvrait la porte que sur MULTIPLE, de sorte qu'une option analytiquement unique n'avait aucune étape humaine explicite à franchir avant de pouvoir devenir gouvernante ; sous l'objet d'origine, aucun chemin terminal ne portait d'état de porte. Deux champs post-issue portent désormais la conséquence, la porte de décision et son type, ADOPTION sur une issue unique et SELECTION sur une issue multiple, la règle gouvernante restant non sélectionnée dans les quatre cas. Le refus humain demeure possible et la sortie d'un exécutant ne transfère aucune autorité de programme. La partition analytique n'est pas retouchée. L'unicité analytique n'est pas une adoption, et le silence n'est pas un consentement.
 
 ## Outillage
 
@@ -437,7 +438,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -456,7 +457,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -608,7 +609,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -760,7 +761,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -802,10 +803,14 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
-= CONTRACT FROZEN / NOT YET EXECUTED
+= CONTRACT CORRECTED / FROZEN / NOT EXECUTED
+= governing human-authority correction
+  59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md
+= origin authority : PROCEDURALLY VALID · human direction A RETAINED ·
+  original post-outcome human-gate semantics PARTIALLY SUPERSEDED
   58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
 = category : NORMATIVE SEMANTIC DESIGN-SPACE STUDY — not a Mission-007 rerun,
   not evidence acquisition, not design, not schema extension, not an
@@ -846,24 +851,55 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
   serialization, field naming or documentation layout
 = dominance evidence-backed, reproducible, non-preferential
 = tie-break observed, never invented
-= outcome domain : 4 closed outcomes · ordered rules 0..2 then 3, then 4
-= human normative-semantics selection gate : openable only on MULTIPLE; on
-  UNIQUE the study still materializes nothing and returns for exact
-  persistence and independent qualification first
+= outcome domain : 4 closed outcomes · ordered rules 0..4 · UNCHANGED by the
+  Authority-59 correction — the analytical partition still decides only the
+  analytical outcome; human-authority semantics are POST-OUTCOME
+= ANALYTICAL OUTCOME IS NOT GOVERNING RULE SELECTION
+= AN ANALYTICALLY UNIQUE OPTION IS NOT A HUMAN-ADOPTED GOVERNING RULE
+= ANALYTICALLY MULTIPLE OPTIONS ARE NOT A SELECTION ALREADY MADE
+= post-outcome gate, two result-level fields :
+  HUMAN_NORMATIVE_SEMANTICS_DECISION_GATE = OPEN / NOT_OPEN
+  HUMAN_NORMATIVE_SEMANTICS_GATE_TYPE = ADOPTION / SELECTION / NONE
+  UNIQUE       -> OPEN / ADOPTION, the unique positively established option
+                  presented for explicit ratification or rejection
+  MULTIPLE     -> OPEN / SELECTION, all remaining materially distinct minimal
+                  conformant options presented
+  NO_CONFORMANT / INSUFFICIENT -> NOT_OPEN / NONE
+= in all four cases : GOVERNING_NORMATIVE_SEMANTIC_RULE_SELECTED = NO ·
+  GOVERNING_NORMATIVE_SEMANTIC_RULE_ID = NONE ·
+  NEW_NORMATIVE_AUTHORITY_CREATED = NO
+= UNIQUE ANALYTICAL OUTCOME REQUIRES LATER HUMAN ADOPTION AFTER QUALIFICATION
+= MULTIPLE ANALYTICAL OUTCOME REQUIRES LATER HUMAN SELECTION AFTER QUALIFICATION
+= NO_CONFORMANT / INSUFFICIENT : NO normative adoption or selection gate
+= the human MAY DECLINE adoption — analytical uniqueness does not force a new
+  normative rule, and an open selection gate is not a selection
+= qualification before authority : an executor-reported UNIQUE or MULTIPLE is
+  NOT a materialized program-level gate; the flow stays actual return ->
+  exact-byte persistence -> fresh independent qualification -> materialized
+  qualified outcome -> only then the real human adoption / selection gate
+= terminal-path proof : 4 ordinary paths · 0 without gate state · 0 without
+  gate type · 0 UNIQUE/MULTIPLE path with the gate closed · 0 path selecting a
+  governing rule · counter-proof: 0 paths carried a gate state before
+= analytical partition invariance : outcome domain, decisive-rule domain,
+  branch conditions, terminal labels, partition gate, e-outcome, e-partition
+  and sr-partition all UNCHANGED
 = executor creates no authority : no schema, vocabulary or representation
   change, no edit of Authority 58, no selection of the winning rule
 = source firewall : no session prose, NO COUNTER-EXPERT PROSE, no human or
   model memory, no wrong-target dispatch, no CCR System, no external web
 = mission 008 : missions/008-handoff-routing-normative-quantification-semantics-study/mission.json
-  blob eec8c77c21f396d4a0b146a215194be21c7d0ee0
+  blob 54a7814f3d82974d72d126accbaefda1f3890122
 = envelope : missions/008-handoff-routing-normative-quantification-semantics-study/envelope.md
-  blob 031b5971f9f92bec2edff5ed71e056b2d910ce1b
+  blob 2816a51add1271e4863591f6b772a0cff736abbb
   rendered by the published renderer, never hand-patched
 = mission index 008 : NOT TE008, NOT EXPERIMENT, NOT IMPLEMENTATION
-= mission validation : ok, 0 errors · render coverage complete 297 / 297
+= mission validation : ok, 0 errors · render coverage complete 336 / 336
 = mission-object schema extended : NO · vocabulary changed : NO ·
   tooling modified : NO
-= return contract : 97 frozen relations
+= return contract : 103 frozen relations
+  97 -> 103 · 6 added · 0 removed · 2 renamed · 6 semantically superseded ·
+  the legacy gate-only-on-MULTIPLE context relation removed, leaving no
+  contradictory gate semantics
 = normative-semantic-rule, evidence-requirement, acquisition-method and
   implementation-authorization fields : PREDETERMINED = NO
 = future executor : AGENT CCR LAB #37, fresh, read-only except result.json
@@ -880,7 +916,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -976,7 +1012,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -1296,7 +1332,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -1305,13 +1341,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #37 EXECUTES MISSION 008
+= next : FRESH AGENT CCR LAB #37 EXECUTES CORRECTED MISSION 008
 
 CURRENT LAB STREAM
 = NONE

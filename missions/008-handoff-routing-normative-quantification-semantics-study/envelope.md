@@ -19,11 +19,18 @@ CONTEXTE — NON NORMATIF
   study.set_u_consequence = SEMANTIC_RULES_NOT_REQUIREMENT_SPACE_CARDINALITY
   study.no_outcome_engineering = NO_RESULT_DRIVEN_SEMANTICS
   study.minimality = MORE_SEMANTIC_RULES_IS_NOT_A_BETTER_OPTION
-  study.human_gate_semantics = GATE_ONLY_ON_MULTIPLE
+  study.analytical_outcome_is_not_governing_selection = ANALYTICAL_OUTCOME_IS_NOT_GOVERNING_RULE_SELECTION
+  study.governing_rule_firewall = NO_GOVERNING_RULE_DURING_MISSION_008
+  study.post_outcome_gate_mapping = UNIQUE_ADOPTION_MULTIPLE_SELECTION_OTHERWISE_NONE
+  study.adoption_versus_selection = ADOPTION_PRESENTS_ONE_SELECTION_PRESENTS_SEVERAL
+  study.human_may_decline = ANALYTICAL_UNIQUENESS_DOES_NOT_FORCE_ADOPTION
+  study.qualification_before_authority = EXECUTOR_OUTPUT_TRANSFERS_NO_PROGRAM_AUTHORITY
+  study.unique_has_no_automatic_consequence = QUALIFIED_UNIQUE_AUTHORIZES_NOTHING_AUTOMATICALLY
   study.executor_creates_no_authority = ANALYST_IS_NOT_AN_AUTHORITY
 
 AUTORITÉS ET RÉFÉRENCES
 -----------------------
+  ref-auth59  [AUTHORITY]  REPO_PATH 59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md  identité non exigée
   ref-auth58  [AUTHORITY]  REPO_PATH 58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md  identité non exigée
   ref-auth57  [AUTHORITY]  REPO_PATH 57-HANDOFF-ROUTING-MISSION007-QUALIFICATION-AND-SEMANTIC-CLOSURE-DIRECTION-GATE.md  GIT_BLOB 23130d35ed13bc0866409178efc90c4da3788a5b  identité EXIGÉE
   ref-auth56  [AUTHORITY]  REPO_PATH 56-HANDOFF-ROUTING-MISSION006-QUALIFICATION-AND-EVIDENCE-REQUIREMENT-SPACE-CLOSURE-FREEZE.md  GIT_BLOB f116399f0b23b40e68dbb44e7153bc984f01631f  identité EXIGÉE
@@ -56,11 +63,15 @@ FRONTIÈRES D’EFFET
   REQUIRED              DETERMINE_FROZEN_DETERMINISTIC_TIEBREAK  cardinalité 1
   REQUIRED              APPLY_ORDERED_OUTCOME_PARTITION  cardinalité 1
   REQUIRED              DERIVE_FINAL_ANALYTICAL_OUTCOME  cardinalité 1
+  REQUIRED              DERIVE_POST_OUTCOME_HUMAN_GATE  cardinalité 1
   REQUIRED              PRODUCE_RESULT_INSTANCE → ref-return  cardinalité 1
   REQUIRED              VALIDATE_RESULT_INSTANCE  cardinalité 1
   REQUIRED              FREEZE_RESULT_INSTANCE  cardinalité 1
   FORBIDDEN             SELECT_NORMATIVE_SEMANTIC_RULE  cardinalité 0
   FORBIDDEN             CREATE_GOVERNING_SEMANTIC_AUTHORITY  cardinalité 0
+  FORBIDDEN             TREAT_UNIQUE_OUTCOME_AS_ADOPTED  cardinalité 0
+  FORBIDDEN             TREAT_OPEN_GATE_AS_HUMAN_SELECTION_MADE  cardinalité 0
+  FORBIDDEN             MATERIALIZE_PROGRAM_AUTHORITY_TRANSITION  cardinalité 0
   FORBIDDEN             ADOPT_CANDIDATE_OPTION_AS_GOVERNING  cardinalité 0
   FORBIDDEN             PRESUME_QUANTIFIED_OBJECT_ADMISSIBLE  cardinalité 0
   FORBIDDEN             PRESUME_QUANTIFIED_OBJECT_INADMISSIBLE  cardinalité 0
@@ -110,6 +121,9 @@ EXIGENCES DE CONTENU
   CLAIM / ASSERT  discipline.executor_commit_count  EQUALS  0   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  discipline.executor_push_count  EQUALS  0   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  study.normative_semantic_rule_selected  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  study.governing_normative_semantic_rule_selected  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  study.governing_normative_semantic_rule_id  EQUALS  NONE   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  study.new_normative_authority_created  EQUALS  NO   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  study.evidence_requirement_selected  EQUALS  NO   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  study.acquisition_method_selected  EQUALS  NO   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  study.implementation_authorization  EQUALS  NO   [cible ref-return · portée MISSION]
@@ -124,6 +138,9 @@ EXIGENCES DE CONTENU
   FORBID_CLAIM  study.quantified_object_admissibility_presumed  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.candidate_option_adopted_as_governing  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.governing_semantic_authority_created  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.unique_outcome_treated_as_adopted  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.open_gate_treated_as_human_selection_made  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  study.program_authority_transition_materialized  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  option.wording_variant_counted_as_distinct  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  option.mutated_during_comparison  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.not_established_counted_as_positive  EQUALS  YES   [cible ref-return · portée MISSION]
@@ -157,9 +174,10 @@ PROCÉDURE
   12. s-tiebreak  effet e-tiebreak  [atomique]
   13. s-partition  effet e-partition  [atomique]
   14. s-outcome  effet e-outcome  [atomique]  [après porte g-partition-single]
-  15. s-produce  effet e-produce-result  [atomique]
-  16. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
-  17. s-freeze  effet e-freeze-result  [atomique]
+  15. s-gate-derivation  effet e-gate-derivation  [atomique]  [produit ev-gate-derivation]
+  16. s-produce  effet e-produce-result  [atomique]  [après porte g-gate-derivation]
+  17. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
+  18. s-freeze  effet e-freeze-result  [atomique]
 
 PORTES
 ------
@@ -181,6 +199,9 @@ PORTES
   g-minimality-applied  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-minimality).component_removal_test_applied EQ true  ET  OPERATION_RESULT(e-minimality).options_declared_minimal_without_test EQ 0
       échec → sr-minimality
+  g-gate-derivation  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-gate-derivation).terminal_paths_without_gate_state EQ 0  ET  OPERATION_RESULT(e-gate-derivation).terminal_paths_without_gate_type EQ 0  ET  OPERATION_RESULT(e-gate-derivation).unique_or_multiple_paths_with_gate_not_open EQ 0  ET  OPERATION_RESULT(e-gate-derivation).paths_with_governing_rule_selected EQ 0
+      échec → sr-gate-semantics
   g-partition-single  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-partition).matched_outcome_count EQ 1  ET  OPERATION_RESULT(e-partition).outcome_engineering_applied EQ 0  ET  OPERATION_RESULT(e-dominance).preference_based_elimination_count EQ 0  ET  COUNT_OF(MEASUREMENT(forbidden_source_usage)) EQ 0
       échec → sr-partition
@@ -215,6 +236,12 @@ CONDITIONS D’ARRÊT
       FORBIDDEN             DECLARE_MINIMAL_WITHOUT_TEST
       exigé   REPORT
       STOP
+  sr-gate-semantics  si  OPERATION_RESULT(e-gate-derivation).paths_with_governing_rule_selected NEQ 0
+      FORBIDDEN             TREAT_UNIQUE_OUTCOME_AS_ADOPTED
+      FORBIDDEN             TREAT_OPEN_GATE_AS_HUMAN_SELECTION_MADE
+      FORBIDDEN             CREATE_GOVERNING_SEMANTIC_AUTHORITY
+      exigé   REPORT
+      STOP
   sr-partition  si  OPERATION_RESULT(e-partition).matched_outcome_count NEQ 1
       FORBIDDEN             INVENT_FIFTH_OUTCOME
       FORBIDDEN             SELECT_SEMANTICS_BY_DESIRED_ANALYTICAL_OUTCOME
@@ -238,38 +265,56 @@ BRANCHES
   BRANCHE br-unique  si  OPERATION_RESULT(e-outcome).outcome EQ UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED
       résultat terminal   UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED
       conséquence         nc-return
-      étape 1. s-br-unique-produce  effet e-produce-result
-      étape 2. s-br-unique-validate  effet e-validate-result
-      étape 3. s-br-unique-freeze  effet e-freeze-result
+      étape 1. s-br-unique-gate  effet e-gate-derivation
+      étape 2. s-br-unique-produce  effet e-produce-result
+      étape 3. s-br-unique-validate  effet e-validate-result
+      étape 4. s-br-unique-freeze  effet e-freeze-result
       FORBIDDEN             CREATE_GOVERNING_SEMANTIC_AUTHORITY  cardinalité 0
+      FORBIDDEN             TREAT_UNIQUE_OUTCOME_AS_ADOPTED  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED   [cible ref-return · portée br-unique]
+      CLAIM / ASSERT  study.human_normative_semantics_decision_gate  EQUALS  OPEN   [cible ref-return · portée br-unique]
+      CLAIM / ASSERT  study.human_normative_semantics_gate_type  EQUALS  ADOPTION   [cible ref-return · portée br-unique]
+      CLAIM / ASSERT  study.governing_normative_semantic_rule_selected  EQUALS  NO   [cible ref-return · portée br-unique]
 
   BRANCHE br-multiple  si  OPERATION_RESULT(e-outcome).outcome EQ MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION
       résultat terminal   MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION
       conséquence         nc-return
-      étape 1. s-br-multiple-produce  effet e-produce-result
-      étape 2. s-br-multiple-validate  effet e-validate-result
-      étape 3. s-br-multiple-freeze  effet e-freeze-result
+      étape 1. s-br-multiple-gate  effet e-gate-derivation
+      étape 2. s-br-multiple-produce  effet e-produce-result
+      étape 3. s-br-multiple-validate  effet e-validate-result
+      étape 4. s-br-multiple-freeze  effet e-freeze-result
       FORBIDDEN             PREFER_BY_COST_OR_CONVENIENCE  cardinalité 0
+      FORBIDDEN             TREAT_OPEN_GATE_AS_HUMAN_SELECTION_MADE  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION   [cible ref-return · portée br-multiple]
+      CLAIM / ASSERT  study.human_normative_semantics_decision_gate  EQUALS  OPEN   [cible ref-return · portée br-multiple]
+      CLAIM / ASSERT  study.human_normative_semantics_gate_type  EQUALS  SELECTION   [cible ref-return · portée br-multiple]
+      CLAIM / ASSERT  study.governing_normative_semantic_rule_selected  EQUALS  NO   [cible ref-return · portée br-multiple]
 
   BRANCHE br-none  si  OPERATION_RESULT(e-outcome).outcome EQ NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED
       résultat terminal   NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED
       conséquence         nc-return
-      étape 1. s-br-none-produce  effet e-produce-result
-      étape 2. s-br-none-validate  effet e-validate-result
-      étape 3. s-br-none-freeze  effet e-freeze-result
+      étape 1. s-br-none-gate  effet e-gate-derivation
+      étape 2. s-br-none-produce  effet e-produce-result
+      étape 3. s-br-none-validate  effet e-validate-result
+      étape 4. s-br-none-freeze  effet e-freeze-result
       FORBIDDEN             TREAT_SEARCH_FAILURE_AS_EXHAUSTIVE_EVIDENCE  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED   [cible ref-return · portée br-none]
+      CLAIM / ASSERT  study.human_normative_semantics_decision_gate  EQUALS  NOT_OPEN   [cible ref-return · portée br-none]
+      CLAIM / ASSERT  study.human_normative_semantics_gate_type  EQUALS  NONE   [cible ref-return · portée br-none]
+      CLAIM / ASSERT  study.governing_normative_semantic_rule_selected  EQUALS  NO   [cible ref-return · portée br-none]
 
   BRANCHE br-insufficient  si  OPERATION_RESULT(e-outcome).outcome EQ INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS
       résultat terminal   INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS
       conséquence         nc-return
-      étape 1. s-br-insufficient-produce  effet e-produce-result
-      étape 2. s-br-insufficient-validate  effet e-validate-result
-      étape 3. s-br-insufficient-freeze  effet e-freeze-result
+      étape 1. s-br-insufficient-gate  effet e-gate-derivation
+      étape 2. s-br-insufficient-produce  effet e-produce-result
+      étape 3. s-br-insufficient-validate  effet e-validate-result
+      étape 4. s-br-insufficient-freeze  effet e-freeze-result
       FORBIDDEN             MANUFACTURE_HUMAN_GATE  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS   [cible ref-return · portée br-insufficient]
+      CLAIM / ASSERT  study.human_normative_semantics_decision_gate  EQUALS  NOT_OPEN   [cible ref-return · portée br-insufficient]
+      CLAIM / ASSERT  study.human_normative_semantics_gate_type  EQUALS  NONE   [cible ref-return · portée br-insufficient]
+      CLAIM / ASSERT  study.governing_normative_semantic_rule_selected  EQUALS  NO   [cible ref-return · portée br-insufficient]
 
 AUTORITÉ HUMAINE
 ----------------
@@ -283,6 +328,8 @@ EXIGENCES DE PREUVE
   ev-options  [OBSERVATION]  option.id_roster   méthode EQ depuis ref-auth58 · recalcul exigé
       source interdite  session_prose · conversation_transcript · counter_expert_prose
   ev-conformance  [VERIFICATION]  conformance.criterion_roster   méthode EQ depuis ref-auth58 · recalcul exigé
+      source interdite  session_prose · conversation_transcript · counter_expert_prose
+  ev-gate-derivation  [VERIFICATION]  study.human_normative_semantics_decision_gate   méthode EQ depuis ref-auth59 · recalcul exigé
       source interdite  session_prose · conversation_transcript · counter_expert_prose
   ev-result-validation  [VERIFICATION]  result_instance.structural_validation   méthode EQ depuis ref-return · recalcul exigé
       source interdite  session_prose · conversation_transcript · counter_expert_prose
@@ -422,9 +469,15 @@ RETOUR OBLIGATOIRE
   study.decisive_partition_rule  [MEASURED · SYMBOL]  parmi { RULE_0 · RULE_1 · RULE_2 · RULE_3 · RULE_4 }
   study.final_analytical_outcome  [MEASURED · SYMBOL]  parmi { UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED · MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION · NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED · INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS }
   study.final_analytical_outcome_basis  [MEASURED · SET]
-  study.human_normative_semantics_selection_gate  [MEASURED · SYMBOL]  parmi { OPEN · NOT_OPEN }
-  study.human_normative_semantics_selection_gate_basis  [MEASURED · SET]
+  study.human_normative_semantics_decision_gate  [MEASURED · SYMBOL]  parmi { OPEN · NOT_OPEN }
+  study.human_normative_semantics_gate_type  [MEASURED · SYMBOL]  parmi { ADOPTION · SELECTION · NONE }
+  study.human_normative_semantics_decision_gate_basis  [MEASURED · SET]
+  study.human_gate_candidate_option_ids  [MEASURED · SET]
+  remaining.unique_conformant_option_id  [MEASURED · SCALAR]
   study.normative_semantic_rule_selected  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  study.governing_normative_semantic_rule_selected  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  study.governing_normative_semantic_rule_id  [PREDETERMINED · SYMBOL] = NONE  parmi { NONE }
+  study.new_normative_authority_created  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
   study.evidence_requirement_selected  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
   study.acquisition_method_selected  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
   study.implementation_authorization  [PREDETERMINED · SYMBOL] = NO  parmi { NO }

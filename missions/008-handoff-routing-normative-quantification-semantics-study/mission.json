@@ -115,13 +115,67 @@
       "label": "pour chaque option positivement conforme, identifier ses composants semantiques materiels, retirer chacun et reevaluer NS1 a NS15 ; une option n est minimale que si chaque composant retenu est portant pour son comportement normatif conforme ; davantage de regles semantiques n est pas une meilleure option, et une regle supplementaire commode n est pas une semantique normative minimale"
     },
     {
-      "subject": "study.human_gate_semantics",
+      "subject": "study.analytical_outcome_is_not_governing_selection",
       "value": {
         "type": "SYMBOL",
-        "value": "GATE_ONLY_ON_MULTIPLE"
+        "value": "ANALYTICAL_OUTCOME_IS_NOT_GOVERNING_RULE_SELECTION"
       },
       "semantics_unresolved": false,
-      "label": "la porte humaine de selection de semantique normative ne s ouvre que sur MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION ; sur une issue UNIQUE, la mission 008 ne materialise pas silencieusement la reponse semantique et la retourne pour persistance exacte puis qualification independante ; sur NO_CONFORMANT ou INSUFFICIENT, aucune regle semantique n est selectionnee"
+      "label": "une issue analytique n est pas une selection de regle normative gouvernante ; une option analytiquement unique n est pas une regle gouvernante adoptee par l humain, et des options analytiquement multiples ne sont pas une selection humaine deja faite ; la mission 008 peut determiner quelles options sont analytiquement conformes, lesquelles demeurent minimales et si une seule ou plusieurs subsistent, mais jamais qu une telle option devient gouvernante"
+    },
+    {
+      "subject": "study.governing_rule_firewall",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO_GOVERNING_RULE_DURING_MISSION_008"
+      },
+      "semantics_unresolved": false,
+      "label": "quelle que soit l issue analytique de la mission 008, la regle semantique normative gouvernante demeure non selectionnee, son identifiant demeure NONE et aucune autorite normative gouvernante nouvelle n est creee pendant cette mission ; seule une decision humaine explicite ulterieure, apres persistance exacte et qualification independante, peut autoriser la creation d une autorite normative gouvernante"
+    },
+    {
+      "subject": "study.post_outcome_gate_mapping",
+      "value": {
+        "type": "SYMBOL",
+        "value": "UNIQUE_ADOPTION_MULTIPLE_SELECTION_OTHERWISE_NONE"
+      },
+      "semantics_unresolved": false,
+      "label": "sur UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED la porte de decision est OPEN et son type ADOPTION, les candidats presentes etant exactement l unique option restante positivement etablie ; sur MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION la porte est OPEN et son type SELECTION, les candidats presentes etant toutes les options minimales conformes materiellement distinctes restantes ; sur NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED et sur INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS la porte est NOT_OPEN et son type NONE ; dans les quatre cas la regle gouvernante demeure non selectionnee"
+    },
+    {
+      "subject": "study.adoption_versus_selection",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADOPTION_PRESENTS_ONE_SELECTION_PRESENTS_SEVERAL"
+      },
+      "semantics_unresolved": false,
+      "label": "une porte d ADOPTION presente a l humain une unique option analytiquement conforme pour ratification ou rejet explicite comme semantique normative gouvernante ; une porte de SELECTION lui presente deux options survivantes ou plus pour selection explicite avant qu une autorite gouvernante puisse exister ; aucune des deux portes ne cree d autorite, ne choisit de regle, ne modifie le schema, ne change la representation ni n implemente de semantique"
+    },
+    {
+      "subject": "study.human_may_decline",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ANALYTICAL_UNIQUENESS_DOES_NOT_FORCE_ADOPTION"
+      },
+      "semantics_unresolved": false,
+      "label": "sur une issue UNIQUE, l humain peut refuser l adoption : l unicite analytique n oblige pas a creer une regle normative nouvelle, un refus, une mise en attente ou un changement de direction plus large etant une decision de programme ulterieure et substantielle que la mission 008 ne doit pas encoder d avance ; sur une issue MULTIPLE, l existence d une porte de selection ne doit jamais etre interpretee comme une selection effective"
+    },
+    {
+      "subject": "study.qualification_before_authority",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTOR_OUTPUT_TRANSFERS_NO_PROGRAM_AUTHORITY"
+      },
+      "semantics_unresolved": false,
+      "label": "le resultat de l executant n est pas qualifie independamment, de sorte qu une issue UNIQUE ou MULTIPLE rapportee par l executant n est pas une porte humaine de niveau programme materialisee ; le flux correct demeure retour reel de l executant, puis persistance octet pour octet, puis qualification independante fraiche, puis materialisation de l issue qualifiee, et alors seulement ouverture de la porte humaine d adoption ou de selection au niveau programme lorsque l issue qualifiee le justifie ; le resultat rapporte la porte impliquee par son issue analytique, sans qu aucune transition d autorite de programme ne resulte de la seule sortie de l executant"
+    },
+    {
+      "subject": "study.unique_has_no_automatic_consequence",
+      "value": {
+        "type": "SYMBOL",
+        "value": "QUALIFIED_UNIQUE_AUTHORIZES_NOTHING_AUTOMATICALLY"
+      },
+      "semantics_unresolved": false,
+      "label": "une option analytique unique, meme qualifiee, n autorise automatiquement ni la creation d une autorite semantique gouvernante, ni la materialisation d une autorite adoptant la regle, ni un changement de schema, de representation, d objet de mission ou d objet de resultat, ni une implementation, ni la reouverture de la cardinalite d espace d exigence sous la semantique nouvelle ; une decision humaine d adoption ulterieure est requise d abord"
     },
     {
       "subject": "study.executor_creates_no_authority",
@@ -134,6 +188,16 @@
     }
   ],
   "references": [
+    {
+      "id": "ref-auth59",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md"
+      },
+      "identity_required": false,
+      "label": "correction gouvernante de la semantique d autorite humaine post-issue ; identite non epinglee, le commit de correction la produit"
+    },
     {
       "id": "ref-auth58",
       "role": "AUTHORITY",
@@ -421,6 +485,12 @@
       "cardinality": 1
     },
     {
+      "id": "e-gate-derivation",
+      "mode": "REQUIRED",
+      "action": "DERIVE_POST_OUTCOME_HUMAN_GATE",
+      "cardinality": 1
+    },
+    {
       "id": "e-produce-result",
       "mode": "REQUIRED",
       "action": "PRODUCE_RESULT_INSTANCE",
@@ -451,6 +521,24 @@
       "id": "e-forbid-create-authority",
       "mode": "FORBIDDEN",
       "action": "CREATE_GOVERNING_SEMANTIC_AUTHORITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-unique-as-adopted",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_UNIQUE_OUTCOME_AS_ADOPTED",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-gate-as-selection",
+      "mode": "FORBIDDEN",
+      "action": "TREAT_OPEN_GATE_AS_HUMAN_SELECTION_MADE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-authority-transition",
+      "mode": "FORBIDDEN",
+      "action": "MATERIALIZE_PROGRAM_AUTHORITY_TRANSITION",
       "cardinality": 0
     },
     {
@@ -808,6 +896,45 @@
       }
     },
     {
+      "id": "cr-governing-rule-selected",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.governing_normative_semantic_rule_selected",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "id": "cr-governing-rule-id",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.governing_normative_semantic_rule_id",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "id": "cr-new-normative-authority",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "CLAIM",
+      "polarity": "ASSERT",
+      "subject": "study.new_normative_authority_created",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
       "id": "cr-evidence-requirement",
       "scope": "MISSION",
       "target": "ref-return",
@@ -980,6 +1107,42 @@
       "target": "ref-return",
       "kind": "FORBID_CLAIM",
       "subject": "study.governing_semantic_authority_created",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-unique-as-adopted",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.unique_outcome_treated_as_adopted",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-gate-as-selection",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.open_gate_treated_as_human_selection_made",
+      "relation": "EQUALS",
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "id": "cr-forbid-authority-transition",
+      "scope": "MISSION",
+      "target": "ref-return",
+      "kind": "FORBID_CLAIM",
+      "subject": "study.program_authority_transition_materialized",
       "relation": "EQUALS",
       "value": {
         "type": "SYMBOL",
@@ -1272,12 +1435,22 @@
       },
       {
         "order": 15,
-        "id": "s-produce",
-        "effect": "e-produce-result",
-        "atomic": true
+        "id": "s-gate-derivation",
+        "effect": "e-gate-derivation",
+        "atomic": true,
+        "produces": [
+          "ev-gate-derivation"
+        ]
       },
       {
         "order": 16,
+        "id": "s-produce",
+        "effect": "e-produce-result",
+        "atomic": true,
+        "gated_by": "g-gate-derivation"
+      },
+      {
+        "order": 17,
         "id": "s-validate",
         "effect": "e-validate-result",
         "atomic": true,
@@ -1286,7 +1459,7 @@
         ]
       },
       {
-        "order": 17,
+        "order": 18,
         "id": "s-freeze",
         "effect": "e-freeze-result",
         "atomic": true
@@ -1525,6 +1698,63 @@
       }
     },
     {
+      "id": "g-gate-derivation",
+      "scope": "ALL_PRECEDING",
+      "on_fail": "sr-gate-semantics",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "terminal_paths_without_gate_state"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "terminal_paths_without_gate_type"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "unique_or_multiple_paths_with_gate_not_open"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-gate-derivation",
+              "field": "paths_with_governing_rule_selected"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "g-partition-single",
       "scope": "ALL_PRECEDING",
       "on_fail": "sr-partition",
@@ -1603,24 +1833,36 @@
           "mode": "FORBIDDEN",
           "action": "CREATE_GOVERNING_SEMANTIC_AUTHORITY",
           "cardinality": 0
+        },
+        {
+          "id": "e-b1-forbid-adopted",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_UNIQUE_OUTCOME_AS_ADOPTED",
+          "cardinality": 0
         }
       ],
       "steps": [
         {
-          "id": "s-br-unique-produce",
+          "id": "s-br-unique-gate",
           "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-unique-produce",
+          "order": 2,
           "effect": "e-produce-result",
           "atomic": true
         },
         {
           "id": "s-br-unique-validate",
-          "order": 2,
+          "order": 3,
           "effect": "e-validate-result",
           "atomic": true
         },
         {
           "id": "s-br-unique-freeze",
-          "order": 3,
+          "order": 4,
           "effect": "e-freeze-result",
           "atomic": true
         }
@@ -1637,6 +1879,45 @@
           "value": {
             "type": "SYMBOL",
             "value": "UNIQUE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+          }
+        },
+        {
+          "id": "cr-br-unique-gate",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_decision_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          }
+        },
+        {
+          "id": "cr-br-unique-gate-type",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "ADOPTION"
+          }
+        },
+        {
+          "id": "cr-br-unique-governing",
+          "scope": "br-unique",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
           }
         }
       ],
@@ -1663,24 +1944,36 @@
           "mode": "FORBIDDEN",
           "action": "PREFER_BY_COST_OR_CONVENIENCE",
           "cardinality": 0
+        },
+        {
+          "id": "e-b2-forbid-selection-made",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_OPEN_GATE_AS_HUMAN_SELECTION_MADE",
+          "cardinality": 0
         }
       ],
       "steps": [
         {
-          "id": "s-br-multiple-produce",
+          "id": "s-br-multiple-gate",
           "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-multiple-produce",
+          "order": 2,
           "effect": "e-produce-result",
           "atomic": true
         },
         {
           "id": "s-br-multiple-validate",
-          "order": 2,
+          "order": 3,
           "effect": "e-validate-result",
           "atomic": true
         },
         {
           "id": "s-br-multiple-freeze",
-          "order": 3,
+          "order": 4,
           "effect": "e-freeze-result",
           "atomic": true
         }
@@ -1697,6 +1990,45 @@
           "value": {
             "type": "SYMBOL",
             "value": "MULTIPLE_CONFORMANT_NORMATIVE_QUANTIFICATION_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+          }
+        },
+        {
+          "id": "cr-br-multiple-gate",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_decision_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          }
+        },
+        {
+          "id": "cr-br-multiple-gate-type",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "SELECTION"
+          }
+        },
+        {
+          "id": "cr-br-multiple-governing",
+          "scope": "br-multiple",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
           }
         }
       ],
@@ -1727,20 +2059,26 @@
       ],
       "steps": [
         {
-          "id": "s-br-none-produce",
+          "id": "s-br-none-gate",
           "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-none-produce",
+          "order": 2,
           "effect": "e-produce-result",
           "atomic": true
         },
         {
           "id": "s-br-none-validate",
-          "order": 2,
+          "order": 3,
           "effect": "e-validate-result",
           "atomic": true
         },
         {
           "id": "s-br-none-freeze",
-          "order": 3,
+          "order": 4,
           "effect": "e-freeze-result",
           "atomic": true
         }
@@ -1757,6 +2095,45 @@
           "value": {
             "type": "SYMBOL",
             "value": "NO_CONFORMANT_BOUNDED_NORMATIVE_QUANTIFICATION_SEMANTICS_ESTABLISHED"
+          }
+        },
+        {
+          "id": "cr-br-none-gate",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_decision_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        },
+        {
+          "id": "cr-br-none-gate-type",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        },
+        {
+          "id": "cr-br-none-governing",
+          "scope": "br-none",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
           }
         }
       ],
@@ -1787,20 +2164,26 @@
       ],
       "steps": [
         {
-          "id": "s-br-insufficient-produce",
+          "id": "s-br-insufficient-gate",
           "order": 1,
+          "effect": "e-gate-derivation",
+          "atomic": true
+        },
+        {
+          "id": "s-br-insufficient-produce",
+          "order": 2,
           "effect": "e-produce-result",
           "atomic": true
         },
         {
           "id": "s-br-insufficient-validate",
-          "order": 2,
+          "order": 3,
           "effect": "e-validate-result",
           "atomic": true
         },
         {
           "id": "s-br-insufficient-freeze",
-          "order": 3,
+          "order": 4,
           "effect": "e-freeze-result",
           "atomic": true
         }
@@ -1817,6 +2200,45 @@
           "value": {
             "type": "SYMBOL",
             "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-gate",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_decision_gate",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NOT_OPEN"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-gate-type",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.human_normative_semantics_gate_type",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        },
+        {
+          "id": "cr-br-insufficient-governing",
+          "scope": "br-insufficient",
+          "target": "ref-return",
+          "kind": "CLAIM",
+          "polarity": "ASSERT",
+          "subject": "study.governing_normative_semantic_rule_selected",
+          "relation": "EQUALS",
+          "value": {
+            "type": "SYMBOL",
+            "value": "NO"
           }
         }
       ],
@@ -2001,6 +2423,42 @@
       "terminal": "STOP"
     },
     {
+      "id": "sr-gate-semantics",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-gate-derivation",
+          "field": "paths_with_governing_rule_selected"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": 0
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-gs-adopted",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_UNIQUE_OUTCOME_AS_ADOPTED"
+        },
+        {
+          "id": "sp-gs-selection",
+          "mode": "FORBIDDEN",
+          "action": "TREAT_OPEN_GATE_AS_HUMAN_SELECTION_MADE"
+        },
+        {
+          "id": "sp-gs-authority",
+          "mode": "FORBIDDEN",
+          "action": "CREATE_GOVERNING_SEMANTIC_AUTHORITY"
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
       "id": "sr-partition",
       "trigger": {
         "op": "NEQ",
@@ -2149,6 +2607,21 @@
       "method": {
         "op": "EQ",
         "source": "ref-auth58",
+        "recompute": true
+      },
+      "forbidden_sources": [
+        "session_prose",
+        "conversation_transcript",
+        "counter_expert_prose"
+      ]
+    },
+    {
+      "id": "ev-gate-derivation",
+      "kind": "VERIFICATION",
+      "fact": "study.human_normative_semantics_decision_gate",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth59",
         "recompute": true
       },
       "forbidden_sources": [
@@ -3417,7 +3890,7 @@
     },
     {
       "id": "rf-semantics-gate",
-      "fact": "study.human_normative_semantics_selection_gate",
+      "fact": "study.human_normative_semantics_decision_gate",
       "acquisition": "MEASURED",
       "value_type": "SYMBOL",
       "allowed_values": {
@@ -3435,14 +3908,106 @@
       }
     },
     {
+      "id": "rf-semantics-gate-type",
+      "fact": "study.human_normative_semantics_gate_type",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ADOPTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SELECTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
       "id": "rf-semantics-gate-basis",
-      "fact": "study.human_normative_semantics_selection_gate_basis",
+      "fact": "study.human_normative_semantics_decision_gate_basis",
       "acquisition": "MEASURED",
       "value_type": "SET"
     },
     {
+      "id": "rf-gate-candidate-options",
+      "fact": "study.human_gate_candidate_option_ids",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-unique-option-id",
+      "fact": "remaining.unique_conformant_option_id",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
       "id": "rf-semantic-rule-selected",
       "fact": "study.normative_semantic_rule_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-governing-rule-selected",
+      "fact": "study.governing_normative_semantic_rule_selected",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-governing-rule-id",
+      "fact": "study.governing_normative_semantic_rule_id",
+      "acquisition": "PREDETERMINED",
+      "value_type": "SYMBOL",
+      "predetermined_value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-new-normative-authority",
+      "fact": "study.new_normative_authority_created",
       "acquisition": "PREDETERMINED",
       "value_type": "SYMBOL",
       "predetermined_value": {
