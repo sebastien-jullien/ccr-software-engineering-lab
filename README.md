@@ -184,6 +184,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md`](59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md) — correction d'autorité humaine : l'autorité 58 n'ouvrait la porte que sur MULTIPLE, de sorte qu'une option analytiquement unique n'avait aucune étape humaine explicite à franchir avant de pouvoir devenir gouvernante ; sous l'objet d'origine, aucun chemin terminal ne portait d'état de porte. Deux champs post-issue portent désormais la conséquence, la porte de décision et son type, ADOPTION sur une issue unique et SELECTION sur une issue multiple, la règle gouvernante restant non sélectionnée dans les quatre cas. Le refus humain demeure possible et la sortie d'un exécutant ne transfère aucune autorité de programme. La partition analytique n'est pas retouchée. L'unicité analytique n'est pas une adoption, et le silence n'est pas un consentement.
 - [`60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md`](60-HANDOFF-ROUTING-MISSION008-QUALIFICATION-AND-NORMATIVE-OPTION-SPACE-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée du résultat de la mission 008, ratifiée, puis une porte humaine de direction. L'exécution et la qualification structurelle sont PASS, mais le verdict analytique de la qualification est rejeté : sa preuve d'invariance confond la saturation de conformité et de minimalité avec l'immunité contre une dominance établie plus tard, alors que l'autorité 58 range la dominance après la minimalité et la distinction matérielle. NQ-A, NQ-B, NQ-C et NQ-D restent conformes et minimales, mais l'espace d'options n'est pas clos et l'effet d'une option omise par dominance n'est pas établi, donc RULE_0 gouverne. Saturation d'éligibilité n'est pas immunité contre la dominance, et conserver par défaut n'est pas prouver l'impossibilité.
 - [`61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md`](61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS, puis le contrat de l'étude de clôture positive qu'elle ouvre. L'étude doit borner l'univers des dimensions sémantiques par une preuve générative, en dériver toutes les cellules cohérentes, exclure positivement chaque cellule écartée et montrer que toute option admissible correspond à une option canonique ou à une exclusion justifiée. Le pare-feu portant est la dominance : seules les sémantiques déjà gelées s'appliquent, et si résoudre les paires exigeait une relation non définie, l'étude le rapporte au lieu de l'inventer. Chercher sans trouver n'est pas clore.
+- [`62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md`](62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée du résultat de la mission 009, ratifiée, puis une porte humaine de direction. L'exécution est PASS ; la qualification relève à bon droit l'omission de D04 et de D16, qui porte le registre engendré de cinq à neuf options, mais son établissement de l'obligation C est rejeté : un critère aval de conformité ne peut borner un domaine de valeurs amont, et la direction de canonicalisation admet des valeurs conditionnelles. B reste le premier échec portant, C est indépendamment défectueuse, et RULE_0 gouverne. Il manque la règle elle-même en deux endroits : l'univers des responsabilités gouvernantes et le domaine de la direction de canonicalisation — d'où une porte A / B, sans présélection.
 
 ## Outillage
 
@@ -440,7 +441,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -459,7 +460,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -611,7 +612,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -763,7 +764,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -805,7 +806,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -999,7 +1000,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1035,7 +1036,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1154,16 +1155,126 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = executor-reported result-level implied gate : NOT_OPEN / NONE · no candidates
 = executor-reported option selected : NO · governing rule selected : NO ·
   direction-B transitioned : NO
-= independent qualification : PENDING
-= THE EXECUTOR-REPORTED OUTCOME IS NOT A QUALIFIED OUTCOME — RULE_0 is NOT
-  prequalified
+= independent qualification : DONE — CCR LAB FIX #1
+  62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md
+= authority 61 : CLOSED as an executed study contract
+= execution / result production / result persistence : PASS / PASS / PASS
+= qualification execution / structural qualification : PASS / PASS
+= result009 byte identity : PASS · return contract 99 / 99 · 0 missing ·
+  0 unexpected · 0 duplicates
+= STRUCTURAL CORRECTNESS ESTABLISHES NO ANALYTICAL TRUTH
+= reported qualification : FAIL · CONFIRMED_WITH_LIMITATIONS = SUPERSEDED as to
+  obligation C and the disposition
+= reason : the qualification rightly finds D04 and D16 missing from the
+  generating grid, yet qualifies OBLIGATION C as ESTABLISHED on a reduction of
+  D12 grounded in NS5, a downstream conformance criterion — materially too
+  strong
+= VALUE-DOMAIN CLOSURE != OPTION CONFORMANCE != OPTION MINIMALITY — generation
+  runs value-domain closure -> dependencies -> construction -> options ->
+  conformance -> minimality, so a DOWNSTREAM criterion cannot positively prove
+  an UPSTREAM semantic value domain complete
+= a conditional canonicalization direction — toward the instance on a singleton
+  domain, toward the quantified form otherwise — is coherent and deterministic
+= retained : NO explicit exhaustiveness declaration is required — a POSITIVE
+  GENERATIVE COMPLETENESS PROOF is; OBLIGATION B stays NOT_ESTABLISHED because
+  the frozen corpus does not positively close the universe of governing
+  semantic responsibilities; Authority 58 §B.15 is fixed as a closed generator
+  neither by itself nor by Authority 61 §B.7
+= retained : Authority 61 §B.6 is an inspection list, Authority 58 §B.15 a
+  distinctness criterion — inspecting a dimension does not make it material
+  (a valid NON-MATERIAL correction that does not repair B)
+= D01 / D03 / D04 / D07 / D11 / D16 : ESTABLISHED MATERIAL GENERATIVE
+  DIMENSIONS in the current model — NOT a complete dimension universe ·
+  dimension-universe completeness : NOT_ESTABLISHED
+= current generated canonical roster : 9 · minimal conformant : NQ-A / NQ-A-F /
+  NQ-A-I / NQ-B / NQ-C / NQ-D / NQ-D-F / NQ-D-I / NQ-E — positive findings, NOT
+  the complete canonical roster and NOT the final option space
+= OBLIGATION C : corrected to NOT_ESTABLISHED · D12 / D16 value-domain
+  completeness NOT_ESTABLISHED · global value-domain completeness NOT_ESTABLISHED
+= obligation scopes, qualified : A ESTABLISHED (21 dimensions as stated) ·
+  B NOT_ESTABLISHED · C NOT_ESTABLISHED · D NOT_ESTABLISHED GLOBALLY ·
+  E and F ESTABLISHED relative to the declared values only · G ESTABLISHED ·
+  H ESTABLISHED relative to generated cells only · I NOT_ESTABLISHED ·
+  J ESTABLISHED relative to the current canonical roster only · K ESTABLISHED ·
+  L ESTABLISHED
+= first qualified load-bearing failure : OBLIGATION_B — B failing does NOT
+  erase C's defect, and the same RULE_0 terminal branch does NOT make C
+  non-material
+= valid material closure unknowns : MU-GEN governing-responsibility universe
+  completeness · MU-OPT global option-space completeness · MU-DOM effect of an
+  admissible omitted option on dominance · MU-SURV survivor invariance under
+  option addition · MU-CAN the complete set of materially distinct
+  canonicalization directions, conditional ones included (NOT_ESTABLISHED,
+  MATERIAL)
+= corrected qualification verdict of the executor : FAIL ·
+  outcome disposition : CONTRADICTED_MATERIALLY · material errors : 2 —
+  MAE-1, D04 and D16 left out of the generating grid; MAE-2, obligation C /
+  D12 value-domain completeness established by using a downstream conformance
+  criterion to bound an upstream open value domain; reaching the same RULE_0
+  label does not make them non-material
+= qualification material analytical errors : 1 — Q-MAE-1; the sealed
+  qualification passes are NOT altered
+= retained non-material correction : NMAE-1 inspection list versus
+  distinctness criterion carried no evidential weight
+= retained limitations : NEW_DOMINANCE_SEMANTICS_REQUIRED = NOT_ESTABLISHED /
+  NOT_TRIGGERED, NOT dominance semantics positively proven sufficient ·
+  conformance of the four added options qualified here, not by an executor pass
+= option-space completeness : NOT_ESTABLISHED · complete canonical roster :
+  NOT_ESTABLISHED
+= RULE_0 condition : SATISFIED · RULE_1 : NOT_ESTABLISHED ·
+  RULE_2 : NOT_ESTABLISHED
+= qualified decisive rule : RULE_0
+= qualified final outcome :
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_QUANTIFICATION_SEMANTICS
+= qualified implied human normative gate : NOT_OPEN / NONE — Authority 59
+  remains governing
 = program-level human normative gate : NOT OPEN
 = normative option selected : NO · governing rule selected : NO ·
   dominance semantics selected : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= authority 62 : NONE · mission 010 : NONE
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= mission 010 : NONE
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
+
+HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
+= OPEN
+  62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md
+= this is NOT the human normative-semantics adoption / selection gate, which
+  stays NOT OPEN — two different gates
+= the blocker : CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS has now
+  been executed through Mission 009, which positively shows that closure under
+  current semantics is blocked by MISSING SEMANTIC CLOSURE AUTHORITY in at
+  least two places — B, the universe of governing normative-semantic
+  responsibilities is not positively closed; C, the canonicalization-direction
+  value domain (D12 / D16) is not positively closed
+= these are NORMATIVE SEMANTIC CLOSURE GAPS, not more search work over the same
+  generator
+= MORE ENUMERATION UNDER THE SAME OPEN GENERATOR IS NOT NEW CLOSURE EVIDENCE
+= MORE MINIMALITY TESTING IS NOT VALUE-DOMAIN CLOSURE
+= AN ANALYST IS NOT AN AUTHORITY TO CREATE THE MISSING SEMANTICS
+= option A : ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS — a bounded
+  normative-semantic study of the closure generator itself: what complete
+  universe of governing semantic responsibilities a normative quantification
+  model must fix, what principle positively bounds it, how D01..D21 relate to
+  it, what complete material value domain governs canonicalization direction,
+  conditional directions included, and what counts as one direction value
+  versus a derived / non-material /
+  representation-only variation; selecting A answers none of those questions,
+  declares D01..D21 neither exhaustive nor closed, selects no option, creates no
+  governing semantics, defines no dominance, implements nothing
+= option B : ADDRESS_NORMATIVE_DOMINANCE_SEMANTICS — the previously deferred
+  direction class: a bounded study of the positive relation, if any,
+  constituting deterministic dominance between materially distinct minimal
+  conformant options; selecting B repairs neither obligation B nor obligation C,
+  closes no option space, selects no option, creates no governing semantics and
+  implements nothing — B DOES NOT BY ITSELF CLOSE THE B / C GENERATOR GAPS
+= option selected : NONE — no deterministic current Lab rule chooses A or B,
+  and the fact that A targets the current first-order blockers is NOT encoded
+  as an automatic selection
+= parking the line or changing overall Lab program direction remains a separate
+  human program-direction decision
+= mission 010 : NONE · no executor reserved · no new study contract
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -1259,7 +1370,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -1579,7 +1690,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -1588,13 +1699,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #40 INDEPENDENTLY QUALIFIES RESULT009
+= next : OBTAIN HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION
 
 CURRENT LAB STREAM
 = NONE
