@@ -1,0 +1,3139 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-evidence-requirement-study-006"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/006-handoff-routing-evidence-requirement-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "623a2e79b728a2db390a2d34007993be35b7ce82"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/006-handoff-routing-evidence-requirement-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "623a2e79b728a2db390a2d34007993be35b7ce82"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "handoff-routing-evidence-requirement-study-006 @ ee12ef319480c398e15fcee22f181f5a9a9d444f"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-cut"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ee12ef319480c398e15fcee22f181f5a9a9d444f"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-technical-baseline"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-protected-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-incident-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-positive-designs"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-exhaustiveness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-impossibility"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-design-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-derivation-rc7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-unresolved-families"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "F1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "F2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "F3"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "53-HANDOFF-ROUTING-MISSION005-INDEPENDENT-QUALIFICATION-AND-RD-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4bbd174c35ad108ed21bb6c43fd8db28280e713d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-divergences"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u1-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u1-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "U1 conditionne RC2 de toute conception à dérivation générique, quel que soit son porteur"
+          },
+          {
+            "type": "SCALAR",
+            "value": "U1 négative et U5 close suffisent à la sortie par SET-F, sans U2, U3 ni U4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u1-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u2-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u2-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "U2 conditionne RC7 des conceptions qui consignent l'exigence au gel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "sans pertinence sur la branche négative de SET-F ; porteuse sur la route RC7 négative, qui exige encore F2 close"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u2-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u3-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u3-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "U3 conditionne M6 de Q-CAND-A sous le Mission Object ; sans pertinence sur la branche négative de SET-F"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u3-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-01"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u4-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u4-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "U4 conditionne RC8 et M1 à M3 d'une réalisation ; sans pertinence sur la branche négative de SET-F"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u4-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-04"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u5-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u5-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "U5 conditionne la règle 4 et la cardinalité des candidats ; requise par toute sortie identifiée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-u5-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-f1-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-f1-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-f2-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-f2-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-f3-materiality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "BRANCH_CHANGING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-f3-resolving-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc7-necessary"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc7-sufficient"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc7-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc8-necessary"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc8-sufficient"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-rc8-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-04"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exhaustiveness-improvable"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exhaustiveness-universe"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "constructions de la ligne de base capables de porter une exigence d'observation ou une sortie de routage : Mission Object v0, décisions et next_action de PROGRAM-STATE, autorités numérotées, artefacts compagnons locaux"
+          },
+          {
+            "type": "SCALAR",
+            "value": "localisations de dérivation : orchestration au gel, validateur, contrôle de point de reprise, rendeur, préflight de l'exécutant"
+          },
+          {
+            "type": "SCALAR",
+            "value": "moments de typage de l'exigence : décision humaine ratifiée, gel, passation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exhaustiveness-requirements"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-new-durable-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-corpus-correction-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-corpus-corrections"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CC-1 : program-state check n'évalue que l'état des flux et des décisions, et l'état et la valeur de next_action (claimsOf) ; une relation supports portant un autre champ est stockée sans évaluation, et next_action.value est une chaîne libre : sans extension, ni une décision ratifiée ni une next_action ne porte une exigence d'observation typée vérifiée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-corpus-correction-consequences"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CC-1 : les variantes F2 et F3 portées par PROGRAM-STATE sous sa sémantique existante sont fermées ; F2 et F3 restent ouvertes par d'autres porteurs ou par une extension bornée ; ni ensemble, ni minimalité, ni branche finale changés"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-discriminating-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-not-discriminating-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-candidate-independent-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-candidate-specific-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-decision-progress-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-ledger-conformant"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-newness-firewall-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-repackaging-rejected-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-actual-observation-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ACTUAL_OBSERVATION_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-provenance-specified-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-association-specified-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-durability-specified-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-E"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-F"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-G"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-progress-capable-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-sufficient-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-rule0-exit-capable-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-rule0-exit-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SET-E : contient SET-F, dont il porte la branche négative ; sa branche entièrement positive n'établit pas seule la portée générique de RC2, un second précédent ne la prouvant pas"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SET-F : branche MISSION_LOCAL_REDERIVATION_REQUIRED et CLOSED_COMPLETE : toute conception de l'univers clos dérive soit génériquement, et RC2 échoue, soit localement à la main, et RC7 échoue — c'est la procédure PARTIAL qualifiée ; zéro candidat conforme et exhaustivité positive : la règle 4 de la mission 005 devient atteignable"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-partition-eligible-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-E"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-F"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-partition-eligible-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-progress-minimality-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-progress-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "3"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-partial-progress-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-partial-progress-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SET-G"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-partial-progress-findings"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SET-A : résout U3 seul ; U1, U2, U4 et U5 maintiennent la règle 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SET-B : résout U1 seul ; sans clôture de l'univers, ni la règle 4 ni une cardinalité ne sont atteignables"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SET-C : résout RC7 et RC8 d'une réalisation ; U1 et U5 maintiennent la règle 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SET-D : ferme l'univers sans trancher la conformité d'aucune conception"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SET-G : route RC7 négative : RESIDUAL_RECONSTRUCTION ferme les conceptions qui consignent l'exigence au gel ou à la passation, l'univers est clos ; mais les conceptions qui la typent dès la décision humaine — famille F2 — restent ouvertes, aucun item ne les fermant hors de la branche négative d'U1 : aucune base de sortie positive"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-minimality-applied"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-removal-tests"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "14"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-rule0-exit-removal-tests"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "7"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-material-distinctness"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SET-F ⊂ SET-E : SET-E n'est pas minimal pour la sortie, le retrait d'ER-01, d'ER-03 ou d'ER-04 laissant la base négative de SET-F"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-dominance-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-dominance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "un seul ensemble partition-éligible minimal, SET-F ; SET-E, non minimal, n'entre pas dans l'ensemble restant ; aucune dominance à évaluer"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-set-dominated-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-set-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SET-F"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-exists"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun départage déterministe gelé par les autorités 54 et 55"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-impossibility-established"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-changing-unknown"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-material-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "existence d'une seconde route minimale de sortie par la branche RC7 négative : ER-03 RESIDUAL_RECONSTRUCTION ferme les conceptions qui consignent au gel ou à la passation, mais les conceptions de la famille F2, qui typent dès la décision humaine, ne sont fermées par aucun item hors de la branche négative d'U1, et F2 n'est pas assez concrète pour admettre une exigence propre à ses variantes (B.13) ; qu'une exigence bornée indépendante la ferme n'est ni établi ni réfuté"
+          },
+          {
+            "type": "SCALAR",
+            "value": "existence d'une route positive minimale : un second précédent ne prouve pas la portée générique d'U1 ; qu'une exigence bornée puisse l'établir positivement, formant un ensemble de sortie qui ne contienne pas SET-F, n'est ni établi ni réfuté"
+          },
+          {
+            "type": "SCALAR",
+            "value": "l'une ou l'autre existant, deux ensembles minimaux et règle 1 ; aucune n'existant, un seul et règle 2 ; aucune invariance établie"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_EVIDENCE_REQUIREMENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "cinq items d'exigence, tous nouveaux, discriminants et porteurs de progrès de décision ; une correction du corpus courant, sans conséquence de branche ; sept ensembles, tous capables de progrès"
+          },
+          {
+            "type": "SCALAR",
+            "value": "deux ensembles capables de sortie de la règle 0, avec base explicite : SET-F, branche négative vers la règle 4 de la mission 005, et SET-E qui le contient"
+          },
+          {
+            "type": "SCALAR",
+            "value": "un seul ensemble minimal pour la sortie, SET-F ; SET-E ne l'est pas ; SET-G, route RC7 négative, n'a pas de base de sortie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "borne inférieure 1 ; l'existence d'une seconde route minimale n'est pas établie et ferait passer de la règle 2 à la règle 1 → règle 0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-selection-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_OPEN"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-requirement-selection-gate-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'issue MULTIPLE n'est pas positivement établie : un seul ensemble minimal connu, cardinalité exacte non établie"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-acquisition-method-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-authorization"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-design-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "ER-02, ER-03 et ER-04 exigent une observation réelle ; leur acquisition n'est ni choisie ni autorisée ici"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ER-01 et ER-04 visent Q-CAND-A, hypothèse concrète qualifiée par l'autorité 53 ; les viser ne la sélectionne pas, et ER-04 suppose une réalisation dont l'implémentation n'est pas autorisée : l'exigence est énoncée, non acquise"
+          },
+          {
+            "type": "SCALAR",
+            "value": "réemballage refusé : une synthèse des autorités 28 et 36 présentée comme preuve de portée générique des règles de destination et d'ordre n'est pas une preuve nouvelle"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-partial-only-leakage"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.EVIDENCE_REQUIREMENT_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-01"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.TARGET_PROPOSITION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "U3 — capacité des constructions v0 à porter des étapes d'orchestration antérieures à la dépêche"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.CURRENT_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.WHY_MATERIAL"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "CARRIED_FAITHFULLY lève U3 pour Q-CAND-A ; NOT_CARRIABLE_WITHOUT_NEW_REPRESENTATION fait échouer M6 de Q-CAND-A sous le Mission Object"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.NEW_DURABLE_FACT_REQUIRED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une instance Mission Object v0 portant les étapes d'orchestration typées de Q-CAND-A — référence VERIFICATION_TARGET vers l'artefact d'observation, prédicat de porte sur la mesure des étapes durables, conséquences DETERMINED de persistance puis de panneau C — validée, rendue deux fois à l'identique, et dont la porte est évaluable par l'exécutant au préflight"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.OBSERVABLE_VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CARRIED_FAITHFULLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_CARRIABLE_WITHOUT_NEW_REPRESENTATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.RESOLVED_RC_M_PROPERTY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RC1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.RESOLVED_UNKNOWN_OR_FAMILY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "U3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_SPECIFIC"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.BRANCH_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "CARRIED_FAITHFULLY lève U3 pour Q-CAND-A ; NOT_CARRIABLE_WITHOUT_NEW_REPRESENTATION fait échouer M6 de Q-CAND-A sous le Mission Object"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.PROVENANCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "producteur identifié et distinct de l'exécutant de l'étude qui l'emploie ; identité d'objet Git citée"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.ASSOCIATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "liaison à la mission, au candidat ou à la famille visés par identité de Mission Object ou d'autorité"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.DURABILITY_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "committé dans le dépôt du Lab avant toute qualification qui l'emploie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.WHY_CURRENT_CORPUS_INSUFFICIENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune instance Mission Object ne porte d'étapes d'orchestration antérieures à la dépêche ; la capacité v0 n'est ni démontrée ni réfutée (QL-1)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-01.OBSERVATION_KIND"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DURABLE_INSPECTION_SUFFICIENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.EVIDENCE_REQUIREMENT_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-02"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.TARGET_PROPOSITION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "U1 — portée générique des règles de destination d'observation et d'ordre avant le panneau C"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.CURRENT_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.WHY_MATERIAL"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MISSION_LOCAL_REDERIVATION_REQUIRED réfute la portée générique : RC2 échoue pour toute conception à dérivation générique, quel que soit son porteur ; RULES_APPLIED_WITHOUT_REDERIVATION soutient RC2 sur un second précédent sans établir seul la portée générique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.NEW_DURABLE_FACT_REQUIRED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "un second précédent durable : une mission autre que la 001, gelée avec un protocole d'observation d'orchestration, dont la destination et l'ordre avant le panneau C sont obtenus par application des règles de la mission 001 sans dérivation locale nouvelle, ou exigent au contraire une dérivation locale nouvelle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.OBSERVABLE_VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RULES_APPLIED_WITHOUT_REDERIVATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_LOCAL_REDERIVATION_REQUIRED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.RESOLVED_RC_M_PROPERTY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RC2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.RESOLVED_UNKNOWN_OR_FAMILY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "U1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.BRANCH_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MISSION_LOCAL_REDERIVATION_REQUIRED réfute la portée générique : RC2 échoue pour toute conception à dérivation générique, quel que soit son porteur ; RULES_APPLIED_WITHOUT_REDERIVATION soutient RC2 sur un second précédent sans établir seul la portée générique"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.PROVENANCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "producteur identifié et distinct de l'exécutant de l'étude qui l'emploie ; identité d'objet Git citée"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.ASSOCIATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "liaison à la mission, au candidat ou à la famille visés par identité de Mission Object ou d'autorité"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.DURABILITY_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "committé dans le dépôt du Lab avant toute qualification qui l'emploie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.WHY_CURRENT_CORPUS_INSUFFICIENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune mission postérieure à l'autorité 37 ne porte de protocole d'observation ; les règles ne sont établies que pour la mission 001 (QL-1, QL-2)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-02.OBSERVATION_KIND"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ACTUAL_OBSERVATION_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.EVIDENCE_REQUIREMENT_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-03"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.TARGET_PROPOSITION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "U2 — la rédaction au gel de l'exigence typée est-elle une reconstruction manuelle résiduelle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.CURRENT_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.WHY_MATERIAL"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RECORDING_ONLY rend RC7 établissable pour les conceptions qui consignent l'exigence au gel ; RESIDUAL_RECONSTRUCTION fait échouer RC7 pour toutes ces conceptions, sans atteindre celles qui la typent dès la décision humaine"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.NEW_DURABLE_FACT_REQUIRED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une trace durable de passation au gel établissant si la forme typée de l'exigence d'observation se borne à consigner l'intention ratifiée, ou exige d'interpréter la prose ratifiée pour en reconstruire destination et ordre"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.OBSERVABLE_VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RECORDING_ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESIDUAL_RECONSTRUCTION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.RESOLVED_RC_M_PROPERTY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RC7"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.RESOLVED_UNKNOWN_OR_FAMILY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "U2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.BRANCH_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RECORDING_ONLY rend RC7 établissable pour les conceptions qui consignent l'exigence au gel ; RESIDUAL_RECONSTRUCTION fait échouer RC7 pour toutes ces conceptions, sans atteindre celles qui la typent dès la décision humaine"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.PROVENANCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "producteur identifié et distinct de l'exécutant de l'étude qui l'emploie ; identité d'objet Git citée"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.ASSOCIATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "liaison à la mission, au candidat ou à la famille visés par identité de Mission Object ou d'autorité"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.DURABILITY_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "committé dans le dépôt du Lab avant toute qualification qui l'emploie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.WHY_CURRENT_CORPUS_INSUFFICIENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "aucune passation au gel n'a consigné d'exigence typée ; sa qualification au regard de RC7 reste raisonnée (QL-1)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-03.OBSERVATION_KIND"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ACTUAL_OBSERVATION_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.EVIDENCE_REQUIREMENT_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-04"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.TARGET_PROPOSITION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "U4 — une réalisation concrète supprime-t-elle réellement la charge qualifiée"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.CURRENT_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.WHY_MATERIAL"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "BURDEN_ABSENT établit RC8 et M1 à M3 pour la réalisation observée ; BURDEN_RECURS les fait échouer pour elle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.NEW_DURABLE_FACT_REQUIRED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une observation durable en usage réel d'une mission portant un protocole d'observation d'orchestration, passée sous une réalisation de Q-CAND-A : présence ou absence d'autorité de réparation, de supersession du protocole, de rétablissement de next_action et de blocage avant exécution"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.OBSERVABLE_VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BURDEN_ABSENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BURDEN_RECURS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.RESOLVED_RC_M_PROPERTY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RC8"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.RESOLVED_UNKNOWN_OR_FAMILY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "U4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_SPECIFIC"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.BRANCH_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "BURDEN_ABSENT établit RC8 et M1 à M3 pour la réalisation observée ; BURDEN_RECURS les fait échouer pour elle"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.PROVENANCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "producteur identifié et distinct de l'exécutant de l'étude qui l'emploie ; identité d'objet Git citée"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.ASSOCIATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "liaison à la mission, au candidat ou à la famille visés par identité de Mission Object ou d'autorité"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.DURABILITY_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "committé dans le dépôt du Lab avant toute qualification qui l'emploie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.WHY_CURRENT_CORPUS_INSUFFICIENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "la suppression de charge est raisonnée, non observée (L-2, QL-2)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-04.OBSERVATION_KIND"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ACTUAL_OBSERVATION_REQUIRED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.EVIDENCE_REQUIREMENT_ID"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ER-05"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.TARGET_PROPOSITION"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "U5 — exhaustivité de l'espace de candidats de conception"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.CURRENT_STATUS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.WHY_MATERIAL"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "CLOSED_COMPLETE fournit la preuve positive d'exhaustivité exigée par la règle 4 de la mission 005 et fige la cardinalité des candidats ; OPEN la laisse NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.NEW_DURABLE_FACT_REQUIRED"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "une détermination de clôture gelée sur un univers borné — constructions de la ligne de base capables de porter une exigence d'observation ou une sortie de routage, localisations de dérivation, moments de typage — avec critère de complétude et classement de chaque conception de l'univers par localisation de dérivation"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.OBSERVABLE_VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CLOSED_COMPLETE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "OPEN"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.RESOLVED_RC_M_PROPERTY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "RC1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RC2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.RESOLVED_UNKNOWN_OR_FAMILY"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "U5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.SCOPE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANDIDATE_INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.BRANCH_EFFECT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "CLOSED_COMPLETE fournit la preuve positive d'exhaustivité exigée par la règle 4 de la mission 005 et fige la cardinalité des candidats ; OPEN la laisse NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.PROVENANCE_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "producteur identifié et distinct de l'exécutant de l'étude qui l'emploie ; identité d'objet Git citée"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.ASSOCIATION_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "liaison à la mission, au candidat ou à la famille visés par identité de Mission Object ou d'autorité"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.DURABILITY_REQUIREMENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "committé dans le dépôt du Lab avant toute qualification qui l'emploie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.WHY_CURRENT_CORPUS_INSUFFICIENT"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "l'absence de candidat qualifié n'est pas une preuve d'exhaustivité (QL-3) ; aucun univers borné n'est gelé"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "requirement.ER-05.OBSERVATION_KIND"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DURABLE_INSPECTION_SUFFICIENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-A.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-01"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-A.PROGRESS_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-A.PROGRESS_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-A.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-A.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "résout U3 seul ; U1, U2, U4 et U5 maintiennent la règle 0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-A.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-A.PARTITION_ELIGIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-B.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-B.PROGRESS_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-B.PROGRESS_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-B.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-B.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "résout U1 seul ; sans clôture de l'univers, ni la règle 4 ni une cardinalité ne sont atteignables"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-B.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-B.PARTITION_ELIGIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-C.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-04"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-C.PROGRESS_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-C.PROGRESS_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-C.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-C.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "résout RC7 et RC8 d'une réalisation ; U1 et U5 maintiennent la règle 0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-C.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-C.PARTITION_ELIGIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-D.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-D.PROGRESS_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-D.PROGRESS_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-D.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-D.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ferme l'univers sans trancher la conformité d'aucune conception"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-D.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-D.PARTITION_ELIGIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-E.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-E.PROGRESS_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-E.PROGRESS_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-E.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-E.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "contient SET-F, dont il porte la branche négative ; sa branche entièrement positive n'établit pas seule la portée générique de RC2, un second précédent ne la prouvant pas"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-E.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-E.PARTITION_ELIGIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-F.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-F.PROGRESS_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-F.PROGRESS_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-F.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-F.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "branche MISSION_LOCAL_REDERIVATION_REQUIRED et CLOSED_COMPLETE : toute conception de l'univers clos dérive soit génériquement, et RC2 échoue, soit localement à la main, et RC7 échoue — c'est la procédure PARTIAL qualifiée ; zéro candidat conforme et exhaustivité positive : la règle 4 de la mission 005 devient atteignable"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-F.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-F.PARTITION_ELIGIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-G.MEMBERS"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ER-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ER-05"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-G.PROGRESS_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-G.PROGRESS_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-G.RULE0_EXIT_CAPABLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-G.RULE0_EXIT_BASIS"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "route RC7 négative : RESIDUAL_RECONSTRUCTION ferme les conceptions qui consignent l'exigence au gel ou à la passation, l'univers est clos ; mais les conceptions qui la typent dès la décision humaine — famille F2 — restent ouvertes, aucun item ne les fermant hors de la branche négative d'U1 : aucune base de sortie positive"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-G.RULE0_EXIT_MINIMAL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "set.SET-G.PARTITION_ELIGIBLE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    }
+  ]
+}
