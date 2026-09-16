@@ -186,6 +186,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md`](61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, CLOSE_NORMATIVE_OPTION_SPACE_UNDER_CURRENT_SEMANTICS, puis le contrat de l'étude de clôture positive qu'elle ouvre. L'étude doit borner l'univers des dimensions sémantiques par une preuve générative, en dériver toutes les cellules cohérentes, exclure positivement chaque cellule écartée et montrer que toute option admissible correspond à une option canonique ou à une exclusion justifiée. Le pare-feu portant est la dominance : seules les sémantiques déjà gelées s'appliquent, et si résoudre les paires exigeait une relation non définie, l'étude le rapporte au lieu de l'inventer. Chercher sans trouver n'est pas clore.
 - [`62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md`](62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée du résultat de la mission 009, ratifiée, puis une porte humaine de direction. L'exécution est PASS ; la qualification relève à bon droit l'omission de D04 et de D16, qui porte le registre engendré de cinq à neuf options, mais son établissement de l'obligation C est rejeté : un critère aval de conformité ne peut borner un domaine de valeurs amont, et la direction de canonicalisation admet des valeurs conditionnelles. B reste le premier échec portant, C est indépendamment défectueuse, et RULE_0 gouverne. Il manque la règle elle-même en deux endroits : l'univers des responsabilités gouvernantes et le domaine de la direction de canonicalisation — d'où une porte A / B, sans présélection.
 - [`63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS, puis le contrat de l'étude qu'elle ouvre. Son sujet est la sémantique normative manquante que la mission 009 avait interdiction de créer : CG-1, ce qui borne l'univers des responsabilités sémantiques gouvernantes, et CG-2, ce qui borne le domaine de valeurs de la direction de canonicalisation, D12 / D16. Une règle candidate n'est pas une règle gouvernante, davantage d'énumération n'est pas une règle de clôture et davantage de minimalité n'est pas une autorité de domaine de valeurs. On pose enfin la question de la règle que l'analyse a cherchée deux fois sans la trouver, parce que personne ne l'avait encore écrite.
+- [`64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md`](64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md) — correction bornée du contrat analytique de la mission 010, sans décision humaine nouvelle. L'autorité 63 demandait de construire des ensembles de règles candidats, de les éprouver et de retourner une issue, sans jamais dire d'où vient l'ensemble des candidats ni ce qui autoriserait à le déclarer complet : l'étude de la règle de clôture manquante reproduisait d'un étage le défaut qu'elle traite, et pouvait atteindre UNIQUE en ne construisant qu'un seul candidat conforme. Un inventaire de règles candidates n'est pas une clôture d'espace, et un candidat connu n'est pas un candidat unique. Sur 320 états d'analyse, l'ancien contrat admettait 20 chemins vers UNIQUE depuis un espace non clos ; le contrat corrigé en admet zéro.
 
 ## Outillage
 
@@ -442,7 +443,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -461,7 +462,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -613,7 +614,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -765,7 +766,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -807,7 +808,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1001,7 +1002,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1037,7 +1038,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1235,7 +1236,7 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
 = mission 010 : NONE
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
 = CLOSED / SELECTED
@@ -1273,16 +1274,112 @@ HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
   63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
 = option B : NOT SELECTED — the dominance-semantics direction stays unopened
 = authority 62 : CLOSED
+= authority 63 : PROCEDURALLY VALID / HISTORICAL — human direction A is
+  RETAINED and unchanged; its original Mission-010 candidate-space closure
+  semantics are SUPERSEDED by
+  64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md,
+  which edits nothing in authority 63 and takes no new human decision
 = A DIRECTION SELECTION IS NOT A NORMATIVE SEMANTIC ANSWER — the human decided
   none of: that D01..D21 are exhaustive, that D12 / D16 has one direction class, that
   it has several, that D12 / D16 must keep its current factorization, what
   constitutive closure principle governs the model, or what any future
   governing closure rule is
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
-= CONTRACT FROZEN / NOT YET EXECUTED
+= CONTRACT CORRECTED / FROZEN / NOT YET EXECUTED
+  64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md
+  governing contract correction
   63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
+  procedurally valid / historical · direction A retained
+= original defect : THE CANDIDATE RULE-SET SPACE WAS NOT POSITIVELY CLOSED —
+  authority 63 said what a candidate must specify and how to qualify it, never
+  where the candidate set comes from nor what would license calling it
+  complete; an analysis could therefore reach UNIQUE having constructed one
+  conformant candidate
+= CANDIDATE RULE INVENTORY IS NOT CANDIDATE RULE-SET SPACE CLOSURE — many
+  candidates constructed is not exhaustiveness, no further candidate found is
+  not exhaustiveness, one positively known conformant candidate is not proof
+  that exactly one exists, and two or more known conformant candidates do not
+  qualify MULTIPLE unless candidate-space closure or positive outcome
+  invariance supports it
+= KNOWN CANDIDATE IS NOT UNIQUE CANDIDATE
+= measured on the 320 analysis states enumerable from the contract's own value
+  domains : authority 63 admitted 20 paths to UNIQUE from an unclosed candidate
+  space, 8 to MULTIPLE without closure or invariance, 20 to NO_CONFORMANT
+  without an impossibility proof, and 0 branches carried a space precondition;
+  the corrected contract admits 0 / 0 / 0 and every branch carries one
+= new load-bearing state : CANDIDATE_RULE_SET_SPACE_COMPLETENESS is ESTABLISHED
+  or NOT_ESTABLISHED, with an exact basis and an exact first closure failure or
+  NONE — independent of how many candidates were constructed, of their
+  conformance, of their minimality and of the current cardinality
+= positive closure chain : CRS-A bounded universe of materially variable
+  closure-generator semantic responsibilities · CRS-B positive completeness
+  basis for that universe · CRS-C complete admissible value / architecture
+  domain per material responsibility · CRS-D complete coupling / dependency /
+  incompatibility rules · CRS-E deterministic construction of every coherent
+  candidate architecture · CRS-F semantic normalization of duplicate / wording /
+  representation variants · CRS-G positive exclusion ledger for non-canonical,
+  incoherent or non-material cells · CRS-H positive proof that every materially
+  distinct admissible candidate maps to an enumerated canonical candidate or to
+  a positively justified exclusion
+= proof standard : SEARCH EXHAUSTION IS NOT CRS COMPLETENESS · INVENTORY
+  STABILITY IS NOT CRS COMPLETENESS · COVERING THE OBVIOUS CG-1 / CG-2
+  ARCHITECTURES IS NOT CRS COMPLETENESS — the proof must be semantic,
+  generative, reproducible and non-observational
+= responsibility inspection set : a MANDATORY FLOOR, never a presumed
+  exhaustive universe; the mission must positively justify the complete
+  universe
+= per responsibility : id, governing question, complete admissible values /
+  architectures, completeness basis, dependencies, incoherent values, derived
+  values, representation-only values, materiality basis — an open OTHER /
+  MISCELLANEOUS tail blocks ESTABLISHED unless itself normatively bounded
+= CG-1 / CG-2 architecture domain is ITSELF positively closed; the integrated,
+  independent and deterministically coupled examples are not presumed exhaustive
+= deterministic construction : raw cell count, cell ids, full semantic
+  assignments, construction rule, regeneration basis — NO HAND-PICKED INVENTORY
+= exclusion ledger : class, basis and material admissibility per excluded cell;
+  any load-bearing NOT_ESTABLISHED exclusion blocks closure; never exclude
+  because a candidate is awkward, has more components, creates more future
+  options, would lead to MULTIPLE, or would complicate implementation
+= canonical mapping : unmapped coherent material cells 0 · ambiguous mappings
+  0 · preference-based mappings 0
+= ordered sequence : responsibility closure -> value / architecture domain
+  closure -> dependency / coupling closure -> complete raw construction ->
+  positive exclusions -> canonical mapping -> space completeness status ->
+  CGS1..CGS16 -> candidate minimality -> semantic equivalence -> material
+  distinctness -> positively applicable existing dominance only -> analytical
+  partition; these stages do not reverse
+= minimality clarification : NON-MINIMAL IS NOT NON-CONFORMANT and not
+  normatively forbidden · MATERIALLY RICHER IS NOT AUTOMATICALLY NON-MINIMAL ·
+  when component removal changes CG-1 closure, CG-2 closure, coupling or
+  future-variant semantics, the reduced object is materially different and the
+  removal may not be used to rank the richer candidate away · no new preference
+  for simpler normative rules is created
+= corrected partition : RULE 0 preempts on NOT_ESTABLISHED space or on any
+  material unknown that can change candidate membership, conformance,
+  minimality, equivalence, material distinctness, applicable dominance,
+  remaining cardinality or the final outcome, unless every admissible
+  completion positively yields the same outcome and the invariance proof itself
+  covers omitted candidates · RULE 1 MULTIPLE needs 2+ materially distinct
+  minimal conformant candidates and no applicable deterministic selector, and
+  under an unclosed space needs a positive proof that every admissible
+  completion still yields MULTIPLE — KNOWN PLURALITY ALONE IS INSUFFICIENT ·
+  RULE 2 UNIQUE REQUIRES POSITIVE CANDIDATE-SPACE CLOSURE plus exactly one
+  remaining candidate, with no invariance shortcut · RULE 3 NO_CONFORMANT needs
+  zero positively conformant bounded candidates plus a positive sufficiently
+  exhaustive impossibility proof, never inferred from the generated candidates'
+  failure · RULE 4 keeps the genuine remainder
+= terminal paths re-proved : S1 NOT_ESTABLISHED + no invariance -> RULE_0 ->
+  INSUFFICIENT -> NOT_OPEN / NONE · S2 ESTABLISHED + 2+ + no selector -> RULE_1
+  -> MULTIPLE -> OPEN / SELECTION · S3 ESTABLISHED + exactly 1 -> RULE_2 ->
+  UNIQUE -> OPEN / ADOPTION · S4 ESTABLISHED + zero conformant + positive
+  impossibility -> RULE_3 -> NO_CONFORMANT -> NOT_OPEN / NONE · S5
+  NOT_ESTABLISHED + positive invariance to MULTIPLE -> RULE_1 permitted ->
+  MULTIPLE -> OPEN / SELECTION · 5 / 5 PASS
+= UNIQUE path with candidate space NOT_ESTABLISHED : 0 · MULTIPLE without
+  closure or positive invariance : 0 · NO_CONFORMANT without exhaustive
+  impossibility : 0 · governing closure rule selected YES : 0
 = category : NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY — not another
   Mission-009 option enumeration, not an option-space closure execution, not a
   hunt for more D dimensions under the existing open generator, not a new grid
@@ -1368,15 +1465,24 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
   SELECTED — a later dominance gap may be reported prospectively, never
   selected, defined or staffed
 = mission 010 : missions/010-handoff-routing-normative-closure-generator-semantics-study/mission.json
-  blob 6333225ca80b3396766cfce6a5c4466d928243a5
+  blob 57b198b692d6ea631e224fadcdf43e5960e35c61
+  CORRECTED under authority 64 · identity and mission index unchanged ·
+  superseded blob 6333225ca80b3396766cfce6a5c4466d928243a5
 = envelope : missions/010-handoff-routing-normative-closure-generator-semantics-study/envelope.md
-  blob f4154b46160107aa65bdfdf480ef8060d69d2816
-  rendered by the published renderer, never hand-patched
-= mission index 010 : NOT TE010, NOT EXPERIMENT, NOT IMPLEMENTATION
-= mission validation : ok, 0 errors · render coverage complete 358 / 358
+  blob 99e7ad9792a8de344d3948730893d291427f2ef4
+  rendered by the published renderer, never hand-patched ·
+  superseded blob f4154b46160107aa65bdfdf480ef8060d69d2816
+= mission index 010 : NOT TE010, NOT EXPERIMENT, NOT IMPLEMENTATION ·
+  NO MISSION 011 WAS CREATED FOR THIS CORRECTION
+= mission validation : ok, 0 errors · render coverage complete 504 / 504 ·
+  two renders byte-identical · on-disk envelope == fresh render
 = mission-object schema extended : NO · vocabulary changed : NO ·
-  tooling modified : NO
-= return contract : 116 frozen relations
+  tooling modified : NO · BLOCKED_REPRESENTATION_LIMIT : NOT TRIGGERED
+= return contract : 187 frozen relations — 116 before, 71 added, 0 removed,
+  2 renamed (candidate.id_roster -> candidate.canonical_id_roster and
+  candidate.count -> candidate.canonical_count, because a distinct upstream raw
+  roster now exists), 28 semantically superseded, 86 retained unsuperseded;
+  the 116 count is NOT preserved cosmetically
 = direction, CG-1/CG-2 presumption, D12 / D16 finality, coupling assumption, dominance,
   option-space regeneration and closure claim, governing rule, new authority,
   option selection, dominance selection, direction B and implementation
@@ -1384,13 +1490,22 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = future executor : AGENT CCR LAB #41, fresh, read-only except result.json
 = executor commits / pushes : 0 / 0
 = result010 : DOES NOT EXIST YET
+= #41 : SUSPENDED during the correction, READY after it — same logical executor
+  already reserved, no new logical executor is reserved, and no execution
+  occurred in the correction
+= candidate rule-set space : MUST BE POSITIVELY CLOSED OR POSITIVELY
+  OUTCOME-INVARIANT BEFORE MULTIPLE
+= UNIQUE : REQUIRES POSITIVE CANDIDATE-SPACE CLOSURE
+= CG-1 / CG-2 : UNCHANGED · CGS1..CGS16 : UNCHANGED · four outcome labels and
+  the authority-59 human mapping : UNCHANGED
+= new human decisions : 0 · human direction A : UNCHANGED
 = closure-generator semantic rule : NOT SELECTED
 = dominance-semantic direction : NOT SELECTED
 = normative quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -1486,7 +1601,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -1806,7 +1921,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -1815,13 +1930,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #41 EXECUTES MISSION 010
+= next : FRESH AGENT CCR LAB #41 EXECUTES CORRECTED MISSION 010
 
 CURRENT LAB STREAM
 = NONE

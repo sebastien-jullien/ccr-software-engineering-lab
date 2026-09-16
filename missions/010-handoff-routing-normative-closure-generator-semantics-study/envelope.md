@@ -21,6 +21,13 @@ CONTEXTE — NON NORMATIF
   study.conformance_criteria = CGS1_TO_CGS16_POSITIVE_ONLY
   study.dominance_firewall = NO_NEW_DOMINANCE_NO_TRANSPLANTED_DOMINANCE
   study.no_option_space_execution = NORMATIVE_STUDY_FIRST_APPLICATION_LATER
+  study.candidate_space_closure = CANDIDATE_RULE_INVENTORY_IS_NOT_CANDIDATE_RULE_SET_SPACE_CLOSURE
+  study.candidate_space_obligations = CRS_A_TO_CRS_H_POSITIVE_CHAIN
+  study.candidate_space_proof_standard = SEMANTIC_GENERATIVE_REPRODUCIBLE_NON_OBSERVATIONAL
+  study.candidate_space_state = CANDIDATE_RULE_SET_SPACE_COMPLETENESS_IS_LOAD_BEARING
+  study.responsibility_inspection_set = MANDATORY_INSPECTION_SET_IS_NOT_PRESUMED_EXHAUSTIVE
+  study.minimality_clarification = NON_MINIMAL_IS_NOT_NON_CONFORMANT
+  study.corrected_partition_rules = POSITIVE_UNIQUENESS_REQUIRES_POSITIVE_CLOSURE
   study.human_authority_mapping = RESULT_LEVEL_GATE_ONLY_NEVER_PROGRAM_LEVEL
   study.qualification_before_decision = EXECUTOR_OUTPUT_TRANSFERS_NO_AUTHORITY
   study.dominance_direction_boundary = DIRECTION_B_REMAINS_UNSELECTED
@@ -28,6 +35,7 @@ CONTEXTE — NON NORMATIF
 AUTORITÉS ET RÉFÉRENCES
 -----------------------
   ref-auth63  [AUTHORITY]  REPO_PATH 63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md  identité non exigée
+  ref-auth64  [AUTHORITY]  REPO_PATH 64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md  identité non exigée
   ref-auth62  [AUTHORITY]  REPO_PATH 62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md  GIT_BLOB f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f  identité EXIGÉE
   ref-auth61  [CONTEXT]  REPO_PATH 61-HANDOFF-ROUTING-NORMATIVE-OPTION-SPACE-CLOSURE-DIRECTION-AND-STUDY-FREEZE.md  GIT_BLOB 3765fc29feec0d5de11e59041bf17e214040c3bb  identité EXIGÉE
   ref-auth59  [AUTHORITY]  REPO_PATH 59-HANDOFF-ROUTING-NORMATIVE-SEMANTICS-HUMAN-AUTHORITY-CORRECTION.md  GIT_BLOB d6638cd5e7b3c5023d71c5fec54f62ab1de8df92  identité EXIGÉE
@@ -48,7 +56,14 @@ FRONTIÈRES D’EFFET
 ------------------
   REQUIRED              READ_QUALIFIED_START_STATE → ref-auth63  cardinalité 1
   REQUIRED              STATE_CG1_AND_CG2_QUESTIONS  cardinalité 1
+  REQUIRED              CLOSE_CANDIDATE_RULE_RESPONSIBILITY_UNIVERSE  cardinalité 1
+  REQUIRED              CLOSE_VALUE_AND_ARCHITECTURE_DOMAINS  cardinalité 1
+  REQUIRED              CLOSE_COUPLING_DEPENDENCY_AND_INCOMPATIBILITY_RULES  cardinalité 1
+  REQUIRED              ENUMERATE_RAW_CANDIDATE_CELL_SPACE  cardinalité 1
   REQUIRED              CONSTRUCT_CANDIDATE_CLOSURE_GENERATOR_RULE_SETS  cardinalité 1
+  REQUIRED              PRODUCE_POSITIVE_CANDIDATE_EXCLUSION_LEDGER  cardinalité 1
+  REQUIRED              MAP_ADMISSIBLE_CELLS_TO_CANONICAL_CANDIDATES  cardinalité 1
+  REQUIRED              DETERMINE_CANDIDATE_RULE_SET_SPACE_COMPLETENESS  cardinalité 1
   REQUIRED              SPECIFY_CG1_SEMANTICS_PER_CANDIDATE  cardinalité 1
   REQUIRED              SPECIFY_CG2_SEMANTICS_PER_CANDIDATE  cardinalité 1
   REQUIRED              DETERMINE_CG1_CG2_COUPLING_ARCHITECTURE  cardinalité 1
@@ -59,6 +74,7 @@ FRONTIÈRES D’EFFET
   REQUIRED              APPLY_CLOSURE_RULE_COMPONENT_REMOVAL_MINIMALITY  cardinalité 1
   REQUIRED              APPLY_POSITIVELY_AUTHORIZED_DOMINANCE_ONLY  cardinalité 1
   REQUIRED              DETERMINE_FROZEN_DETERMINISTIC_TIEBREAK  cardinalité 1
+  REQUIRED              ASSESS_OMITTED_CANDIDATE_OUTCOME_INVARIANCE  cardinalité 1
   REQUIRED              REPORT_PROSPECTIVE_CONSEQUENCE_ONLY  cardinalité 1
   REQUIRED              APPLY_ORDERED_OUTCOME_PARTITION  cardinalité 1
   REQUIRED              DERIVE_FINAL_ANALYTICAL_OUTCOME  cardinalité 1
@@ -81,6 +97,21 @@ FRONTIÈRES D’EFFET
   FORBIDDEN             COUNT_WORDING_VARIANT_AS_DISTINCT_CANDIDATE  cardinalité 0
   FORBIDDEN             ASSUME_TWO_RULE_DECOMPOSITION  cardinalité 0
   FORBIDDEN             PROVE_GENERATOR_COMPLETENESS_FROM_ITS_OWN_OUTPUT  cardinalité 0
+  FORBIDDEN             TREAT_SEARCH_EXHAUSTION_AS_CANDIDATE_SPACE_CLOSURE  cardinalité 0
+  FORBIDDEN             TREAT_CANDIDATE_INVENTORY_STABILITY_AS_CLOSURE  cardinalité 0
+  FORBIDDEN             USE_OBSERVATIONAL_CANDIDATE_SPACE_CLOSURE_PROOF  cardinalité 0
+  FORBIDDEN             LEAVE_UNBOUNDED_OTHER_TAIL_IN_VALUE_DOMAIN  cardinalité 0
+  FORBIDDEN             USE_HAND_PICKED_CANDIDATE_INVENTORY  cardinalité 0
+  FORBIDDEN             EXCLUDE_CANDIDATE_BY_AWKWARDNESS  cardinalité 0
+  FORBIDDEN             EXCLUDE_CANDIDATE_BY_COMPONENT_COUNT  cardinalité 0
+  FORBIDDEN             EXCLUDE_CANDIDATE_BY_FUTURE_OPTION_COUNT  cardinalité 0
+  FORBIDDEN             EXCLUDE_CANDIDATE_TO_AVOID_MULTIPLE  cardinalité 0
+  FORBIDDEN             EXCLUDE_CANDIDATE_BY_IMPLEMENTATION_COMPLEXITY  cardinalité 0
+  FORBIDDEN             CLAIM_UNIQUE_FROM_UNCLOSED_CANDIDATE_SPACE  cardinalité 0
+  FORBIDDEN             CLAIM_MULTIPLE_WITHOUT_CLOSURE_OR_POSITIVE_INVARIANCE  cardinalité 0
+  FORBIDDEN             INFER_IMPOSSIBILITY_FROM_GENERATED_CANDIDATE_FAILURE  cardinalité 0
+  FORBIDDEN             TREAT_NON_MINIMAL_AS_NON_CONFORMANT  cardinalité 0
+  FORBIDDEN             CREATE_PREFERENCE_FOR_SIMPLER_NORMATIVE_RULE  cardinalité 0
   FORBIDDEN             DEFINE_NEW_DOMINANCE_SEMANTICS  cardinalité 0
   FORBIDDEN             TRANSPLANT_DOMINANCE_FROM_OTHER_OBJECT_TYPE  cardinalité 0
   FORBIDDEN             SELECT_DOMINANCE_SEMANTICS_DIRECTION  cardinalité 0
@@ -135,6 +166,27 @@ EXIGENCES DE CONTENU
   CLAIM / ASSERT  study.direction_b_selected  EQUALS  NO   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  study.implementation_authorization  EQUALS  NO   [cible ref-return · portée MISSION]
   CLAIM / ASSERT  candidate.ledger_encoding_conformant  EQUALS  YES   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  candidate_space.completeness_derived_from_candidate_count  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  architecture.listed_examples_presumed_exhaustive  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  raw_candidate.hand_picked_inventory_used  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  exclusion.forbidden_ground_used  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  mapping.unmapped_coherent_material_cell_count  EQUALS  0   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  mapping.ambiguous_mapping_count  EQUALS  0   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  mapping.preference_based_mapping_count  EQUALS  0   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  partition.unique_requires_candidate_space_closure  EQUALS  YES   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  partition.multiple_requires_closure_or_positive_invariance  EQUALS  YES   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  partition.no_conformant_requires_exhaustive_impossibility  EQUALS  YES   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  partition.known_plurality_treated_as_sufficient  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  partition.single_known_conformant_treated_as_unique  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  minimality.non_minimal_treated_as_non_conformant  EQUALS  NO   [cible ref-return · portée MISSION]
+  CLAIM / ASSERT  minimality.simplicity_preference_created  EQUALS  NO   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  candidate_space.search_exhaustion_used_as_closure  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  candidate_space.inventory_stability_used_as_closure  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  candidate_space.observational_completeness_basis_used  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  responsibility.unbounded_open_tail_present  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  partition.unique_claimed_with_unclosed_space  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  partition.multiple_claimed_without_closure_or_invariance  EQUALS  YES   [cible ref-return · portée MISSION]
+  FORBID_CLAIM  impossibility.inferred_from_generated_candidate_failure  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.closure_generator_rule_adopted  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.d01_to_d21_declared_exhaustive  EQUALS  YES   [cible ref-return · portée MISSION]
   FORBID_CLAIM  study.enumeration_used_as_closure_rule  EQUALS  YES   [cible ref-return · portée MISSION]
@@ -161,24 +213,32 @@ PROCÉDURE
   ORDRE STRICT — aucune étape ne se fond dans une autre
   1. s-qualified  effet e-read-qualified  [atomique]  [après porte g-preflight]  [produit ev-qualified-start]
   2. s-questions  effet e-state-questions  [atomique]
-  3. s-candidates  effet e-construct-candidates  [atomique]  [après porte g-no-presumption]  [produit ev-candidates]
-  4. s-cg1  effet e-specify-cg1  [atomique]  [après porte g-no-analytical-repair]
-  5. s-cg2  effet e-specify-cg2  [atomique]
-  6. s-coupling  effet e-coupling  [atomique]
-  7. s-completion  effet e-completion  [atomique]
-  8. s-conformance  effet e-conformance  [atomique]  [après porte g-candidate-completion]  [produit ev-conformance]
-  9. s-equivalence  effet e-equivalence  [atomique]  [après porte g-conformance-positive]
-  10. s-distinctness  effet e-distinctness  [atomique]
-  11. s-minimality  effet e-minimality  [atomique]
-  12. s-dominance  effet e-dominance  [atomique]  [produit ev-dominance]
-  13. s-tiebreak  effet e-tiebreak  [atomique]  [après porte g-dominance-firewall]
-  14. s-prospective  effet e-prospective  [atomique]
-  15. s-partition  effet e-partition  [atomique]  [après porte g-no-option-execution]
-  16. s-outcome  effet e-outcome  [atomique]  [après porte g-partition-single]
-  17. s-gate-derivation  effet e-gate-derivation  [atomique]
-  18. s-produce  effet e-produce-result  [atomique]  [après porte g-gate-derivation]
-  19. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
-  20. s-freeze  effet e-freeze-result  [atomique]
+  3. s-resp-universe  effet e-close-responsibility-universe  [atomique]  [après porte g-no-presumption]  [produit ev-responsibility-universe]
+  4. s-value-domains  effet e-close-value-domains  [atomique]  [après porte g-no-analytical-repair]
+  5. s-coupling-closure  effet e-close-coupling-rules  [atomique]
+  6. s-raw-cells  effet e-enumerate-raw-cells  [atomique]  [après porte g-responsibility-closure]  [produit ev-raw-candidate-space]
+  7. s-candidates  effet e-construct-candidates  [atomique]
+  8. s-exclusions  effet e-exclusion-ledger  [atomique]
+  9. s-mapping  effet e-map-canonical  [atomique]  [produit ev-candidates]
+  10. s-space-status  effet e-space-status  [atomique]  [après porte g-mapping-complete]  [produit ev-candidate-space-closure]
+  11. s-cg1  effet e-specify-cg1  [atomique]
+  12. s-cg2  effet e-specify-cg2  [atomique]
+  13. s-coupling  effet e-coupling  [atomique]
+  14. s-completion  effet e-completion  [atomique]
+  15. s-conformance  effet e-conformance  [atomique]  [après porte g-candidate-completion]  [produit ev-conformance]
+  16. s-minimality  effet e-minimality  [atomique]  [après porte g-conformance-positive]
+  17. s-equivalence  effet e-equivalence  [atomique]  [après porte g-minimality-semantics]
+  18. s-distinctness  effet e-distinctness  [atomique]
+  19. s-dominance  effet e-dominance  [atomique]  [produit ev-dominance]
+  20. s-tiebreak  effet e-tiebreak  [atomique]  [après porte g-dominance-firewall]
+  21. s-invariance  effet e-invariance  [atomique]
+  22. s-prospective  effet e-prospective  [atomique]
+  23. s-partition  effet e-partition  [atomique]  [après porte g-no-option-execution]
+  24. s-outcome  effet e-outcome  [atomique]  [après porte g-candidate-space-closure]
+  25. s-gate-derivation  effet e-gate-derivation  [atomique]  [après porte g-partition-single]
+  26. s-produce  effet e-produce-result  [atomique]  [après porte g-gate-derivation]
+  27. s-validate  effet e-validate-result  [atomique]  [produit ev-result-validation]
+  28. s-freeze  effet e-freeze-result  [atomique]
 
 PORTES
 ------
@@ -191,6 +251,12 @@ PORTES
   g-no-analytical-repair  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-construct-candidates).enumeration_used_as_closure_rule EQ 0  ET  OPERATION_RESULT(e-construct-candidates).minimality_used_as_value_domain_authority EQ 0  ET  OPERATION_RESULT(e-construct-candidates).all_currently_known_used_as_closure_principle EQ 0
       échec → sr-analytical-repair
+  g-responsibility-closure  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-close-responsibility-universe).mandatory_inspection_set_uncovered EQ 0  ET  OPERATION_RESULT(e-close-value-domains).unbounded_open_tail_present EQ 0  ET  OPERATION_RESULT(e-close-value-domains).observational_completeness_basis_used EQ 0  ET  OPERATION_RESULT(e-close-coupling-rules).architecture_examples_presumed_exhaustive EQ 0
+      échec → sr-responsibility-closure
+  g-mapping-complete  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-map-canonical).unmapped_coherent_material_cells EQ 0  ET  OPERATION_RESULT(e-map-canonical).ambiguous_mappings EQ 0  ET  OPERATION_RESULT(e-map-canonical).preference_based_mappings EQ 0  ET  OPERATION_RESULT(e-exclusion-ledger).forbidden_exclusion_grounds_used EQ 0  ET  OPERATION_RESULT(e-enumerate-raw-cells).hand_picked_inventory_used EQ 0
+      échec → sr-mapping
   g-candidate-completion  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-completion).incomplete_candidates_counted_positively EQ 0  ET  OPERATION_RESULT(e-completion).candidates_mutated_during_comparison EQ 0  ET  OPERATION_RESULT(e-coupling).two_rule_decomposition_assumed EQ 0
       échec → sr-completion
@@ -203,6 +269,12 @@ PORTES
   g-no-option-execution  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-prospective).option_space_regenerated EQ 0  ET  OPERATION_RESULT(e-prospective).option_space_completeness_claimed EQ 0  ET  OPERATION_RESULT(e-prospective).direction_b_selected EQ 0
       échec → sr-option-execution
+  g-minimality-semantics  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-minimality).non_minimal_treated_as_non_conformant EQ 0  ET  OPERATION_RESULT(e-minimality).simplicity_preference_created EQ 0
+      échec → sr-minimality-semantics
+  g-candidate-space-closure  [portée ALL_PRECEDING]
+      exige   OPERATION_RESULT(e-space-status).unique_claimed_with_unclosed_space EQ 0  ET  OPERATION_RESULT(e-space-status).multiple_claimed_without_closure_or_invariance EQ 0  ET  OPERATION_RESULT(e-space-status).no_conformant_claimed_without_exhaustive_impossibility EQ 0  ET  OPERATION_RESULT(e-space-status).search_exhaustion_used_as_closure EQ 0  ET  OPERATION_RESULT(e-space-status).inventory_stability_used_as_closure EQ 0  ET  OPERATION_RESULT(e-invariance).invariance_proof_omitting_omitted_candidates EQ 0
+      échec → sr-candidate-space
   g-partition-single  [portée ALL_PRECEDING]
       exige   OPERATION_RESULT(e-partition).matched_outcome_count EQ 1  ET  OPERATION_RESULT(e-partition).outcome_engineering_applied EQ 0  ET  COUNT_OF(MEASUREMENT(forbidden_source_usage)) EQ 0
       échec → sr-partition
@@ -229,6 +301,34 @@ CONDITIONS D’ARRÊT
       FORBIDDEN             TREAT_MINIMALITY_TESTING_AS_VALUE_DOMAIN_AUTHORITY
       FORBIDDEN             TREAT_STABILIZED_LIST_AS_COMPLETENESS
       FORBIDDEN             USE_ALL_CURRENTLY_KNOWN_AS_CLOSURE_PRINCIPLE
+      exigé   REPORT
+      STOP
+  sr-responsibility-closure  si  OPERATION_RESULT(e-close-responsibility-universe).mandatory_inspection_set_uncovered NEQ 0
+      FORBIDDEN             LEAVE_UNBOUNDED_OTHER_TAIL_IN_VALUE_DOMAIN
+      FORBIDDEN             USE_OBSERVATIONAL_CANDIDATE_SPACE_CLOSURE_PROOF
+      FORBIDDEN             USE_ALL_CURRENTLY_KNOWN_AS_CLOSURE_PRINCIPLE
+      exigé   REPORT
+      STOP
+  sr-mapping  si  OPERATION_RESULT(e-map-canonical).unmapped_coherent_material_cells NEQ 0
+      FORBIDDEN             USE_HAND_PICKED_CANDIDATE_INVENTORY
+      FORBIDDEN             EXCLUDE_CANDIDATE_BY_AWKWARDNESS
+      FORBIDDEN             EXCLUDE_CANDIDATE_BY_COMPONENT_COUNT
+      FORBIDDEN             EXCLUDE_CANDIDATE_BY_FUTURE_OPTION_COUNT
+      FORBIDDEN             EXCLUDE_CANDIDATE_TO_AVOID_MULTIPLE
+      FORBIDDEN             EXCLUDE_CANDIDATE_BY_IMPLEMENTATION_COMPLEXITY
+      exigé   REPORT
+      STOP
+  sr-minimality-semantics  si  OPERATION_RESULT(e-minimality).non_minimal_treated_as_non_conformant NEQ 0
+      FORBIDDEN             TREAT_NON_MINIMAL_AS_NON_CONFORMANT
+      FORBIDDEN             CREATE_PREFERENCE_FOR_SIMPLER_NORMATIVE_RULE
+      exigé   REPORT
+      STOP
+  sr-candidate-space  si  OPERATION_RESULT(e-space-status).unique_claimed_with_unclosed_space NEQ 0
+      FORBIDDEN             CLAIM_UNIQUE_FROM_UNCLOSED_CANDIDATE_SPACE
+      FORBIDDEN             CLAIM_MULTIPLE_WITHOUT_CLOSURE_OR_POSITIVE_INVARIANCE
+      FORBIDDEN             INFER_IMPOSSIBILITY_FROM_GENERATED_CANDIDATE_FAILURE
+      FORBIDDEN             TREAT_SEARCH_EXHAUSTION_AS_CANDIDATE_SPACE_CLOSURE
+      FORBIDDEN             TREAT_CANDIDATE_INVENTORY_STABILITY_AS_CLOSURE
       exigé   REPORT
       STOP
   sr-completion  si  OPERATION_RESULT(e-completion).incomplete_candidates_counted_positively NEQ 0
@@ -286,11 +386,14 @@ BRANCHES
       étape 3. s-br-unique-validate  effet e-validate-result
       étape 4. s-br-unique-freeze  effet e-freeze-result
       FORBIDDEN             ADOPT_CLOSURE_GENERATOR_RULE  cardinalité 0
+      FORBIDDEN             CLAIM_UNIQUE_FROM_UNCLOSED_CANDIDATE_SPACE  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  UNIQUE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED   [cible ref-return · portée br-unique]
       CLAIM / ASSERT  study.result_level_implied_gate  EQUALS  OPEN   [cible ref-return · portée br-unique]
       CLAIM / ASSERT  study.result_level_implied_gate_type  EQUALS  ADOPTION   [cible ref-return · portée br-unique]
       CLAIM / ASSERT  study.governing_closure_generator_rule_selected  EQUALS  NO   [cible ref-return · portée br-unique]
       CLAIM / ASSERT  study.new_normative_authority_created  EQUALS  NO   [cible ref-return · portée br-unique]
+      CLAIM / ASSERT  candidate_space.completeness  EQUALS  ESTABLISHED   [cible ref-return · portée br-unique]
+      CLAIM / ASSERT  remaining.cardinality  EQUALS  ONE   [cible ref-return · portée br-unique]
 
   BRANCHE br-multiple  si  OPERATION_RESULT(e-outcome).outcome EQ MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION
       résultat terminal   MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION
@@ -300,11 +403,14 @@ BRANCHES
       étape 3. s-br-multiple-validate  effet e-validate-result
       étape 4. s-br-multiple-freeze  effet e-freeze-result
       FORBIDDEN             SELECT_BY_DESIRED_ANALYTICAL_OUTCOME  cardinalité 0
+      FORBIDDEN             CLAIM_MULTIPLE_WITHOUT_CLOSURE_OR_POSITIVE_INVARIANCE  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION   [cible ref-return · portée br-multiple]
       CLAIM / ASSERT  study.result_level_implied_gate  EQUALS  OPEN   [cible ref-return · portée br-multiple]
       CLAIM / ASSERT  study.result_level_implied_gate_type  EQUALS  SELECTION   [cible ref-return · portée br-multiple]
       CLAIM / ASSERT  study.governing_closure_generator_rule_selected  EQUALS  NO   [cible ref-return · portée br-multiple]
       CLAIM / ASSERT  study.new_normative_authority_created  EQUALS  NO   [cible ref-return · portée br-multiple]
+      CLAIM / ASSERT  partition.multiple_closure_or_invariance_satisfied  EQUALS  YES   [cible ref-return · portée br-multiple]
+      CLAIM / ASSERT  remaining.cardinality  EQUALS  TWO_OR_MORE   [cible ref-return · portée br-multiple]
 
   BRANCHE br-none  si  OPERATION_RESULT(e-outcome).outcome EQ NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED
       résultat terminal   NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED
@@ -314,11 +420,14 @@ BRANCHES
       étape 3. s-br-none-validate  effet e-validate-result
       étape 4. s-br-none-freeze  effet e-freeze-result
       FORBIDDEN             TREAT_ENUMERATION_AS_NORMATIVE_CLOSURE_RULE  cardinalité 0
+      FORBIDDEN             INFER_IMPOSSIBILITY_FROM_GENERATED_CANDIDATE_FAILURE  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  NO_CONFORMANT_BOUNDED_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_ESTABLISHED   [cible ref-return · portée br-none]
       CLAIM / ASSERT  study.result_level_implied_gate  EQUALS  NOT_OPEN   [cible ref-return · portée br-none]
       CLAIM / ASSERT  study.result_level_implied_gate_type  EQUALS  NONE   [cible ref-return · portée br-none]
       CLAIM / ASSERT  study.governing_closure_generator_rule_selected  EQUALS  NO   [cible ref-return · portée br-none]
       CLAIM / ASSERT  study.new_normative_authority_created  EQUALS  NO   [cible ref-return · portée br-none]
+      CLAIM / ASSERT  impossibility.exhaustive_impossibility_proof  EQUALS  ESTABLISHED   [cible ref-return · portée br-none]
+      CLAIM / ASSERT  remaining.cardinality  EQUALS  ZERO   [cible ref-return · portée br-none]
 
   BRANCHE br-insufficient  si  OPERATION_RESULT(e-outcome).outcome EQ INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS
       résultat terminal   INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS
@@ -328,6 +437,7 @@ BRANCHES
       étape 3. s-br-insufficient-validate  effet e-validate-result
       étape 4. s-br-insufficient-freeze  effet e-freeze-result
       FORBIDDEN             SELECT_DOMINANCE_SEMANTICS_DIRECTION  cardinalité 0
+      FORBIDDEN             COUNT_NOT_ESTABLISHED_AS_POSITIVE  cardinalité 0
       CLAIM / ASSERT  study.final_analytical_outcome  EQUALS  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS   [cible ref-return · portée br-insufficient]
       CLAIM / ASSERT  study.result_level_implied_gate  EQUALS  NOT_OPEN   [cible ref-return · portée br-insufficient]
       CLAIM / ASSERT  study.result_level_implied_gate_type  EQUALS  NONE   [cible ref-return · portée br-insufficient]
@@ -337,13 +447,20 @@ BRANCHES
 AUTORITÉ HUMAINE
 ----------------
   RATIFIÉ       handoff_routing_address_normative_closure_generator_semantics_selected   [autorité ref-auth63]
+  RATIFIÉ       handoff_routing_mission010_candidate_rule_space_closure_corrected   [autorité ref-auth64]
   DÉTERMINÉ     nc-return
 
 EXIGENCES DE PREUVE
 -------------------
   ev-qualified-start  [OBSERVATION]  qualified_start.first_load_bearing_failure   méthode EQ depuis ref-auth62 · recalcul exigé
       source interdite  session_prose · conversation_transcript · counter_expert_prose
-  ev-candidates  [OBSERVATION]  candidate.id_roster   méthode EQ depuis ref-auth63 · recalcul exigé
+  ev-candidates  [OBSERVATION]  candidate.canonical_id_roster   méthode EQ depuis ref-auth63 · recalcul exigé
+      source interdite  session_prose · conversation_transcript · counter_expert_prose
+  ev-responsibility-universe  [OBSERVATION]  responsibility.universe_roster   méthode EQ depuis ref-auth64 · recalcul exigé
+      source interdite  session_prose · conversation_transcript · counter_expert_prose
+  ev-raw-candidate-space  [OBSERVATION]  raw_candidate.cell_ids   méthode EQ depuis ref-auth64 · recalcul exigé
+      source interdite  session_prose · conversation_transcript · counter_expert_prose
+  ev-candidate-space-closure  [VERIFICATION]  candidate_space.completeness   méthode EQ depuis ref-auth64 · recalcul exigé
       source interdite  session_prose · conversation_transcript · counter_expert_prose
   ev-conformance  [VERIFICATION]  conformance.criterion_roster   méthode EQ depuis ref-auth63 · recalcul exigé
       source interdite  session_prose · conversation_transcript · counter_expert_prose
@@ -426,8 +543,8 @@ RETOUR OBLIGATOIRE
   question.cg2_answer_presumed  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
   question.d12_current_value_model_treated_as_final  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
   question.coupling_architecture  [MEASURED · SYMBOL]  parmi { ONE_INTEGRATED_CONSTITUTIVE_RULE · TWO_INDEPENDENT_NORMATIVE_RULES · TWO_COUPLED_RULES_WITH_DETERMINISTIC_DEPENDENCY · OTHER_BOUNDED_ARCHITECTURE · NOT_ESTABLISHED }
-  candidate.id_roster  [MEASURED · SET]
-  candidate.count  [MEASURED · SCALAR]
+  candidate.canonical_id_roster  [MEASURED · SET]
+  candidate.canonical_count  [MEASURED · SCALAR]
   candidate.material_component_inventory  [MEASURED · SET]
   candidate.incomplete_candidate_ids  [MEASURED · SET]
   candidate.incomplete_candidate_count  [MEASURED · SCALAR]
@@ -515,6 +632,77 @@ RETOUR OBLIGATOIRE
   study.limitations  [MEASURED · SET]
   study.blockers  [MEASURED · SET]
   study.procedural_success  [MEASURED · SYMBOL]  parmi { PROCEDURALLY_SUCCESSFUL · NOT_SUCCESSFUL }
+  candidate_space.completeness  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.completeness_basis  [MEASURED · SET]
+  candidate_space.first_closure_failure  [MEASURED · SCALAR]
+  candidate_space.closure_proof_standard  [MEASURED · SET]
+  candidate_space.completeness_derived_from_candidate_count  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  candidate_space.crs_a_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.crs_b_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.crs_c_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.crs_d_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.crs_e_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.crs_f_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.crs_g_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.crs_h_status  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  candidate_space.obligation_basis_per_obligation  [MEASURED · SET]
+  candidate_space.not_established_obligation_ids  [MEASURED · SET]
+  responsibility.universe_roster  [MEASURED · SET]
+  responsibility.universe_completeness  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  responsibility.universe_completeness_basis  [MEASURED · SET]
+  responsibility.mandatory_inspection_set_covered  [MEASURED · SYMBOL]  parmi { YES · NO }
+  responsibility.governing_question_per_responsibility  [MEASURED · SET]
+  responsibility.admissible_value_domain_per_responsibility  [MEASURED · SET]
+  responsibility.value_domain_completeness_basis_per_responsibility  [MEASURED · SET]
+  responsibility.dependencies_per_responsibility  [MEASURED · SET]
+  responsibility.incoherent_values_per_responsibility  [MEASURED · SET]
+  responsibility.derived_values_per_responsibility  [MEASURED · SET]
+  responsibility.representation_only_values_per_responsibility  [MEASURED · SET]
+  responsibility.materiality_basis_per_responsibility  [MEASURED · SET]
+  responsibility.value_domain_completeness  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  responsibility.open_tail_present  [MEASURED · SYMBOL]  parmi { YES · NO }
+  responsibility.open_tail_positive_bounding_rule  [MEASURED · SET]
+  architecture.admissible_domain_roster  [MEASURED · SET]
+  architecture.domain_completeness  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  architecture.domain_completeness_basis  [MEASURED · SET]
+  architecture.listed_examples_presumed_exhaustive  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  coupling.dependency_rule_completeness  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  coupling.dependency_rule_completeness_basis  [MEASURED · SET]
+  coupling.incompatibility_rules  [MEASURED · SET]
+  raw_candidate.construction_rule  [MEASURED · SET]
+  raw_candidate.cell_count  [MEASURED · SCALAR]
+  raw_candidate.cell_ids  [MEASURED · SET]
+  raw_candidate.semantic_assignment_per_cell  [MEASURED · SET]
+  raw_candidate.regeneration_basis  [MEASURED · SET]
+  raw_candidate.hand_picked_inventory_used  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  exclusion.excluded_cell_ids  [MEASURED · SET]
+  exclusion.excluded_cell_count  [MEASURED · SCALAR]
+  exclusion.class_per_excluded_cell  [MEASURED · SET]
+  exclusion.basis_per_excluded_cell  [MEASURED · SET]
+  exclusion.material_admissibility_per_excluded_cell  [MEASURED · SET]
+  exclusion.not_established_exclusion_count  [MEASURED · SCALAR]
+  exclusion.forbidden_ground_used  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  mapping.canonical_candidate_per_admissible_cell  [MEASURED · SET]
+  mapping.unmapped_coherent_material_cell_count  [MEASURED · SCALAR]
+  mapping.ambiguous_mapping_count  [MEASURED · SCALAR]
+  mapping.preference_based_mapping_count  [MEASURED · SCALAR]
+  mapping.completeness  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  invariance.omitted_candidate_outcome_invariance  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  invariance.omitted_candidate_outcome_invariance_basis  [MEASURED · SET]
+  invariance.proof_covers_omitted_candidates  [MEASURED · SYMBOL]  parmi { YES · NO · NOT_ESTABLISHED }
+  invariance.invariant_outcome  [MEASURED · SCALAR]
+  impossibility.exhaustive_impossibility_proof  [MEASURED · SYMBOL]  parmi { ESTABLISHED · NOT_ESTABLISHED }
+  impossibility.exhaustive_impossibility_basis  [MEASURED · SET]
+  minimality.component_removal_outcome_per_test  [MEASURED · SET]
+  minimality.removal_produced_materially_different_rule_ids  [MEASURED · SET]
+  minimality.non_minimal_treated_as_non_conformant  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  minimality.simplicity_preference_created  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  partition.unique_requires_candidate_space_closure  [PREDETERMINED · SYMBOL] = YES  parmi { YES }
+  partition.multiple_requires_closure_or_positive_invariance  [PREDETERMINED · SYMBOL] = YES  parmi { YES }
+  partition.no_conformant_requires_exhaustive_impossibility  [PREDETERMINED · SYMBOL] = YES  parmi { YES }
+  partition.known_plurality_treated_as_sufficient  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  partition.single_known_conformant_treated_as_unique  [PREDETERMINED · SYMBOL] = NO  parmi { NO }
+  partition.multiple_closure_or_invariance_satisfied  [MEASURED · SYMBOL]  parmi { YES · NO }
 
 CONSÉQUENCES SUIVANTES
 ----------------------
