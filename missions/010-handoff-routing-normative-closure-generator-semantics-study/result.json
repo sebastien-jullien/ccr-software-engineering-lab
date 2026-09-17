@@ -1,0 +1,5659 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-normative-closure-generator-semantics-study-010"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/010-handoff-routing-normative-closure-generator-semantics-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "57b198b692d6ea631e224fadcdf43e5960e35c61"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/010-handoff-routing-normative-closure-generator-semantics-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "57b198b692d6ea631e224fadcdf43e5960e35c61"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "handoff-routing-normative-closure-generator-semantics-study-010 @ e12953c2e736152e963de04d24067f7cce23f822"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-cut"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "e12953c2e736152e963de04d24067f7cce23f822"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-technical-baseline"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-counter-expert-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-incident-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-obligation-a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-obligation-b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-obligation-c"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-first-failure"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "OBLIGATION_B"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-dimension-universe"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-d12-value-domain"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-option-space"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-dimension-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "D01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "D16"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-canonical-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "9"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-minimal-option-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A-F"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-A-I"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D-F"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-D-I"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NQ-E"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "f603e92ab54cbdfa9a48f8ac5e07ce9eaed5c57f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-direction"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a9bd2df87fbc16e8bf23b8ca49afb57ee7a3d6ec"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-divergences"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-cg1"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CG-1 : quel univers complet de responsabilités sémantiques gouvernantes peut rendre deux modèles normatifs de quantification matériellement distincts, par quel principe est-il positivement borné, et pourquoi aucune responsabilité matérielle ne peut exister hors de cette borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG-1 : comment D01 à D21 se rapportent à cet univers — maintenues, refactorisées ou dérivées d'un modèle constitutif plus profond"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-cg2"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CG-2 : quel domaine de valeurs matériel complet, ou quelle factorisation complète, gouverne la direction de canonicalisation exposée par D12 / D16, directions conditionnelles comprises"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG-2 : ce qui compte comme valeur de direction de canonicalisation, par opposition à une variation dérivée, non matérielle, de seule représentation ou de seul choix d'implémentation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-cg1-presumed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-cg2-presumed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-d12-final"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-coupling"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-canonical-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-canonical-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-components"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "K1 principe de clôture de CG-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "K2 règle d'indépendance et de correspondance de D01 à D21"
+          },
+          {
+            "type": "SCALAR",
+            "value": "K3 disposition de D01 à D21"
+          },
+          {
+            "type": "SCALAR",
+            "value": "K4 domaine de valeurs de CG-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "K5 correspondance des variantes apparentes futures de CG-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "K6 architecture de couplage"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-incomplete-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRAG-CG1-B15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRAG-CG1-VARIATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRAG-CG2-TOTAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRAG-CG2-CLOSURE-STATE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-incomplete-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "4"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-wording-rejected"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-required-dimensions"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CG1 principe de clôture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 ce qui compte et ce qui ne compte pas comme responsabilité gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 objet et niveau sémantique"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 indépendance matérielle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 conséquences dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 composites"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 constantes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 exclusion de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 borne positive de l'univers"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 absence de responsabilité matérielle hors borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 correspondance de D01 à D21"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 maintien, refactorisation ou dérivation de D01 à D21"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG1 effet prospectif"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 principe"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 qualification d'une direction"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 classe unique ou famille"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 factorisation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 distinction matérielle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 différences dérivées, non matérielles, de seule représentation, de seul choix d'implémentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 clôture positive du domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 correspondance des variantes futures"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 interaction avec D04, D07, D11"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 sort de l'axe D12 / D16"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CG2 effet prospectif"
+          },
+          {
+            "type": "SCALAR",
+            "value": "COUPLAGE CG-1 / CG-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-ledger-conformant"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg1-closure-principle"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : l'univers des responsabilités gouvernantes est exactement l'ensemble des sept faits de l'autorité 58 B.15, adopté comme générateur fermé : une différence n'est matérielle que si elle est une différence de l'un d'eux"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : l'univers des responsabilités gouvernantes est exactement l'ensemble des sept faits de l'autorité 58 B.15, adopté comme générateur fermé : une différence n'est matérielle que si elle est une différence de l'un d'eux"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : une responsabilité est gouvernante si et seulement si sa variation, toutes choses égales, change les objets d'exigence, leur identité, leur liaison ou les obligations entraînées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : une responsabilité est gouvernante si et seulement si sa variation, toutes choses égales, change les objets d'exigence, leur identité, leur liaison ou les obligations entraînées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : une responsabilité est gouvernante si et seulement si sa variation, toutes choses égales, change les objets d'exigence, leur identité, leur liaison ou les obligations entraînées"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "58-HANDOFF-ROUTING-NORMATIVE-QUANTIFICATION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a3a5af1d4ef079de9839c2c35ba2f0190c314012"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg1-inclusion-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : une responsabilité est gouvernante si la table d'assignation explicite de la règle la rattache à l'un des sept faits, dont sa question est une spécification"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : une responsabilité est gouvernante si la table d'assignation explicite de la règle la rattache à l'un des sept faits, dont sa question est une spécification"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : critère de variation positif"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : critère de variation positif"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : critère de variation positif"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg1-exclusion-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : toute autre variation est dérivée d'une responsabilité gouvernante, constante, ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : toute autre variation est dérivée d'une responsabilité gouvernante, constante, ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : variation sans effet sur les objets, leur identité, leur liaison ni les obligations"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : variation sans effet sur les objets, leur identité, leur liaison ni les obligations"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : variation sans effet sur les objets, leur identité, leur liaison ni les obligations"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg1-bounding-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : borne définitionnelle et générative : la matérialité est définie par les sept faits ; hors d'eux, rien n'est matériel par construction, sans appel aux exemples courants"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : borne définitionnelle et générative : la matérialité est définie par les sept faits ; hors d'eux, rien n'est matériel par construction, sans appel aux exemples courants"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : critère d'appartenance, non générateur : il éprouve des responsabilités proposées mais n'en borne pas l'univers"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : critère d'appartenance, non générateur : il éprouve des responsabilités proposées mais n'en borne pas l'univers"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : critère d'appartenance, non générateur : il éprouve des responsabilités proposées mais n'en borne pas l'univers"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg1-dimension-mapping"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : F1 existence d'objets quantifiés ← D01 · F2 lieu de la quantification ← D03 · F3 identité sémantique ← D04, D05 réduite à D06 · F4 liaison des domaines ← D07 · F5 entrée des obligations multi-instances ← D11 · F6 regroupement et découpage ← D14, D15, D21 · F7 normalisation ← D12 réduite à D16"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : F1 existence d'objets quantifiés ← D01 · F2 lieu de la quantification ← D03 · F3 identité sémantique ← D04, D05 réduite à D06 · F4 liaison des domaines ← D07 · F5 entrée des obligations multi-instances ← D11 · F6 regroupement et découpage ← D14, D15, D21 · F7 normalisation ← D12 réduite à D16"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : chaque dimension est éprouvée par le critère de variation : responsabilité gouvernante si deux modèles ne différant qu'en elle diffèrent par les objets d'exigence, leur identité, leur liaison ou les obligations entraînées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : chaque dimension est éprouvée par le critère de variation : responsabilité gouvernante si deux modèles ne différant qu'en elle diffèrent par les objets d'exigence, leur identité, leur liaison ou les obligations entraînées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : chaque dimension est éprouvée par le critère de variation : responsabilité gouvernante si deux modèles ne différant qu'en elle diffèrent par les objets d'exigence, leur identité, leur liaison ou les obligations entraînées"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg1-dimension-disposition"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : matérielles : D01, D03, D04, D06, D07, D11, D14, D15, D16, D21 · dérivées : D02, D05, D08, D09, D10, D12, D13, D17, D19, D20 · constante : D18 · D01 à D21 demeurent des axes, dix matériels, sans refactorisation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : matérielles : D01, D03, D04, D06, D07, D11, D14, D15, D16, D21 · dérivées : D02, D05, D08, D09, D10, D12, D13, D17, D19, D20 · constante : D18 · D01 à D21 demeurent des axes, dix matériels, sans refactorisation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : disposition de D01 à D21 dépendante de l'application du critère, dimension par dimension ; D09, D10 et D21 non tranchées d'avance"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : disposition de D01 à D21 dépendante de l'application du critère, dimension par dimension ; D09, D10 et D21 non tranchées d'avance"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : disposition de D01 à D21 dépendante de l'application du critère, dimension par dimension ; D09, D10 et D21 non tranchées d'avance"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg1-prospective-effect"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : une étude fraîche de clôture d'espace d'options engendrerait ses dimensions depuis les sept faits, D09, D10 et D21 étant tranchées (X-VAR-BEHAVIOR dérivé, X-VAR-D21 matériel sous F6)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : une étude fraîche de clôture d'espace d'options engendrerait ses dimensions depuis les sept faits, D09, D10 et D21 étant tranchées (X-VAR-BEHAVIOR dérivé, X-VAR-D21 matériel sous F6)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : une étude fraîche disposerait d'un test d'inclusion, non d'un univers borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : une étude fraîche disposerait d'un test d'inclusion, non d'un univers borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : une étude fraîche disposerait d'un test d'inclusion, non d'un univers borné"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-qualification-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : une direction de canonicalisation est une forme normale cible totale pour une famille d'instances"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : une direction de canonicalisation est une fonction déterministe totale de l'état de clôture du domaine, AVANT ou APRÈS, vers l'une des deux cibles totales"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : une direction de canonicalisation est une forme normale cible totale pour une famille d'instances"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : une direction de canonicalisation est une fonction déterministe totale de l'état de clôture du domaine, AVANT ou APRÈS, vers l'une des deux cibles totales"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : une direction de canonicalisation est une fonction déterministe totale de l'état de clôture du domaine, AVANT ou APRÈS, vers l'une des deux cibles totales"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-class-or-family"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : SINGLE_CLOSED_CLASS"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : FAMILY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : SINGLE_CLOSED_CLASS"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : FAMILY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : FAMILY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-family-factorization"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : deux valeurs : BY_CANONICAL_Q, BY_INSTANCE_FAMILY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : quatre valeurs : Q_ALWAYS, I_ALWAYS, Q_BEFORE_I_AFTER, I_BEFORE_Q_AFTER"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : deux valeurs : BY_CANONICAL_Q, BY_INSTANCE_FAMILY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : quatre valeurs : Q_ALWAYS, I_ALWAYS, Q_BEFORE_I_AFTER, I_BEFORE_Q_AFTER"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : quatre valeurs : Q_ALWAYS, I_ALWAYS, Q_BEFORE_I_AFTER, I_BEFORE_Q_AFTER"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-distinctness-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : deux directions sont distinctes si et seulement si leurs cibles totales diffèrent"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : deux directions sont distinctes si et seulement si leurs fonctions d'état diffèrent sur un état"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : deux directions sont distinctes si et seulement si leurs cibles totales diffèrent"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : deux directions sont distinctes si et seulement si leurs fonctions d'état diffèrent sur un état"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : deux directions sont distinctes si et seulement si leurs fonctions d'état diffèrent sur un état"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-derived-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : direction conditionnelle (état de clôture, cardinalité) ou vers une forme mixte : composition dérivée des deux cibles totales et d'une responsabilité d'état ou de découpage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : direction conditionnée par la cardinalité : composition dérivée de D04 et D10 ; forme mixte : composition dérivée du découpage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : direction conditionnelle (état de clôture, cardinalité) ou vers une forme mixte : composition dérivée des deux cibles totales et d'une responsabilité d'état ou de découpage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : direction conditionnée par la cardinalité : composition dérivée de D04 et D10 ; forme mixte : composition dérivée du découpage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : direction conditionnée par la cardinalité : composition dérivée de D04 et D10 ; forme mixte : composition dérivée du découpage"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-closure-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : les niveaux de l'autorité 57 — classe, instance, quantification — n'offrent que deux formes normales d'une famille : la forme quantifiée et la famille d'instances ; la classe n'en est pas une"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : toutes les fonctions totales d'un domaine d'état clos à deux valeurs, fixé par la liaison D07 / D17, vers deux cibles : quatre, par construction"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : les niveaux de l'autorité 57 — classe, instance, quantification — n'offrent que deux formes normales d'une famille : la forme quantifiée et la famille d'instances ; la classe n'en est pas une"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : toutes les fonctions totales d'un domaine d'état clos à deux valeurs, fixé par la liaison D07 / D17, vers deux cibles : quatre, par construction"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : toutes les fonctions totales d'un domaine d'état clos à deux valeurs, fixé par la liaison D07 / D17, vers deux cibles : quatre, par construction"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-future-variant-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : toute variante apparente future est une cible totale existante, une composition dérivée, ou une variante de représentation exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : toute variante apparente future est l'une des quatre fonctions, une composition dérivée, ou une variante de représentation exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : toute variante apparente future est une cible totale existante, une composition dérivée, ou une variante de représentation exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : toute variante apparente future est l'une des quatre fonctions, une composition dérivée, ou une variante de représentation exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : toute variante apparente future est l'une des quatre fonctions, une composition dérivée, ou une variante de représentation exclue"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cg2-d12-disposition"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : D12 réduite à D16 ; l'axe demeure, deux valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : D12 réduite à D16 ; l'axe se scinde en quatre valeurs indexées par l'état de clôture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : D12 réduite à D16 ; l'axe demeure, deux valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : D12 réduite à D16 ; l'axe se scinde en quatre valeurs indexées par l'état de clôture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : D12 réduite à D16 ; l'axe se scinde en quatre valeurs indexées par l'état de clôture"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-coupling-architecture"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : INDEPENDENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : CG2_ON_CG1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : INDEPENDENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : INTEGRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : CG2_ON_CG1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-coupling-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : aucune : le domaine de CG-2 ne prend aucune sortie de CG-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : le vocabulaire d'état de CG-2 est l'ensemble des états de la responsabilité de liaison admise par CG-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3 : aucune : le domaine de CG-2 ne prend aucune sortie de CG-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-5 : un seul critère de variation détermine l'univers de CG-1 et les directions distinctes de CG-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 : le vocabulaire d'état de CG-2 est l'ensemble des états de la responsabilité de liaison admise par CG-1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-coupling-assumed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs1-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs2-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs3-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs4-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs5-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs6-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs7-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs8-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs9-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs10-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs11-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs12-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs13-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs14-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs15-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs16-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformance-criteria"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGS1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS8"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS9"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGS16"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a9bd2df87fbc16e8bf23b8ca49afb57ee7a3d6ec"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-non-conformant-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-not-positively-conformant"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-equivalence-classes"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "{ CGR-1 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ CGR-2 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ CGR-3 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ CGR-5 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ CGR-4 }"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-equivalence-collapsed"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-equivalence-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "normalisation par réponses normatives identiques sur la clôture CG-1, la clôture de domaine CG-2, la classification des variantes futures, la correspondance de D01 à D21 et les frontières prospectives : aucune paire de candidats construits n'est équivalente"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 / CGR-2 : factorisation de D12 / D16, distinction des directions, génération des valeurs, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 / CGR-3, CGR-2 / CGR-4 : principe de clôture de CG-1, responsabilité indépendante, classification des responsabilités futures"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-4 / CGR-5 : couplage et génération des valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 / CGR-4, CGR-1 / CGR-5, CGR-2 / CGR-3, CGR-2 / CGR-5, CGR-3 / CGR-4, CGR-3 / CGR-5 : plusieurs faits gouvernants"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-governing-facts"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R01 CG1_CLOSURE_PRINCIPLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R02 CG1_INDEPENDENCE_RULE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R03 CG1_FUTURE_RESPONSIBILITY_CLASSIFICATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R04 CG2_DIRECTION_FACTORIZATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R05 CG2_DIRECTION_DISTINCTNESS"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R06 CG1_CG2_COUPLING"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R07 CANONICAL_VALUE_GENERATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-tests"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "12"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-applicable"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a9bd2df87fbc16e8bf23b8ca49afb57ee7a3d6ec"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "l'autorité 63 B.13 : aucune dominance ni départage gelé n'est autorisé pour les règles de générateur de clôture ; la dominance d'option normative (autorité 58 B.16) ne se transplante pas"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-pairwise"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 / CGR-2 : aucune dominance applicable — conservés"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominated-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-new-semantics"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-transplanted"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "TWO_OR_MORE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-exists"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-tiebreak-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun départage déterministe gelé ; aucun principe gouvernant ratifié n'exige CGR-1 plutôt que CGR-2 ni l'inverse — l'autorité 62 A.9 tient les directions conditionnelles pour cohérentes et déterministes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unique-candidate-id"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-changing-unknown"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-partition-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "complétude de l'univers des responsabilités de règle de générateur de clôture — CRS-B NOT_ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "complétude des domaines de R01, de R02 et de R04 — CRS-C NOT_ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "conformité des candidats à critère de variation — NOT_ESTABLISHED sur CGS1, CGS2, CGS6, CGS10, CGS15"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune de ces inconnues ne peut changer l'issue finale : l'invariance vers MULTIPLE est établie"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "espace de candidats NOT_ESTABLISHED ; invariance positive de l'issue finale vers MULTIPLE, couvrant les candidats omis : la règle 0 ne préempte pas"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 et CGR-2 minimaux, conformes aux seize critères, matériellement distincts ; aucune dominance ni aucun départage applicable"
+          },
+          {
+            "type": "SCALAR",
+            "value": "règle 1 : MULTIPLE ; chemin S5 de l'autorité 64"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implied-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "OPEN"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implied-gate-type"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SELECTION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-gate-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CGR-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CGR-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-prospective-consequence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 : adoptée plus tard, fournirait à une étude fraîche de clôture d'espace d'options un univers de sept faits et deux directions totales ; les directions conditionnelles n'y engendreraient aucune option"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 : adoptée plus tard, fournirait un univers de sept faits et quatre directions indexées par l'état de clôture ; les directions conditionnées par l'état de clôture y engendreraient des options"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-3, CGR-4, CGR-5 : ne fourniraient pas un univers borné, faute de générateur"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-prospective-dominance-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-space-regenerated"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-space-claimed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-governing-rule-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-governing-rule-id"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-new-normative-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-direction-b-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-authorization"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "les candidats sont construits sur les seules valeurs déclarées de R01, de R02 et de R04 ; d'autres candidats peuvent exister et ne changeraient pas l'issue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune valeur AUTRE n'est laissée dans un domaine déclaré : les queues ouvertes sont rapportées comme domaines NOT_ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "l'effet d'une clôture future sur une lacune de dominance entre options n'est pas établi"
+          },
+          {
+            "type": "SCALAR",
+            "value": "une issue MULTIPLE analytique n'est pas une sélection humaine ; aucune règle n'est rendue gouvernante"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-completeness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CRS-B non établie : l'univers des responsabilités de règle de générateur de clôture n'a pas de base de complétude positive"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-C non établie, indépendamment : les domaines de R01 (principes de clôture de CG-1), de R02 (tables d'assignation) et de R04 (factorisations de la direction de canonicalisation) ont une queue admissible non bornée par une règle positive"
+          },
+          {
+            "type": "SCALAR",
+            "value": "le statut ne dérive ni du nombre de candidats construits, ni de leur conformité, ni de leur minimalité, ni de la cardinalité restante"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-first-failure"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "CRS-B — la liste des huit faits gouvernants de l'autorité 63 B.12 n'est fixée comme générateur fermé ni par elle-même ni par l'autorité 64, qui en exige la justification positive"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-proof-standard"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SEMANTIC"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GENERATIVE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REPRODUCIBLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NON_OBSERVATIONAL"
+          },
+          {
+            "type": "SCALAR",
+            "value": "exhaustion de recherche, stabilité d'inventaire et couverture des architectures évidentes : non employées"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-derived-from-count"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-c"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-d"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-e"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-f"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-g"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-h"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-obligation-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CRS-A ÉTABLIE : registre énoncé et borné de huit responsabilités (autorité 63 B.12)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-B NON ÉTABLIE : aucune base de complétude positive (parité avec l'autorité 62 A.5)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-C NON ÉTABLIE : R01, R02 et R04 ouverts ; domaine d'architectures R06 clos"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-D NON ÉTABLIE : règles complètes relativement aux seules valeurs déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-E NON ÉTABLIE : construction déterministe relativement aux seules valeurs déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-F ÉTABLIE : normalisation par l'autorité 63 B.12 — terminologie, nommage, mise en page, sérialisation et exemples ne créent aucun candidat ; équivalence par réponses normatives identiques"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-G NON ÉTABLIE : registre d'exclusion complet sur les 16 cellules construites, pas sur les queues ouvertes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CRS-H NON ÉTABLIE : aucune preuve que tout candidat admissible matériellement distinct corresponde à un candidat énuméré"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crs-failed-obligations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CRS-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CRS-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CRS-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CRS-E"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CRS-G"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CRS-H"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-universe-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R01 CG1_CLOSURE_PRINCIPLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R02 CG1_INDEPENDENCE_RULE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R03 CG1_FUTURE_RESPONSIBILITY_CLASSIFICATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R04 CG2_DIRECTION_FACTORIZATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R05 CG2_DIRECTION_DISTINCTNESS"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R06 CG1_CG2_COUPLING"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R07 CANONICAL_VALUE_GENERATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R08 PROSPECTIVE_CLOSURE_UNIVERSE"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a9bd2df87fbc16e8bf23b8ca49afb57ee7a3d6ec"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-universe-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-universe-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "registre énoncé et borné : les huit faits sémantiques gouvernants de l'autorité 63 B.12, sur lesquels seuls porte la distinction matérielle entre candidats ; l'ensemble d'inspection obligatoire de l'autorité 64 section 8 y correspond entièrement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "complétude non établie : l'autorité 63 B.12 a la même forme que l'autorité 58 B.15 — « seulement sur un fait sémantique gouvernant », suivi d'une liste — et l'autorité 62 A.5, ratifiée, tient qu'une telle liste n'est fixée comme générateur fermé ni par elle-même ni par une autorité qui exige une dérivation ; l'autorité 64 section 8 exige ici la même justification positive de l'univers complet et tient l'ensemble d'inspection pour un plancher"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune autre autorité gelée ne borne l'univers des responsabilités d'une règle de générateur de clôture ; énumérer davantage ne serait pas une base"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-inspection-set-covered"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a5fcdc5c4d1ba5d69765ecce26a34db14a2994c1"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-governing-question"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R01 : quel principe borne l'univers des responsabilités sémantiques gouvernantes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R02 : ce qui compte comme responsabilité indépendante : inclusion, exclusion, décomposition des composites, traitement des constantes et des variantes de seule représentation, correspondance de D01 à D21"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R03 : comment une responsabilité apparente future est classée : matérielle, dérivée, constante ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R04 : comment se factorisent les directions de canonicalisation de D12 / D16 : classe unique ou famille, et quelle factorisation en définit les membres"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R05 : ce qui rend deux directions de canonicalisation matériellement distinctes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R06 : l'intégration ou l'indépendance de CG-1 et de CG-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R07 : comment les valeurs sémantiques canoniques sont engendrées et comment une variante apparente future correspond à une valeur canonique ou à une exclusion positive"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R08 : quel univers de clôture prospectif une étude future de clôture d'espace d'options serait licenciée à engendrer"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-admissible-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R01 : B15_CLOSED_FACT_SET | OBLIGATION_VARIATION_CRITERION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R02 : EXPLICIT_FACT_ASSIGNMENT_TABLE | VARIATION_TEST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R03 : MAP_TO_FACT_OR_NON_MATERIAL | APPLY_VARIATION_TEST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R04 : TOTAL_TARGET_CLASS | CLOSURE_STATE_CONDITIONAL_FAMILY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R05 : DISTINCT_TOTAL_TARGET | DISTINCT_STATE_TO_TARGET_FUNCTION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R06 : INTEGRATED | INDEPENDENT | CG2_ON_CG1 | CG1_ON_CG2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R07 : ENUMERATE_TOTAL_TARGETS | GENERATE_ALL_STATE_FUNCTIONS"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R08 : DIMENSIONS_OF_THE_ADOPTED_UNIVERSE_WITH_CLOSED_DOMAINS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-value-completeness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R01 : NON CLOS — les deux valeurs déclarées viennent du corpus (lecture exhaustive de l'autorité 58 B.15 ; dérivation depuis les responsabilités et distinctions gouvernantes, autorité 61 B.7) ; aucune règle gelée n'engendre l'ensemble des principes de clôture admissibles, d'autres principes constitutifs restent possibles"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R02, R03 : une valeur déclarée par valeur de R01 ; NON CLOS — sous B15_CLOSED_FACT_SET, d'autres tables d'assignation explicites des dimensions aux sept faits sont admissibles et forment d'autres candidats"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R04 : NON CLOS — valeurs déclarées tirées de l'autorité 62 A.9 (directions inconditionnelles ; directions conditionnelles cohérentes et déterministes) ; aucune règle gelée ne borne le vocabulaire des conditions admissibles"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R05, R07 : dérivées de R04, closes relativement aux seules valeurs déclarées de R04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R06 : CLOS par partition logique — une détermination conjointe, ou deux déterminations dont la dépendance orientée est absente, de CG-2 vers CG-1 ou de CG-1 vers CG-2 ; la dépendance mutuelle se réduit à une détermination conjointe"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R08 : valeur unique, dérivée de R01 à R07"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R02 = EXPLICIT_FACT_ASSIGNMENT_TABLE ⇔ R01 = B15_CLOSED_FACT_SET"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R02 = VARIATION_TEST ⇔ R01 = OBLIGATION_VARIATION_CRITERION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R03 suit R02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R05 et R07 suivent R04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R04 = CLOSURE_STATE_CONDITIONAL_FAMILY ⇒ R06 ∈ { CG2_ON_CG1, INTEGRATED } : le vocabulaire d'état est tiré de l'univers de CG-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R04 = TOTAL_TARGET_CLASS ⇒ R06 ∈ { INDEPENDENT, INTEGRATED } : aucun contenu de CG-1 n'entre dans le domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R06 = INTEGRATED ⇒ R01 = OBLIGATION_VARIATION_CRITERION et R04 = CLOSURE_STATE_CONDITIONAL_FAMILY : une liste de faits n'engendre aucune valeur de direction, et un critère de variation appliqué aux directions compte les directions conditionnelles"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-incoherent-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R06 = CG1_ON_CG2 avec toute valeur déclarée de R01 : une liste fermée ne dépend de rien, et le critère de variation compte déjà l'axe de direction comme responsabilité sans dépendre de ses valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "R06 = CG2_ON_CG1 avec R04 = TOTAL_TARGET_CLASS : dépendance déclarée sans contenu dépendant"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-derived-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "direction conditionnée par la cardinalité du domaine (vide, singleton) : composition dérivée de D04 et D10 sous R02 = EXPLICIT_FACT_ASSIGNMENT_TABLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "direction conditionnée par l'état de clôture sous R04 = TOTAL_TARGET_CLASS : composition de deux cibles totales indexée par l'état de D07, dérivée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "direction vers une forme mixte : composition d'un découpage (D14 / D15) et des deux cibles totales, dérivée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-representation-only-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "nommage des valeurs de direction, sérialisation des cibles, ordre de présentation des conditions : autorité 63 B.12"
+          },
+          {
+            "type": "SCALAR",
+            "value": "formulation d'un même principe de clôture en termes de faits ou de questions : variante de formulation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-materiality-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "R01, R02, R03, R04, R05, R06, R07, R08 : chacune est l'un des huit faits sémantiques gouvernants de l'autorité 63 B.12, seuls créateurs de distinction matérielle entre candidats"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-value-domain-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-open-tail"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-resp-open-tail-bounding"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-arch-domain-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "INTEGRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INDEPENDENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CG2_ON_CG1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CG1_ON_CG2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-arch-domain-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-arch-domain-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "partition logique non observationnelle des relations entre la détermination de CG-1 et celle de CG-2 : une détermination conjointe (INTEGRATED), ou deux déterminations séparables dont chacune dépend ou non de l'autre"
+          },
+          {
+            "type": "SCALAR",
+            "value": "deux déterminations séparables : aucune dépendance (INDEPENDENT), CG-2 dépend de CG-1 (CG2_ON_CG1), CG-1 dépend de CG-2 (CG1_ON_CG2) ; une dépendance mutuelle n'est résoluble que conjointement et se réduit à INTEGRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "les exemples de l'autorité 63 B.10 ne sont pas présumés exhaustifs : la partition les contient et les borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-arch-examples-exhaustive"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-coupling-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-coupling-completeness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "les règles de couplage, de dépendance et d'incompatibilité sont complètes relativement aux seules valeurs déclarées de R01 et de R04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "des règles complètes sur des domaines non clos ne sont pas établissables : toute valeur future de R01 ou de R04 exigerait ses propres règles"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-coupling-incompatibility-rules"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "B15_CLOSED_FACT_SET avec INTEGRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B15_CLOSED_FACT_SET avec CG1_ON_CG2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "OBLIGATION_VARIATION_CRITERION avec CG1_ON_CG2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TOTAL_TARGET_CLASS avec CG2_ON_CG1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TOTAL_TARGET_CLASS avec INTEGRATED sous OBLIGATION_VARIATION_CRITERION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CLOSURE_STATE_CONDITIONAL_FAMILY avec INDEPENDENT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-raw-construction-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "produit cartésien des valeurs déclarées des trois responsabilités indépendantes R01 × R04 × R06, R02, R03, R05, R07 et R08 étant dérivées ; filtrage par les règles de dépendance et d'incompatibilité déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "la construction est déterministe relativement aux valeurs déclarées ; elle n'est pas complète au-delà, R01 et R04 étant ouverts"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-raw-cell-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "16"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-raw-cell-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CELL-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-16"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-raw-cell-assignments"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CELL-01 : R01=B15_CLOSED_FACT_SET · R04=TOTAL_TARGET_CLASS · R06=INTEGRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-02 : R01=B15_CLOSED_FACT_SET · R04=TOTAL_TARGET_CLASS · R06=INDEPENDENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-03 : R01=B15_CLOSED_FACT_SET · R04=TOTAL_TARGET_CLASS · R06=CG2_ON_CG1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-04 : R01=B15_CLOSED_FACT_SET · R04=TOTAL_TARGET_CLASS · R06=CG1_ON_CG2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-05 : R01=B15_CLOSED_FACT_SET · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=INTEGRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-06 : R01=B15_CLOSED_FACT_SET · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=INDEPENDENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-07 : R01=B15_CLOSED_FACT_SET · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=CG2_ON_CG1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-08 : R01=B15_CLOSED_FACT_SET · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=CG1_ON_CG2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-09 : R01=OBLIGATION_VARIATION_CRITERION · R04=TOTAL_TARGET_CLASS · R06=INTEGRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-10 : R01=OBLIGATION_VARIATION_CRITERION · R04=TOTAL_TARGET_CLASS · R06=INDEPENDENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-11 : R01=OBLIGATION_VARIATION_CRITERION · R04=TOTAL_TARGET_CLASS · R06=CG2_ON_CG1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-12 : R01=OBLIGATION_VARIATION_CRITERION · R04=TOTAL_TARGET_CLASS · R06=CG1_ON_CG2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-13 : R01=OBLIGATION_VARIATION_CRITERION · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=INTEGRATED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-14 : R01=OBLIGATION_VARIATION_CRITERION · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=INDEPENDENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-15 : R01=OBLIGATION_VARIATION_CRITERION · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=CG2_ON_CG1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-16 : R01=OBLIGATION_VARIATION_CRITERION · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=CG1_ON_CG2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-raw-regeneration-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "régénérable depuis rf-resp-admissible-values et rf-resp-dependencies : 16 cellules, 5 cohérentes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-raw-handpicked"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-cell-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CELL-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CELL-16"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "11"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-class"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CELL-01 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-03 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-04 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-05 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-06 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-08 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-09 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-11 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-12 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-14 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-16 : INCOHERENT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CELL-01 : une détermination conjointe exige un principe unique engendrant aussi les valeurs de direction : une liste de faits n'en engendre aucune"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-03 : dépendance CG2_ON_CG1 déclarée sans contenu dépendant"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-04 : aucun principe de CG-1 déclaré ne prend la sortie de CG-2 pour entrée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-05 : une détermination conjointe exige un principe unique engendrant aussi les valeurs de direction : une liste de faits n'en engendre aucune"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-06 : une famille conditionnelle tire son vocabulaire d'état de CG-1 : l'indépendance est contradictoire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-08 : aucun principe de CG-1 déclaré ne prend la sortie de CG-2 pour entrée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-09 : une détermination conjointe exige un principe unique engendrant aussi les valeurs de direction : le critère de variation compte les directions conditionnelles, incompatible avec une classe de cibles totales"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-11 : dépendance CG2_ON_CG1 déclarée sans contenu dépendant"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-12 : aucun principe de CG-1 déclaré ne prend la sortie de CG-2 pour entrée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-14 : une famille conditionnelle tire son vocabulaire d'état de CG-1 : l'indépendance est contradictoire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-16 : aucun principe de CG-1 déclaré ne prend la sortie de CG-2 pour entrée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-admissibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CELL-01 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-03 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-04 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-05 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-06 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-08 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-09 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-11 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-12 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-14 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-16 : NO"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-exclusion-forbidden-grounds"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mapping-canonical-per-cell"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CELL-02 → CGR-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-07 → CGR-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-10 → CGR-3"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-13 → CGR-5"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CELL-15 → CGR-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mapping-unmapped-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mapping-ambiguous-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mapping-preference-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mapping-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "toute complétion admissible ajoute des candidats et ne retire rien : la conformité, la minimalité et la distinction de CGR-1 et de CGR-2 sont éprouvées contre les critères gelés et leurs propres composants, non contre les autres candidats"
+          },
+          {
+            "type": "SCALAR",
+            "value": "un candidat omis ne peut rendre CGR-1 et CGR-2 équivalents : l'équivalence porte sur leurs propres réponses normatives, qui diffèrent"
+          },
+          {
+            "type": "SCALAR",
+            "value": "un candidat omis ne peut écarter CGR-1 ni CGR-2 : aucune dominance ni aucun départage applicable aux règles de générateur de clôture n'existe dans le corpus gelé, et une complétion ajoute des candidats, non des sémantiques gelées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucun principe gouvernant ratifié n'exige déterministement un ensemble de règles, omis ou non : l'autorité 62 B.1 et B.2 constate que la règle manque et qu'aucune règle gelée ne choisit ; un candidat omis ne crée aucun principe ratifié"
+          },
+          {
+            "type": "SCALAR",
+            "value": "donc, sous toute complétion, deux candidats minimaux conformes matériellement distincts au moins demeurent sans sélecteur : l'issue terminale est MULTIPLE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-covers-omitted"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-outcome"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-impossibility-established"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-impossibility-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "sans objet : deux candidats bornés positivement conformes existent"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-removal-outcomes"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 − K1 : CG-1 non résolue, CGS1 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 − K2 : correspondance de D01 à D21 indéterminée, CGS1 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 − K3 : disposition absente, CGS15 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 − K4 : CG-2 non résolue, CGS1 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 − K5 : variantes conditionnelles non classées, queue AUTRE rouverte, CGS10 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-1 − K6 : architecture non spécifiée, candidat incomplet — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 − K1 : CG-1 non résolue, CGS1 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 − K2 : correspondance de D01 à D21 indéterminée, CGS1 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 − K3 : disposition absente, CGS15 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 − K4 : CG-2 non résolue, CGS1 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 − K5 : variantes conditionnelles non classées, queue AUTRE rouverte, CGS10 à NO — composant requis"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CGR-2 − K6 : architecture non spécifiée, candidat incomplet — composant requis"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-materially-different"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-nonminimal-nonconformant"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-simplicity-preference"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unique-requires-closure"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-multiple-requires-closure"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-none-requires-impossibility"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-known-plurality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-known-single"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-multiple-precondition"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-02"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "R01=B15_CLOSED_FACT_SET · R04=TOTAL_TARGET_CLASS · R06=INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CGS16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-1.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MINIMAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-07"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "R01=B15_CLOSED_FACT_SET · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=CG2_ON_CG1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CGS16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-2.MINIMALITY"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MINIMAL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "R01=OBLIGATION_VARIATION_CRITERION · R04=TOTAL_TARGET_CLASS · R06=INDEPENDENT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CGS16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-3.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-13"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "R01=OBLIGATION_VARIATION_CRITERION · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=INTEGRATED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CGS16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-5.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CELL-15"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "R01=OBLIGATION_VARIATION_CRITERION · R04=CLOSURE_STATE_CONDITIONAL_FAMILY · R06=CG2_ON_CG1"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CGS16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.CGR-4.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R01.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG1_CLOSURE_PRINCIPLE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R01.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "B15_CLOSED_FACT_SET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "OBLIGATION_VARIATION_CRITERION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R01.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R02.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG1_INDEPENDENCE_RULE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R02.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "EXPLICIT_FACT_ASSIGNMENT_TABLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "VARIATION_TEST"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R02.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R03.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG1_FUTURE_RESPONSIBILITY_CLASSIFICATION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R03.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MAP_TO_FACT_OR_NON_MATERIAL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "APPLY_VARIATION_TEST"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R03.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R04.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG2_DIRECTION_FACTORIZATION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R04.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "TOTAL_TARGET_CLASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CLOSURE_STATE_CONDITIONAL_FAMILY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R04.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R05.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG2_DIRECTION_DISTINCTNESS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R05.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DISTINCT_TOTAL_TARGET"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "DISTINCT_STATE_TO_TARGET_FUNCTION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R05.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R06.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CG1_CG2_COUPLING"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R06.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "INTEGRATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INDEPENDENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CG2_ON_CG1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CG1_ON_CG2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R06.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R07.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANONICAL_VALUE_GENERATION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R07.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "ENUMERATE_TOTAL_TARGETS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GENERATE_ALL_STATE_FUNCTIONS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R07.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R08.NAME"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROSPECTIVE_CLOSURE_UNIVERSE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R08.VALUE_DOMAIN"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "DIMENSIONS_OF_THE_ADOPTED_UNIVERSE_WITH_CLOSED_DOMAINS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "responsibility.R08.DOMAIN_COMPLETENESS"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "inspection.CORRESPONDENCE"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "principe de clôture CG-1 → R01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ce qui compte comme responsabilité sémantique gouvernante → R02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "indépendance et décomposition des responsabilités → R02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "classification dérivée, composite ou constante → R02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "exclusion de seule représentation → R02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "borne positive de l'univers des responsabilités gouvernantes → R01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "correspondance et refactorisation de D01..D21 → R02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "principe de clôture des directions de canonicalisation CG-2 → R04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "factorisation des directions de canonicalisation → R04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "distinction matérielle entre directions de canonicalisation → R05"
+          },
+          {
+            "type": "SCALAR",
+            "value": "classification des variantes futures → R03 · R07"
+          },
+          {
+            "type": "SCALAR",
+            "value": "génération canonique de valeurs de direction de canonicalisation → R07"
+          },
+          {
+            "type": "SCALAR",
+            "value": "exclusion positive des variations dérivées, non matérielles ou de seule représentation → R05 · R07"
+          },
+          {
+            "type": "SCALAR",
+            "value": "architecture de couplage CG-1 / CG-2 → R06"
+          },
+          {
+            "type": "SCALAR",
+            "value": "sémantique de frontière du futur générateur d'options → R08"
+          }
+        ]
+      }
+    }
+  ]
+}
