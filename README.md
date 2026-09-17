@@ -189,6 +189,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md`](64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md) — correction bornée du contrat analytique de la mission 010, sans décision humaine nouvelle. L'autorité 63 demandait de construire des ensembles de règles candidats, de les éprouver et de retourner une issue, sans jamais dire d'où vient l'ensemble des candidats ni ce qui autoriserait à le déclarer complet : l'étude de la règle de clôture manquante reproduisait d'un étage le défaut qu'elle traite, et pouvait atteindre UNIQUE en ne construisant qu'un seul candidat conforme. Un inventaire de règles candidates n'est pas une clôture d'espace, et un candidat connu n'est pas un candidat unique. Sur 320 états d'analyse, l'ancien contrat admettait 20 chemins vers UNIQUE depuis un espace non clos ; le contrat corrigé en admet zéro.
 - [`65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md`](65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée de la mission 010, ratifiée, puis une porte humaine de direction de suite. Le verdict de la qualification est supersédé : comme l'exécutant, elle tient CGS2 à YES pour CGR-1 et CGR-2 sur une lecture défendable de « génératif », sens qu'aucun texte gelé ne fixe. Une lecture défendable d'un critère ambigu ne porte ni un NO ni un YES positif, et non positivement conforme n'est pas positivement non conforme. RULE_0 et INSUFFICIENT l'emportent sur le MULTIPLE rapporté : aucun candidat n'est encore établi conforme, ce qui ne veut pas dire qu'aucun n'existe. Restent deux problèmes distincts, quels ensembles de règles existent et comment un candidat donné se juge, et rien ne dit lequel traiter d'abord.
 - [`66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de la direction ADDRESS_CANDIDATE_RULE_SPACE_CLOSURE_SEMANTICS, puis le gel de la mission 011. L'étude ne construit pas de meilleurs candidats que la mission 010 : elle étudie ce qui ferait que l'ensemble des candidats possibles soit borné. C'est la troisième fois que la même lacune réapparaît un étage plus haut, et le contrat interdit d'en ajouter un quatrième : la mission 011 clôt positivement son propre espace de candidats, ou elle retourne INSUFFICIENT. CGS2 et CGS6 restent intouchés, et aucun candidat ne peut être préféré parce qu'il rendrait conformes les candidats CGR-1 et CGR-2 de la mission 010.
+- [`67-HANDOFF-ROUTING-MISSION011-QUALIFICATION-CORRECTION-AND-FOLLOWON-DIRECTION-GATE.md`](67-HANDOFF-ROUTING-MISSION011-QUALIFICATION-CORRECTION-AND-FOLLOWON-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée de la mission 011, ratifiée, puis une porte humaine de direction de suite. Le verdict de la qualification est supersédé : comme l'exécutant, elle prend la liste de spécification exigée pour l'univers et exige une phrase d'exhaustivité, là où la sémantique de distinction matérielle de l'autorité 66 borne déjà toute différence matérielle aux huit réponses gouvernantes. Une caractéristique nouvelle doit se projeter sur une dimension déjà gouvernante ; elle peut créer une valeur, une dépendance ou une architecture, pas une neuvième responsabilité. Où une différence peut vivre n'est pas toute valeur que cet endroit peut prendre : MCS-B est établie, MCS-C ne l'est pas. L'étiquette ne bouge pas, le blocage a changé d'étage.
 
 ## Outillage
 
@@ -445,7 +446,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -464,7 +465,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -616,7 +617,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -768,7 +769,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -810,7 +811,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1004,7 +1005,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1040,7 +1041,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1238,7 +1239,7 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
 = mission 010 : NONE
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
 = CLOSED / SELECTED
@@ -1286,7 +1287,7 @@ HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
   it has several, that D12 / D16 must keep its current factorization, what
   constitutive closure principle governs the model, or what any future
   governing closure rule is
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1631,7 +1632,7 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 011 : EXECUTED BY CCR_LAB_FIX_1 · result011 persisted · qualification PENDING
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1671,10 +1672,11 @@ HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
   architectures are admissible, which candidate-rule-space closure rule should
   govern, whether any existing CGR candidate is conformant, what "generative"
   means under CGS2, what CGS6 means, or which closure-generator rule to adopt
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
-= EXECUTED BY CCR_LAB_FIX_1 · CONTRACT FROZEN
+= EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
+= authority 66 : CLOSED AS THE EXECUTED MISSION-011 CONTRACT
   66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
 = category : NORMATIVE CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY — not
   another Mission-010 candidate enumeration, not a rerun of the 16 / 5
@@ -1821,26 +1823,131 @@ CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = executor-reported final outcome :
   INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_CANDIDATE_RULE_SPACE_CLOSURE_SEMANTICS
 = executor-reported implied human normative gate : NOT_OPEN / NONE
-= THE EXECUTOR-REPORTED OUTCOME IS NOT A QUALIFIED OUTCOME — RULE_0 is NOT
-  independently qualified
-= independent qualification : PENDING
-= material qualification targets : MCS-B constitutive completeness — no
-  explicit upper-bound sentence versus no positive derivable constitutive upper
-  bound · MR01..MR21 classification · MR01 / MR10 / MR12 domain completeness ·
-  coupling completeness · MCSG2 under authority 66, without importing CGS2's
-  ambiguity from the shared word "generative" · MCSG7 / MCSG9 / MCSG11 / MCSG18
-  of MCS-1..MCS-8, including the positive NO of MCS-7 / MCS-8 · unknown
-  materiality · outcome invariance, recomputing
-  partition.multiple_closure_or_invariance_satisfied from its sources ·
-  corrected Rule 0 / Rule 1 / Rule 2 / Rule 3
-= candidate-rule-space closure semantics : NOT SELECTED
-= closure-generator rule : NOT SELECTED
-= CGS2 / CGS6 : UNCHANGED
-= normative quantification option : NOT SELECTED
-= dominance semantics : NOT SELECTED
+= THE EXECUTOR-REPORTED OUTCOME WAS NOT A QUALIFIED OUTCOME — the qualified
+  outcome below comes from the corrected qualification, not from the executor
+= independent qualification : DONE — CCR LAB FIX #1, sealed passes
+  67-HANDOFF-ROUTING-MISSION011-QUALIFICATION-CORRECTION-AND-FOLLOWON-DIRECTION-GATE.md
+= execution / result production / result persistence : PASS / PASS / PASS
+= qualification execution / structural qualification : PASS / PASS
+= result011 byte identity : PASS · return contract 209 / 209 · 0 missing ·
+  0 unexpected · 0 duplicates
+= STRUCTURAL CORRECTNESS ESTABLISHES NO ANALYTICAL TRUTH
+= reported qualification : PASS WITH LIMITATIONS · CONFIRMED_WITH_LIMITATIONS =
+  REJECTED / SUPERSEDED
+= reason : the qualification, like the executor, takes the twenty-one items of
+  authority-66 §B.9 — a required specification minimum — for the responsibility
+  universe and keeps MCS-B open for lack of an exhaustiveness sentence, while the
+  §B.15 material-distinctness semantics already constrains every materially
+  distinct Mission-011 candidate to differ on one or more of the eight governing
+  answers
+= A NEW MATERIAL FEATURE MUST PROJECT ONTO AN ALREADY-GOVERNING ANSWER
+  DIMENSION — it may create a new value, substructure, dependency,
+  instantiation or architecture, but NOT a ninth independent material
+  responsibility dimension · A REQUIRED SPECIFICATION LIST IS NOT A
+  MATERIAL-DISTINCTNESS RULE
+= RESPONSIBILITY-UNIVERSE COMPLETENESS IS NOT VALUE-DOMAIN COMPLETENESS —
+  WHERE A MATERIAL DIFFERENCE CAN LIVE IS NOT EVERY VALUE THAT LOCATION CAN
+  TAKE; §B.15 positively bounds the first and does not close the second
+= qualified responsibility model : the eight governing answers — object
+  constitution on MR01, independent · universe closure on MR02..MR09, derived ·
+  value-domain closure on MR10 / MR11, independent · coupling closure on
+  MR12 / MR13, independent · identity on MR14, normalization on MR15..MR17,
+  future extension on MR18..MR20, prospective boundary on MR21, derived — this
+  does NOT claim any currently declared value or architecture is complete
+= MCS-A : ESTABLISHED, current bounded responsibility model
+= MCS-B : ESTABLISHED — positive generative basis: the authority-66
+  material-distinctness rule bounds every material distinction to one or more
+  of the eight governing answers; no further exhaustiveness sentence is required
+= MCS-C : NOT_ESTABLISHED — MR01, MR10 and MR12 domains open; hybrid
+  constitutions, mixed closure regimes, partial deferral, conditional
+  architectures and additional instantiations belong here or downstream, and do
+  NOT reopen MCS-B
+= FIRST QUALIFIED CLOSURE FAILURE : MCS-C — corrected from the reported MCS-B
+= MCS-D / MCS-E : NOT_ESTABLISHED GLOBALLY, valid relative to the declared
+  values only · MCS-F ESTABLISHED relative to the declared generator · MCS-G
+  NOT_ESTABLISHED GLOBALLY, complete over the 18 emitted cells · MCS-H
+  NOT_ESTABLISHED
+= 18 raw / 8 canonical : valid generated-model findings, NOT the complete M11
+  candidate universe
+= M11 candidate-space completeness : NOT_ESTABLISHED — on the corrected basis
+  MCS-C open, MCS-D / E / H consequently not global; the MCS-B failure is no
+  longer a basis
+= executor corrected qualification : FAIL · CONTRADICTED_MATERIALLY · material
+  errors : 1 — ME-1, MCS-B classified NOT_ESTABLISHED though the
+  material-distinctness rule positively bounds material difference; the error
+  moves a load-bearing closure obligation, so the same terminal label does not
+  make it non-material · non-material : MCSG2 grounded on CGS2's ambiguity;
+  stipulated domains stated as forms without fully stipulated models
+= qualification material analytical errors : 1 — Q-MAE-1, the same MCS-B error;
+  the sealed passes are NOT altered
+= MCSG18 retained : prospective sufficiency criterion, actual downstream
+  application FORBIDDEN, prospective analytical sufficiency PERMITTED and
+  REQUIRED · satisfiable in principle by a fully stipulated model, which the
+  executor's construction does not contain
+= MCSG2 : UNRESOLVED — whether a complete normative stipulation plus a
+  deterministic future-case classifier satisfies authority 66's local
+  criterion; CGS2's ambiguity is NOT imported and no criterion semantics is
+  defined. Authority 67 does NOT resolve it
+= candidate conformance : MCS-1..MCS-6 not positively conformant · MCS-7 /
+  MCS-8 positively non-conformant · a fully stipulated model NOT FINALLY
+  QUALIFIED pending corrected MCSG2 qualification · positively established
+  conformant roster EMPTY · complete conformance roster NOT_ESTABLISHED
+= outcome invariance : NOT_ESTABLISHED, on the corrected basis — MCS-C open,
+  MCS-D / E / H globally incomplete, new generated candidates still possible
+  inside the already-bounded eight-answer model, conformance incompletely
+  qualified while MCSG2 is unresolved, no positively applicable selector;
+  MCS-B ESTABLISHED IS NOT M11 SPACE CLOSED
+= RULE_0 : SATISFIED · RULE_1 : NOT_ESTABLISHED / PREEMPTED · RULE_2 :
+  NOT_SATISFIED, M11 space completeness not established · RULE_3 :
+  NOT_SATISFIED, no exhaustive impossibility
+= qualified decisive rule : RULE_0
+= qualified final outcome :
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_CANDIDATE_RULE_SPACE_CLOSURE_SEMANTICS
+= qualified implied human normative gate : NOT_OPEN / NONE — authority 59
+  remains governing
+= mission 012 : NONE
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
+
+HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
+= OPEN
+  67-HANDOFF-ROUTING-MISSION011-QUALIFICATION-CORRECTION-AND-FOLLOWON-DIRECTION-GATE.md
+= this is NOT the human normative adoption / selection gate, which stays NOT
+  OPEN — two different gates
+= Mission 011 leaves two materially distinct qualified problem classes:
+  CLASS A, M11 VALUE / ARCHITECTURE DOMAIN CLOSURE SEMANTICS — complete
+  material value domains for the already-qualified responsibility / answer
+  model, complete architecture and coupling domains, and the downstream
+  dependencies and construction needed for M11 candidate-space closure:
+  principally MCS-C, then MCS-D / E / H · CLASS B, M11 CANDIDATE
+  CONFORMANCE-CRITERION QUALIFICATION — at minimum MCSG2, whether authority
+  66's local semantic / generative closure criterion is satisfied by
+  constitutive normative stipulation plus deterministic future-case
+  classification: how already-generated candidates are classified
+= VALUE / ARCHITECTURE SPACE CLOSURE IS NOT CANDIDATE CONFORMANCE-CRITERION
+  SEMANTICS
+= option A : ADDRESS_M11_VALUE_ARCHITECTURE_DOMAIN_CLOSURE_SEMANTICS — a
+  bounded normative study of the complete material value / architecture domains
+  and the coupling / dependency closure needed for the already-bounded
+  Mission-011 responsibility model; it does NOT declare current values
+  exhaustive, select a candidate, resolve MCSG2, adopt closure semantics, apply
+  anything to Mission 010 or implement anything
+= option B : ADDRESS_M11_MCSG2_CONFORMANCE_CRITERION_SEMANTICS — a bounded
+  qualification / normative-semantics study of the exact local meaning of MCSG2
+  under authority 66, without importing CGS2 ambiguity or inventing any
+  further requirement; it does NOT close MCS-C, close the M11
+  candidate space, make a fully stipulated model conformant, select a candidate,
+  adopt closure semantics or implement anything
+= direction selected : NONE — no frozen deterministic rule chooses A or B; A is
+  not auto-selected because MCS-C is now the first RULE_0 blocker, and B is not
+  auto-selected because MCSG2 suspends a fully stipulated model's conformance
+= parking the line or changing overall Lab program direction remains a separate
+  human program-direction decision
+= mission 012 : NONE · no executor reserved · no new study contract
+= candidate-rule-space closure semantics : NOT SELECTED · closure-generator
+  rule : NOT SELECTED · normative quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -1936,7 +2043,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -2256,7 +2363,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -2265,13 +2372,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #44 INDEPENDENTLY QUALIFIES RESULT011
+= next : OBTAIN HUMAN MISSION-011 FOLLOW-ON DIRECTION
 
 CURRENT LAB STREAM
 = NONE
