@@ -1,0 +1,7091 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "handoff-routing-candidate-rule-space-closure-semantics-study-011"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/011-handoff-routing-candidate-rule-space-closure-semantics-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "48e32e6fd3c044f6e00241cad8cce3ddd62fe4ec"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "CCR_LAB_FIX_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/011-handoff-routing-candidate-rule-space-closure-semantics-study/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "48e32e6fd3c044f6e00241cad8cce3ddd62fe4ec"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "handoff-routing-candidate-rule-space-closure-semantics-study-011 @ ca8a3c7a4683c6a05bd72fd60f6d4ecefc72924c"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-evidence-cut"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ca8a3c7a4683c6a05bd72fd60f6d4ecefc72924c"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-technical-baseline"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a5d72edc806ac76f8f2f84ebb213215cf15dd22d"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conv-reconstruction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-session-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-counter-expert-prose"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-system-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-external-web"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-incident-source"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-crs-a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-crs-b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-crs-c"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-space-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-responsibility-model"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "R01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "R09"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "25038060d2cbc4c8212c05864904477ad13cb7fe"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-model-as-universe"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-raw-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "16"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-canonical-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "5"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-conformant-empty"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-cgs2-ambiguity"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-cgs6-ambiguity"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-qualified-outcome"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "RULE_0 · INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0404c162dd2535014c7d124bd02a36ed86dba307"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-direction"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ADDRESS_CANDIDATE_RULE_SPACE_CLOSURE_SEMANTICS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "25038060d2cbc4c8212c05864904477ad13cb7fe"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-direction-b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-start-divergences"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-crsc1"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CRSC-1 : quel univers complet de responsabilités matérielles une règle candidate de générateur de clôture peut porter"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-crsc2"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CRSC-2 : quel domaine complet de valeurs ou d'architectures matérielles chaque responsabilité admet"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-crsc3"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CRSC-3 : quel domaine complet d'architectures de couplage, de dépendance et d'incompatibilité"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-crsc4"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CRSC-4 : quelle sémantique complète d'identité, de normalisation, d'exclusion et de correspondance canonique des candidats"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-crsc5"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "CRSC-5 : comment une responsabilité, une valeur ou une architecture apparemment nouvelle est classée déterministement sans rouvrir une queue AUTRE non bornée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-answer-presumed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-question-meta-level"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-completeness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-B non établie : le minimum de l'autorité 66 B.9 est déclaré non automatiquement exhaustif et aucune décomposition constitutive ne borne l'univers des responsabilités d'une sémantique de clôture d'espace de règles candidates"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-C non établie, indépendamment : MR01, MR10 et MR12 ont une queue admissible non bornée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "statut indépendant du nombre de candidats, de leur conformité, de leur minimalité et de la cardinalité"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-first-failure"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MCS-B — base de complétude positive de l'univers des responsabilités M11 non établie"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-proof-standard"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "SEMANTIC"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "GENERATIVE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REPRODUCIBLE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NON_OBSERVATIONAL"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-derived-from-count"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-c"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-d"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-e"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-f"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-g"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-h"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-obligation-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-A ÉTABLIE : registre énoncé et borné de vingt et une responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-B NON ÉTABLIE : minimum non exhaustif, aucune base générative"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-C NON ÉTABLIE : MR01, MR10, MR12 ouverts"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-D NON ÉTABLIE : complète relativement aux seules valeurs déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-E NON ÉTABLIE : construction déterministe relativement aux seules valeurs déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-F ÉTABLIE relativement au générateur déclaré : normalisation par réponses gouvernantes identiques (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-G NON ÉTABLIE globalement : registre d'exclusion complet sur les 18 cellules construites"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-H NON ÉTABLIE : aucune preuve de correspondance de tout candidat admissible"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-failed-obligations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-B"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-C"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-D"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-E"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-G"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-H"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-universe-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MR01 OBJECT_TYPE_CONSTITUTION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR02 RESPONSIBILITY_MEMBERSHIP_RULE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR03 RESPONSIBILITY_NON_MEMBERSHIP_RULE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR04 INDEPENDENCE_AND_DECOMPOSITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR05 DERIVED_RESPONSIBILITIES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR06 COMPOSITE_RESPONSIBILITIES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR07 CONSTANT_RESPONSIBILITIES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR08 REPRESENTATION_ONLY_EXCLUSION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR09 RESPONSIBILITY_UNIVERSE_CLOSURE_PRINCIPLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR10 VALUE_DOMAIN_CLOSURE_PRINCIPLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR11 VALUE_MATERIAL_DISTINCTNESS"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR12 ARCHITECTURE_AND_COUPLING_DOMAIN_CLOSURE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR13 DEPENDENCY_AND_INCOMPATIBILITY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR14 CANDIDATE_IDENTITY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR15 CANDIDATE_EQUIVALENCE_AND_NORMALIZATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR16 POSITIVE_EXCLUSION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR17 CANONICAL_MAPPING"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR18 FUTURE_RESPONSIBILITY_CLASSIFICATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR19 FUTURE_VALUE_AND_ARCHITECTURE_CLASSIFICATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR20 NO_OPEN_TAIL_PROOF"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR21 PROSPECTIVE_CONSEQUENCE"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "25038060d2cbc4c8212c05864904477ad13cb7fe"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-universe-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-universe-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "registre énoncé et borné : les vingt et une responsabilités exigées par l'autorité 66 section B.9"
+          },
+          {
+            "type": "SCALAR",
+            "value": "complétude non établie : l'autorité 66 déclare ce minimum obligatoire et non automatiquement exhaustif, et exige que MCS-B établisse positivement l'univers ; une liste exigée n'est pas un générateur fermé (autorité 62 A.5, autorité 65 A.8) ; aucune décomposition constitutive du type « sémantique de clôture d'espace de règles candidates » n'est fournie par le corpus admis"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-minimum-covered"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "25038060d2cbc4c8212c05864904477ad13cb7fe"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-governing-question"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MR01 : object type constitution"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR02 : responsibility membership rule"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR03 : responsibility non membership rule"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR04 : independence and decomposition"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR05 : derived responsibilities"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR06 : composite responsibilities"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR07 : constant responsibilities"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR08 : representation only exclusion"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR09 : responsibility universe closure principle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR10 : value domain closure principle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR11 : value material distinctness"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR12 : architecture and coupling domain closure"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR13 : dependency and incompatibility"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR14 : candidate identity"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR15 : candidate equivalence and normalization"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR16 : positive exclusion"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR17 : canonical mapping"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR18 : future responsibility classification"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR19 : future value and architecture classification"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR20 : no open tail proof"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR21 : prospective consequence"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-admissible-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MR01 : SPECIFICATION_SLOT_TYPE | GOVERNING_FACT_TYPE | VARIATION_TYPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR09 : ADOPTED_SLOT_LIST | ADOPTED_FACT_LIST | CRITERION_ONLY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR10 : STIPULATED_FINITE_DOMAINS | ANSWER_TYPE_FUNCTION_SPACE | CRITERION_ONLY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR12 : OUTPUT_DEPENDENCY_PARTITION | STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR02..MR08, MR11, MR13..MR21 : dérivées du type constitué (MR01) et des principes de clôture (MR09, MR10, MR12)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-value-completeness-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MR01 : NON CLOS — les trois types déclarés viennent du corpus (emplacements de spécification exigés par l'autorité 63 B.8 à B.10 ; faits gouvernants de l'autorité 63 B.12 ; critère de variation) ; aucune règle gelée n'engendre les constitutions admissibles"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR09 : dérivée de MR01 ; aucune règle ne borne les principes de clôture d'univers admissibles"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR10 : NON CLOS — un espace de fonctions sur un type de réponse n'est borné que si ce type l'est, et les types de réponse des emplacements, dont le principe de clôture de CG-1, ne le sont pas"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR12 : NON CLOS — la granularité de la distinction matérielle entre architectures n'est pas fixée (autorité 65 A.10)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MR09 = ADOPTED_SLOT_LIST ⇔ MR01 = SPECIFICATION_SLOT_TYPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR09 = ADOPTED_FACT_LIST ⇔ MR01 = GOVERNING_FACT_TYPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR09 = CRITERION_ONLY ⇔ MR01 = VARIATION_TYPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR10 = CRITERION_ONLY ⇔ MR01 = VARIATION_TYPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR10 = ANSWER_TYPE_FUNCTION_SPACE ⇒ MR01 = SPECIFICATION_SLOT_TYPE : seuls les emplacements portent un type de réponse"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR01 = GOVERNING_FACT_TYPE ⇒ MR10 = STIPULATED_FINITE_DOMAINS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-incoherent-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MR10 = CRITERION_ONLY avec un type constitué par liste"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR10 = ANSWER_TYPE_FUNCTION_SPACE hors SPECIFICATION_SLOT_TYPE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR01 = VARIATION_TYPE avec un domaine de valeurs stipulé ou fonctionnel"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-derived-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MR09 dérivée de MR01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR02, MR03, MR18 dérivées de MR01 et MR09"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR11, MR19 dérivées de MR10"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR13 dérivée de MR12"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR14, MR15, MR17 dérivées de MR01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MR20 dérivée de MR09, MR10, MR12"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-representation-only-values"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "nommage des emplacements, ordre des faits, sérialisation des domaines : autorité 66 B.15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-materiality-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "chaque responsabilité change au moins une réponse gouvernante de l'autorité 66 B.15 : constitution d'objet, clôture d'univers, de domaine ou de couplage, identité, normalisation, extension future, frontière prospective"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-value-domain-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-open-tail"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsr-open-tail-bounding"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-coupling-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-coupling-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "règles de dépendance complètes relativement aux seules valeurs déclarées ; non établissables sur des domaines ouverts"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcs-incompatibility-rules"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "GOVERNING_FACT_TYPE avec ANSWER_TYPE_FUNCTION_SPACE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "VARIATION_TYPE avec STIPULATED_FINITE_DOMAINS"
+          },
+          {
+            "type": "SCALAR",
+            "value": "VARIATION_TYPE avec ANSWER_TYPE_FUNCTION_SPACE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "type par liste avec CRITERION_ONLY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-raw-construction-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "produit des valeurs déclarées de MR01 × MR10 × MR12, MR09 et les autres responsabilités dérivées ; filtrage par les dépendances déclarées ; déterministe relativement aux seules valeurs déclarées"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-raw-cell-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "18"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-raw-cell-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-16"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-17"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-18"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-raw-cell-assignments"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-01 : MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-02 : MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-03 : MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-04 : MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-05 : MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=CRITERION_ONLY · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-06 : MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=CRITERION_ONLY · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-07 : MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-08 : MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-09 : MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-10 : MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-11 : MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=CRITERION_ONLY · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-12 : MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=CRITERION_ONLY · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-13 : MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=STIPULATED_FINITE_DOMAINS · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-14 : MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=STIPULATED_FINITE_DOMAINS · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-15 : MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-16 : MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=STIPULATED_ARCHITECTURE_LIST"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-17 : MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=CRITERION_ONLY · MR12=OUTPUT_DEPENDENCY_PARTITION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-18 : MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=CRITERION_ONLY · MR12=STIPULATED_ARCHITECTURE_LIST"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-raw-regeneration-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "régénérable depuis rf-mcsr-admissible-values et rf-mcsr-dependencies : 18 cellules, 8 cohérentes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-raw-handpicked"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-exclusion-cell-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "M11-CELL-16"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-exclusion-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "10"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-exclusion-class"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-05 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-06 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-09 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-10 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-11 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-12 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-13 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-14 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-15 : INCOHERENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-16 : INCOHERENT"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-exclusion-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-05 : SPECIFICATION_SLOT_TYPE × CRITERION_ONLY contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-06 : SPECIFICATION_SLOT_TYPE × CRITERION_ONLY contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-09 : GOVERNING_FACT_TYPE × ANSWER_TYPE_FUNCTION_SPACE contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-10 : GOVERNING_FACT_TYPE × ANSWER_TYPE_FUNCTION_SPACE contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-11 : GOVERNING_FACT_TYPE × CRITERION_ONLY contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-12 : GOVERNING_FACT_TYPE × CRITERION_ONLY contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-13 : VARIATION_TYPE × STIPULATED_FINITE_DOMAINS contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-14 : VARIATION_TYPE × STIPULATED_FINITE_DOMAINS contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-15 : VARIATION_TYPE × ANSWER_TYPE_FUNCTION_SPACE contredit les dépendances déclarées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-16 : VARIATION_TYPE × ANSWER_TYPE_FUNCTION_SPACE contredit les dépendances déclarées"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-exclusion-admissibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-05 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-06 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-09 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-10 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-11 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-12 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-13 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-14 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-15 : NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-16 : NO"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-exclusion-not-established-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-exclusion-forbidden-grounds"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-mapping-canonical-per-cell"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-01 → MCS-1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-02 → MCS-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-03 → MCS-3"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-04 → MCS-4"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-07 → MCS-5"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-08 → MCS-6"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-17 → MCS-7"
+          },
+          {
+            "type": "SCALAR",
+            "value": "M11-CELL-18 → MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-mapping-unmapped-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-mapping-ambiguous-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-mapping-preference-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-m11-mapping-completeness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-canonical-roster"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-canonical-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "8"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-components"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : constitution SPECIFICATION_SLOT_TYPE · clôture d'univers ADOPTED_SLOT_LIST · clôture de domaine STIPULATED_FINITE_DOMAINS · couplage OUTPUT_DEPENDENCY_PARTITION · identité, normalisation, exclusion, correspondance et extension dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : constitution SPECIFICATION_SLOT_TYPE · clôture d'univers ADOPTED_SLOT_LIST · clôture de domaine STIPULATED_FINITE_DOMAINS · couplage STIPULATED_ARCHITECTURE_LIST · identité, normalisation, exclusion, correspondance et extension dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : constitution SPECIFICATION_SLOT_TYPE · clôture d'univers ADOPTED_SLOT_LIST · clôture de domaine ANSWER_TYPE_FUNCTION_SPACE · couplage OUTPUT_DEPENDENCY_PARTITION · identité, normalisation, exclusion, correspondance et extension dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : constitution SPECIFICATION_SLOT_TYPE · clôture d'univers ADOPTED_SLOT_LIST · clôture de domaine ANSWER_TYPE_FUNCTION_SPACE · couplage STIPULATED_ARCHITECTURE_LIST · identité, normalisation, exclusion, correspondance et extension dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : constitution GOVERNING_FACT_TYPE · clôture d'univers ADOPTED_FACT_LIST · clôture de domaine STIPULATED_FINITE_DOMAINS · couplage OUTPUT_DEPENDENCY_PARTITION · identité, normalisation, exclusion, correspondance et extension dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : constitution GOVERNING_FACT_TYPE · clôture d'univers ADOPTED_FACT_LIST · clôture de domaine STIPULATED_FINITE_DOMAINS · couplage STIPULATED_ARCHITECTURE_LIST · identité, normalisation, exclusion, correspondance et extension dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : constitution VARIATION_TYPE · clôture d'univers CRITERION_ONLY · clôture de domaine CRITERION_ONLY · couplage OUTPUT_DEPENDENCY_PARTITION · identité, normalisation, exclusion, correspondance et extension dérivées"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : constitution VARIATION_TYPE · clôture d'univers CRITERION_ONLY · clôture de domaine CRITERION_ONLY · couplage STIPULATED_ARCHITECTURE_LIST · identité, normalisation, exclusion, correspondance et extension dérivées"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-incomplete-ids"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "FRAG-M11-TYPE-ONLY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FRAG-M11-DOMAIN-ONLY"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-incomplete-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-wording-rejected"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-required-responsibilities"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MR01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR16"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR17"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR18"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR19"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR20"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MR21"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-candidate-ledger-conformant"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crsc1-answer"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : les faits gouvernants, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : les faits gouvernants, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : critère d'appartenance sans borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : critère d'appartenance sans borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crsc2-answer"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : chaque domaine est l'espace des fonctions totales sur le type de réponse de l'emplacement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : chaque domaine est l'espace des fonctions totales sur le type de réponse de l'emplacement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : une valeur est admise si elle change une réponse gouvernante ; aucune borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : une valeur est admise si elle change une réponse gouvernante ; aucune borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crsc3-answer"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : liste d'architectures stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : liste d'architectures stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : liste d'architectures stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : liste d'architectures stipulée par la sémantique candidate"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crsc4-answer"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : identité par la constitution SPECIFICATION_SLOT_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : identité par la constitution SPECIFICATION_SLOT_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : identité par la constitution SPECIFICATION_SLOT_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : identité par la constitution SPECIFICATION_SLOT_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : identité par la constitution GOVERNING_FACT_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : identité par la constitution GOVERNING_FACT_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : identité par la constitution VARIATION_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : identité par la constitution VARIATION_TYPE ; normalisation par réponses gouvernantes identiques ; exclusion des cellules incohérentes ; correspondance une cellule, un candidat"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-crsc5-answer"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : toute responsabilité ou valeur future est classée par la liste adoptée ou exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : toute responsabilité ou valeur future est classée par la liste adoptée ou exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : toute responsabilité ou valeur future est classée par la liste adoptée ou exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : toute responsabilité ou valeur future est classée par la liste adoptée ou exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : toute responsabilité ou valeur future est classée par la liste adoptée ou exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : toute responsabilité ou valeur future est classée par la liste adoptée ou exclue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : toute responsabilité ou valeur future est éprouvée par le critère, sans borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : toute responsabilité ou valeur future est éprouvée par le critère, sans borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-object-constitution"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : un ensemble de règles de générateur de clôture candidat est une affectation de réponses aux emplacements de spécification exigés par l'autorité 63 B.8 à B.10, R09 compris"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : un ensemble de règles de générateur de clôture candidat est une affectation de réponses aux emplacements de spécification exigés par l'autorité 63 B.8 à B.10, R09 compris"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : un ensemble de règles de générateur de clôture candidat est une affectation de réponses aux emplacements de spécification exigés par l'autorité 63 B.8 à B.10, R09 compris"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : un ensemble de règles de générateur de clôture candidat est une affectation de réponses aux emplacements de spécification exigés par l'autorité 63 B.8 à B.10, R09 compris"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : un candidat est un profil de réponses sur les faits gouvernants de l'autorité 63 B.12, R09 compris"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : un candidat est un profil de réponses sur les faits gouvernants de l'autorité 63 B.12, R09 compris"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : un candidat est individué par ses réponses à CG-1 et CG-2 ; est responsabilité tout aspect dont la variation les change"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : un candidat est individué par ses réponses à CG-1 et CG-2 ; est responsabilité tout aspect dont la variation les change"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-membership-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : appartient à l'univers ce que la liste adoptée nomme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : appartient à l'univers ce que la liste adoptée nomme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : appartient à l'univers ce que la liste adoptée nomme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : appartient à l'univers ce que la liste adoptée nomme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : appartient à l'univers ce que la liste adoptée nomme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : appartient à l'univers ce que la liste adoptée nomme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : appartient ce qui change CG-1 ou CG-2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : appartient ce qui change CG-1 ou CG-2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-non-membership-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : n'appartient pas ce qui n'est pas nommé : dérivé, constant ou de seule représentation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-independence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : indépendance par emplacement ou fait distinct"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : indépendance par emplacement ou fait distinct"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : indépendance par emplacement ou fait distinct"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : indépendance par emplacement ou fait distinct"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : indépendance par emplacement ou fait distinct"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : indépendance par emplacement ou fait distinct"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : indépendance par variation séparée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : indépendance par variation séparée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-derived"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : dérivée si déterminée par des réponses d'autres responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : dérivée si déterminée par des réponses d'autres responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : dérivée si déterminée par des réponses d'autres responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : dérivée si déterminée par des réponses d'autres responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : dérivée si déterminée par des réponses d'autres responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : dérivée si déterminée par des réponses d'autres responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : dérivée si déterminée par des réponses d'autres responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : dérivée si déterminée par des réponses d'autres responsabilités"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-composite"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : composite décomposée en ses composants nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : composite décomposée en ses composants nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : composite décomposée en ses composants nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : composite décomposée en ses composants nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : composite décomposée en ses composants nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : composite décomposée en ses composants nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : composite décomposée en ses composants nommés"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : composite décomposée en ses composants nommés"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-constant"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : constante si une seule valeur admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : constante si une seule valeur admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : constante si une seule valeur admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : constante si une seule valeur admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : constante si une seule valeur admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : constante si une seule valeur admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : constante si une seule valeur admissible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : constante si une seule valeur admissible"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-representation-exclusion"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : terminologie, nommage, sérialisation et exemples exclus (autorité 66 B.15)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-universe-closure"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : les emplacements exigés, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : les faits gouvernants, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : les faits gouvernants, adoptés comme liste fermée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : critère d'appartenance sans borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : critère d'appartenance sans borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-value-closure"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : chaque domaine est l'espace des fonctions totales sur le type de réponse de l'emplacement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : chaque domaine est l'espace des fonctions totales sur le type de réponse de l'emplacement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : chaque domaine de valeurs est une liste finie stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : une valeur est admise si elle change une réponse gouvernante ; aucune borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : une valeur est admise si elle change une réponse gouvernante ; aucune borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-value-distinctness"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : deux valeurs distinctes si elles changent une réponse gouvernante"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-architecture-closure"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : liste d'architectures stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : liste d'architectures stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : liste d'architectures stipulée par la sémantique candidate"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : partition des architectures par dépendance orientée des sorties"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : liste d'architectures stipulée par la sémantique candidate"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-dependency-semantics"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : dépendances et incompatibilités déclarées entre valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : dépendances et incompatibilités déclarées entre valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : dépendances et incompatibilités déclarées entre valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : dépendances et incompatibilités déclarées entre valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : dépendances et incompatibilités déclarées entre valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : dépendances et incompatibilités déclarées entre valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : dépendances et incompatibilités déclarées entre valeurs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : dépendances et incompatibilités déclarées entre valeurs"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-identity-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : identité par la constitution et les réponses aux responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : identité par la constitution et les réponses aux responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : identité par la constitution et les réponses aux responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : identité par la constitution et les réponses aux responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : identité par la constitution et les réponses aux responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : identité par la constitution et les réponses aux responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : identité par la constitution et les réponses aux responsabilités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : identité par la constitution et les réponses aux responsabilités"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-normalization-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : réponses gouvernantes identiques ⇒ équivalents"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : réponses gouvernantes identiques ⇒ équivalents"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : réponses gouvernantes identiques ⇒ équivalents"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : réponses gouvernantes identiques ⇒ équivalents"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : réponses gouvernantes identiques ⇒ équivalents"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : réponses gouvernantes identiques ⇒ équivalents"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : réponses gouvernantes identiques ⇒ équivalents"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : réponses gouvernantes identiques ⇒ équivalents"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-exclusion-semantics"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : exclusion positive des cellules incohérentes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : exclusion positive des cellules incohérentes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : exclusion positive des cellules incohérentes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : exclusion positive des cellules incohérentes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : exclusion positive des cellules incohérentes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : exclusion positive des cellules incohérentes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : exclusion positive des cellules incohérentes"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : exclusion positive des cellules incohérentes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-mapping-rule"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : toute cellule cohérente vers exactement un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : toute cellule cohérente vers exactement un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : toute cellule cohérente vers exactement un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : toute cellule cohérente vers exactement un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : toute cellule cohérente vers exactement un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : toute cellule cohérente vers exactement un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : toute cellule cohérente vers exactement un candidat"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : toute cellule cohérente vers exactement un candidat"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-future-responsibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : classement par la liste adoptée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : classement par la liste adoptée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : classement par la liste adoptée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : classement par la liste adoptée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : classement par la liste adoptée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : classement par la liste adoptée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : épreuve par le critère"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : épreuve par le critère"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-future-value"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : classement par le domaine stipulé ou fonctionnel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : classement par le domaine stipulé ou fonctionnel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : classement par le domaine stipulé ou fonctionnel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : classement par le domaine stipulé ou fonctionnel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : classement par le domaine stipulé ou fonctionnel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : classement par le domaine stipulé ou fonctionnel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : épreuve par le critère"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : épreuve par le critère"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-no-open-tail-proof"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : aucune preuve positive : la liste adoptée ou le type de réponse n'est pas lui-même borné"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-req-prospective-mission010"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : fournirait à une étude semblable à la mission 010 une liste de responsabilités, sans borne de ses domaines"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : fournirait à une étude semblable à la mission 010 une liste de responsabilités, sans borne de ses domaines"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : fournirait à une étude semblable à la mission 010 une liste de responsabilités, sans borne de ses domaines"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : fournirait à une étude semblable à la mission 010 une liste de responsabilités, sans borne de ses domaines"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : fournirait à une étude semblable à la mission 010 une liste de responsabilités, sans borne de ses domaines"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : fournirait à une étude semblable à la mission 010 une liste de responsabilités, sans borne de ses domaines"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : fournirait un critère, non une borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : fournirait un critère, non une borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cr-historical-disposition"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : R01..R08 restent des responsabilités ; R09 demeure indépendante ; aucune fusion ni scission établie"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cr-treated-as-answer"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-historical-compatibility"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : compatible — prospective seulement, mission 010 et result010 non réécrits"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-dependencies"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : sens de « générative » (MCSG2) ; borne des domaines de valeurs ; granularité du couplage"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs2-changed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs6-changed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgs-prospective-effect"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : une clarification ultérieure de CGS2 demeurerait nécessaire"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgr-favoring"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mission010-rewritten"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mission010-rebuilt"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgr-requalified"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-current-space-declared-closed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg1-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg2-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg3-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg4-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg5-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg6-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg7-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg8-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg9-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg10-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg11-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg12-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg13-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg14-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg15-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg16-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg17-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-mcsg18-established-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformance-criteria"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCSG1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG6"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG8"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG9"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG12"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG13"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG14"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG15"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG16"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG17"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCSG18"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "66-HANDOFF-ROUTING-CANDIDATE-RULE-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "25038060d2cbc4c8212c05864904477ad13cb7fe"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-conformant-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-non-conformant-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-7"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-not-positively-conformant"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MCS-1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-4"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-5"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MCS-6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-tests"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-removal-outcomes"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme : minimalité non éprouvée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-materially-different"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimal-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-nonminimal-nonconformant"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-minimality-simplicity-preference"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-equivalence-classes"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-1 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-2 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-3 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-4 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-5 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-6 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-7 }"
+          },
+          {
+            "type": "SCALAR",
+            "value": "{ MCS-8 }"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-equivalence-collapsed"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-equivalence-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "réponses gouvernantes de l'autorité 66 B.15 : aucune paire équivalente"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-relations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 / MCS-2 : couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 / MCS-3 : clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 / MCS-4 : clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 / MCS-5 : constitution"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 / MCS-6 : constitution, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 / MCS-7 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 / MCS-8 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 / MCS-3 : clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 / MCS-4 : clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 / MCS-5 : constitution, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 / MCS-6 : constitution"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 / MCS-7 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 / MCS-8 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 / MCS-4 : couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 / MCS-5 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 / MCS-6 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 / MCS-7 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 / MCS-8 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 / MCS-5 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 / MCS-6 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 / MCS-7 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 / MCS-8 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 / MCS-6 : couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 / MCS-7 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 / MCS-8 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 / MCS-7 : constitution, clôture de domaine, couplage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 / MCS-8 : constitution, clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 / MCS-8 : couplage"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-distinctness-governing-facts"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "constitution d'objet"
+          },
+          {
+            "type": "SCALAR",
+            "value": "clôture d'univers"
+          },
+          {
+            "type": "SCALAR",
+            "value": "clôture de domaine"
+          },
+          {
+            "type": "SCALAR",
+            "value": "clôture de couplage"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-selector-applicable"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-selector-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "aucun sélecteur gelé pour ce type d'objet (autorité 66 B.17)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-selector-pairwise"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "sans objet : aucun candidat positivement conforme"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-selector-reduced-away"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-selector-invented"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-selector-transplanted"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-defined"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unknowns"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MU-11-B — complétude de l'univers des responsabilités M11 : MCS-B NOT_ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MU-11-G — sens normatif de « générative » sous MCSG2, non fixé comme celui de CGS2 (autorité 65 A.4)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MU-11-C — bornes des domaines de MR01, MR10, MR12"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MU-11-X — candidats M11 omis"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-changing-unknown"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unknown-effects"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MU-11-B : appartenance, conformité, issue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MU-11-G : conformité, cardinalité, issue"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MU-11-C : appartenance, conformité"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MU-11-X : appartenance, cardinalité, issue"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-not-found-nonexistent"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "espace M11 ouvert, domaines ouverts, conformité des candidats courants suspendue à MCSG2, aucun sélecteur ; aucune preuve que toute complétion produise une même issue"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-covers-omitted"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-invariance-outcome"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-impossibility-established"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-impossibility-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "espace M11 non clos ; les candidats à critère seul sont positivement non conformes, les autres ne sont que non positivement conformes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-cardinality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-remaining-count"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unique-candidate-id"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unique-requires-closure"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-multiple-requires-closure"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-none-requires-impossibility"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-known-plurality"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-known-single"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-multiple-precondition"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-decisive-rule"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "RULE_0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_CANDIDATE_RULE_SPACE_CLOSURE_SEMANTICS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-outcome-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "espace M11 NOT_ESTABLISHED, premier échec MCS-B"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucun candidat positivement conforme : MCSG2 et MCSG9 NOT_ESTABLISHED pour tous ; MCSG7 et MCSG11 NO pour les candidats à critère seul"
+          },
+          {
+            "type": "SCALAR",
+            "value": "invariance non établie : règle 0, chemin T1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implied-gate"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_OPEN"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implied-gate-type"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-gate-candidates"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-prospective-consequence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MCS-1 : adopté plus tard, fournirait une liste de responsabilités sans borne positive de ses domaines ; une étude semblable à la mission 010 rencontrerait encore CRS-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-2 : adopté plus tard, fournirait une liste de responsabilités sans borne positive de ses domaines ; une étude semblable à la mission 010 rencontrerait encore CRS-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-3 : adopté plus tard, fournirait une liste de responsabilités sans borne positive de ses domaines ; une étude semblable à la mission 010 rencontrerait encore CRS-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-4 : adopté plus tard, fournirait une liste de responsabilités sans borne positive de ses domaines ; une étude semblable à la mission 010 rencontrerait encore CRS-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-5 : adopté plus tard, fournirait une liste de responsabilités sans borne positive de ses domaines ; une étude semblable à la mission 010 rencontrerait encore CRS-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-6 : adopté plus tard, fournirait une liste de responsabilités sans borne positive de ses domaines ; une étude semblable à la mission 010 rencontrerait encore CRS-C"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-7 : fournirait un critère, non une borne"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MCS-8 : fournirait un critère, non une borne"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-prospective-dominance-gap"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-semantics-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-semantics-id"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-new-normative-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cgr-candidate-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-closure-generator-rule-adopted"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-option-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-dominance-selected"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-authorization"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-limitations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "candidats construits sur les seules valeurs déclarées de MR01, MR10, MR12"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune valeur AUTRE dans un domaine déclaré : les queues ouvertes sont rapportées NOT_ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "le sens de « générative » n'est pas fixé ; les verdicts qui en dépendent sont NOT_ESTABLISHED, ni NO ni YES"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-blockers"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "sens normatif de « générative » (MCSG2, CGS2)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "absence de décomposition constitutive du type d'objet"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-success"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PROCEDURALLY_SUCCESSFUL"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-01"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=OUTPUT_DEPENDENCY_PARTITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-1.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-02"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=STIPULATED_ARCHITECTURE_LIST"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-2.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-03"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=OUTPUT_DEPENDENCY_PARTITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-3.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-04"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=SPECIFICATION_SLOT_TYPE · MR09=ADOPTED_SLOT_LIST · MR10=ANSWER_TYPE_FUNCTION_SPACE · MR12=STIPULATED_ARCHITECTURE_LIST"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-4.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-07"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=OUTPUT_DEPENDENCY_PARTITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-5.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-08"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=GOVERNING_FACT_TYPE · MR09=ADOPTED_FACT_LIST · MR10=STIPULATED_FINITE_DOMAINS · MR12=STIPULATED_ARCHITECTURE_LIST"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-6.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_POSITIVELY_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-17"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=CRITERION_ONLY · MR12=OUTPUT_DEPENDENCY_PARTITION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-7.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.CELL"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "M11-CELL-18"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.STRUCTURE"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "MR01=VARIATION_TYPE · MR09=CRITERION_ONLY · MR10=CRITERION_ONLY · MR12=STIPULATED_ARCHITECTURE_LIST"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG3"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG4"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG5"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG6"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG7"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG8"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG9"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.MCSG18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "candidate.MCS-8.CONFORMANCE"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NON_CONFORMANT"
+      }
+    }
+  ]
+}
