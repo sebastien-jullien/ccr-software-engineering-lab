@@ -187,6 +187,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md`](62-HANDOFF-ROUTING-MISSION009-QUALIFICATION-AND-NORMATIVE-CLOSURE-SEMANTICS-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée du résultat de la mission 009, ratifiée, puis une porte humaine de direction. L'exécution est PASS ; la qualification relève à bon droit l'omission de D04 et de D16, qui porte le registre engendré de cinq à neuf options, mais son établissement de l'obligation C est rejeté : un critère aval de conformité ne peut borner un domaine de valeurs amont, et la direction de canonicalisation admet des valeurs conditionnelles. B reste le premier échec portant, C est indépendamment défectueuse, et RULE_0 gouverne. Il manque la règle elle-même en deux endroits : l'univers des responsabilités gouvernantes et le domaine de la direction de canonicalisation — d'où une porte A / B, sans présélection.
 - [`63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de direction, ADDRESS_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS, puis le contrat de l'étude qu'elle ouvre. Son sujet est la sémantique normative manquante que la mission 009 avait interdiction de créer : CG-1, ce qui borne l'univers des responsabilités sémantiques gouvernantes, et CG-2, ce qui borne le domaine de valeurs de la direction de canonicalisation, D12 / D16. Une règle candidate n'est pas une règle gouvernante, davantage d'énumération n'est pas une règle de clôture et davantage de minimalité n'est pas une autorité de domaine de valeurs. On pose enfin la question de la règle que l'analyse a cherchée deux fois sans la trouver, parce que personne ne l'avait encore écrite.
 - [`64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md`](64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md) — correction bornée du contrat analytique de la mission 010, sans décision humaine nouvelle. L'autorité 63 demandait de construire des ensembles de règles candidats, de les éprouver et de retourner une issue, sans jamais dire d'où vient l'ensemble des candidats ni ce qui autoriserait à le déclarer complet : l'étude de la règle de clôture manquante reproduisait d'un étage le défaut qu'elle traite, et pouvait atteindre UNIQUE en ne construisant qu'un seul candidat conforme. Un inventaire de règles candidates n'est pas une clôture d'espace, et un candidat connu n'est pas un candidat unique. Sur 320 états d'analyse, l'ancien contrat admettait 20 chemins vers UNIQUE depuis un espace non clos ; le contrat corrigé en admet zéro.
+- [`65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md`](65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée de la mission 010, ratifiée, puis une porte humaine de direction de suite. Le verdict de la qualification est supersédé : comme l'exécutant, elle tient CGS2 à YES pour CGR-1 et CGR-2 sur une lecture défendable de « génératif », sens qu'aucun texte gelé ne fixe. Une lecture défendable d'un critère ambigu ne porte ni un NO ni un YES positif, et non positivement conforme n'est pas positivement non conforme. RULE_0 et INSUFFICIENT l'emportent sur le MULTIPLE rapporté : aucun candidat n'est encore établi conforme, ce qui ne veut pas dire qu'aucun n'existe. Restent deux problèmes distincts, quels ensembles de règles existent et comment un candidat donné se juge, et rien ne dit lequel traiter d'abord.
 
 ## Outillage
 
@@ -443,7 +444,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -462,7 +463,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -614,7 +615,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -766,7 +767,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -808,7 +809,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1002,7 +1003,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1038,7 +1039,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1236,7 +1237,7 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
 = mission 010 : NONE
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
 = CLOSED / SELECTED
@@ -1284,10 +1285,11 @@ HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
   it has several, that D12 / D16 must keep its current factorization, what
   constitutive closure principle governs the model, or what any future
   governing closure rule is
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
-= EXECUTED BY CCR_LAB_FIX_1 · CONTRACT CORRECTED / FROZEN
+= EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
+= authority 64 : CLOSED AS THE EXECUTED MISSION-010 CONTRACT
   64-HANDOFF-ROUTING-MISSION010-CANDIDATE-RULE-SPACE-CLOSURE-CORRECTION.md
   governing contract correction
   63-HANDOFF-ROUTING-NORMATIVE-CLOSURE-GENERATOR-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
@@ -1551,30 +1553,123 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
   MULTIPLE_CONFORMANT_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS_REQUIRE_HUMAN_SELECTION
 = executor-reported implied human normative gate : OPEN / SELECTION — CGR-1,
   CGR-2
-= THE EXECUTOR-REPORTED OUTCOME IS NOT A QUALIFIED OUTCOME — RULE_1 is NOT
-  independently qualified
-= independent qualification : PENDING
-= material qualification targets : CRS-B parity with authority 62 §A.5 ·
-  admissibility of the seven-fact closure as a positively bounded, generative,
-  non-observational CG-1 principle (authority 63 §B.5, §B.8, CGS2) · the
-  explicit fact-assignment table (D04, D14, D21; D09 / D10 derived) · CGR-2
-  closure-state family coherence · architecture-domain closure by logical
-  partition · R01 / R02 / R04 open tails · CGS1 / CGS2 / CGS6 / CGS10 / CGS15 of
-  every candidate · outcome invariance toward MULTIPLE and its coverage of
-  omitted candidates · corrected Rule 0 / Rule 1 / Rule 2
-= candidate rule-set space : MUST BE POSITIVELY CLOSED OR POSITIVELY
-  OUTCOME-INVARIANT BEFORE MULTIPLE
-= UNIQUE : REQUIRES POSITIVE CANDIDATE-SPACE CLOSURE
-= CG-1 / CG-2 : UNCHANGED · CGS1..CGS16 : UNCHANGED · four outcome labels and
-  the authority-59 human mapping : UNCHANGED
-= new human decisions : 0 · human direction A : UNCHANGED
-= closure-generator semantic rule : NOT SELECTED
-= dominance-semantic direction : NOT SELECTED
-= normative quantification option : NOT SELECTED
+= THE EXECUTOR-REPORTED OUTCOME WAS NOT A QUALIFIED OUTCOME — the qualified
+  outcome below comes from the corrected qualification, not from the executor
+= independent qualification : DONE — CCR LAB FIX #1, sealed passes
+  65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md
+= execution / result production / result persistence : PASS / PASS / PASS
+= qualification execution / structural qualification : PASS / PASS
+= result010 byte identity : PASS · return contract 187 / 187 · 0 missing ·
+  0 unexpected · 0 duplicates
+= STRUCTURAL CORRECTNESS ESTABLISHES NO ANALYTICAL TRUTH
+= reported qualification : PASS WITH LIMITATIONS · CORRECTED_NON_MATERIALLY =
+  REJECTED / SUPERSEDED
+= reason : the qualification, like the executor, holds CGS2 = YES for CGR-1 and
+  CGR-2 by inferring the sense of "generative" from the wording of authority 62
+  §A.5, while no frozen text fixes the normative meaning of "generative" in CGS2
+= AMBIGUOUS NORMATIVE CRITERION SEMANTICS IS NOT A POSITIVE VERDICT — a
+  defensible interpretation is not a qualified fact; while CGS2's exact meaning
+  is not positively fixed, CGS2 is NOT_ESTABLISHED unless another independent
+  frozen basis positively establishes conformance or non-conformance
+= NO IS NOT NOT_ESTABLISHED · NOT POSITIVELY CONFORMANT IS NOT POSITIVELY
+  NON_CONFORMANT
+= CGS2 : ambiguous under current authority — a defensible interpretation
+  licenses neither NO nor YES
+= CGR-1 / CGR-2 : conformance NOT_ESTABLISHED — CGS2 NOT_ESTABLISHED, and CGS15
+  NOT_ESTABLISHED on the content-based missing input, positive closure of the
+  value domains of the base questions outside the canonicalization-direction
+  axis; CGS15 is a prospective sufficiency criterion whose analytical test is
+  permitted and required · CGR-3..CGR-5 : conformance NOT_ESTABLISHED
+= positively established conformant roster : EMPTY — no candidate has yet been
+  positively established conformant, which does NOT mean no conformant
+  candidate exists · complete conformance roster : NOT_ESTABLISHED
+= CRS qualified : CRS-A ESTABLISHED for the stated bounded roster only ·
+  CRS-B NOT_ESTABLISHED · CRS-C NOT_ESTABLISHED · CRS-D, CRS-E and CRS-G
+  NOT_ESTABLISHED GLOBALLY, deterministic construction and exclusion ledger
+  over the declared values still valid · CRS-F ESTABLISHED relative to the
+  declared generator · CRS-H NOT_ESTABLISHED
+= candidate rule-set space completeness : NOT_ESTABLISHED · first qualified
+  closure failure : CRS-B
+= CRS-B basis : NO EXPLICIT META-CLOSURE AUTHORITY IS NOT AN AUTOMATIC CRS-B
+  FAILURE — but no positive constitutive / generative bound for the complete
+  candidate-rule responsibility universe is established: the authority-63
+  §B.12 list has the form of authority 58 §B.15, not fixed as a closed
+  generator (authority 62 §A.5), the authority-64 inspection set is a floor,
+  authority-63 completion semantics admit revised identities, no complete
+  constitutive decomposition theorem is established, the candidate CG-1 value
+  space inherits an already-open governing responsibility universe, and an
+  independent responsibility R09 appeared outside the stated roster — no
+  infinite meta-authority regress is relied on
+= R01..R08 : the current responsibility model, NOT a complete universe · R09,
+  positive closure of the value domains of the base questions outside the
+  canonicalization-direction axis, is a genuinely independent material
+  responsibility omitted by the executor, not R07, CG-2, CGS10, CGS15 or a
+  composite of R01..R08 · R01, R02, R04, R09 and coupling-domain completeness
+  NOT_ESTABLISHED — the absence of an OTHER token is not closure
+= 16 raw / 5 canonical : generated-model findings only, valid relative to the
+  declared values; the eleven incoherent exclusions are kept within that roster
+= executor corrected qualification : FAIL · CONTRADICTED_MATERIALLY · material
+  errors : 1 — ME-1, positive conformance of CGR-1 and CGR-2 asserted through
+  CGS2 = YES on a defensible reading and CGS15 = YES without the positive
+  closure of the non-direction value domains; the invariance toward MULTIPLE
+  and the outcome rested on it · non-material : D09 / D13 labelled derived
+= qualification material analytical errors : 1 — Q-MAE-1; the sealed passes
+  are NOT altered
+= outcome invariance : NOT_ESTABLISHED — open candidate space, open
+  responsibility domains, candidate identities revisable when omitted material
+  responsibilities are admitted, omitted candidates able to alter the roster,
+  current conformance incompletely qualified, no applicable selector
+  established; a presently conformant omitted candidate is NOT required to show
+  this
+= RULE_0 : SATISFIED · RULE_1 : NOT_ESTABLISHED / PREEMPTED · RULE_2 :
+  NOT_SATISFIED, no candidate-space closure · RULE_3 : NOT_SATISFIED, no
+  exhaustive impossibility
+= qualified decisive rule : RULE_0
+= qualified final outcome :
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_NORMATIVE_CLOSURE_GENERATOR_SEMANTICS
+= qualified implied human normative gate : NOT_OPEN / NONE — authority 59
+  remains governing
+= mission 011 : NONE
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
+
+HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
+= OPEN
+  65-HANDOFF-ROUTING-MISSION010-QUALIFICATION-AND-CLOSURE-GENERATOR-FOLLOWON-DIRECTION-GATE.md
+= this is NOT the human normative adoption / selection gate, which stays NOT
+  OPEN — two different gates
+= Mission 010 leaves two materially distinct normative problem classes:
+  CLASS A, CANDIDATE-RULE-SPACE CLOSURE SEMANTICS — CRS-B, candidate-rule
+  responsibility universe completeness, CRS-C, complete responsibility value /
+  architecture domains, coupling-domain completeness, positive construction /
+  mapping of the complete candidate space: WHICH RULE SETS EXIST AND HOW THE
+  SPACE IS BOUNDED · CLASS B, CLOSURE-GENERATOR CONFORMANCE-CRITERION
+  SEMANTICS — at minimum CGS2, the exact normative meaning of "generative", and
+  CGS6's reproducibility scope where it bears on CGR-3..CGR-5:
+  HOW A PARTICULAR CANDIDATE IS VALIDLY CLASSIFIED
+= CANDIDATE-SPACE CLOSURE IS NOT CANDIDATE CONFORMANCE-CRITERION SEMANTICS
+= option A : ADDRESS_CANDIDATE_RULE_SPACE_CLOSURE_SEMANTICS — a bounded
+  normative study of the missing rules needed to positively close the space of
+  candidate closure-generator rule sets; it does NOT declare R01..R09
+  exhaustive, close their domains, select a CGR candidate, adopt a rule, apply
+  anything to Mission 009, define dominance or implement anything
+= option B : ADDRESS_CLOSURE_GENERATOR_CONFORMANCE_CRITERION_SEMANTICS — a
+  bounded normative study of ambiguous candidate conformance semantics,
+  beginning with CGS2 and, if the bounded contract requires it, CGS6; it does
+  NOT establish candidate-space completeness, make any current candidate
+  conformant, select CGR-1 / CGR-2, adopt a rule, define dominance or
+  implement anything
+= direction selected : NONE — no frozen deterministic priority rule chooses A or
+  B; A is not auto-selected because CRS-B already decides the current RULE_0
+  branch, and B is not auto-selected because it caused the newly ratified
+  material qualification defect
+= parking the line or changing overall Lab program direction remains a separate
+  human program-direction decision
+= mission 011 : NONE · no executor reserved · no new study contract
+= closure-generator semantic rule : NOT SELECTED · dominance semantics : NOT
+  SELECTED · normative quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -1670,7 +1765,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -1990,7 +2085,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -1999,13 +2094,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #42 INDEPENDENTLY QUALIFIES RESULT010
+= next : OBTAIN HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION
 
 CURRENT LAB STREAM
 = NONE
