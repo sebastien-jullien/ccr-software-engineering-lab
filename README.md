@@ -194,6 +194,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`69-HANDOFF-ROUTING-MISSION012-QUALIFICATION-CORRECTION-AND-FOLLOWON-DIRECTION-GATE.md`](69-HANDOFF-ROUTING-MISSION012-QUALIFICATION-CORRECTION-AND-FOLLOWON-DIRECTION-GATE.md) — deux couches tenues distinctes : la qualification corrigée de la mission 012, ratifiée, puis une porte humaine de direction R&D de suite. Le verdict de la qualification est supersédé et sa disposition corrigée, car une même étiquette terminale atteinte par un chemin contredit en deux points n'est pas une confirmation. L'autorité 68 dit qu'on n'est équivalent que si les réponses gouvernantes sont identiques ; elle ne dit pas que toute différence matérielle doit se projeter sur un axe, et c'est la réciproque que la mission 012 avait employée. Un candidat qualifié et minimal existe désormais, VDCSG2 y étant satisfait sous toute lecture admissible — savoir qu'il n'en existe pas d'autre est une autre affaire.
 - [`70-HANDOFF-ROUTING-M12-CANDIDATE-RESPONSIBILITY-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](70-HANDOFF-ROUTING-M12-CANDIDATE-RESPONSIBILITY-SPACE-CLOSURE-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la qualification de matérialisation de l'autorité 69 et la sélection humaine de la direction ADDRESS_M12_CANDIDATE_RESPONSIBILITY_SPACE_CLOSURE_SEMANTICS, puis le gel de la mission 013. La question redescend d'un étage : non plus quelles valeurs les responsabilités peuvent prendre, mais quelles responsabilités existent. Et la leçon de la mission 012 y est écrite noir sur blanc : l'équivalence est définie de façon biconditionnelle, dans les deux sens, pour qu'aucune étude ne puisse plus s'appuyer sur une réciproque que personne n'a écrite.
 - [`71-HANDOFF-ROUTING-MISSION013-QUALIFICATION-CORRECTION.md`](71-HANDOFF-ROUTING-MISSION013-QUALIFICATION-CORRECTION.md) — une seule couche : la qualification corrigée de la mission 013, ratifiée, sans aucune porte de direction. Le biconditionnel de l'autorité 70 tient, et il ne prouve pas ce qu'on lui a fait dire : savoir que toute différence entre candidats se voit sur un axe gelé ne dit pas que la liste des responsabilités est complète. Une responsabilité de plus peut très bien changer une réponse gouvernante et rester une responsabilité de plus. Un invariant sémantique complet n'est pas une décomposition constitutive complète, et le minimum obligatoire d'une autorité reste un minimum.
+- [`72-HANDOFF-ROUTING-POST-MISSION013-RD-DIRECTION-GATE.md`](72-HANDOFF-ROUTING-POST-MISSION013-RD-DIRECTION-GATE.md) — deux couches tenues distinctes : le rappel de l'état qualifié laissé par l'autorité 71, puis le gel d'une porte bornée de direction R&D. Deux questions restent ouvertes et elles ne sont pas la même : quelles responsabilités existent, et quelles valeurs elles peuvent prendre. L'option A ferme la factorisation en amont, l'option B peuple le registre déclaré en aval — et un succès de B ne peut rien dire de A. Aucune direction n'est choisie : l'ensemble est borné, la recommandation est non contraignante, et le choix appartient à l'humain.
 
 ## Outillage
 
@@ -450,7 +451,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -469,7 +470,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -621,7 +622,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -773,7 +774,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -815,7 +816,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1009,7 +1010,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1045,7 +1046,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1243,7 +1244,7 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
 = mission 010 : NONE
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
 = CLOSED / SELECTED
@@ -1291,7 +1292,7 @@ HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
   it has several, that D12 / D16 must keep its current factorization, what
   constitutive closure principle governs the model, or what any future
   governing closure rule is
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1636,7 +1637,7 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 011 : EXECUTED BY CCR_LAB_FIX_1 · result011 persisted · QUALIFIED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1676,7 +1677,7 @@ HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
   architectures are admissible, which candidate-rule-space closure rule should
   govern, whether any existing CGR candidate is conformant, what "generative"
   means under CGS2, what CGS6 means, or which closure-generator rule to adopt
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1910,7 +1911,7 @@ CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 012 : EXECUTED BY CCR_LAB_FIX_1 · result012 persisted · QUALIFIED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1953,7 +1954,7 @@ HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
   exist, which dependencies or incompatibilities govern them, which
   domain-closure semantics should govern, whether any MCS candidate is
   conformant, or what MCSG2 means
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2207,7 +2208,7 @@ M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
   remains governing · VDC-03 NOT ADOPTABLE YET AT PROGRAM LEVEL
 = mission 013 : EXECUTED · result013 persisted · INDEPENDENTLY QUALIFIED ·
   corrected verdict FAIL / CONTRADICTED_MATERIALLY
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
 = CLOSED / SELECTED
@@ -2245,7 +2246,7 @@ HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
   quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2499,8 +2500,11 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = VDC-03 : NOT REQUALIFIED / NOT SELECTED · VDCS-C : UNCHANGED ·
   MCS-B : FROZEN / NOT REOPENED · MCSG2 : UNCHANGED · RG-9 : NONE
 = responsibility-space semantics selected : NO
-= FOLLOW-ON R&D DIRECTION : NOT SELECTED / NOT YET BOUNDED — no follow-on
-  option set is formulated or stored here
+= FOLLOW-ON R&D DIRECTION OPTION SET : BOUNDED by authority 72 — option A
+  ADDRESS_M13_CONSTITUTIVE_RESPONSIBILITY_EXHAUSTION_SEMANTICS · option B
+  ADDRESS_M13_DECLARED_RESPONSIBILITY_VALUE_ARCHITECTURE_DOMAIN_CLOSURE
+= DIRECTION SELECTED : NONE
+= authority 71 : CLOSED
 = MISSION 014 : NONE · future executor : NONE
 = MCS-B : ESTABLISHED / NOT REOPENED
 = VDCS-A : ESTABLISHED
@@ -2510,7 +2514,7 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = MCSG2 : UNRESOLVED / UNCHANGED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 = MCS-B : ESTABLISHED / NOT REOPENED
 = MCS-C : NOT_ESTABLISHED / Mission-012 target
 = M11 value / architecture domain-closure semantics : NOT SELECTED
@@ -2520,7 +2524,79 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = normative quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
+
+HUMAN POST-MISSION013 R&D DIRECTION GATE
+= OPEN
+  72-HANDOFF-ROUTING-POST-MISSION013-RD-DIRECTION-GATE.md
+= this is NOT the human normative adoption / selection gate, which stays NOT
+  OPEN — two different gates
+= authority 71 : CLOSED
+= Mission 013 leaves two materially distinct open questions : RCS-B and RCS-C,
+  so human direction selection is appropriate
+= difference-visibility closure : ESTABLISHED · complete semantic invariant :
+  ESTABLISHED · constitutive-responsibility exhaustion : NOT_ESTABLISHED — A
+  COMPLETE SEMANTIC INVARIANT IS NOT A COMPLETE CONSTITUTIVE DECOMPOSITION
+= RCS-A : ESTABLISHED, bounded currently stated roster RR01..RR10 · RCS-B :
+  NOT_ESTABLISHED, first qualified closure failure · RCS-C : NOT_ESTABLISHED ·
+  M13_CANDIDATE_SPACE_COMPLETENESS : NOT_ESTABLISHED
+= QU-01 : MATERIAL QUALIFIED UNKNOWN — is every independent material
+  constitutive responsibility of an admissible Mission-013 candidate exhausted
+  by RR01..RR10, rather than merely having its effects projected onto one
+  or more of those governing answers?
+= qualified relative findings carried forward, WITHIN THE DECLARED GENERATED
+  MODEL ONLY : 9 / 8 raw / canonical · conformant / NE / non-conformant
+  1 / 5 / 2 · minimal conformant RCC-01 · material distinctness moot ·
+  applicable dominance NONE · applicable tie-break NONE · outcome invariance
+  NOT_ESTABLISHED — THESE DO NOT ESTABLISH GLOBAL M13 CLOSURE
+= option A : ADDRESS_M13_CONSTITUTIVE_RESPONSIBILITY_EXHAUSTION_SEMANTICS —
+  target RCS-B / QU-01. What positive constitutive semantics, if any, define
+  the complete factorization of an admissible Mission-013 candidate into
+  independent material responsibilities? It must distinguish a COMPLETE
+  SEMANTIC INVARIANT from a COMPLETE CONSTITUTIVE DECOMPOSITION, must NOT redo
+  where candidate differences are observable — that question is already closed
+  — must preserve MCS-B ESTABLISHED and RG-1..RG-8 frozen, and must not infer
+  ONE GOVERNING ANSWER = ONE CONSTITUTIVE RESPONSIBILITY
+= A SUCCESS UNDER A COULD ESTABLISH constitutive-responsibility exhaustion and
+  therefore potentially RCS-B; it would NOT automatically establish RCS-C,
+  RCS-D / E / G / H, the complete M13 candidate universe, MULTIPLE, or any
+  governing responsibility-space semantics
+= option B :
+  ADDRESS_M13_DECLARED_RESPONSIBILITY_VALUE_ARCHITECTURE_DOMAIN_CLOSURE —
+  target RCS-C and downstream RCS-D / E / G / H, ONLY relative to the currently
+  declared RR01..RR10 model. What complete value / architecture domains,
+  dependencies, compositions, classifiers and canonicalization semantics
+  populate the currently declared responsibility model?
+= B MUST preserve RCS-B NOT_ESTABLISHED and QU-01 UNRESOLVED, must scope every
+  later result to the current declared roster, and must NOT claim global RCS-C
+  ESTABLISHED, global M13 candidate-space completeness, or that no additional
+  constitutive responsibility exists; a difficulty requiring another
+  constitutive responsibility is REPORTED AS A DEPENDENCY, never silently
+  promoted into a new factor claiming RCS-B solved
+= A : upstream constitutive-factorization closure · B : downstream domain
+  closure conditional on the currently declared factorization · A SUCCESS MAY
+  CHANGE THE RESPONSIBILITY MODEL ON WHICH B MUST OPERATE · B SUCCESS CANNOT BY
+  ITSELF ESTABLISH RCS-B · THIS DEPENDENCY IS EXPLANATORY AND DOES NOT
+  AUTOMATICALLY SELECT A
+= NO DOMINANCE IS MATERIALIZED — B is neither invalid nor forbidden
+= option set : BOUNDED / COMPLETE FOR THIS GATE — no outcome-invariance study,
+  dominance study, evidence-acquisition experiment or implementation is added
+  as a third option absent new human / orchestrator authority
+= direction selected : NONE
+= non-binding R&D recommendation : OPTION A FIRST — basis : RCS-B is the first
+  qualified closure failure, and B remains conditional on the currently
+  declared constitutive roster. A RECOMMENDATION IS NOT A HUMAN DECISION and is
+  NOT converted into a PROGRAM-STATE decision
+= new PROGRAM-STATE human decisions : 0 · RATIFIED 53 / PENDING 0
+= mission 014 : NONE · mission-014 contract : NONE · future executor : NONE ·
+  only a human selection of A or B lets the orchestrator derive the
+  corresponding study freeze
+= responsibility-space semantics : NOT SELECTED · M13 candidate : NOT SELECTED
+  · VDC-03 : NOT REQUALIFIED / NOT SELECTED · MCS-B : ESTABLISHED
+  / NOT REOPENED · RG-9 : NONE
+= program-level human normative gate : NOT OPEN
+= implementation : NOT AUTHORIZED
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -2616,7 +2692,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -2936,7 +3012,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -2945,13 +3021,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION013 R&D DIRECTIONS
+= next : OBTAIN HUMAN POST-MISSION013 R&D DIRECTION — A / B
 
 CURRENT LAB STREAM
 = NONE
