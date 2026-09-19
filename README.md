@@ -196,6 +196,7 @@ Les résultats, les incertitudes résiduelles et les non-conclusions de chaque c
 - [`71-HANDOFF-ROUTING-MISSION013-QUALIFICATION-CORRECTION.md`](71-HANDOFF-ROUTING-MISSION013-QUALIFICATION-CORRECTION.md) — une seule couche : la qualification corrigée de la mission 013, ratifiée, sans aucune porte de direction. Le biconditionnel de l'autorité 70 tient, et il ne prouve pas ce qu'on lui a fait dire : savoir que toute différence entre candidats se voit sur un axe gelé ne dit pas que la liste des responsabilités est complète. Une responsabilité de plus peut très bien changer une réponse gouvernante et rester une responsabilité de plus. Un invariant sémantique complet n'est pas une décomposition constitutive complète, et le minimum obligatoire d'une autorité reste un minimum.
 - [`72-HANDOFF-ROUTING-POST-MISSION013-RD-DIRECTION-GATE.md`](72-HANDOFF-ROUTING-POST-MISSION013-RD-DIRECTION-GATE.md) — deux couches tenues distinctes : le rappel de l'état qualifié laissé par l'autorité 71, puis le gel d'une porte bornée de direction R&D. Deux questions restent ouvertes et elles ne sont pas la même : quelles responsabilités existent, et quelles valeurs elles peuvent prendre. L'option A ferme la factorisation en amont, l'option B peuple le registre déclaré en aval — et un succès de B ne peut rien dire de A. Aucune direction n'est choisie : l'ensemble est borné, la recommandation est non contraignante, et le choix appartient à l'humain.
 - [`73-HANDOFF-ROUTING-M13-CONSTITUTIVE-RESPONSIBILITY-EXHAUSTION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md`](73-HANDOFF-ROUTING-M13-CONSTITUTIVE-RESPONSIBILITY-EXHAUSTION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md) — deux couches tenues distinctes : la sélection humaine de la direction ADDRESS_M13_CONSTITUTIVE_RESPONSIBILITY_EXHAUSTION_SEMANTICS, puis le gel de la mission 014. La question ne demande plus quelles responsabilités sont énoncées, mais lesquelles existent réellement une fois le candidat décomposé. Et l'erreur de la mission 013 y est écrite noir sur blanc : voir l'effet d'un facteur sur un axe ne fait pas de ce facteur cet axe, et deux facteurs peuvent rester indépendants alors même que leurs effets décident ensemble la même réponse.
+- [`74-HANDOFF-ROUTING-MISSION014-QUALIFICATION-CORRECTION.md`](74-HANDOFF-ROUTING-MISSION014-QUALIFICATION-CORRECTION.md) — une seule couche : la qualification corrigée de la mission 014, ratifiée, sans aucune porte de direction. Le FAIL du qualificateur tient, et sa propre correction ne tient pas : découper autrement ce qu'on mesure ne prouve pas qu'on a trouvé les morceaux. Un axe de générateur n'est pas un atome, une responsabilité obligatoire non plus, et la granularité reste inconnue — ce qui n'est pas zéro. Surtout : un critère d'admissibilité qu'on ne sait pas fondé ne devient pas fondé parce qu'aucune règle ne vient l'écarter.
 
 ## Outillage
 
@@ -452,7 +453,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -471,7 +472,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -623,7 +624,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -775,7 +776,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -817,7 +818,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1011,7 +1012,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1047,7 +1048,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1245,7 +1246,7 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
 = mission 010 : NONE
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
 = CLOSED / SELECTED
@@ -1293,7 +1294,7 @@ HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
   it has several, that D12 / D16 must keep its current factorization, what
   constitutive closure principle governs the model, or what any future
   governing closure rule is
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1638,7 +1639,7 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 011 : EXECUTED BY CCR_LAB_FIX_1 · result011 persisted · QUALIFIED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1678,7 +1679,7 @@ HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
   architectures are admissible, which candidate-rule-space closure rule should
   govern, whether any existing CGR candidate is conformant, what "generative"
   means under CGS2, what CGS6 means, or which closure-generator rule to adopt
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1912,7 +1913,7 @@ CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 012 : EXECUTED BY CCR_LAB_FIX_1 · result012 persisted · QUALIFIED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1955,7 +1956,7 @@ HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
   exist, which dependencies or incompatibilities govern them, which
   domain-closure semantics should govern, whether any MCS candidate is
   conformant, or what MCSG2 means
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2209,7 +2210,7 @@ M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
   remains governing · VDC-03 NOT ADOPTABLE YET AT PROGRAM LEVEL
 = mission 013 : EXECUTED · result013 persisted · INDEPENDENTLY QUALIFIED ·
   corrected verdict FAIL / CONTRADICTED_MATERIALLY
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
 = CLOSED / SELECTED
@@ -2247,7 +2248,7 @@ HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
   quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2506,7 +2507,8 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
   ADDRESS_M13_DECLARED_RESPONSIBILITY_VALUE_ARCHITECTURE_DOMAIN_CLOSURE
 = DIRECTION SELECTED : A — ADDRESS_M13_CONSTITUTIVE_RESPONSIBILITY_EXHAUSTION_SEMANTICS
 = authority 71 : CLOSED
-= MISSION 014 : EXECUTED BY CCR_LAB_FIX_1 · result014 persisted · qualification PENDING
+= MISSION 014 : EXECUTED · result014 persisted · INDEPENDENTLY QUALIFIED ·
+  corrected verdict FAIL / CONTRADICTED_MATERIALLY
 = MCS-B : ESTABLISHED / NOT REOPENED
 = VDCS-A : ESTABLISHED
 = VDCS-B : NOT_ESTABLISHED / Mission-013 target
@@ -2515,7 +2517,7 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = MCSG2 : UNRESOLVED / UNCHANGED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 = MCS-B : ESTABLISHED / NOT REOPENED
 = MCS-C : NOT_ESTABLISHED / Mission-012 target
 = M11 value / architecture domain-closure semantics : NOT SELECTED
@@ -2525,7 +2527,7 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = normative quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 HUMAN POST-MISSION013 R&D DIRECTION GATE
 = CLOSED / SELECTED
@@ -2594,16 +2596,17 @@ HUMAN POST-MISSION013 R&D DIRECTION GATE
   was NOT converted into a separate PROGRAM-STATE decision
 = authority 72 : CLOSED
 = AN R&D DIRECTION SELECTION IS NOT A CONSTITUTIVE SEMANTICS SELECTION
-= mission 014 : EXECUTED BY CCR_LAB_FIX_1 · result014 persisted · qualification PENDING
+= mission 014 : EXECUTED · result014 persisted · INDEPENDENTLY QUALIFIED ·
+  corrected verdict FAIL / CONTRADICTED_MATERIALLY
 = responsibility-space semantics : NOT SELECTED · M13 candidate : NOT SELECTED
   · VDC-03 : NOT REQUALIFIED / NOT SELECTED · MCS-B : ESTABLISHED
   / NOT REOPENED · RG-9 : NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
-= EXECUTED BY CCR_LAB_FIX_1 · CONTRACT FROZEN
+= EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
   73-HANDOFF-ROUTING-M13-CONSTITUTIVE-RESPONSIBILITY-EXHAUSTION-SEMANTICS-DIRECTION-AND-STUDY-FREEZE.md
 = category : NORMATIVE M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS
   STUDY — not a declared-responsibility value-domain study, not a Mission-013
@@ -2762,10 +2765,11 @@ M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
 = executor-reported construction : 18 raw M14 cells · 3 positively excluded as
   incoherent · 15 canonical candidates CEC-01..CEC-15 — WITHIN THE EXECUTOR'S
   DECLARED M14 MODEL ONLY, 15 IS NOT THE COMPLETE M14 UNIVERSE
-= executor-reported conformance : conformant 1 (CEC-01) · conformance
-  NOT_ESTABLISHED 1 · non-conformant 13 · minimal conformant 1 on 3 removal
-  tests · material distinctness moot, no second conformant candidate ·
-  15 equivalence classes, 0 collapse
+= executor-reported conformance — BOTH FIGURES CORRECTED BELOW : conformant
+  12 · conformance NOT_ESTABLISHED 12 · non-conformant 2928 · minimal
+  conformant 12 on 96 removal tests ·
+  material distinctness reported for all 66 unordered pairs among the 12 ·
+  2952 equivalence classes
 = executor-reported selector : applicable dominance NONE · applicable
   tie-break NONE
 = executor-reported CESG2 : CONJUNCTIVE — the executor decomposes it as
@@ -2783,45 +2787,144 @@ M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
   INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_M13_CONSTITUTIVE_RESPONSIBILITY_EXHAUSTION_SEMANTICS
 = executor-reported implied human normative gate : NOT_OPEN / NONE
 = executor-reported procedural success : PROCEDURALLY_SUCCESSFUL
-= THE EXECUTOR-REPORTED OUTCOME IS NOT A QUALIFIED OUTCOME — RULE_0 is NOT
-  independently qualified
-= independent qualification : PENDING
-= EXPLICIT QUALIFICATION TARGET — CESG2-A : whether CESG3's anti-circularity
-  rule is actually COEXTENSIVE with the broader NON-OBSERVATIONAL requirement
-  of the Mission-014 closure standard. #50 must also inspect CESG18, the
-  current-count / plurality / desired-outcome anti-observational firewall, and
-  CESG20, reproducibility, then determine whether CESG2 + CESG3 + CESG18 +
-  CESG20 fully cover SEMANTIC, GENERATIVE, REPRODUCIBLE and NON-OBSERVATIONAL
-  or leave a material gap. NOT resolved during persistence
-= EXPLICIT QUALIFICATION TARGET — MINIMALITY : the executor's basis is three
-  purported real material components for the conformant candidate, 3 removal
-  tests. ARE THE GENERATOR-INPUT UNIT ONTOLOGY, THE INCIDENCE RELATION AND THE
-  JOINT-DETERMINATION RULE ACTUALLY THE ATOMIC INDEPENDENT MATERIAL NORMATIVE
-  COMPONENTS RELEVANT TO MINIMALITY? GENERATOR AXIS ABLATION IS NOT AN
-  AUTOMATIC NORMATIVE MINIMALITY PROOF; #50 must inspect whether the unit
-  ontology contains separable material normative subcomponents, for instance
-  the admitted generator set and the input rule. Minimality is NOT endorsed yet
-= EXPLICIT QUALIFICATION TARGET — CESG22 : #50 must independently verify that
-  every retained YES itself supplies factor membership / non-membership,
-  independence / derivation, composition, parameterization, projection arities
-  including N→1, joint interaction, dependencies, future-factor
-  classification, positive exclusion, no-open-tail semantics, factorization
-  identity / normalization and prospective Mission-013 RCS-B sufficiency.
-  COVERAGE OF THE CURRENT 22 DECLARED RESPONSIBILITIES ALONE IS NOT SUFFICIENT
-  PROOF
-= EXPLICIT QUALIFICATION TARGET — UNKNOWNS : each of MU-14-B, MU-14-C, MU-14-G
-  and MU-14-X must denote a separate substantive proposition, and none may
-  confuse an authority / adoption boundary with an analytical unknown — NOT YET
-  HUMAN-ADOPTED IS NOT AN ANALYTICAL UNKNOWN
-= material qualification targets, in order : CES-A / CES-B, verifying that no
-  implicit closure proof slipped in despite the executor's NOT_ESTABLISHED and
-  that candidate equivalence carried neither CES-B nor constitutive exhaustion ·
-  CESG2 against the full semantic / generative / reproducible /
-  non-observational standard · actual minimality component decomposition ·
-  CESG22 · CES-C / D / E / F / G / H, relative versus global scope · the
-  18 → 15 generation and exclusion · the 1 / 1 / 13 conformance roster ·
-  single-candidate minimality · material distinctness · MU-14-B / C / G / X ·
-  outcome invariance · Rule 0 / 1 / 2 / 3 and the final outcome
+= INDEPENDENTLY QUALIFIED · MATERIALLY CORRECTED BY HUMAN-RATIFIED
+  COUNTER-EXPERTISE
+  74-HANDOFF-ROUTING-MISSION014-QUALIFICATION-CORRECTION.md
+= procedural : execution PASS · result production PASS · persistence PASS ·
+  qualification execution PASS · structural qualification PASS · byte identity
+  PASS ·
+  return contract 247 / 247 · 0 missing · 0 unexpected · 0 duplicates — NO
+  STRUCTURAL FACT ESTABLISHES ANALYTICAL TRUTH
+= reported qualification verdict : PASS WITH LIMITATIONS · SUPERSEDED
+= reported executor disposition : CONFIRMED_WITH_LIMITATIONS · SUPERSEDED
+= the qualification : MATERIALLY DEFECTIVE in one ratified load-bearing
+  respect — it kept minimality positive on an atomization it directiond
+  without proving it
+= corrected qualification verdict of the executor : FAIL
+= corrected executor outcome disposition : CONTRADICTED_MATERIALLY
+= executor material analytical errors : 1
+= MAE-1 : invalid minimality component model / method and unqualified positive
+  minimality claim. The executor treated the three generator-axis values of the
+  declared model — the unit ontology, the projection architecture and the
+  independence rule — as the material components, 3 removal tests, 1 minimal
+  conformant. A GENERATOR AXIS IS NOT AN AUTOMATIC NORMATIVE ATOM — values such
+  as GENERATOR_INPUT, FUNCTIONAL_INCIDENCE and JOINT_DETERMINATION can bundle
+  several semantic responsibilities, so axis removal proves only that the whole
+  bundle is load-bearing, never that no proper material subcomponent could be
+  removed
+= value admissibility, checked and clear : A CANDIDATE VALUE WHOSE OWN
+  ADMISSIBILITY IS NOT POSITIVELY ESTABLISHED CANNOT BE PROMOTED TO POSITIVELY
+  CONFORMANT, and an unknown selector keeps an already admissible candidate
+  rather than making an unknown value admissible. The three values of CEC-01 —
+  the generator-input ontology, built on structures fixed in the frozen corpus;
+  the functional incidence relation, required by CERQ-5's four arities; joint
+  determination, positively protected by authority 73 §8 — carry no open
+  admissibility unknown, so no candidate is promoted on an unestablished value
+= qualification material errors : 1
+= Q-MQE-1 : the qualification replaces the invalid 3-axis atomization with an
+  UNPROVEN 4-component atomization — the admitted generator set, the input
+  rule, the incidence relation and the joint-determination rule, 4 removal
+  tests — and then keeps MINIMALITY established. A MANDATORY / ANALYTICAL
+  RESPONSIBILITY IS NOT AN AUTOMATIC NORMATIVE ATOM; the missing positive
+  proposition is whether the proposed subrules are actually independently
+  removable normative components of a coherent candidate semantics. The finer
+  ablations may evidence that a given subrule is load-bearing, but without
+  positive atomization / separability semantics they do not establish the
+  complete material-component model
+= downstream consequences of that root defect are NOT double-counted
+= downstream consequences of either root defect are NOT double-counted
+= qualified minimality : executor 3-component model REJECTED · the
+  qualification's 4-component model NOT_ESTABLISHED · qualified
+  material-component granularity NOT_ESTABLISHED · qualified minimality of the
+  current positively conformant candidate NOT_ESTABLISHED · qualified minimal
+  conformant roster NOT_ESTABLISHED — the minimal conformant count is NOT set
+  to 0, since UNKNOWN IS NOT ZERO
+= conformance mapping, mechanically verified from result014 : no candidate
+  moves between classes on value admissibility, and no id is invented
+= qualified conformance : conformant 1 · conformance NOT_ESTABLISHED 1 ·
+  non-conformant 13 — arithmetic 1 + 1 + 13 = 15 canonical, the single
+  NOT_ESTABLISHED being the ceteris-paribus candidate under a functional
+  incidence relation, where CESG4 is genuinely ambiguous
+= qualified conformant roster : CEC-01 — generator-input unit ontology,
+  functional incidence relation, joint-determination independence rule
+= CES-A : ESTABLISHED, scoped to the BOUNDED STATED ANALYTICAL ROSTER
+  CR01..CR12, one responsibility per canonical question covering the twenty-two
+  mandatory components — the independent verification that no hidden
+  completeness rule converts the mandatory minimum into an exhaustive
+  analytical-responsibility universe is RETAINED
+= CES-B : NOT_ESTABLISHED · positive generative basis NONE
+= FIRST QUALIFIED CLOSURE FAILURE : CES-B
+= CES-C / CES-D / CES-E : NOT_ESTABLISHED GLOBALLY
+= CES-F : ESTABLISHED relative to the declared generated model / NOT
+  established as global M14 completeness · CES-G : ESTABLISHED relative to the
+  emitted / declared register / NOT_ESTABLISHED globally · CES-H : ESTABLISHED
+  relative to the declared model / NOT_ESTABLISHED globally — RELATIVE F / G /
+  H COMPLETENESS DOES NOT IMPLY GLOBAL CLOSURE
+= M14_CANDIDATE_SPACE_COMPLETENESS : NOT_ESTABLISHED
+= CESG2 local interpretation : CONJUNCTIVE — positive semantic + generative +
+  not-search-exhaustion; the executor's local reading is VALID as far as that
+  local conjunction goes. Overstatement corrected : NON-OBSERVATIONALITY IS
+  NOT CESG3 ALONE — CESG3 is the anti-circularity subset, CESG18 blocks
+  current-count / plurality / desired-outcome proof, CESG20 carries
+  reproducibility
+= full §15 candidate-level enforcement — semantic, generative, reproducible,
+  non-observational : NOT_ESTABLISHED / QUALIFICATION LIMITATION. The 1 / 1 /
+  13 roster is NOT altered on this limitation alone, absent a concrete
+  candidate-level violation; two forbidden bases of §15, stable taxonomy and
+  all known examples factorized, are named by no criterion and are caught only
+  by a broad reading of "not search exhaustion"
+= CESG22 : 1 YES · 1 NOT_ESTABLISHED · 13 NO within the declared generated
+  model — a CANDIDATE-CONTENT finding, not global M14 closure, not RCS-B
+  resolution, not human adoption. A candidate whose conformance is
+  NOT_ESTABLISHED may still carry prospectively sufficient content; CESG22
+  does not make it conformant
+= qualified relative generated-model findings : raw 18 · positively excluded
+  3 · canonical 15 · normalization collapse 0 · unmapped 0 · ambiguous 0 ·
+  preference-based 0 — COMPLETE RELATIVE TO THE DECLARED MODEL, NOT THE
+  COMPLETE M14 UNIVERSE
+= equivalence : 15 canonical classes · 0 collapses — equivalence remains
+  FORBIDDEN as CES-B proof
+= material distinctness : MOOT — one positively conformant candidate, no
+  pair. IT IS NOT CALLED A MINIMAL CONFORMANT DISTINCT ROSTER, because
+  minimality is NOT_ESTABLISHED
+= selector : applicable dominance NONE · applicable tie-break NONE · no
+  simplicity, fewest-factor or lowest-component-count selector
+= no unknown is invented merely because human adoption has not occurred : NOT
+  YET HUMAN-ADOPTED IS AN AUTHORITY STATE, NOT AN ANALYTICAL UNKNOWN
+= CESG2 admits no non-conjunctive local reading : authority 73 fixes local
+  CESG2 conjunctively and historical CGS-family ambiguity cannot create a local
+  branch
+= MU-14-B, MU-14-C, MU-14-G, MU-14-X : VALID MATERIAL UNKNOWNS at their exact
+  reconstructed propositions · the material-component granularity unknown is
+  added here, not double-counted with MU-14-C
+= executor non-material analytical errors : 1 — scope reporting for CES-F,
+  CES-G and CES-H, where the bare status hides that the positive proof is
+  relative to the declared generated model, CES-G and CES-H being reported
+  NOT_ESTABLISHED although they hold at that relative scope. The substantive
+  position is unaffected : no global completeness is claimed
+= qualified outcome invariance : NOT_ESTABLISHED — the M14
+  analytical-responsibility universe is not positively closed, the analytical
+  value / architecture domains are not positively closed, candidate
+  conformance is partly unresolved, candidate minimality is NOT_ESTABLISHED
+  and a selector outside the admitted cut is not positively closed. NO
+  POSITIVE UNIVERSAL TERMINAL-INVARIANCE PROOF IS ESTABLISHED, and it is
+  neither required nor asserted as qualified fact that a specific
+  terminal-changing completion exists
+= qualified partition : RULE_0 SATISFIED · RULE_1 NOT_SATISFIED / PREEMPTED,
+  additionally lacking a qualified minimal-conformant roster · RULE_2
+  NOT_SATISFIED · RULE_3 NOT_SATISFIED
+= qualified decisive rule : RULE_0
+= qualified final outcome :
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_M13_CONSTITUTIVE_RESPONSIBILITY_EXHAUSTION_SEMANTICS
+= qualified implied human normative gate : NOT_OPEN / NONE — SAME TERMINAL IS
+  NOT CONFIRMATION of the executor's materially erroneous intermediate
+  conclusion
+= qualification limitations, separate from errors : QL-1 full §15
+  candidate-level non-observational enforcement not positively shown
+  exhaustive, no current roster effect · QL-2 CESG22 is prospective content
+  inspection under an open CES-B space · QL-3 CES-D / F / G / H positive
+  findings are relative to declared domains and generator · QL-4 qualification
+  is read-only over a frozen evidence cut. THESE ARE NOT EXTRA MATERIAL ERRORS
 = future qualifier : AGENT CCR LAB #50
 = difference-visibility closure : ESTABLISHED
 = complete semantic invariant : ESTABLISHED
@@ -2833,12 +2936,18 @@ M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
 = MCS-B : ESTABLISHED / NOT REOPENED · RG-9 : NONE
 = Mission-013 relative findings : UNCHANGED / DOWNSTREAM ONLY
 = constitutive-exhaustion semantics selected : NO · M13 candidate selected : NO
-= M14 candidate selected : NO · CES-B : NOT REPAIRED · CESG2 : NOT
-  REINTERPRETED · minimality : NOT ENDORSED
-= new PROGRAM-STATE human decisions : 0 · RATIFIED 54 / PENDING 0
+= M14 candidate selected : NO · CES-B : NOT RESOLVED · CES-C : NOT RESOLVED ·
+  RCS-B : NOT RESOLVED · minimality : NOT REPAIRED · Mission-013 candidates :
+  NOT REQUALIFIED · MCS-B : FROZEN / NOT REOPENED
+= POST-MISSION014 FOLLOW-ON R&D DIRECTION : NOT SELECTED ·
+  POST-MISSION014 FOLLOW-ON R&D OPTION SET : NOT YET BOUNDED — no follow-on
+  option set is formulated or stored here
+= MISSION 015 : NONE · future executor : NONE
+= authority 73 : CLOSED AS EXECUTED MISSION-014 CONTRACT
+= new PROGRAM-STATE human decisions : 1 · RATIFIED 55 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -2934,7 +3043,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -3254,7 +3363,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -3263,13 +3372,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : FRESH AGENT CCR LAB #50 INDEPENDENTLY QUALIFIES RESULT014
+= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION014 R&D DIRECTIONS
 
 CURRENT LAB STREAM
 = NONE
