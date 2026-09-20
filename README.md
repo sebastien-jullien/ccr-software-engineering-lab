@@ -458,7 +458,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -477,7 +477,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -629,7 +629,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -781,7 +781,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -823,7 +823,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1017,7 +1017,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1053,7 +1053,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1251,7 +1251,7 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
 = mission 010 : NONE
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
 = CLOSED / SELECTED
@@ -1299,7 +1299,7 @@ HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
   it has several, that D12 / D16 must keep its current factorization, what
   constitutive closure principle governs the model, or what any future
   governing closure rule is
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1644,7 +1644,7 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 011 : EXECUTED BY CCR_LAB_FIX_1 · result011 persisted · QUALIFIED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1684,7 +1684,7 @@ HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
   architectures are admissible, which candidate-rule-space closure rule should
   govern, whether any existing CGR candidate is conformant, what "generative"
   means under CGS2, what CGS6 means, or which closure-generator rule to adopt
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1918,7 +1918,7 @@ CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 012 : EXECUTED BY CCR_LAB_FIX_1 · result012 persisted · QUALIFIED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1961,7 +1961,7 @@ HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
   exist, which dependencies or incompatibilities govern them, which
   domain-closure semantics should govern, whether any MCS candidate is
   conformant, or what MCSG2 means
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2215,7 +2215,7 @@ M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
   remains governing · VDC-03 NOT ADOPTABLE YET AT PROGRAM LEVEL
 = mission 013 : EXECUTED · result013 persisted · INDEPENDENTLY QUALIFIED ·
   corrected verdict FAIL / CONTRADICTED_MATERIALLY
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
 = CLOSED / SELECTED
@@ -2253,7 +2253,7 @@ HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
   quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2522,7 +2522,7 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = MCSG2 : UNRESOLVED / UNCHANGED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 = MCS-B : ESTABLISHED / NOT REOPENED
 = MCS-C : NOT_ESTABLISHED / Mission-012 target
 = M11 value / architecture domain-closure semantics : NOT SELECTED
@@ -2532,7 +2532,7 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = normative quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN POST-MISSION013 R&D DIRECTION GATE
 = CLOSED / SELECTED
@@ -2608,7 +2608,7 @@ HUMAN POST-MISSION013 R&D DIRECTION GATE
   / NOT REOPENED · RG-9 : NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2957,7 +2957,7 @@ M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 55 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN POST-MISSION014 R&D DIRECTION GATE
 = CLOSED / A SELECTED
@@ -3070,7 +3070,7 @@ HUMAN POST-MISSION014 R&D DIRECTION GATE
   NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 M14 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -3424,7 +3424,7 @@ M14 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 57 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN POST-MISSION015 R&D DIRECTION GATE
 = CLOSED / A SELECTED
@@ -3560,7 +3560,7 @@ HUMAN POST-MISSION015 R&D DIRECTION GATE
   REOPENED · RG-9 : NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 M15 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · QUALIFIED · CONTRACT CLOSED
@@ -3950,7 +3950,7 @@ M15 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 59 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 HUMAN POST-MISSION016 R&D DIRECTION GATE
 = CLOSED / A SELECTED
@@ -4121,7 +4121,7 @@ HUMAN POST-MISSION016 R&D DIRECTION GATE
   ESTABLISHED / NOT REOPENED · RG-9 : NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 M16 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · QUALIFIED · CONTRACT CLOSED
@@ -4503,11 +4503,16 @@ M16 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = M16_CANDIDATE_SPACE_COMPLETENESS : NOT_ESTABLISHED
 = Mission-016 qualified findings : UNCHANGED / DOWNSTREAM ONLY
 = MISSION 018 : NONE · NOT AUTHORIZED
-= POST-MISSION017 FOLLOW-ON R&D OPTION SET : NOT YET BOUNDED
+= POST-MISSION017 FOLLOW-ON R&D OPTION SET : BOUNDED by authority 84 —
+  option A ADDRESS_M17_ANALYTICAL_RESPONSIBILITY_ONTOLOGY_MEMBERSHIP_SEMANTICS
+  · option B ADDRESS_M17_ANALYTICAL_RESPONSIBILITY_UNIVERSE_CLOSURE_SEMANTICS
+  · option C ADDRESS_M17_CANDIDATE_MODEL_DIMENSION_DOMAIN_DEPENDENCY_PROJECTION_CLOSURE
+  · option D ADDRESS_M17_LOCAL_MMARUSG_VERDICT_RULE_DECISION_SEMANTICS_AND_FAITHFULNESS
 = POST-MISSION017 FOLLOW-ON R&D DIRECTION : NONE
 = FUTURE EXECUTOR : NONE
 = DO NOT INFER THE NEXT STUDY AUTOMATICALLY
-= authority 83 : CLOSED
+= authority 84 : POST-MISSION017 BOUNDED R&D DIRECTION GATE · OPEN
+= authority 83 : CLOSED / GOVERNING QUALIFICATION MATERIALIZED
 = universe-closure semantics selected : NO · M16 candidate selected : NO ·
   M17 candidate selected : NO · MARUS-B : NOT RESOLVED · MARUS-C : NOT
   RESOLVED · MU-16-I / MU-15-S / MU-16-X : NOT RESOLVED · M16 minimality :
@@ -4518,7 +4523,154 @@ M16 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 61 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
+
+HUMAN POST-MISSION017 R&D DIRECTION GATE
+= OPEN
+  84-HANDOFF-ROUTING-POST-MISSION017-RD-DIRECTION-GATE.md
+= this is NOT the human normative adoption / selection gate, which stays NOT
+  OPEN — two different gates
+= authority 83 : CLOSED / GOVERNING QUALIFICATION MATERIALIZED
+= Mission 017 leaves four materially distinct qualified uncertainties :
+  ontological membership in the analytical-responsibility class, closure of the
+  universe of those responsibilities, closure of the candidate model that
+  represents them, and the local decision semantics mapping candidate content
+  to MMARUSG verdicts — so human direction selection is appropriate
+= qualified M17 stated responsibility count : NOT_ESTABLISHED
+= MMARUS-A : NOT_ESTABLISHED · FIRST QUALIFIED CLOSURE FAILURE
+= MMARUS-B : NOT_ESTABLISHED · an INDEPENDENT ADDITIONAL FAILURE
+= MMARUS-C..H : relative mechanical · global NOT_ESTABLISHED ·
+  M17_CANDIDATE_SPACE_COMPLETENESS NOT_ESTABLISHED
+= executor 22 / 12-8-2 / nine-dimension model, domains
+  5 × 3 × 4 × 2 × 2 × 4 × 2 × 3 × 3 : MECHANICALLY REPRODUCIBLE ·
+  ANALYTICALLY UNQUALIFIED
+= generator carried forward : raw 9 · excluded 1 by the single declared
+  incoherence rule, applied once · admissible 8 ·
+  collapses 0 · canonical 8 — RELATIVE TO THE EXECUTOR-DECLARED MODEL
+= qualified criteria carried forward : MMARUSG2 0 / 0 / 8 · MMARUSG7
+  6 / 2 / 0 · MMARUSG10 0 / 0 / 8 · MMARUSG13 and MMARUSG14
+  4 / 2 / 2 · MMARUSG22 0 / 2 / 6 · qualified conformance
+  0 / 6 / 2 — ZERO POSITIVE CONFORMANTS IS NOT EXHAUSTIVE IMPOSSIBILITY
+= local verdict-rule ambiguities 1 MATERIAL · local verdict-faithfulness
+  unknowns 1 MATERIAL · valid material MU-17-B..MU-17-V · MU-17-V valid
+  non-material with conditional selector relevance
+= M17 material-component granularity / minimality / qualified remaining :
+  NOT_ESTABLISHED · outcome invariance NOT_ESTABLISHED · RULE_0 ·
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_M16_ANALYTICAL_RESPONSIBILITY_UNIVERSE_CLOSURE_SEMANTICS
+  · implied human gate NOT_OPEN / NONE
+= NEW ONTOLOGY INVARIANT, FROZEN : A CANDIDATE MUST SPECIFY X IS NOT X IS AN
+  ANALYTICAL RESPONSIBILITY · A CONTENT OBLIGATION, A SEMANTIC COMPONENT, A
+  RETURN RELATION and A GENERATOR DIMENSION ARE NOT ANALYTICAL
+  RESPONSIBILITIES · before asking whether a responsibility universe is
+  exhaustive, POSITIVELY ESTABLISH WHAT COUNTS AS A RESPONSIBILITY —
+  ONTOLOGY MEMBERSHIP PRECEDES UNIVERSE EXHAUSTIVENESS
+= GOVERNING INVARIANTS, CARRIED : the current responsibility roster is not the
+  complete universe · a candidate-level classifier is not meta-space closure ·
+  relative generator closure is not global candidate-space closure · a
+  generator axis and an analytical responsibility are not automatic normative
+  atoms · a known conformant roster is not a qualified minimal-conformant
+  remaining roster · TWO FAITHFUL READINGS WITH NO POSITIVE DISCRIMINATOR →
+  NOT_ESTABLISHED
+= option A : ADDRESS_M17_ANALYTICAL_RESPONSIBILITY_ONTOLOGY_MEMBERSHIP_SEMANTICS
+  — primary targets MMARUS-A and AQU-3. What positive semantic rule determines
+  whether a candidate content obligation, semantic component, derived rule,
+  discipline, projection, normalization, exclusion rule or other candidate
+  content COUNTS AS a materially variable analytical responsibility under
+  MMARUQ-1? THIS DIRECTION IS PRIOR TO EXHAUSTIVENESS. Content required of
+  every candidate, a material candidate semantic, a variable value and an
+  independent dimension are NOT automatic analytical responsibilities, and
+  derived content is NOT an automatic non-responsibility. A must positively
+  define membership, non-membership, material variability, responsibility
+  identity and the derived / composite / constant-discipline /
+  representational-only statuses. It may yield fewer than 22, exactly 22, more
+  than 22, or a generative criterion not reducible to a fixed current count —
+  NO CARDINALITY IS PRESELECTED — and a successful A IS NOT MMARUS-B closure
+= option B : ADDRESS_M17_ANALYTICAL_RESPONSIBILITY_UNIVERSE_CLOSURE_SEMANTICS
+  — primary targets MMARUS-B, MU-17-B and the roster-exhaustiveness
+  propositions including MU-17-C where applicable. Given a positively
+  established responsibility-membership semantics, what positive semantic /
+  generative rule, if any, closes the complete universe of materially variable
+  M17 analytical responsibilities? B MAY NOT prove closure from the §22
+  mandatory minimum, the current 22-item roster, the nine executor dimensions,
+  all current candidates, all current MMARUQ questions, all current MMARUSG
+  criteria, a total R_future_m16 classifier, zero additional responsibilities
+  found, or a stable taxonomy or roster — A VALID BASIS MUST BE INDEPENDENT OF
+  THE FINITE INVENTORY IT PRODUCES. B may be selected before A, but any B study
+  must preserve the dependency and CANNOT SILENTLY INVENT A — AQU-3 IS NOT
+  MU-17-C and ONTOLOGY MEMBERSHIP IS NOT UNIVERSE EXHAUSTIVENESS
+= option C : ADDRESS_M17_CANDIDATE_MODEL_DIMENSION_DOMAIN_DEPENDENCY_PROJECTION_CLOSURE
+  — primary targets AQU-2, MMARUS-C..H, MU-17-C..MU-17-C and MU-17-I.
+  What positive semantics define the complete material governing dimensions,
+  their value domains, dependencies, incompatibilities, projections,
+  exclusions, identity, equivalence and normalization for M17 candidate
+  semantics? EXECUTOR-MODEL FIREWALL : 12 responsibilities are not a qualified
+  ontology, 2 declared axes are not a qualified complete axis set,
+  3 × 3 is not a qualified global domain, and
+  neither 9 raw cells nor 8 canonical cells are a qualified complete
+  candidate space — the executor generator stays a RELATIVE MECHANICAL MODEL,
+  not closure evidence
+= option D : ADDRESS_M17_LOCAL_MMARUSG_VERDICT_RULE_DECISION_SEMANTICS_AND_FAITHFULNESS
+  — primary target AQU-1 and the qualified MMARUSG2 NO-versus-NOT_ESTABLISHED
+  boundary. What positive, reproducible, criterion-local decision semantics map
+  M17 candidate content to YES, NO or NOT_ESTABLISHED without analyst-specific
+  choice? MATERIALITY IS DEMONSTRATED BY AUTHORITY 83 : executor MMARUSG2
+  2 / 2 / 4 became qualified 0 / 0 / 8 and conformance shifted from
+  2 / 4 / 2 to 0 / 6 / 2 while the TERMINAL STAYED UNCHANGED —
+  VERDICT-RULE SEMANTICS ARE MATERIAL EVEN WITHOUT A TERMINAL CHANGE. D must
+  define a GENERAL RULE and MUST NOT hard-code MMARUSG2 = 0 / 0 / 8. D is
+  M17-LOCAL : it does not automatically resolve upstream M16 MU-16-X,
+  MMARUS-A, MMARUS-B, candidate-model closure or minimality, and any upstream
+  generalization requires separate authority
+= MU-17-I and MU-17-V : CROSS-CUTTING MATERIAL PROPOSITIONS, NOT
+  conclusively assigned to a single direction — MU-17-I asks whether a
+  positively closed category-assignment signature space exists that would let
+  an indexed ontology satisfy MMARUSG2; MU-17-V asks whether a
+  positively supported complete admissible type and family class MMARUQ_05
+  exists that would make the family-indexed parameterization regime
+  applicable. Any later selected study MUST STATE WHICH ASPECT IT IS AUTHORIZED
+  TO RESOLVE
+= M17 MINIMALITY AND REMAINING : DOWNSTREAM · NOT A CURRENT OPTION — the
+  responsibility ontology is not established, the global candidate model is not
+  established, local verdict semantics carry a material ambiguity and the
+  qualified positive conformant roster is 0, so a minimality study would
+  operate on an ANALYTICALLY UNSTABLE OBJECT. NO OPTION E
+= MU-17-V SELECTOR : currently valid NON-MATERIAL with conditional
+  relevance · NOT A CURRENT OPTION, since no qualified minimal-conformant
+  plurality exists. NO OPTION F
+= ZERO QUALIFIED CONFORMANTS : a current analytical roster — NOT proof of
+  impossibility, NOT a separate research direction and NOT authorization to
+  study Rule 3. The space remains open
+= A defines membership in the analytical-responsibility class · B closes the
+  universe once membership semantics exist · C closes the candidate model used
+  to represent materially distinct semantics · D closes the local decision
+  semantics · A MAY CHANGE WHICH RESPONSIBILITIES EXIST · B MAY CHANGE THE
+  UNIVERSE WHOSE STRUCTURE C MODELS · C MAY CHANGE THE CANDIDATE CONTENT D
+  APPLIES TO · D CLOSES NEITHER A, B NOR C · natural dependency A → B → C → D
+  BUT NO DETERMINISTIC DOMINANCE
+= NO ARTIFICIAL INVALIDATION — A is not the only valid direction, and B, C and
+  D are not invalid until their predecessors complete; DEPENDENCIES CONSTRAIN
+  INTERPRETATION, NOT HUMAN AUTHORITY TO CHOOSE A RESEARCH DIRECTION
+= option set : BOUNDED / COMPLETE FOR THIS GATE · NO OPTION E · NO OPTION F —
+  "complete for the current gate" does not mean every downstream future R&D
+  topic is presently selectable
+= direction selected : NONE
+= non-binding R&D recommendation : OPTION A FIRST — basis : MMARUS-A is the
+  FIRST QUALIFIED CLOSURE FAILURE and ONTOLOGY MEMBERSHIP PRECEDES UNIVERSE
+  EXHAUSTIVENESS. IT IS NOT converted into a PROGRAM-STATE decision
+= AN R&D DIRECTION SELECTION IS NOT AN ANALYTICAL-RESPONSIBILITY-UNIVERSE
+  SEMANTICS ADOPTION
+= MISSION 018 : NONE · MISSION-018 CONTRACT : NONE · FUTURE EXECUTOR : NONE —
+  only an explicit human selection of A, B, C or D lets the orchestrator freeze
+  a follow-on study
+= new PROGRAM-STATE human decisions : 0 · RATIFIED 61 / PENDING 0
+= universe-closure semantics : NOT SELECTED · M17 candidate : NOT SELECTED ·
+  MMARUS-A / MMARUS-B / AQU-1 / AQU-2 / AQU-3 / MU-17-I / MU-17-V /
+  MU-17-V / M17 minimality : NOT RESOLVED · remaining : NOT POPULATED ·
+  MARUS-B / MARUS-C / MU-16-X / M16 minimality / MU-15-S : NOT RESOLVED ·
+  authority 83 : NOT REOPENED · result017 : NOT REWRITTEN
+= program-level human normative gate : NOT OPEN
+= implementation : NOT AUTHORIZED
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -4614,7 +4766,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -4934,7 +5086,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -4943,13 +5095,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION017 R&D DIRECTIONS
+= next : HUMAN POST-MISSION017 R&D DIRECTION REQUIRED — A / B / C / D
 
 CURRENT LAB STREAM
 = NONE
