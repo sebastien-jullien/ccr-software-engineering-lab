@@ -458,7 +458,7 @@ NEXT GENUINE LAB DIRECTION
 = new tooling experiment : NONE
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN R&D-DIRECTION GATE
 = CLOSED / SELECTED
@@ -477,7 +477,7 @@ HUMAN R&D-DIRECTION GATE
 = same-corpus analysis : NOT NEW EVIDENCE
 = qualified design outcome remains : INSUFFICIENT_DURABLE_EVIDENCE
 = wrong-target incident : DEFERRED, and NOT automatically option C's direction
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 EVIDENCE-REQUIREMENT STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -629,7 +629,7 @@ EVIDENCE-REQUIREMENT STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -781,7 +781,7 @@ EVIDENCE-REQUIREMENT-SPACE CLOSURE STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN SEMANTIC-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -823,7 +823,7 @@ HUMAN SEMANTIC-CLOSURE DIRECTION GATE
   neither whether quantified requirements are distinct objects or derived
   predicates, neither SET-U's admissibility nor its Rule0-exit capability,
   and no evidence requirement
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1017,7 +1017,7 @@ NORMATIVE QUANTIFICATION-SEMANTICS STUDY
 = experiment : NO
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
 = CLOSED / SELECTED
@@ -1053,7 +1053,7 @@ HUMAN NORMATIVE-OPTION-CLOSURE DIRECTION GATE
   new dominance relation, no dominance metric, no semantic preference ranking,
   no choice of NQ-A / NQ-B / NQ-C / NQ-D, no adoption of a semantic rule, no governing
   authority, no implementation
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 NORMATIVE OPTION-SPACE CLOSURE STUDY
 = EXECUTED BY CCR_LAB_FIX_1
@@ -1251,7 +1251,7 @@ NORMATIVE OPTION-SPACE CLOSURE STUDY
 = implementation : NOT AUTHORIZED
 = wrong-target incident : DEFERRED
 = mission 010 : NONE
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
 = CLOSED / SELECTED
@@ -1299,7 +1299,7 @@ HUMAN NORMATIVE-CLOSURE-SEMANTICS DIRECTION GATE
   it has several, that D12 / D16 must keep its current factorization, what
   constitutive closure principle governs the model, or what any future
   governing closure rule is
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1644,7 +1644,7 @@ NORMATIVE CLOSURE-GENERATOR SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 011 : EXECUTED BY CCR_LAB_FIX_1 · result011 persisted · QUALIFIED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1684,7 +1684,7 @@ HUMAN CLOSURE-GENERATOR FOLLOW-ON DIRECTION GATE
   architectures are admissible, which candidate-rule-space closure rule should
   govern, whether any existing CGR candidate is conformant, what "generative"
   means under CGS2, what CGS6 means, or which closure-generator rule to adopt
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -1918,7 +1918,7 @@ CANDIDATE-RULE-SPACE CLOSURE-SEMANTICS STUDY
 = qualified implied human normative gate : NOT_OPEN / NONE — authority 59
   remains governing
 = mission 012 : EXECUTED BY CCR_LAB_FIX_1 · result012 persisted · QUALIFIED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
 = CLOSED / SELECTED
@@ -1961,7 +1961,7 @@ HUMAN MISSION-011 FOLLOW-ON DIRECTION GATE
   exist, which dependencies or incompatibilities govern them, which
   domain-closure semantics should govern, whether any MCS candidate is
   conformant, or what MCSG2 means
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2215,7 +2215,7 @@ M11 VALUE / ARCHITECTURE DOMAIN-CLOSURE SEMANTICS STUDY
   remains governing · VDC-03 NOT ADOPTABLE YET AT PROGRAM LEVEL
 = mission 013 : EXECUTED · result013 persisted · INDEPENDENTLY QUALIFIED ·
   corrected verdict FAIL / CONTRADICTED_MATERIALLY
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
 = CLOSED / SELECTED
@@ -2253,7 +2253,7 @@ HUMAN MISSION-012 FOLLOW-ON R&D DIRECTION GATE
   quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2522,7 +2522,7 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = MCSG2 : UNRESOLVED / UNCHANGED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 = MCS-B : ESTABLISHED / NOT REOPENED
 = MCS-C : NOT_ESTABLISHED / Mission-012 target
 = M11 value / architecture domain-closure semantics : NOT SELECTED
@@ -2532,7 +2532,7 @@ M12 CANDIDATE-RESPONSIBILITY-SPACE CLOSURE-SEMANTICS STUDY
 = normative quantification option : NOT SELECTED
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN POST-MISSION013 R&D DIRECTION GATE
 = CLOSED / SELECTED
@@ -2608,7 +2608,7 @@ HUMAN POST-MISSION013 R&D DIRECTION GATE
   / NOT REOPENED · RG-9 : NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -2957,7 +2957,7 @@ M13 CONSTITUTIVE-RESPONSIBILITY EXHAUSTION-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 55 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN POST-MISSION014 R&D DIRECTION GATE
 = CLOSED / A SELECTED
@@ -3070,7 +3070,7 @@ HUMAN POST-MISSION014 R&D DIRECTION GATE
   NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 M14 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · RESULT PERSISTED · QUALIFIED
@@ -3424,7 +3424,7 @@ M14 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 57 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN POST-MISSION015 R&D DIRECTION GATE
 = CLOSED / A SELECTED
@@ -3560,7 +3560,7 @@ HUMAN POST-MISSION015 R&D DIRECTION GATE
   REOPENED · RG-9 : NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 M15 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · QUALIFIED · CONTRACT CLOSED
@@ -3950,7 +3950,7 @@ M15 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 59 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN POST-MISSION016 R&D DIRECTION GATE
 = CLOSED / A SELECTED
@@ -4121,7 +4121,7 @@ HUMAN POST-MISSION016 R&D DIRECTION GATE
   ESTABLISHED / NOT REOPENED · RG-9 : NONE
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 M16 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · QUALIFIED · CONTRACT CLOSED
@@ -4525,7 +4525,7 @@ M16 ANALYTICAL-RESPONSIBILITY-UNIVERSE CLOSURE-SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 61 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 HUMAN POST-MISSION017 R&D DIRECTION GATE
 = CLOSED / A SELECTED
@@ -4679,7 +4679,7 @@ HUMAN POST-MISSION017 R&D DIRECTION GATE
   authority 83 : NOT REOPENED · result017 : NOT REWRITTEN
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 M17 ANALYTICAL-RESPONSIBILITY ONTOLOGY-MEMBERSHIP SEMANTICS STUDY
 = EXECUTED BY CCR_LAB_FIX_1 · QUALIFIED · CONTRACT CLOSED
@@ -5113,11 +5113,17 @@ M17 ANALYTICAL-RESPONSIBILITY ONTOLOGY-MEMBERSHIP SEMANTICS STUDY
 = MU-17-V : downstream selector unknown / OUT OF SCOPE
 = Mission-017 qualified findings : UNCHANGED / DOWNSTREAM ONLY
 = MISSION 019 : NONE · NOT AUTHORIZED
-= POST-MISSION018 FOLLOW-ON R&D OPTION SET : NOT YET BOUNDED
+= POST-MISSION018 FOLLOW-ON R&D OPTION SET : BOUNDED by authority 87 —
+  option A ADDRESS_M18_LOCAL_SEMANTIC_RESPONSIBILITY_ONTOLOGY_MEMBERSHIP_SEMANTICS
+  · option B ADDRESS_M18_CANDIDATE_ADMISSIBILITY_AND_EXCLUSION_DECISION_SEMANTICS
+  · option C ADDRESS_M18_QUALIFIED_CRITERION_REGISTER_BASIS_SEMANTICS
+  · option D ADDRESS_M18_MATERIAL_GENERATOR_AXIS_WARRANT_AND_CANDIDATE_MODEL_SEMANTICS
+  · option E ADDRESS_M18_LOCAL_OMARUSG_VERDICT_RULE_DECISION_SEMANTICS_AND_FAITHFULNESS
 = POST-MISSION018 FOLLOW-ON R&D DIRECTION : NONE
 = FUTURE EXECUTOR : NONE
 = DO NOT INFER THE NEXT STUDY AUTOMATICALLY
-= authority 86 : CLOSED
+= authority 87 : POST-MISSION018 BOUNDED R&D DIRECTION GATE · OPEN
+= authority 86 : CLOSED / GOVERNING QUALIFICATION MATERIALIZED
 = ontology-membership semantics selected : NO · responsibility roster
   selected : NO · M18 candidate selected : NO · MMARUS-A / MMARUS-B / AQU-1 /
   AQU-2 / MU-17-I / MU-17-V / MU-17-V / M17 minimality : NOT RESOLVED ·
@@ -5128,7 +5134,170 @@ M17 ANALYTICAL-RESPONSIBILITY ONTOLOGY-MEMBERSHIP SEMANTICS STUDY
 = new PROGRAM-STATE human decisions : 1 · RATIFIED 63 / PENDING 0
 = program-level human normative gate : NOT OPEN
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
+
+HUMAN POST-MISSION018 R&D DIRECTION GATE
+= OPEN
+  87-HANDOFF-ROUTING-POST-MISSION018-RD-DIRECTION-GATE.md
+= this is NOT the human normative adoption / selection gate, which stays NOT
+  OPEN — two different gates
+= authority 86 : CLOSED / GOVERNING QUALIFICATION MATERIALIZED
+= Mission 018 leaves five materially distinct qualified uncertainties : what
+  counts as a local M18 semantic responsibility, the candidate admissibility
+  and exclusion semantics, the qualified basis that would let a criterion
+  register be frozen, the material warrant of the generator dimensions,
+  and the local OMARUSG verdict decision semantics — so human direction
+  selection is appropriate
+= #58 reported verdict PASS WITH LIMITATIONS · SUPERSEDED · corrected verdict
+  FAIL · CCR_LAB_FIX_1 disposition CONTRADICTED_MATERIALLY
+= OMARUS-A : NOT_ESTABLISHED · M18_FIRST_CLOSURE_FAILURE : OMARUS-A ·
+  OMARUS-B : NOT_ESTABLISHED · M18 local responsibility count and IDs :
+  NOT_ESTABLISHED
+= executor-declared model 2 axes / 10 derived or followed responsibilities,
+  raw 9 : MECHANICALLY REPRODUCIBLE · MATERIAL-AXIS WARRANT NOT_ESTABLISHED
+= the declared incoherence rule positively excludes 1 cell · no second
+  exclusion rule · declared mechanics 1 excluded / 8 admissible / 8 canonical,
+  NOT GOVERNING · qualified exclusion union, admissible roster and count,
+  canonical roster and count ALL NOT_ESTABLISHED
+= qualified local responsibility roster NOT_ESTABLISHED · OMARUSG10
+  NOT_ESTABLISHED · OMARUSG22 NOT_ESTABLISHED · qualified conformance
+  NOT_ESTABLISHED
+= local verdict-rule ambiguities 0 REPORTED · AQU-4 material unknown of the
+  positive rule that would make the OMAR01..OMAR12 entries materially variable
+  responsibilities · AQU-5 material unknown of the qualified basis that would
+  let a register computed over an unestablished local model be frozen
+= tuple distinctness MECHANICALLY ESTABLISHED · qualified material semantic
+  distinctness NOT_ESTABLISHED · qualified global equivalence NOT_ESTABLISHED ·
+  M18_CANDIDATE_SPACE_COMPLETENESS NOT_ESTABLISHED · M18 granularity,
+  minimality and remaining NOT_ESTABLISHED · outcome invariance
+  NOT_ESTABLISHED · RULE_0 ·
+  INSUFFICIENT_DURABLE_BASIS_TO_SPECIFY_M17_ANALYTICAL_RESPONSIBILITY_ONTOLOGY_MEMBERSHIP_SEMANTICS
+  · implied human gate NOT_OPEN / NONE
+= GOVERNING INVARIANTS, FROZEN : A CONTENT OBLIGATION IS NOT AN ANALYTICAL
+  RESPONSIBILITY · ADMITTED HISTORICAL ANALYTICAL DATA IS NOT A QUALIFIED
+  ANALYTICAL PREMISE · TWO ANCHORED VALUES ARE NOT A MATERIAL GENERATOR AXIS ·
+  TWO FAITHFUL EXCLUSION READINGS WITH NO POSITIVE DISCRIMINATOR → EXCLUSION
+  STATUS NOT_ESTABLISHED · AMBIGUOUS ADMISSIBILITY → QUALIFIED CANDIDATE SPACE
+  NOT_ESTABLISHED · A DIFFERENT AXIS VALUE IS NOT AN AUTOMATIC MATERIAL
+  SEMANTIC DIFFERENCE · SAME TERMINAL IS NOT SAME MATERIAL ANALYTICAL RESULT
+= option A : ADDRESS_M18_LOCAL_SEMANTIC_RESPONSIBILITY_ONTOLOGY_MEMBERSHIP_SEMANTICS
+  — primary target OMARUS-A. What positive semantic property makes Y a
+  materially variable LOCAL semantic responsibility of an M18
+  ontology-membership candidate? The answer must be INDEPENDENT of mandatory
+  candidate content, OMQ questions, return relations, OMARUSG criteria,
+  generator axes and serialized sections. It addresses WHAT COUNTS AS A LOCAL
+  M18 RESPONSIBILITY, not whether the resulting universe is exhaustive. It may
+  yield a finite roster, a parametric family, a generative criterion or no
+  positively established ontology — NO CARDINALITY IS PRESELECTED — and a
+  successful A IS NOT OMARUS-B
+= option B : ADDRESS_M18_CANDIDATE_ADMISSIBILITY_AND_EXCLUSION_DECISION_SEMANTICS
+  — primary target the declared incoherence rule / MU-18-B. What positive
+  decision semantics determine whether a candidate cell is POSITIVELY EXCLUDED,
+  ADMISSIBLE or NOT_ESTABLISHED when a frozen requirement can faithfully be
+  read either as an exclusion or as a downstream conformance failure? The
+  executor applies the declared incoherence rule as the positive exclusion of
+  one cell, NO FROZEN RULE SAYS that a coherence failure belongs to
+  construction rather than to criterion evaluation, and MU-18-B stays
+  NOT_ESTABLISHED for want of a frozen rule positively bounding a candidate's
+  responsibility universe. B MUST DEFINE A GENERAL DECISION RULE and MUST NOT
+  merely ratify the executor's local application — CANDIDATE ADMISSIBILITY IS
+  NOT CANDIDATE CONFORMANCE, and a semantic failure belongs to construction /
+  exclusion or to criterion evaluation ONLY IF A POSITIVE RULE SAYS WHICH. B
+  does NOT establish OMARUS-A, OMARUS-B, the materiality of the two axes or M18
+  minimality
+= option C : ADDRESS_M18_QUALIFIED_CRITERION_REGISTER_BASIS_SEMANTICS
+  — primary target AQU-5. What positive basis lets a criterion register
+  computed over a declared candidate model be frozen as qualified, when that
+  model's own responsibility roster is not established? A count that is
+  mechanically exact over a declared model is REPRODUCIBLE but ANALYTICALLY
+  UNQUALIFIED while the model is — MECHANICAL EXACTNESS IS NOT A QUALIFIED
+  PREMISE, and C MUST NOT bootstrap the 2 / 4 / 2 or any already computed
+  register merely because it exists. C may later support requalification of the
+  conformance registers, OMARUSG10, dependent composite verdicts and candidate
+  membership effects, without automatically establishing OMARUS-A, OMARUS-B,
+  the general exclusion semantics, two-axis completeness or minimality
+= option D : ADDRESS_M18_MATERIAL_GENERATOR_AXIS_WARRANT_AND_CANDIDATE_MODEL_SEMANTICS
+  — primary target the semantic warrant of the executor-declared 2-axis model
+  with its ten derived or followed responsibilities, also relevant to
+  OMARUS-C..H and the model, domain, dependency and equivalence propositions at
+  their qualified local scope. What positive semantic rule determines which
+  variations in M18 candidate content are MATERIAL GOVERNING DEGREES OF
+  FREEDOM, which are derived, which are constant disciplines and which are
+  merely representational? MULTIPLE ANCHORED VALUES ARE NOT A MATERIAL AXIS · A
+  VARIABLE FIELD IS NOT A DEGREE OF FREEDOM · A DIFFERENT ALLOWED ANSWER IS NOT
+  A MATERIAL SEMANTIC DIFFERENCE · A COMPLETE CARTESIAN PRODUCT IS NOT A
+  QUALIFIED CANDIDATE SPACE. D may justify or replace the two-axis
+  architecture, the membership principle OMAR01, the split-and-identity rule
+  OMAR08 and the derivation of the ten other responsibilities, and may yield
+  fewer axes, more axes, a different coupling, a non-Cartesian model or no
+  closed model — NO ARCHITECTURE IS PRESELECTED
+= option E : ADDRESS_M18_LOCAL_OMARUSG_VERDICT_RULE_DECISION_SEMANTICS_AND_FAITHFULNESS
+  — primary targets MU-18-V and the absence of a frozen local verdict rule.
+  What positive, reproducible,
+  criterion-local rule maps M18 candidate content to YES, NO or NOT_ESTABLISHED
+  without analyst-specific selection between multiple faithful readings? TWO
+  FAITHFUL READINGS WITH NO POSITIVE DISCRIMINATOR → NOT_ESTABLISHED. E may
+  define the YES boundary, the positive-NO boundary, the NE boundary,
+  faithful-reading resolution, positive discriminator requirements, composite
+  propagation and OMARUSG22 semantics — IT MUST DEFINE GENERAL SEMANTICS AND
+  MUST NOT HARD-CODE REPORTED ROSTERS. If a criterion depends on an
+  unresolved proposition, THE DEPENDENCY MUST REMAIN EXPLICIT
+= OMARUS-B : DOWNSTREAM / NOT A CURRENT OPTION — OMARUS-A is the FIRST
+  QUALIFIED CLOSURE FAILURE, and before closing the local responsibility
+  universe the program must first establish what counts as a local
+  responsibility. NO OPTION F; a later gate may reopen universe closure after
+  sufficient upstream progress
+= M18 MINIMALITY AND REMAINING : DOWNSTREAM / NOT A CURRENT OPTION — the
+  responsibility ontology, candidate admissibility, candidate-model materiality
+  and criterion semantics are all open. NO OPTION G
+= SELECTOR : DOWNSTREAM / NOT A CURRENT OPTION — no qualified
+  minimal-conformant plurality exists. NO OPTION H
+= QUALIFIED CONFORMANCE : NOT_ESTABLISHED as an AGGREGATE CONSEQUENCE of
+  unresolved upstream semantics — NO "repair the conformance counts" direction
+  is created; conformance will be recomputed deterministically once its
+  premises become qualified
+= CANONICAL-SPACE COUNTS ARE NOT A DIRECTION : the declared-model figures —
+  1 excluded / 8 admissible / 8 canonical — are CONSEQUENCES OF THE DECLARED
+  MODEL. NO direction called "adopt the count 8" is created; the research
+  target is the SEMANTICS THAT DECIDE ADMISSIBILITY, not the count
+= CROSS-DIRECTION RELATIONSHIPS : there is NO single strict total dependency
+  chain. Partial dependencies recorded — A is required before any qualified use
+  of a complete local responsibility roster · C before a criterion register
+  computed over a declared model can become a qualified analytical
+  premise · D before the executor's two-axis product can be treated as a
+  semantically warranted complete candidate model · B before one unique
+  qualified admissible and canonical roster can be established for the cells
+  the incoherence rule touches · E before the local OMARUSG verdicts can become
+  uniquely qualified. B, C, D and E MAY be studied locally before A completes
+  ONLY IF their study contract explicitly preserves scope and does not silently
+  resolve A. DETERMINISTIC DOMINANCE : NONE
+= NO ARTIFICIAL INVALIDATION — A is not the only valid direction, and B, C, D
+  and E are neither invalid nor forbidden until A completes; all five address
+  materially distinct qualified uncertainties
+= option set : BOUNDED / COMPLETE FOR THIS GATE · NO OPTION F · NO OPTION G ·
+  NO OPTION H — "complete for the current gate" does not mean every downstream
+  R&D topic is presently selectable
+= direction selected : NONE
+= non-binding R&D recommendation : OPTION A FIRST — basis : OMARUS-A is the
+  FIRST QUALIFIED CLOSURE FAILURE and the deepest unresolved proposition
+  remains what counts as a local M18 semantic responsibility. IT IS NOT
+  converted into a PROGRAM-STATE decision
+= AN R&D DIRECTION SELECTION IS NOT AN ONTOLOGY-MEMBERSHIP SEMANTICS ADOPTION
+= MISSION 019 : NONE · MISSION-019 CONTRACT : NONE · FUTURE EXECUTOR : NONE —
+  only an explicit human selection of A, B, C, D or E lets the orchestrator
+  freeze a follow-on study
+= new PROGRAM-STATE human decisions : 0 · RATIFIED 63 / PENDING 0
+= ontology-membership semantics : NOT SELECTED · responsibility roster : NOT
+  SELECTED · M18 candidate : NOT SELECTED · OMARUS-A / OMARUS-B / the general
+  exclusion semantics / AQU-4
+  / AQU-5 / the local verdict rules / two-axis model / M18 minimality /
+  selector : NOT
+  RESOLVED · conformance : NOT RECOMPUTED · MMARUS-A / MMARUS-B / AQU-1 / AQU-2
+  / M17 minimality / MU-17-V : NOT RESOLVED · authority 86 : NOT REOPENED ·
+  result018 : NOT REWRITTEN
+= program-level human normative gate : NOT OPEN
+= implementation : NOT AUTHORIZED
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 DESIGN-SPACE RECONSTRUCTION STUDY
 = authority 52 : CLOSED
@@ -5224,7 +5393,7 @@ DESIGN-SPACE RECONSTRUCTION STUDY
 = new representation : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 BOUNDED COMPARATIVE STUDY
 = authority 44 : BOUNDED STUDY FREEZE WITH MATERIAL CURRENT-NEED OMISSION
@@ -5544,7 +5713,7 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new semantic primitive : NOT SELECTED
 = TE004 : NONE
 = wrong-target incident review : DEFERRED, excluded from this study's corpus
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 = new semantic primitive : NOT SELECTED
 = wrong-target dispatch incident : DEFERRED / SEPARATE, not a study input,
   not yet a qualified finding, no product consequence selected
@@ -5553,13 +5722,13 @@ BOUNDED INTEGRATION DESIGN STUDY
 = new representation : NO
 = TE004 : NO
 = implementation : NOT AUTHORIZED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 = new tooling experiment : NONE
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
 = EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
-= next : ORCHESTRATOR FORMULATES BOUNDED POST-MISSION018 R&D DIRECTIONS
+= next : HUMAN POST-MISSION018 R&D DIRECTION REQUIRED — A / B / C / D / E
 
 CURRENT LAB STREAM
 = NONE
