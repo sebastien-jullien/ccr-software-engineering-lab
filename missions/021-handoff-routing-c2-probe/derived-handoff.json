@@ -1,0 +1,46 @@
+{
+  "packet_kind": "C2_HANDOFF_PACKET",
+  "candidate_id": "EXP-C2-C",
+  "probe_id": "A94-C2-PROBE-001",
+  "mission_logical_id": "021-handoff-routing-c2-probe",
+  "governing_authority": {
+    "path": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+    "blob": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0",
+    "sha256": "49260f062cc62b1e763d6d6020f5065bc9fce019d0c0f818af4ad8f45ab18b87"
+  },
+  "verification_target": {
+    "path": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+    "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+    "sha256": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b"
+  },
+  "candidate_spec": {
+    "path": "missions/021-handoff-routing-c2-probe/candidate-spec.json",
+    "blob": "9ae9eb5ec975d29a3c9e07028f1899bf9583f7e6"
+  },
+  "baseline_manifest": {
+    "path": "missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+    "blob": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc"
+  },
+  "observation_contract": {
+    "path": "missions/021-handoff-routing-c2-probe/observation-contract.json",
+    "blob": "05f962d67c800a390df54d6438526ead03dc476f"
+  },
+  "join": {
+    "key": [
+      "EXP-C2-C",
+      "A94-C2-PROBE-001"
+    ],
+    "outcome": "SUCCESS",
+    "trace_sha256": "3f8a25f31f6b28f11278a4a69a04a46ea9fe9fe5092c953f0143f1c80b51cab4"
+  },
+  "derivation": {
+    "outcome": "PRODUCED",
+    "trace_sha256": "00dedd138f1e2fd6e6cb3edbda3893a1153a58062d74ec9ba824cd6834fadbfe"
+  },
+  "h_next_control_stage": "EXECUTOR_DISPATCH",
+  "h_return_destination": "missions/021-handoff-routing-c2-probe/result.json",
+  "h_stage_ordering_dependency": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+  "h_persistence_owner_actor": "ORCHESTRATION",
+  "h_persistence_owner_target": "EXECUTOR_RESULT_INSTANCE",
+  "h_persistence_must_complete_before": "PANEL_C"
+}

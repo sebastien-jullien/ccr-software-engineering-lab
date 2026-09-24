@@ -1,0 +1,954 @@
+{
+  "artifact": "EXP_C2_C_OBSERVATIONS",
+  "contract": {
+    "path": "missions/021-handoff-routing-c2-probe/observation-contract.json",
+    "blob": "05f962d67c800a390df54d6438526ead03dc476f"
+  },
+  "producer": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+  "identity": {
+    "candidate_id": "EXP-C2-C",
+    "probe_id": "A94-C2-PROBE-001",
+    "mission_logical_id": "021-handoff-routing-c2-probe",
+    "freeze_authority": {
+      "path": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+      "blob": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0",
+      "sha256": "49260f062cc62b1e763d6d6020f5065bc9fce019d0c0f818af4ad8f45ab18b87"
+    },
+    "verification_target": {
+      "path": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+      "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+      "sha256": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b"
+    },
+    "static_contract_artifacts": [
+      {
+        "path": "missions/021-handoff-routing-c2-probe/candidate-spec.json",
+        "blob": "9ae9eb5ec975d29a3c9e07028f1899bf9583f7e6"
+      },
+      {
+        "path": "missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+        "blob": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc"
+      },
+      {
+        "path": "missions/021-handoff-routing-c2-probe/observation-contract.json",
+        "blob": "05f962d67c800a390df54d6438526ead03dc476f"
+      }
+    ],
+    "freeze_commit": "50036c11a1e889f32bb9428c2a355a4470248e06"
+  },
+  "pre_c2": {
+    "evaluated_at_head": "50036c11a1e889f32bb9428c2a355a4470248e06",
+    "execution_mechanism": {
+      "kind": "DISPOSABLE_HARNESS_OUTSIDE_REPOSITORY",
+      "applies_only": "A95 §11–§14",
+      "persisted_in_repository": "NO",
+      "sha256": "a5dc97131c9e070ec69348c8859311974ce7a8667659dfd5baf0ff416a2df251"
+    },
+    "gates": {
+      "G-C2-01": {
+        "name": "AUTHORITY_94_IDENTITY_MATCH",
+        "checks": [
+          {
+            "check": "A94 blob vs candidate-spec",
+            "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_blob",
+            "expected": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+            "observed_source": "git HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+            "observed": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+            "equal": true
+          },
+          {
+            "check": "A94 blob vs PARAM",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_blob",
+            "expected": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+            "observed_source": "git HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+            "observed": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+            "equal": true
+          },
+          {
+            "check": "A94 sha256 vs candidate-spec",
+            "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_sha256",
+            "expected": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+            "observed_source": "sha256(HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md)",
+            "observed": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+            "equal": true
+          },
+          {
+            "check": "A94 sha256 vs PARAM",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_sha256",
+            "expected": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+            "observed_source": "sha256(HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md)",
+            "observed": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-C2-02": {
+        "name": "CANDIDATE_SPEC_IDENTITY_MATCH",
+        "checks": [
+          {
+            "check": "candidate-spec blob vs PARAM",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM candidate_spec_blob",
+            "expected": "9ae9eb5ec975d29a3c9e07028f1899bf9583f7e6",
+            "observed_source": "git HEAD:missions/021-handoff-routing-c2-probe/candidate-spec.json",
+            "observed": "9ae9eb5ec975d29a3c9e07028f1899bf9583f7e6",
+            "equal": true
+          },
+          {
+            "check": "semantic fingerprint vs PARAM",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM candidate_semantic_fingerprint",
+            "expected": "6f40edcde8ba82b43784c66dc101bf6e9b819437620d90d1832be9e4ebb4fd61",
+            "observed_source": "sha256(canonical(HEAD:missions/021-handoff-routing-c2-probe/candidate-spec.json#semantics))",
+            "observed": "6f40edcde8ba82b43784c66dc101bf6e9b819437620d90d1832be9e4ebb4fd61",
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-C2-03": {
+        "name": "RUN_PARAMETER_COMPLETENESS",
+        "checks": [
+          {
+            "check": "required parameter candidate_id",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM candidate_id",
+            "expected": "EXP-C2-C",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.candidate_id",
+            "observed": "EXP-C2-C",
+            "equal": true
+          },
+          {
+            "check": "required parameter probe_id",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM probe_id",
+            "expected": "A94-C2-PROBE-001",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.probe_id",
+            "observed": "A94-C2-PROBE-001",
+            "equal": true
+          },
+          {
+            "check": "required parameter mission_logical_id",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM mission_logical_id",
+            "expected": "021-handoff-routing-c2-probe",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.mission_logical_id",
+            "observed": "021-handoff-routing-c2-probe",
+            "equal": true
+          },
+          {
+            "check": "required parameter freeze_authority_path",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM freeze_authority_path",
+            "expected": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.freeze_authority_path",
+            "observed": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+            "equal": true
+          },
+          {
+            "check": "required parameter verification_target_path",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_path",
+            "expected": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_path",
+            "observed": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+            "equal": true
+          },
+          {
+            "check": "required parameter verification_target_blob",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_blob",
+            "expected": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_blob",
+            "observed": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+            "equal": true
+          },
+          {
+            "check": "required parameter verification_target_sha256",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_sha256",
+            "expected": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_sha256",
+            "observed": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+            "equal": true
+          },
+          {
+            "check": "required parameter return_destination",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM return_destination",
+            "expected": "missions/021-handoff-routing-c2-probe/result.json",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.return_destination",
+            "observed": "missions/021-handoff-routing-c2-probe/result.json",
+            "equal": true
+          },
+          {
+            "check": "required parameter observation_destination",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM observation_destination",
+            "expected": "missions/021-handoff-routing-c2-probe/observations.json",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_destination",
+            "observed": "missions/021-handoff-routing-c2-probe/observations.json",
+            "equal": true
+          },
+          {
+            "check": "required parameter baseline_manifest_path",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM baseline_manifest_path",
+            "expected": "missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.baseline_manifest_path",
+            "observed": "missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+            "equal": true
+          },
+          {
+            "check": "required parameter observation_contract_path",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM observation_contract_path",
+            "expected": "missions/021-handoff-routing-c2-probe/observation-contract.json",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_contract_path",
+            "observed": "missions/021-handoff-routing-c2-probe/observation-contract.json",
+            "equal": true
+          },
+          {
+            "check": "required parameter derived_handoff_path",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM derived_handoff_path",
+            "expected": "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.derived_handoff_path",
+            "observed": "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+            "equal": true
+          },
+          {
+            "check": "required parameter next_control_stage",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM next_control_stage",
+            "expected": "EXECUTOR_DISPATCH",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.next_control_stage",
+            "observed": "EXECUTOR_DISPATCH",
+            "equal": true
+          },
+          {
+            "check": "required parameter expected_stage_chain",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM expected_stage_chain",
+            "expected": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.expected_stage_chain",
+            "observed": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+            "equal": true
+          },
+          {
+            "check": "required parameter persistence_ownership",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM persistence_ownership",
+            "expected": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.persistence_ownership",
+            "observed": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C",
+            "equal": true
+          },
+          {
+            "check": "required parameter executor_addressee",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM executor_addressee",
+            "expected": "AGENT_CCR_LAB_63",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.executor_addressee",
+            "observed": "AGENT_CCR_LAB_63",
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-C2-04": {
+        "name": "BASELINE_MANIFEST_IDENTITY_MATCH",
+        "checks": [
+          {
+            "check": "baseline-manifest blob vs PARAM",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM baseline_manifest_blob",
+            "expected": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc",
+            "observed_source": "git HEAD:missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+            "observed": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc",
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-C2-05": {
+        "name": "OBSERVATION_DESTINATION_FIXED",
+        "checks": [
+          {
+            "check": "destination candidate-spec vs PARAM",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM observation_destination",
+            "expected": "missions/021-handoff-routing-c2-probe/observations.json",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_destination",
+            "observed": "missions/021-handoff-routing-c2-probe/observations.json",
+            "equal": true
+          },
+          {
+            "check": "destination candidate-spec vs observation-contract",
+            "expected_source": "missions/021-handoff-routing-c2-probe/observation-contract.json#destination.path",
+            "expected": "missions/021-handoff-routing-c2-probe/observations.json",
+            "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_destination",
+            "observed": "missions/021-handoff-routing-c2-probe/observations.json",
+            "equal": true
+          },
+          {
+            "check": "observation-contract blob vs PARAM",
+            "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM observation_contract_blob",
+            "expected": "05f962d67c800a390df54d6438526ead03dc476f",
+            "observed_source": "git HEAD:missions/021-handoff-routing-c2-probe/observation-contract.json",
+            "observed": "05f962d67c800a390df54d6438526ead03dc476f",
+            "equal": true
+          },
+          {
+            "check": "destination absent before C2_JOIN (HEAD)",
+            "expected_source": "rule A95 §11 G-C2-05",
+            "expected": false,
+            "observed_source": "git cat-file -e HEAD:missions/021-handoff-routing-c2-probe/observations.json",
+            "observed": false,
+            "equal": true
+          },
+          {
+            "check": "destination absent before C2_JOIN (worktree)",
+            "expected_source": "rule A95 §11 G-C2-05",
+            "expected": false,
+            "observed_source": "filesystem missions/021-handoff-routing-c2-probe/observations.json",
+            "observed": false,
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      }
+    },
+    "j_c": {
+      "inputs": {
+        "candidate_spec": {
+          "path": "missions/021-handoff-routing-c2-probe/candidate-spec.json",
+          "blob": "9ae9eb5ec975d29a3c9e07028f1899bf9583f7e6"
+        },
+        "freeze_authority": {
+          "path": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+          "blob": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0"
+        },
+        "observation_contract": {
+          "path": "missions/021-handoff-routing-c2-probe/observation-contract.json",
+          "blob": "05f962d67c800a390df54d6438526ead03dc476f"
+        },
+        "baseline_manifest": {
+          "path": "missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+          "blob": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc"
+        },
+        "verification_target": {
+          "path": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+          "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        },
+        "program_state_decision": "handoff-routing-exp-c2-c-experimental-transaction-freeze-ratified"
+      },
+      "comparisons": [
+        {
+          "field": "candidate_identity",
+          "comparisons": [
+            {
+              "check": "candidate-spec vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM candidate_id",
+              "expected": "EXP-C2-C",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.candidate_id",
+              "observed": "EXP-C2-C",
+              "equal": true
+            },
+            {
+              "check": "candidate-spec vs J-C key",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#j_c_rule.key_value[0]",
+              "expected": "EXP-C2-C",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.candidate_id",
+              "observed": "EXP-C2-C",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "candidate_semantic_fingerprint",
+          "comparisons": [
+            {
+              "check": "semantic fingerprint vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM candidate_semantic_fingerprint",
+              "expected": "6f40edcde8ba82b43784c66dc101bf6e9b819437620d90d1832be9e4ebb4fd61",
+              "observed_source": "sha256(canonical(HEAD:missions/021-handoff-routing-c2-probe/candidate-spec.json#semantics))",
+              "observed": "6f40edcde8ba82b43784c66dc101bf6e9b819437620d90d1832be9e4ebb4fd61",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "probe_identity",
+          "comparisons": [
+            {
+              "check": "candidate-spec vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM probe_id",
+              "expected": "A94-C2-PROBE-001",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.probe_id",
+              "observed": "A94-C2-PROBE-001",
+              "equal": true
+            },
+            {
+              "check": "candidate-spec vs J-C key",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#j_c_rule.key_value[1]",
+              "expected": "A94-C2-PROBE-001",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.probe_id",
+              "observed": "A94-C2-PROBE-001",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "governing_freeze_authority_identity",
+          "comparisons": [
+            {
+              "check": "A95 committed blob vs PROGRAM-STATE decision evidence",
+              "expected_source": "HEAD:PROGRAM-STATE.json#decision handoff-routing-exp-c2-c-experimental-transaction-freeze-ratified evidence[0].observed.blob",
+              "expected": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0",
+              "observed_source": "git HEAD:95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+              "observed": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "verification_target_identity",
+          "comparisons": [
+            {
+              "check": "A94 blob vs candidate-spec",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_blob",
+              "expected": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+              "observed_source": "git HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+              "observed": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+              "equal": true
+            },
+            {
+              "check": "A94 blob vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_blob",
+              "expected": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+              "observed_source": "git HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+              "observed": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+              "equal": true
+            },
+            {
+              "check": "A94 sha256 vs candidate-spec",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_sha256",
+              "expected": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+              "observed_source": "sha256(HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md)",
+              "observed": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+              "equal": true
+            },
+            {
+              "check": "A94 sha256 vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_sha256",
+              "expected": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+              "observed_source": "sha256(HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md)",
+              "observed": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "baseline_manifest_identity",
+          "comparisons": [
+            {
+              "check": "baseline-manifest blob vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM baseline_manifest_blob",
+              "expected": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc",
+              "observed_source": "git HEAD:missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+              "observed": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "observation_destination",
+          "comparisons": [
+            {
+              "check": "destination candidate-spec vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM observation_destination",
+              "expected": "missions/021-handoff-routing-c2-probe/observations.json",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_destination",
+              "observed": "missions/021-handoff-routing-c2-probe/observations.json",
+              "equal": true
+            },
+            {
+              "check": "destination candidate-spec vs observation-contract",
+              "expected_source": "missions/021-handoff-routing-c2-probe/observation-contract.json#destination.path",
+              "expected": "missions/021-handoff-routing-c2-probe/observations.json",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_destination",
+              "observed": "missions/021-handoff-routing-c2-probe/observations.json",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "return_destination",
+          "comparisons": [
+            {
+              "check": "candidate-spec vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM return_destination",
+              "expected": "missions/021-handoff-routing-c2-probe/result.json",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.return_destination",
+              "observed": "missions/021-handoff-routing-c2-probe/result.json",
+              "equal": true
+            },
+            {
+              "check": "candidate-spec vs observation-contract",
+              "expected_source": "missions/021-handoff-routing-c2-probe/observation-contract.json#executor_return.expected_path",
+              "expected": "missions/021-handoff-routing-c2-probe/result.json",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.return_destination",
+              "observed": "missions/021-handoff-routing-c2-probe/result.json",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "expected_stage_chain",
+          "comparisons": [
+            {
+              "check": "candidate-spec vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM expected_stage_chain",
+              "expected": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.expected_stage_chain",
+              "observed": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "persistence_ownership",
+          "comparisons": [
+            {
+              "check": "candidate-spec vs PARAM",
+              "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM persistence_ownership",
+              "expected": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C",
+              "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.persistence_ownership",
+              "observed": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C",
+              "equal": true
+            }
+          ],
+          "match": true
+        },
+        {
+          "field": "required_pre_c2_gate_outcomes",
+          "comparisons": [
+            {
+              "check": "G-C2-01 outcome",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-01].expected",
+              "expected": "PASS",
+              "observed_source": "runtime gate evaluation",
+              "observed": "PASS",
+              "equal": true
+            },
+            {
+              "check": "G-C2-02 outcome",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-02].expected",
+              "expected": "PASS",
+              "observed_source": "runtime gate evaluation",
+              "observed": "PASS",
+              "equal": true
+            },
+            {
+              "check": "G-C2-03 outcome",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-03].expected",
+              "expected": "PASS",
+              "observed_source": "runtime gate evaluation",
+              "observed": "PASS",
+              "equal": true
+            },
+            {
+              "check": "G-C2-04 outcome",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-04].expected",
+              "expected": "PASS",
+              "observed_source": "runtime gate evaluation",
+              "observed": "PASS",
+              "equal": true
+            },
+            {
+              "check": "G-C2-05 outcome",
+              "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-05].expected",
+              "expected": "PASS",
+              "observed_source": "runtime gate evaluation",
+              "observed": "PASS",
+              "equal": true
+            }
+          ],
+          "match": true
+        }
+      ],
+      "outcome": "SUCCESS",
+      "trace": {
+        "rule": "A95 §12",
+        "key": {
+          "candidate_id": "EXP-C2-C",
+          "probe_id": "A94-C2-PROBE-001"
+        },
+        "evaluated_at_head": "50036c11a1e889f32bb9428c2a355a4470248e06",
+        "fields": [
+          {
+            "field": "candidate_identity",
+            "comparisons": [
+              {
+                "check": "candidate-spec vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM candidate_id",
+                "expected": "EXP-C2-C",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.candidate_id",
+                "observed": "EXP-C2-C",
+                "equal": true
+              },
+              {
+                "check": "candidate-spec vs J-C key",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#j_c_rule.key_value[0]",
+                "expected": "EXP-C2-C",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.candidate_id",
+                "observed": "EXP-C2-C",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "candidate_semantic_fingerprint",
+            "comparisons": [
+              {
+                "check": "semantic fingerprint vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM candidate_semantic_fingerprint",
+                "expected": "6f40edcde8ba82b43784c66dc101bf6e9b819437620d90d1832be9e4ebb4fd61",
+                "observed_source": "sha256(canonical(HEAD:missions/021-handoff-routing-c2-probe/candidate-spec.json#semantics))",
+                "observed": "6f40edcde8ba82b43784c66dc101bf6e9b819437620d90d1832be9e4ebb4fd61",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "probe_identity",
+            "comparisons": [
+              {
+                "check": "candidate-spec vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM probe_id",
+                "expected": "A94-C2-PROBE-001",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.probe_id",
+                "observed": "A94-C2-PROBE-001",
+                "equal": true
+              },
+              {
+                "check": "candidate-spec vs J-C key",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#j_c_rule.key_value[1]",
+                "expected": "A94-C2-PROBE-001",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.probe_id",
+                "observed": "A94-C2-PROBE-001",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "governing_freeze_authority_identity",
+            "comparisons": [
+              {
+                "check": "A95 committed blob vs PROGRAM-STATE decision evidence",
+                "expected_source": "HEAD:PROGRAM-STATE.json#decision handoff-routing-exp-c2-c-experimental-transaction-freeze-ratified evidence[0].observed.blob",
+                "expected": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0",
+                "observed_source": "git HEAD:95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+                "observed": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "verification_target_identity",
+            "comparisons": [
+              {
+                "check": "A94 blob vs candidate-spec",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_blob",
+                "expected": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+                "observed_source": "git HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+                "observed": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+                "equal": true
+              },
+              {
+                "check": "A94 blob vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_blob",
+                "expected": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+                "observed_source": "git HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+                "observed": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+                "equal": true
+              },
+              {
+                "check": "A94 sha256 vs candidate-spec",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.verification_target_sha256",
+                "expected": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+                "observed_source": "sha256(HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md)",
+                "observed": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+                "equal": true
+              },
+              {
+                "check": "A94 sha256 vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM verification_target_sha256",
+                "expected": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+                "observed_source": "sha256(HEAD:94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md)",
+                "observed": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "baseline_manifest_identity",
+            "comparisons": [
+              {
+                "check": "baseline-manifest blob vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM baseline_manifest_blob",
+                "expected": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc",
+                "observed_source": "git HEAD:missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+                "observed": "477d76188a591d5d1bd2f492c5b9bea0e29d76cc",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "observation_destination",
+            "comparisons": [
+              {
+                "check": "destination candidate-spec vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM observation_destination",
+                "expected": "missions/021-handoff-routing-c2-probe/observations.json",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_destination",
+                "observed": "missions/021-handoff-routing-c2-probe/observations.json",
+                "equal": true
+              },
+              {
+                "check": "destination candidate-spec vs observation-contract",
+                "expected_source": "missions/021-handoff-routing-c2-probe/observation-contract.json#destination.path",
+                "expected": "missions/021-handoff-routing-c2-probe/observations.json",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.observation_destination",
+                "observed": "missions/021-handoff-routing-c2-probe/observations.json",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "return_destination",
+            "comparisons": [
+              {
+                "check": "candidate-spec vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM return_destination",
+                "expected": "missions/021-handoff-routing-c2-probe/result.json",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.return_destination",
+                "observed": "missions/021-handoff-routing-c2-probe/result.json",
+                "equal": true
+              },
+              {
+                "check": "candidate-spec vs observation-contract",
+                "expected_source": "missions/021-handoff-routing-c2-probe/observation-contract.json#executor_return.expected_path",
+                "expected": "missions/021-handoff-routing-c2-probe/result.json",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.return_destination",
+                "observed": "missions/021-handoff-routing-c2-probe/result.json",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "expected_stage_chain",
+            "comparisons": [
+              {
+                "check": "candidate-spec vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM expected_stage_chain",
+                "expected": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.expected_stage_chain",
+                "observed": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "persistence_ownership",
+            "comparisons": [
+              {
+                "check": "candidate-spec vs PARAM",
+                "expected_source": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md#PARAM persistence_ownership",
+                "expected": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C",
+                "observed_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.persistence_ownership",
+                "observed": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C",
+                "equal": true
+              }
+            ],
+            "match": true
+          },
+          {
+            "field": "required_pre_c2_gate_outcomes",
+            "comparisons": [
+              {
+                "check": "G-C2-01 outcome",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-01].expected",
+                "expected": "PASS",
+                "observed_source": "runtime gate evaluation",
+                "observed": "PASS",
+                "equal": true
+              },
+              {
+                "check": "G-C2-02 outcome",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-02].expected",
+                "expected": "PASS",
+                "observed_source": "runtime gate evaluation",
+                "observed": "PASS",
+                "equal": true
+              },
+              {
+                "check": "G-C2-03 outcome",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-03].expected",
+                "expected": "PASS",
+                "observed_source": "runtime gate evaluation",
+                "observed": "PASS",
+                "equal": true
+              },
+              {
+                "check": "G-C2-04 outcome",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-04].expected",
+                "expected": "PASS",
+                "observed_source": "runtime gate evaluation",
+                "observed": "PASS",
+                "equal": true
+              },
+              {
+                "check": "G-C2-05 outcome",
+                "expected_source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#pre_c2_gates[G-C2-05].expected",
+                "expected": "PASS",
+                "observed_source": "runtime gate evaluation",
+                "observed": "PASS",
+                "equal": true
+              }
+            ],
+            "match": true
+          }
+        ],
+        "field_coverage_complete": true,
+        "outcome": "SUCCESS"
+      },
+      "trace_sha256": "3f8a25f31f6b28f11278a4a69a04a46ea9fe9fe5092c953f0143f1c80b51cab4"
+    },
+    "d_c": {
+      "inputs": {
+        "candidate_spec": {
+          "path": "missions/021-handoff-routing-c2-probe/candidate-spec.json",
+          "blob": "9ae9eb5ec975d29a3c9e07028f1899bf9583f7e6"
+        },
+        "rule": "A95 §13 / candidate-spec d_c_rule"
+      },
+      "trace": {
+        "rule": "A95 §13",
+        "precondition": {
+          "j_c_outcome": "SUCCESS",
+          "j_c_trace_sha256": "3f8a25f31f6b28f11278a4a69a04a46ea9fe9fe5092c953f0143f1c80b51cab4"
+        },
+        "steps": [
+          {
+            "h_field": "NEXT_CONTROL_STAGE",
+            "source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.next_control_stage",
+            "value": "EXECUTOR_DISPATCH",
+            "equals_frozen_expected_H": true,
+            "operator_choice": "NONE"
+          },
+          {
+            "h_field": "RETURN_DESTINATION",
+            "source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.return_destination",
+            "value": "missions/021-handoff-routing-c2-probe/result.json",
+            "equals_frozen_expected_H": true,
+            "operator_choice": "NONE"
+          },
+          {
+            "h_field": "STAGE_ORDERING_DEPENDENCY",
+            "source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.expected_stage_chain",
+            "value": [
+              "C2_INPUT_FREEZE",
+              "C2_JOIN",
+              "C2_DERIVATION",
+              "HANDOFF_PERSISTENCE",
+              "PANEL_A",
+              "PANEL_B",
+              "EXECUTOR_DISPATCH",
+              "EXECUTOR_RETURN",
+              "RESULT_PERSISTENCE",
+              "PANEL_C"
+            ],
+            "equals_frozen_expected_H": true,
+            "operator_choice": "NONE"
+          },
+          {
+            "h_field": "PERSISTENCE_OWNERSHIP",
+            "source": "missions/021-handoff-routing-c2-probe/candidate-spec.json#run_parameters.persistence_ownership",
+            "value": {
+              "actor": "ORCHESTRATION",
+              "target": "EXECUTOR_RESULT_INSTANCE",
+              "must_complete_before": "PANEL_C"
+            },
+            "equals_frozen_expected_H": true,
+            "operator_choice": "NONE"
+          }
+        ],
+        "H": {
+          "NEXT_CONTROL_STAGE": "EXECUTOR_DISPATCH",
+          "RETURN_DESTINATION": "missions/021-handoff-routing-c2-probe/result.json",
+          "STAGE_ORDERING_DEPENDENCY": [
+            "C2_INPUT_FREEZE",
+            "C2_JOIN",
+            "C2_DERIVATION",
+            "HANDOFF_PERSISTENCE",
+            "PANEL_A",
+            "PANEL_B",
+            "EXECUTOR_DISPATCH",
+            "EXECUTOR_RETURN",
+            "RESULT_PERSISTENCE",
+            "PANEL_C"
+          ],
+          "PERSISTENCE_OWNERSHIP": {
+            "actor": "ORCHESTRATION",
+            "target": "EXECUTOR_RESULT_INSTANCE",
+            "must_complete_before": "PANEL_C"
+          }
+        },
+        "outcome": "PRODUCED"
+      },
+      "outcome": "PRODUCED",
+      "trace_sha256": "00dedd138f1e2fd6e6cb3edbda3893a1153a58062d74ec9ba824cd6834fadbfe"
+    }
+  },
+  "handoff": {
+    "packet_path": "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+    "packet_sha256": "81160f662d5589541edcc9bcd5fe1fc37b666fb669914b8789072adfe7bbc5ef",
+    "packet_blob": "69805418d739c84d61d053f32dc127e33db49945",
+    "H": {
+      "NEXT_CONTROL_STAGE": "EXECUTOR_DISPATCH",
+      "RETURN_DESTINATION": "missions/021-handoff-routing-c2-probe/result.json",
+      "STAGE_ORDERING_DEPENDENCY": [
+        "C2_INPUT_FREEZE",
+        "C2_JOIN",
+        "C2_DERIVATION",
+        "HANDOFF_PERSISTENCE",
+        "PANEL_A",
+        "PANEL_B",
+        "EXECUTOR_DISPATCH",
+        "EXECUTOR_RETURN",
+        "RESULT_PERSISTENCE",
+        "PANEL_C"
+      ],
+      "PERSISTENCE_OWNERSHIP": {
+        "actor": "ORCHESTRATION",
+        "target": "EXECUTOR_RESULT_INSTANCE",
+        "must_complete_before": "PANEL_C"
+      }
+    },
+    "persistence_commit": "PENDING_LATER_PHASE"
+  },
+  "pre_dispatch": "PENDING_LATER_PHASE",
+  "executor_return": "PENDING_LATER_PHASE",
+  "persistence": "PENDING_LATER_PHASE",
+  "panel_c": "PENDING_LATER_PHASE",
+  "rc": "PENDING_LATER_PHASE",
+  "u": "PENDING_LATER_PHASE",
+  "l": "PENDING_LATER_PHASE",
+  "ep": "PENDING_LATER_PHASE",
+  "discipline": {
+    "stop_events": [],
+    "deviations": [],
+    "missing_observations": [],
+    "repair_attempts": []
+  }
+}
