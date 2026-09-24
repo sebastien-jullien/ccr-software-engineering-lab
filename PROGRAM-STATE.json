@@ -1860,7 +1860,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Conduire une contre-expertise indépendante du retour expérimental complet d'EXP-C2-C (INDEPENDENT COUNTER-EXPERTISE OF THE COMPLETE EXP-C2-C EXPERIMENTAL RETURN) : la mission 021 gelée au commit 277000e6bcbdf9f2d351c40df816cc6d612ce12a a été exécutée par l'AGENT CCR LAB #63 ; le résultat missions/021-handoff-routing-c2-probe/result.json blob ada093bbe68ca0f7676a4c6994ed2354d5292e0f a été persisté par l'orchestration au commit a9314941dc32e05d839002f4aae5cc67b0e14240 avant le panneau C ; missions/021-handoff-routing-c2-probe/observations.json blob 47d222093d426bc3e4e154cffe1e7401907f1218 consigne les observations complètes sous l'autorité 95 (portes, J-C, D-C, paquet, panneaux A, B et C, retour de #63, RC1..RC8, U1..U3, L-2, L-3, EP-02..EP-04, écarts). Aucune adoption ni implémentation produit ; la qualification indépendante reste à faire et n'est pas effectuée par la transaction.",
+    "value": "HUMAN SELECTS ONE BOUNDED HANDOFF_ROUTING POST-EXPERIMENT DIRECTION FROM THE AUTHORITY-96 GATE — obtenir la sélection humaine d'une direction bornée postérieure à l'expérience pour la ligne HANDOFF_ROUTING. Autorité de porte : 96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md, blob 4e03e6c2956b7d77dd91f0b7887a51912af2c0f2, porte HANDOFF_ROUTING_POST_EXPERIMENT_DIRECTION OPEN / UNSELECTED. État qualifié de départ : couche 1 du même document, expérience EXP-C2-C PASS WITH LIMITATIONS, mission 021 COMPLETE. Contrat de transaction exécuté clôturé : 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob 49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0 ; observations missions/021-handoff-routing-c2-probe/observations.json, blob 47d222093d426bc3e4e154cffe1e7401907f1218. Options : A ADVANCE_TO_BOUNDED_PRODUCT_DESIGN_INTEGRATION_SPECIFICATION_STUDY ; B RETAIN_POSITIVE_R&D_EVIDENCE_AND_PARK_PRODUCTIZATION ; C LEAVE_HANDOFF_ROUTING_AND_SELECT_ANOTHER_PROGRAM_DIRECTION. Exhaustivité globale : NOT CLAIMED. Recommandation de la contre-expertise : A. Sélection humaine : NONE. Mission 022 aucune, exécutant futur aucun, aucune nouvelle étude automatique : seule une sélection humaine explicite de A, de B ou de C détermine la suite. Ne pas éditer les autorités 93 à 96, les artefacts de la mission 021 ni observations.json ; ne sélectionner aucune conception ni architecture produit ; n'adopter aucune sémantique produit ; n'autoriser aucune implémentation ni moteur de routage générique ; ne créer aucune mission 022 ; ne dépêcher aucun exécutant ; n'exécuter aucune expérience.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1877,17 +1877,45 @@
         }
       },
       {
-        "id": "ev-267",
+        "id": "ev-268",
         "kind": "repo-path",
-        "ref": "missions/021-handoff-routing-c2-probe/observations.json",
+        "ref": "96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "experiment_qualification",
+          "value": "Qualification indépendante ratifiée par l'humain de l'expérience complète EXP-C2-C / mission 021, matérialisée par la couche 1 de 96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md, blob 4e03e6c2956b7d77dd91f0b7887a51912af2c0f2 : expérience EXP-C2-C PASS WITH LIMITATIONS ; défauts matériels de conformité 0 ESTABLISHED ; EXP-C2-C POSITIVE BOUNDED EMPIRICAL C2 EVIDENCE ; mission 021 COMPLETE ; RC1 à RC8 YES, uniquement pour les dimensions de ligne de base bornées et gelées exactes d'EXP-C2-C-RUN-001 ; EP-02, EP-03 et EP-04 BOUNDED BURDEN REMOVAL OBSERVED ; U1 locale LOCAL SUPPORT / PASS, U1 générique NOT_ESTABLISHED ; U2 SUPPORTS ALREADY-FROZEN-INTENT RECORDING RATHER THAN RESIDUAL MANUAL RECONSTRUCTION FOR EXP-C2-C-RUN-001 ; U3 PASS FOR THIS CONCRETE PROBE ; L-2 PASS AT BOUNDED OBSERVATIONAL LEVEL ; L-3 PASS WITH TRANSPORT / EVIDENCE-PROVENANCE LIMITATION. Chaîne de réalisation observée : sémantique expérimentale gelée, J-C exécutée, D-C exécutée, H produit, propagé et consommé, aucune reconstruction manuelle C2 observée, résultat persisté avant le panneau C. Limitation 1 : discipline de transport du retour brut de #63 déviée ; le retour a été récupéré en lecture seule depuis le journal de session local de #63, qui n'est ni un canal de preuve CCR canonique, ni un précédent, ni un chemin de preuve normalisé ; la preuve cœur result.json n'est pas affectée, ses octets sont identiques, validés et persistés durablement. Limitation 2 : exécutant frais opérationnellement soutenu, preuve canoniquement durable limitée, sans invalider RC8. Écart /pkt.json : CONTRACTUAL / OPERATIONAL DEVIATION, effet d'écriture NONE, mutation du dépôt hors périmètre NONE, sr-scope NOT TRIGGERED UNDER THE FROZEN CONTRACT, expérience invalidée NO. Finalité d'acquisition de preuve de l'autorité 93 satisfaite au niveau expérimental borné ; finalité de spécification C2 bornée de l'autorité 94 réalisée par EXP-C2-C / M021. Un run borné réussi n'est ni une durabilité générique, ni une suffisance produit, ni une sélection d'architecture produit, ni une autorisation d'implémentation produit. Conception produit NOT SELECTED ; suffisance générique de HANDOFF_ROUTING NOT_ESTABLISHED ; implémentation produit NOT AUTHORIZED ; adoption produit NONE ; mission successeur automatique NONE. Qualification matérialisée sans nouvelle décision humaine."
+        },
+        "observed": {
+          "blob": "4e03e6c2956b7d77dd91f0b7887a51912af2c0f2"
+        }
+      },
+      {
+        "id": "ev-269",
+        "kind": "repo-path",
+        "ref": "96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "direction_option_set",
+          "value": "Ensemble borné des options de la porte humaine HANDOFF_ROUTING_POST_EXPERIMENT_DIRECTION, OPEN / UNSELECTED, gelé par la couche 2 de 96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md, blob 4e03e6c2956b7d77dd91f0b7887a51912af2c0f2. Option A : ADVANCE_TO_BOUNDED_PRODUCT_DESIGN_INTEGRATION_SPECIFICATION_STUDY, autoriser une étude bornée de spécification de conception et d'intégration orientée produit employant la preuve positive d'EXP-C2-C comme entrée empirique, afin de déterminer si une conception ou une spécification produit bornée peut être énoncée à partir de la chaîne démontrée jointure, dérivation, production, propagation et consommation, dans le respect des frontières de sémantique produit et de compatibilité ; A ne sélectionne pas EXP-C2-C comme architecture produit, n'adopte pas son artefact ou son schéma local à l'expérience comme représentation produit, n'autorise ni implémentation ni moteur de routage générique, n'établit ni suffisance générique ni minimalité globale et ne clôt pas l'espace des candidats. Option B : RETAIN_POSITIVE_R&D_EVIDENCE_AND_PARK_PRODUCTIZATION, conserver EXP-C2-C / M021 comme preuve empirique bornée positive sans autoriser aucune suite active de conception produit HANDOFF_ROUTING ; B n'établit aucune impossibilité, n'invalide pas EXP-C2-C et n'efface pas l'opportunité d'intégration qualifiée. Option C : LEAVE_HANDOFF_ROUTING_AND_SELECT_ANOTHER_PROGRAM_DIRECTION, arrêter le travail HANDOFF_ROUTING actif et renvoyer la direction de programme à une décision humaine ultérieure distincte ; C n'établit pas l'impossibilité de HANDOFF_ROUTING et ne convertit pas les questions génériques non résolues en NO. Exhaustivité globale des options : NOT CLAIMED ; option additionnelle matériellement justifiée : NONE CURRENTLY IDENTIFIED. Recommandation de la contre-expertise : A, consignée distinctement d'une décision. SÉLECTION HUMAINE : NONE."
+        },
+        "observed": {
+          "blob": "4e03e6c2956b7d77dd91f0b7887a51912af2c0f2"
+        }
+      },
+      {
+        "id": "ev-270",
+        "kind": "repo-path",
+        "ref": "96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Conduire une contre-expertise indépendante du retour expérimental complet d'EXP-C2-C (INDEPENDENT COUNTER-EXPERTISE OF THE COMPLETE EXP-C2-C EXPERIMENTAL RETURN) : la mission 021 gelée au commit 277000e6bcbdf9f2d351c40df816cc6d612ce12a a été exécutée par l'AGENT CCR LAB #63 ; le résultat missions/021-handoff-routing-c2-probe/result.json blob ada093bbe68ca0f7676a4c6994ed2354d5292e0f a été persisté par l'orchestration au commit a9314941dc32e05d839002f4aae5cc67b0e14240 avant le panneau C ; missions/021-handoff-routing-c2-probe/observations.json blob 47d222093d426bc3e4e154cffe1e7401907f1218 consigne les observations complètes sous l'autorité 95 (portes, J-C, D-C, paquet, panneaux A, B et C, retour de #63, RC1..RC8, U1..U3, L-2, L-3, EP-02..EP-04, écarts). Aucune adoption ni implémentation produit ; la qualification indépendante reste à faire et n'est pas effectuée par la transaction."
+          "value": "HUMAN SELECTS ONE BOUNDED HANDOFF_ROUTING POST-EXPERIMENT DIRECTION FROM THE AUTHORITY-96 GATE — obtenir la sélection humaine d'une direction bornée postérieure à l'expérience pour la ligne HANDOFF_ROUTING. Autorité de porte : 96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md, blob 4e03e6c2956b7d77dd91f0b7887a51912af2c0f2, porte HANDOFF_ROUTING_POST_EXPERIMENT_DIRECTION OPEN / UNSELECTED. État qualifié de départ : couche 1 du même document, expérience EXP-C2-C PASS WITH LIMITATIONS, mission 021 COMPLETE. Contrat de transaction exécuté clôturé : 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob 49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0 ; observations missions/021-handoff-routing-c2-probe/observations.json, blob 47d222093d426bc3e4e154cffe1e7401907f1218. Options : A ADVANCE_TO_BOUNDED_PRODUCT_DESIGN_INTEGRATION_SPECIFICATION_STUDY ; B RETAIN_POSITIVE_R&D_EVIDENCE_AND_PARK_PRODUCTIZATION ; C LEAVE_HANDOFF_ROUTING_AND_SELECT_ANOTHER_PROGRAM_DIRECTION. Exhaustivité globale : NOT CLAIMED. Recommandation de la contre-expertise : A. Sélection humaine : NONE. Mission 022 aucune, exécutant futur aucun, aucune nouvelle étude automatique : seule une sélection humaine explicite de A, de B ou de C détermine la suite. Ne pas éditer les autorités 93 à 96, les artefacts de la mission 021 ni observations.json ; ne sélectionner aucune conception ni architecture produit ; n'adopter aucune sémantique produit ; n'autoriser aucune implémentation ni moteur de routage générique ; ne créer aucune mission 022 ; ne dépêcher aucun exécutant ; n'exécuter aucune expérience."
         },
         "observed": {
-          "blob": "47d222093d426bc3e4e154cffe1e7401907f1218"
+          "blob": "4e03e6c2956b7d77dd91f0b7887a51912af2c0f2"
         }
       }
     ]
