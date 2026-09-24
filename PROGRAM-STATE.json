@@ -1860,7 +1860,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Exécuter la transaction EXP-C2-C complète sous l'autorité 95, 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob 49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0, sans porte humaine intermédiaire, sauf arrêt dur ou choix matériel nouveau non gouverné : portes pré-C2, J-C, D-C et production du paquet derived-handoff.json ; matérialisation et vérification de la mission 021 avec l'identité effective du paquet ; allocation de l'AGENT CCR LAB #63 seulement après ; transmission manuelle de la mission 021 gelée ; exécution par #63 ; persistance de result.json par l'orchestration avant le panneau C ; panneau C et observations ; un paquet de retour expérimental factuel complet. Aucune adoption ni implémentation produit ; la contre-expertise indépendante vient après.",
+    "value": "Exécuter, par l'AGENT CCR LAB #63 alloué et frais, la mission 021 gelée et vérifiée, missions/021-handoff-routing-c2-probe/mission.json, blob 21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2, enveloppe missions/021-handoff-routing-c2-probe/envelope.md blob 6caf6758b7d1b4dc8fcafe7934485c84b350c117, paquet C2_HANDOFF_PACKET missions/021-handoff-routing-c2-probe/derived-handoff.json blob 69805418d739c84d61d053f32dc127e33db49945 persisté au commit 675aa052ebdb942a64f80e2779ff8daeeccaf8d2, transmise manuellement comme transport seulement ; #63 n'écrit que missions/021-handoff-routing-c2-probe/result.json, sans commit ni push. Ensuite, l'orchestration vérifie le retour, persiste result.json par un commit borné avant le panneau C, effectue le panneau C sur le résultat commis et complète observations.json sous l'autorité 95. Aucune adoption ni implémentation produit ; la contre-expertise indépendante vient après.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1877,17 +1877,17 @@
         }
       },
       {
-        "id": "ev-265",
+        "id": "ev-266",
         "kind": "repo-path",
-        "ref": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+        "ref": "missions/021-handoff-routing-c2-probe/mission.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Exécuter la transaction EXP-C2-C complète sous l'autorité 95, 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob 49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0, sans porte humaine intermédiaire, sauf arrêt dur ou choix matériel nouveau non gouverné : portes pré-C2, J-C, D-C et production du paquet derived-handoff.json ; matérialisation et vérification de la mission 021 avec l'identité effective du paquet ; allocation de l'AGENT CCR LAB #63 seulement après ; transmission manuelle de la mission 021 gelée ; exécution par #63 ; persistance de result.json par l'orchestration avant le panneau C ; panneau C et observations ; un paquet de retour expérimental factuel complet. Aucune adoption ni implémentation produit ; la contre-expertise indépendante vient après."
+          "value": "Exécuter, par l'AGENT CCR LAB #63 alloué et frais, la mission 021 gelée et vérifiée, missions/021-handoff-routing-c2-probe/mission.json, blob 21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2, enveloppe missions/021-handoff-routing-c2-probe/envelope.md blob 6caf6758b7d1b4dc8fcafe7934485c84b350c117, paquet C2_HANDOFF_PACKET missions/021-handoff-routing-c2-probe/derived-handoff.json blob 69805418d739c84d61d053f32dc127e33db49945 persisté au commit 675aa052ebdb942a64f80e2779ff8daeeccaf8d2, transmise manuellement comme transport seulement ; #63 n'écrit que missions/021-handoff-routing-c2-probe/result.json, sans commit ni push. Ensuite, l'orchestration vérifie le retour, persiste result.json par un commit borné avant le panneau C, effectue le panneau C sur le résultat commis et complète observations.json sous l'autorité 95. Aucune adoption ni implémentation produit ; la contre-expertise indépendante vient après."
         },
         "observed": {
-          "blob": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0"
+          "blob": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2"
         }
       }
     ]

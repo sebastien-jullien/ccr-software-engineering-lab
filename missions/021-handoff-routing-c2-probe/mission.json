@@ -1,0 +1,1306 @@
+{
+  "identity": {
+    "id": "021-handoff-routing-c2-probe",
+    "class": "HANDOFF_ROUTING_EXP_C2_C_PROBE_EXECUTOR_LEG",
+    "addressee": "AGENT_CCR_LAB_63",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "candidate_id",
+      "value": {
+        "type": "SCALAR",
+        "value": "EXP-C2-C"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "probe_id",
+      "value": {
+        "type": "SCALAR",
+        "value": "A94-C2-PROBE-001"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "mission_logical_id",
+      "value": {
+        "type": "SCALAR",
+        "value": "021-handoff-routing-c2-probe"
+      },
+      "semantics_unresolved": false
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth95",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0"
+      },
+      "identity_required": true,
+      "label": "gel de la transaction expérimentale EXP-C2-C"
+    },
+    {
+      "id": "ref-auth94",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+      },
+      "identity_required": true,
+      "label": "cible de vérification : lire ses octets exacts commis"
+    },
+    {
+      "id": "ref-auth94-sha",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+      },
+      "identity": {
+        "kind": "SHA256",
+        "value": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b"
+      },
+      "identity_required": true,
+      "label": "même cible, identité SHA-256"
+    },
+    {
+      "id": "ref-packet",
+      "role": "VERIFICATION_TARGET",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/021-handoff-routing-c2-probe/derived-handoff.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "69805418d739c84d61d053f32dc127e33db49945"
+      },
+      "identity_required": true,
+      "label": "paquet C2_HANDOFF_PACKET à consommer explicitement"
+    },
+    {
+      "id": "ref-auth23",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      },
+      "identity_required": true,
+      "label": "représentation Result Instance v0"
+    },
+    {
+      "id": "ref-auth14",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      },
+      "identity_required": false,
+      "label": "sémantique Mission Object v0"
+    },
+    {
+      "id": "ref-format",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/001-decision-consequence-boundary/result.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07"
+      },
+      "identity_required": false,
+      "label": "exemple de forme Result Instance v0 seulement, aucun contenu à reprendre"
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/021-handoff-routing-c2-probe/result.json"
+      },
+      "identity_required": false,
+      "label": "destination de retour, égale à h_return_destination du paquet"
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-read-target",
+      "mode": "REQUIRED",
+      "action": "READ_VERIFICATION_TARGET",
+      "cardinality": 1,
+      "target": "ref-auth94"
+    },
+    {
+      "id": "e-consume-packet",
+      "mode": "REQUIRED",
+      "action": "CONSUME_HANDOFF_PACKET",
+      "cardinality": 1,
+      "target": "ref-packet"
+    },
+    {
+      "id": "e-report-facts",
+      "mode": "REQUIRED",
+      "action": "REPORT_FROZEN_FACTS",
+      "cardinality": 1,
+      "target": "ref-auth94"
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "FREEZE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-forbid-commit",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-push",
+      "mode": "FORBIDDEN",
+      "action": "PUSH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-fetch",
+      "mode": "FORBIDDEN",
+      "action": "FETCH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-persist",
+      "mode": "FORBIDDEN",
+      "action": "PERSIST_RESULT_INSTANCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-program-state",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_PROGRAM_STATE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-authority",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_AUTHORITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-readme",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_README",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-tooling",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_TOOLING",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-mission",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_MISSION_ARTIFACT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-packet",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_HANDOFF_PACKET",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-observations",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_OBSERVATIONS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-other-write",
+      "mode": "FORBIDDEN",
+      "action": "WRITE_PATH_OTHER_THAN_RESULT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-repair",
+      "mode": "FORBIDDEN",
+      "action": "REPAIR",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-reroot",
+      "mode": "FORBIDDEN",
+      "action": "RE_ROOT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-checkout",
+      "mode": "FORBIDDEN",
+      "action": "CHECKOUT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-reconstruct-c2",
+      "mode": "FORBIDDEN",
+      "action": "RECONSTRUCT_C2_VALUE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-choose-c2",
+      "mode": "FORBIDDEN",
+      "action": "CHOOSE_C2_VALUE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-later-state",
+      "mode": "FORBIDDEN",
+      "action": "INFER_FROM_LATER_PROGRAM_STATE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-conversation",
+      "mode": "FORBIDDEN",
+      "action": "RECONSTRUCT_FROM_CONVERSATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-adopt",
+      "mode": "FORBIDDEN",
+      "action": "ADOPT_PRODUCT_SEMANTICS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-implement",
+      "mode": "FORBIDDEN",
+      "action": "IMPLEMENT",
+      "cardinality": 0
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-read",
+        "effect": "e-read-target",
+        "atomic": true,
+        "gated_by": "g-preflight",
+        "produces": [
+          "ev-vt-identity"
+        ]
+      },
+      {
+        "order": 2,
+        "id": "s-consume",
+        "effect": "e-consume-packet",
+        "atomic": true,
+        "gated_by": "g-packet",
+        "produces": [
+          "ev-packet-identity"
+        ]
+      },
+      {
+        "order": 3,
+        "id": "s-report",
+        "effect": "e-report-facts",
+        "atomic": true
+      },
+      {
+        "order": 4,
+        "id": "s-produce",
+        "effect": "e-produce-result",
+        "atomic": true
+      },
+      {
+        "order": 5,
+        "id": "s-validate",
+        "effect": "e-validate-result",
+        "atomic": true,
+        "gated_by": "g-result-valid",
+        "produces": [
+          "ev-result-validation"
+        ]
+      },
+      {
+        "order": 6,
+        "id": "s-freeze",
+        "effect": "e-freeze-result",
+        "atomic": true,
+        "gated_by": "g-mutation-boundary"
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": [
+        "s-read"
+      ],
+      "on_fail": "sr-preflight",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth95"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth94"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-packet"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "69805418d739c84d61d053f32dc127e33db49945"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "PRESENCE_OF",
+              "ref": "reserved_result_path"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-packet",
+      "scope": [
+        "s-consume"
+      ],
+      "on_fail": "sr-packet",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-packet"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "69805418d739c84d61d053f32dc127e33db49945"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "packet_kind"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "C2_HANDOFF_PACKET"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "candidate_id"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "EXP-C2-C"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "probe_id"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "A94-C2-PROBE-001"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "mission_logical_id"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "021-handoff-routing-c2-probe"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "h_next_control_stage"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "EXECUTOR_DISPATCH"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "h_return_destination"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "missions/021-handoff-routing-c2-probe/result.json"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "h_stage_ordering_dependency"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "h_persistence_owner_actor"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "ORCHESTRATION"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "h_persistence_owner_target"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "EXECUTOR_RESULT_INSTANCE"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OBJECT_FIELD",
+              "ref": "ref-packet",
+              "field": "h_persistence_must_complete_before"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "PANEL_C"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-result-valid",
+      "scope": [
+        "s-validate"
+      ],
+      "on_fail": "sr-result-invalid",
+      "predicate": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-validate-result",
+          "field": "status"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "PASS"
+        }
+      }
+    },
+    {
+      "id": "g-mutation-boundary",
+      "scope": [
+        "s-freeze"
+      ],
+      "on_fail": "sr-scope",
+      "predicate": {
+        "op": "SET_EQ",
+        "subject": {
+          "kind": "MEASUREMENT",
+          "ref": "repo.modified_paths"
+        },
+        "value": {
+          "type": "SET",
+          "members": [
+            {
+              "type": "SCALAR",
+              "value": "missions/021-handoff-routing-c2-probe/result.json"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "preflight_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-preflight-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-preflight-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-preflight-checkout",
+          "mode": "FORBIDDEN",
+          "action": "CHECKOUT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-preflight-cd",
+          "mode": "FORBIDDEN",
+          "action": "CHANGE_DIRECTORY",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-preflight-reroot",
+          "mode": "FORBIDDEN",
+          "action": "RE_ROOT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-preflight-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-preflight-fetch",
+          "mode": "FORBIDDEN",
+          "action": "FETCH",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-packet",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "packet_consumable"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-packet-reconstruct",
+          "mode": "FORBIDDEN",
+          "action": "RECONSTRUCT_C2_VALUE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-packet-choose",
+          "mode": "FORBIDDEN",
+          "action": "CHOOSE_C2_VALUE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-packet-edit",
+          "mode": "FORBIDDEN",
+          "action": "MODIFY_HANDOFF_PACKET",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-packet-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-reconstruction",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "no_manual_c2_reconstruction_needed"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-recon-reconstruct",
+          "mode": "FORBIDDEN",
+          "action": "RECONSTRUCT_C2_VALUE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-recon-choose",
+          "mode": "FORBIDDEN",
+          "action": "CHOOSE_C2_VALUE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-recon-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-result-invalid",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "result_instance_valid"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-invalid-persist",
+          "mode": "FORBIDDEN",
+          "action": "PERSIST_RESULT_INSTANCE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-invalid-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-invalid-push",
+          "mode": "FORBIDDEN",
+          "action": "PUSH",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-scope",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "mutation_boundary_held"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-scope-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-push",
+          "mode": "FORBIDDEN",
+          "action": "PUSH",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-transaction-freeze",
+        "subject": "handoff_routing_exp_c2_c_experimental_transaction_freeze_ratified",
+        "authority": "ref-auth95"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-return"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-vt-identity",
+      "kind": "VERIFICATION",
+      "fact": "identity(verification_target)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth94",
+        "recompute": true
+      },
+      "must_return": "rf-vt-blob"
+    },
+    {
+      "id": "ev-packet-identity",
+      "kind": "VERIFICATION",
+      "fact": "identity(handoff_packet)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-packet",
+        "recompute": true
+      },
+      "must_return": "rf-packet-blob-observed"
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "result_instance.validation",
+      "must_return": "rf-result-validation-status"
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-executor-identity",
+      "fact": "executor.identity",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-preflight-status",
+      "fact": "preflight.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-observed-head",
+      "fact": "preflight.observed_head",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-vt-path",
+      "fact": "verification_target.path",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-vt-blob",
+      "fact": "verification_target.blob_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-vt-sha256",
+      "fact": "verification_target.sha256_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a94-human-decision",
+      "fact": "a94.human_decision",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "OTHER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a94-product-semantic-adoption",
+      "fact": "a94.product_semantic_adoption",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a94-implementation",
+      "fact": "a94.implementation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a94-experiment-execution",
+      "fact": "a94.experiment_execution",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a94-mission-021",
+      "fact": "a94.mission_021_at_target_state",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXISTS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a94-agent-63",
+      "fact": "a94.agent_63_at_target_state",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "UNALLOCATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ALLOCATED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a94-facts-basis",
+      "fact": "a94.facts_basis",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-packet-consumed",
+      "fact": "packet.consumed",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-packet-blob-observed",
+      "fact": "packet.blob_observed",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-packet-h-next-control-stage",
+      "fact": "packet.h_next_control_stage",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-packet-h-return-destination",
+      "fact": "packet.h_return_destination",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-packet-h-stage-ordering",
+      "fact": "packet.h_stage_ordering_dependency",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-packet-h-persistence-owner",
+      "fact": "packet.h_persistence_owner",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-actual-return-path",
+      "fact": "executor.actual_return_path",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-manual-c2-reconstruction-required",
+      "fact": "executor.manual_c2_reconstruction_required",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-paths-written",
+      "fact": "executor.paths_written",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-executor-commits",
+      "fact": "executor.commit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-executor-pushes",
+      "fact": "executor.push_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-result-validation-status",
+      "fact": "result_instance.validation_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-stop-events",
+      "fact": "executor.stop_events",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-deviations",
+      "fact": "executor.deviations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-terminal-outcome",
+      "fact": "mission.terminal_outcome",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAILED"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "DETERMINED",
+      "action": "RETURN_FROZEN_RESULT_INSTANCE",
+      "target": "orchestration_result_persistence_before_panel_c",
+      "no_new_gate": true
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-no-persistence-by-executor",
+      "constraint": {
+        "id": "e-sc-persist",
+        "mode": "FORBIDDEN",
+        "action": "PERSIST_RESULT_INSTANCE",
+        "target": "repository_history"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "downstream_persistence_authorization"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-product-adoption",
+      "constraint": {
+        "id": "e-sc-adopt",
+        "mode": "FORBIDDEN",
+        "action": "ADOPT_PRODUCT_SEMANTICS",
+        "target": "exp_c2_c_semantics"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}

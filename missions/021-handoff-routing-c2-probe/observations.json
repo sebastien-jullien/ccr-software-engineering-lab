@@ -935,9 +935,219 @@
         "must_complete_before": "PANEL_C"
       }
     },
-    "persistence_commit": "PENDING_LATER_PHASE"
+    "persistence_commit": "675aa052ebdb942a64f80e2779ff8daeeccaf8d2"
   },
-  "pre_dispatch": "PENDING_LATER_PHASE",
+  "pre_dispatch": {
+    "panel_a": {
+      "producer": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+      "stage": "PANEL_A",
+      "method": "LOCAL MISSION CONSOLE V0, loopback HTTP GET /api/context and /api/program-state (read-only routes), no browser UI",
+      "observation": "console HEAD = T2 commit; PROGRAM-STATE captured; selected next_action = execute the complete EXP-C2-C transaction under authority 95; 70 decisions",
+      "identities": {
+        "console_head": "675aa052ebdb942a64f80e2779ff8daeeccaf8d2",
+        "program_state_capture": {
+          "path": "PROGRAM-STATE.json",
+          "bytes": 213739,
+          "sha256": "cfe25f89d1f152bef23237c957d70ce1b820b56d7b00282947c0f4427f5ce642",
+          "blob": "d3c3e0562fe9d804d261dd79704aef4a53486057"
+        },
+        "next_action_state": "SELECTED",
+        "decisions": 70
+      },
+      "durable_state_observed": "T2 COMMIT (HANDOFF_PERSISTENCE DONE)",
+      "blocking": "NO",
+      "workaround_required": "NO",
+      "workaround": "NONE",
+      "reconstruction_from_conversation": "NO",
+      "raw_repository_inspection": "NO",
+      "missing_information": "NONE"
+    },
+    "mission_identity": {
+      "path": "missions/021-handoff-routing-c2-probe/mission.json",
+      "blob": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2",
+      "sha256": "76b483b19c618bdb5c9659d7e98b563083948b615a73b72434754ef7eb5bdd1c"
+    },
+    "envelope_identity": {
+      "path": "missions/021-handoff-routing-c2-probe/envelope.md",
+      "blob": "6caf6758b7d1b4dc8fcafe7934485c84b350c117",
+      "sha256": "43711275e1e330461850c536b8cc63eb522a9a2752e0082ba2e659b6582ba467"
+    },
+    "validation": {
+      "tool": "tooling/mission-object/validate.mjs",
+      "ok": true,
+      "errors": 0
+    },
+    "render_coverage": {
+      "tool": "tooling/mission-object/render.mjs renderCoverage",
+      "complete": true,
+      "expected": 89,
+      "rendered": 89,
+      "omitted": 0,
+      "invented": 0,
+      "empty": 0,
+      "two_renders_identical": "YES (materialization run)"
+    },
+    "gates": {
+      "G-DISPATCH-01": {
+        "name": "DERIVED_HANDOFF_PERSISTED",
+        "checks": [
+          {
+            "check": "packet tracked at HEAD (T2)",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          },
+          {
+            "check": "committed packet blob = recorded handoff.packet_blob",
+            "expected": "69805418d739c84d61d053f32dc127e33db49945",
+            "observed": "69805418d739c84d61d053f32dc127e33db49945",
+            "equal": true
+          },
+          {
+            "check": "worktree packet = committed packet",
+            "expected": "69805418d739c84d61d053f32dc127e33db49945",
+            "observed": "69805418d739c84d61d053f32dc127e33db49945",
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-DISPATCH-02": {
+        "name": "PACKET_IDENTITY_MATCHES_MISSION_REFERENCE",
+        "checks": [
+          {
+            "check": "mission ref-packet identity = committed packet blob",
+            "expected": "69805418d739c84d61d053f32dc127e33db49945",
+            "observed": "69805418d739c84d61d053f32dc127e33db49945",
+            "equal": true
+          },
+          {
+            "check": "ref-packet locator = packet path",
+            "expected": "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+            "observed": "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+            "equal": true
+          },
+          {
+            "check": "g-preflight ARTIFACT_IDENTITY(ref-packet) = committed packet blob",
+            "expected": "69805418d739c84d61d053f32dc127e33db49945",
+            "observed": "69805418d739c84d61d053f32dc127e33db49945",
+            "equal": true
+          },
+          {
+            "check": "g-packet ARTIFACT_IDENTITY(ref-packet) = committed packet blob",
+            "expected": "69805418d739c84d61d053f32dc127e33db49945",
+            "observed": "69805418d739c84d61d053f32dc127e33db49945",
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-DISPATCH-03": {
+        "name": "ENVELOPE_PRESERVES_PACKET_REFERENCE",
+        "checks": [
+          {
+            "check": "envelope contains packet path",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          },
+          {
+            "check": "envelope contains packet blob",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          },
+          {
+            "check": "render coverage complete",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-DISPATCH-04": {
+        "name": "RESULT_ABSENT_BEFORE_EXECUTOR_START",
+        "checks": [
+          {
+            "check": "result.json absent at HEAD",
+            "expected": null,
+            "observed": null,
+            "equal": true
+          },
+          {
+            "check": "result.json absent in worktree",
+            "expected": false,
+            "observed": false,
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      },
+      "G-DISPATCH-05": {
+        "name": "EXECUTOR_COMMIT_PUSH_PERSISTENCE_FORBIDDEN",
+        "checks": [
+          {
+            "check": "FORBIDDEN COMMIT",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          },
+          {
+            "check": "FORBIDDEN PUSH",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          },
+          {
+            "check": "FORBIDDEN PERSIST_RESULT_INSTANCE",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          },
+          {
+            "check": "standing constraint sc-no-persistence-by-executor",
+            "expected": true,
+            "observed": true,
+            "equal": true
+          }
+        ],
+        "outcome": "PASS"
+      }
+    },
+    "panel_b": {
+      "producer": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+      "stage": "PANEL_B",
+      "method": "LOCAL MISSION CONSOLE V0, loopback HTTP GET /api/mission?path=missions/021-handoff-routing-c2-probe/mission.json (read-only), no browser UI",
+      "observation": "Mission 021 captured, validated and rendered by the console before the T3 freeze commit; the committed bytes must equal these captured bytes",
+      "identities": {
+        "capture": {
+          "path": "missions/021-handoff-routing-c2-probe/mission.json",
+          "bytes": 31051,
+          "sha256": "76b483b19c618bdb5c9659d7e98b563083948b615a73b72434754ef7eb5bdd1c",
+          "blob": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2"
+        },
+        "validation_ok": true,
+        "validation_errors": 0,
+        "console_render_sha256": "43711275e1e330461850c536b8cc63eb522a9a2752e0082ba2e659b6582ba467",
+        "envelope_file_sha256": "43711275e1e330461850c536b8cc63eb522a9a2752e0082ba2e659b6582ba467"
+      },
+      "console_render_equals_envelope_file": true,
+      "capture_blob_equals_mission_file": true,
+      "blocking": "NO",
+      "workaround_required": "NO",
+      "workaround": "NONE",
+      "reconstruction_from_conversation": "NO",
+      "raw_repository_inspection": "NO",
+      "missing_information": "NONE"
+    },
+    "freeze_commit": "RECORDED_IN_LATER_PHASE (self-reference of the T3 commit)",
+    "agent_63_allocation": {
+      "allocated": "YES",
+      "allocation_point": "after G-DISPATCH-01..05 = PASS and PANEL_B, durable in the T3 freeze commit",
+      "role": "fresh executor of frozen Mission 021 only"
+    }
+  },
   "executor_return": "PENDING_LATER_PHASE",
   "persistence": "PENDING_LATER_PHASE",
   "panel_c": "PENDING_LATER_PHASE",
