@@ -1,0 +1,354 @@
+# Handoff / routage — sélection de la direction A postérieure à l'expérience et autorisation d'une étude bornée de spécification de conception et d'intégration produit
+
+```text
+CE DOCUMENT PORTE DEUX COUCHES, STRICTEMENT SÉPARÉES
+
+COUCHE 1
+= LA SÉLECTION HUMAINE RATIFIÉE DE L'OPTION A
+  DE LA PORTE HANDOFF_ROUTING_POST_EXPERIMENT_DIRECTION DE L'AUTORITÉ 96
+
+COUCHE 2
+= L'AUTORISATION BORNÉE DU PAQUET DE TRAVAIL SUIVANT DE L'ORCHESTRATEUR
+
+IL N'EFFECTUE PAS L'ÉTUDE DE CONCEPTION PRODUIT
+IL NE CRÉE PAS DE MISSION 022
+IL N'IMPLÉMENTE AUCUNE CONCEPTION PRODUIT
+IL NE SÉLECTIONNE AUCUNE ARCHITECTURE PRODUIT
+```
+
+## 1. Statut
+
+```text
+AUTORITÉ 96
+= 96-HANDOFF-ROUTING-EXP-C2-C-MISSION021-INDEPENDENT-QUALIFICATION-AND-POST-EXPERIMENT-DIRECTION-GATE.md
+  blob   4e03e6c2956b7d77dd91f0b7887a51912af2c0f2
+  sha256 c0c918937060d461fc9e1e0ce8686dd436683a601330accdc47ee307af4421d5
+= COUCHE 1 : QUALIFICATION CONSERVÉE, INCHANGÉE · GOUVERNANTE
+= COUCHE 2 : PORTE FERMÉE PAR LE PRÉSENT DOCUMENT
+= NON ÉDITÉE
+
+AUTORITÉ 95
+= 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md
+  blob   49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0
+= CLÔTURÉE COMME CONTRAT DE TRANSACTION EXPÉRIMENTALE EXÉCUTÉ · NON ÉDITÉE
+
+AUTORITÉ 94
+= 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md
+  blob   51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c
+= NON AMENDÉE · SA SÉMANTIQUE EXPÉRIMENTALE DEMEURE LOCALE À L'EXPÉRIENCE
+
+ARTEFACTS DE LA MISSION 021
+= NON ÉDITÉS
+  missions/021-…/derived-handoff.json        blob 69805418d739c84d61d053f32dc127e33db49945
+  missions/021-…/result.json                 blob ada093bbe68ca0f7676a4c6994ed2354d5292e0f
+  missions/021-…/observations.json           blob 47d222093d426bc3e4e154cffe1e7401907f1218
+
+DÉCISIONS DE PROGRAMME AVANT MATÉRIALISATION
+= 70 RATIFIÉES / 0 EN ATTENTE
+
+MISSION 022
+= AUCUNE
+```
+
+## 2. Distinctions tenues séparées
+
+```text
+COUCHE 1  SÉLECTION HUMAINE DE A                  sections 3 à 6
+COUCHE 2  PAQUET DE TRAVAIL SUIVANT AUTORISÉ      sections 7 à 12
+```
+
+La couche 2 découle de la couche 1 et ne l'étend pas. Aucune des deux ne
+modifie la qualification de l'autorité 96.
+
+---
+
+# COUCHE 1 — sélection humaine de A
+
+## 3. Décision
+
+```text
+PORTE HUMAINE HANDOFF_ROUTING_POST_EXPERIMENT_DIRECTION
+= CLOSED / SELECTED
+
+SÉLECTIONNÉE
+= A
+
+A
+= ADVANCE_TO_BOUNDED_PRODUCT_DESIGN_INTEGRATION_SPECIFICATION_STUDY
+
+STATUT
+= SÉLECTIONNÉE · RATIFIÉE
+```
+
+```text
+OPTION A   ADVANCE_TO_BOUNDED_PRODUCT_DESIGN_INTEGRATION_SPECIFICATION_STUDY    SELECTED
+OPTION B   RETAIN_POSITIVE_R&D_EVIDENCE_AND_PARK_PRODUCTIZATION                 NOT SELECTED
+OPTION C   LEAVE_HANDOFF_ROUTING_AND_SELECT_ANOTHER_PROGRAM_DIRECTION           NOT SELECTED
+
+EXHAUSTIVITÉ GLOBALE DES OPTIONS
+= NOT CLAIMED
+```
+
+La recommandation consignée par l'autorité 96 § 19 demeure une
+recommandation. La sélection est la décision humaine ratifiée matérialisée
+ici.
+
+B et C non sélectionnées n'établissent rien : ni impossibilité, ni
+invalidation d'EXP-C2-C, ni conversion en NO d'une question générique non
+résolue (autorité 96 § 16 et § 17).
+
+## 4. Finalité de la direction A
+
+```text
+PRODUIRE UN PAQUET DE TRAVAIL COMPLET ET BORNÉ
+DE SPÉCIFICATION DE CONCEPTION / D'INTÉGRATION PRODUIT
+FONDÉ SUR LA PREUVE EMPIRIQUE POSITIVE EXP-C2-C / M021
+```
+
+Question produit gouvernante :
+
+```text
+CAN THE USEFUL EFFECT DEMONSTRATED BY EXP-C2-C / M021
+BE TRANSLATED INTO A PRODUCT-FACING DESIGN / INTEGRATION SPECIFICATION
+WITHOUT IMPORTING THE EXPERIMENTAL MODEL
+AS PRODUCT SEMANTICS BY DEFAULT?
+```
+
+L'effet utile démontré par EXP-C2-C / M021 peut-il être traduit en une
+spécification de conception et d'intégration orientée produit, sans importer
+par défaut le modèle expérimental comme sémantique produit ?
+
+## 5. Base empirique conservée
+
+La qualification de l'autorité 96 est conservée inchangée et gouvernante :
+
+```text
+EXP-C2-C / M021                              PASS WITH LIMITATIONS
+PREUVE EMPIRIQUE C2 BORNÉE POSITIVE          ESTABLISHED
+
+CHAÎNE OBSERVÉE
+= JOIN
+→ DERIVATION
+→ H PRODUCTION
+→ PROPAGATION
+→ CONSUMPTION
+→ NO C2 MANUAL RECONSTRUCTION
+→ RESULT PERSISTENCE BEFORE PANEL C
+
+EP-02 / EP-03 / EP-04                        BOUNDED BURDEN REMOVAL OBSERVED
+RC1..RC8                                     PASS
+                                             RC8 BORNÉ À EXP-C2-C-RUN-001
+U1 GÉNÉRIQUE                                 NOT_ESTABLISHED
+```
+
+Les limitations 1 et 2 de l'autorité 96 (§ 9 et § 10) et l'écart /pkt.json
+(§ 11) demeurent consignés tels quels.
+
+```text
+AUCUNE DE CES CONSTATATIONS BORNÉES
+N'EST PROMUE EN REVENDICATION PRODUIT GÉNÉRIQUE
+```
+
+## 6. Pare-feu
+
+```text
+MÉCANISME EMPIRIQUE
+≠ CONCEPTION PRODUIT
+
+REPRÉSENTATION LOCALE À L'EXPÉRIENCE
+≠ REPRÉSENTATION PRODUIT
+
+PREUVE BORNÉE POSITIVE
+≠ SUFFISANCE GÉNÉRIQUE
+
+UN RUN RÉUSSI
+≠ AUTORISATION D'IMPLÉMENTATION PRODUIT
+```
+
+---
+
+# COUCHE 2 — autorisation bornée du paquet de travail suivant
+
+## 7. Paquet autorisé
+
+La sélection de A autorise exactement :
+
+```text
+UN PAQUET DE TRAVAIL COMPLET ET BORNÉ
+DE SPÉCIFICATION DE CONCEPTION / D'INTÉGRATION PRODUIT
+PRODUIT PAR L'ORCHESTRATEUR
+```
+
+Rien d'autre n'est autorisé par cette sélection.
+
+## 8. Méthode de raisonnement
+
+L'orchestrateur raisonne depuis :
+
+```text
+EFFETS UTILES DÉMONTRÉS
+→ CONTRAINTES PRODUIT
+→ SPÉCIFICATION BORNÉE DE CONCEPTION / D'INTÉGRATION
+```
+
+Il ne raisonne PAS par :
+
+```text
+ARTEFACT EXP-C2-C
+→ COPIE DANS LE PRODUIT
+```
+
+## 9. Discipline de conception
+
+```text
+UNE OU PLUSIEURS CONCEPTIONS CONCRÈTES ORIENTÉES PRODUIT
+= PERMISES SEULEMENT LÀ OÙ C'EST MATÉRIELLEMENT JUSTIFIÉ
+```
+
+Le paquet n'est PAS tenu :
+
+```text
+d'énumérer toutes les conceptions possibles
+de clore l'univers des candidats
+de prouver une minimalité globale
+de prouver une optimalité globale
+de créer des alternatives artificielles
+```
+
+## 10. Non-autorisations absolues
+
+La sélection de A N'AUTORISE PAS :
+
+```text
+IMPLÉMENTATION PRODUIT
+ADOPTION PRODUIT D'EXP-C2-C
+ADOPTION PRODUIT DE derived-handoff.json
+SCHÉMA EXPÉRIMENTAL D'EXP-C2-C COMME REPRÉSENTATION PRODUIT
+SÉMANTIQUE EXPÉRIMENTALE DE L'AUTORITÉ 94 COMME SÉMANTIQUE PRODUIT GÉNÉRIQUE
+MOTEUR DE ROUTAGE GÉNÉRIQUE
+NOUVELLE ONTOLOGIE À L'ÉCHELLE DU PROGRAMME
+SÉLECTION D'ARCHITECTURE PRODUIT
+CLÔTURE DE L'ESPACE DES CANDIDATS
+REVENDICATION D'EXHAUSTIVITÉ DE L'ESPACE DES CANDIDATS
+MINIMALITÉ GLOBALE
+OPTIMALITÉ GLOBALE
+NOUVELLE MÉTA-RÉCURSION
+NOUVELLE EXPÉRIENCE AUTOMATIQUE
+MISSION 022 AUTOMATIQUE
+OUVERTURE D'UNE PORTE D'IMPLÉMENTATION
+```
+
+## 11. Terminaux du paquet
+
+Le paquet ne revient que sur l'un des cas suivants :
+
+```text
+CAS A
+= SPÉCIFICATION PRODUIT BORNÉE POSITIVEMENT JUSTIFIÉE
+→ UNE PORTE D'IMPLÉMENTATION AUTHENTIQUE PEUT ÊTRE OUVERTE
+≠ IMPLÉMENTATION AUTOMATIQUE
+
+CAS B
+= PLUSIEURS CONCEPTIONS PRODUIT POSITIVEMENT JUSTIFIÉES
+  ET MATÉRIELLEMENT DISTINCTES SURVIVENT
+  SANS SÉLECTEUR GOUVERNANT QUI LES DÉPARTAGE
+→ PORTE HUMAINE DE CONCEPTION AUTHENTIQUE
+
+CAS C
+= TRADUCTION PRODUIT BLOQUÉE DUREMENT
+→ BLOCAGE EXACT
+→ AUCUN SUCCESSEUR INVENTÉ
+→ MISE EN ATTENTE / AUTRE CONSÉQUENCE, SELON CE QUI EST GOUVERNÉ
+```
+
+```text
+AUCUNE MICRO-PORTE INTERMÉDIAIRE
+AU SEUL MOTIF QU'UN DÉTAIL DE CONCEPTION EST EN COURS D'ÉLABORATION
+```
+
+## 12. Action suivante
+
+```text
+ORCHESTRATOR PRODUCES ONE COMPLETE
+BOUNDED PRODUCT-DESIGN / INTEGRATION
+SPECIFICATION WORK PACKAGE
+UNDER AUTHORITY 97
+```
+
+Retour seulement sur :
+
+```text
+une spécification produit bornée positivement justifiée
+une porte humaine de conception authentique
+un blocage dur de traduction produit
+```
+
+Conservé :
+
+```text
+MISSION 022                    AUCUNE
+IMPLÉMENTATION                 NON AUTORISÉE
+CONCEPTION PRODUIT             NON ENCORE SÉLECTIONNÉE
+```
+
+Ce n'est ni une implémentation, ni une expérience, ni la mission 022, ni une
+dépêche d'exécutant.
+
+## 13. Ce que ce document ne fait pas
+
+```text
+IL N'EFFECTUE PAS L'ÉTUDE DE CONCEPTION PRODUIT
+IL NE SPÉCIFIE AUCUNE CONCEPTION PRODUIT
+IL NE SÉLECTIONNE AUCUNE CONCEPTION NI ARCHITECTURE PRODUIT
+IL N'IMPLÉMENTE RIEN
+IL N'OUVRE AUCUNE PORTE D'IMPLÉMENTATION
+IL N'ADOPTE NI EXP-C2-C, NI derived-handoff.json, NI SON SCHÉMA COMME PRODUIT
+IL N'ÉRIGE PAS LA SÉMANTIQUE DE L'AUTORITÉ 94 EN SÉMANTIQUE PRODUIT GÉNÉRIQUE
+IL N'AUTORISE AUCUN MOTEUR DE ROUTAGE GÉNÉRIQUE NI AUCUNE ONTOLOGIE DE PROGRAMME
+IL NE CLÔT PAS L'ESPACE DES CANDIDATS
+IL N'AUTORISE AUCUNE MÉTA-RÉCURSION NOUVELLE
+IL N'EXÉCUTE NI N'AUTORISE AUCUNE EXPÉRIENCE NOUVELLE
+IL NE CRÉE PAS DE MISSION 022 ET NE DÉPÊCHE AUCUN EXÉCUTANT
+IL NE RÉÉCRIT PAS L'AUTORITÉ 96 ET NE MODIFIE PAS SA QUALIFICATION
+IL N'ÉDITE NI LES AUTORITÉS 93 À 96, NI LES ARTEFACTS DE LA MISSION 021
+IL NE MODIFIE AUCUNE AIRE D'OUTILLAGE
+```
+
+## 14. État matérialisé
+
+```text
+PORTE HANDOFF_ROUTING_POST_EXPERIMENT_DIRECTION   CLOSED / SELECTED
+SÉLECTION HUMAINE                            A · RATIFIÉE
+OPTION A                                     ADVANCE_TO_BOUNDED_PRODUCT_DESIGN_INTEGRATION_SPECIFICATION_STUDY
+                                             SELECTED
+OPTION B                                     NOT SELECTED
+OPTION C                                     NOT SELECTED
+EXHAUSTIVITÉ GLOBALE DES OPTIONS             NOT CLAIMED
+
+QUALIFICATION DE L'AUTORITÉ 96               CONSERVÉE · INCHANGÉE
+EXP-C2-C / M021                              PASS WITH LIMITATIONS
+U1 GÉNÉRIQUE                                 NOT_ESTABLISHED
+
+PAQUET AUTORISÉ                              UN PAQUET COMPLET ET BORNÉ DE
+                                             SPÉCIFICATION DE CONCEPTION /
+                                             D'INTÉGRATION PRODUIT
+TERMINAUX                                    CAS A · CAS B · CAS C
+
+CONCEPTION PRODUIT                           NOT YET SELECTED
+ARCHITECTURE PRODUIT                         NON SÉLECTIONNÉE
+IMPLÉMENTATION PRODUIT                       NOT AUTHORIZED
+PORTE D'IMPLÉMENTATION                       NON OUVERTE
+MISSION 022                                  NONE
+MISSION SUCCESSEUR AUTOMATIQUE               NONE
+
+NOUVELLE DÉCISION HUMAINE                    1
+DÉCISIONS RATIFIÉES / EN ATTENTE             71 / 0
+
+AUTORITÉS RACINE NUMÉROTÉES                  97 · 00..97 SANS 18
+AIRES D'OUTILLAGE                            4
+
+SUIVANT
+= L'ORCHESTRATEUR PRODUIT LE PAQUET COMPLET ET BORNÉ
+  DE SPÉCIFICATION DE CONCEPTION / D'INTÉGRATION PRODUIT
+  DE L'AUTORITÉ 97
+```
