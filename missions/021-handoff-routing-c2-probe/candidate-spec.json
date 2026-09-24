@@ -1,0 +1,267 @@
+{
+  "artifact": "EXP_C2_C_CANDIDATE_SPEC",
+  "lifecycle_class": "STATIC_EXPERIMENT_CONTRACT",
+  "candidate_id": "EXP-C2-C",
+  "governing_authorization": {
+    "path": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+    "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+    "sha256": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b"
+  },
+  "semantics": {
+    "S1": {
+      "name": "C2_HANDOFF_PACKET",
+      "definition": "the durable experiment-local packet that carries H for the probe"
+    },
+    "S2": {
+      "name": "NEXT_CONTROL_STAGE",
+      "definition": "next actor/stage receiving control after successful pre-dispatch C2 qualification"
+    },
+    "S3": {
+      "name": "RETURN_DESTINATION",
+      "definition": "exact durable locator where the executor returns its Result Instance"
+    },
+    "S4": {
+      "name": "STAGE_ORDERING_DEPENDENCY",
+      "definition": "explicit probe-wide control/durability sequence"
+    },
+    "S5": {
+      "name": "PERSISTENCE_OWNERSHIP",
+      "definition": "actor responsible for the durable recording of a named artifact"
+    },
+    "S6": {
+      "name": "EXPERIMENTAL_C2_JOIN_IDENTITY",
+      "definition": "(candidate_id, probe_id)"
+    },
+    "scope": {
+      "experiment_local": "YES",
+      "product_semantics": "NO",
+      "generic_ccr_semantics": "NO",
+      "reusable_without_new_authority": "NO"
+    }
+  },
+  "semantic_fingerprint_rule": "sha256 hex of the canonical JSON (keys sorted recursively, no whitespace) of the value of \"semantics\"",
+  "run_parameters": {
+    "candidate_id": "EXP-C2-C",
+    "probe_id": "A94-C2-PROBE-001",
+    "mission_logical_id": "021-handoff-routing-c2-probe",
+    "governing_authorization_path": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+    "freeze_authority_path": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+    "verification_target_path": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+    "verification_target_blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+    "verification_target_sha256": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+    "return_destination": "missions/021-handoff-routing-c2-probe/result.json",
+    "observation_destination": "missions/021-handoff-routing-c2-probe/observations.json",
+    "baseline_manifest_path": "missions/021-handoff-routing-c2-probe/baseline-manifest.json",
+    "observation_contract_path": "missions/021-handoff-routing-c2-probe/observation-contract.json",
+    "derived_handoff_path": "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+    "mission_path": "missions/021-handoff-routing-c2-probe/mission.json",
+    "envelope_path": "missions/021-handoff-routing-c2-probe/envelope.md",
+    "next_control_stage": "EXECUTOR_DISPATCH",
+    "expected_stage_chain": [
+      "C2_INPUT_FREEZE",
+      "C2_JOIN",
+      "C2_DERIVATION",
+      "HANDOFF_PERSISTENCE",
+      "PANEL_A",
+      "PANEL_B",
+      "EXECUTOR_DISPATCH",
+      "EXECUTOR_RETURN",
+      "RESULT_PERSISTENCE",
+      "PANEL_C"
+    ],
+    "persistence_ownership": {
+      "actor": "ORCHESTRATION",
+      "target": "EXECUTOR_RESULT_INSTANCE",
+      "must_complete_before": "PANEL_C"
+    },
+    "executor_addressee": "AGENT_CCR_LAB_63",
+    "orchestration_actor": "AGENT_CCR_LAB_1"
+  },
+  "pre_c2_gates": [
+    {
+      "id": "G-C2-01",
+      "name": "AUTHORITY_94_IDENTITY_MATCH",
+      "expected": "PASS",
+      "check": "blob and sha256 of the committed verification target equal run_parameters.verification_target_blob / _sha256 and the A95 PARAM values"
+    },
+    {
+      "id": "G-C2-02",
+      "name": "CANDIDATE_SPEC_IDENTITY_MATCH",
+      "expected": "PASS",
+      "check": "committed blob of candidate-spec.json equals A95 PARAM candidate_spec_blob, and the recomputed semantic fingerprint equals A95 PARAM candidate_semantic_fingerprint"
+    },
+    {
+      "id": "G-C2-03",
+      "name": "RUN_PARAMETER_COMPLETENESS",
+      "expected": "PASS",
+      "check": "every key of required_run_parameters is present and non-empty in run_parameters and as an A95 PARAM line, with equal values"
+    },
+    {
+      "id": "G-C2-04",
+      "name": "BASELINE_MANIFEST_IDENTITY_MATCH",
+      "expected": "PASS",
+      "check": "committed blob of baseline-manifest.json equals A95 PARAM baseline_manifest_blob"
+    },
+    {
+      "id": "G-C2-05",
+      "name": "OBSERVATION_DESTINATION_FIXED",
+      "expected": "PASS",
+      "check": "observation destination identical in run_parameters, A95 PARAM and observation-contract.json; committed blob of observation-contract.json equals A95 PARAM observation_contract_blob; destination file absent before C2_JOIN"
+    }
+  ],
+  "pre_c2_gate_forbidden_inputs": [
+    "derived-handoff blob",
+    "mission.json blob",
+    "envelope blob",
+    "executor result"
+  ],
+  "required_run_parameters": [
+    "candidate_id",
+    "probe_id",
+    "mission_logical_id",
+    "freeze_authority_path",
+    "verification_target_path",
+    "verification_target_blob",
+    "verification_target_sha256",
+    "return_destination",
+    "observation_destination",
+    "baseline_manifest_path",
+    "observation_contract_path",
+    "derived_handoff_path",
+    "next_control_stage",
+    "expected_stage_chain",
+    "persistence_ownership",
+    "executor_addressee"
+  ],
+  "j_c_rule": {
+    "key": [
+      "candidate_id",
+      "probe_id"
+    ],
+    "key_value": [
+      "EXP-C2-C",
+      "A94-C2-PROBE-001"
+    ],
+    "exact_match_fields": [
+      "candidate_identity",
+      "candidate_semantic_fingerprint",
+      "probe_identity",
+      "governing_freeze_authority_identity",
+      "verification_target_identity",
+      "baseline_manifest_identity",
+      "observation_destination",
+      "return_destination",
+      "expected_stage_chain",
+      "persistence_ownership",
+      "required_pre_c2_gate_outcomes"
+    ],
+    "governing_freeze_authority_expected_source": "PROGRAM-STATE.json decision handoff-routing-exp-c2-c-experimental-transaction-freeze-ratified, evidence observed.blob",
+    "outcome_domain": [
+      "SUCCESS",
+      "NO"
+    ],
+    "on_missing_or_mismatch_or_non_pass": {
+      "join": "NO",
+      "H": "NONE",
+      "action": "STOP"
+    }
+  },
+  "d_c_rule": {
+    "precondition": "J-C outcome = SUCCESS",
+    "operator_choice": "NONE — no H value may be chosen during execution",
+    "mapping": {
+      "NEXT_CONTROL_STAGE": "run_parameters.next_control_stage",
+      "RETURN_DESTINATION": "run_parameters.return_destination",
+      "STAGE_ORDERING_DEPENDENCY": "run_parameters.expected_stage_chain",
+      "PERSISTENCE_OWNERSHIP": "run_parameters.persistence_ownership"
+    },
+    "expected_H": {
+      "NEXT_CONTROL_STAGE": "EXECUTOR_DISPATCH",
+      "RETURN_DESTINATION": "missions/021-handoff-routing-c2-probe/result.json",
+      "STAGE_ORDERING_DEPENDENCY": [
+        "C2_INPUT_FREEZE",
+        "C2_JOIN",
+        "C2_DERIVATION",
+        "HANDOFF_PERSISTENCE",
+        "PANEL_A",
+        "PANEL_B",
+        "EXECUTOR_DISPATCH",
+        "EXECUTOR_RETURN",
+        "RESULT_PERSISTENCE",
+        "PANEL_C"
+      ],
+      "PERSISTENCE_OWNERSHIP": {
+        "actor": "ORCHESTRATION",
+        "target": "EXECUTOR_RESULT_INSTANCE",
+        "must_complete_before": "PANEL_C"
+      }
+    },
+    "outcome_domain": [
+      "PRODUCED",
+      "NOT_PRODUCED"
+    ]
+  },
+  "packet_schema": {
+    "path": "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+    "packet_kind": "C2_HANDOFF_PACKET",
+    "fields": [
+      "packet_kind",
+      "candidate_id",
+      "probe_id",
+      "mission_logical_id",
+      "governing_authority",
+      "verification_target",
+      "candidate_spec",
+      "baseline_manifest",
+      "observation_contract",
+      "join",
+      "derivation",
+      "h_next_control_stage",
+      "h_return_destination",
+      "h_stage_ordering_dependency",
+      "h_persistence_owner_actor",
+      "h_persistence_owner_target",
+      "h_persistence_must_complete_before"
+    ],
+    "serialization": "JSON, keys in the listed order, 2-space indentation, LF, final LF; h_stage_ordering_dependency is the stage chain joined with \" < \"",
+    "forbidden_dependencies": [
+      "mission.json blob or sha256",
+      "envelope.md blob or sha256",
+      "result.json"
+    ]
+  },
+  "dispatch_gates": [
+    {
+      "id": "G-DISPATCH-01",
+      "name": "DERIVED_HANDOFF_PERSISTED",
+      "expected": "PASS"
+    },
+    {
+      "id": "G-DISPATCH-02",
+      "name": "PACKET_IDENTITY_MATCHES_MISSION_REFERENCE",
+      "expected": "PASS"
+    },
+    {
+      "id": "G-DISPATCH-03",
+      "name": "ENVELOPE_PRESERVES_PACKET_REFERENCE",
+      "expected": "PASS"
+    },
+    {
+      "id": "G-DISPATCH-04",
+      "name": "RESULT_ABSENT_BEFORE_EXECUTOR_START",
+      "expected": "PASS"
+    },
+    {
+      "id": "G-DISPATCH-05",
+      "name": "EXECUTOR_COMMIT_PUSH_PERSISTENCE_FORBIDDEN",
+      "expected": "PASS"
+    }
+  ],
+  "runtime_outputs_not_created_at_freeze": [
+    "missions/021-handoff-routing-c2-probe/derived-handoff.json",
+    "missions/021-handoff-routing-c2-probe/observations.json",
+    "missions/021-handoff-routing-c2-probe/mission.json",
+    "missions/021-handoff-routing-c2-probe/envelope.md",
+    "missions/021-handoff-routing-c2-probe/result.json"
+  ]
+}

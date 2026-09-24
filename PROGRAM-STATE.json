@@ -1835,11 +1835,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "handoff-routing-exp-c2-c-experimental-transaction-freeze-ratified",
+      "question": "Ratifier le gel de la transaction expérimentale EXP-C2-C sous l'autorité 94, tel que matérialisé par 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob 49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0 : EXP-C2-C est positivement qualifié, la sémantique de son instance de run passe, PROBE_JUSTIFICATION passe et la justification de mission d'exécution est établie sous réserve du cycle de vie ratifié, qui distingue figer la règle et exécuter la règle. Le contrat d'expérience statique est gelé : sémantique locale à l'expérience S1 à S6 (C2_HANDOFF_PACKET, NEXT_CONTROL_STAGE, RETURN_DESTINATION, STAGE_ORDERING_DEPENDENCY, PERSISTENCE_OWNERSHIP, EXPERIMENTAL_C2_JOIN_IDENTITY), non produit, non générique, non réutilisable sans autorité nouvelle ; identité de run EXP-C2-C, A94-C2-PROBE-001, mission logique 021-handoff-routing-c2-probe ; tâche de l'exécutant en lecture seule sur les six faits de la cible de vérification, l'autorité 94 ; paramètres de run, règles J-C et D-C, schéma du paquet, portes pré-C2 G-C2-01 à G-C2-05 et de dépêche G-DISPATCH-01 à G-DISPATCH-05, chaîne d'étapes, propriété de la persistance par l'orchestration avant le panneau C, manifeste de ligne de base sur la mission 001, contrat d'observation, contrat de mesure RC1 à RC8, cibles U1 à U3, L-2, L-3 et EP-02 à EP-04, arrêts, non-réparation, frontières d'écriture et continuation déterministe, dans missions/021-handoff-routing-c2-probe/candidate-spec.json, baseline-manifest.json et observation-contract.json. L'exécution de l'expérience est autorisée seulement après le gel durable et la vérification de ce contrat, et sous lui seul ; J-C, D-C et H sont des événements d'exécution postérieurs au gel. Cette décision n'adopte aucune sémantique produit, n'autorise aucune implémentation produit ni moteur de routage générique, n'amende ni l'autorité 93 ni l'autorité 94, et ne crée à ce stade ni paquet, ni mission 021, ni allocation de l'AGENT CCR LAB #63.",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-264",
+          "kind": "repo-path",
+          "ref": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-exp-c2-c-experimental-transaction-freeze-ratified",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Produire, par l'orchestrateur, un paquet complet et borné de spécification de candidats C2 expérimentaux sous l'autorité 94, 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md, blob 51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c, pour l'acquisition de preuve de l'autorité 93. Un ou plusieurs candidats concrets sont permis ; aucune clôture de l'espace de candidats, aucune minimalité globale, aucune implémentation, aucune exécution, aucune mission 021, aucune allocation de l'AGENT CCR LAB #63. Pour chaque candidat, le paquet identifie la sémantique matérielle nouvelle exacte et sa nécessité, les entrées sources, le porteur, les règles de dérivation et de jointure, la sortie produite, le chemin de propagation, la relation de consommation, les frontières d'autorité et d'arrêt, le chemin de comparaison à la ligne de base, le chemin de mesure RC1..RC8, les implications U1, U2, U3, L-2 et L-3, la frontière entre expérimental et sémantique produit, la qualification du candidat, la préparation à l'exécution, la justification de sonde et la justification de mission d'exécution. Le paquet ne revient que sur : un candidat d'exécution qualifié ; plusieurs candidats qualifiés matériellement distincts sans sélecteur gouvernant, qui exigent une porte humaine authentique ; ou un blocage dur. Aucune porte humaine par morceaux pendant la construction, sauf choix matériel authentiquement inévitable empêchant l'achèvement du paquet. Ce n'est ni une implémentation, ni une exécution, ni la mission 021, ni une dépêche d'exécutant.",
+    "value": "Exécuter la transaction EXP-C2-C complète sous l'autorité 95, 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob 49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0, sans porte humaine intermédiaire, sauf arrêt dur ou choix matériel nouveau non gouverné : portes pré-C2, J-C, D-C et production du paquet derived-handoff.json ; matérialisation et vérification de la mission 021 avec l'identité effective du paquet ; allocation de l'AGENT CCR LAB #63 seulement après ; transmission manuelle de la mission 021 gelée ; exécution par #63 ; persistance de result.json par l'orchestration avant le panneau C ; panneau C et observations ; un paquet de retour expérimental factuel complet. Aucune adoption ni implémentation produit ; la contre-expertise indépendante vient après.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1856,17 +1877,17 @@
         }
       },
       {
-        "id": "ev-263",
+        "id": "ev-265",
         "kind": "repo-path",
-        "ref": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+        "ref": "95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Produire, par l'orchestrateur, un paquet complet et borné de spécification de candidats C2 expérimentaux sous l'autorité 94, 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md, blob 51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c, pour l'acquisition de preuve de l'autorité 93. Un ou plusieurs candidats concrets sont permis ; aucune clôture de l'espace de candidats, aucune minimalité globale, aucune implémentation, aucune exécution, aucune mission 021, aucune allocation de l'AGENT CCR LAB #63. Pour chaque candidat, le paquet identifie la sémantique matérielle nouvelle exacte et sa nécessité, les entrées sources, le porteur, les règles de dérivation et de jointure, la sortie produite, le chemin de propagation, la relation de consommation, les frontières d'autorité et d'arrêt, le chemin de comparaison à la ligne de base, le chemin de mesure RC1..RC8, les implications U1, U2, U3, L-2 et L-3, la frontière entre expérimental et sémantique produit, la qualification du candidat, la préparation à l'exécution, la justification de sonde et la justification de mission d'exécution. Le paquet ne revient que sur : un candidat d'exécution qualifié ; plusieurs candidats qualifiés matériellement distincts sans sélecteur gouvernant, qui exigent une porte humaine authentique ; ou un blocage dur. Aucune porte humaine par morceaux pendant la construction, sauf choix matériel authentiquement inévitable empêchant l'achèvement du paquet. Ce n'est ni une implémentation, ni une exécution, ni la mission 021, ni une dépêche d'exécutant."
+          "value": "Exécuter la transaction EXP-C2-C complète sous l'autorité 95, 95-HANDOFF-ROUTING-EXP-C2-C-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob 49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0, sans porte humaine intermédiaire, sauf arrêt dur ou choix matériel nouveau non gouverné : portes pré-C2, J-C, D-C et production du paquet derived-handoff.json ; matérialisation et vérification de la mission 021 avec l'identité effective du paquet ; allocation de l'AGENT CCR LAB #63 seulement après ; transmission manuelle de la mission 021 gelée ; exécution par #63 ; persistance de result.json par l'orchestration avant le panneau C ; panneau C et observations ; un paquet de retour expérimental factuel complet. Aucune adoption ni implémentation produit ; la contre-expertise indépendante vient après."
         },
         "observed": {
-          "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+          "blob": "49b5f57cd6921ba29ddaee0dc224d7f4f1831cc0"
         }
       }
     ]

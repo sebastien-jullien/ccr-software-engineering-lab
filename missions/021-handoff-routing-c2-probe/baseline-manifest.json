@@ -1,0 +1,165 @@
+{
+  "artifact": "EXP_C2_C_BASELINE_MANIFEST",
+  "lifecycle_class": "STATIC_EXPERIMENT_CONTRACT",
+  "candidate_id": "EXP-C2-C",
+  "probe_id": "A94-C2-PROBE-001",
+  "baseline": "MISSION_001_DECISION_CONSEQUENCE_BOUNDARY",
+  "sources": {
+    "authority_34": {
+      "path": "34-DECISION-CONSEQUENCE-BOUNDARY-REAL-USE-MISSION-SELECTION.md",
+      "blob": "4b6fe11c3499a9a4e17b59d0c9ff49c0fa6bffb5"
+    },
+    "authority_35": {
+      "path": "35-DECISION-CONSEQUENCE-BOUNDARY-BOUNDED-MISSION-FREEZE.md",
+      "blob": "9a067717b3fb5e3daca7a7be3a34b1362b843ea3"
+    },
+    "authority_36": {
+      "path": "36-LOCAL-MISSION-CONSOLE-V0-REAL-USE-OBSERVATION-CAPTURE-PROTOCOL.md",
+      "blob": "dc77a8a561b9ec92d05e6996f69c7929beb2c5b2"
+    },
+    "authority_37": {
+      "path": "37-DECISION-CONSEQUENCE-BOUNDARY-RESULT-PANEL-C-DURABILITY-ORDERING.md",
+      "blob": "0fff611a59dabef0ad1b067344287d48b740f74a"
+    },
+    "authority_47": {
+      "path": "47-HANDOFF-ROUTING-BOUNDED-RD-QUESTION-FREEZE.md",
+      "blob": "0102cccb42cabba9060f6380eeafe2e213159bfe"
+    },
+    "authority_49": {
+      "path": "49-HANDOFF-ROUTING-INDEPENDENT-QUALIFICATION-AND-BOUNDED-INTEGRATION-DESIGN-STUDY-SELECTION.md",
+      "blob": "bf767588dc5931b69f53e61475d3f426e28b7f46"
+    },
+    "mission_001_mission": {
+      "path": "missions/001-decision-consequence-boundary/mission.json",
+      "blob": "e80bc3d250920cee66b4d26bef497b6094395144"
+    },
+    "mission_001_envelope": {
+      "path": "missions/001-decision-consequence-boundary/envelope.md",
+      "blob": "a5320c00c20ec0b1f7f4c8f99515bd5a133b619e"
+    },
+    "mission_001_result": {
+      "path": "missions/001-decision-consequence-boundary/result.json",
+      "blob": "69d2d1574eb3bf82148f23b36f4e2f4f1c1a4e07"
+    },
+    "mission_001_observations": {
+      "path": "missions/001-decision-consequence-boundary/console-real-use-observations.md",
+      "blob": "af7c57778ba8b34ea814555d91448ef9ae24f1a2"
+    },
+    "mission_003_result": {
+      "path": "missions/003-handoff-routing-boundary/result.json",
+      "blob": "92ff7ad329a329a372755c09bd6b292c810dea34"
+    }
+  },
+  "historical_commits": {
+    "note": "historical evidence of when baseline events occurred; NOT routing semantics (authority 93 §22)",
+    "mission_selection": "4002d3cfab0b6b2ed2aed474c8e4708acd40f8a2",
+    "mission_freeze_a35": "cbab8cbbc2b6a6764c0b5ee0ebfca9fe6b2060a0",
+    "repair_a36": "54382c950cd8fe735ece32491e11aecb327c49eb",
+    "repair_a37": "ee05eed6ad1d04acb7f86210c26117b2c742581b",
+    "panel_a": "fb614d2a2eb6923a91deb541fca831e42c8d501f",
+    "panel_b": "e39384c66d15ad0ecf1e6e4e4cb491cd7db6a5af",
+    "result_persistence": "9ba99ae97c078567c887e0bfe2705c2f6ca3dd08",
+    "panel_c": "532f4283f4c62140bfef2362c6e0b866190aec38"
+  },
+  "admitted_dimensions": [
+    {
+      "id": "D1",
+      "name": "fresh_executor",
+      "baseline": "YES",
+      "basis": "authority_36 §8 step 6 (fresh executor); authority_35 §15"
+    },
+    {
+      "id": "D2",
+      "name": "read_only_executor_task",
+      "baseline": "YES",
+      "basis": "authority_35 §12 (read-only except the one result)"
+    },
+    {
+      "id": "D3",
+      "name": "one_result_instance",
+      "baseline": "YES",
+      "basis": "authority_35 §12 \"EXACTEMENT UN NOUVEAU result.json\""
+    },
+    {
+      "id": "D4",
+      "name": "executor_does_not_persist_git_state",
+      "baseline": "YES",
+      "basis": "mission_001_mission e-forbid-commit / e-forbid-push / e-forbid-persist, sc-no-persistence-by-executor"
+    },
+    {
+      "id": "D5",
+      "name": "return_destination_fixed_before_dispatch",
+      "baseline": "EXECUTOR_RESULT_PATH_FIXED_AT_FREEZE; OBSERVATION_DESTINATION_FIXED_ONLY_BY_POST_FREEZE_REPAIR",
+      "basis": "mission_001_mission ref-return DELIVERABLE; authority_36 §5 (repair, EP-03)"
+    },
+    {
+      "id": "D6",
+      "name": "pre_dispatch_control_fixed",
+      "baseline": "NOT_AT_FREEZE — FIXED BY POST-FREEZE REPAIRS BEFORE DISPATCH",
+      "basis": "mission_003_result rf-ep02/rf-ep03 burden; authority_36; authority_37"
+    },
+    {
+      "id": "D7",
+      "name": "persistence_owner_fixed",
+      "baseline": "NOT_AT_FREEZE — FIXED BY POST-FREEZE REPAIR BEFORE DISPATCH",
+      "basis": "authority_37 §4, §5.3, §9 (EP-04)"
+    },
+    {
+      "id": "D8",
+      "name": "result_durable_before_panel_c",
+      "baseline": "YES_AFTER_REPAIR",
+      "basis": "authority_37 §3, §9; result_persistence commit precedes panel_c commit"
+    },
+    {
+      "id": "D9",
+      "name": "no_post_freeze_reconstruction_of_c2_values",
+      "baseline": "NO — RECONSTRUCTION OCCURRED (authorities 36 and 37; next_action restored twice)",
+      "basis": "mission_003_result rf-ep02-counterfactual-basis; authority_47 §5 units"
+    }
+  ],
+  "excluded_dimensions": [
+    "substantive task equivalence",
+    "product-behavior equivalence",
+    "generic routing equivalence",
+    "generic operator-effort equivalence",
+    "historical decision-content equivalence"
+  ],
+  "ep_mapping": {
+    "EP-02": {
+      "baseline_units": [
+        "EP02-A-1",
+        "EP02-A-2",
+        "EP02-A-3"
+      ],
+      "dimensions": [
+        "D5",
+        "D6",
+        "D9"
+      ]
+    },
+    "EP-03": {
+      "baseline_units": [
+        "EP03-A-1",
+        "EP03-A-2",
+        "EP03-A-3"
+      ],
+      "dimensions": [
+        "D5",
+        "D6",
+        "D9"
+      ]
+    },
+    "EP-04": {
+      "baseline_units": [
+        "EP04-A-1",
+        "EP04-A-2"
+      ],
+      "dimensions": [
+        "D7",
+        "D8",
+        "D9"
+      ]
+    }
+  },
+  "rc8_l2_rule": "positive run evidence per dimension is required; absence of errors alone is NOT removal evidence"
+}

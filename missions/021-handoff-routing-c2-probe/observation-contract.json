@@ -1,0 +1,182 @@
+{
+  "artifact": "EXP_C2_C_OBSERVATION_CONTRACT",
+  "lifecycle_class": "STATIC_EXPERIMENT_CONTRACT",
+  "candidate_id": "EXP-C2-C",
+  "probe_id": "A94-C2-PROBE-001",
+  "destination": {
+    "path": "missions/021-handoff-routing-c2-probe/observations.json",
+    "producer": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+    "executor_may_write": "NO",
+    "created_at": "C2_JOIN runtime phase, not at freeze"
+  },
+  "executor_return": {
+    "expected_path": "missions/021-handoff-routing-c2-probe/result.json",
+    "producer": "EXECUTOR (AGENT_CCR_LAB_63)"
+  },
+  "missing_observation_rule": "a missing required observation makes the dependent claim NOT_ESTABLISHED; never a silent PASS; never converted into NO",
+  "required_keys": {
+    "identity": [
+      "candidate_id",
+      "probe_id",
+      "mission_logical_id",
+      "freeze_authority",
+      "verification_target",
+      "static_contract_artifacts",
+      "freeze_commit"
+    ],
+    "pre_c2": [
+      "gates.G-C2-01",
+      "gates.G-C2-02",
+      "gates.G-C2-03",
+      "gates.G-C2-04",
+      "gates.G-C2-05",
+      "j_c.inputs",
+      "j_c.comparisons",
+      "j_c.outcome",
+      "j_c.trace_sha256",
+      "d_c.inputs",
+      "d_c.trace",
+      "d_c.outcome",
+      "d_c.trace_sha256"
+    ],
+    "handoff": [
+      "packet_path",
+      "packet_sha256",
+      "packet_blob",
+      "H",
+      "persistence_commit"
+    ],
+    "pre_dispatch": [
+      "panel_a",
+      "mission_identity",
+      "envelope_identity",
+      "validation",
+      "render_coverage",
+      "gates.G-DISPATCH-01",
+      "gates.G-DISPATCH-02",
+      "gates.G-DISPATCH-03",
+      "gates.G-DISPATCH-04",
+      "gates.G-DISPATCH-05",
+      "panel_b",
+      "freeze_commit",
+      "agent_63_allocation"
+    ],
+    "executor_return": [
+      "actual_return_path",
+      "result_source_identity",
+      "packet_consumption",
+      "manual_reconstruction",
+      "six_facts",
+      "write_boundary_compliance"
+    ],
+    "persistence": [
+      "pre_persistence_result_identity",
+      "persistence_gate",
+      "committed_result_identity",
+      "actor",
+      "persistence_commit",
+      "panel_c_allowed"
+    ],
+    "panel_c": [
+      "result_mission_identity",
+      "result_packet_identity",
+      "association_status",
+      "validation_status",
+      "persistence_before_panel_c"
+    ],
+    "rc": [
+      "RC1",
+      "RC2",
+      "RC3",
+      "RC4",
+      "RC5",
+      "RC6",
+      "RC7",
+      "RC8"
+    ],
+    "u": [
+      "U1_local",
+      "U1_generic",
+      "U2",
+      "U3"
+    ],
+    "l": [
+      "L-2",
+      "L-3"
+    ],
+    "ep": [
+      "EP-02",
+      "EP-03",
+      "EP-04"
+    ],
+    "discipline": [
+      "stop_events",
+      "deviations",
+      "missing_observations",
+      "repair_attempts"
+    ]
+  },
+  "domains": {
+    "RC": [
+      "YES",
+      "NO",
+      "NOT_ESTABLISHED"
+    ],
+    "U1_local": [
+      "LOCAL_SUPPORT",
+      "LOCAL_CONTRADICTION",
+      "NOT_ESTABLISHED"
+    ],
+    "U1_generic": [
+      "ESTABLISHED",
+      "NOT_ESTABLISHED",
+      "REFUTED"
+    ],
+    "U2": [
+      "ALREADY_RATIFIED_INTENT_RECORDED",
+      "RESIDUAL_MANUAL_RECONSTRUCTION",
+      "NOT_ESTABLISHED"
+    ],
+    "U3": [
+      "FAITHFULLY_CARRIED_IN_CONCRETE_PROBE",
+      "NOT_FAITHFULLY_CARRIED_IN_CONCRETE_PROBE",
+      "NOT_ESTABLISHED"
+    ],
+    "L": [
+      "ADDRESSED",
+      "NOT_ADDRESSED",
+      "NOT_ESTABLISHED"
+    ],
+    "EP": [
+      "REMOVED_IN_BOUNDED_RUN",
+      "NOT_REMOVED",
+      "NOT_ESTABLISHED"
+    ],
+    "gate": [
+      "PASS",
+      "FAIL"
+    ],
+    "packet_consumed": [
+      "YES",
+      "NO",
+      "NOT_ESTABLISHED"
+    ],
+    "manual_reconstruction": [
+      "YES",
+      "NO"
+    ]
+  },
+  "panel_record_fields": [
+    "producer",
+    "stage",
+    "method",
+    "observation",
+    "identities",
+    "blocking",
+    "workaround_required",
+    "workaround",
+    "reconstruction_from_conversation",
+    "raw_repository_inspection",
+    "missing_information"
+  ]
+}
