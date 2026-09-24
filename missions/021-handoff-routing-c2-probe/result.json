@@ -1,0 +1,554 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "021-handoff-routing-c2-probe"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/021-handoff-routing-c2-probe/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "AGENT_CCR_LAB_63"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/021-handoff-routing-c2-probe/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-executor-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "AGENT_CCR_LAB_63"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-preflight-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-observed-head"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "277000e6bcbdf9f2d351c40df816cc6d612ce12a"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-vt-path"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-vt-blob"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-vt-sha256"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a94-human-decision"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a94-product-semantic-adoption"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a94-implementation"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a94-experiment-execution"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a94-mission-021"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a94-agent-63"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "UNALLOCATED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a94-facts-basis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "source : octets commis de 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md au HEAD 277000e6bcbdf9f2d351c40df816cc6d612ce12a, blob 51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c, sha256 126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b, 446 lignes, CR 0 ; aucun PROGRAM-STATE lu"
+          },
+          {
+            "type": "SCALAR",
+            "value": "a94.human_decision = AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION ← § 5 « Décision » l.126-133 : DÉCISION HUMAINE = CONTINUE HANDOFF_ROUTING · PAR = AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION · STATUT = SÉLECTIONNÉE · RATIFIÉE ; § 16 l.408-410 ; en-tête l.4-6"
+          },
+          {
+            "type": "SCALAR",
+            "value": "a94.product_semantic_adoption = NO ← § 15 l.393 : IL N'ADOPTE AUCUNE SÉMANTIQUE PRODUIT ; § 10 l.233 et l.236 : N'AUTORISE PAS ADOPTION DE SÉMANTIQUE PRODUIT ; § 16 l.416 : CONTRAT SÉMANTIQUE PRODUIT INCHANGÉ ; en-tête l.11-12 ; § 5 l.138 ; § 9 l.218-221"
+          },
+          {
+            "type": "SCALAR",
+            "value": "a94.implementation = NO ← en-tête l.15 : IL N'IMPLÉMENTE PAS C2 ; § 15 l.388 : IL N'IMPLÉMENTE RIEN ; § 10 l.242-244 ; § 14 l.372 : aucune implémentation ; § 16 l.432 : IMPLÉMENTATION NON AUTORISÉE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "a94.experiment_execution = NO ← en-tête l.16 : IL N'EXÉCUTE AUCUNE EXPÉRIENCE ; § 15 l.389 ; § 10 l.245 : EXÉCUTION D'EXPÉRIENCE ; § 14 l.373 : aucune exécution ; § 16 l.433 : EXÉCUTION D'EXPÉRIENCE NON AUTORISÉE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "a94.mission_021_at_target_state = NONE ← § 16 « État matérialisé » l.434 : MISSION 021 AUCUNE ; § 1 l.40-41 : MISSION 021 = ABSENTE ; en-tête l.17 et § 15 l.391 : IL NE CRÉE PAS LA MISSION 021 ; § 10 l.246 ; § 14 l.374"
+          },
+          {
+            "type": "SCALAR",
+            "value": "a94.agent_63_at_target_state = UNALLOCATED ← § 16 « État matérialisé » l.435 : AGENT CCR LAB #63 NON ALLOUÉ ; § 1 l.43-44 : AGENT CCR LAB #63 = NON ALLOUÉ ; en-tête l.18 et § 15 l.392 : IL N'ALLOUE PAS L'AGENT CCR LAB #63 ; § 10 l.247 ; § 14 l.375"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-packet-consumed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/021-handoff-routing-c2-probe/derived-handoff.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "69805418d739c84d61d053f32dc127e33db49945"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-packet-blob-observed"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "69805418d739c84d61d053f32dc127e33db49945"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/021-handoff-routing-c2-probe/derived-handoff.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "69805418d739c84d61d053f32dc127e33db49945"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-packet-h-next-control-stage"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "EXECUTOR_DISPATCH"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/021-handoff-routing-c2-probe/derived-handoff.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "69805418d739c84d61d053f32dc127e33db49945"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-packet-h-return-destination"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "missions/021-handoff-routing-c2-probe/result.json"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/021-handoff-routing-c2-probe/derived-handoff.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "69805418d739c84d61d053f32dc127e33db49945"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-packet-h-stage-ordering"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/021-handoff-routing-c2-probe/derived-handoff.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "69805418d739c84d61d053f32dc127e33db49945"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-packet-h-persistence-owner"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/021-handoff-routing-c2-probe/derived-handoff.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "69805418d739c84d61d053f32dc127e33db49945"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-actual-return-path"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "missions/021-handoff-routing-c2-probe/result.json"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-manual-c2-reconstruction-required"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-paths-written"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "missions/021-handoff-routing-c2-probe/result.json"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-executor-commits"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-executor-pushes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-result-validation-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-stop-events"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-deviations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tentative d'écriture hors frontière, refusée : pendant le contrôle g-packet, une redirection shell des octets du paquet vers $TMPDIR/pkt.json a été émise ; TMPDIR non défini → cible /pkt.json, hors dépôt ; écriture refusée par le système (Permission denied) ; aucun fichier créé (/pkt.json vérifié absent) ; aucun chemin du dépôt touché ; g-packet évaluée sur les octets commis lus par git cat-file"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-terminal-outcome"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    }
+  ]
+}
