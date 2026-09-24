@@ -33,7 +33,14 @@
         "blob": "05f962d67c800a390df54d6438526ead03dc476f"
       }
     ],
-    "freeze_commit": "50036c11a1e889f32bb9428c2a355a4470248e06"
+    "freeze_commit": "50036c11a1e889f32bb9428c2a355a4470248e06",
+    "transaction_commits": {
+      "T1_static_freeze": "50036c11a1e889f32bb9428c2a355a4470248e06",
+      "T2_handoff_packet": "675aa052ebdb942a64f80e2779ff8daeeccaf8d2",
+      "T3_mission_021_freeze": "277000e6bcbdf9f2d351c40df816cc6d612ce12a",
+      "result_persistence": "a9314941dc32e05d839002f4aae5cc67b0e14240",
+      "final_observations": "THE COMMIT THAT CARRIES THIS VERSION OF THE FILE"
+    }
   },
   "pre_c2": {
     "evaluated_at_head": "50036c11a1e889f32bb9428c2a355a4470248e06",
@@ -1141,24 +1148,432 @@
       "raw_repository_inspection": "NO",
       "missing_information": "NONE"
     },
-    "freeze_commit": "RECORDED_IN_LATER_PHASE (self-reference of the T3 commit)",
+    "freeze_commit": "277000e6bcbdf9f2d351c40df816cc6d612ce12a",
     "agent_63_allocation": {
       "allocated": "YES",
       "allocation_point": "after G-DISPATCH-01..05 = PASS and PANEL_B, durable in the T3 freeze commit",
       "role": "fresh executor of frozen Mission 021 only"
     }
   },
-  "executor_return": "PENDING_LATER_PHASE",
-  "persistence": "PENDING_LATER_PHASE",
-  "panel_c": "PENDING_LATER_PHASE",
-  "rc": "PENDING_LATER_PHASE",
-  "u": "PENDING_LATER_PHASE",
-  "l": "PENDING_LATER_PHASE",
-  "ep": "PENDING_LATER_PHASE",
+  "executor_return": {
+    "executor": "AGENT_CCR_LAB_63",
+    "raw_return": {
+      "in_continuation_message": "NO — the continuation announces \"THE EXACT RAW AGENT CCR LAB #63 RETURN PROVIDED IMMEDIATELY WITH THIS CONTINUATION MESSAGE\" ; the message carries the orchestrator summary and the human-ratified counter-expertise, not the raw text",
+      "recovered_from": "local harness session log 99bb4460-5bcb-452c-8d7b-5c1c13f53e86.jsonl (outside the repository), last assistant text at 2026-09-24T07:10:00.579Z, 4246 characters, sha256 a4c48f0127717a8e1b9bd86242fd545bd7e14ae83b7966d57a508e0f9175e879 — read-only",
+      "cross_check_against_result": "EQUAL — bytes 15755, sha256 8d9b407d…, blob ada093bb…, CR 0, no BOM, single final LF, STRUCTURE PASS, CONTRAT PASS 28 relations, paths written { result.json }, commits 0, pushes 0, stop events NONE, 1 deviation (/pkt.json), preflight HEAD / TREE = T3, H1..H4 and H4 join rule, manual reconstruction NO, six facts",
+      "additional_reported_facts": "preflight : blobs of mission.json, envelope.md, packet, A95, A94, A23 all match ; no workflow, no agent started ; tool harness saved two large command outputs in its own cache, not caused by any executor command",
+      "role": "cross-check only — every executor_return value below is read from the committed result.json"
+    },
+    "preflight": {
+      "status": "PASS",
+      "observed_head": "277000e6bcbdf9f2d351c40df816cc6d612ce12a",
+      "expected_head": "277000e6bcbdf9f2d351c40df816cc6d612ce12a",
+      "equal": true
+    },
+    "actual_return_path": "missions/021-handoff-routing-c2-probe/result.json",
+    "return_path_equals_h_return_destination": true,
+    "result_source_identity": {
+      "source": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/021-handoff-routing-c2-probe/mission.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2"
+        }
+      },
+      "mission_blob_at_T3": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2",
+      "equal": true
+    },
+    "verification_target_used": {
+      "path": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+      "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c",
+      "sha256": "126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+      "equals_authority_94": true
+    },
+    "six_facts": {
+      "human_decision": "AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION",
+      "product_semantic_adoption": "NO",
+      "implementation": "NO",
+      "experiment_execution": "NO",
+      "mission_021_at_target_state": "NONE",
+      "agent_63_at_target_state": "UNALLOCATED",
+      "basis": [
+        "source : octets commis de 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md au HEAD 277000e6bcbdf9f2d351c40df816cc6d612ce12a, blob 51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c, sha256 126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b, 446 lignes, CR 0 ; aucun PROGRAM-STATE lu",
+        "a94.human_decision = AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION ← § 5 « Décision » l.126-133 : DÉCISION HUMAINE = CONTINUE HANDOFF_ROUTING · PAR = AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION · STATUT = SÉLECTIONNÉE · RATIFIÉE ; § 16 l.408-410 ; en-tête l.4-6",
+        "a94.product_semantic_adoption = NO ← § 15 l.393 : IL N'ADOPTE AUCUNE SÉMANTIQUE PRODUIT ; § 10 l.233 et l.236 : N'AUTORISE PAS ADOPTION DE SÉMANTIQUE PRODUIT ; § 16 l.416 : CONTRAT SÉMANTIQUE PRODUIT INCHANGÉ ; en-tête l.11-12 ; § 5 l.138 ; § 9 l.218-221",
+        "a94.implementation = NO ← en-tête l.15 : IL N'IMPLÉMENTE PAS C2 ; § 15 l.388 : IL N'IMPLÉMENTE RIEN ; § 10 l.242-244 ; § 14 l.372 : aucune implémentation ; § 16 l.432 : IMPLÉMENTATION NON AUTORISÉE",
+        "a94.experiment_execution = NO ← en-tête l.16 : IL N'EXÉCUTE AUCUNE EXPÉRIENCE ; § 15 l.389 ; § 10 l.245 : EXÉCUTION D'EXPÉRIENCE ; § 14 l.373 : aucune exécution ; § 16 l.433 : EXÉCUTION D'EXPÉRIENCE NON AUTORISÉE",
+        "a94.mission_021_at_target_state = NONE ← § 16 « État matérialisé » l.434 : MISSION 021 AUCUNE ; § 1 l.40-41 : MISSION 021 = ABSENTE ; en-tête l.17 et § 15 l.391 : IL NE CRÉE PAS LA MISSION 021 ; § 10 l.246 ; § 14 l.374",
+        "a94.agent_63_at_target_state = UNALLOCATED ← § 16 « État matérialisé » l.435 : AGENT CCR LAB #63 NON ALLOUÉ ; § 1 l.43-44 : AGENT CCR LAB #63 = NON ALLOUÉ ; en-tête l.18 et § 15 l.392 : IL N'ALLOUE PAS L'AGENT CCR LAB #63 ; § 10 l.247 ; § 14 l.375"
+      ]
+    },
+    "packet_consumption": {
+      "consumed": "YES",
+      "blob_observed": "69805418d739c84d61d053f32dc127e33db49945",
+      "committed_packet_blob": "69805418d739c84d61d053f32dc127e33db49945",
+      "h_values_reported": {
+        "NEXT_CONTROL_STAGE": "EXECUTOR_DISPATCH",
+        "RETURN_DESTINATION": "missions/021-handoff-routing-c2-probe/result.json",
+        "STAGE_ORDERING_DEPENDENCY": "C2_INPUT_FREEZE < C2_JOIN < C2_DERIVATION < HANDOFF_PERSISTENCE < PANEL_A < PANEL_B < EXECUTOR_DISPATCH < EXECUTOR_RETURN < RESULT_PERSISTENCE < PANEL_C",
+        "PERSISTENCE_OWNERSHIP": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C"
+      },
+      "h_values_equal_packet": true
+    },
+    "h4_serialization": {
+      "reported": "ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C",
+      "frozen_form": "authority 95 §7 : PARAM persistence_ownership = ORCHESTRATION | EXECUTOR_RESULT_INSTANCE | PANEL_C, read as actor | target | must_complete_before",
+      "equals_frozen_form_over_packet_fields": true,
+      "semantic_choice_required": "NO — the scalar form is the one frozen in authority 95 §7, referenced by mission.json ref-auth95"
+    },
+    "manual_reconstruction": "NO",
+    "result_validation": {
+      "executor_reported": "PASS",
+      "orchestration_rerun": "STRUCTURE PASS · CONTRAT PASS · 28 relations · completeness not asserted by the tool"
+    },
+    "executor_commits": "0",
+    "executor_pushes": "0",
+    "paths_written_reported": [
+      "missions/021-handoff-routing-c2-probe/result.json"
+    ],
+    "stop_events_reported": [],
+    "deviations_reported": [
+      "tentative d'écriture hors frontière, refusée : pendant le contrôle g-packet, une redirection shell des octets du paquet vers $TMPDIR/pkt.json a été émise ; TMPDIR non défini → cible /pkt.json, hors dépôt ; écriture refusée par le système (Permission denied) ; aucun fichier créé (/pkt.json vérifié absent) ; aucun chemin du dépôt touché ; g-packet évaluée sur les octets commis lus par git cat-file"
+    ],
+    "terminal_outcome_reported": "PASS",
+    "write_boundary_compliance": {
+      "actual_repository_write_set": [
+        "missions/021-handoff-routing-c2-probe/result.json"
+      ],
+      "basis": "git status --porcelain --ignored --untracked-files=all at continuation : only result.json new ; ignored entries predate T3 ; mtime scan of the whole repository outside .git : result.json is the only file modified after the T3 commit ; HEAD unchanged at T3 ; tracked diff 0",
+      "executor_commits_observed": 0,
+      "executor_pushes_observed": 0,
+      "attempted_out_of_boundary_write": "/pkt.json (TMPDIR unset during a g-packet shell redirection) — refused by the operating system, no file created (/pkt.json and C:/pkt.json verified absent), no repository path touched",
+      "compliance_of_effects": "YES — no write effect other than result.json"
+    },
+    "sr_scope_classification": {
+      "frozen_trigger": "sr-scope trigger { NEQ, REPO_FACT(mutation_boundary_held), true } ; reached by g-mutation-boundary { SET_EQ, MEASUREMENT(repo.modified_paths), { missions/021-handoff-routing-c2-probe/result.json } } on_fail sr-scope (mission.json ; envelope.md lines 77-78 and 111)",
+      "semantics": "B — an actual out-of-scope repository mutation : both the trigger (REPO_FACT) and the gate (MEASUREMENT repo.modified_paths) measure repository state ; no frozen clause makes a refused attempt a trigger",
+      "pkt_json_event": "DOES NOT TRIGGER sr-scope — repo.modified_paths = { missions/021-handoff-routing-c2-probe/result.json } ; mutation boundary held",
+      "related_clauses": "effect FORBIDDEN WRITE_PATH_OTHER_THAN_RESULT (opaque action id, cardinality 0, authority 14 §12.1) and authority 95 §18 \"AUTRES ÉCRITURES INTERDITES\" : no write effect occurred ; whether a refused attempt counts as the forbidden action is not defined by the frozen contract and is not decided here ; authority 95 §17 persistence gate (\"aucun autre chemin créé / modifié / supprimé par l'exécutant\") and §26 (\"retour de #63 non conforme à la frontière\") are satisfied on actual effects",
+      "classification": "CONTRACTUAL / OPERATIONAL DEVIATION · OUT-OF-SCOPE MUTATION NONE · sr-scope NOT TRIGGERED"
+    },
+    "environment_effects": {
+      "tool_harness_cache": {
+        "location": "C:\\Users\\TribS\\.claude\\projects\\E--prog-ccr-software-engineering-lab\\99bb4460-5bcb-452c-8d7b-5c1c13f53e86\\tool-results — outside the repository",
+        "files": [
+          {
+            "name": "bn7pna8bt.txt",
+            "bytes": 31051,
+            "written": "2026-09-24T09:06:42+02:00"
+          },
+          {
+            "name": "bypuiv0a7.txt",
+            "bytes": 32086,
+            "written": "2026-09-24T09:07:32+02:00"
+          }
+        ],
+        "origin": "the session log records each as the harness replacement of an oversized tool output (\"Output too large (30.3KB). Full output saved to: …\") ; no executor command names these paths",
+        "repository_mutation": "NO",
+        "executor_requested_artifact_write": "NO",
+        "environment_tool_harness_effect_external_to_repository": "YES",
+        "contract": "sr-scope and g-mutation-boundary measure repository state ; A95 §18 bounds executor writes ; no frozen clause makes a harness effect a STOP"
+      },
+      "classification": "ENVIRONMENT OBSERVATION ONLY — not R&D evidence, not RC7 reconstruction"
+    }
+  },
+  "persistence": {
+    "pre_persistence_result_identity": {
+      "path": "missions/021-handoff-routing-c2-probe/result.json",
+      "bytes": 15755,
+      "sha256": "8d9b407d950d3a727feb731a5555cf34c80f868dd042f118f7fb720806c95bfc",
+      "blob": "ada093bbe68ca0f7676a4c6994ed2354d5292e0f",
+      "CR": 0,
+      "LF": 554,
+      "NUL": 0,
+      "final_LF": true,
+      "BOM": false,
+      "equals_continuation_identity": true
+    },
+    "persistence_gate": {
+      "rule": "authority 95 §17",
+      "checks": {
+        "result_exists_at_return_path": "PASS",
+        "no_other_executor_path_created_modified_deleted": "PASS",
+        "mission_envelope_packet_observations_unchanged_since_T3": "PASS (tracked diff 0)",
+        "program_state_readme_authorities_tooling_unchanged": "PASS (tracked diff 0)",
+        "utf8_lf_only_cr0_nul0_final_lf": "PASS",
+        "semantic_pass_required": "NO"
+      },
+      "outcome": "PASS"
+    },
+    "actor": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+    "persistence_commit": "a9314941dc32e05d839002f4aae5cc67b0e14240",
+    "commit_paths": [
+      "missions/021-handoff-routing-c2-probe/result.json"
+    ],
+    "committed_result_identity": {
+      "blob": "ada093bbe68ca0f7676a4c6994ed2354d5292e0f",
+      "sha256": "8d9b407d950d3a727feb731a5555cf34c80f868dd042f118f7fb720806c95bfc",
+      "byte_identical_to_executor_return": true
+    },
+    "panel_c_allowed": "YES — after the persistence commit was pushed (origin/main = a9314941dc32e05d839002f4aae5cc67b0e14240)"
+  },
+  "panel_c": {
+    "producer": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+    "stage": "PANEL_C",
+    "observation": "result.json persisted at a9314941dc32e05d839002f4aae5cc67b0e14240 captured, validated and associated by the console : source and return-contract association MATCH with Mission 021 recaptured at its committed blob, no path divergence, 16 / 16 evidence references MATCH (10 on authority 94, 6 on the packet), aggregate MATCH",
+    "identities": {
+      "console_head": "a9314941dc32e05d839002f4aae5cc67b0e14240",
+      "result_capture": {
+        "path": "missions/021-handoff-routing-c2-probe/result.json",
+        "bytes": 15755,
+        "sha256": "8d9b407d950d3a727feb731a5555cf34c80f868dd042f118f7fb720806c95bfc",
+        "blob": "ada093bbe68ca0f7676a4c6994ed2354d5292e0f"
+      },
+      "mission_recapture": {
+        "path": "missions/021-handoff-routing-c2-probe/mission.json",
+        "blob": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2",
+        "confirmed": true
+      }
+    },
+    "method": "LOCAL MISSION CONSOLE V0 started after the persistence commit, loopback HTTP GET /api/context and /api/result?path=missions/021-handoff-routing-c2-probe/result.json&missionPath=missions/021-handoff-routing-c2-probe/mission.json&missionBlob=21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2 (read-only), no browser UI",
+    "console_head": "a9314941dc32e05d839002f4aae5cc67b0e14240",
+    "result_capture": {
+      "path": "missions/021-handoff-routing-c2-probe/result.json",
+      "bytes": 15755,
+      "sha256": "8d9b407d950d3a727feb731a5555cf34c80f868dd042f118f7fb720806c95bfc",
+      "blob": "ada093bbe68ca0f7676a4c6994ed2354d5292e0f"
+    },
+    "result_mission_identity": {
+      "mission_recapture": {
+        "path": "missions/021-handoff-routing-c2-probe/mission.json",
+        "blob": "21e2eea8c9b85f7eca7771289d1379bdd8bbc6c2",
+        "confirmed": true
+      },
+      "source_association": "MATCH",
+      "return_contract_association": "MATCH",
+      "path_divergence": 0
+    },
+    "result_packet_identity": {
+      "evidence_references_to_packet": 6,
+      "reported_packet_blob": "69805418d739c84d61d053f32dc127e33db49945",
+      "committed_packet_blob": "69805418d739c84d61d053f32dc127e33db49945"
+    },
+    "association_status": "MATCH",
+    "validation_status": {
+      "structural": "PASS",
+      "contract": "PASS",
+      "relations_checked": 28,
+      "unchecked_domains": 17,
+      "non_production": 0
+    },
+    "evidence_resolution": {
+      "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md MATCH": 10,
+      "missions/021-handoff-routing-c2-probe/derived-handoff.json MATCH": 6
+    },
+    "persistence_before_panel_c": "YES",
+    "findings": {
+      "actual_verification_target": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c / 126fe9e5869dca45360fafa6e9f575a0a3dee767532bfb58d80b393931f7a22b",
+      "actual_return_path": "missions/021-handoff-routing-c2-probe/result.json",
+      "packet_consumed": "YES",
+      "manual_c2_reconstruction": "NO",
+      "executor_write_boundary_compliance": "effects compliant (write set { result.json }) ; one refused out-of-boundary write attempt recorded as a deviation",
+      "executor_commits": 0,
+      "executor_pushes": 0,
+      "persistence_actor": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+      "result_persistence_commit": "a9314941dc32e05d839002f4aae5cc67b0e14240"
+    },
+    "note": "STRUCTURAL / CONTRACT VALIDATION SUCCESS IS NOT ANALYTICAL SUCCESS",
+    "blocking": "NO",
+    "workaround_required": "NO",
+    "workaround": "NONE",
+    "reconstruction_from_conversation": "NO",
+    "raw_repository_inspection": "NO for the panel findings ; the actual executor write set (continuation §1) was established outside the panel by git status and an mtime scan (executor_return.write_boundary_compliance)",
+    "missing_information": "the console shows the #63-reported write set, commits and pushes as result values ; it has no view of the actual repository write set"
+  },
+  "rc": {
+    "rule": "authority 95 §22 (chain authority 52 §B.2 ; observation requirements authority 93 §11-§19)",
+    "RC1": {
+      "status": "YES",
+      "evidence": [
+        "pre_c2.gates G-C2-01/02/04/05 : A94, candidate-spec, baseline-manifest, observation-contract committed identities equal (T1 50036c11a1e889f32bb9428c2a355a4470248e06)",
+        "pre_c2.j_c governing_freeze_authority_identity : A95 committed blob = PROGRAM-STATE decision evidence",
+        "executor_return.verification_target_used equals authority 94 (blob + sha256)",
+        "panel_c evidence : 10 / 10 references to authority 94 MATCH"
+      ]
+    },
+    "RC2": {
+      "status": "YES",
+      "evidence": [
+        "pre_c2.d_c trace sha256 00dedd138f1e2fd6e6cb3edbda3893a1153a58062d74ec9ba824cd6834fadbfe, persisted at 675aa052ebdb942a64f80e2779ff8daeeccaf8d2",
+        "precondition J-C SUCCESS",
+        "each H field sourced from candidate-spec run_parameters, equals_frozen_expected_H 4 / 4, operator_choice NONE"
+      ]
+    },
+    "RC3": {
+      "status": "YES",
+      "evidence": [
+        "pre_c2.j_c : 11 / 11 fields compared, coverage complete, outcome SUCCESS",
+        "trace sha256 3f8a25f31f6b28f11278a4a69a04a46ea9fe9fe5092c953f0143f1c80b51cab4, persisted at 675aa052ebdb942a64f80e2779ff8daeeccaf8d2"
+      ]
+    },
+    "RC4": {
+      "status": "YES",
+      "evidence": [
+        "derived-handoff.json produced by D-C, blob 69805418d739c84d61d053f32dc127e33db49945, committed at 675aa052ebdb942a64f80e2779ff8daeeccaf8d2",
+        "h_* fields equal H (handoff.H)"
+      ]
+    },
+    "RC5": {
+      "status": "YES",
+      "evidence": [
+        "G-DISPATCH-02 PASS : mission.json ref-packet identity = committed packet blob",
+        "G-DISPATCH-03 PASS : envelope renders packet path and blob, coverage 89 / 89",
+        "committed envelope blob 6caf6758b7d1b4dc8fcafe7934485c84b350c117 = PANEL_B-observed ; dispatch transmitted this committed envelope by path + blob",
+        "#63 preflight PASS at observed HEAD 277000e6bcbdf9f2d351c40df816cc6d612ce12a with clean worktree",
+        "#63 raw return (cross-check) : preflight blobs of mission.json, envelope.md and packet all match"
+      ],
+      "limit": "the return contract carries no envelope-blob fact ; the envelope match is in the raw return only"
+    },
+    "RC6": {
+      "status": "YES",
+      "evidence": [
+        "#63 packet consumed = YES, blob observed = committed packet blob",
+        "four H values reported equal the packet (H4 in the authority 95 §7 scalar form)",
+        "actual return path = h_return_destination",
+        "panel_c evidence : 6 / 6 references to the packet MATCH"
+      ]
+    },
+    "RC7": {
+      "status": "YES",
+      "evidence": [
+        "#63 manual C2 reconstruction required = NO",
+        "H values after the freeze equal the frozen values (J-C / D-C)",
+        "no repair authority, no supersession, no next_action restoration between T1 and PANEL_C (commit sequence T1, T2, T3, persistence — all planned)",
+        "/pkt.json : a refused technical copy attempt during g-packet checking, g-packet evaluated on committed bytes — not a reconstruction of a C2 value"
+      ]
+    },
+    "RC8": {
+      "status": "YES",
+      "evidence": [
+        "EP-02, EP-03, EP-04 each REMOVED_IN_BOUNDED_RUN with positive evidence per mapped dimension (ep section)",
+        "bounded to this probe ; no generic burden-removal claim"
+      ]
+    }
+  },
+  "u": {
+    "U1_local": {
+      "status": "LOCAL_SUPPORT",
+      "evidence": "destination fixed before dispatch and carried ; ordering observed : T2 (HANDOFF_PERSISTENCE) < PANEL_A (console HEAD = T2) < PANEL_B (M021 bytes later committed identical) < T3 < dispatch (#63 observed HEAD = T3) < return < persistence commit < PANEL_C (console HEAD = persistence commit) — shown by identities, not by commit chronology"
+    },
+    "U1_generic": {
+      "status": "NOT_ESTABLISHED",
+      "reason": "one run ; authority 93 §32 forbids promotion"
+    },
+    "U2": {
+      "status": "ALREADY_RATIFIED_INTENT_RECORDED",
+      "evidence": "every packet value equals a value frozen in authority 95 / candidate-spec before execution (J-C / D-C traces) ; no interpretation recorded ; #63 carried the values mechanically (manual reconstruction NO, H4 in the frozen scalar form)",
+      "scope": "the rule measures packet against freeze ; the freeze itself records the human-ratified transaction (decision handoff-routing-exp-c2-c-experimental-transaction-freeze-ratified) — the ratifying text outside authority 95 is not a repository artifact"
+    },
+    "U3": {
+      "status": "FAITHFULLY_CARRIED_IN_CONCRETE_PROBE",
+      "evidence": "executor-facing pre-dispatch information carried by v0 constructs (references with identities, typed gates g-preflight / g-packet with OBJECT_FIELD predicates, forbidden effects, standing constraints), validated 0 errors, rendered 89 / 89, consumed by #63 through the typed gates",
+      "scope": "H itself lives in the bounded companion packet (EXP-C2-C semantics) ; orchestration-side stages were carried by authority 95 and candidate-spec, frozen in-band before execution — no out-of-band prose ; no product sufficiency claim"
+    }
+  },
+  "l": {
+    "L-2": {
+      "status": "ADDRESSED",
+      "scope": "bounded probe",
+      "evidence": "actual run events with positive evidence for D5-D9 against the Mission-001 baseline (ep section), not counterfactual"
+    },
+    "L-3": {
+      "status": "ADDRESSED",
+      "evidence": "every required key of the frozen observation contract is filled with evidence in this run",
+      "missing_required_keys": []
+    }
+  },
+  "ep": {
+    "dimensions": {
+      "D1": {
+        "name": "fresh_executor",
+        "probe": "YES — environment evidence : local harness session 99bb4460-5bcb-452c-8d7b-5c1c13f53e86 (single session id) begins 2026-09-24T07:06:20Z, after the T3 commit (06:47:35Z), and its first human turn is the #63 dispatch block ; result.json written 07:09:18Z inside that session window (last entry 07:10:02Z)"
+      },
+      "D2": {
+        "name": "read_only_executor_task",
+        "probe": "YES — paths written { result.json }"
+      },
+      "D3": {
+        "name": "one_result_instance",
+        "probe": "YES"
+      },
+      "D4": {
+        "name": "executor_does_not_persist_git_state",
+        "probe": "YES — 0 commit, 0 push, HEAD unchanged at T3 until orchestration persistence"
+      },
+      "D5": {
+        "name": "return_destination_fixed_before_dispatch",
+        "probe": "YES — result path and observation destination frozen at T1 (A95 PARAM, candidate-spec, observation-contract), carried by the packet at T2 and mission.json at T3 ; #63 wrote exactly there"
+      },
+      "D6": {
+        "name": "pre_dispatch_control_fixed",
+        "probe": "YES — stage chain, gates and H frozen or produced before dispatch ; G-C2 and G-DISPATCH all PASS ; no post-freeze repair"
+      },
+      "D7": {
+        "name": "persistence_owner_fixed",
+        "probe": "YES — frozen at T1, carried by the packet (T2), executor persistence forbidden (T3) ; persisted by the orchestration at a9314941dc32e05d839002f4aae5cc67b0e14240"
+      },
+      "D8": {
+        "name": "result_durable_before_panel_c",
+        "probe": "YES — PANEL_C console HEAD = persistence commit and capture blob = committed blob"
+      },
+      "D9": {
+        "name": "no_post_freeze_reconstruction_of_c2_values",
+        "probe": "YES — see RC7"
+      }
+    },
+    "EP-02": {
+      "status": "REMOVED_IN_BOUNDED_RUN",
+      "dimensions": "D5 D6 D9 = YES",
+      "positive_evidence": "pre-dispatch control and return destination fixed at the freeze and carried by the packet ; no freeze supersession ; no next_action restoration (baseline : supersession of A35 §15 and next_action restored twice)"
+    },
+    "EP-03": {
+      "status": "REMOVED_IN_BOUNDED_RUN",
+      "dimensions": "D5 D6 D9 = YES",
+      "positive_evidence": "observation destination and write boundary fixed before dispatch ; execution proceeded without block or repair authority (baseline : block before execution, repair A36)"
+    },
+    "EP-04": {
+      "status": "REMOVED_IN_BOUNDED_RUN",
+      "dimensions": "D7 D8 D9 = YES",
+      "positive_evidence": "persistence owner and order fixed before dispatch ; result committed by the orchestration before PANEL_C (baseline : block, repair A37, 3 clauses of A36 superseded)"
+    },
+    "scope": "bounded probe only — no generic burden-removal claim"
+  },
   "discipline": {
     "stop_events": [],
-    "deviations": [],
-    "missing_observations": [],
+    "deviations": [
+      {
+        "phase": "EXECUTOR",
+        "actor": "AGENT_CCR_LAB_63",
+        "event": "refused out-of-boundary write attempt to /pkt.json (TMPDIR unset) during g-packet checking ; no effect",
+        "classification": "CONTRACTUAL / OPERATIONAL DEVIATION · sr-scope NOT TRIGGERED (executor_return.sr_scope_classification)"
+      },
+      {
+        "phase": "EXECUTOR",
+        "actor": "tool harness",
+        "event": "tool-output cache under C:\\Users\\TribS\\.claude\\projects\\…\\tool-results\\, outside the repository",
+        "classification": "ENVIRONMENT OBSERVATION ONLY"
+      }
+    ],
+    "missing_observations": [
+      {
+        "observation": "raw AGENT CCR LAB #63 return as continuation input",
+        "status": "ABSENT FROM THE CONTINUATION MESSAGE — RECOVERED READ-ONLY FROM THE EXECUTOR SESSION LOG (executor_return.raw_return)",
+        "effect": "none on required keys : every executor value is read from the committed result.json"
+      }
+    ],
     "repair_attempts": []
   }
 }
