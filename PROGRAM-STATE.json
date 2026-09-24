@@ -1814,11 +1814,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "handoff-routing-bounded-experimental-c2-specification-authorized",
+      "question": "Poursuivre la ligne HANDOFF_ROUTING en autorisant une spécification expérimentale bornée de C2, telle que matérialisée par 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md, blob 51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c : AUTHORIZE_BOUNDED_EXPERIMENTAL_C2_SPECIFICATION est sélectionnée. Une spécification sémantique matérielle explicite est permise là où C2 ne peut être dérivée de la sémantique durable existante, et seulement comme sémantique de candidats expérimentaux concrets, afin de construire un ou plusieurs candidats C2 expérimentaux concrets, bornés et exécutables pour l'acquisition de preuve de l'autorité 93 qui ne pouvait être atteinte sous la frontière précédente. Motif : sous la frontière précédente, sémantique durable existante seule, l'exécution exacte de Q-CAND-A n'est pas prête au gel, EXP-C2-A n'est pas positivement qualifié, EXP-C2-B est hors de cette frontière, aucun candidat C2 exécutable qualifié n'est établi parmi les candidats déjà bornés, et l'impossibilité globale comme l'exhaustivité de l'espace de candidats sont non établies ; aucun établi n'est pas aucun ne peut exister, et EXP-C2-A non positivement qualifié sous la frontière précédente n'est pas une invalidité globale. L'autorisation change la frontière expérimentale et aucun contrat sémantique produit : sémantique de candidat locale à l'expérience n'est ni sémantique produit, ni sémantique CCR générale, ni adoption, ni implémentation, ni exécution. Un ou plusieurs candidats concrets sont permis ; l'univers complet de candidats et la minimalité globale ne sont ni exigés ni revendiqués ; la clôture de générateur n'est ni exigée ni autorisée. Un composant sémantique matériel nouveau donne un candidat expérimental nouveau ou révisé, sans héritage automatique de conformité ni de statut RC ; le succès de l'expérience n'est pas une sélection de conception produit. Cette décision n'autorise pas : adoption de sémantique produit, sélection de conception produit, sélection d'architecture produit, moteur de routage générique, sémantique de routage ou ontologie à l'échelle du programme, implémentation produit complète ni aucune implémentation produit, implémentation ni exécution d'expérience, mission 021, allocation de l'AGENT CCR LAB #63, clôture ou revendication d'exhaustivité de l'espace de candidats, étude de minimalité ou d'optimalité globale, reprise de la méta-récursion des missions 006 à 020, mutation silencieuse de Q-CAND-A, réparation silencieuse d'EXP-C2-A, adoption automatique d'EXP-C2-B. L'autorité 93 n'est pas amendée.",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-262",
+          "kind": "repo-path",
+          "ref": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-bounded-experimental-c2-specification-authorized",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "Revoir, par l'orchestrateur, le protocole borné d'acquisition de preuve empirique gelé par 93-HANDOFF-ROUTING-POST-MISSION020-RETURN-TO-M005-EMPIRICAL-FRONTIER-DIRECTION-AND-EVIDENCE-ACQUISITION-PROTOCOL-FREEZE.md, blob 56928bd87c0442bfc84539fa0d75ab8e223034b1, et déterminer si une mission d'exécution concrète est justifiée pour la ligne HANDOFF_ROUTING. Ce n'est ni une autorisation d'exécution, ni la mission 021, ni une dépêche d'exécutant. Direction ratifiée : RETURN_TO_M005_EMPIRICAL_FRONTIER, option A de l'ensemble borné A, B et C, sans revendication d'exhaustivité globale. Sonde : Q-CAND-A exacte, expérimentale seulement, non sélectionnée comme conception, conformité non établie. Conditions préalables non encore remplies : réalisation de l'instance de sonde sans mutation sémantique, destination d'observation durable fixée, ordre attendu gelé, propriétaire de persistance fixé, ligne de base de charge comparable identifiée, contrat d'observation RC1 à RC8 représentable fidèlement, frontières d'arrêt préservables. Mission 021 aucune, exécutant futur aucun, AGENT CCR LAB #63 non alloué, implémentation produit non autorisée, porte de sélection de conception et porte normative de niveau programme non ouvertes. Ne pas exécuter l'expérience, ne pas acquérir de preuve, ne pas créer la mission 021, ne pas allouer #63, ne pas implémenter ni sélectionner Q-CAND-A, ne créer aucune variante F1, F2 ou F3, ne pas traiter l'autorité 93 comme une preuve expérimentale et ne rouvrir aucune des missions 006 à 020.",
+    "value": "Produire, par l'orchestrateur, un paquet complet et borné de spécification de candidats C2 expérimentaux sous l'autorité 94, 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md, blob 51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c, pour l'acquisition de preuve de l'autorité 93. Un ou plusieurs candidats concrets sont permis ; aucune clôture de l'espace de candidats, aucune minimalité globale, aucune implémentation, aucune exécution, aucune mission 021, aucune allocation de l'AGENT CCR LAB #63. Pour chaque candidat, le paquet identifie la sémantique matérielle nouvelle exacte et sa nécessité, les entrées sources, le porteur, les règles de dérivation et de jointure, la sortie produite, le chemin de propagation, la relation de consommation, les frontières d'autorité et d'arrêt, le chemin de comparaison à la ligne de base, le chemin de mesure RC1..RC8, les implications U1, U2, U3, L-2 et L-3, la frontière entre expérimental et sémantique produit, la qualification du candidat, la préparation à l'exécution, la justification de sonde et la justification de mission d'exécution. Le paquet ne revient que sur : un candidat d'exécution qualifié ; plusieurs candidats qualifiés matériellement distincts sans sélecteur gouvernant, qui exigent une porte humaine authentique ; ou un blocage dur. Aucune porte humaine par morceaux pendant la construction, sauf choix matériel authentiquement inévitable empêchant l'achèvement du paquet. Ce n'est ni une implémentation, ni une exécution, ni la mission 021, ni une dépêche d'exécutant.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1835,31 +1856,17 @@
         }
       },
       {
-        "id": "ev-260",
+        "id": "ev-263",
         "kind": "repo-path",
-        "ref": "93-HANDOFF-ROUTING-POST-MISSION020-RETURN-TO-M005-EMPIRICAL-FRONTIER-DIRECTION-AND-EVIDENCE-ACQUISITION-PROTOCOL-FREEZE.md",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "review_target",
-          "value": "93-HANDOFF-ROUTING-POST-MISSION020-RETURN-TO-M005-EMPIRICAL-FRONTIER-DIRECTION-AND-EVIDENCE-ACQUISITION-PROTOCOL-FREEZE.md — protocole borné et prédéclaré d'acquisition de preuve empirique, gelé au niveau du programme : sonde expérimentale Q-CAND-A exacte, MISSION_OBJECT_TYPED_ORCHESTRATION_STAGES, usage expérimental seulement, sans mutation sémantique, toute variante étant un candidat nouveau ou révisé sans héritage automatique de conformité ni de statut RC ; cibles U2, U3 et L-2 directes, L-3 traitée par la prédéclaration avec adéquation à l'exécution en attente, U1 cible empirique dont la généricité à partir d'un seul run n'est pas établie par construction ; surface d'acceptation complète RC1 à RC8 selon l'autorité 52, domaine de statut YES, NO, NOT_ESTABLISHED ; cibles de charge EP-02, EP-03 et EP-04 avec ligne de base bornée ; destination d'observation, ordre et propriétaire de persistance à fixer avant toute dépêche ; paquet de preuve de 20 éléments ; 11 conditions d'arrêt avant exécution et 7 pendant l'exécution ; pare-feux de trace technique et F1, F2, F3. PROTOCOLE GELÉ ; EXÉCUTION NON ENCORE AUTORISÉE."
-        },
-        "observed": {
-          "blob": "56928bd87c0442bfc84539fa0d75ab8e223034b1"
-        }
-      },
-      {
-        "id": "ev-261",
-        "kind": "repo-path",
-        "ref": "93-HANDOFF-ROUTING-POST-MISSION020-RETURN-TO-M005-EMPIRICAL-FRONTIER-DIRECTION-AND-EVIDENCE-ACQUISITION-PROTOCOL-FREEZE.md",
+        "ref": "94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "Revoir, par l'orchestrateur, le protocole borné d'acquisition de preuve empirique gelé par 93-HANDOFF-ROUTING-POST-MISSION020-RETURN-TO-M005-EMPIRICAL-FRONTIER-DIRECTION-AND-EVIDENCE-ACQUISITION-PROTOCOL-FREEZE.md, blob 56928bd87c0442bfc84539fa0d75ab8e223034b1, et déterminer si une mission d'exécution concrète est justifiée pour la ligne HANDOFF_ROUTING. Ce n'est ni une autorisation d'exécution, ni la mission 021, ni une dépêche d'exécutant. Direction ratifiée : RETURN_TO_M005_EMPIRICAL_FRONTIER, option A de l'ensemble borné A, B et C, sans revendication d'exhaustivité globale. Sonde : Q-CAND-A exacte, expérimentale seulement, non sélectionnée comme conception, conformité non établie. Conditions préalables non encore remplies : réalisation de l'instance de sonde sans mutation sémantique, destination d'observation durable fixée, ordre attendu gelé, propriétaire de persistance fixé, ligne de base de charge comparable identifiée, contrat d'observation RC1 à RC8 représentable fidèlement, frontières d'arrêt préservables. Mission 021 aucune, exécutant futur aucun, AGENT CCR LAB #63 non alloué, implémentation produit non autorisée, porte de sélection de conception et porte normative de niveau programme non ouvertes. Ne pas exécuter l'expérience, ne pas acquérir de preuve, ne pas créer la mission 021, ne pas allouer #63, ne pas implémenter ni sélectionner Q-CAND-A, ne créer aucune variante F1, F2 ou F3, ne pas traiter l'autorité 93 comme une preuve expérimentale et ne rouvrir aucune des missions 006 à 020."
+          "value": "Produire, par l'orchestrateur, un paquet complet et borné de spécification de candidats C2 expérimentaux sous l'autorité 94, 94-HANDOFF-ROUTING-BOUNDED-EXPERIMENTAL-C2-SPECIFICATION-AUTHORIZATION.md, blob 51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c, pour l'acquisition de preuve de l'autorité 93. Un ou plusieurs candidats concrets sont permis ; aucune clôture de l'espace de candidats, aucune minimalité globale, aucune implémentation, aucune exécution, aucune mission 021, aucune allocation de l'AGENT CCR LAB #63. Pour chaque candidat, le paquet identifie la sémantique matérielle nouvelle exacte et sa nécessité, les entrées sources, le porteur, les règles de dérivation et de jointure, la sortie produite, le chemin de propagation, la relation de consommation, les frontières d'autorité et d'arrêt, le chemin de comparaison à la ligne de base, le chemin de mesure RC1..RC8, les implications U1, U2, U3, L-2 et L-3, la frontière entre expérimental et sémantique produit, la qualification du candidat, la préparation à l'exécution, la justification de sonde et la justification de mission d'exécution. Le paquet ne revient que sur : un candidat d'exécution qualifié ; plusieurs candidats qualifiés matériellement distincts sans sélecteur gouvernant, qui exigent une porte humaine authentique ; ou un blocage dur. Aucune porte humaine par morceaux pendant la construction, sauf choix matériel authentiquement inévitable empêchant l'achèvement du paquet. Ce n'est ni une implémentation, ni une exécution, ni la mission 021, ni une dépêche d'exécutant."
         },
         "observed": {
-          "blob": "56928bd87c0442bfc84539fa0d75ab8e223034b1"
+          "blob": "51ee53e04d6fba1d13e8e0fc255c6580e5c09c3c"
         }
       }
     ]
