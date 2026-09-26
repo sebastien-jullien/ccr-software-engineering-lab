@@ -1,0 +1,282 @@
+{
+  "artifact": "FIELD_001_FIELD_STUDY_MANIFEST",
+  "study_id": "FIELD-001",
+  "mission_logical_id": "023-field-001-idempotent-job-submission",
+  "subject": "IDEMPOTENT JOB SUBMISSION",
+  "question": "ON A SMALL BUT NON-TRIVIAL ENGINEERING TASK, DOES CCR CROSS-REVIEW MATERIALLY IMPROVE THE RESULT AT AN ACCEPTABLE OBSERVED COORDINATION COST?",
+  "intentional_defect": "NONE",
+  "p_hr_01": "NOT THE SUBJECT OF THIS STUDY",
+  "target_repository": {
+    "path": "E:\\prog\\ccr-field-001-idempotent-jobs",
+    "remote": "NONE",
+    "branch": "main",
+    "b0": {
+      "commit": "785795af434299d2b6d25910eac2761208766b0d",
+      "tree": "7df985d26d241aa46f615e6821ea9b1621ecf936",
+      "subject": "b0: healthy job service baseline and field-001 contract",
+      "committed_at": "2026-09-26T12:02:09+02:00",
+      "author": "TribS Tox <tribstox@gmail.com>"
+    },
+    "b0_files": [
+      {
+        "path": ".gitattributes",
+        "git_blob": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+        "bytes": 19
+      },
+      {
+        "path": ".gitignore",
+        "git_blob": "88b858a16f48aa554926b2bb90e4562d0f5c4363",
+        "sha256": "39e3fce667cd0ccadba9fe30317f4bf5d9d0ede3e9dc49ef239122039d55cc46",
+        "bytes": 55
+      },
+      {
+        "path": "FIELD-001-CONTRACT.md",
+        "git_blob": "3383a1335c1f0602889e277e8fbfb7cbae9128b6",
+        "sha256": "7d5132bd119cbdd5f10b7690d6434fbeec872cf9526ab0c7ee751baa8c488f88",
+        "bytes": 5577
+      },
+      {
+        "path": "README.md",
+        "git_blob": "d6e9bfab9b59c62721de3bccc44ec9f5984bfd8b",
+        "sha256": "1566b1b40d5e50de882e638a355d18fe8ac26964b10e738d6f116a950a2e69c6",
+        "bytes": 1340
+      },
+      {
+        "path": "jobservice/__init__.py",
+        "git_blob": "00afafd04a27a20fac1da2ea619cae96081084ee",
+        "sha256": "81820d98aaaae13afbedab2bfa77e7046009f3e4f1bff9c1914e40c0545d54ff",
+        "bytes": 70
+      },
+      {
+        "path": "jobservice/__main__.py",
+        "git_blob": "8b345fa2e5b6bc99facb44d15ab5edeaeb690880",
+        "sha256": "58086bf9347e49483353c95169c4d3ef49fdd6c0598313f2eb27dff99c9ebb71",
+        "bytes": 55
+      },
+      {
+        "path": "jobservice/server.py",
+        "git_blob": "977a7afe9ca7182489b2847b06266fe3d7d0bcbc",
+        "sha256": "289b4e8ec3195b494f6554ad273efdfc2ff4a2a1277282478c38d578c9c15ed4",
+        "bytes": 4546
+      },
+      {
+        "path": "jobservice/store.py",
+        "git_blob": "ad2a29cd51285884ab571352592025c77d367462",
+        "sha256": "c5eb56f8eb9e46b8c9eb5756c0dabc2392fa7f03d5b367774ee341d2900ac59d",
+        "bytes": 2594
+      },
+      {
+        "path": "tests/__init__.py",
+        "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "tests/test_baseline.py",
+        "git_blob": "4b63fba4707b47f116486360ccad5b859a9afb28",
+        "sha256": "956a35b16f8582b15b056972bb586f6b9a1664fa99328b26b244eb53898aa25a",
+        "bytes": 7487
+      }
+    ],
+    "b0_idempotency_implementation": "ABSENT — no Idempotency-Key support, no idempotency table or cache, no request fingerprint logic in jobservice/ or tests/"
+  },
+  "public_contract": {
+    "path": "FIELD-001-CONTRACT.md",
+    "git_blob": "3383a1335c1f0602889e277e8fbfb7cbae9128b6",
+    "sha256": "7d5132bd119cbdd5f10b7690d6434fbeec872cf9526ab0c7ee751baa8c488f88",
+    "bytes": 5577,
+    "clauses": [
+      "C-SCOPE",
+      "C-KEY",
+      "C-LEGACY",
+      "C-FIRST",
+      "C-REPLAY",
+      "C-CONFLICT",
+      "C-IDENTITY",
+      "C-CONC-IDENTICAL",
+      "C-CONC-COMPETING",
+      "C-FAILED-CREATE",
+      "C-DURABLE",
+      "C-NO-FALLBACK",
+      "C-FREEDOM"
+    ],
+    "not_specified": [
+      "response to a keyed request whose body fails the existing validation, and key / body validation order",
+      "equivalence of JSON numbers written differently (for example 1 and 1.0)",
+      "JSON objects that repeat a member name"
+    ]
+  },
+  "common_frozen_input": {
+    "definition": "exact B0 repository commit / tree / bytes, which contain the exact FIELD-001-CONTRACT.md bytes",
+    "b0_commit": "785795af434299d2b6d25910eac2761208766b0d",
+    "b0_tree": "7df985d26d241aa46f615e6821ea9b1621ecf936",
+    "contract_sha256": "7d5132bd119cbdd5f10b7690d6434fbeec872cf9526ab0c7ee751baa8c488f88",
+    "excludes": [
+      "oracle",
+      "qualifier notes",
+      "Q1 result",
+      "Challenger findings"
+    ]
+  },
+  "baseline_tests": {
+    "command": "python -m unittest discover -s tests -t .",
+    "tests": 10,
+    "pass": 10,
+    "fail": 0,
+    "cases": [
+      "B-01 valid job creation",
+      "B-02 invalid JSON",
+      "B-03 invalid job body",
+      "B-04 GET existing job",
+      "B-05 GET missing job",
+      "B-06 multiple ordinary submissions create distinct jobs",
+      "B-07 persistence across service restart",
+      "B-08 concurrent non-idempotent submissions (barrier, 8 workers, joined)",
+      "B-09 storage failure on create → 503 JOB_CREATE_FAILED",
+      "B-10 command-line service entry point"
+    ],
+    "stability": "25 of 25 consecutive runs in the worktree + 5 of 5 runs from a clean export of the B0 commit — all 10 / 10 PASS",
+    "no_sleep_based_correctness": true
+  },
+  "toolchain": {
+    "python": "3.14.3",
+    "python_command": "python",
+    "sqlite": "3.50.4",
+    "dependencies": "Python standard library only"
+  },
+  "oracle_commitment": {
+    "commit": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99",
+    "tree": "50ee0d3532eb7faaea7fe6e45909a3ae2533e138",
+    "manifest_sha256": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46",
+    "frozen_at": "2026-09-26T12:09:08+02:00",
+    "b0_committed_at": "2026-09-26T12:02:09+02:00",
+    "time_order": "B0 commit < oracle freeze commit < transaction freeze (authority 104) < Author launch",
+    "remote": "NONE",
+    "location": "SEQUESTERED — separate local repository outside the target repository ; path not published",
+    "pre_freeze_validation": "performed ; report sealed inside the oracle commit"
+  },
+  "oracle_cases": [
+    {
+      "id": "O-01",
+      "title": "legacy no-key behavior",
+      "clauses": [
+        "C-LEGACY"
+      ]
+    },
+    {
+      "id": "O-02",
+      "title": "invalid key",
+      "clauses": [
+        "C-KEY"
+      ]
+    },
+    {
+      "id": "O-03",
+      "title": "first keyed creation",
+      "clauses": [
+        "C-FIRST"
+      ]
+    },
+    {
+      "id": "O-04",
+      "title": "identical replay",
+      "clauses": [
+        "C-REPLAY"
+      ]
+    },
+    {
+      "id": "O-05",
+      "title": "canonical JSON equivalence",
+      "clauses": [
+        "C-IDENTITY",
+        "C-REPLAY",
+        "C-CONFLICT"
+      ]
+    },
+    {
+      "id": "O-06",
+      "title": "same key / different request conflict",
+      "clauses": [
+        "C-CONFLICT"
+      ]
+    },
+    {
+      "id": "O-07",
+      "title": "persistence across restart",
+      "clauses": [
+        "C-DURABLE"
+      ]
+    },
+    {
+      "id": "O-08",
+      "title": "concurrent identical requests",
+      "clauses": [
+        "C-CONC-IDENTICAL"
+      ]
+    },
+    {
+      "id": "O-09",
+      "title": "concurrent competing requests",
+      "clauses": [
+        "C-CONC-COMPETING"
+      ]
+    },
+    {
+      "id": "O-10",
+      "title": "failed creation does not poison key",
+      "clauses": [
+        "C-FAILED-CREATE"
+      ]
+    },
+    {
+      "id": "O-11",
+      "title": "conflict does not mutate original binding",
+      "clauses": [
+        "C-CONFLICT"
+      ]
+    },
+    {
+      "id": "O-12",
+      "title": "no silent legacy fallback",
+      "clauses": [
+        "C-NO-FALLBACK"
+      ]
+    }
+  ],
+  "concurrency_harness": {
+    "concurrent_start": "barrier synchronized",
+    "identical_case_thread_count": 8,
+    "competing_case": "same key, distinct logical requests ; no predetermined winner asserted",
+    "database": "one shared SQLite database",
+    "request_completion": "all worker threads joined before behavioral assertions",
+    "sleep_based_correctness": "FORBIDDEN",
+    "retry_until_pass": "FORBIDDEN",
+    "test_result": "one deterministic verdict from one bounded execution"
+  },
+  "roles": {
+    "author": "AGENT CCR LAB #65",
+    "challenger": "AGENT CCR LAB #66",
+    "independent_qualifier": "AGENT CCR LAB #67"
+  },
+  "sequence": [
+    "B0",
+    "A1",
+    "Q1",
+    "C1",
+    "A2",
+    "C2",
+    "Q2"
+  ],
+  "max_loops": {
+    "author_implementation_passes": 2,
+    "challenger_review_passes": 2,
+    "third_loop": "FORBIDDEN"
+  },
+  "sequestration_state": {
+    "oracle": "SEQUESTERED — no Author / Challenger access",
+    "q1_result": "NOT YET PRODUCED — sequestered once produced",
+    "q1_commitment": "PENDING — published after Q1 and before C1, without outcome information",
+    "reveal": "oracle source and full Q1 only after Q2, for audit against this commitment"
+  }
+}

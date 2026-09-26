@@ -1944,7 +1944,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "BUILD AND FREEZE FIELD-001 B0, THE PUBLIC CONTRACT AND THE SEQUESTERED ORACLE, THEN FREEZE THE TRANSACTION UNDER AUTHORITY 104 AND MISSION 023. NO NEW CONCEPTUAL GATE. — Construire, dans un dépôt local séparé sans remote, la ligne de base saine B0 et le contrat public FIELD-001-CONTRACT.md, puis l'oracle O-01..O-12 dans un espace séquestré sans remote, gelé avant tout lancement de l'auteur ; vérifier B0, sa stabilité, l'absence d'idempotence, le contrat, l'oracle et son harnais de concurrence ; geler la transaction par l'autorité 104 et la mission 023 ; puis allouer l'AGENT CCR LAB #65 comme auteur, sous l'autorité 103, 103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md, blob fb885bca7a5ac876347b40c976021980939dfb0f. Aucune implémentation de FIELD-001 dans le dépôt CCR canonique ; aucun accès de l'auteur ou du challenger à l'oracle.",
+    "value": "EXECUTE FIELD-001 BEGINNING WITH AUTHOR A1 UNDER THE FROZEN A104 / M023 PROTOCOL. NO NEW CONCEPTUAL GATE. — Transporter la dépêche de l'AGENT CCR LAB #65, auteur frais, avec l'entrée commune gelée seulement (commit B0 785795af434299d2b6d25910eac2761208766b0d et contrat), sans oracle ni Q1 ; puis, sur le retour de l'auteur et le go Git local de continuation, vérifier et geler A1, exécuter Q1 caché par #67, publier Q1_COMMITMENT sans issue, lancer le challenger #66, et poursuivre A2, C2 et Q2 selon l'autorité 104, 104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob a52e1584ef997ab05c70177f8dc827f07ded2d39, et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c, sans troisième boucle ni score CCR agrégé.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1961,17 +1961,31 @@
         }
       },
       {
-        "id": "ev-283",
+        "id": "ev-284",
         "kind": "repo-path",
-        "ref": "103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md",
+        "ref": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "transaction_freeze",
+          "value": "Gel déterministe de la transaction expérimentale FIELD-001 par 104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob a52e1584ef997ab05c70177f8dc827f07ded2d39, sous l'autorité 103 ; ce n'est pas une décision humaine. Mission 023, missions/023-field-001-idempotent-job-submission/mission.json, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c, enveloppe missions/023-field-001-idempotent-job-submission/envelope.md, blob 3e7087483ff100b08ff1bfbb25fd371b217f8add, gouvernant l'expérience complète ; manifeste public missions/023-field-001-idempotent-job-submission/field-study-manifest.json, blob 0d61471ead3be646a8030af494a7c6236996f376. Dépôt cible E:\\prog\\ccr-field-001-idempotent-jobs sans remote, B0 785795af434299d2b6d25910eac2761208766b0d, ligne de base saine sans idempotence, 10 tests sur 10, stable ; contrat FIELD-001-CONTRACT.md gelé ; oracle indépendant O-01 à O-12 séquestré hors du dépôt cible, sans remote, engagé par le commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 gelé avant tout lancement de l'auteur. Séquence B0, A1, Q1 caché, C1, A2 conditionnel, C2 borné, Q2 ; au plus deux passes d'auteur et deux de challenger ; aucune troisième boucle ; rôles AGENT CCR LAB #65 auteur, #66 challenger, #67 qualificateur indépendant."
+        },
+        "observed": {
+          "blob": "a52e1584ef997ab05c70177f8dc827f07ded2d39"
+        }
+      },
+      {
+        "id": "ev-285",
+        "kind": "repo-path",
+        "ref": "missions/023-field-001-idempotent-job-submission/mission.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "BUILD AND FREEZE FIELD-001 B0, THE PUBLIC CONTRACT AND THE SEQUESTERED ORACLE, THEN FREEZE THE TRANSACTION UNDER AUTHORITY 104 AND MISSION 023. NO NEW CONCEPTUAL GATE. — Construire, dans un dépôt local séparé sans remote, la ligne de base saine B0 et le contrat public FIELD-001-CONTRACT.md, puis l'oracle O-01..O-12 dans un espace séquestré sans remote, gelé avant tout lancement de l'auteur ; vérifier B0, sa stabilité, l'absence d'idempotence, le contrat, l'oracle et son harnais de concurrence ; geler la transaction par l'autorité 104 et la mission 023 ; puis allouer l'AGENT CCR LAB #65 comme auteur, sous l'autorité 103, 103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md, blob fb885bca7a5ac876347b40c976021980939dfb0f. Aucune implémentation de FIELD-001 dans le dépôt CCR canonique ; aucun accès de l'auteur ou du challenger à l'oracle."
+          "value": "EXECUTE FIELD-001 BEGINNING WITH AUTHOR A1 UNDER THE FROZEN A104 / M023 PROTOCOL. NO NEW CONCEPTUAL GATE. — Transporter la dépêche de l'AGENT CCR LAB #65, auteur frais, avec l'entrée commune gelée seulement (commit B0 785795af434299d2b6d25910eac2761208766b0d et contrat), sans oracle ni Q1 ; puis, sur le retour de l'auteur et le go Git local de continuation, vérifier et geler A1, exécuter Q1 caché par #67, publier Q1_COMMITMENT sans issue, lancer le challenger #66, et poursuivre A2, C2 et Q2 selon l'autorité 104, 104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md, blob a52e1584ef997ab05c70177f8dc827f07ded2d39, et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c, sans troisième boucle ni score CCR agrégé."
         },
         "observed": {
-          "blob": "fb885bca7a5ac876347b40c976021980939dfb0f"
+          "blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c"
         }
       }
     ]

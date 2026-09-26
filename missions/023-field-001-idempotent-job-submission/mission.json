@@ -1,0 +1,2672 @@
+{
+  "identity": {
+    "id": "023-field-001-idempotent-job-submission",
+    "class": "CCR_FIELD_STUDY",
+    "addressee": "AGENT_CCR_LAB_1",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "study.id",
+      "value": {
+        "type": "SCALAR",
+        "value": "FIELD-001"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "study.subject",
+      "value": {
+        "type": "SYMBOL",
+        "value": "IDEMPOTENT_JOB_SUBMISSION"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "study.question",
+      "value": {
+        "type": "SYMBOL",
+        "value": "DOES_CCR_CROSS_REVIEW_MATERIALLY_IMPROVE_THE_RESULT_AT_AN_ACCEPTABLE_OBSERVED_COORDINATION_COST"
+      },
+      "semantics_unresolved": false,
+      "label": "on a small but non-trivial engineering task, does CCR cross-review materially improve the result at an acceptable observed coordination cost"
+    },
+    {
+      "subject": "study.intentional_defect",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "study.p_hr_01",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_THE_SUBJECT_OF_THIS_STUDY"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "controller",
+      "value": {
+        "type": "SYMBOL",
+        "value": "AGENT_CCR_LAB_1"
+      },
+      "semantics_unresolved": false,
+      "label": "transaction controller and canonical materializer ; no product implementation in the canonical repository"
+    },
+    {
+      "subject": "roles",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AUTHOR_AGENT_CCR_LAB_65"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CHALLENGER_AGENT_CCR_LAB_66"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INDEPENDENT_QUALIFIER_AGENT_CCR_LAB_67"
+          }
+        ]
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "target.repository_path",
+      "value": {
+        "type": "SCALAR",
+        "value": "E:\\prog\\ccr-field-001-idempotent-jobs"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "target.remote",
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "target.b0_commit",
+      "value": {
+        "type": "SCALAR",
+        "value": "785795af434299d2b6d25910eac2761208766b0d"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "target.b0_tree",
+      "value": {
+        "type": "SCALAR",
+        "value": "7df985d26d241aa46f615e6821ea9b1621ecf936"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "target.contract",
+      "value": {
+        "type": "SCALAR",
+        "value": "FIELD-001-CONTRACT.md sha256 7d5132bd119cbdd5f10b7690d6434fbeec872cf9526ab0c7ee751baa8c488f88"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "common_frozen_input",
+      "value": {
+        "type": "SCALAR",
+        "value": "B0 commit 785795af434299d2b6d25910eac2761208766b0d tree 7df985d26d241aa46f615e6821ea9b1621ecf936, including the exact contract bytes"
+      },
+      "semantics_unresolved": false,
+      "label": "Author receives the common frozen input only ; Challenger receives it plus exact frozen A1 bytes, the Author A1 return and the Author tests ; neither receives the oracle, the Q1 result or qualifier notes"
+    },
+    {
+      "subject": "baseline.result",
+      "value": {
+        "type": "SCALAR",
+        "value": "python -m unittest discover -s tests -t . → 10 tests, 10 pass, 0 fail ; stable 25 / 25 worktree runs + 5 / 5 clean-export runs"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "toolchain",
+      "value": {
+        "type": "SCALAR",
+        "value": "Python 3.14.3 (python) · SQLite 3.50.4 · standard library only"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "oracle.commitment",
+      "value": {
+        "type": "SCALAR",
+        "value": "commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 · tree 50ee0d3532eb7faaea7fe6e45909a3ae2533e138 · manifest sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "oracle.location",
+      "value": {
+        "type": "SYMBOL",
+        "value": "SEQUESTERED_SEPARATE_LOCAL_REPOSITORY_PATH_NOT_PUBLISHED"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "oracle.cases",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "O-01"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-02"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-03"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-04"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-05"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-06"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-07"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-08"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-09"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-10"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-11"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "O-12"
+          }
+        ]
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "oracle.harness",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "BARRIER_SYNCHRONIZED_START"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EIGHT_IDENTICAL_WORKERS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ONE_SHARED_SQLITE_DATABASE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ALL_WORKERS_JOINED_BEFORE_ASSERTIONS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO_SLEEP_BASED_CORRECTNESS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO_RETRY_UNTIL_PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ONE_DETERMINISTIC_VERDICT_PER_BOUNDED_EXECUTION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO_PREDETERMINED_COMPETING_WINNER"
+          }
+        ]
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "sequence",
+      "value": {
+        "type": "SEQUENCE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "B0"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "A1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "C1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "A2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "C2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "Q2"
+          }
+        ]
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "max_loops",
+      "value": {
+        "type": "SCALAR",
+        "value": "2 Author implementation passes · 2 Challenger review passes · third loop forbidden"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "challenger.admissible_finding",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "CONTRACT_CLAUSE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXACT_CODE_OR_BEHAVIOR"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REPRODUCTION_OR_TEST"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MATERIAL_CONSEQUENCE"
+          }
+        ]
+      },
+      "semantics_unresolved": false,
+      "label": "style, architecture preference, speculative scalability, refactor, naming, unsupported race speculation and could-be-cleaner are non-material by default"
+    },
+    {
+      "subject": "metrics",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "AUTHOR_FIRST_PASS_DEFECTS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CHALLENGER_TRUE_FINDINGS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CHALLENGER_FALSE_OR_NONMATERIAL_FINDINGS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CHALLENGER_MISSES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MATERIAL_DEFECTS_MISSED_BY_BOTH"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CROSS_REVIEW_CORRECTIONS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AUTHOR_SELF_CORRECTIONS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FINAL_REMAINING_DEFECTS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "UNSUPPORTED_AUTHOR_CLAIMS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "UNSUPPORTED_CHALLENGER_CLAIMS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "ROLE_CONTAMINATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CONTRACT_DRIFT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "HUMAN_INTERVENTIONS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "REVIEW_LOOPS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "AUTHOR_CORRECTION_QUALITY"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FINAL_ORACLE_RESULT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FINAL_REGRESSION_RESULT"
+          }
+        ]
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "value_and_burden",
+      "value": {
+        "type": "SYMBOL",
+        "value": "RECORDED_SEPARATELY_NO_AGGREGATE_CCR_SCORE_NO_GENERAL_ROI"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "human_gate",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ONLY_FOR_GENUINE_CONTRACT_AMBIGUITY_OR_AUTHORITY_CHOICE"
+      },
+      "semantics_unresolved": false
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth104",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "a52e1584ef997ab05c70177f8dc827f07ded2d39"
+      },
+      "identity_required": true,
+      "label": "gel de la transaction FIELD-001"
+    },
+    {
+      "id": "ref-auth103",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "fb885bca7a5ac876347b40c976021980939dfb0f"
+      },
+      "identity_required": true,
+      "label": "direction FIELD-001 et protocole ratifies"
+    },
+    {
+      "id": "ref-manifest",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/023-field-001-idempotent-job-submission/field-study-manifest.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0d61471ead3be646a8030af494a7c6236996f376"
+      },
+      "identity_required": true,
+      "label": "manifeste public de l etude, sans oracle"
+    },
+    {
+      "id": "ref-auth23",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      },
+      "identity_required": true,
+      "label": "representation Result Instance v0 des retours"
+    },
+    {
+      "id": "ref-auth14",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      },
+      "identity_required": false,
+      "label": "semantique Mission Object V0"
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/023-field-001-idempotent-job-submission/field-study-evidence.json"
+      },
+      "identity_required": false,
+      "label": "preuve factuelle terminale de FIELD-001"
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-dispatch-a1",
+      "mode": "REQUIRED",
+      "action": "DISPATCH_AUTHOR_A1_WITH_COMMON_FROZEN_INPUT_ONLY",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-freeze-a1",
+      "mode": "REQUIRED",
+      "action": "VERIFY_AND_FREEZE_A1_BY_LOCAL_TARGET_COMMIT",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-q1",
+      "mode": "REQUIRED",
+      "action": "RUN_HIDDEN_Q1_WITH_FROZEN_ORACLE_AGAINST_EXACT_A1",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-q1-commitment",
+      "mode": "REQUIRED",
+      "action": "PUBLISH_Q1_COMMITMENT_WITHOUT_OUTCOME",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-c1",
+      "mode": "REQUIRED",
+      "action": "DISPATCH_CHALLENGER_C1_WITHOUT_ORACLE_OR_Q1",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-classify-c1",
+      "mode": "REQUIRED",
+      "action": "CLASSIFY_C1_MATERIAL_FINDINGS",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-a2",
+      "mode": "REQUIRED",
+      "action": "DISPATCH_AUTHOR_A2_WITH_C1_FINDINGS_ONLY",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-freeze-a2",
+      "mode": "REQUIRED",
+      "action": "VERIFY_AND_FREEZE_A2_BY_LOCAL_TARGET_COMMIT",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-c2",
+      "mode": "REQUIRED",
+      "action": "DISPATCH_CHALLENGER_C2_BOUNDED_VERIFICATION",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-q2",
+      "mode": "REQUIRED",
+      "action": "RUN_FINAL_Q2_WITH_SAME_FROZEN_ORACLE_AGAINST_FINAL_IMPLEMENTATION",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-reveal",
+      "mode": "REQUIRED",
+      "action": "REVEAL_ORACLE_AND_FULL_Q1_AFTER_Q2_FOR_AUDIT",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-attribution",
+      "mode": "REQUIRED",
+      "action": "ESTABLISH_ATTRIBUTION_METRICS_VALUE_AND_BURDEN",
+      "cardinality": 1,
+      "target": "ref-auth104"
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_FIELD_STUDY_EVIDENCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_FIELD_STUDY_EVIDENCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "FREEZE_FIELD_STUDY_EVIDENCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-forbid-third-loop",
+      "mode": "FORBIDDEN",
+      "action": "OPEN_THIRD_IMPLEMENTATION_OR_REVIEW_LOOP",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-oracle-change",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_ORACLE_AFTER_FREEZE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-oracle-author",
+      "mode": "FORBIDDEN",
+      "action": "EXPOSE_ORACLE_TO_AUTHOR",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-oracle-challenger",
+      "mode": "FORBIDDEN",
+      "action": "EXPOSE_ORACLE_TO_CHALLENGER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-q1-author",
+      "mode": "FORBIDDEN",
+      "action": "EXPOSE_Q1_RESULT_TO_AUTHOR",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-q1-challenger",
+      "mode": "FORBIDDEN",
+      "action": "EXPOSE_Q1_RESULT_TO_CHALLENGER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-qualifier-notes",
+      "mode": "FORBIDDEN",
+      "action": "EXPOSE_QUALIFIER_NOTES_TO_AUTHOR_OR_CHALLENGER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-oracle-publish",
+      "mode": "FORBIDDEN",
+      "action": "PUBLISH_ORACLE_SOURCE_OR_PATH_BEFORE_TERMINAL",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-seed",
+      "mode": "FORBIDDEN",
+      "action": "SEED_DELIBERATE_DEFECT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-b0",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_B0",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-contract",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_OR_REDESIGN_CONTRACT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-canonical-impl",
+      "mode": "FORBIDDEN",
+      "action": "IMPLEMENT_FIELD_001_IN_CANONICAL_REPOSITORY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-remote",
+      "mode": "FORBIDDEN",
+      "action": "ADD_REMOTE_TO_TARGET_OR_ORACLE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-role-git",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT_OR_PUSH_BY_AUTHOR_OR_CHALLENGER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-controller-repair",
+      "mode": "FORBIDDEN",
+      "action": "REPAIR_IMPLEMENTATION_BY_CONTROLLER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-score",
+      "mode": "FORBIDDEN",
+      "action": "AGGREGATE_CCR_SCORE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-roi",
+      "mode": "FORBIDDEN",
+      "action": "INFER_GENERAL_CCR_ROI",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-synthetic",
+      "mode": "FORBIDDEN",
+      "action": "REQUIRE_SYNTHETIC_SUCCESS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-weaken",
+      "mode": "FORBIDDEN",
+      "action": "WEAKEN_METHODOLOGY_TO_PROCEED",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-strategy-gate",
+      "mode": "FORBIDDEN",
+      "action": "HUMAN_GATE_FOR_IMPLEMENTATION_STRATEGY",
+      "cardinality": 0
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-dispatch-a1",
+        "effect": "e-dispatch-a1",
+        "atomic": true,
+        "gated_by": "g-freeze-verified",
+        "produces": [
+          "ev-a104",
+          "ev-a103",
+          "ev-manifest"
+        ]
+      },
+      {
+        "order": 2,
+        "id": "s-freeze-a1",
+        "effect": "e-freeze-a1",
+        "atomic": true,
+        "gated_by": "g-a1-boundary"
+      },
+      {
+        "order": 3,
+        "id": "s-q1",
+        "effect": "e-q1",
+        "atomic": true,
+        "gated_by": "g-oracle-frozen"
+      },
+      {
+        "order": 4,
+        "id": "s-q1-commitment",
+        "effect": "e-q1-commitment",
+        "atomic": true,
+        "produces": [
+          "ev-q1-commitment"
+        ]
+      },
+      {
+        "order": 5,
+        "id": "s-c1",
+        "effect": "e-c1",
+        "atomic": true,
+        "gated_by": "g-q1-sealed"
+      },
+      {
+        "order": 6,
+        "id": "s-classify-c1",
+        "effect": "e-classify-c1",
+        "atomic": true
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-freeze-verified",
+      "scope": [
+        "s-dispatch-a1"
+      ],
+      "on_fail": "sr-precondition",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth104"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "a52e1584ef997ab05c70177f8dc827f07ded2d39"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth103"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "fb885bca7a5ac876347b40c976021980939dfb0f"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-manifest"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "0d61471ead3be646a8030af494a7c6236996f376"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "target.head_commit"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "785795af434299d2b6d25910eac2761208766b0d"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "target.tree"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "7df985d26d241aa46f615e6821ea9b1621ecf936"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.head_commit"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.tree"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "50ee0d3532eb7faaea7fe6e45909a3ae2533e138"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.manifest_sha256"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-a1-boundary",
+      "scope": [
+        "s-freeze-a1"
+      ],
+      "on_fail": "sr-boundary",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "author.commit_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "author.push_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "target_remote_absent"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "author_writes_within_target_repository"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "author_saw_no_oracle_and_no_q1"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-oracle-frozen",
+      "scope": [
+        "s-q1"
+      ],
+      "on_fail": "sr-oracle-mutated",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.head_commit"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.tree"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "50ee0d3532eb7faaea7fe6e45909a3ae2533e138"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.manifest_sha256"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-q1-sealed",
+      "scope": [
+        "s-c1"
+      ],
+      "on_fail": "sr-contamination",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "q1_commitment_published_before_c1"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "q1_outcome_hidden_from_author_and_challenger"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-a2-boundary",
+      "scope": [
+        "s-m-freeze-a2"
+      ],
+      "on_fail": "sr-boundary",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "author.commit_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "author.push_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "target_remote_absent"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "author_writes_within_target_repository"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "author_saw_no_oracle_and_no_q1"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-oracle-unchanged",
+      "scope": [
+        "s-m-q2",
+        "s-n-q2"
+      ],
+      "on_fail": "sr-oracle-mutated",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.head_commit"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.tree"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "50ee0d3532eb7faaea7fe6e45909a3ae2533e138"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "oracle.manifest_sha256"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-result-valid",
+      "scope": [
+        "s-m-validate",
+        "s-n-validate"
+      ],
+      "on_fail": "sr-result-invalid",
+      "predicate": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-validate-result",
+          "field": "status"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "PASS"
+        }
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-material",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-classify-c1",
+          "field": "material_findings"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "PRESENT"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-bm-forbid-q1",
+          "mode": "FORBIDDEN",
+          "action": "SHOW_Q1_TO_AUTHOR_DURING_A2",
+          "cardinality": 0
+        },
+        {
+          "id": "e-bm-forbid-broad",
+          "mode": "FORBIDDEN",
+          "action": "START_NEW_BROAD_REVIEW_CYCLE_IN_C2",
+          "cardinality": 0
+        },
+        {
+          "id": "e-bm-forbid-opportunistic",
+          "mode": "FORBIDDEN",
+          "action": "OPPORTUNISTIC_A2_IMPROVEMENT",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-m-a2",
+          "order": 1,
+          "effect": "e-a2",
+          "atomic": true
+        },
+        {
+          "id": "s-m-freeze-a2",
+          "order": 2,
+          "effect": "e-freeze-a2",
+          "atomic": true,
+          "gated_by": "g-a2-boundary"
+        },
+        {
+          "id": "s-m-c2",
+          "order": 3,
+          "effect": "e-c2",
+          "atomic": true
+        },
+        {
+          "id": "s-m-q2",
+          "order": 4,
+          "effect": "e-q2",
+          "atomic": true,
+          "gated_by": "g-oracle-unchanged"
+        },
+        {
+          "id": "s-m-reveal",
+          "order": 5,
+          "effect": "e-reveal",
+          "atomic": true
+        },
+        {
+          "id": "s-m-attribution",
+          "order": 6,
+          "effect": "e-attribution",
+          "atomic": true
+        },
+        {
+          "id": "s-m-produce",
+          "order": 7,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-m-validate",
+          "order": 8,
+          "effect": "e-validate-result",
+          "atomic": true,
+          "gated_by": "g-result-valid",
+          "produces": [
+            "ev-result-validation"
+          ]
+        },
+        {
+          "id": "s-m-freeze",
+          "order": 9,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "terminal_outcome": "FIELD_001_COMPLETE_AFTER_A2_C2_Q2",
+      "next": "nc-return"
+    },
+    {
+      "id": "br-none",
+      "condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-classify-c1",
+          "field": "material_findings"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "NONE"
+        }
+      },
+      "effects": [
+        {
+          "id": "e-bn-forbid-a2",
+          "mode": "FORBIDDEN",
+          "action": "SECOND_AUTHOR_MUTATION_WITHOUT_MATERIAL_FINDINGS",
+          "cardinality": 0
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-n-q2",
+          "order": 1,
+          "effect": "e-q2",
+          "atomic": true,
+          "gated_by": "g-oracle-unchanged"
+        },
+        {
+          "id": "s-n-reveal",
+          "order": 2,
+          "effect": "e-reveal",
+          "atomic": true
+        },
+        {
+          "id": "s-n-attribution",
+          "order": 3,
+          "effect": "e-attribution",
+          "atomic": true
+        },
+        {
+          "id": "s-n-produce",
+          "order": 4,
+          "effect": "e-produce-result",
+          "atomic": true
+        },
+        {
+          "id": "s-n-validate",
+          "order": 5,
+          "effect": "e-validate-result",
+          "atomic": true,
+          "gated_by": "g-result-valid",
+          "produces": [
+            "ev-result-validation"
+          ]
+        },
+        {
+          "id": "s-n-freeze",
+          "order": 6,
+          "effect": "e-freeze-result",
+          "atomic": true
+        }
+      ],
+      "terminal_outcome": "FIELD_001_COMPLETE_WITH_A2_EQUAL_A1_Q2",
+      "next": "nc-return"
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-precondition",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "frozen_identities_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pre-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-checkout",
+          "mode": "FORBIDDEN",
+          "action": "CHECKOUT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-reroot",
+          "mode": "FORBIDDEN",
+          "action": "RE_ROOT",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-boundary",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "role_write_and_git_boundary_held"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-bd-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-bd-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-bd-freeze",
+          "mode": "FORBIDDEN",
+          "action": "FREEZE_IMPLEMENTATION",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-oracle-mutated",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "oracle_matches_commitment"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-om-run",
+          "mode": "FORBIDDEN",
+          "action": "RUN_MODIFIED_ORACLE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-om-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-contamination",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "no_role_contamination"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-ct-continue",
+          "mode": "FORBIDDEN",
+          "action": "CONTINUE_AS_IF_UNCONTAMINATED",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-ct-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-contract-ambiguity",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "no_genuine_contract_ambiguity"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-ca-invent",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_CONTRACT_SEMANTICS",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-ca-redesign",
+          "mode": "FORBIDDEN",
+          "action": "MODIFY_OR_REDESIGN_CONTRACT",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-third-loop",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "loops_within_bound"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-tl-loop",
+          "mode": "FORBIDDEN",
+          "action": "OPEN_THIRD_IMPLEMENTATION_OR_REVIEW_LOOP",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-scope",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "no_unexpected_canonical_mutation"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-sc-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-sc-push",
+          "mode": "FORBIDDEN",
+          "action": "PUSH",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-sc-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-result-invalid",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "field_study_evidence_valid"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-ri-persist",
+          "mode": "FORBIDDEN",
+          "action": "PERSIST_FIELD_STUDY_EVIDENCE",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-field-001",
+        "subject": "field_001_idempotent_job_submission_field_study_selected",
+        "authority": "ref-auth103"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-return"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-a104",
+      "kind": "VERIFICATION",
+      "fact": "identity(authority_104)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth104",
+        "recompute": true
+      },
+      "must_return": "rf-a104-identity"
+    },
+    {
+      "id": "ev-a103",
+      "kind": "VERIFICATION",
+      "fact": "identity(authority_103)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth103",
+        "recompute": true
+      },
+      "must_return": "rf-a103-identity"
+    },
+    {
+      "id": "ev-manifest",
+      "kind": "VERIFICATION",
+      "fact": "identity(field_study_manifest)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-manifest",
+        "recompute": true
+      },
+      "must_return": "rf-manifest-identity"
+    },
+    {
+      "id": "ev-q1-commitment",
+      "kind": "OBSERVATION",
+      "fact": "q1.commitment",
+      "must_return": "rf-q1-commitment"
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "field_study_evidence.validation",
+      "must_return": "rf-result-validation-status"
+    }
+  ],
+  "terminal_outcomes": [
+    {
+      "label": "FIELD_001_COMPLETE_AFTER_A2_C2_Q2",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-classify-c1",
+              "field": "material_findings"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PRESENT"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return"
+    },
+    {
+      "label": "FIELD_001_COMPLETE_WITH_A2_EQUAL_A1_Q2",
+      "valid_when": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-classify-c1",
+              "field": "material_findings"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "NONE"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "OPERATION_RESULT",
+              "ref": "e-validate-result",
+              "field": "status"
+            },
+            "value": {
+              "type": "SYMBOL",
+              "value": "PASS"
+            }
+          }
+        ]
+      },
+      "partial_state_allowed": false,
+      "reached_state_must_be_preserved": true,
+      "next": "nc-return"
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-study-terminal",
+      "fact": "field_001.terminal",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "COMPLETE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "HARD_BLOCKED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NEW_MATERIAL_CHOICE_REQUIRED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-a104-identity",
+      "fact": "authority_104.identity_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a103-identity",
+      "fact": "authority_103.identity_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-manifest-identity",
+      "fact": "field_study_manifest.identity_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-b0-commit",
+      "fact": "target.b0_commit",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a1-commit",
+      "fact": "target.a1_frozen_commit",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a2-commit",
+      "fact": "target.final_implementation_commit",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a2-differs",
+      "fact": "target.a2_differs_from_a1",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-oracle-commit",
+      "fact": "oracle.commit_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-q1-commitment",
+      "fact": "q1.commitment",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-q1-result-sha256",
+      "fact": "q1.result_sha256",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-q2-result-sha256",
+      "fact": "q2.result_sha256",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-q1-o01",
+      "fact": "q1.o_01.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o02",
+      "fact": "q1.o_02.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o03",
+      "fact": "q1.o_03.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o04",
+      "fact": "q1.o_04.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o05",
+      "fact": "q1.o_05.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o06",
+      "fact": "q1.o_06.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o07",
+      "fact": "q1.o_07.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o08",
+      "fact": "q1.o_08.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o09",
+      "fact": "q1.o_09.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o10",
+      "fact": "q1.o_10.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o11",
+      "fact": "q1.o_11.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q1-o12",
+      "fact": "q1.o_12.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o01",
+      "fact": "q2.o_01.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o02",
+      "fact": "q2.o_02.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o03",
+      "fact": "q2.o_03.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o04",
+      "fact": "q2.o_04.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o05",
+      "fact": "q2.o_05.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o06",
+      "fact": "q2.o_06.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o07",
+      "fact": "q2.o_07.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o08",
+      "fact": "q2.o_08.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o09",
+      "fact": "q2.o_09.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o10",
+      "fact": "q2.o_10.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o11",
+      "fact": "q2.o_11.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-q2-o12",
+      "fact": "q2.o_12.verdict",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-author-first-pass-defects",
+      "fact": "metrics.author_first_pass_defects",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-challenger-true-findings",
+      "fact": "metrics.challenger_true_findings",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-challenger-false-or-nonmaterial",
+      "fact": "metrics.challenger_false_or_nonmaterial_findings",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-challenger-misses",
+      "fact": "metrics.challenger_misses",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-missed-by-both",
+      "fact": "metrics.material_defects_missed_by_both",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-cross-review-corrections",
+      "fact": "metrics.cross_review_corrections",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-author-self-corrections",
+      "fact": "metrics.author_self_corrections",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-final-remaining-defects",
+      "fact": "metrics.final_remaining_defects",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-unsupported-author-claims",
+      "fact": "metrics.unsupported_author_claims",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-unsupported-challenger-claims",
+      "fact": "metrics.unsupported_challenger_claims",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-role-contamination",
+      "fact": "metrics.role_contamination",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-contract-drift",
+      "fact": "metrics.contract_drift",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-human-interventions",
+      "fact": "metrics.human_interventions",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-review-loops",
+      "fact": "metrics.review_loops",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-author-correction-quality",
+      "fact": "metrics.author_correction_quality",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-final-oracle-result",
+      "fact": "metrics.final_oracle_result",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-final-regression-result",
+      "fact": "metrics.final_regression_result",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO_NEW_REGRESSION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NEW_REGRESSION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ccr-value-added",
+      "fact": "ccr_specific_value_added",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ccr-burden-added",
+      "fact": "ccr_specific_burden_added",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-bounded-hypothesis",
+      "fact": "bounded_hypothesis_only",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-oracle-audit",
+      "fact": "oracle.audit_against_commitment",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MATCHES_COMMITMENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISMATCH"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-result-validation-status",
+      "fact": "field_study_evidence.validation_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-stop-events",
+      "fact": "transaction.stop_events",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-deviations",
+      "fact": "transaction.deviations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "DETERMINED",
+      "action": "RETURN_FIELD_001_TERMINAL_EVIDENCE",
+      "target": "orchestrator_field_001_terminal",
+      "no_new_gate": true
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-oracle-sequestered",
+      "constraint": {
+        "id": "e-sc-oracle",
+        "mode": "FORBIDDEN",
+        "action": "EXPOSE_ORACLE_TO_AUTHOR_OR_CHALLENGER",
+        "target": "field_001_oracle"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "q2_completed"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-q1-sequestered",
+      "constraint": {
+        "id": "e-sc-q1",
+        "mode": "FORBIDDEN",
+        "action": "EXPOSE_Q1_RESULT_TO_AUTHOR_OR_CHALLENGER",
+        "target": "field_001_q1_result"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "q2_completed"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-third-loop",
+      "constraint": {
+        "id": "e-sc-loop",
+        "mode": "FORBIDDEN",
+        "action": "OPEN_THIRD_IMPLEMENTATION_OR_REVIEW_LOOP",
+        "target": "field_001"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}
