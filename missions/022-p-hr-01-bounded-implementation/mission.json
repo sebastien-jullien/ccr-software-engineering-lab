@@ -1,0 +1,3494 @@
+{
+  "identity": {
+    "id": "022-p-hr-01-bounded-implementation",
+    "class": "HANDOFF_ROUTING_P_HR_01_BOUNDED_IMPLEMENTATION",
+    "addressee": "AGENT_CCR_LAB_64",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "mission_logical_id",
+      "value": {
+        "type": "SCALAR",
+        "value": "022-p-hr-01-bounded-implementation"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "executor_role",
+      "value": {
+        "type": "SYMBOL",
+        "value": "FRESH_P_HR_01_PRODUCT_IMPLEMENTER"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "implementation_scope",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXACTLY_AUTHORITY_98_AS_CORRECTED_BY_AUTHORITY_99"
+      },
+      "semantics_unresolved": false,
+      "label": "implement exactly authority 98 as corrected by authority 99, frozen by authority 100 ; no semantic widening, no additional handoff values, no routing selection, no general workflow behavior"
+    },
+    {
+      "subject": "p_hr_01.handoff_contract.version",
+      "value": {
+        "type": "SYMBOL",
+        "value": "P_HR_01"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "p_hr_01.handoff_contract.next_control_stage",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXECUTOR_DISPATCH"
+      },
+      "semantics_unresolved": false,
+      "label": "assertion only against the actual pre-dispatch requested_operation.kind ; not route selection, scheduler or control-transfer command"
+    },
+    {
+      "subject": "p_hr_01.handoff_contract.return_destination",
+      "value": {
+        "type": "SYMBOL",
+        "value": "CANONICAL_MISSION_LOCAL_RESULT_JSON"
+      },
+      "semantics_unresolved": false,
+      "label": "repository-relative, canonical / separators, no absolute path, no .., basename exactly result.json, same directory as mission.json"
+    },
+    {
+      "subject": "p_hr_01.handoff_contract.stage_ordering_dependency",
+      "value": {
+        "type": "SYMBOL",
+        "value": "P_HR_01_LINEAR_V1"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "p_hr_01.handoff_contract.persistence_ownership",
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORCHESTRATION"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "p_hr_01.activation",
+      "value": {
+        "type": "SYMBOL",
+        "value": "HANDOFF_CONTRACT_FIELD_PRESENCE_INSIDE_V1"
+      },
+      "semantics_unresolved": false,
+      "label": "V1 without handoff_contract valid and P-HR-01 inactive ; V1 with handoff_contract P-HR-01 active and complete validation mandatory ; present + invalid fail closed"
+    },
+    {
+      "subject": "p_hr_01.lifecycle",
+      "value": {
+        "type": "SEQUENCE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "HANDOFF_RESOLVED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "MISSION_FROZEN"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTOR_DISPATCHED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "EXECUTOR_RETURNED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESULT_PERSISTED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "RESULT_CONSUMED"
+          }
+        ]
+      },
+      "semantics_unresolved": false,
+      "label": "no additional node, permutation, branch, graph or DSL ; unknown predecessor stops ; no later event reconstructs an unobserved predecessor"
+    },
+    {
+      "subject": "representation.legacy_v0_recognition",
+      "value": {
+        "type": "SYMBOL",
+        "value": "REPRESENTATION_ABSENT_AND_EXACT_PINNED_V0_VALIDATION_AND_NO_V1_ONLY_FIELD"
+      },
+      "semantics_unresolved": false,
+      "label": "authority 99 C-1 REFINED : legacy V0 iff representation absent, exact validation under the pinned authority 14, no V1-only field including handoff_contract"
+    },
+    {
+      "subject": "representation.v1_recognition",
+      "value": {
+        "type": "SYMBOL",
+        "value": "EXACT_EMBEDDED_REPRESENTATION_AUTHORITY_OF_SUPPORTED_V1_AUTHORITY"
+      },
+      "semantics_unresolved": false,
+      "label": "REPO_PATH + GIT_BLOB ; no fallback to legacy validation"
+    },
+    {
+      "subject": "representation.otherwise",
+      "value": {
+        "type": "SYMBOL",
+        "value": "REJECT"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "representation.pinned_v0_authority",
+      "value": {
+        "type": "REFERENCE",
+        "value": "ref-auth14"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "v1_authority.path_convention",
+      "value": {
+        "type": "SYMBOL",
+        "value": "TECHNICAL_REPOSITORY_CONVENTION"
+      },
+      "semantics_unresolved": false,
+      "label": "if a numbered root authority is used, it takes the first free number at the freeze HEAD, 101 ; no existing authority is modified"
+    },
+    {
+      "subject": "baseline.totals",
+      "value": {
+        "type": "SCALAR",
+        "value": "270 tests / 264 pass / 6 fail"
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "baseline.failing_tests",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "T-E1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "T-E2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "T-H1"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "T-H2"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "T-H3"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "T-H4"
+          }
+        ]
+      },
+      "semantics_unresolved": false,
+      "label": "stale candidate-count constants (T-E1, T-E2) ; CRLF core.autocrlf checkout-size mismatch (T-H1, T-H2, T-H3) ; related HTTP 409 (T-H4) ; baseline technical debt, not a P-HR-01 regression"
+    },
+    {
+      "subject": "baseline.commands",
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "node tooling/program-state/program-state.mjs check PROGRAM-STATE.json"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "node --test tooling/program-state/tests/program-state.test.mjs"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "node --test tooling/mission-object/tests/mission-object.test.mjs"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "node --test tooling/mission-object/tests/qualification.test.mjs"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "node --test tooling/result-instance/tests/result-instance.test.mjs"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "node --test tooling/console/tests/console.test.mjs"
+          }
+        ]
+      },
+      "semantics_unresolved": false
+    },
+    {
+      "subject": "non_equivalence",
+      "value": {
+        "type": "SEQUENCE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "IMPLEMENTATION_BYTES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "SEMANTIC_CONFORMANCE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "INTEGRATION_COVERAGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO_BYPASS_PROOF"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "V0_COMPATIBILITY"
+          }
+        ]
+      },
+      "semantics_unresolved": false,
+      "label": "the five are pairwise distinct and each is evaluated separately ; green tests are not semantic conformance ; missing evidence is NOT_ESTABLISHED"
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth100",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "100-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-TRANSACTION-FREEZE.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "74c08d3e562eaa348f8a975e94b03a4dd1ac710d"
+      },
+      "identity_required": true,
+      "label": "gel de la transaction d implementation de P-HR-01"
+    },
+    {
+      "id": "ref-auth98",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "fe4be140f6a90e84d25f14119889b7642989f1d7"
+      },
+      "identity_required": true,
+      "label": "specification normative finale de P-HR-01 et autorisation d implementation"
+    },
+    {
+      "id": "ref-auth98-sha",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md"
+      },
+      "identity": {
+        "kind": "SHA256",
+        "value": "79c68ba8354376ca52d7ab818577ccd83c82542c81b184657652537c89479b3b"
+      },
+      "identity_required": true,
+      "label": "meme autorite, identite SHA-256"
+    },
+    {
+      "id": "ref-auth99",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "bc94cafba19d38de88e340c5168c37a5f89258be"
+      },
+      "identity_required": true,
+      "label": "correction de compatibilite C-1 raffinee"
+    },
+    {
+      "id": "ref-auth99-sha",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md"
+      },
+      "identity": {
+        "kind": "SHA256",
+        "value": "2eb07fcdb933cffcd29c636f80eb192d2aaf1194e115d8802bb159b5cd1620b1"
+      },
+      "identity_required": true,
+      "label": "meme autorite, identite SHA-256"
+    },
+    {
+      "id": "ref-auth14",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+      },
+      "identity_required": true,
+      "label": "autorite Mission Object V0 historique epinglee"
+    },
+    {
+      "id": "ref-auth14-sha",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+      },
+      "identity": {
+        "kind": "SHA256",
+        "value": "3db7c7298a4fc1109a99ac832770899d3fbb74a38acb14253f1fe7f578581912"
+      },
+      "identity_required": true,
+      "label": "meme autorite, identite SHA-256"
+    },
+    {
+      "id": "ref-auth23",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      },
+      "identity_required": true,
+      "label": "representation Result Instance v0 du retour"
+    },
+    {
+      "id": "ref-v0-validator",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/mission-object/validate.mjs"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "8dd06a2a1a2b7869f11456cf6a809dfad69f1a79"
+      },
+      "identity_required": false,
+      "label": "implementation existante du validateur V0"
+    },
+    {
+      "id": "ref-format",
+      "role": "CONTEXT",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/021-handoff-routing-c2-probe/result.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "ada093bbe68ca0f7676a4c6994ed2354d5292e0f"
+      },
+      "identity_required": false,
+      "label": "exemple de forme Result Instance v0 seulement, aucun contenu a reprendre"
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/022-p-hr-01-bounded-implementation/result.json"
+      },
+      "identity_required": false,
+      "label": "destination de retour du Result Instance de #64"
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-read-authorities",
+      "mode": "REQUIRED",
+      "action": "READ_GOVERNING_AUTHORITIES_98_99_100_AND_PINNED_V0_AUTHORITY",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-measure-baseline",
+      "mode": "REQUIRED",
+      "action": "MEASURE_AND_CONFIRM_FROZEN_BASELINE_TEST_SNAPSHOT",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-01",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_01_MISSION_OBJECT_V1_AUTHORITY_AND_REPRESENTATION",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-02",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_02_C1_REFINED_V0_V1_DISCRIMINATION_AND_COMPATIBILITY",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-03",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_03_P_HR_01_RESOLVER",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-04",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_04_MISSION_FREEZE_VERIFICATION",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-05",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_05_PRE_DISPATCH_REQUESTED_OPERATION_ASSERTION_GUARD",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-06",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_06_ACTUAL_EXECUTOR_DISPATCH_EVENT_OBSERVATION",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-07",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_07_EXECUTOR_RETURN_INGEST_VALIDATION",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-08",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_08_ORCHESTRATION_RESULT_PERSISTENCE_GUARD",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-09",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_09_P_HR_01_RESULT_ADMISSION",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-ip-10",
+      "mode": "REQUIRED",
+      "action": "IMPLEMENT_IP_10_DETERMINISTIC_RENDERING_INSPECTION_VALIDATION_TEST_COVERAGE",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-prove-recognition",
+      "mode": "REQUIRED",
+      "action": "PROVE_C1_REFINED_RECOGNITION_CASES_A_TO_F",
+      "cardinality": 1,
+      "target": "ref-auth99"
+    },
+    {
+      "id": "e-prove-v0",
+      "mode": "REQUIRED",
+      "action": "PROVE_V0_COMPATIBILITY_SEPARATELY_FROM_V1_TESTS",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-prove-v1",
+      "mode": "REQUIRED",
+      "action": "PROVE_V1_CONTRACT_BEHAVIOR",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-prove-fail-closed",
+      "mode": "REQUIRED",
+      "action": "PROVE_FAIL_CLOSED_RULES_FC_01_TO_FC_24",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-inventory-consumers",
+      "mode": "REQUIRED",
+      "action": "INVENTORY_AND_CLASSIFY_EVERY_SEMANTIC_RESULT_INSTANCE_CONSUMER",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-prove-no-bypass-dynamic",
+      "mode": "REQUIRED",
+      "action": "PROVE_NO_BYPASS_BY_DYNAMIC_INTEGRATION_TEST",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-prove-boundary",
+      "mode": "REQUIRED",
+      "action": "PROVE_PRODUCT_BOUNDARY_BY_SEARCH_AND_CODE_REVIEW",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-run-regression",
+      "mode": "REQUIRED",
+      "action": "RUN_TARGETED_AND_FULL_RELEVANT_SUITES_AND_COMPARE_TO_BASELINE",
+      "cardinality": 1,
+      "target": "ref-auth100"
+    },
+    {
+      "id": "e-produce-result",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-validate-result",
+      "mode": "REQUIRED",
+      "action": "VALIDATE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-freeze-result",
+      "mode": "REQUIRED",
+      "action": "FREEZE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-read-repository",
+      "mode": "PERMITTED",
+      "action": "READ_REPOSITORY_READ_ONLY",
+      "target": "repository"
+    },
+    {
+      "id": "e-write-traceable",
+      "mode": "PERMITTED",
+      "action": "WRITE_PATH_DIRECTLY_TRACEABLE_TO_IP_01_TO_IP_10_OR_REQUIRED_TEST_FIXTURE_AUTHORITY",
+      "target": "repository_worktree"
+    },
+    {
+      "id": "e-forbid-commit",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-push",
+      "mode": "FORBIDDEN",
+      "action": "PUSH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-fetch",
+      "mode": "FORBIDDEN",
+      "action": "FETCH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-pull",
+      "mode": "FORBIDDEN",
+      "action": "PULL",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-rebase",
+      "mode": "FORBIDDEN",
+      "action": "REBASE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-merge",
+      "mode": "FORBIDDEN",
+      "action": "MERGE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-checkout",
+      "mode": "FORBIDDEN",
+      "action": "CHECKOUT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-reset",
+      "mode": "FORBIDDEN",
+      "action": "RESET",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-reroot",
+      "mode": "FORBIDDEN",
+      "action": "RE_ROOT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-persist",
+      "mode": "FORBIDDEN",
+      "action": "PERSIST_RESULT_INSTANCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-authority",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_EXISTING_AUTHORITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-program-state",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_PROGRAM_STATE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-readme",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_README",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-mission",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_MISSION_022_OBJECT_OR_ENVELOPE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-edit-historical",
+      "mode": "FORBIDDEN",
+      "action": "MODIFY_HISTORICAL_MISSION_OBJECT_ENVELOPE_OR_RESULT_INSTANCE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-add-representation-v0",
+      "mode": "FORBIDDEN",
+      "action": "ADD_REPRESENTATION_AUTHORITY_TO_HISTORICAL_V0_OBJECT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-convert-v0-v1",
+      "mode": "FORBIDDEN",
+      "action": "CONVERT_V0_TO_V1_AUTOMATICALLY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-convert-v1-v0",
+      "mode": "FORBIDDEN",
+      "action": "CONVERT_V1_TO_V0_AUTOMATICALLY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-schema-guessing",
+      "mode": "FORBIDDEN",
+      "action": "SCHEMA_GUESSING",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-caller-context",
+      "mode": "FORBIDDEN",
+      "action": "DISCRIMINATE_BY_CALLER_OR_CONTEXT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-fallback",
+      "mode": "FORBIDDEN",
+      "action": "SEMANTIC_OR_COMPATIBILITY_FALLBACK",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-routing-authority",
+      "mode": "FORBIDDEN",
+      "action": "USE_NEXT_CONTROL_STAGE_AS_ROUTING_AUTHORITY",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-invent",
+      "mode": "FORBIDDEN",
+      "action": "INVENT_MATERIAL_SEMANTIC_CHOICE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-widen",
+      "mode": "FORBIDDEN",
+      "action": "WIDEN_P_HR_01_SEMANTICS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-untraceable",
+      "mode": "FORBIDDEN",
+      "action": "WRITE_PATH_WITHOUT_IP_TRACE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-refactor",
+      "mode": "FORBIDDEN",
+      "action": "REFACTOR_UNRELATED_CODE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-repair-tests",
+      "mode": "FORBIDDEN",
+      "action": "REPAIR_UNRELATED_HISTORICAL_TEST_FAILURE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-cleanup",
+      "mode": "FORBIDDEN",
+      "action": "COSMETIC_REPOSITORY_CLEANUP",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-agents",
+      "mode": "FORBIDDEN",
+      "action": "SPAWN_AGENT_OR_WORKFLOW",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-plan-gate",
+      "mode": "FORBIDDEN",
+      "action": "REQUEST_PLAN_APPROVAL_OR_MICRO_GATE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-conversation",
+      "mode": "FORBIDDEN",
+      "action": "RECONSTRUCT_FROM_CONVERSATION",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-generic-router",
+      "mode": "FORBIDDEN",
+      "action": "ADD_GENERIC_ROUTER",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-routing-graph",
+      "mode": "FORBIDDEN",
+      "action": "ADD_ROUTING_GRAPH",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-event-bus",
+      "mode": "FORBIDDEN",
+      "action": "ADD_GENERIC_EVENT_BUS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-workflow-engine",
+      "mode": "FORBIDDEN",
+      "action": "ADD_WORKFLOW_ENGINE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-lifecycle-dsl",
+      "mode": "FORBIDDEN",
+      "action": "ADD_LIFECYCLE_DSL",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-dynamic-route",
+      "mode": "FORBIDDEN",
+      "action": "ADD_DYNAMIC_ROUTE_CHOICE",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-next-stage-domain",
+      "mode": "FORBIDDEN",
+      "action": "EXPAND_NEXT_STAGE_DOMAIN",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-persistence-actor-domain",
+      "mode": "FORBIDDEN",
+      "action": "EXPAND_PERSISTENCE_ACTOR_DOMAIN",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-version-conversion",
+      "mode": "FORBIDDEN",
+      "action": "ADD_GENERIC_VERSION_CONVERSION_FRAMEWORK",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-dispatch-receipt",
+      "mode": "FORBIDDEN",
+      "action": "ADD_DURABLE_DISPATCH_RECEIPT_ARTIFACT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-program-state-semantics",
+      "mode": "FORBIDDEN",
+      "action": "ADD_PROGRAM_STATE_SEMANTICS",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-derived-handoff",
+      "mode": "FORBIDDEN",
+      "action": "USE_DERIVED_HANDOFF_JSON_IN_PRODUCT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-exp-c2-c-schema",
+      "mode": "FORBIDDEN",
+      "action": "ADOPT_EXP_C2_C_SCHEMA_IN_PRODUCT",
+      "cardinality": 0
+    },
+    {
+      "id": "e-forbid-handoff-ontology",
+      "mode": "FORBIDDEN",
+      "action": "ADD_PROGRAM_WIDE_HANDOFF_ONTOLOGY",
+      "cardinality": 0
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-preflight",
+        "effect": "e-read-authorities",
+        "atomic": true,
+        "gated_by": "g-preflight",
+        "produces": [
+          "ev-a98",
+          "ev-a99",
+          "ev-a100",
+          "ev-a14"
+        ]
+      },
+      {
+        "order": 2,
+        "id": "s-baseline",
+        "effect": "e-measure-baseline",
+        "atomic": true,
+        "produces": [
+          "ev-baseline"
+        ]
+      },
+      {
+        "order": 3,
+        "id": "s-ip-01",
+        "effect": "e-ip-01",
+        "atomic": false,
+        "gated_by": "g-no-material-choice"
+      },
+      {
+        "order": 4,
+        "id": "s-ip-02",
+        "effect": "e-ip-02",
+        "atomic": false
+      },
+      {
+        "order": 5,
+        "id": "s-ip-03",
+        "effect": "e-ip-03",
+        "atomic": false
+      },
+      {
+        "order": 6,
+        "id": "s-ip-04",
+        "effect": "e-ip-04",
+        "atomic": false
+      },
+      {
+        "order": 7,
+        "id": "s-ip-05",
+        "effect": "e-ip-05",
+        "atomic": false
+      },
+      {
+        "order": 8,
+        "id": "s-ip-06",
+        "effect": "e-ip-06",
+        "atomic": false
+      },
+      {
+        "order": 9,
+        "id": "s-ip-07",
+        "effect": "e-ip-07",
+        "atomic": false
+      },
+      {
+        "order": 10,
+        "id": "s-ip-08",
+        "effect": "e-ip-08",
+        "atomic": false
+      },
+      {
+        "order": 11,
+        "id": "s-ip-09",
+        "effect": "e-ip-09",
+        "atomic": false
+      },
+      {
+        "order": 12,
+        "id": "s-ip-10",
+        "effect": "e-ip-10",
+        "atomic": false
+      },
+      {
+        "order": 13,
+        "id": "s-recognition",
+        "effect": "e-prove-recognition",
+        "atomic": true
+      },
+      {
+        "order": 14,
+        "id": "s-v0",
+        "effect": "e-prove-v0",
+        "atomic": true
+      },
+      {
+        "order": 15,
+        "id": "s-v1",
+        "effect": "e-prove-v1",
+        "atomic": true
+      },
+      {
+        "order": 16,
+        "id": "s-fail-closed",
+        "effect": "e-prove-fail-closed",
+        "atomic": true
+      },
+      {
+        "order": 17,
+        "id": "s-inventory",
+        "effect": "e-inventory-consumers",
+        "atomic": true
+      },
+      {
+        "order": 18,
+        "id": "s-no-bypass-dynamic",
+        "effect": "e-prove-no-bypass-dynamic",
+        "atomic": true
+      },
+      {
+        "order": 19,
+        "id": "s-boundary",
+        "effect": "e-prove-boundary",
+        "atomic": true
+      },
+      {
+        "order": 20,
+        "id": "s-regression",
+        "effect": "e-run-regression",
+        "atomic": true
+      },
+      {
+        "order": 21,
+        "id": "s-produce",
+        "effect": "e-produce-result",
+        "atomic": true
+      },
+      {
+        "order": 22,
+        "id": "s-validate",
+        "effect": "e-validate-result",
+        "atomic": true,
+        "gated_by": "g-result-valid",
+        "produces": [
+          "ev-result-validation"
+        ]
+      },
+      {
+        "order": 23,
+        "id": "s-freeze",
+        "effect": "e-freeze-result",
+        "atomic": true,
+        "gated_by": "g-write-boundary"
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "g-preflight",
+      "scope": [
+        "s-preflight"
+      ],
+      "on_fail": "sr-preflight",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "BRANCH"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "main"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "WORKTREE_CLEAN"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth100"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "74c08d3e562eaa348f8a975e94b03a4dd1ac710d"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth98"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "fe4be140f6a90e84d25f14119889b7642989f1d7"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth99"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "bc94cafba19d38de88e340c5168c37a5f89258be"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth14"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "ARTIFACT_IDENTITY",
+              "ref": "ref-auth23"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "PRESENCE_OF",
+              "ref": "reserved_result_path"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "g-no-material-choice",
+      "scope": [
+        "s-ip-01",
+        "s-ip-02",
+        "s-ip-03",
+        "s-ip-04",
+        "s-ip-05",
+        "s-ip-06",
+        "s-ip-07",
+        "s-ip-08",
+        "s-ip-09",
+        "s-ip-10"
+      ],
+      "on_fail": "sr-material-choice",
+      "predicate": {
+        "op": "EQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "no_new_material_semantic_choice_required"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "g-result-valid",
+      "scope": [
+        "s-validate"
+      ],
+      "on_fail": "sr-result-invalid",
+      "predicate": {
+        "op": "EQ",
+        "subject": {
+          "kind": "OPERATION_RESULT",
+          "ref": "e-validate-result",
+          "field": "status"
+        },
+        "value": {
+          "type": "SYMBOL",
+          "value": "PASS"
+        }
+      }
+    },
+    {
+      "id": "g-write-boundary",
+      "scope": [
+        "s-freeze"
+      ],
+      "on_fail": "sr-scope",
+      "predicate": {
+        "all_of": [
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "executor.commit_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "MEASUREMENT",
+              "ref": "executor.push_count"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": 0
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "protected_paths_unmodified"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          },
+          {
+            "op": "EQ",
+            "subject": {
+              "kind": "REPO_FACT",
+              "ref": "all_written_paths_traceable_to_ip_01_to_ip_10"
+            },
+            "value": {
+              "type": "SCALAR",
+              "value": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "stop_rules": [
+    {
+      "id": "sr-preflight",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "preflight_match"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-pre-cd",
+          "mode": "FORBIDDEN",
+          "action": "CHANGE_DIRECTORY",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-reroot",
+          "mode": "FORBIDDEN",
+          "action": "RE_ROOT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-checkout",
+          "mode": "FORBIDDEN",
+          "action": "CHECKOUT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-fetch",
+          "mode": "FORBIDDEN",
+          "action": "FETCH",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-pre-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-material-choice",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "no_new_material_semantic_choice_required"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-mc-invent",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_MATERIAL_SEMANTIC_CHOICE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-mc-approximate",
+          "mode": "FORBIDDEN",
+          "action": "APPROXIMATE_SEMANTICS",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-mc-fallback",
+          "mode": "FORBIDDEN",
+          "action": "SEMANTIC_OR_COMPATIBILITY_FALLBACK",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-hard-blocker",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "no_hard_contract_or_technical_blocker"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-hb-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-hb-invent",
+          "mode": "FORBIDDEN",
+          "action": "INVENT_MATERIAL_SEMANTIC_CHOICE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-hb-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-routing-authority",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "next_control_stage_assertion_only"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-ra-routing",
+          "mode": "FORBIDDEN",
+          "action": "USE_NEXT_CONTROL_STAGE_AS_ROUTING_AUTHORITY",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-ra-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-result-invalid",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "result_instance_valid"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-inv-persist",
+          "mode": "FORBIDDEN",
+          "action": "PERSIST_RESULT_INSTANCE",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-inv-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-inv-push",
+          "mode": "FORBIDDEN",
+          "action": "PUSH",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    },
+    {
+      "id": "sr-scope",
+      "trigger": {
+        "op": "NEQ",
+        "subject": {
+          "kind": "REPO_FACT",
+          "ref": "write_boundary_held"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      },
+      "prohibitions": [
+        {
+          "id": "sp-scope-clean",
+          "mode": "FORBIDDEN",
+          "action": "CLEAN",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-reset",
+          "mode": "FORBIDDEN",
+          "action": "RESET",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-commit",
+          "mode": "FORBIDDEN",
+          "action": "COMMIT",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-push",
+          "mode": "FORBIDDEN",
+          "action": "PUSH",
+          "cardinality": 0
+        },
+        {
+          "id": "sp-scope-repair",
+          "mode": "FORBIDDEN",
+          "action": "REPAIR",
+          "cardinality": 0
+        }
+      ],
+      "required": [
+        "REPORT"
+      ],
+      "terminal": "STOP"
+    }
+  ],
+  "human_authority": {
+    "ratified_decisions": [
+      {
+        "id": "rd-implementation-authorized",
+        "subject": "handoff_routing_p_hr_01_bounded_implementation_authorized",
+        "authority": "ref-auth98"
+      },
+      {
+        "id": "rd-legacy-v0-c1-refined",
+        "subject": "handoff_routing_p_hr_01_legacy_v0_recognition_c1_refined_selected",
+        "authority": "ref-auth99"
+      }
+    ],
+    "deterministic_consequences": [
+      "nc-return"
+    ]
+  },
+  "evidence_requirements": [
+    {
+      "id": "ev-a98",
+      "kind": "VERIFICATION",
+      "fact": "identity(authority_98)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth98",
+        "recompute": true
+      },
+      "must_return": "rf-a98-identity-used"
+    },
+    {
+      "id": "ev-a99",
+      "kind": "VERIFICATION",
+      "fact": "identity(authority_99)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth99",
+        "recompute": true
+      },
+      "must_return": "rf-a99-identity-used"
+    },
+    {
+      "id": "ev-a100",
+      "kind": "VERIFICATION",
+      "fact": "identity(authority_100)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth100",
+        "recompute": true
+      },
+      "must_return": "rf-a100-identity-used"
+    },
+    {
+      "id": "ev-a14",
+      "kind": "VERIFICATION",
+      "fact": "identity(pinned_v0_authority)",
+      "method": {
+        "op": "EQ",
+        "source": "ref-auth14",
+        "recompute": true
+      },
+      "must_return": "rf-v0-authority-identity-used"
+    },
+    {
+      "id": "ev-baseline",
+      "kind": "OBSERVATION",
+      "fact": "baseline.test_snapshot",
+      "must_return": "rf-baseline-failures"
+    },
+    {
+      "id": "ev-result-validation",
+      "kind": "VERIFICATION",
+      "fact": "result_instance.validation",
+      "must_return": "rf-result-validation-status"
+    }
+  ],
+  "return_contract": [
+    {
+      "id": "rf-executor-identity",
+      "fact": "executor.identity",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-execution",
+      "fact": "execution.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "BLOCKED"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAILED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-starting-head",
+      "fact": "preflight.starting_head",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a98-identity-used",
+      "fact": "authority_98.identity_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a99-identity-used",
+      "fact": "authority_99.identity_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-a100-identity-used",
+      "fact": "authority_100.identity_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-v0-authority-identity-used",
+      "fact": "pinned_v0_authority.identity_used",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-implementation-paths",
+      "fact": "implementation.paths",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-new-files",
+      "fact": "implementation.new_files",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-modified-files",
+      "fact": "implementation.modified_files",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-01-status",
+      "fact": "ip_01.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-01-paths-symbols",
+      "fact": "ip_01.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-01-tests",
+      "fact": "ip_01.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-01-evidence",
+      "fact": "ip_01.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-02-status",
+      "fact": "ip_02.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-02-paths-symbols",
+      "fact": "ip_02.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-02-tests",
+      "fact": "ip_02.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-02-evidence",
+      "fact": "ip_02.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-03-status",
+      "fact": "ip_03.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-03-paths-symbols",
+      "fact": "ip_03.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-03-tests",
+      "fact": "ip_03.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-03-evidence",
+      "fact": "ip_03.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-04-status",
+      "fact": "ip_04.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-04-paths-symbols",
+      "fact": "ip_04.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-04-tests",
+      "fact": "ip_04.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-04-evidence",
+      "fact": "ip_04.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-05-status",
+      "fact": "ip_05.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-05-paths-symbols",
+      "fact": "ip_05.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-05-tests",
+      "fact": "ip_05.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-05-evidence",
+      "fact": "ip_05.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-06-status",
+      "fact": "ip_06.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-06-paths-symbols",
+      "fact": "ip_06.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-06-tests",
+      "fact": "ip_06.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-06-evidence",
+      "fact": "ip_06.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-07-status",
+      "fact": "ip_07.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-07-paths-symbols",
+      "fact": "ip_07.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-07-tests",
+      "fact": "ip_07.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-07-evidence",
+      "fact": "ip_07.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-08-status",
+      "fact": "ip_08.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-08-paths-symbols",
+      "fact": "ip_08.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-08-tests",
+      "fact": "ip_08.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-08-evidence",
+      "fact": "ip_08.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-09-status",
+      "fact": "ip_09.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-09-paths-symbols",
+      "fact": "ip_09.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-09-tests",
+      "fact": "ip_09.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-09-evidence",
+      "fact": "ip_09.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-10-status",
+      "fact": "ip_10.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-ip-10-paths-symbols",
+      "fact": "ip_10.paths_and_symbols",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-10-tests",
+      "fact": "ip_10.positive_and_negative_tests",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-ip-10-evidence",
+      "fact": "ip_10.semantics_and_factual_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-v1-authority-path",
+      "fact": "mission_object_v1_authority.path",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-v1-authority-sha256",
+      "fact": "mission_object_v1_authority.sha256",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-v1-authority-blob",
+      "fact": "mission_object_v1_authority.git_blob_no_filters",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-case-a",
+      "fact": "recognition.case_a.representation_absent_legacy_v0_validation_pass_no_v1_field_accepted_as_legacy_v0",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-case-b",
+      "fact": "recognition.case_b.representation_absent_legacy_v0_validation_fail_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-case-c",
+      "fact": "recognition.case_c.representation_absent_v1_only_field_present_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-case-d",
+      "fact": "recognition.case_d.representation_authority_exact_supported_v1_accepted_as_v1",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-case-e",
+      "fact": "recognition.case_e.representation_authority_unknown_mismatched_or_unsupported_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-case-f",
+      "fact": "recognition.case_f.representation_attempting_to_identify_v0_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-all-committed-case-a",
+      "fact": "v0_compatibility.every_committed_mission_object_recognized_as_legacy_v0_and_accepted",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-semantics-unchanged",
+      "fact": "v0_compatibility.pre_existing_semantics_unchanged",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-no-synthesis",
+      "fact": "v0_compatibility.p_hr_01_not_synthesized",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-render-unchanged",
+      "fact": "v0_compatibility.deterministic_rendering_semantically_unchanged",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-result-source-unchanged",
+      "fact": "v0_compatibility.result_instance_source_behavior_unchanged",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-fixtures-no-regression",
+      "fact": "v0_compatibility.historical_fixtures_and_tests_do_not_regress",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-historical-bytes-unchanged",
+      "fact": "v0_compatibility.historical_bytes_and_blobs_unchanged",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v0-byte-vs-semantic-scope",
+      "fact": "v0_compatibility.byte_for_byte_versus_semantic_equivalence_scope",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-v0-compatibility-status",
+      "fact": "v0_compatibility.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v1-without-contract",
+      "fact": "v1_behavior.v1_without_handoff_contract_accepted_p_hr_01_inactive",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v1-valid-contract",
+      "fact": "v1_behavior.v1_with_valid_handoff_contract_accepted_p_hr_01_active",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v1-invalid-contract",
+      "fact": "v1_behavior.v1_with_invalid_handoff_contract_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v1-v0-only-path",
+      "fact": "v1_behavior.v0_only_path_rejects_v1_without_processing_dispatch_or_down_conversion",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v1-unknown-authority",
+      "fact": "v1_behavior.unknown_or_mismatched_authority_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-v1-behavior-status",
+      "fact": "v1_behavior.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-lifecycle-exact",
+      "fact": "lifecycle.exact_p_hr_01_linear_v1_with_authority_98_event_sources",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-next-control-stage-assertion-only",
+      "fact": "next_control_stage.assertion_only_against_actual_requested_operation",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-01",
+      "fact": "fail_closed.fc_01.unknown_mission_object_representation_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-02",
+      "fact": "fail_closed.fc_02.v0_only_path_receives_v1_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-03",
+      "fact": "fail_closed.fc_03.active_p_hr_01_through_v0_path_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-04",
+      "fact": "fail_closed.fc_04.unknown_p_hr_version_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-05",
+      "fact": "fail_closed.fc_05.handoff_contract_incomplete_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-06",
+      "fact": "fail_closed.fc_06.handoff_contract_malformed_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-07",
+      "fact": "fail_closed.fc_07.next_control_stage_mismatch_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-08",
+      "fact": "fail_closed.fc_08.return_destination_mismatch_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-09",
+      "fact": "fail_closed.fc_09.ordering_mismatch_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-10",
+      "fact": "fail_closed.fc_10.persistence_owner_mismatch_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-11",
+      "fact": "fail_closed.fc_11.contract_mutation_after_freeze_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-12",
+      "fact": "fail_closed.fc_12.requested_operation_mismatch_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-13",
+      "fact": "fail_closed.fc_13.dispatch_before_freeze_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-14",
+      "fact": "fail_closed.fc_14.lost_authoritative_dispatch_state_before_return_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-15",
+      "fact": "fail_closed.fc_15.return_before_dispatch_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-16",
+      "fact": "fail_closed.fc_16.result_instance_source_mismatch_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-17",
+      "fact": "fail_closed.fc_17.executor_persistence_attempt_or_wrong_persistence_actor_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-18",
+      "fact": "fail_closed.fc_18.persistence_before_validated_return_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-19",
+      "fact": "fail_closed.fc_19.result_admission_before_persistence_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-20",
+      "fact": "fail_closed.fc_20.downstream_result_consumption_bypass_stopped",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-21",
+      "fact": "fail_closed.fc_21.case_b_representation_absent_legacy_v0_validation_fail_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-22",
+      "fact": "fail_closed.fc_22.case_c_representation_absent_v1_only_field_present_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-23",
+      "fact": "fail_closed.fc_23.case_e_representation_authority_unknown_or_mismatched_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fc-24",
+      "fact": "fail_closed.fc_24.case_f_representation_attempts_to_identify_v0_rejected",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-fail-closed-evidence",
+      "fact": "fail_closed.tests_and_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-result-admission-entry-point",
+      "fact": "result_admission.implementation_path_and_symbol",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-result-admission-implemented",
+      "fact": "result_admission.implemented",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-no-bypass-method",
+      "fact": "no_bypass.inventory_method",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-no-bypass-inventory",
+      "fact": "no_bypass.consumers_classification_and_enforcement",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-no-bypass-direct-a-consumption",
+      "fact": "no_bypass.any_semantic_consumer_directly_consumes_result_json",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "YES"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NO"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-no-bypass-dynamic",
+      "fact": "no_bypass.dynamic_integration_proof",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-no-bypass-dynamic-evidence",
+      "fact": "no_bypass.dynamic_integration_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-targeted-tests",
+      "fact": "tests.targeted_commands_and_results",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-full-suites",
+      "fact": "tests.full_relevant_suites_commands_and_results",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-baseline-failures",
+      "fact": "tests.baseline_failures",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-post-failures",
+      "fact": "tests.post_implementation_failures",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-new-regressions",
+      "fact": "tests.new_regressions",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-regression-status",
+      "fact": "tests.regression_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NO_NEW_REGRESSION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NEW_REGRESSION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-product-boundary-evidence",
+      "fact": "product_boundary.search_and_code_review_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-product-boundary-status",
+      "fact": "product_boundary.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-semantic-widening",
+      "fact": "semantic_widening.status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "NONE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "PRESENT"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-semantic-widening-deviations",
+      "fact": "semantic_widening.exact_deviations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-paths-written",
+      "fact": "executor.paths_written",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-executor-commits",
+      "fact": "executor.commit_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-executor-pushes",
+      "fact": "executor.push_count",
+      "acquisition": "MEASURED",
+      "value_type": "SCALAR"
+    },
+    {
+      "id": "rf-result-validation-status",
+      "fact": "result_instance.validation_status",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rf-stop-events",
+      "fact": "executor.stop_events",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-deviations",
+      "fact": "executor.deviations",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-missing-evidence",
+      "fact": "executor.missing_evidence",
+      "acquisition": "MEASURED",
+      "value_type": "SET"
+    },
+    {
+      "id": "rf-terminal",
+      "fact": "mission.terminal",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "IMPLEMENTATION_COMPLETE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "HARD_BLOCKER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "NEW_MATERIAL_CHOICE"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "DETERMINED",
+      "action": "RETURN_RESULT_INSTANCE_AND_UNCOMMITTED_WORKTREE_FOR_ORCHESTRATION_VERIFICATION",
+      "target": "orchestration_verification_before_implementation_persistence",
+      "no_new_gate": true
+    }
+  ],
+  "standing_constraints": [
+    {
+      "id": "sc-no-persistence-by-executor",
+      "constraint": {
+        "id": "e-sc-persist",
+        "mode": "FORBIDDEN",
+        "action": "PERSIST_RESULT_INSTANCE",
+        "target": "repository_history"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "downstream_persistence_authorization"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-semantic-widening",
+      "constraint": {
+        "id": "e-sc-widen",
+        "mode": "FORBIDDEN",
+        "action": "WIDEN_P_HR_01_SEMANTICS",
+        "target": "p_hr_01"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "sc-no-historical-rewrite",
+      "constraint": {
+        "id": "e-sc-history",
+        "mode": "FORBIDDEN",
+        "action": "MODIFY_HISTORICAL_MISSION_OBJECT_ENVELOPE_OR_RESULT_INSTANCE",
+        "target": "historical_missions"
+      },
+      "release_condition": {
+        "op": "EQ",
+        "subject": {
+          "kind": "PRESENCE_OF",
+          "ref": "new_ratified_authority"
+        },
+        "value": {
+          "type": "SCALAR",
+          "value": true
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  }
+}
