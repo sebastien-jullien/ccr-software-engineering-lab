@@ -1,0 +1,116 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2"
+      }
+    }
+  },
+  "identity": {
+    "id": "p-hr-01-fixture-active",
+    "class": "P_HR_01_FIXTURE",
+    "addressee": "AGENT_CCR_LAB_FIXTURE",
+    "target_project": "CCR_SOFTWARE_ENGINEERING_LAB"
+  },
+  "context": [
+    {
+      "subject": "fixture.purpose",
+      "value": {
+        "type": "SYMBOL",
+        "value": "P_HR_01_ACTIVE_RENDERING_AND_INSPECTION"
+      },
+      "semantics_unresolved": false
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-auth101",
+      "role": "AUTHORITY",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md"
+      },
+      "identity_required": false,
+      "label": "autorite Mission Object V1"
+    },
+    {
+      "id": "ref-return",
+      "role": "DELIVERABLE",
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "tooling/mission-object/fixtures/p-hr-01/active/result.json"
+      },
+      "identity_required": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "e-produce",
+      "mode": "REQUIRED",
+      "action": "PRODUCE_RESULT_INSTANCE",
+      "cardinality": 1,
+      "target": "ref-return"
+    },
+    {
+      "id": "e-forbid-commit",
+      "mode": "FORBIDDEN",
+      "action": "COMMIT",
+      "cardinality": 0
+    }
+  ],
+  "procedure": {
+    "strict_order": true,
+    "steps": [
+      {
+        "order": 1,
+        "id": "s-produce",
+        "effect": "e-produce",
+        "atomic": true
+      }
+    ]
+  },
+  "return_contract": [
+    {
+      "id": "rf-outcome",
+      "fact": "mission.outcome",
+      "acquisition": "MEASURED",
+      "value_type": "SYMBOL",
+      "allowed_values": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "PASS"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "FAIL"
+          }
+        ]
+      }
+    }
+  ],
+  "next_consequences": [
+    {
+      "id": "nc-return",
+      "kind": "DETERMINED",
+      "action": "RETURN_RESULT_INSTANCE",
+      "no_new_gate": true
+    }
+  ],
+  "terminal": {
+    "halt_after_return": true
+  },
+  "handoff_contract": {
+    "version": "P_HR_01",
+    "next_control_stage": "EXECUTOR_DISPATCH",
+    "return_destination": "tooling/mission-object/fixtures/p-hr-01/active/result.json",
+    "stage_ordering_dependency": "P_HR_01_LINEAR_V1",
+    "persistence_ownership": "ORCHESTRATION"
+  }
+}

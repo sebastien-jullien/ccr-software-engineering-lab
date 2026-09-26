@@ -1,0 +1,2464 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "022-p-hr-01-bounded-implementation"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/022-p-hr-01-bounded-implementation/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "075b4581042fe88f00f45a6ad69ce5be91d2e03d"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "AGENT_CCR_LAB_64"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/022-p-hr-01-bounded-implementation/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "075b4581042fe88f00f45a6ad69ce5be91d2e03d"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-executor-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "AGENT_CCR_LAB_64"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-execution"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-starting-head"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "127b69dd5f09d9f6997ce864138a2a40e210c0db"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a98-identity-used"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md · GIT_BLOB fe4be140f6a90e84d25f14119889b7642989f1d7 · SHA256 79c68ba8354376ca52d7ab818577ccd83c82542c81b184657652537c89479b3b · recalculés sur octets commis (git rev-parse HEAD:<chemin> ; git show HEAD:<chemin> | sha256sum) · EQ attendu · lu intégralement"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "fe4be140f6a90e84d25f14119889b7642989f1d7"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a99-identity-used"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md · GIT_BLOB bc94cafba19d38de88e340c5168c37a5f89258be · SHA256 2eb07fcdb933cffcd29c636f80eb192d2aaf1194e115d8802bb159b5cd1620b1 · recalculés sur octets commis · EQ attendu · lu intégralement"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "bc94cafba19d38de88e340c5168c37a5f89258be"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a100-identity-used"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "100-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-TRANSACTION-FREEZE.md · GIT_BLOB 74c08d3e562eaa348f8a975e94b03a4dd1ac710d · SHA256 69ac936bde6bb325c259ae83bfa9887ceb8e728be196e39e6ccfc2bfd383d59d · recalculés sur octets commis · EQ attendu · lu intégralement"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "100-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-TRANSACTION-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "74c08d3e562eaa348f8a975e94b03a4dd1ac710d"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-authority-identity-used"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md · GIT_BLOB 7d634c855ab9de8c66a21c134b03de8f118c3de4 · SHA256 3db7c7298a4fc1109a99ac832770899d3fbb74a38acb14253f1fe7f578581912 · recalculés sur octets commis · EQ attendu · épinglée dans tooling/mission-object/v1.mjs PINNED_V0_AUTHORITY"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "7d634c855ab9de8c66a21c134b03de8f118c3de4"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-implementation-paths"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/v1.test.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/p-hr-01.test.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/v0-compatibility.test.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/active/mission.json"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/active/envelope.md"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/inactive/mission.json"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/inactive/envelope.md"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-new-files"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md · 17030 octets · blob --no-filters e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2 · sha256 b7ad52464db937d35afa98be63131ba46a57fd1dc4084a1db6fa69fabc6f5fa0 · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs · 24638 octets · blob --no-filters 2df43786e9e8c16a3f86c59faa0bc80206233cc0 · sha256 88e7bf9ce721866b8394b138f3122643e6fc0881f3cc554db9774e7a5c159ca7 · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · 26058 octets · blob --no-filters 7cce7be3882c2d0ca2da3ffc0534d354caa2662e · sha256 e4f5aa2c63157772c774ca073ad5e2b01fe3b571361a9622926030cefdbdd0fd · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/v1.test.mjs · 28442 octets · blob --no-filters cd5b4d9d0649f741992ba57832f584f7099fb9ba · sha256 41599948734c16208edafccc7ebc404956ec3e9fe598dca95d59fdb75f7ad3e5 · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/p-hr-01.test.mjs · 49532 octets · blob --no-filters 7deadd4b6515dba5798ba4c3a065a015e0480522 · sha256 461931dd49964a764752b36bfe8530c79d6e4950c92da8eb7989d8e95c0eeab2 · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/v0-compatibility.test.mjs · 7797 octets · blob --no-filters 3c9176962bb44e4be9941b21fc076c4945e50c91 · sha256 6f782719b942ec482115caec0ff95ba82247fac2953884f216497b64fbe266ea · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/active/mission.json · 2626 octets · blob --no-filters 4d2860907ae0b8cab98f8f5d98fc6252e07b1b87 · sha256 0b130eae03b793f4c41ef2b5fb0eba06b129634832422bd6bb4702c71690b39f · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/active/envelope.md · 2092 octets · blob --no-filters 791ab5512fc1cebda6934d305a7f9181b2c012cd · sha256 6d3b44ceaf3956a1bbddb05e63ab1dc7bc12ce9af0eacdc80ebb4a1f8a8d5d4d · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/inactive/mission.json · 2343 octets · blob --no-filters 2e11253665eec9d4e427442b1a16bfbf06e7d5b1 · sha256 77edcc3fabd56cd662fabc516ab069d4d2ccb41e8df46e8b4337e9373f7dd726 · UTF-8 sans BOM · LF seul · LF final"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/inactive/envelope.md · 1594 octets · blob --no-filters 4aac3fd52e30b4246795591ecf03f5f91b890fed · sha256 21c8270f145de8fa20813615af3fe8660103784046b0c476307caf65acdb6be6 · UTF-8 sans BOM · LF seul · LF final"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-modified-files"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-01-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-01-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md — autorité normative unique Mission Object V1 (racine numérotée, premier numéro libre 101 au HEAD de gel)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs · V1_AUTHORITY { path: 101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md, blob: e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2 } · PINNED_V0_AUTHORITY · V1_ONLY_FIELDS · INHERITED_ELEMENTS · v1Representation() · isExactV1Representation() · validateMissionObjectV1()"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · constructMissionObjectV1() : representation = v1Representation(), jamais fournie par l appelant"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-01-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #1 identité V1 = blob Git exact des octets de l autorité 101"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #2 l autorité 101 porte P_HR_01, EXECUTOR_DISPATCH, P_HR_01_LINEAR_V1, ORCHESTRATION, les six événements et la lignée 98/99/100/14, et ne porte pas son propre blob"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #3 encodage exact REPO_PATH + GIT_BLOB ; V1_ONLY_FIELDS = { representation, handoff_contract } ; 16 éléments hérités"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/v1.test.mjs #4 13 variations de l encodage (blob, chemin, genres, membres additionnels, membre absent, null, chaîne, tableau) ne sont plus l identité V1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #9 #15 #16 V1 exact accepté, INACTIVE sans contrat, ACTIVE avec contrat valide"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/v1.test.mjs #25 élément de premier niveau inconnu dans un V1 refusé (schéma clos)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #4 construction V1 : representation exacte, octets LF, blob calculé"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #53 un V1 construit reste refusé par le validateur V0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-01-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : Mission Object V1 = 16 éléments hérités (sémantique V0 incorporée par référence à l autorité 14 épinglée) + representation (requis) + handoff_contract (optionnel) ; aucun autre champ propre à V1 ; schéma clos"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : clé de reconnaissance V1 = REPO_PATH 101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md + GIT_BLOB e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2 (git hash-object --no-filters, 17030 octets, CR 0, sha256 b7ad52464db937d35afa98be63131ba46a57fd1dc4084a1db6fa69fabc6f5fa0)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CHOIX TECHNIQUE (A98 § 21 / A100 § 7) : chemin = autorité racine numérotée 101 ; encodage JSON de representation = convention existante du dépôt (Result Instance v0 representation.authority, Mission Object V0 references locator/identity), égalité exacte, aucun membre additionnel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : les champs hérités d un V1 sont validés par tooling/mission-object/validate.mjs validate() INCHANGÉ (blob 8dd06a2a1a2b7869f11456cf6a809dfad69f1a79), appliqué à la projection des champs hérités ; aucune règle V0 réécrite"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FAIT : un document ne peut porter son propre blob ; le blob est porté par l outillage (V1_AUTHORITY) et vérifié par test contre les octets"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : tooling/mission-object/tests/v1.test.mjs 36 / 36 / 0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-02-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-02-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs · recognizeRepresentation(object) : table C-1 RAFFINÉE, cas A..F, arité 1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs · acceptMissionObject(object, { missionPath }) : point d entrée V1-capable (A accepté LEGACY_V0 / D validé V1 / B C E F rejetés)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs · inheritedFields(object) : projection transitoire des champs hérités, jamais reconnue ni dispatchée comme V0 · identifiesV0 (interne, cas F)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/validate.mjs · validate() : validateur V0 épinglé, employé tel quel, non modifié"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-02-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #5 #6 CAS A (objet minimal et 3 références historiques)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/v1.test.mjs #7 CAS B (4 violations V0, 4 non-objets) · #8 CAS C · #10 CAS E (9 formes) · #11 CAS F (3 formes)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #9 CAS D"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/v1.test.mjs #12 aucune retombée V1 → V0 (E valide sous V0 reste E ; D invalide reste D rejeté)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/v1.test.mjs #13 aucune discrimination par chemin ou contexte · #14 aucune fonction de conversion exportée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/v1.test.mjs #26 #27 un chemin V0 seulement (validateur V0, panneaux B et C de la console) refuse un V1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v0-compatibility.test.mjs #1 #2 #3 les 29 Mission Objects commis au HEAD de gel : CAS A, acceptés, objets inchangés, P-HR-01 non synthétisé"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #16 V0, V1 inactif, CAS C et CAS E n entrent jamais dans la transaction P-HR-01"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-02-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : representation ABSENTE → champ propre à V1 présent ⇒ C ; sinon validation V0 épinglée FAIL ⇒ B ; sinon ⇒ A (LEGACY_V0, sémantique V0, P-HR-01 NOT_APPLICABLE)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : representation PRÉSENTE → identité V1 exacte ⇒ D ; autorité désignant l autorité 14 par REPO_PATH ou GIT_BLOB ⇒ F ; tout le reste (inconnue, discordante, malformée, membre additionnel) ⇒ E ; aucune validation V0 tentée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CHOIX TECHNIQUE : C est évalué avant B pour nommer la cause exacte ; les deux rejettent"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : aucune conversion V0 → V1 ni V1 → V0 ; aucun objet reçu modifié (sérialisation avant/après identique) ; aucune representation ajoutée à un objet historique"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : 29 / 29 Mission Objects commis au HEAD de gel reconnus CAS A et acceptés"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-03-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-03-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · resolveHandoffContract(missionPath) : résolveur P-HR-01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs · canonicalReturnDestination(missionPath) : dérivation du result.json du répertoire de mission.json"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · constructMissionObjectV1({ fields, missionPath, pHr01 }) : construction V1 (point d application de HANDOFF_RESOLVED)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.resolveAndConstruct({ missionPath, fields }) : établit HANDOFF_RESOLVED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-03-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #1 cinq valeurs exactes, destination dérivée, contrat gelé"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #2 aucune valeur choisie par l appelant (arité 1, arguments supplémentaires sans effet, representation / handoff_contract fournis → CALLER_SELECTED_V1_FIELD)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #3 chemin de mission non canonique (6 formes) → MISSION_PATH_INVALID"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #4 construction active et inactive ; pHr01 non booléen et champs hérités invalides → MISSION_OBJECT_V1_INVALID"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #5 HANDOFF_RESOLVED établi seulement en cas de succès ; deuxième résolution → EVENT_ALREADY_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-03-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : seule entrée = chemin relatif au dépôt du mission.json ; version = P_HR_01, next_control_stage = EXECUTOR_DISPATCH, stage_ordering_dependency = P_HR_01_LINEAR_V1, persistence_ownership = ORCHESTRATION, return_destination = <répertoire de mission.json>/result.json"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CHOIX TECHNIQUE : encodage JSON au premier niveau, cinq membres chaînes (forme logique A98 § 11) ; le fichier porteur doit s appeler mission.json (lecture littérale de « same directory as mission.json »)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : aucune inférence de prose, aucune valeur choisie par l appelant, aucune dualité source / résolu"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : tests #1 à #5 PASS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-04-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-04-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.verifyFreeze({ commit = HEAD }) : établit MISSION_FROZEN"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · lecture d historique en liste blanche : resolveCommit (rev-parse --verify), blobAt (ls-tree -z --full-tree), readBlob (cat-file blob + contrôle d identité), isAncestor (merge-base --is-ancestor)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-04-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #6 identité commise exacte (chemin, blob, commit), contrat = contrat résolu"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #7 copie de travail seule / enveloppe rendue seule → MISSION_NOT_IN_CANONICAL_HISTORY"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #8 gel sans HANDOFF_RESOLVED → UNKNOWN_PREDECESSOR"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #9 à #15 contrat commis défectueux (FC-04 à FC-10) → arrêt avec le code exact"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #16 V0, V1 inactif, CAS C, CAS E commis → P_HR_01_NOT_ACTIVE / code de reconnaissance"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-04-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : MISSION_FROZEN exige HANDOFF_RESOLVED ; octets lus dans l historique canonique (jamais la copie de travail), validés sur ces octets exacts (UTF-8 strict, CAS D, validation V1 complète, P-HR-01 ACTIVE), contrat commis = contrat résolu ; identité enregistrée { chemin, blob, commit, sha256 } puis employée par le dispatch et la liaison de source"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : la mission gelée est gelée en profondeur en mémoire"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : 11 tests PASS contre de vrais dépôts Git temporaires"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-05-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-05-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.assertPreDispatch(requestedOperation) → { asserted: true } seulement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run #assertFrozenUnchanged(commit) : commit de gel ancêtre du HEAD et blob de mission inchangé"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-05-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #17 la garde affirme seulement : verdict gelé { asserted: true }, aucun événement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #18 FC-12 : 6 genres ≠ EXECUTOR_DISPATCH → REQUESTED_OPERATION_MISMATCH, opération de dispatch jamais invoquée"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #19 mission demandée ≠ mission gelée → FROZEN_IDENTITY_MISMATCH · #20 contrat muté dans l historique après gel → CONTRACT_MUTATED_AFTER_FREEZE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #22 next_consequences, procédure et PROGRAM-STATE « annonçant » une autre étape : verdict inchangé ; code exécutable sans PROGRAM-STATE, next_consequences, procedure, steps, effects"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-05-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : requested_operation.kind est l opération que l orchestration demande réellement ; il DOIT égaler EXECUTOR_DISPATCH et handoff_contract.next_control_stage ; sinon arrêt, aucun dispatch par P-HR-01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : la garde ne sélectionne, ne rend, ne déclenche ni n ordonnance aucune opération ; elle ne lit ni PROGRAM-STATE, ni next_consequences, ni procedure"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : 5 tests PASS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-06-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-06-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.dispatch(requestedOperation, performDispatch) : garde IP-05, puis opération de dispatch effective, puis EXECUTOR_DISPATCHED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-06-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #23 événement établi seulement APRÈS le succès de l opération ; charge utile = identité gelée, contrat gelé, octets commis exacts"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #24 opération en échec → DISPATCH_FAILED, aucun événement ; « dispatchable » ≠ dispatché ; opération absente → DISPATCH_OPERATION_REQUIRED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #25 deux dispatchs concurrents → DISPATCH_IN_PROGRESS ; second dispatch → EVENT_ALREADY_ESTABLISHED (#23)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #26 FC-13 : dispatch avant gel → UNKNOWN_PREDECESSOR, opération jamais invoquée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-06-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : SOURCE = succès de l opération d intégration de dispatch effective, observé par la frontière qui l exécute ; envelope ou garde réussie ≠ dispatché"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FAIT : le dépôt ne contient aucun transport d exécutant automatisé (le dispatch y est un transport manuel) ; la frontière enveloppe l opération que l orchestration fournit ; preuve par opération de test en processus"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : état faisant autorité = instance PHr01Run en mémoire ; aucun reçu de dispatch durable (aucune écriture de fichier)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : 4 tests PASS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-07-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-07-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.ingestReturn({ path, bytes, commit = HEAD }) : établit EXECUTOR_RETURNED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · parseResultInstance / sourceMatches (internes) ; réemploi inchangé de tooling/result-instance/result-instance.mjs parse() et tooling/result-instance/validate.mjs validate(), validateAgainstContract()"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-07-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #27 retour au chemin exact, validé, adossé à la mission gelée ; sha256 enregistré"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #28 FC-14 · #29 FC-15 · #30 FC-08 (5 chemins) · #31 FC-16 (6 formes) · #34 FC-17 / FC-18"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #32 Result Instance illisible, BOM, UTF-8 invalide, structure invalide, hors domaine, exigence inconnue, sans contrat de retour, vide, non binaire → RESULT_INSTANCE_INVALID"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #33 valeurs de handoff rapportées par l exécutant sans effet : le contrat gelé seul fait foi"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-07-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : exige EXECUTOR_DISPATCHED dans l état faisant autorité ; chemin reçu = return_destination gelée ; UTF-8 strict ; Result Instance structurellement valide ; source.kind = MISSION ; source.authority ET return_contract.authority = { REPO_PATH, GIT_BLOB } exacts de la mission V1 gelée ; relation de contrat de retour valide ; aucune reconstruction C2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CHOIX TECHNIQUE (fail closed) : si l historique canonique porte déjà le chemin de retour au moment de l ingestion → RESULT_PERSISTED_BEFORE_VALIDATED_RETURN"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : 8 tests PASS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-08-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-08-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.verifyPersistence({ actor, commit = HEAD }) : établit RESULT_PERSISTED"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-08-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #35 identité commise = blob des octets retournés, acteur ORCHESTRATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #36 FC-17 : acteurs EXECUTOR, orchestration, AGENT_CCR_LAB_FIXTURE, absent → WRONG_PERSISTENCE_ACTOR"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #37 FC-18 : persistance avant retour validé → UNKNOWN_PREDECESSOR"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #38 résultat validé non commis → RESULT_NOT_PERSISTED ; octets CRLF commis → PERSISTED_BYTES_MISMATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #39 FC-11 : mission modifiée dans le commit de persistance → CONTRACT_MUTATED_AFTER_FREEZE"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-08-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : exige EXECUTOR_RETURNED ; acteur = ORCHESTRATION = persistence_ownership gelé ; commit de gel ancêtre du commit de persistance ; mission gelée inchangée ; blob commis au chemin de retour = blob des octets retournés exacts"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : valider n est pas persister ; la persistance (commit) est un acte d orchestration hors outillage, l outillage en établit l identité canonique"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : 5 tests PASS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-09-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-09-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.admit({ mission, result }) : P_HR_01_RESULT_ADMISSION, établit RESULT_CONSUMED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · requireAcceptedResult(candidate) : seule entrée de consommation sémantique aval · isAcceptedResult(candidate) · ACCEPTED_RESULTS (WeakSet privé)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-09-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #40 handle immuable ; cycle complet de six événements ; seconde admission → même handle, aucun événement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #41 FC-19 : admission avant persistance, puis après commit non vérifié → ADMISSION_BEFORE_PERSISTENCE ; instance neuve → UNKNOWN_PREDECESSOR"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #42 identités inexactes → FROZEN_IDENTITY_MISMATCH / RETURN_DESTINATION_MISMATCH / PERSISTED_BLOB_MISMATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #43 FC-20 : 9 contrefaçons → CONTRACT_VIOLATION"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #47 preuve dynamique de non-contournement · #49 unique point d émission du handle"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-09-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : reçoit l identité exacte de la mission V1 gelée et l identité exacte du Result Instance commis ; établit P-HR-01 ACTIVE, correspondance de source (relue sur les octets commis), correspondance de chemin de retour, RESULT_PERSISTED observé, blob persisté = blob retourné ; alors seulement handle immuable"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : RESULT_CONSUMED = première admission réussie ; frontière logique, aucune représentation durable"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : 6 tests PASS"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-10-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-10-paths-symbols"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs · renderMissionObjectV1() · renderAccepted() · normativeElementsV1() · renderCoverageV1() · inspect() · main() (CLI : node tooling/mission-object/v1.mjs inspect|render <mission.json> [--mission-path <chemin>])"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.events() : journal de transaction en lecture seule"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/active/{mission.json,envelope.md} · tooling/mission-object/fixtures/p-hr-01/inactive/{mission.json,envelope.md}"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/v1.test.mjs · tooling/mission-object/tests/p-hr-01.test.mjs · tooling/mission-object/tests/v0-compatibility.test.mjs"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-10-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #28 à #33 fixtures acceptées ; rendu déterministe = enveloppes de référence ; indépendant de TZ / LANG ; champs hérités rendus par le rendu V0 inchangé ; couverture de rendu complète ; LEGACY V0 rendu octet pour octet"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NÉGATIF tooling/mission-object/tests/v1.test.mjs #34 aucun rendu d un objet non accepté"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v1.test.mjs #35 inspection déterministe · #36 CLI inspect / render (codes 0, 1, 2)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF tooling/mission-object/tests/v0-compatibility.test.mjs #4 26 enveloppes historiques reproduites octet pour octet par le rendu V1-capable"
+          },
+          {
+            "type": "SCALAR",
+            "value": "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #44 #45 #46 cycle de vie exact, aucun enregistreur générique, prédécesseur inconnu → STOP à chaque étape"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ip-10-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "SÉMANTIQUE : rendu V1 = rendu V0 inchangé des champs hérités + sections REPRÉSENTATION et P-HR-01 insérées après l identité ; trace et couverture dérivées du schéma"
+          },
+          {
+            "type": "SCALAR",
+            "value": "RÉSULTAT : suites ciblées 95 / 95 / 0 ; couverture IP-01..IP-10 cartographiée test par test"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-authority-path"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-authority-sha256"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "b7ad52464db937d35afa98be63131ba46a57fd1dc4084a1db6fa69fabc6f5fa0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-authority-blob"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-case-a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-case-b"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-case-c"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-case-d"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-case-e"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-case-f"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-all-committed-case-a"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-semantics-unchanged"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-no-synthesis"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-render-unchanged"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-result-source-unchanged"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-fixtures-no-regression"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-historical-bytes-unchanged"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-byte-vs-semantic-scope"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "OCTET POUR OCTET : 26 enveloppes commises au HEAD de gel 127b69d = render() et renderAccepted() de leurs 26 Mission Objects (tooling/mission-object/tests/v0-compatibility.test.mjs #4)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "OCTET POUR OCTET : blob HEAD = blob du HEAD de gel pour les 29 Mission Objects, enveloppes, résultats, dogfoods, mission-object.mjs, validate.mjs, render.mjs, fixtures de référence, tests V0, result-instance.mjs, validate.mjs (Result Instance), mission-adapter.mjs, result-adapter.mjs, autorités 14 et 23 (tooling/mission-object/tests/v0-compatibility.test.mjs #6) ; git diff --name-only = 0 chemin suivi modifié"
+          },
+          {
+            "type": "SCALAR",
+            "value": "OCTET POUR OCTET : objets reçus non modifiés par la reconnaissance ; aucun representation ni handoff_contract ajouté (tooling/mission-object/tests/v0-compatibility.test.mjs #2 #3)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "IDENTITÉ DE VERDICT : le verdict du CAS A est l objet rendu par validate() V0 inchangé, { ok: true, errors: [] } pour les 29 (tooling/mission-object/tests/v0-compatibility.test.mjs #2)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ÉQUIVALENCE SÉMANTIQUE SEULEMENT : un chemin V0 seulement refuse un V1 par le refus de schéma clos existant (« élément de premier niveau inconnu ») nommant representation et handoff_contract ; le libellé n est pas « unsupported representation » ; le code V0 n est pas modifié"
+          },
+          {
+            "type": "SCALAR",
+            "value": "COMPORTEMENT IDENTIQUE (code Result Instance inchangé octet pour octet) : 24 Result Instances historiques : structure PASS, contrat PASS, liaison de source = blob commis de leur mission, au HEAD de gel et au HEAD (tooling/mission-object/tests/v0-compatibility.test.mjs #5)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NON REVENDIQUÉ : objets V0 hors des 29 commis au HEAD de gel ; copies de travail CRLF (toutes les preuves lisent les octets commis)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v0-compatibility-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-without-contract"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-valid-contract"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-invalid-contract"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-v0-only-path"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-unknown-authority"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-v1-behavior-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-lifecycle-exact"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-next-control-stage-assertion-only"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-01"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-02"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-03"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-04"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-05"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-06"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-07"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-08"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-09"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-13"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-14"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-15"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-16"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-17"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-18"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-19"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-20"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-21"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-22"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-23"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fc-24"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-fail-closed-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "FC-01 → tooling/mission-object/tests/v1.test.mjs #10 (9 formes, UNKNOWN_REPRESENTATION) · tooling/mission-object/tests/p-hr-01.test.mjs #16 (gel refusé)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-02 → tooling/mission-object/tests/v1.test.mjs #26 (validate V0 : erreurs sur representation et handoff_contract, objet inchangé) · #27 (console : projectMission 422 sans rendu ; projectResult 422 sur la mission avant tout parse du résultat) · tooling/mission-object/tests/p-hr-01.test.mjs #16 #53"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-03 → tooling/mission-object/tests/v1.test.mjs #26 #27 (contrat actif par un chemin V0 refusé) · #8 (CAS C) · tooling/mission-object/tests/p-hr-01.test.mjs #16"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-04 → tooling/mission-object/tests/v1.test.mjs #20 (5 valeurs, UNKNOWN_P_HR_VERSION) · tooling/mission-object/tests/p-hr-01.test.mjs #9 (au gel)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-05 → tooling/mission-object/tests/v1.test.mjs #18 (5 membres, HANDOFF_CONTRACT_INCOMPLETE) · tooling/mission-object/tests/p-hr-01.test.mjs #10"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-06 → tooling/mission-object/tests/v1.test.mjs #19 (5 non-objets, 20 membres non-chaînes, 5 membres additionnels : HANDOFF_CONTRACT_MALFORMED) · tooling/mission-object/tests/p-hr-01.test.mjs #11"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-07 → tooling/mission-object/tests/v1.test.mjs #21 (5 valeurs, NEXT_CONTROL_STAGE_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #12"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-08 → tooling/mission-object/tests/v1.test.mjs #22 (11 destinations, RETURN_DESTINATION_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #13 (gel) · #30 (retour reçu hors destination) · #42 (admission)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-09 → tooling/mission-object/tests/v1.test.mjs #23 (4 valeurs, ORDERING_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #14"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-10 → tooling/mission-object/tests/v1.test.mjs #24 (5 valeurs, PERSISTENCE_OWNER_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #15"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-11 → tooling/mission-object/tests/p-hr-01.test.mjs #19 (FROZEN_IDENTITY_MISMATCH) · #20 (CONTRACT_MUTATED_AFTER_FREEZE avant dispatch) · #21 (contrat gelé immuable : TypeError) · #39 (mutation avant persistance)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-12 → tooling/mission-object/tests/p-hr-01.test.mjs #18 (6 genres, REQUESTED_OPERATION_MISMATCH, opération jamais invoquée)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-13 → tooling/mission-object/tests/p-hr-01.test.mjs #26 (dispatch avant gel, UNKNOWN_PREDECESSOR) · #7 (copie de travail ≠ gel)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-14 → tooling/mission-object/tests/p-hr-01.test.mjs #28 (instance perdue ; instance reconstruite par résolution + gel : dispatch jamais reconstruit, UNKNOWN_PREDECESSOR)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-15 → tooling/mission-object/tests/p-hr-01.test.mjs #29 (fichier de résultat présent, pas de dispatch) · #24 (dispatch échoué puis retour)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-16 → tooling/mission-object/tests/p-hr-01.test.mjs #31 (source.kind PROTOCOL, blob, chemin, autorité de retour blob et chemin, contrat de retour absent : RESULT_SOURCE_MISMATCH)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-17 → tooling/mission-object/tests/p-hr-01.test.mjs #36 (4 acteurs, WRONG_PERSISTENCE_ACTOR) · #34 (résultat commis par l exécutant avant ingestion, RESULT_PERSISTED_BEFORE_VALIDATED_RETURN) · portée : voir executor.missing_evidence"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-18 → tooling/mission-object/tests/p-hr-01.test.mjs #37 (UNKNOWN_PREDECESSOR) · #34 · #38 (non commis / octets différents)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-19 → tooling/mission-object/tests/p-hr-01.test.mjs #41 (ADMISSION_BEFORE_PERSISTENCE, aucun handle, aucun événement) · #47"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-20 → tooling/mission-object/tests/p-hr-01.test.mjs #43 (9 contrefaçons, CONTRACT_VIOLATION) · #47 · #49"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-21 → tooling/mission-object/tests/v1.test.mjs #7 · FC-22 → tooling/mission-object/tests/v1.test.mjs #8 · FC-23 → tooling/mission-object/tests/v1.test.mjs #10 · FC-24 → tooling/mission-object/tests/v1.test.mjs #11"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SANS REPLI : aucune valeur par défaut, aucune réparation, aucun prédécesseur inféré, aucune rétrogradation ; tooling/mission-object/tests/p-hr-01.test.mjs #44 #45 #46"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-result-admission-entry-point"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.admit({ mission: { path, blob }, result: { path, blob } }) → handle immuable P_HR_01_ACCEPTED_RESULT ; entrée aval unique requireAcceptedResult(handle)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-result-admission-implemented"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-no-bypass-method"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "parcours du système de fichiers de toutes les sources produit .mjs / .js sous tooling/ et cases/, répertoires tests/ exclus (53 fichiers suivis au HEAD de gel : 13 sous tooling/, 40 sous cases/ ; plus v1.mjs et p-hr-01.mjs)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "sept marqueurs indépendants : import result-instance ; « result.json » ; reported_entries ; reportedValues / reportedValueEntries / nonProductionEntries ; projectResult / result-adapter ; validateAgainstContract ; route /api/result"
+          },
+          {
+            "type": "SCALAR",
+            "value": "relevé des importeurs de result-instance/(result-instance|validate).mjs : result-adapter.mjs et p-hr-01.mjs seulement"
+          },
+          {
+            "type": "SCALAR",
+            "value": "revue de code des fichiers trouvés : result-adapter.mjs, repo.mjs, server.mjs, result-instance.mjs, validate.mjs lus intégralement ; console.mjs (navigateur) relu aux points de contact"
+          },
+          {
+            "type": "SCALAR",
+            "value": "garde mécanique : tooling/mission-object/tests/p-hr-01.test.mjs #48 échoue si un fichier produit touche un Result Instance sans être classé"
+          },
+          {
+            "type": "SCALAR",
+            "value": "la recherche seule n est pas retenue comme preuve : preuve dynamique tooling/mission-object/tests/p-hr-01.test.mjs #47"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-no-bypass-inventory"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "B · tooling/result-instance/result-instance.mjs · parse, load, entries, reportedValueEntries, nonProductionEntries, factKey, contractRequirements · chargement gelé et accesseurs, aucune continuation"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B · tooling/result-instance/validate.mjs · validate, validateAgainstContract, main · validation seule"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B · tooling/console/result-adapter.mjs · projectResult · affichage / inspection ; APPLICATION : une mission P-HR-01 (V1) y est refusée 422 VALIDATION_FAILED par la validation V0 de la mission AVANT tout parse du résultat (tooling/mission-object/tests/v1.test.mjs #27, tooling/mission-object/tests/p-hr-01.test.mjs #47)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B · tooling/console/server.mjs · GET /api/result → projectResult · transport de la projection"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B · tooling/console/public/console.mjs · affichage navigateur de reportedValues et nonProduction"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B · tooling/console/repo.mjs · listCandidates(RESULT) · énumération de chemins result.json, aucune lecture de contenu"
+          },
+          {
+            "type": "SCALAR",
+            "value": "B · tooling/mission-object/v1.mjs · RESULT_BASENAME, canonicalReturnDestination · règle de chemin, aucune lecture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FRONTIÈRE · tooling/mission-object/p-hr-01.mjs · ingestReturn (validation), verifyPersistence (identité), admit (seul émetteur de handle), requireAcceptedResult (seule entrée sémantique aval : handle exigé, sinon CONTRACT_VIOLATION)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "A · aucun consommateur sémantique aval dans le produit ; tooling/program-state/program-state.mjs ne lit aucun Result Instance (tooling/mission-object/tests/p-hr-01.test.mjs #48) ; cases/ : aucun contact"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-no-bypass-direct-a-consumption"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-no-bypass-dynamic"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-no-bypass-dynamic-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/p-hr-01.test.mjs #47 contre un vrai dépôt Git temporaire : résultat retourné lu directement → CONTRACT_VIOLATION ; admission avant persistance → ADMISSION_BEFORE_PERSISTENCE ; panneau C de la console sur (mission V1, résultat) → 422 VALIDATION_FAILED sur la mission, résultat jamais parsé ; résultat commis mais persistance non vérifiée → ADMISSION_BEFORE_PERSISTENCE ; continuation aval = 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/p-hr-01.test.mjs #47 suite : verifyPersistence puis admit → continuation aval 1, valeur PASS lue sur le handle, six événements dans l ordre"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/p-hr-01.test.mjs #41 FC-19 · #43 FC-20 (clone JSON, structuredClone, étalement, instance parsée, chemins, identité persistée) · #49 un seul point d émission du handle, dans admit(), après la garde de persistance"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-targeted-tests"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/mission-object/tests/v1.test.mjs → tests 36 · pass 36 · fail 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/mission-object/tests/p-hr-01.test.mjs → tests 53 · pass 53 · fail 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/mission-object/tests/v0-compatibility.test.mjs → tests 6 · pass 6 · fail 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "total ciblé P-HR-01 → 95 / 95 / 0 · Node v22.18.0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-full-suites"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "node tooling/program-state/program-state.mjs check PROGRAM-STATE.json → avant : exit 0 · constats matériels 0 ; après : exit 0 · constats matériels 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/program-state/tests/program-state.test.mjs → avant 59 / 59 / 0 ; après 59 / 59 / 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/mission-object/tests/mission-object.test.mjs → avant 46 / 46 / 0 ; après 46 / 46 / 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/mission-object/tests/qualification.test.mjs → avant 20 / 20 / 0 ; après 20 / 20 / 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/result-instance/tests/result-instance.test.mjs → avant 71 / 71 / 0 ; après 71 / 71 / 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "node --test tooling/console/tests/console.test.mjs → avant 74 / 68 / 6 ; après 74 / 68 / 6"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TOTAL suites de référence → avant 270 / 264 / 6 ; après 270 / 264 / 6 = instantané gelé"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TOTAL avec les suites P-HR-01 → 365 / 359 / 6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-baseline-failures"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "T-E1 (console #57) constante de dénombrement périmée · attendu 5 · observé 26"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-E2 (console #58) constante de dénombrement périmée · attendu 4 · observé 24"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H1 (console #65) taille d extraction CRLF core.autocrlf · attendu 54357 · observé 57018"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H2 (console #66) taille d extraction CRLF core.autocrlf · attendu 32013 · observé 33277"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H3 (console #67) taille d extraction CRLF core.autocrlf · attendu 54357 · observé 57018"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H4 (console #68) effet HTTP associé · attendu 200 · observé 409"
+          },
+          {
+            "type": "SCALAR",
+            "value": "mesuré avant toute écriture au HEAD 127b69d ; T-E1 observé 26 contre 25 consigné par l autorité 100 au HEAD 6c3c0aa : même identité, même cause (un fichier mission.json de plus : mission 022)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-post-failures"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "T-E1 (console #57) · attendu 5 · observé 26"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-E2 (console #58) · attendu 4 · observé 24"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H1 (console #65) · attendu 54357 · observé 57018"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H2 (console #66) · attendu 32013 · observé 33277"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H3 (console #67) · attendu 54357 · observé 57018"
+          },
+          {
+            "type": "SCALAR",
+            "value": "T-H4 (console #68) · attendu 200 · observé 409"
+          },
+          {
+            "type": "SCALAR",
+            "value": "mesuré après implémentation, avant la production de result.json : ensemble et valeurs identiques à la référence ; T-E2 compte les fichiers result.json de missions/ et observe un candidat de plus dès que result.json existe (même identité, même cause)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-new-regressions"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-regression-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO_NEW_REGRESSION"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-product-boundary-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "RECHERCHE : grep -niE « router|routing|route|graph|event.?bus|EventEmitter|node:events|workflow|engine|schedul|setTimeout|setInterval|dsl|convert|upgrade|downgrade|migrat|writeFile|appendFile|createWriteStream|mkdir|rename|unlink|rmSync|PROGRAM.STATE|program-state|derived.handoff|candidate-spec|observation-contract|EXP.C2|ontolog|next_consequences|procedure » sur v1.mjs et p-hr-01.mjs → seuls résultats : le nom de fichier de l autorité 101 (…-HANDOFF-ROUTING-…) et trois lignes de commentaire ; aucun dans le code exécutable"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TEST tooling/mission-object/tests/p-hr-01.test.mjs #50 : 11 familles interdites absentes du code exécutable (commentaires retirés)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TEST tooling/mission-object/tests/p-hr-01.test.mjs #51 : domaines clos à un membre (P_HR_01, EXECUTOR_DISPATCH, P_HR_01_LINEAR_V1, ORCHESTRATION), 5 clés de contrat exactes, liste blanche Git = rev-parse, ls-tree, cat-file, merge-base, aucune commande de mutation ; v1.mjs sans child_process ni écriture"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TEST tooling/mission-object/tests/p-hr-01.test.mjs #45 : 8 exports fixes de p-hr-01.mjs, 8 méthodes nommées de PHr01Run ; l unique enregistreur #record est privé et n accepte que l événement suivant de LIFECYCLE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "TEST tooling/mission-object/tests/p-hr-01.test.mjs #52 : aucun module V0, console, Result Instance ou PROGRAM-STATE n importe v1.mjs ou p-hr-01.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "REVUE DE CODE : absents — routeur générique, graphe de routage, bus d événements générique, moteur de workflow, DSL de cycle de vie (LIFECYCLE = tableau gelé de 6 symboles), choix de route dynamique, domaine next-stage arbitraire, domaine d acteur de persistance arbitraire, cadre générique de conversion de version, artefact durable de reçu de dispatch (aucune écriture de fichier ; état transitoire en mémoire), sémantique PROGRAM-STATE nouvelle, usage produit de derived-handoff.json, adoption produit du schéma EXP-C2-C, ontologie de handoff à l échelle du programme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "git diff --name-only → 0 fichier suivi modifié ; PROGRAM-STATE.json, README.md, autorités 14 / 23 / 98 / 99 / 100 et M022 mission.json / envelope.md inchangés"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-product-boundary-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantic-widening"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-semantic-widening-deviations"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-paths-written"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/v1.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/p-hr-01.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/v1.test.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/p-hr-01.test.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/tests/v0-compatibility.test.mjs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/active/mission.json"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/active/envelope.md"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/inactive/mission.json"
+          },
+          {
+            "type": "SCALAR",
+            "value": "tooling/mission-object/fixtures/p-hr-01/inactive/envelope.md"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/022-p-hr-01-bounded-implementation/result.json"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-executor-commits"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-executor-pushes"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-result-validation-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-stop-events"
+      },
+      "value": {
+        "type": "SET",
+        "members": []
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-deviations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "mission.json lu intégralement : lignes 1 à 1599 en affichage brut ; lignes 1600 à 3494 (return_contract, next_consequences, standing_constraints, terminal) par extraction structurée champ par champ (node) et par l enveloppe rendue, elle-même vérifiée identique octet pour octet au rendu de mission.json"
+          },
+          {
+            "type": "SCALAR",
+            "value": "commandes Git de lecture seule employées au-delà de la liste énumérée par le transport : ls-files, ls-tree, check-attr, config --get, --version ; aucune commande de mutation dans le dépôt du Lab"
+          },
+          {
+            "type": "SCALAR",
+            "value": "fichiers de travail hors dépôt seulement (répertoire temporaire du système et scratchpad de session : scripts d inventaire, journaux de tests) ; les tests créent puis suppriment des dépôts Git temporaires hors du dépôt du Lab (init, add, commit) ; aucun fichier ni commit dans le dépôt du Lab hors des chemins déclarés"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-missing-evidence"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "IP-06 : aucun transport d exécutant automatisé n existe dans le dépôt (dispatch par transport manuel) ; la frontière d observation est prouvée avec une opération de dispatch de test en processus, pas avec un transport réel"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FC-17 : un commit fait APRÈS l ingestion validée et portant exactement les octets retournés n est pas attribuable mécaniquement à son auteur (aucune sémantique d auteur de commit n est spécifiée) : non revendiqué ; prouvé : acteur déclaré ≠ ORCHESTRATION → STOP, résultat déjà dans l historique avant ingestion → STOP"
+          },
+          {
+            "type": "SCALAR",
+            "value": "aucune mission V1 réelle au HEAD : la transaction P-HR-01 est prouvée sur dépôts Git temporaires et fixtures, jamais sur une mission du programme"
+          },
+          {
+            "type": "SCALAR",
+            "value": "conséquence constatée, non une lacune : l état de dispatch faisant autorité étant transitoire (aucun reçu durable, A98 § 20), une transaction dont l instance PHr01Run est perdue entre dispatch et retour s arrête (FC-14) ; une orchestration qui change de processus entre ces étapes ne peut pas achever une transaction P-HR-01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "le test IP-01 d identité de l autorité 101 lit ses octets de travail tant qu elle n est pas commise ; après commit, il compare au blob HEAD"
+          },
+          {
+            "type": "SCALAR",
+            "value": "qualification indépendante : hors périmètre de l AGENT CCR LAB #64, non réalisée"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-terminal"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "IMPLEMENTATION_COMPLETE"
+      }
+    }
+  ]
+}
