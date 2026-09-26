@@ -1,0 +1,91 @@
+{
+  "artifact": "FIELD_001_A1_FREEZE",
+  "study_id": "FIELD-001",
+  "step": "A1 — Author first-pass implementation, frozen by the controller",
+  "author": "AGENT CCR LAB #65",
+  "controller": "AGENT CCR LAB #1",
+  "target_repository": "E:\\prog\\ccr-field-001-idempotent-jobs",
+  "a1": {
+    "commit": "914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3",
+    "tree": "26fb9fbb270d5a43cf575ce114b71f87306959de",
+    "parent": "785795af434299d2b6d25910eac2761208766b0d",
+    "subject": "a1: author first-pass implementation of field-001",
+    "committed_at": "2026-09-26T17:14:13+02:00",
+    "committed_by": "controller (AGENT CCR LAB #1), machine global git identity TribS Tox <tribstox@gmail.com>",
+    "changed_paths": [
+      {
+        "status": "M",
+        "path": "jobservice/server.py"
+      },
+      {
+        "status": "M",
+        "path": "jobservice/store.py"
+      },
+      {
+        "status": "A",
+        "path": "tests/test_idempotency.py"
+      }
+    ],
+    "changed_files": [
+      {
+        "path": "jobservice/server.py",
+        "git_blob": "54c2caa001711db5316d472e7cb229325329fe01",
+        "sha256": "be24dd2038275aa6f5bc4e666fde1a75fc742aef6fd49e3ae669c1a3655d7d53",
+        "bytes": 6385
+      },
+      {
+        "path": "jobservice/store.py",
+        "git_blob": "7a12c002a2f91bbfc6e14a614ade61956db08691",
+        "sha256": "99efbe96d4954ecdd6b86609be1a27144c35ad77889a4b8397763a3b4d4a7824",
+        "bytes": 6238
+      },
+      {
+        "path": "tests/test_idempotency.py",
+        "git_blob": "52ca8d8ea46c50eabaf4506298ad36dccae62b5f",
+        "sha256": "46698da4f4a93867c2aadadcb8875c7f7b04d16e2bd7bf5dfe7090cb73b070b6",
+        "bytes": 26378
+      }
+    ],
+    "committed_bytes_equal_author_worktree_bytes": true
+  },
+  "author_boundary": {
+    "author_commits": 0,
+    "author_pushes": 0,
+    "target_remote": "NONE",
+    "target_branches": [
+      "main"
+    ],
+    "stash": 0,
+    "basis": "target reflog held only the B0 commit before the freeze ; HEAD was B0 ; worktree changes were exactly the three reported paths ; the other seven B0 files and FIELD-001-CONTRACT.md were byte-identical to B0 ; no ignored or cache files",
+    "contract_unchanged": true,
+    "oracle_repository": "unchanged at its committed identity, clean, no remote",
+    "canonical_repository": "unchanged at 4625e8a2ccba9e1cc98ec7b203b8e688b16ce064",
+    "role_contamination": "none observed ; the Author return references no oracle and no Q1",
+    "writes_outside_target": "reported : tempfile SQLite files only, cleaned up ; not independently observable beyond the target, oracle and canonical repositories",
+    "status": "PASS"
+  },
+  "controller_verification_of_author_test_claims": {
+    "note": "verification of the Author claims only ; NOT qualification ; the controller did not run the oracle",
+    "full_suite": "python -m unittest discover -s tests -t . → 42 tests OK, 3 of 3 runs",
+    "baseline": "python -m unittest tests.test_baseline → 10 tests OK",
+    "author_tests": "python -m unittest tests.test_idempotency → 32 tests OK",
+    "relevant_product_loc": {
+      "jobservice/server.py": 146,
+      "jobservice/store.py": 156
+    }
+  },
+  "author_return": {
+    "path": "missions/023-field-001-idempotent-job-submission/a1-author-return.md",
+    "sha256": "6b0e84d99bd80fc996c656146b0e5ca2cd851bab88781aeecb2aeeec21f7ae09",
+    "bytes": 12814,
+    "provenance": "raw AGENT CCR LAB #65 return, transported by the human into the controller session, persisted verbatim"
+  },
+  "time_order": {
+    "b0_committed_at": "2026-09-26T12:02:09+02:00",
+    "oracle_frozen_at": "2026-09-26T12:09:08+02:00",
+    "transaction_frozen_at": "2026-09-26T12:16:31+02:00",
+    "a1_frozen_at": "2026-09-26T17:14:13+02:00",
+    "q1": "PENDING — AGENT CCR LAB #67, against this exact A1 commit, before C1"
+  },
+  "next": "hidden Q1 by AGENT CCR LAB #67 ; then Q1_COMMITMENT without outcome ; then Challenger C1 by AGENT CCR LAB #66"
+}
