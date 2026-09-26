@@ -1,0 +1,110 @@
+{
+  "artifact": "FIELD_001_Q1_COMMITMENT",
+  "study_id": "FIELD-001",
+  "step": "Q1 — hidden independent qualification of the frozen A1 with the frozen oracle ; result SEQUESTERED ; this record carries no outcome",
+  "qualifier": "AGENT CCR LAB #67",
+  "controller": "AGENT CCR LAB #1",
+  "governing": {
+    "authority": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+    "authority_blob": "a52e1584ef997ab05c70177f8dc827f07ded2d39",
+    "mission": "missions/023-field-001-idempotent-job-submission/mission.json",
+    "mission_blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c",
+    "procedure_step": "s-q1-commitment (effect e-q1-commitment, evidence ev-q1-commitment)"
+  },
+  "Q1_COMMITMENT": {
+    "a1_commit": "914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3",
+    "oracle_commit": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99",
+    "oracle_manifest_sha256": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46",
+    "q1_oracle_result_sha256": "03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768",
+    "q1_qualification_sha256": "8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c"
+  },
+  "a1": {
+    "commit": "914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3",
+    "tree": "26fb9fbb270d5a43cf575ce114b71f87306959de",
+    "parent": "785795af434299d2b6d25910eac2761208766b0d",
+    "freeze_record": "missions/023-field-001-idempotent-job-submission/a1-freeze.json",
+    "freeze_record_blob": "4d8bf030d5f122727f82dc160bb59a964536f040"
+  },
+  "oracle": {
+    "commit": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99",
+    "tree": "50ee0d3532eb7faaea7fe6e45909a3ae2533e138",
+    "manifest_sha256": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46",
+    "location": "SEQUESTERED — path not published before the terminal"
+  },
+  "q1_record": {
+    "custody": "SEQUESTERED outside the target and canonical repositories until the reveal after Q2",
+    "contracted_files": [
+      {
+        "name": "q1-oracle-result.json",
+        "sha256": "03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768"
+      },
+      {
+        "name": "q1-oracle-stdout.json",
+        "sha256": "5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0"
+      },
+      {
+        "name": "q1-baseline.txt",
+        "sha256": "63c89008f059822c07acb6af489df98736f7483d2945ce8f28e8c5846c478474"
+      },
+      {
+        "name": "q1-qualification.md",
+        "sha256": "8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c"
+      }
+    ],
+    "supplementary_files": [
+      "q1-oracle-run.txt",
+      "q1-oracle-stderr.txt"
+    ],
+    "supplementary_files_note": "written by the qualifier beyond the four contracted files and disclosed in its return ; not hashed individually here ; sealed by directory_seal",
+    "directory_seal": {
+      "sha256": "5a59b1a0cda61d328c094743807b8a62ed7d62bd989b08ef12ca749f5bcb8ceb",
+      "files": 6,
+      "method": "SHA-256 of the UTF-8 text made of one line per regular file of the sequestered q1 directory, sorted by file name, each line '<sha256 hex>  <file name>' followed by LF"
+    },
+    "publication_rule": "SHA-256 only ; no file size, no content, no verdict, no count, no outcome-correlated metadata"
+  },
+  "qualifier_return": {
+    "sha256": "ac1f99f274ff7cfd9fb87702a883c759d48ee1b9ffc12bda9a0a57b1187b88b9",
+    "custody": "SEQUESTERED with the Q1 record until the reveal — it names the sequestered location, which authority 104 forbids publishing before the terminal",
+    "provenance": "raw AGENT CCR LAB #67 return, transported by the human into the controller session, persisted verbatim (LF)"
+  },
+  "controller_mechanical_verification": {
+    "scope": "identities, cleanliness, presence and SHA-256 only ; no Q1 file opened, parsed or read by the controller ; the Q1 outcome is unknown to the controller",
+    "a1_identity": "target HEAD = A1 commit and tree, parent B0 ; committed and worktree bytes of the three A1 paths match the A1 freeze ; contract sha256 unchanged",
+    "target_state": "branch main only ; no remote ; no stash ; status empty including ignored files ; reflog holds the B0 and A1 commits only",
+    "oracle_state": "HEAD = oracle commit and tree ; no remote ; status empty including ignored files ; committed and worktree MANIFEST.sha256 match the committed sha256 ; 8 / 8 manifest file hashes recomputed",
+    "q1_files": "the four contracted files are present and their SHA-256 equal the returned values ; the Q1_COMMITMENT fields are consistent with them",
+    "q1_time": "every Q1 file was last modified after the A1 freeze",
+    "temporary_directories_left": 0,
+    "canonical_repository": "unchanged at d2c0a0e6c4c998339e4cdfd2e6f340c5e825ccdb before this record",
+    "status": "PASS"
+  },
+  "qualifier_boundary": {
+    "oracle_runs": "exactly one (reported)",
+    "git": "read-only (reported) ; 0 commit ; 0 push ; target and oracle unchanged (confirmed above)",
+    "disclosed_deviations": [
+      "the oracle error output was redirected to the additional file q1-oracle-stderr.txt so that no console output could reach the chat",
+      "the run metadata file q1-oracle-run.txt was written by the qualifier ; after the run the qualifier corrected one of its lines (the recorded working directory, altered by a shell escape) and added an in-file note ; the file is not among the Q1_COMMITMENT hashes and is sealed by the directory seal only",
+      "helper scripts in the qualifier's own session scratchpad (reported to hold no Q1 data) and a harness background-task output file (reported to hold the process exit status and a shell warning) lie outside the results directory ; not independently observable by the controller"
+    ],
+    "materiality": "NON-MATERIAL — no deviation touches the target, the oracle, the canonical repository or the four contracted files",
+    "status": "PASS WITH DISCLOSED NON-MATERIAL DEVIATIONS"
+  },
+  "sequestration_review": {
+    "qualifier_transcript": "no verdict, count, failing case, defect, file size, evidence volume, qualification text or outcome-correlated metadata disclosed",
+    "reported_exit_status": "not outcome-correlated — checked by the controller against the frozen oracle",
+    "controller_knowledge_of_outcome": "NONE",
+    "status": "PASS"
+  },
+  "time_order": {
+    "b0_committed_at": "2026-09-26T12:02:09+02:00",
+    "oracle_frozen_at": "2026-09-26T12:09:08+02:00",
+    "transaction_frozen_at": "2026-09-26T12:16:31+02:00",
+    "a1_frozen_at": "2026-09-26T17:14:13+02:00",
+    "q1_executed": "after the A1 freeze — every Q1 file last modified after a1_frozen_at",
+    "q1_commitment_published": "by the canonical commit that adds this record",
+    "c1_launched": "NOT YET — dispatched only after this record is pushed",
+    "order": "A1 FROZEN < Q1 EXECUTED AND SEALED < Q1_COMMITMENT PUBLISHED < C1 LAUNCHED"
+  },
+  "next": "Challenger C1 by AGENT CCR LAB #66 against the frozen A1 : common frozen input + exact A1 bytes + Author A1 return + Author tests ; no oracle, no Q1 result, no Q1-derived metadata, no qualifier notes"
+}
