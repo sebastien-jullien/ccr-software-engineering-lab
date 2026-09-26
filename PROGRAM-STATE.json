@@ -1898,11 +1898,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "handoff-routing-p-hr-01-legacy-v0-recognition-c1-refined-selected",
+      "question": "Sélectionner C-1 RAFFINÉE comme correction de compatibilité de P-HR-01, telle que matérialisée par 99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md, blob bc94cafba19d38de88e340c5168c37a5f89258be, correction sémantique nouvelle ratifiée par l'humain de la seule règle de discrimination de représentation de 98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md, blob fe4be140f6a90e84d25f14119889b7642989f1d7, pour le Mission Object V0 historique. Blocage résolu : aucun des 28 Mission Objects commis ne porte de membre representation, le schéma V0 est clos et l'autorité 98 ne gouvernait pas leur classification. Règle : un Mission Object est un V0 historique si et seulement si representation est absent, si ses octets exacts sont valides sous l'unique autorité V0 historique épinglée, 14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md, blob 7d634c855ab9de8c66a21c134b03de8f118c3de4, sha256 3db7c7298a4fc1109a99ac832770899d3fbb74a38acb14253f1fe7f578581912, et si aucun champ propre à V1, dont handoff_contract, n'est présent ; il est alors accepté sous la sémantique V0. Un Mission Object V1 est reconnu si et seulement si son representation.authority embarqué, REPO_PATH plus GIT_BLOB, égale exactement l'identité d'autorité V1 supportée, sans repli sur la validation historique. Tout autre cas est rejeté : representation absent avec validation V0 en échec, representation absent avec champ propre à V1, autorité inconnue, discordante ou non supportée, representation tentant d'identifier V0. Cette reconnaissance n'est pas une devinette de schéma : une seule autorité historique épinglée, aucun schéma concurrent cherché, validation exacte obligatoire, échec valant rejet, champs V1 interdits, aucune montée de version automatique, aucune décision par l'appelant ou le contexte. Octets V0 historiques, blobs de mission historiques et liaisons de source des Result Instances historiques inchangés ; conversions automatiques V0 vers V1 et V1 vers V0 interdites ; réécriture des missions historiques et ajout de representation.authority aux objets V0 interdits. C-2, C-3 et C-4 ne sont pas sélectionnées ; l'exhaustivité globale des options n'est pas revendiquée. L'interdiction de l'autorité 98 d'inférer le V0 autrement que par representation.authority est supplantée seulement dans la mesure nécessaire à cette règle ; tous les autres principes anti-devinette et toutes les autres sémantiques de l'autorité 98 demeurent, dont la conception de P-HR-01, l'activation par présence de champ dans V1, les domaines de valeurs fermés, le cycle de vie, le modèle de sources d'événements, RESULT_ADMISSION, les règles d'échec fermé et l'interdiction d'élargissement sémantique. L'autorisation d'implémentation demeure active ; le gel de la transaction d'implémentation devient l'autorité 100.",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-275",
+          "kind": "repo-path",
+          "ref": "99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:handoff-routing-p-hr-01-legacy-v0-recognition-c1-refined-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "bc94cafba19d38de88e340c5168c37a5f89258be"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "ORCHESTRATOR LAUNCHES ONE COMPLETE P-HR-01 BOUNDED IMPLEMENTATION PACKAGE UNDER AUTHORITY 98. NO INTERMEDIATE HUMAN OR COUNTER-EXPERT GATES. RETURN ONLY ON: COMPLETE QUALIFIED IMPLEMENTATION; HARD BLOCKER; GENUINE NEW MATERIAL SEMANTIC CHOICE. — L'orchestrateur lance un paquet complet d'implémentation bornée de P-HR-01 sous l'autorité 98, 98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md, blob fe4be140f6a90e84d25f14119889b7642989f1d7, strictement dans sa spécification normative finale. Le paquet comprend l'implémentation, tous les tests pertinents, la preuve de compatibilité V0, la preuve du comportement V1, les preuves des dix points d'intégration IP-01 à IP-10, la preuve d'échec fermé, la preuve d'absence de contournement de P_HR_01_RESULT_ADMISSION, la qualification de non-régression, les chemins modifiés, commits et poussées exacts et la preuve de frontière produit. Aucune porte humaine, contre-expertise, revue de conception ni mission locale d'acquisition de faits intermédiaire, sauf choix sémantique matériel authentiquement nouveau, qui ouvre une porte humaine, ou blocage dur de contrat ou technique, qui arrête avec le blocage exact ; sinon continuer jusqu'au terminal. Aucun élargissement sémantique ; aucune discrétion de l'implémenteur sur une règle sémantique ; un besoin de choix sémantique matériel nouveau est un arrêt dur, sans invention. Mission 022 aucune tant que le paquet d'implémentation n'est pas effectivement gelé comme conséquence gouvernée.",
+    "value": "RESUME THE ALREADY-AUTHORIZED P-HR-01 IMPLEMENTATION TRANSACTION UNDER THE C-1-REFINED COMPATIBILITY CORRECTION. NO NEW HUMAN GATE. NO NEW DESIGN STUDY. — Reprendre la transaction d'implémentation bornée de P-HR-01 déjà autorisée par l'autorité 98, 98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md, blob fe4be140f6a90e84d25f14119889b7642989f1d7, sous la correction de compatibilité C-1 raffinée de l'autorité 99, 99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md, blob bc94cafba19d38de88e340c5168c37a5f89258be : geler la transaction sous l'autorité 100 et la mission 022, puis l'exécuter jusqu'au terminal. V0 historique reconnu par representation absent, validation exacte sous l'autorité 14 épinglée, blob 7d634c855ab9de8c66a21c134b03de8f118c3de4, et aucun champ propre à V1 ; V1 reconnu par representation.authority embarqué exact ; tout autre cas rejeté. Aucune porte humaine, contre-expertise, revue de conception ni mission d'acquisition de faits intermédiaire, sauf choix sémantique matériel authentiquement nouveau ou blocage dur.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1919,17 +1940,17 @@
         }
       },
       {
-        "id": "ev-274",
+        "id": "ev-276",
         "kind": "repo-path",
-        "ref": "98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md",
+        "ref": "99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "ORCHESTRATOR LAUNCHES ONE COMPLETE P-HR-01 BOUNDED IMPLEMENTATION PACKAGE UNDER AUTHORITY 98. NO INTERMEDIATE HUMAN OR COUNTER-EXPERT GATES. RETURN ONLY ON: COMPLETE QUALIFIED IMPLEMENTATION; HARD BLOCKER; GENUINE NEW MATERIAL SEMANTIC CHOICE. — L'orchestrateur lance un paquet complet d'implémentation bornée de P-HR-01 sous l'autorité 98, 98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md, blob fe4be140f6a90e84d25f14119889b7642989f1d7, strictement dans sa spécification normative finale. Le paquet comprend l'implémentation, tous les tests pertinents, la preuve de compatibilité V0, la preuve du comportement V1, les preuves des dix points d'intégration IP-01 à IP-10, la preuve d'échec fermé, la preuve d'absence de contournement de P_HR_01_RESULT_ADMISSION, la qualification de non-régression, les chemins modifiés, commits et poussées exacts et la preuve de frontière produit. Aucune porte humaine, contre-expertise, revue de conception ni mission locale d'acquisition de faits intermédiaire, sauf choix sémantique matériel authentiquement nouveau, qui ouvre une porte humaine, ou blocage dur de contrat ou technique, qui arrête avec le blocage exact ; sinon continuer jusqu'au terminal. Aucun élargissement sémantique ; aucune discrétion de l'implémenteur sur une règle sémantique ; un besoin de choix sémantique matériel nouveau est un arrêt dur, sans invention. Mission 022 aucune tant que le paquet d'implémentation n'est pas effectivement gelé comme conséquence gouvernée."
+          "value": "RESUME THE ALREADY-AUTHORIZED P-HR-01 IMPLEMENTATION TRANSACTION UNDER THE C-1-REFINED COMPATIBILITY CORRECTION. NO NEW HUMAN GATE. NO NEW DESIGN STUDY. — Reprendre la transaction d'implémentation bornée de P-HR-01 déjà autorisée par l'autorité 98, 98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md, blob fe4be140f6a90e84d25f14119889b7642989f1d7, sous la correction de compatibilité C-1 raffinée de l'autorité 99, 99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md, blob bc94cafba19d38de88e340c5168c37a5f89258be : geler la transaction sous l'autorité 100 et la mission 022, puis l'exécuter jusqu'au terminal. V0 historique reconnu par representation absent, validation exacte sous l'autorité 14 épinglée, blob 7d634c855ab9de8c66a21c134b03de8f118c3de4, et aucun champ propre à V1 ; V1 reconnu par representation.authority embarqué exact ; tout autre cas rejeté. Aucune porte humaine, contre-expertise, revue de conception ni mission d'acquisition de faits intermédiaire, sauf choix sémantique matériel authentiquement nouveau ou blocage dur."
         },
         "observed": {
-          "blob": "fe4be140f6a90e84d25f14119889b7642989f1d7"
+          "blob": "bc94cafba19d38de88e340c5168c37a5f89258be"
         }
       }
     ]
