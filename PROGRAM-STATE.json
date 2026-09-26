@@ -1919,11 +1919,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "field-001-idempotent-job-submission-field-study-selected",
+      "question": "Sélectionner FIELD-001, soumission de jobs idempotente, comme prochaine étude de terrain CCR réaliste et bornée, telle que matérialisée par 103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md, blob fb885bca7a5ac876347b40c976021980939dfb0f : conception de tâche PASS, protocole expérimental PASS avec ses corrections ratifiées. Question : sur une petite tâche d'ingénierie non triviale, la revue croisée CCR améliore-t-elle matériellement le résultat à un coût de coordination observé acceptable ? Tâche petite mais non triviale, ni réparation de bogue, ni mini-SaaS, ni énigme artificielle, ni défaut délibérément semé, ni qualification de P-HR-01, ni choix de framework ; aucun défaut intentionnel. Cible Python 3, bibliothèque standard seule, http.server, sqlite3, unittest, dépôt local séparé sans remote ; ligne de base saine B0 immuable sans aucune idempotence ; contrat public ratifié de POST /jobs avec Idempotency-Key optionnelle, clé valide ^[A-Za-z0-9._:-]{1,128}$, 400 INVALID_IDEMPOTENCY_KEY, comportement sans clé inchangé, première soumission 201 non rejouée, rejeu identique 200 rejoué avec le même job, même clé et requête différente 409 IDEMPOTENCY_CONFLICT sans nouveau job ni relien, identité logique sur le modèle JSON accepté et non sur les octets, huit soumissions concurrentes identiques donnant un seul job, requêtes concurrentes concurrentes donnant au plus un job et une seule identité liée, échec de création 503 JOB_CREATE_FAILED sans empoisonner la clé, état d'idempotence durable au redémarrage, aucun repli silencieux vers un POST ordinaire. Oracle indépendant O-01 à O-12, créé avant l'auteur, séquestré hors du dépôt cible, sans remote, gelé et engagé publiquement par son seul hachage ; harnais de concurrence synchronisé par barrière, huit fils, une base partagée, jointure avant assertion, ni attente de correction ni nouvel essai jusqu'au succès, un verdict déterministe. Entrée commune gelée : octets de B0 et du contrat seulement. Rôles AGENT CCR LAB #65 auteur, #66 challenger, #67 qualificateur indépendant. Séquence B0, A1, Q1 caché avec engagement public sans issue, C1, A2 si constats matériels, C2 borné, Q2 avec le même oracle gelé ; au plus deux passes d'auteur et deux de challenger, aucune troisième boucle, un échec en Q2 consigné comme échec. Attribution séparée des défauts de première passe, constats vrais, faux ou non matériels, manques, corrections par revue croisée et auto-corrections ; valeur et charge spécifiques à CCR consignées séparément, sans score CCR agrégé ni ROI général ; aucune exigence de succès synthétique. Portes humaines seulement pour une ambiguïté de contrat ou un choix d'autorité authentiques. P-HR-01 n'est pas le sujet de l'étude.",
+      "state": "RATIFIED",
+      "evidence": [
+        {
+          "id": "ev-282",
+          "kind": "repo-path",
+          "ref": "103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md",
+          "policy": "VERIFIABLE",
+          "supports": {
+            "subject": "decision:field-001-idempotent-job-submission-field-study-selected",
+            "field": "state",
+            "value": "RATIFIED"
+          },
+          "observed": {
+            "blob": "fb885bca7a5ac876347b40c976021980939dfb0f"
+          }
+        }
+      ]
     }
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "NO AUTOMATIC P-HR-01 SUCCESSOR. FURTHER P-HR-01 WORK REQUIRES A NEW CONCRETE PRODUCT NEED, OPERATIONAL REQUIREMENT, OR EXPLICIT HUMAN DIRECTION. NO RELEASE / ROLLOUT IS AUTHORIZED BY THIS QUALIFICATION. — Aucun travail P-HR-01 automatique. L'implémentation est qualifiée PASS WITH LIMITATIONS par 102-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-INDEPENDENT-QUALIFICATION.md, blob a89c25b1c76cd060fd1f9606ea7273902bf15d90 ; la mission 022 est complète. Une exigence future de transport d'exécutant réel, d'attribution réelle de l'acteur de persistance, de continuité multi-session, d'usage réel démontré d'une mission V1 ou d'utilité produit aval démontrée serait une entrée nouvelle, sans faire échouer rétroactivement cette qualification. Aucune porte n'est ouverte automatiquement ; aucune release ni aucun déploiement n'est autorisé.",
+    "value": "BUILD AND FREEZE FIELD-001 B0, THE PUBLIC CONTRACT AND THE SEQUESTERED ORACLE, THEN FREEZE THE TRANSACTION UNDER AUTHORITY 104 AND MISSION 023. NO NEW CONCEPTUAL GATE. — Construire, dans un dépôt local séparé sans remote, la ligne de base saine B0 et le contrat public FIELD-001-CONTRACT.md, puis l'oracle O-01..O-12 dans un espace séquestré sans remote, gelé avant tout lancement de l'auteur ; vérifier B0, sa stabilité, l'absence d'idempotence, le contrat, l'oracle et son harnais de concurrence ; geler la transaction par l'autorité 104 et la mission 023 ; puis allouer l'AGENT CCR LAB #65 comme auteur, sous l'autorité 103, 103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md, blob fb885bca7a5ac876347b40c976021980939dfb0f. Aucune implémentation de FIELD-001 dans le dépôt CCR canonique ; aucun accès de l'auteur ou du challenger à l'oracle.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1940,31 +1961,17 @@
         }
       },
       {
-        "id": "ev-280",
+        "id": "ev-283",
         "kind": "repo-path",
-        "ref": "102-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-INDEPENDENT-QUALIFICATION.md",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "implementation_qualification",
-          "value": "Qualification indépendante ratifiée par l'humain du paquet d'implémentation complet de P-HR-01 / mission 022, matérialisée par 102-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-INDEPENDENT-QUALIFICATION.md, blob a89c25b1c76cd060fd1f9606ea7273902bf15d90, sur la preuve canonique missions/022-p-hr-01-bounded-implementation/implementation-evidence.json, blob 688b3016898a91b531a10b2575fd993033ebe09c, et le commit d'implémentation db7ed7716fc8764156ec1f9caaf577102ad68a2c : P-HR-01 IMPLEMENTATION PASS WITH LIMITATIONS, non inconditionnel ; défauts matériels de code ou de sémantique 0 ESTABLISHED ; octets d'implémentation présents et conformes sur les surfaces exercées ; tests ciblés PASS ; aucune nouvelle régression ; compatibilité V0 PASS ; représentation et contrat V1 PASS ; RESULT_ADMISSION implémentée ; non-contournement PASS ; frontière produit PASS ; élargissement sémantique NONE ESTABLISHED ; conformité opérationnelle de bout en bout NOT FULLY ESTABLISHED. IP-01 à IP-05 et IP-07 à IP-10 PASS ; frontière d'implémentation IP-06 PASS ; intégration IP-06 à un transport d'exécutant réel NOT_ESTABLISHED, aucun transport réel n'existant dans le dépôt, limitation de qualification et non défaut. Échec fermé PASS WITH ATTRIBUTION LIMITATION : FC-01 à FC-16 et FC-18 à FC-24 PASS ; garde logique de mauvais acteur FC-17 PASS ON EXERCISED MODEL ; attribution réelle de l'acteur de commit NOT_ESTABLISHED, non inférée d'une absence d'observation contraire. FC-14 : état de dispatch transitoire par conception gouvernante, reçu de dispatch durable exclu de P-HR-01, état perdu avant le retour donnant un arrêt, conformité PASS ; continuité multi-session non supportée par la conception gouvernante, utilité produit multi-session NOT_ESTABLISHED, limitation de conception et non défaut, sans réparation par persistance ou reçu. Consommateurs sémantiques aval actuels NONE ESTABLISHED, utilité aval réelle NOT DEMONSTRATED : la conformité de non-contournement n'est pas une utilité d'usage réel. Usage réel d'une mission V1 et transport d'exécutant réel non exercés ; utilité produit en usage réel NOT EVALUATED. Tests : 365 au total, 359 réussis, 6 échecs historiques de référence T-E1, T-E2, T-H1 à T-H4, 95 sur 95 nouveaux tests P-HR-01 réussis, reproduction en clone frais PASS ; tous les tests du dépôt ne passent pas. Aucune réparation requise sur la preuve actuelle, réouverture non justifiée, aucun successeur automatique d'implémentation, d'expérience ou de mission R&D, aucune release, aucun déploiement et aucune revendication d'utilité en production impliqués. Qualification matérialisée sans décision produit nouvelle."
-        },
-        "observed": {
-          "blob": "a89c25b1c76cd060fd1f9606ea7273902bf15d90"
-        }
-      },
-      {
-        "id": "ev-281",
-        "kind": "repo-path",
-        "ref": "102-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-INDEPENDENT-QUALIFICATION.md",
+        "ref": "103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "NO AUTOMATIC P-HR-01 SUCCESSOR. FURTHER P-HR-01 WORK REQUIRES A NEW CONCRETE PRODUCT NEED, OPERATIONAL REQUIREMENT, OR EXPLICIT HUMAN DIRECTION. NO RELEASE / ROLLOUT IS AUTHORIZED BY THIS QUALIFICATION. — Aucun travail P-HR-01 automatique. L'implémentation est qualifiée PASS WITH LIMITATIONS par 102-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-INDEPENDENT-QUALIFICATION.md, blob a89c25b1c76cd060fd1f9606ea7273902bf15d90 ; la mission 022 est complète. Une exigence future de transport d'exécutant réel, d'attribution réelle de l'acteur de persistance, de continuité multi-session, d'usage réel démontré d'une mission V1 ou d'utilité produit aval démontrée serait une entrée nouvelle, sans faire échouer rétroactivement cette qualification. Aucune porte n'est ouverte automatiquement ; aucune release ni aucun déploiement n'est autorisé."
+          "value": "BUILD AND FREEZE FIELD-001 B0, THE PUBLIC CONTRACT AND THE SEQUESTERED ORACLE, THEN FREEZE THE TRANSACTION UNDER AUTHORITY 104 AND MISSION 023. NO NEW CONCEPTUAL GATE. — Construire, dans un dépôt local séparé sans remote, la ligne de base saine B0 et le contrat public FIELD-001-CONTRACT.md, puis l'oracle O-01..O-12 dans un espace séquestré sans remote, gelé avant tout lancement de l'auteur ; vérifier B0, sa stabilité, l'absence d'idempotence, le contrat, l'oracle et son harnais de concurrence ; geler la transaction par l'autorité 104 et la mission 023 ; puis allouer l'AGENT CCR LAB #65 comme auteur, sous l'autorité 103, 103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md, blob fb885bca7a5ac876347b40c976021980939dfb0f. Aucune implémentation de FIELD-001 dans le dépôt CCR canonique ; aucun accès de l'auteur ou du challenger à l'oracle."
         },
         "observed": {
-          "blob": "a89c25b1c76cd060fd1f9606ea7273902bf15d90"
+          "blob": "fb885bca7a5ac876347b40c976021980939dfb0f"
         }
       }
     ]
