@@ -1,0 +1,1146 @@
+{
+  "artifact": "P_HR_01_IMPLEMENTATION_EVIDENCE",
+  "producer": "ORCHESTRATION (AGENT_CCR_LAB_1)",
+  "mission_logical_id": "022-p-hr-01-bounded-implementation",
+  "claim_domain": "PASS / FAIL / NOT_ESTABLISHED — every material claim with exact evidence ; missing evidence is NOT_ESTABLISHED, never PASS by assumption",
+  "non_equivalence": "IMPLEMENTATION BYTES ≠ SEMANTIC CONFORMANCE ≠ INTEGRATION COVERAGE ≠ NO-BYPASS PROOF ≠ V0 COMPATIBILITY — each evaluated separately below ; green tests are not taken as semantic conformance",
+  "identities": {
+    "authority_98": {
+      "path": "98-HANDOFF-ROUTING-P-HR-01-FINAL-NORMATIVE-SPECIFICATION-READINESS-AND-BOUNDED-IMPLEMENTATION-AUTHORIZATION.md",
+      "blob": "fe4be140f6a90e84d25f14119889b7642989f1d7",
+      "sha256": "79c68ba8354376ca52d7ab818577ccd83c82542c81b184657652537c89479b3b"
+    },
+    "authority_99": {
+      "path": "99-HANDOFF-ROUTING-P-HR-01-LEGACY-V0-RECOGNITION-COMPATIBILITY-CORRECTION.md",
+      "blob": "bc94cafba19d38de88e340c5168c37a5f89258be",
+      "sha256": "2eb07fcdb933cffcd29c636f80eb192d2aaf1194e115d8802bb159b5cd1620b1"
+    },
+    "authority_100": {
+      "path": "100-HANDOFF-ROUTING-P-HR-01-IMPLEMENTATION-TRANSACTION-FREEZE.md",
+      "blob": "74c08d3e562eaa348f8a975e94b03a4dd1ac710d",
+      "sha256": "69ac936bde6bb325c259ae83bfa9887ceb8e728be196e39e6ccfc2bfd383d59d"
+    },
+    "pinned_v0_authority_14": {
+      "path": "14-TOOLING-EXPERIMENT-002-MISSION-OBJECT-V0.md",
+      "blob": "7d634c855ab9de8c66a21c134b03de8f118c3de4",
+      "sha256": "3db7c7298a4fc1109a99ac832770899d3fbb74a38acb14253f1fe7f578581912"
+    },
+    "mission_022": {
+      "path": "missions/022-p-hr-01-bounded-implementation/mission.json",
+      "blob": "075b4581042fe88f00f45a6ad69ce5be91d2e03d",
+      "sha256": "57cf70ca238c1bc637826cffb3e7aef5188b57c2c7b250b2edcbe5aaf3ce1482"
+    },
+    "envelope_022": {
+      "path": "missions/022-p-hr-01-bounded-implementation/envelope.md",
+      "blob": "097c01c897f2cfa951882a3458baa8fb784acc8c",
+      "sha256": "7fb72895fb08560ecf215f523624b1abe2f8b1c6f003f052a2f2e9d36b0fc7ef"
+    },
+    "mission_object_v1_authority_101": {
+      "path": "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md",
+      "blob": "e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2",
+      "sha256": "b7ad52464db937d35afa98be63131ba46a57fd1dc4084a1db6fa69fabc6f5fa0",
+      "bytes": 17030,
+      "created_by": "AGENT_CCR_LAB_64",
+      "compiled_recognition_key": "tooling/mission-object/v1.mjs V1_AUTHORITY = { path, blob e9bb02cc… } — equal to the committed blob"
+    },
+    "result_022": {
+      "path": "missions/022-p-hr-01-bounded-implementation/result.json",
+      "blob": "e922098a05739c1700ad195a568f167edf1da103",
+      "sha256": "4debb71056a43fa3aba72cd45dbc28d3b94a72e301a60f59651002e7f7c9be89",
+      "bytes": 87274,
+      "CR": 0,
+      "BOM": false,
+      "final_LF": true,
+      "equals_executor_return": true
+    }
+  },
+  "transaction_commits": {
+    "a99_compatibility_correction": "abb76f10609935cc91a7b2001b749abf017c6970",
+    "a100_m022_freeze": "127b69dd5f09d9f6997ce864138a2a40e210c0db",
+    "implementation": {
+      "id": "db7ed7716fc8764156ec1f9caaf577102ad68a2c",
+      "parent": "127b69dd5f09d9f6997ce864138a2a40e210c0db",
+      "tree": "87557030b79504c93b6ec901e08ce8e9a827c58f",
+      "subject": "feat: implement bounded p-hr-01 handoff contract"
+    },
+    "final_evidence": "THE COMMIT THAT CARRIES THIS FILE"
+  },
+  "starting_baseline": {
+    "measured_at": "6c3c0aa73d7b3a9aa9dfd49fad755adac7bf4ea7 ; reconfirmed identical at abb76f10609935cc91a7b2001b749abf017c6970 and 127b69dd5f09d9f6997ce864138a2a40e210c0db",
+    "state_check": "node tooling/program-state/program-state.mjs check PROGRAM-STATE.json → exit 0, 0 material findings",
+    "suites": [
+      {
+        "command": "node --test tooling/program-state/tests/program-state.test.mjs",
+        "tests": 59,
+        "pass": 59,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/mission-object.test.mjs",
+        "tests": 46,
+        "pass": 46,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/qualification.test.mjs",
+        "tests": 20,
+        "pass": 20,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/result-instance/tests/result-instance.test.mjs",
+        "tests": 71,
+        "pass": 71,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/console/tests/console.test.mjs",
+        "tests": 74,
+        "pass": 68,
+        "fail": 6,
+        "failing": [
+          "T-E1",
+          "T-E2",
+          "T-H1",
+          "T-H2",
+          "T-H3",
+          "T-H4"
+        ]
+      }
+    ],
+    "totals": "270 tests / 264 pass / 6 fail",
+    "failures": {
+      "T-E1": "stale candidate-count constant (expected 5 ; observed count tracks the number of mission files)",
+      "T-E2": "stale candidate-count constant (expected 4 ; observed count tracks the number of result files)",
+      "T-H1": "CRLF core.autocrlf checkout-size mismatch (54357 vs 57018)",
+      "T-H2": "CRLF core.autocrlf checkout-size mismatch (32013 vs 33277)",
+      "T-H3": "CRLF core.autocrlf checkout-size mismatch (54357 vs 57018)",
+      "T-H4": "related HTTP 409 instead of 200"
+    },
+    "classification": "BASELINE TECHNICAL DEBT ≠ P-HR-01 REGRESSION ; not repaired"
+  },
+  "executor_boundary": {
+    "executor": "AGENT_CCR_LAB_64",
+    "executor_terminal": "IMPLEMENTATION_COMPLETE",
+    "executor_execution": "PASS",
+    "head_unchanged_at_freeze": "127b69dd5f09d9f6997ce864138a2a40e210c0db",
+    "executor_commits": 0,
+    "executor_pushes": 0,
+    "basis": "HEAD = origin/main = freeze commit at continuation ; reflog shows no commit after the freeze ; tracked diff empty ; ignored set = pre-existing entries only",
+    "paths_written": {
+      "new": [
+        "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md · 17030 octets · blob --no-filters e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2 · sha256 b7ad52464db937d35afa98be63131ba46a57fd1dc4084a1db6fa69fabc6f5fa0 · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/v1.mjs · 24638 octets · blob --no-filters 2df43786e9e8c16a3f86c59faa0bc80206233cc0 · sha256 88e7bf9ce721866b8394b138f3122643e6fc0881f3cc554db9774e7a5c159ca7 · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/p-hr-01.mjs · 26058 octets · blob --no-filters 7cce7be3882c2d0ca2da3ffc0534d354caa2662e · sha256 e4f5aa2c63157772c774ca073ad5e2b01fe3b571361a9622926030cefdbdd0fd · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/tests/v1.test.mjs · 28442 octets · blob --no-filters cd5b4d9d0649f741992ba57832f584f7099fb9ba · sha256 41599948734c16208edafccc7ebc404956ec3e9fe598dca95d59fdb75f7ad3e5 · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/tests/p-hr-01.test.mjs · 49532 octets · blob --no-filters 7deadd4b6515dba5798ba4c3a065a015e0480522 · sha256 461931dd49964a764752b36bfe8530c79d6e4950c92da8eb7989d8e95c0eeab2 · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/tests/v0-compatibility.test.mjs · 7797 octets · blob --no-filters 3c9176962bb44e4be9941b21fc076c4945e50c91 · sha256 6f782719b942ec482115caec0ff95ba82247fac2953884f216497b64fbe266ea · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/fixtures/p-hr-01/active/mission.json · 2626 octets · blob --no-filters 4d2860907ae0b8cab98f8f5d98fc6252e07b1b87 · sha256 0b130eae03b793f4c41ef2b5fb0eba06b129634832422bd6bb4702c71690b39f · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/fixtures/p-hr-01/active/envelope.md · 2092 octets · blob --no-filters 791ab5512fc1cebda6934d305a7f9181b2c012cd · sha256 6d3b44ceaf3956a1bbddb05e63ab1dc7bc12ce9af0eacdc80ebb4a1f8a8d5d4d · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/fixtures/p-hr-01/inactive/mission.json · 2343 octets · blob --no-filters 2e11253665eec9d4e427442b1a16bfbf06e7d5b1 · sha256 77edcc3fabd56cd662fabc516ab069d4d2ccb41e8df46e8b4337e9373f7dd726 · UTF-8 sans BOM · LF seul · LF final",
+        "tooling/mission-object/fixtures/p-hr-01/inactive/envelope.md · 1594 octets · blob --no-filters 4aac3fd52e30b4246795591ecf03f5f91b890fed · sha256 21c8270f145de8fa20813615af3fe8660103784046b0c476307caf65acdb6be6 · UTF-8 sans BOM · LF seul · LF final"
+      ],
+      "modified": []
+    },
+    "traceability": {
+      "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md": "IP-01 (V1 authority, authority 100 § 7, number 101)",
+      "tooling/mission-object/v1.mjs": "IP-01, IP-02, IP-10",
+      "tooling/mission-object/p-hr-01.mjs": "IP-03 .. IP-09",
+      "tooling/mission-object/tests/v1.test.mjs": "IP-01, IP-02, IP-10 tests",
+      "tooling/mission-object/tests/p-hr-01.test.mjs": "IP-03 .. IP-09, no-bypass, product-boundary tests",
+      "tooling/mission-object/tests/v0-compatibility.test.mjs": "V0 compatibility proof",
+      "tooling/mission-object/fixtures/p-hr-01/**": "IP-10 V1 fixtures (active / inactive)",
+      "missions/022-p-hr-01-bounded-implementation/result.json": "mission return"
+    },
+    "protected_identities_unchanged": "YES — authorities 14 / 98 / 99 / 100, M022 mission.json and envelope.md, PROGRAM-STATE.json, README.md byte-equal to the freeze commit",
+    "status": "PASS"
+  },
+  "implementation_bytes": {
+    "status": "PRESENT",
+    "committed_blobs_equal_executor_bytes": "YES — 11 of 11 index blobs = git hash-object --no-filters of the returned files",
+    "commit": "db7ed7716fc8764156ec1f9caaf577102ad68a2c"
+  },
+  "ip_matrix": {
+    "IP-01": {
+      "integration_point": "Mission Object V1 authority / representation",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md — autorité normative unique Mission Object V1 (racine numérotée, premier numéro libre 101 au HEAD de gel)",
+        "tooling/mission-object/v1.mjs · V1_AUTHORITY { path: 101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md, blob: e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2 } · PINNED_V0_AUTHORITY · V1_ONLY_FIELDS · INHERITED_ELEMENTS · v1Representation() · isExactV1Representation() · validateMissionObjectV1()",
+        "tooling/mission-object/p-hr-01.mjs · constructMissionObjectV1() : representation = v1Representation(), jamais fournie par l appelant"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #1 identité V1 = blob Git exact des octets de l autorité 101",
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #2 l autorité 101 porte P_HR_01, EXECUTOR_DISPATCH, P_HR_01_LINEAR_V1, ORCHESTRATION, les six événements et la lignée 98/99/100/14, et ne porte pas son propre blob",
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #3 encodage exact REPO_PATH + GIT_BLOB ; V1_ONLY_FIELDS = { representation, handoff_contract } ; 16 éléments hérités",
+        "NÉGATIF tooling/mission-object/tests/v1.test.mjs #4 13 variations de l encodage (blob, chemin, genres, membres additionnels, membre absent, null, chaîne, tableau) ne sont plus l identité V1",
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #9 #15 #16 V1 exact accepté, INACTIVE sans contrat, ACTIVE avec contrat valide",
+        "NÉGATIF tooling/mission-object/tests/v1.test.mjs #25 élément de premier niveau inconnu dans un V1 refusé (schéma clos)",
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #4 construction V1 : representation exacte, octets LF, blob calculé",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #53 un V1 construit reste refusé par le validateur V0"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : Mission Object V1 = 16 éléments hérités (sémantique V0 incorporée par référence à l autorité 14 épinglée) + representation (requis) + handoff_contract (optionnel) ; aucun autre champ propre à V1 ; schéma clos",
+        "SÉMANTIQUE : clé de reconnaissance V1 = REPO_PATH 101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md + GIT_BLOB e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2 (git hash-object --no-filters, 17030 octets, CR 0, sha256 b7ad52464db937d35afa98be63131ba46a57fd1dc4084a1db6fa69fabc6f5fa0)",
+        "CHOIX TECHNIQUE (A98 § 21 / A100 § 7) : chemin = autorité racine numérotée 101 ; encodage JSON de representation = convention existante du dépôt (Result Instance v0 representation.authority, Mission Object V0 references locator/identity), égalité exacte, aucun membre additionnel",
+        "SÉMANTIQUE : les champs hérités d un V1 sont validés par tooling/mission-object/validate.mjs validate() INCHANGÉ (blob 8dd06a2a1a2b7869f11456cf6a809dfad69f1a79), appliqué à la projection des champs hérités ; aucune règle V0 réécrite",
+        "FAIT : un document ne peut porter son propre blob ; le blob est porté par l outillage (V1_AUTHORITY) et vérifié par test contre les octets",
+        "RÉSULTAT : tooling/mission-object/tests/v1.test.mjs 36 / 36 / 0"
+      ],
+      "named_tests_at_implementation_commit": [
+        "v1.test.mjs · IP-01 : l’identité V1 supportée est l’identité Git-blob exacte de l’autorité 101",
+        "v1.test.mjs · IP-01 : l’autorité 101 porte le contrat P-HR-01 et ne porte pas sa propre empreinte",
+        "v1.test.mjs · IP-01 : l’encodage de representation est exactement REPO_PATH + GIT_BLOB de l’autorité 101",
+        "v1.test.mjs · IP-01 : toute variation de l’encodage n’est plus l’identité V1"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-02": {
+      "integration_point": "V0 / V1 discrimination and compatibility (C-1 REFINED CASES A..F)",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/v1.mjs · recognizeRepresentation(object) : table C-1 RAFFINÉE, cas A..F, arité 1",
+        "tooling/mission-object/v1.mjs · acceptMissionObject(object, { missionPath }) : point d entrée V1-capable (A accepté LEGACY_V0 / D validé V1 / B C E F rejetés)",
+        "tooling/mission-object/v1.mjs · inheritedFields(object) : projection transitoire des champs hérités, jamais reconnue ni dispatchée comme V0 · identifiesV0 (interne, cas F)",
+        "tooling/mission-object/validate.mjs · validate() : validateur V0 épinglé, employé tel quel, non modifié"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #5 #6 CAS A (objet minimal et 3 références historiques)",
+        "NÉGATIF tooling/mission-object/tests/v1.test.mjs #7 CAS B (4 violations V0, 4 non-objets) · #8 CAS C · #10 CAS E (9 formes) · #11 CAS F (3 formes)",
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #9 CAS D",
+        "NÉGATIF tooling/mission-object/tests/v1.test.mjs #12 aucune retombée V1 → V0 (E valide sous V0 reste E ; D invalide reste D rejeté)",
+        "NÉGATIF tooling/mission-object/tests/v1.test.mjs #13 aucune discrimination par chemin ou contexte · #14 aucune fonction de conversion exportée",
+        "NÉGATIF tooling/mission-object/tests/v1.test.mjs #26 #27 un chemin V0 seulement (validateur V0, panneaux B et C de la console) refuse un V1",
+        "POSITIF tooling/mission-object/tests/v0-compatibility.test.mjs #1 #2 #3 les 29 Mission Objects commis au HEAD de gel : CAS A, acceptés, objets inchangés, P-HR-01 non synthétisé",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #16 V0, V1 inactif, CAS C et CAS E n entrent jamais dans la transaction P-HR-01"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : representation ABSENTE → champ propre à V1 présent ⇒ C ; sinon validation V0 épinglée FAIL ⇒ B ; sinon ⇒ A (LEGACY_V0, sémantique V0, P-HR-01 NOT_APPLICABLE)",
+        "SÉMANTIQUE : representation PRÉSENTE → identité V1 exacte ⇒ D ; autorité désignant l autorité 14 par REPO_PATH ou GIT_BLOB ⇒ F ; tout le reste (inconnue, discordante, malformée, membre additionnel) ⇒ E ; aucune validation V0 tentée",
+        "CHOIX TECHNIQUE : C est évalué avant B pour nommer la cause exacte ; les deux rejettent",
+        "SÉMANTIQUE : aucune conversion V0 → V1 ni V1 → V0 ; aucun objet reçu modifié (sérialisation avant/après identique) ; aucune representation ajoutée à un objet historique",
+        "RÉSULTAT : 29 / 29 Mission Objects commis au HEAD de gel reconnus CAS A et acceptés"
+      ],
+      "named_tests_at_implementation_commit": [
+        "v1.test.mjs · IP-02 : la reconnaissance V1 ne retombe jamais sur la validation V0",
+        "v1.test.mjs · IP-02 : aucune discrimination par l’appelant ou le contexte",
+        "v1.test.mjs · IP-02 : aucune fonction de conversion n’existe dans le module V1"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-03": {
+      "integration_point": "P-HR-01 resolver",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/p-hr-01.mjs · resolveHandoffContract(missionPath) : résolveur P-HR-01",
+        "tooling/mission-object/v1.mjs · canonicalReturnDestination(missionPath) : dérivation du result.json du répertoire de mission.json",
+        "tooling/mission-object/p-hr-01.mjs · constructMissionObjectV1({ fields, missionPath, pHr01 }) : construction V1 (point d application de HANDOFF_RESOLVED)",
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.resolveAndConstruct({ missionPath, fields }) : établit HANDOFF_RESOLVED"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #1 cinq valeurs exactes, destination dérivée, contrat gelé",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #2 aucune valeur choisie par l appelant (arité 1, arguments supplémentaires sans effet, representation / handoff_contract fournis → CALLER_SELECTED_V1_FIELD)",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #3 chemin de mission non canonique (6 formes) → MISSION_PATH_INVALID",
+        "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #4 construction active et inactive ; pHr01 non booléen et champs hérités invalides → MISSION_OBJECT_V1_INVALID",
+        "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #5 HANDOFF_RESOLVED établi seulement en cas de succès ; deuxième résolution → EVENT_ALREADY_ESTABLISHED"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : seule entrée = chemin relatif au dépôt du mission.json ; version = P_HR_01, next_control_stage = EXECUTOR_DISPATCH, stage_ordering_dependency = P_HR_01_LINEAR_V1, persistence_ownership = ORCHESTRATION, return_destination = <répertoire de mission.json>/result.json",
+        "CHOIX TECHNIQUE : encodage JSON au premier niveau, cinq membres chaînes (forme logique A98 § 11) ; le fichier porteur doit s appeler mission.json (lecture littérale de « same directory as mission.json »)",
+        "SÉMANTIQUE : aucune inférence de prose, aucune valeur choisie par l appelant, aucune dualité source / résolu",
+        "RÉSULTAT : tests #1 à #5 PASS"
+      ],
+      "named_tests_at_implementation_commit": [
+        "p-hr-01.test.mjs · IP-03 : le résolveur rend les cinq valeurs exactes, dérivées du seul chemin de mission",
+        "p-hr-01.test.mjs · IP-03 : aucune valeur choisie par l’appelant",
+        "p-hr-01.test.mjs · IP-03 : chemin de mission non canonique → STOP",
+        "p-hr-01.test.mjs · IP-03 : construction V1 — représentation exacte, contrat résolu, octets et identité",
+        "p-hr-01.test.mjs · IP-03 : HANDOFF_RESOLVED établi par le résolveur, appliqué par la construction, et seulement en cas de succès"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-04": {
+      "integration_point": "Mission freeze verification",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.verifyFreeze({ commit = HEAD }) : établit MISSION_FROZEN",
+        "tooling/mission-object/p-hr-01.mjs · lecture d historique en liste blanche : resolveCommit (rev-parse --verify), blobAt (ls-tree -z --full-tree), readBlob (cat-file blob + contrôle d identité), isAncestor (merge-base --is-ancestor)"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #6 identité commise exacte (chemin, blob, commit), contrat = contrat résolu",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #7 copie de travail seule / enveloppe rendue seule → MISSION_NOT_IN_CANONICAL_HISTORY",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #8 gel sans HANDOFF_RESOLVED → UNKNOWN_PREDECESSOR",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #9 à #15 contrat commis défectueux (FC-04 à FC-10) → arrêt avec le code exact",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #16 V0, V1 inactif, CAS C, CAS E commis → P_HR_01_NOT_ACTIVE / code de reconnaissance"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : MISSION_FROZEN exige HANDOFF_RESOLVED ; octets lus dans l historique canonique (jamais la copie de travail), validés sur ces octets exacts (UTF-8 strict, CAS D, validation V1 complète, P-HR-01 ACTIVE), contrat commis = contrat résolu ; identité enregistrée { chemin, blob, commit, sha256 } puis employée par le dispatch et la liaison de source",
+        "SÉMANTIQUE : la mission gelée est gelée en profondeur en mémoire",
+        "RÉSULTAT : 11 tests PASS contre de vrais dépôts Git temporaires"
+      ],
+      "named_tests_at_implementation_commit": [
+        "p-hr-01.test.mjs · IP-04 : MISSION_FROZEN = identité commise exacte d’un V1 validé et actif",
+        "p-hr-01.test.mjs · IP-04 / FC-13 : une copie de travail seule, ou une enveloppe rendue, n’est pas un gel",
+        "p-hr-01.test.mjs · IP-04 : le gel exige HANDOFF_RESOLVED dans l’état faisant autorité",
+        "p-hr-01.test.mjs · IP-04 / FC-02 / FC-03 : un V0, un V1 inactif ou une représentation rejetée n’entrent jamais dans P-HR-01"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-05": {
+      "integration_point": "pre-dispatch requested-operation assertion guard",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.assertPreDispatch(requestedOperation) → { asserted: true } seulement",
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run #assertFrozenUnchanged(commit) : commit de gel ancêtre du HEAD et blob de mission inchangé"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #17 la garde affirme seulement : verdict gelé { asserted: true }, aucun événement",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #18 FC-12 : 6 genres ≠ EXECUTOR_DISPATCH → REQUESTED_OPERATION_MISMATCH, opération de dispatch jamais invoquée",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #19 mission demandée ≠ mission gelée → FROZEN_IDENTITY_MISMATCH · #20 contrat muté dans l historique après gel → CONTRACT_MUTATED_AFTER_FREEZE",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #22 next_consequences, procédure et PROGRAM-STATE « annonçant » une autre étape : verdict inchangé ; code exécutable sans PROGRAM-STATE, next_consequences, procedure, steps, effects"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : requested_operation.kind est l opération que l orchestration demande réellement ; il DOIT égaler EXECUTOR_DISPATCH et handoff_contract.next_control_stage ; sinon arrêt, aucun dispatch par P-HR-01",
+        "SÉMANTIQUE : la garde ne sélectionne, ne rend, ne déclenche ni n ordonnance aucune opération ; elle ne lit ni PROGRAM-STATE, ni next_consequences, ni procedure",
+        "RÉSULTAT : 5 tests PASS"
+      ],
+      "named_tests_at_implementation_commit": [
+        "p-hr-01.test.mjs · IP-05 : la garde affirme seulement — elle ne choisit, ne rend ni ne déclenche aucune opération",
+        "p-hr-01.test.mjs · IP-05 / FC-12 : opération demandée ≠ EXECUTOR_DISPATCH → STOP, aucun dispatch",
+        "p-hr-01.test.mjs · IP-05 / FC-11 : la mission demandée n’est pas la mission gelée → STOP"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-06": {
+      "integration_point": "actual executor-dispatch event observation",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.dispatch(requestedOperation, performDispatch) : garde IP-05, puis opération de dispatch effective, puis EXECUTOR_DISPATCHED"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #23 événement établi seulement APRÈS le succès de l opération ; charge utile = identité gelée, contrat gelé, octets commis exacts",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #24 opération en échec → DISPATCH_FAILED, aucun événement ; « dispatchable » ≠ dispatché ; opération absente → DISPATCH_OPERATION_REQUIRED",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #25 deux dispatchs concurrents → DISPATCH_IN_PROGRESS ; second dispatch → EVENT_ALREADY_ESTABLISHED (#23)",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #26 FC-13 : dispatch avant gel → UNKNOWN_PREDECESSOR, opération jamais invoquée"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : SOURCE = succès de l opération d intégration de dispatch effective, observé par la frontière qui l exécute ; envelope ou garde réussie ≠ dispatché",
+        "FAIT : le dépôt ne contient aucun transport d exécutant automatisé (le dispatch y est un transport manuel) ; la frontière enveloppe l opération que l orchestration fournit ; preuve par opération de test en processus",
+        "SÉMANTIQUE : état faisant autorité = instance PHr01Run en mémoire ; aucun reçu de dispatch durable (aucune écriture de fichier)",
+        "RÉSULTAT : 4 tests PASS"
+      ],
+      "named_tests_at_implementation_commit": [
+        "p-hr-01.test.mjs · IP-06 : EXECUTOR_DISPATCHED n’est établi qu’après le succès de l’opération de dispatch effective",
+        "p-hr-01.test.mjs · IP-06 : un dispatch échoué n’établit rien ; « dispatchable » n’est pas dispatché",
+        "p-hr-01.test.mjs · IP-06 : deux dispatchs concurrents → STOP",
+        "p-hr-01.test.mjs · IP-06 / FC-13 : dispatch avant gel → STOP, opération jamais invoquée"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it",
+      "real_executor_transport_integration": "NOT_ESTABLISHED — the repository contains no automated executor transport (dispatch is manual transport) ; the observation boundary PHr01Run#dispatch records EXECUTOR_DISPATCHED only after a caller-supplied actual dispatch operation succeeds, proven with an in-process test operation"
+    },
+    "IP-07": {
+      "integration_point": "executor-return ingest validation",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.ingestReturn({ path, bytes, commit = HEAD }) : établit EXECUTOR_RETURNED",
+        "tooling/mission-object/p-hr-01.mjs · parseResultInstance / sourceMatches (internes) ; réemploi inchangé de tooling/result-instance/result-instance.mjs parse() et tooling/result-instance/validate.mjs validate(), validateAgainstContract()"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #27 retour au chemin exact, validé, adossé à la mission gelée ; sha256 enregistré",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #28 FC-14 · #29 FC-15 · #30 FC-08 (5 chemins) · #31 FC-16 (6 formes) · #34 FC-17 / FC-18",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #32 Result Instance illisible, BOM, UTF-8 invalide, structure invalide, hors domaine, exigence inconnue, sans contrat de retour, vide, non binaire → RESULT_INSTANCE_INVALID",
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #33 valeurs de handoff rapportées par l exécutant sans effet : le contrat gelé seul fait foi"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : exige EXECUTOR_DISPATCHED dans l état faisant autorité ; chemin reçu = return_destination gelée ; UTF-8 strict ; Result Instance structurellement valide ; source.kind = MISSION ; source.authority ET return_contract.authority = { REPO_PATH, GIT_BLOB } exacts de la mission V1 gelée ; relation de contrat de retour valide ; aucune reconstruction C2",
+        "CHOIX TECHNIQUE (fail closed) : si l historique canonique porte déjà le chemin de retour au moment de l ingestion → RESULT_PERSISTED_BEFORE_VALIDATED_RETURN",
+        "RÉSULTAT : 8 tests PASS"
+      ],
+      "named_tests_at_implementation_commit": [
+        "p-hr-01.test.mjs · IP-07 : EXECUTOR_RETURNED — retour reçu au chemin exact, validé, adossé à la mission gelée",
+        "p-hr-01.test.mjs · IP-07 : un Result Instance illisible, invalide ou hors contrat → STOP",
+        "p-hr-01.test.mjs · IP-07 : aucune valeur de handoff n’est reconstruite depuis le résultat"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-08": {
+      "integration_point": "orchestration result-persistence guard",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.verifyPersistence({ actor, commit = HEAD }) : établit RESULT_PERSISTED"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #35 identité commise = blob des octets retournés, acteur ORCHESTRATION",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #36 FC-17 : acteurs EXECUTOR, orchestration, AGENT_CCR_LAB_FIXTURE, absent → WRONG_PERSISTENCE_ACTOR",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #37 FC-18 : persistance avant retour validé → UNKNOWN_PREDECESSOR",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #38 résultat validé non commis → RESULT_NOT_PERSISTED ; octets CRLF commis → PERSISTED_BYTES_MISMATCH",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #39 FC-11 : mission modifiée dans le commit de persistance → CONTRACT_MUTATED_AFTER_FREEZE"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : exige EXECUTOR_RETURNED ; acteur = ORCHESTRATION = persistence_ownership gelé ; commit de gel ancêtre du commit de persistance ; mission gelée inchangée ; blob commis au chemin de retour = blob des octets retournés exacts",
+        "SÉMANTIQUE : valider n est pas persister ; la persistance (commit) est un acte d orchestration hors outillage, l outillage en établit l identité canonique",
+        "RÉSULTAT : 5 tests PASS"
+      ],
+      "named_tests_at_implementation_commit": [
+        "p-hr-01.test.mjs · IP-08 : RESULT_PERSISTED = identité commise des octets retournés exacts, par l’orchestration",
+        "p-hr-01.test.mjs · IP-08 : un résultat validé mais non commis n’est pas persisté ; des octets différents non plus"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-09": {
+      "integration_point": "P_HR_01_RESULT_ADMISSION",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.admit({ mission, result }) : P_HR_01_RESULT_ADMISSION, établit RESULT_CONSUMED",
+        "tooling/mission-object/p-hr-01.mjs · requireAcceptedResult(candidate) : seule entrée de consommation sémantique aval · isAcceptedResult(candidate) · ACCEPTED_RESULTS (WeakSet privé)"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/p-hr-01.test.mjs #40 handle immuable ; cycle complet de six événements ; seconde admission → même handle, aucun événement",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #41 FC-19 : admission avant persistance, puis après commit non vérifié → ADMISSION_BEFORE_PERSISTENCE ; instance neuve → UNKNOWN_PREDECESSOR",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #42 identités inexactes → FROZEN_IDENTITY_MISMATCH / RETURN_DESTINATION_MISMATCH / PERSISTED_BLOB_MISMATCH",
+        "NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #43 FC-20 : 9 contrefaçons → CONTRACT_VIOLATION",
+        "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #47 preuve dynamique de non-contournement · #49 unique point d émission du handle"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : reçoit l identité exacte de la mission V1 gelée et l identité exacte du Result Instance commis ; établit P-HR-01 ACTIVE, correspondance de source (relue sur les octets commis), correspondance de chemin de retour, RESULT_PERSISTED observé, blob persisté = blob retourné ; alors seulement handle immuable",
+        "SÉMANTIQUE : RESULT_CONSUMED = première admission réussie ; frontière logique, aucune représentation durable",
+        "RÉSULTAT : 6 tests PASS"
+      ],
+      "named_tests_at_implementation_commit": [
+        "p-hr-01.test.mjs · IP-09 : admission — handle immuable, RESULT_CONSUMED à la première admission, cycle complet",
+        "p-hr-01.test.mjs · IP-09 : l’admission exige les identités exactes"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    },
+    "IP-10": {
+      "integration_point": "deterministic rendering / inspection / validation / test coverage",
+      "status": "PASS",
+      "reported_paths_and_symbols": [
+        "tooling/mission-object/v1.mjs · renderMissionObjectV1() · renderAccepted() · normativeElementsV1() · renderCoverageV1() · inspect() · main() (CLI : node tooling/mission-object/v1.mjs inspect|render <mission.json> [--mission-path <chemin>])",
+        "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.events() : journal de transaction en lecture seule",
+        "tooling/mission-object/fixtures/p-hr-01/active/{mission.json,envelope.md} · tooling/mission-object/fixtures/p-hr-01/inactive/{mission.json,envelope.md}",
+        "tooling/mission-object/tests/v1.test.mjs · tooling/mission-object/tests/p-hr-01.test.mjs · tooling/mission-object/tests/v0-compatibility.test.mjs"
+      ],
+      "reported_tests": [
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #28 à #33 fixtures acceptées ; rendu déterministe = enveloppes de référence ; indépendant de TZ / LANG ; champs hérités rendus par le rendu V0 inchangé ; couverture de rendu complète ; LEGACY V0 rendu octet pour octet",
+        "NÉGATIF tooling/mission-object/tests/v1.test.mjs #34 aucun rendu d un objet non accepté",
+        "POSITIF tooling/mission-object/tests/v1.test.mjs #35 inspection déterministe · #36 CLI inspect / render (codes 0, 1, 2)",
+        "POSITIF tooling/mission-object/tests/v0-compatibility.test.mjs #4 26 enveloppes historiques reproduites octet pour octet par le rendu V1-capable",
+        "POSITIF / NÉGATIF tooling/mission-object/tests/p-hr-01.test.mjs #44 #45 #46 cycle de vie exact, aucun enregistreur générique, prédécesseur inconnu → STOP à chaque étape"
+      ],
+      "reported_semantics_and_evidence": [
+        "SÉMANTIQUE : rendu V1 = rendu V0 inchangé des champs hérités + sections REPRÉSENTATION et P-HR-01 insérées après l identité ; trace et couverture dérivées du schéma",
+        "RÉSULTAT : suites ciblées 95 / 95 / 0 ; couverture IP-01..IP-10 cartographiée test par test"
+      ],
+      "named_tests_at_implementation_commit": [
+        "v1.test.mjs · IP-10 : les fixtures V1 sont acceptées avec l’état P-HR-01 attendu",
+        "v1.test.mjs · IP-10 : rendu V1 déterministe, identique à l’enveloppe de référence",
+        "v1.test.mjs · IP-10 : le rendu V1 ne dépend d’aucun état d’environnement étranger",
+        "v1.test.mjs · IP-10 : les champs hérités sont rendus par le rendu V0 inchangé, les sections V1 seulement insérées",
+        "v1.test.mjs · IP-10 : couverture de rendu V1 complète — aucun élément omis, inventé ou vide",
+        "v1.test.mjs · IP-10 : le rendu V1-capable rend un LEGACY V0 par le rendu V0, octet pour octet",
+        "v1.test.mjs · IP-10 : le rendu refuse tout objet non accepté — rien n’est rendu",
+        "v1.test.mjs · IP-10 : inspection déterministe",
+        "v1.test.mjs · IP-10 : CLI inspect et render"
+      ],
+      "orchestration_verification": "PASS — code reviewed against authorities 98 / 99 / 100 ; named tests green in the worktree before commit, at the implementation commit and in a fresh clone of it"
+    }
+  },
+  "recognition_cases": {
+    "CASE_A": {
+      "status": "PASS"
+    },
+    "CASE_B": {
+      "status": "PASS"
+    },
+    "CASE_C": {
+      "status": "PASS"
+    },
+    "CASE_D": {
+      "status": "PASS"
+    },
+    "CASE_E": {
+      "status": "PASS"
+    },
+    "CASE_F": {
+      "status": "PASS"
+    }
+  },
+  "recognition_independent_probe": {
+    "case_A": "29 of 29 historical committed Mission Objects",
+    "case_B": "false/B/-/LEGACY_V0_VALIDATION_FAILED",
+    "case_C": "false/C/-/V1_ONLY_FIELD_WITHOUT_REPRESENTATION",
+    "case_D_active": "true/D/ACTIVE",
+    "case_D_inactive": "true/D/INACTIVE",
+    "case_E": "false/E/-/UNKNOWN_REPRESENTATION",
+    "case_F": "false/F/-/REPRESENTATION_IDENTIFIES_V0"
+  },
+  "v0_compatibility": {
+    "status": "PASS",
+    "executor_reported": {
+      "status": "PASS",
+      "scope": [
+        "OCTET POUR OCTET : 26 enveloppes commises au HEAD de gel 127b69d = render() et renderAccepted() de leurs 26 Mission Objects (tooling/mission-object/tests/v0-compatibility.test.mjs #4)",
+        "OCTET POUR OCTET : blob HEAD = blob du HEAD de gel pour les 29 Mission Objects, enveloppes, résultats, dogfoods, mission-object.mjs, validate.mjs, render.mjs, fixtures de référence, tests V0, result-instance.mjs, validate.mjs (Result Instance), mission-adapter.mjs, result-adapter.mjs, autorités 14 et 23 (tooling/mission-object/tests/v0-compatibility.test.mjs #6) ; git diff --name-only = 0 chemin suivi modifié",
+        "OCTET POUR OCTET : objets reçus non modifiés par la reconnaissance ; aucun representation ni handoff_contract ajouté (tooling/mission-object/tests/v0-compatibility.test.mjs #2 #3)",
+        "IDENTITÉ DE VERDICT : le verdict du CAS A est l objet rendu par validate() V0 inchangé, { ok: true, errors: [] } pour les 29 (tooling/mission-object/tests/v0-compatibility.test.mjs #2)",
+        "ÉQUIVALENCE SÉMANTIQUE SEULEMENT : un chemin V0 seulement refuse un V1 par le refus de schéma clos existant (« élément de premier niveau inconnu ») nommant representation et handoff_contract ; le libellé n est pas « unsupported representation » ; le code V0 n est pas modifié",
+        "COMPORTEMENT IDENTIQUE (code Result Instance inchangé octet pour octet) : 24 Result Instances historiques : structure PASS, contrat PASS, liaison de source = blob commis de leur mission, au HEAD de gel et au HEAD (tooling/mission-object/tests/v0-compatibility.test.mjs #5)",
+        "NON REVENDIQUÉ : objets V0 hors des 29 commis au HEAD de gel ; copies de travail CRLF (toutes les preuves lisent les octets commis)"
+      ]
+    },
+    "orchestration_independent": {
+      "committed_mission_objects_at_implementation_commit": 31,
+      "historical_recognized_case_A_and_accepted": 29,
+      "v1_capable_render_equals_v0_render": 29,
+      "committed_envelopes_byte_identical_to_render": "26 of 26",
+      "non_v0_objects": [
+        "tooling/mission-object/fixtures/p-hr-01/active/mission.json:D:true:ACTIVE",
+        "tooling/mission-object/fixtures/p-hr-01/inactive/mission.json:D:true:INACTIVE"
+      ],
+      "result_022_validation": "STRUCTURE PASS · CONTRAT PASS · 126 relations",
+      "historical_bytes_unchanged": "YES — no tracked file modified by the implementation commit (11 additions only)"
+    },
+    "byte_versus_semantic": "byte-for-byte : V0 rendering and the 26 committed envelopes ; semantic only : a V0-only path rejects a V1 object through the unchanged closed-schema refusal naming representation / handoff_contract, not through an « unsupported representation » wording"
+  },
+  "v1_behavior": {
+    "status": "PASS",
+    "executor_reported": {
+      "status": "PASS"
+    },
+    "orchestration_independent_probe": {
+      "active": "true/D/ACTIVE",
+      "inactive": "true/D/INACTIVE",
+      "contract": "{\"version\":\"P_HR_01\",\"next_control_stage\":\"EXECUTOR_DISPATCH\",\"return_destination\":\"missions/099-probe/result.json\",\"stage_ordering_dependency\":\"P_HR_01_LINEAR_V1\",\"persistence_ownership\":\"ORCHESTRATION\"}",
+      "bad_version": "false/D/-/UNKNOWN_P_HR_VERSION",
+      "bad_next_control_stage": "false/D/-/NEXT_CONTROL_STAGE_MISMATCH",
+      "bad_stage_ordering_dependency": "false/D/-/ORDERING_MISMATCH",
+      "bad_persistence_ownership": "false/D/-/PERSISTENCE_OWNER_MISMATCH",
+      "rd missions/other/result.json": "false/D/-/RETURN_DESTINATION_MISMATCH",
+      "rd /abs/result.json": "false/D/-/RETURN_DESTINATION_MISMATCH",
+      "rd missions/099-probe/../099-probe/result.json": "false/D/-/RETURN_DESTINATION_MISMATCH",
+      "rd missions\\099-probe\\result.json": "false/D/-/RETURN_DESTINATION_MISMATCH",
+      "rd missions/099-probe/out.json": "false/D/-/RETURN_DESTINATION_MISMATCH",
+      "incomplete": "false/D/-/HANDOFF_CONTRACT_INCOMPLETE",
+      "extra_member": "false/D/-/HANDOFF_CONTRACT_MALFORMED",
+      "non_string": "false/D/-/HANDOFF_CONTRACT_MALFORMED",
+      "active_without_missionPath": "false/D/-/HANDOFF_CONTEXT_REQUIRED",
+      "case_E_blob": "false/E/-/UNKNOWN_REPRESENTATION",
+      "case_F_path": "false/F/-/REPRESENTATION_IDENTIFIES_V0",
+      "case_C": "false/C/-/V1_ONLY_FIELD_WITHOUT_REPRESENTATION",
+      "case_B": "false/B/-/LEGACY_V0_VALIDATION_FAILED",
+      "v1_inherited_invalid": "false/D/-/INHERITED_FIELD_INVALID",
+      "v0_only_validator_on_active_v1": "false/representation,handoff_contract",
+      "v0_only_validator_on_inactive_v1": false,
+      "caller_selected_contract": "CALLER_SELECTED_V1_FIELD",
+      "forged_handle": "CONTRACT_VIOLATION"
+    }
+  },
+  "lifecycle": {
+    "status": "PASS",
+    "review": "PHr01Run records the six P_HR_01_LINEAR_V1 events through one private recorder in strict order, once each ; unknown predecessor stops ; no reconstruction"
+  },
+  "next_control_stage": {
+    "status": "PASS",
+    "review": "used only as closed-domain constant, domain check, resolver output, display, and the assertion requested_operation.kind === EXECUTOR_DISPATCH ; it selects, triggers and routes nothing"
+  },
+  "fail_closed": {
+    "status": "PASS",
+    "rules": {
+      "FC-01": {
+        "rule": "unknown Mission Object representation",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · CAS E / FC-23 / FC-01 : representation présente, autorité inconnue, discordante ou malformée → REJET"
+        ]
+      },
+      "FC-02": {
+        "rule": "V0-only path receives V1",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-02 / FC-03 : le validateur V0 refuse un V1 et ne l’accepte jamais comme V0",
+          "v1.test.mjs · FC-02 / FC-03 : les panneaux V0 de la console refusent un V1 actif — aucun rendu, aucune lecture de résultat",
+          "p-hr-01.test.mjs · IP-04 / FC-02 / FC-03 : un V0, un V1 inactif ou une représentation rejetée n’entrent jamais dans P-HR-01"
+        ]
+      },
+      "FC-03": {
+        "rule": "active P-HR-01 through V0 path",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-02 / FC-03 : le validateur V0 refuse un V1 et ne l’accepte jamais comme V0",
+          "v1.test.mjs · FC-02 / FC-03 : les panneaux V0 de la console refusent un V1 actif — aucun rendu, aucune lecture de résultat",
+          "p-hr-01.test.mjs · IP-04 / FC-02 / FC-03 : un V0, un V1 inactif ou une représentation rejetée n’entrent jamais dans P-HR-01"
+        ]
+      },
+      "FC-04": {
+        "rule": "unknown P-HR version",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-04 : version P-HR inconnue → REJET"
+        ],
+        "orchestration_independent_probe": "FC-04 → false/D/-/UNKNOWN_P_HR_VERSION"
+      },
+      "FC-05": {
+        "rule": "handoff_contract incomplete",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-05 : handoff_contract incomplet, membre par membre → REJET"
+        ],
+        "orchestration_independent_probe": "FC-05 → false/D/-/HANDOFF_CONTRACT_INCOMPLETE"
+      },
+      "FC-06": {
+        "rule": "handoff_contract malformed",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-06 : handoff_contract malformé → REJET"
+        ],
+        "orchestration_independent_probe": "FC-06 → false/D/-/HANDOFF_CONTRACT_MALFORMED"
+      },
+      "FC-07": {
+        "rule": "next_control_stage mismatch",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-07 : next_control_stage hors domaine → REJET"
+        ],
+        "orchestration_independent_probe": "FC-07 → false/D/-/NEXT_CONTROL_STAGE_MISMATCH"
+      },
+      "FC-08": {
+        "rule": "return destination mismatch",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-08 : return_destination hors de la forme ou du répertoire canonique → REJET",
+          "p-hr-01.test.mjs · FC-08 : retour reçu hors de la destination exacte → STOP"
+        ],
+        "orchestration_independent_probe": "FC-08 → false/D/-/RETURN_DESTINATION_MISMATCH"
+      },
+      "FC-09": {
+        "rule": "ordering mismatch",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-09 : stage_ordering_dependency hors domaine → REJET"
+        ],
+        "orchestration_independent_probe": "FC-09 → false/D/-/ORDERING_MISMATCH"
+      },
+      "FC-10": {
+        "rule": "persistence owner mismatch",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · FC-10 : persistence_ownership hors domaine → REJET"
+        ],
+        "orchestration_independent_probe": "FC-10 → false/D/-/PERSISTENCE_OWNER_MISMATCH"
+      },
+      "FC-11": {
+        "rule": "contract mutation after freeze",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · IP-05 / FC-11 : la mission demandée n’est pas la mission gelée → STOP",
+          "p-hr-01.test.mjs · FC-11 : contrat muté après le gel → STOP avant tout dispatch",
+          "p-hr-01.test.mjs · FC-11 : le contrat gelé est immuable en mémoire",
+          "p-hr-01.test.mjs · FC-11 : mission modifiée entre le retour et la persistance → STOP"
+        ]
+      },
+      "FC-12": {
+        "rule": "requested operation mismatch",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · IP-05 / FC-12 : opération demandée ≠ EXECUTOR_DISPATCH → STOP, aucun dispatch"
+        ]
+      },
+      "FC-13": {
+        "rule": "dispatch before freeze",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · IP-04 / FC-13 : une copie de travail seule, ou une enveloppe rendue, n’est pas un gel",
+          "p-hr-01.test.mjs · IP-06 / FC-13 : dispatch avant gel → STOP, opération jamais invoquée"
+        ]
+      },
+      "FC-14": {
+        "rule": "lost authoritative dispatch state before return",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · FC-14 : état de dispatch faisant autorité perdu avant le retour → STOP, jamais reconstruit"
+        ]
+      },
+      "FC-15": {
+        "rule": "return before dispatch",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · FC-15 : retour avant dispatch → STOP"
+        ]
+      },
+      "FC-16": {
+        "rule": "Result Instance source mismatch",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · FC-16 : source du Result Instance ≠ mission V1 gelée → STOP"
+        ]
+      },
+      "FC-17": {
+        "rule": "executor persistence attempt / wrong persistence actor",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · FC-17 / FC-18 : un résultat déjà persisté avant la validation du retour (persistance de l’exécutant) → STOP",
+          "p-hr-01.test.mjs · FC-17 : acteur de persistance ≠ ORCHESTRATION → STOP"
+        ],
+        "sub_claim_executor_attribution_of_a_post_ingest_commit": "NOT_ESTABLISHED — a commit carrying exactly the returned bytes, made after a validated ingest, cannot be attributed to the executor ; proven : a declared actor other than ORCHESTRATION stops, and a result already in history before ingest stops"
+      },
+      "FC-18": {
+        "rule": "persistence before validated return",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · FC-17 / FC-18 : un résultat déjà persisté avant la validation du retour (persistance de l’exécutant) → STOP",
+          "p-hr-01.test.mjs · FC-18 : persistance avant retour validé → STOP"
+        ]
+      },
+      "FC-19": {
+        "rule": "result admission before persistence",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · FC-19 : admission avant persistance → REJET, aucun handle, aucun événement"
+        ]
+      },
+      "FC-20": {
+        "rule": "downstream result-consumption bypass",
+        "status": "PASS",
+        "named_tests": [
+          "p-hr-01.test.mjs · FC-20 : consommation aval sans handle d’admission → CONTRACT_VIOLATION"
+        ],
+        "orchestration_independent_probe": "FC-20 → CONTRACT_VIOLATION"
+      },
+      "FC-21": {
+        "rule": "CASE B",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · CAS B / FC-21 : representation absente + validation V0 FAIL → REJET, jamais V1"
+        ],
+        "orchestration_independent_probe": "FC-21 → false/B/-/LEGACY_V0_VALIDATION_FAILED"
+      },
+      "FC-22": {
+        "rule": "CASE C",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · CAS C / FC-22 : representation absente + champ propre à V1 → REJET, même si le reste est V0 valide"
+        ],
+        "orchestration_independent_probe": "FC-22 → false/C/-/V1_ONLY_FIELD_WITHOUT_REPRESENTATION"
+      },
+      "FC-23": {
+        "rule": "CASE E",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · CAS E / FC-23 / FC-01 : representation présente, autorité inconnue, discordante ou malformée → REJET"
+        ],
+        "orchestration_independent_probe": "FC-23 → false/E/-/UNKNOWN_REPRESENTATION"
+      },
+      "FC-24": {
+        "rule": "CASE F",
+        "status": "PASS",
+        "named_tests": [
+          "v1.test.mjs · CAS F / FC-24 : representation qui tente d’identifier V0 → REJET"
+        ],
+        "orchestration_independent_probe": "FC-24 → false/F/-/REPRESENTATION_IDENTIFIES_V0"
+      }
+    },
+    "evidence_reported": [
+      "FC-01 → tooling/mission-object/tests/v1.test.mjs #10 (9 formes, UNKNOWN_REPRESENTATION) · tooling/mission-object/tests/p-hr-01.test.mjs #16 (gel refusé)",
+      "FC-02 → tooling/mission-object/tests/v1.test.mjs #26 (validate V0 : erreurs sur representation et handoff_contract, objet inchangé) · #27 (console : projectMission 422 sans rendu ; projectResult 422 sur la mission avant tout parse du résultat) · tooling/mission-object/tests/p-hr-01.test.mjs #16 #53",
+      "FC-03 → tooling/mission-object/tests/v1.test.mjs #26 #27 (contrat actif par un chemin V0 refusé) · #8 (CAS C) · tooling/mission-object/tests/p-hr-01.test.mjs #16",
+      "FC-04 → tooling/mission-object/tests/v1.test.mjs #20 (5 valeurs, UNKNOWN_P_HR_VERSION) · tooling/mission-object/tests/p-hr-01.test.mjs #9 (au gel)",
+      "FC-05 → tooling/mission-object/tests/v1.test.mjs #18 (5 membres, HANDOFF_CONTRACT_INCOMPLETE) · tooling/mission-object/tests/p-hr-01.test.mjs #10",
+      "FC-06 → tooling/mission-object/tests/v1.test.mjs #19 (5 non-objets, 20 membres non-chaînes, 5 membres additionnels : HANDOFF_CONTRACT_MALFORMED) · tooling/mission-object/tests/p-hr-01.test.mjs #11",
+      "FC-07 → tooling/mission-object/tests/v1.test.mjs #21 (5 valeurs, NEXT_CONTROL_STAGE_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #12",
+      "FC-08 → tooling/mission-object/tests/v1.test.mjs #22 (11 destinations, RETURN_DESTINATION_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #13 (gel) · #30 (retour reçu hors destination) · #42 (admission)",
+      "FC-09 → tooling/mission-object/tests/v1.test.mjs #23 (4 valeurs, ORDERING_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #14",
+      "FC-10 → tooling/mission-object/tests/v1.test.mjs #24 (5 valeurs, PERSISTENCE_OWNER_MISMATCH) · tooling/mission-object/tests/p-hr-01.test.mjs #15",
+      "FC-11 → tooling/mission-object/tests/p-hr-01.test.mjs #19 (FROZEN_IDENTITY_MISMATCH) · #20 (CONTRACT_MUTATED_AFTER_FREEZE avant dispatch) · #21 (contrat gelé immuable : TypeError) · #39 (mutation avant persistance)",
+      "FC-12 → tooling/mission-object/tests/p-hr-01.test.mjs #18 (6 genres, REQUESTED_OPERATION_MISMATCH, opération jamais invoquée)",
+      "FC-13 → tooling/mission-object/tests/p-hr-01.test.mjs #26 (dispatch avant gel, UNKNOWN_PREDECESSOR) · #7 (copie de travail ≠ gel)",
+      "FC-14 → tooling/mission-object/tests/p-hr-01.test.mjs #28 (instance perdue ; instance reconstruite par résolution + gel : dispatch jamais reconstruit, UNKNOWN_PREDECESSOR)",
+      "FC-15 → tooling/mission-object/tests/p-hr-01.test.mjs #29 (fichier de résultat présent, pas de dispatch) · #24 (dispatch échoué puis retour)",
+      "FC-16 → tooling/mission-object/tests/p-hr-01.test.mjs #31 (source.kind PROTOCOL, blob, chemin, autorité de retour blob et chemin, contrat de retour absent : RESULT_SOURCE_MISMATCH)",
+      "FC-17 → tooling/mission-object/tests/p-hr-01.test.mjs #36 (4 acteurs, WRONG_PERSISTENCE_ACTOR) · #34 (résultat commis par l exécutant avant ingestion, RESULT_PERSISTED_BEFORE_VALIDATED_RETURN) · portée : voir executor.missing_evidence",
+      "FC-18 → tooling/mission-object/tests/p-hr-01.test.mjs #37 (UNKNOWN_PREDECESSOR) · #34 · #38 (non commis / octets différents)",
+      "FC-19 → tooling/mission-object/tests/p-hr-01.test.mjs #41 (ADMISSION_BEFORE_PERSISTENCE, aucun handle, aucun événement) · #47",
+      "FC-20 → tooling/mission-object/tests/p-hr-01.test.mjs #43 (9 contrefaçons, CONTRACT_VIOLATION) · #47 · #49",
+      "FC-21 → tooling/mission-object/tests/v1.test.mjs #7 · FC-22 → tooling/mission-object/tests/v1.test.mjs #8 · FC-23 → tooling/mission-object/tests/v1.test.mjs #10 · FC-24 → tooling/mission-object/tests/v1.test.mjs #11",
+      "SANS REPLI : aucune valeur par défaut, aucune réparation, aucun prédécesseur inféré, aucune rétrogradation ; tooling/mission-object/tests/p-hr-01.test.mjs #44 #45 #46"
+    ]
+  },
+  "result_admission": {
+    "implemented": "YES",
+    "entry_point": "tooling/mission-object/p-hr-01.mjs · PHr01Run.prototype.admit({ mission: { path, blob }, result: { path, blob } }) → handle immuable P_HR_01_ACCEPTED_RESULT ; entrée aval unique requireAcceptedResult(handle)",
+    "review": "identities exact, requires RESULT_PERSISTED, re-reads persisted bytes from history, source match, WeakSet-issued immutable handle ; RESULT_CONSUMED at first admission ; forged handle → CONTRACT_VIOLATION"
+  },
+  "no_bypass": {
+    "status": "PASS",
+    "executor_reported": {
+      "method": [
+        "parcours du système de fichiers de toutes les sources produit .mjs / .js sous tooling/ et cases/, répertoires tests/ exclus (53 fichiers suivis au HEAD de gel : 13 sous tooling/, 40 sous cases/ ; plus v1.mjs et p-hr-01.mjs)",
+        "sept marqueurs indépendants : import result-instance ; « result.json » ; reported_entries ; reportedValues / reportedValueEntries / nonProductionEntries ; projectResult / result-adapter ; validateAgainstContract ; route /api/result",
+        "relevé des importeurs de result-instance/(result-instance|validate).mjs : result-adapter.mjs et p-hr-01.mjs seulement",
+        "revue de code des fichiers trouvés : result-adapter.mjs, repo.mjs, server.mjs, result-instance.mjs, validate.mjs lus intégralement ; console.mjs (navigateur) relu aux points de contact",
+        "garde mécanique : tooling/mission-object/tests/p-hr-01.test.mjs #48 échoue si un fichier produit touche un Result Instance sans être classé",
+        "la recherche seule n est pas retenue comme preuve : preuve dynamique tooling/mission-object/tests/p-hr-01.test.mjs #47"
+      ],
+      "inventory": [
+        "B · tooling/result-instance/result-instance.mjs · parse, load, entries, reportedValueEntries, nonProductionEntries, factKey, contractRequirements · chargement gelé et accesseurs, aucune continuation",
+        "B · tooling/result-instance/validate.mjs · validate, validateAgainstContract, main · validation seule",
+        "B · tooling/console/result-adapter.mjs · projectResult · affichage / inspection ; APPLICATION : une mission P-HR-01 (V1) y est refusée 422 VALIDATION_FAILED par la validation V0 de la mission AVANT tout parse du résultat (tooling/mission-object/tests/v1.test.mjs #27, tooling/mission-object/tests/p-hr-01.test.mjs #47)",
+        "B · tooling/console/server.mjs · GET /api/result → projectResult · transport de la projection",
+        "B · tooling/console/public/console.mjs · affichage navigateur de reportedValues et nonProduction",
+        "B · tooling/console/repo.mjs · listCandidates(RESULT) · énumération de chemins result.json, aucune lecture de contenu",
+        "B · tooling/mission-object/v1.mjs · RESULT_BASENAME, canonicalReturnDestination · règle de chemin, aucune lecture",
+        "FRONTIÈRE · tooling/mission-object/p-hr-01.mjs · ingestReturn (validation), verifyPersistence (identité), admit (seul émetteur de handle), requireAcceptedResult (seule entrée sémantique aval : handle exigé, sinon CONTRACT_VIOLATION)",
+        "A · aucun consommateur sémantique aval dans le produit ; tooling/program-state/program-state.mjs ne lit aucun Result Instance (tooling/mission-object/tests/p-hr-01.test.mjs #48) ; cases/ : aucun contact"
+      ],
+      "direct_A_consumption": "NO",
+      "dynamic": "PASS",
+      "dynamic_evidence": [
+        "tooling/mission-object/tests/p-hr-01.test.mjs #47 contre un vrai dépôt Git temporaire : résultat retourné lu directement → CONTRACT_VIOLATION ; admission avant persistance → ADMISSION_BEFORE_PERSISTENCE ; panneau C de la console sur (mission V1, résultat) → 422 VALIDATION_FAILED sur la mission, résultat jamais parsé ; résultat commis mais persistance non vérifiée → ADMISSION_BEFORE_PERSISTENCE ; continuation aval = 0",
+        "tooling/mission-object/tests/p-hr-01.test.mjs #47 suite : verifyPersistence puis admit → continuation aval 1, valeur PASS lue sur le handle, six événements dans l ordre",
+        "tooling/mission-object/tests/p-hr-01.test.mjs #41 FC-19 · #43 FC-20 (clone JSON, structuredClone, étalement, instance parsée, chemins, identité persistée) · #49 un seul point d émission du handle, dans admit(), après la garde de persistance"
+      ]
+    },
+    "orchestration_independent_inventory": {
+      "method": "grep over product code (tests excluded) for 7 markers : result-instance/ · reported_entries · result.json · parseResult · validateAgainstContract · RESULT class · source / return_contract authority",
+      "files": {
+        "tooling/result-instance/result-instance.mjs": "B — Result Instance representation : parse / load / accessors",
+        "tooling/result-instance/validate.mjs": "B — validation only",
+        "tooling/console/result-adapter.mjs": "B — capture, validation and display ; contract check only after a captured mission, which the V0 mission adapter refuses for V1",
+        "tooling/console/repo.mjs": "B — read-only enumeration ; git whitelist rev-parse only ; no write",
+        "tooling/console/public/console.mjs": "B — display ; GET requests only",
+        "tooling/mission-object/v1.mjs": "boundary — result.json basename only",
+        "tooling/mission-object/p-hr-01.mjs": "boundary — the only issuer of accepted-result handles"
+      },
+      "semantic_downstream_consumers_A": 0,
+      "importers_of_p_hr_01_or_v1_outside_the_boundary": 0
+    },
+    "dynamic_proof": "PASS — p-hr-01.test.mjs « NO-BYPASS : un résultat P-HR-01 actif ne pilote aucune continuation aval avant admission », green before commit, at the implementation commit and in a fresh clone",
+    "limitation": "no semantic downstream consumer exists in the product today ; enforcement is proven on the boundary and by a test that fails on any new unclassified consumer"
+  },
+  "tests": {
+    "targeted": [
+      {
+        "command": "node --test tooling/mission-object/tests/v1.test.mjs",
+        "tests": 36,
+        "pass": 36,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/p-hr-01.test.mjs",
+        "tests": 53,
+        "pass": 53,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/v0-compatibility.test.mjs",
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "failing": []
+      }
+    ],
+    "pre_commit_worktree": [
+      {
+        "command": "node --test tooling/program-state/tests/program-state.test.mjs",
+        "tests": 59,
+        "pass": 59,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/mission-object.test.mjs",
+        "tests": 46,
+        "pass": 46,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/qualification.test.mjs",
+        "tests": 20,
+        "pass": 20,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/result-instance/tests/result-instance.test.mjs",
+        "tests": 71,
+        "pass": 71,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/console/tests/console.test.mjs",
+        "tests": 74,
+        "pass": 68,
+        "fail": 6,
+        "failing": [
+          "T-E1",
+          "T-E2",
+          "T-H1",
+          "T-H2",
+          "T-H3",
+          "T-H4"
+        ]
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/v1.test.mjs",
+        "tests": 36,
+        "pass": 36,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/p-hr-01.test.mjs",
+        "tests": 53,
+        "pass": 53,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/v0-compatibility.test.mjs",
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "failing": []
+      }
+    ],
+    "post_commit_implementation_head": [
+      {
+        "command": "node --test tooling/program-state/tests/program-state.test.mjs",
+        "tests": 59,
+        "pass": 59,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/mission-object.test.mjs",
+        "tests": 46,
+        "pass": 46,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/qualification.test.mjs",
+        "tests": 20,
+        "pass": 20,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/result-instance/tests/result-instance.test.mjs",
+        "tests": 71,
+        "pass": 71,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/console/tests/console.test.mjs",
+        "tests": 74,
+        "pass": 68,
+        "fail": 6,
+        "failing": [
+          "T-E1",
+          "T-E2",
+          "T-H1",
+          "T-H2",
+          "T-H3",
+          "T-H4"
+        ]
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/v1.test.mjs",
+        "tests": 36,
+        "pass": 36,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/p-hr-01.test.mjs",
+        "tests": 53,
+        "pass": 53,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/v0-compatibility.test.mjs",
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "failing": []
+      }
+    ],
+    "fresh_clone_of_implementation_commit": [
+      {
+        "command": "node --test tooling/program-state/tests/program-state.test.mjs",
+        "tests": 59,
+        "pass": 59,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/mission-object.test.mjs",
+        "tests": 46,
+        "pass": 46,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/qualification.test.mjs",
+        "tests": 20,
+        "pass": 20,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/result-instance/tests/result-instance.test.mjs",
+        "tests": 71,
+        "pass": 71,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/console/tests/console.test.mjs",
+        "tests": 74,
+        "pass": 68,
+        "fail": 6,
+        "failing": [
+          "T-E1",
+          "T-E2",
+          "T-H1",
+          "T-H2",
+          "T-H3",
+          "T-H4"
+        ]
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/v1.test.mjs",
+        "tests": 36,
+        "pass": 36,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/p-hr-01.test.mjs",
+        "tests": 53,
+        "pass": 53,
+        "fail": 0,
+        "failing": []
+      },
+      {
+        "command": "node --test tooling/mission-object/tests/v0-compatibility.test.mjs",
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "failing": []
+      }
+    ],
+    "fresh_clone_note": "clone checked out with core.autocrlf=true ; authority 101 and result.json appear CRLF in that worktree ; all suites identical — no check passes only in the original worktree",
+    "other_checks": [
+      "node tooling/program-state/program-state.mjs check PROGRAM-STATE.json → exit 0, 0 material (pre, post, clone)",
+      "node tooling/result-instance/validate.mjs <result> <mission> → STRUCTURE PASS, CONTRAT PASS 126 (pre, post, clone)",
+      "V1 fixtures : renderAccepted == committed envelope, two renders identical, coverage complete (active 12/12, inactive 11/11)",
+      "node --check on the 5 new modules / test files → OK"
+    ]
+  },
+  "regression": {
+    "status": "NO_NEW_REGRESSION",
+    "baseline_failures": [
+      "T-E1",
+      "T-E2",
+      "T-H1",
+      "T-H2",
+      "T-H3",
+      "T-H4"
+    ],
+    "post_implementation_failures": [
+      "T-E1",
+      "T-E2",
+      "T-H1",
+      "T-H2",
+      "T-H3",
+      "T-H4"
+    ],
+    "new_regressions": [],
+    "note": "T-E1 / T-E2 observed counts grow with mission / result files (same identity, same cause)"
+  },
+  "product_boundary": {
+    "status": "PASS",
+    "executor_reported": [
+      "RECHERCHE : grep -niE « router|routing|route|graph|event.?bus|EventEmitter|node:events|workflow|engine|schedul|setTimeout|setInterval|dsl|convert|upgrade|downgrade|migrat|writeFile|appendFile|createWriteStream|mkdir|rename|unlink|rmSync|PROGRAM.STATE|program-state|derived.handoff|candidate-spec|observation-contract|EXP.C2|ontolog|next_consequences|procedure » sur v1.mjs et p-hr-01.mjs → seuls résultats : le nom de fichier de l autorité 101 (…-HANDOFF-ROUTING-…) et trois lignes de commentaire ; aucun dans le code exécutable",
+      "TEST tooling/mission-object/tests/p-hr-01.test.mjs #50 : 11 familles interdites absentes du code exécutable (commentaires retirés)",
+      "TEST tooling/mission-object/tests/p-hr-01.test.mjs #51 : domaines clos à un membre (P_HR_01, EXECUTOR_DISPATCH, P_HR_01_LINEAR_V1, ORCHESTRATION), 5 clés de contrat exactes, liste blanche Git = rev-parse, ls-tree, cat-file, merge-base, aucune commande de mutation ; v1.mjs sans child_process ni écriture",
+      "TEST tooling/mission-object/tests/p-hr-01.test.mjs #45 : 8 exports fixes de p-hr-01.mjs, 8 méthodes nommées de PHr01Run ; l unique enregistreur #record est privé et n accepte que l événement suivant de LIFECYCLE",
+      "TEST tooling/mission-object/tests/p-hr-01.test.mjs #52 : aucun module V0, console, Result Instance ou PROGRAM-STATE n importe v1.mjs ou p-hr-01.mjs",
+      "REVUE DE CODE : absents — routeur générique, graphe de routage, bus d événements générique, moteur de workflow, DSL de cycle de vie (LIFECYCLE = tableau gelé de 6 symboles), choix de route dynamique, domaine next-stage arbitraire, domaine d acteur de persistance arbitraire, cadre générique de conversion de version, artefact durable de reçu de dispatch (aucune écriture de fichier ; état transitoire en mémoire), sémantique PROGRAM-STATE nouvelle, usage produit de derived-handoff.json, adoption produit du schéma EXP-C2-C, ontologie de handoff à l échelle du programme",
+      "git diff --name-only → 0 fichier suivi modifié ; PROGRAM-STATE.json, README.md, autorités 14 / 23 / 98 / 99 / 100 et M022 mission.json / envelope.md inchangés"
+    ],
+    "orchestration_search": "new product modules searched for router / routing · event bus / emit / subscribe · workflow / scheduler · DSL / transitions · graph / edges · convert / upgrade / downgrade / migrate · receipt / writeFile / mkdir · PROGRAM-STATE / next_consequences / procedure · derived-handoff / EXP-C2-C · ontology · stage registries → no match except the file name of authority 101 ; git access limited to rev-parse / ls-tree / cat-file / merge-base"
+  },
+  "semantic_widening": {
+    "status": "NONE_ESTABLISHED",
+    "executor_reported": "NONE",
+    "review": "v1.mjs, p-hr-01.mjs and authority 101 reviewed line by line against authorities 98 / 99 / 100 : closed domains, exact recognition table, no fallback, no conversion, no routing"
+  },
+  "technical_choices_for_counter_expertise": [
+    "handoff_contract is a root-level object of five string members",
+    "CASE F = representation.authority designating authority 14 by path or by blob",
+    "the carrying file must be named mission.json (return destination derivation)",
+    "an active contract requires the repository-relative mission path to be fully validated ; otherwise rejected",
+    "source and return-contract authorities of the Result Instance must equal the frozen mission path and blob",
+    "ingest stops if a result is already in history (persistence before validated return)",
+    "the freeze commit must be an ancestor of the persistence commit",
+    "a repeated admission returns the same handle"
+  ],
+  "limitations_and_missing_evidence": [
+    "IP-06 real executor transport integration NOT_ESTABLISHED — no automated transport exists in the repository",
+    "FC-17 attribution of a post-ingest commit to the executor NOT_ESTABLISHED",
+    "FC-14 consequence : authoritative dispatch state is transient (no durable receipt, authority 98 § 20) ; losing the PHr01Run instance between dispatch and return stops the transaction, so a multi-session orchestration cannot complete a P-HR-01 transaction as specified — a consequence of the ratified specification, recorded for counter-expertise, not an implementation deviation",
+    "no real V1 mission exists yet ; behavior proven on fixtures and temporary repositories",
+    "V0-only rejection wording is the unchanged closed-schema refusal, not « unsupported representation »",
+    "raw executor chat return received through manual transport ; result.json is the canonical evidence",
+    "independent qualification not performed by the transaction"
+  ],
+  "stop_events": [],
+  "deviations": {
+    "executor_reported": [
+      "mission.json lu intégralement : lignes 1 à 1599 en affichage brut ; lignes 1600 à 3494 (return_contract, next_consequences, standing_constraints, terminal) par extraction structurée champ par champ (node) et par l enveloppe rendue, elle-même vérifiée identique octet pour octet au rendu de mission.json",
+      "commandes Git de lecture seule employées au-delà de la liste énumérée par le transport : ls-files, ls-tree, check-attr, config --get, --version ; aucune commande de mutation dans le dépôt du Lab",
+      "fichiers de travail hors dépôt seulement (répertoire temporaire du système et scratchpad de session : scripts d inventaire, journaux de tests) ; les tests créent puis suppriment des dépôts Git temporaires hors du dépôt du Lab (init, add, commit) ; aucun fichier ni commit dans le dépôt du Lab hors des chemins déclarés"
+    ],
+    "orchestration": [
+      "an independent probe was first run without mission paths and failed on the new V1 fixtures by design (HANDOFF_CONTEXT_REQUIRED) ; rerun with each file path — probe defect, not an implementation fault"
+    ]
+  },
+  "terminal": {
+    "IMPLEMENTATION_TRANSACTION": "COMPLETE",
+    "IMPLEMENTATION_BYTES": "PRESENT",
+    "TARGETED_TESTS": "PASS",
+    "REGRESSION_STATUS": "NO_NEW_REGRESSION",
+    "V0_COMPATIBILITY": "PASS",
+    "V1_CONTRACT_BEHAVIOR": "PASS",
+    "IP": {
+      "IP-01": "PASS",
+      "IP-02": "PASS",
+      "IP-03": "PASS",
+      "IP-04": "PASS",
+      "IP-05": "PASS",
+      "IP-06": "PASS",
+      "IP-07": "PASS",
+      "IP-08": "PASS",
+      "IP-09": "PASS",
+      "IP-10": "PASS"
+    },
+    "FAIL_CLOSED_COVERAGE": "PASS",
+    "RESULT_ADMISSION_IMPLEMENTED": "YES",
+    "NO_BYPASS_PROOF": "PASS",
+    "PRODUCT_BOUNDARY_CONFORMANCE": "PASS",
+    "SEMANTIC_WIDENING": "NONE_ESTABLISHED",
+    "INDEPENDENT_QUALIFICATION": "PENDING"
+  }
+}
