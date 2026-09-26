@@ -1,0 +1,108 @@
+{
+  "artifact": "FIELD_001_C1_FREEZE",
+  "study_id": "FIELD-001",
+  "step": "C1 — Challenger first review of the frozen A1, frozen and classified by the controller",
+  "challenger": "AGENT CCR LAB #66",
+  "controller": "AGENT CCR LAB #1",
+  "governing": {
+    "authority": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+    "authority_blob": "a52e1584ef997ab05c70177f8dc827f07ded2d39",
+    "mission": "missions/023-field-001-idempotent-job-submission/mission.json",
+    "mission_blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c",
+    "procedure_steps": "s-c1 (effect e-c1) · s-classify-c1 (effect e-classify-c1)"
+  },
+  "a1_reviewed": {
+    "commit": "914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3",
+    "tree": "26fb9fbb270d5a43cf575ce114b71f87306959de",
+    "freeze_record": "missions/023-field-001-idempotent-job-submission/a1-freeze.json",
+    "freeze_record_blob": "4d8bf030d5f122727f82dc160bb59a964536f040"
+  },
+  "q1_commitment_record": {
+    "path": "missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+    "blob": "e520f1b6b88c0815e416b936de1c7c194caf53f6",
+    "commit": "bed610dd26309e4fa8226e04fdd19e5307f2d51f"
+  },
+  "challenger_inputs": "common frozen input (B0 and the contract) + exact A1 bytes + Author A1 return (verbatim in the dispatch) + Author tests ; no oracle, no Q1 result, no Q1-derived metadata, no qualifier notes",
+  "challenger_return": {
+    "path": "missions/023-field-001-idempotent-job-submission/c1-challenger-return.md",
+    "sha256": "c3939e223ceb19cf9f5d51c0be30bf965612b1710d0dfa364f3b0f23bee14f49",
+    "bytes": 13047,
+    "provenance": "raw AGENT CCR LAB #66 return, transported by the human into the controller session, persisted verbatim"
+  },
+  "challenger_boundary": {
+    "challenger_commits": 0,
+    "challenger_pushes": 0,
+    "target": "HEAD = A1 commit and tree, parent B0 ; branch main only ; no remote ; no stash ; status empty including ignored files ; reflog holds the B0 and A1 commits only ; A1 worktree bytes unchanged",
+    "writes": "one tempfile directory under the system temp directory (prefix c1-field001-), with the test temporary files redirected inside it ; removed — confirmed absent, no leftover",
+    "disclosed_harness_artifact": "the challenger's tool harness kept the output of one git show (tests/test_idempotency.py at A1) in its own session tool-results file, outside the repository ; A1 content only ; not independently observable by the controller",
+    "oracle_and_q1": "oracle HEAD, tree, clean state, no remote and 8 / 8 manifest hashes unchanged ; Q1 directory seal and sequestered qualifier return unchanged",
+    "role_contamination": "none observed ; the C1 return references no oracle, no Q1 and no qualification",
+    "status": "PASS"
+  },
+  "classification": {
+    "effect": "e-classify-c1",
+    "material_findings": "PRESENT",
+    "branch": "br-material",
+    "rule": "admissible material finding = contract clause + exact code or behavior + reproduction or test + material consequence (mission 023, challenger.admissible_finding) ; this classification decides admissibility and routing only ; whether a C1 finding is true against the independent evidence is established at the terminal (CHALLENGER_TRUE_FINDINGS)",
+    "material": [
+      {
+        "id": "C1-M-01",
+        "clause": "C-FAILED-CREATE (with C-NO-FALLBACK, \"unless a more specific clause above applies\")",
+        "statement": "a keyed first submission whose type holds a lone surrogate (\"\\ud800\") passes the existing validation, fails in insert_job with UnicodeEncodeError, and is answered 500 IDEMPOTENCY_PROCESSING_FAILED instead of 503 JOB_CREATE_FAILED ; 0 job, no binding, the key stays free",
+        "admissibility": {
+          "contract_clause": "PRESENT",
+          "exact_code_or_behavior": "PRESENT — server.py:40, 95, 98-100 ; store.py:114, 128-131, 148-151 (citations checked against the A1 bytes)",
+          "reproduction_or_test": "PRESENT — r1_surrogate.py with observed output on A1 and B0",
+          "material_consequence": "PRESENT — status and error code outside the one prescribed for a failed creation ; a retry with the same K and R gets 500 again"
+        },
+        "controller_reproduction": "REPRODUCED on a scratch export of the exact A1 bytes : keyed s1 → 500 IDEMPOTENCY_PROCESSING_FAILED, 0 job, no binding ; retry → 500 again ; s1 with a storable request → 201 ; control : keyed s2 with a failing jobs insert trigger → 503 JOB_CREATE_FAILED, then 201 once the trigger is dropped ; unkeyed → connection closed without response on A1 and on B0 (legacy behavior unchanged). Behavior only, not a contract verdict",
+        "class": "MATERIAL — ADMISSIBLE",
+        "routed_to_a2": true
+      }
+    ],
+    "unsupported_author_claims": [
+      {
+        "id": "C1-U-01",
+        "claim": "C-FAILED-CREATE: the job and the binding are atomic; on failure → 503 and the key stays free.",
+        "basis": "C1-M-01 — atomicity and the free key supported ; \"on failure → 503\" contradicted",
+        "routed_to_a2": "with C1-M-01"
+      }
+    ],
+    "non_material_observations": [
+      {
+        "id": "C1-N-01",
+        "subject": "a malformed \"Idempotency-Key :\" header line is dropped by the stdlib parser and the request takes the legacy path (same parser as B0)"
+      },
+      {
+        "id": "C1-N-02",
+        "subject": "the replay of an established key needs the write lock ; under a lock held past the store timeout it is answered 503 JOB_CREATE_FAILED"
+      },
+      {
+        "id": "C1-N-03",
+        "subject": "numbers beyond double range collapse to Infinity in the fingerprint (number equivalence not specified by the contract)"
+      },
+      {
+        "id": "C1-N-04",
+        "subject": "surrounding SP / HTAB are stripped from the key (RFC 9110 §5.5, Author interpretation 1)"
+      },
+      {
+        "id": "C1-N-05",
+        "subject": "the docstring at tests/test_idempotency.py:151-155 overstates the gate guarantee ; the test assertions remain valid"
+      },
+      {
+        "id": "C1-N-06",
+        "subject": "the Author's per-mutant counts cannot be reproduced without the mutant code ; the substance of the claim holds"
+      }
+    ],
+    "non_material_note": "classified non-material by the challenger ; not reclassified by the controller ; no A2 action required ; an A2 change made for them would be an opportunistic improvement, which the protocol forbids",
+    "contract_ambiguity": "NONE blocking (challenger) ; no human gate"
+  },
+  "time_order": {
+    "a1_frozen_at": "2026-09-26T17:14:13+02:00",
+    "q1_commitment_published_at": "2026-09-26T18:18:21+02:00",
+    "c1_dispatched": "after the push of the Q1 commitment (bed610dd26309e4fa8226e04fdd19e5307f2d51f) ; the dispatch carried no oracle and no Q1 information",
+    "c1_frozen_at": "by the canonical commit that adds this record",
+    "order": "A1 FROZEN < Q1_COMMITMENT PUBLISHED < C1 LAUNCHED < C1 FROZEN"
+  },
+  "next": "Author A2 by AGENT CCR LAB #65 : C1 + common frozen input + A1 (exact bytes and the Author A1 return) ; ACCEPT (justified correction only) or REBUT (evidence) for C1-M-01 ; no opportunistic improvement ; no Q1, no oracle ; then A2 frozen by the controller and bounded Challenger C2"
+}

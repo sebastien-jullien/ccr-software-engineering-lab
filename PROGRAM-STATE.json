@@ -1944,7 +1944,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "EXECUTE CHALLENGER C1 BY AGENT CCR LAB #66 AGAINST FROZEN A1 WITHOUT ORACLE OR Q1, THEN CLASSIFY C1 AND ROUTE A2 OR Q2 UNDER THE FROZEN PROTOCOL. NO NEW CONCEPTUAL GATE. — Transporter la dépêche du challenger AGENT CCR LAB #66, frais : entrée commune gelée, octets exacts de l'A1 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3, retour de l'auteur A1 et tests de l'auteur, sans oracle, sans Q1 ni métadonnée dérivée de Q1, sans notes du qualificateur ; puis, sur le go Git local de continuation, geler C1, classer ses constats matériels et router A2 ou, sans constat matériel, Q2, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c.",
+    "value": "EXECUTE AUTHOR A2 BY AGENT CCR LAB #65 ON THE C1 MATERIAL FINDING WITHOUT Q1, THEN FREEZE A2 AND LAUNCH BOUNDED CHALLENGER C2. NO NEW CONCEPTUAL GATE. — Transporter la dépêche de l'auteur AGENT CCR LAB #65 pour A2 : C1 brut, entrée commune gelée et A1 exact avec le retour A1 de l'auteur, sans Q1 ni oracle ; ACCEPT (correctif justifié seulement) ou REBUT (preuve) pour C1-M-01, aucune amélioration opportuniste ; puis, sur le go Git local de continuation, vérifier et geler A2 par un commit local du dépôt cible et transporter la vérification bornée C2 du challenger #66, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1961,28 +1961,28 @@
         }
       },
       {
-        "id": "ev-288",
+        "id": "ev-290",
         "kind": "repo-path",
-        "ref": "missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+        "ref": "missions/023-field-001-idempotent-job-submission/c1-freeze.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
-          "field": "q1_commitment",
-          "value": "Q1 de FIELD-001 exécuté par l'AGENT CCR LAB #67 contre l'A1 gelé 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3 avec l'oracle gelé 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 ; résultat séquestré hors des dépôts cible et canonique, issue non divulguée et inconnue du contrôleur ; engagement Q1_COMMITMENT publié sans issue : SHA-256 du résultat de l'oracle 03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768, SHA-256 de la qualification 8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c ; identités, propreté et hachages vérifiés mécaniquement par le contrôleur, sans lecture de Q1. Preuve missions/023-field-001-idempotent-job-submission/q1-commitment.json, blob e520f1b6b88c0815e416b936de1c7c194caf53f6."
+          "field": "c1_freeze",
+          "value": "C1 de FIELD-001 exécuté par le challenger AGENT CCR LAB #66 contre l'A1 gelé 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3, sans oracle ni Q1 ; frontière du challenger respectée : zéro commit, zéro poussée, dépôt cible inchangé, répertoire temporaire unique supprimé ; retour brut persisté mot pour mot dans missions/023-field-001-idempotent-job-submission/c1-challenger-return.md. Classement du contrôleur : constats matériels PRÉSENTS, branche br-material ; C1-M-01 (C-FAILED-CREATE : un type à substitut isolé reçoit 500 IDEMPOTENCY_PROCESSING_FAILED au lieu de 503 JOB_CREATE_FAILED) recevable et reproduit par le contrôleur sur les octets exacts d'A1 ; six observations non matérielles ; une affirmation de l'auteur non étayée, C1-U-01. Preuve missions/023-field-001-idempotent-job-submission/c1-freeze.json, blob e1146ad53478e58fc973efa63e54c449396ed2ff."
         },
         "observed": {
-          "blob": "e520f1b6b88c0815e416b936de1c7c194caf53f6"
+          "blob": "e1146ad53478e58fc973efa63e54c449396ed2ff"
         }
       },
       {
-        "id": "ev-289",
+        "id": "ev-291",
         "kind": "repo-path",
         "ref": "missions/023-field-001-idempotent-job-submission/mission.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "EXECUTE CHALLENGER C1 BY AGENT CCR LAB #66 AGAINST FROZEN A1 WITHOUT ORACLE OR Q1, THEN CLASSIFY C1 AND ROUTE A2 OR Q2 UNDER THE FROZEN PROTOCOL. NO NEW CONCEPTUAL GATE. — Transporter la dépêche du challenger AGENT CCR LAB #66, frais : entrée commune gelée, octets exacts de l'A1 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3, retour de l'auteur A1 et tests de l'auteur, sans oracle, sans Q1 ni métadonnée dérivée de Q1, sans notes du qualificateur ; puis, sur le go Git local de continuation, geler C1, classer ses constats matériels et router A2 ou, sans constat matériel, Q2, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c."
+          "value": "EXECUTE AUTHOR A2 BY AGENT CCR LAB #65 ON THE C1 MATERIAL FINDING WITHOUT Q1, THEN FREEZE A2 AND LAUNCH BOUNDED CHALLENGER C2. NO NEW CONCEPTUAL GATE. — Transporter la dépêche de l'auteur AGENT CCR LAB #65 pour A2 : C1 brut, entrée commune gelée et A1 exact avec le retour A1 de l'auteur, sans Q1 ni oracle ; ACCEPT (correctif justifié seulement) ou REBUT (preuve) pour C1-M-01, aucune amélioration opportuniste ; puis, sur le go Git local de continuation, vérifier et geler A2 par un commit local du dépôt cible et transporter la vérification bornée C2 du challenger #66, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c."
         },
         "observed": {
           "blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c"
