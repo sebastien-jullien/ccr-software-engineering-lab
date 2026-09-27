@@ -1,0 +1,155 @@
+{
+  "artifact": "FIELD_001_A2_FREEZE",
+  "study_id": "FIELD-001",
+  "step": "A2 — Author correction pass on the C1 material finding, frozen by the controller",
+  "author": "AGENT CCR LAB #65 (new session)",
+  "controller": "AGENT CCR LAB #1",
+  "governing": {
+    "authority": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+    "authority_blob": "a52e1584ef997ab05c70177f8dc827f07ded2d39",
+    "mission": "missions/023-field-001-idempotent-job-submission/mission.json",
+    "mission_blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c",
+    "branch": "br-material",
+    "procedure_steps": "s-m-a2 (effect e-a2) · s-m-freeze-a2 (effect e-freeze-a2, gate g-a2-boundary)"
+  },
+  "inputs_dispatched": "C1 return (verbatim) + common frozen input (B0 and the contract) + A1 (exact bytes and the Author A1 return, verbatim) ; no Q1, no oracle, no qualifier notes",
+  "prior_records": {
+    "a1_freeze": {
+      "path": "missions/023-field-001-idempotent-job-submission/a1-freeze.json",
+      "blob": "4d8bf030d5f122727f82dc160bb59a964536f040"
+    },
+    "q1_commitment": {
+      "path": "missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "blob": "e520f1b6b88c0815e416b936de1c7c194caf53f6"
+    },
+    "c1_freeze": {
+      "path": "missions/023-field-001-idempotent-job-submission/c1-freeze.json",
+      "blob": "e1146ad53478e58fc973efa63e54c449396ed2ff",
+      "commit": "9522126f91f9ba911ea15d69e863f0f954c6aaed"
+    }
+  },
+  "a2": {
+    "commit": "c554667fba9a24123ba4964a1a00fe8ab6d2f6e1",
+    "tree": "602d5e67b0a58feba09b9ebb185699e75b07fdc3",
+    "parent": "914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3",
+    "subject": "a2: author correction pass of field-001",
+    "committed_at": "2026-09-27T03:37:46+02:00",
+    "committed_by": "controller (AGENT CCR LAB #1), machine global git identity TribS Tox <tribstox@gmail.com>",
+    "changed_paths_since_a1": [
+      {
+        "status": "M",
+        "path": "jobservice/server.py"
+      },
+      {
+        "status": "M",
+        "path": "jobservice/store.py"
+      },
+      {
+        "status": "M",
+        "path": "tests/test_idempotency.py"
+      }
+    ],
+    "diff_since_a1": [
+      {
+        "path": "jobservice/server.py",
+        "insertions": 2,
+        "deletions": 2
+      },
+      {
+        "path": "jobservice/store.py",
+        "insertions": 16,
+        "deletions": 8
+      },
+      {
+        "path": "tests/test_idempotency.py",
+        "insertions": 26,
+        "deletions": 0
+      }
+    ],
+    "changed_files": [
+      {
+        "path": "jobservice/server.py",
+        "git_blob": "4433d544d8d3ad0aba5234514ef797324d06637c",
+        "sha256": "aa0cf4fdbe354b9bb5063d9c67f6bc24030b6f8cd04b1c8b1d678334926773ff",
+        "bytes": 6421
+      },
+      {
+        "path": "jobservice/store.py",
+        "git_blob": "82ed9973e30ddd38a47603fc8b4230b588a4122a",
+        "sha256": "4a713968ef1b9e865827cbb0d776c621432fb3f7ab460063e8052fda40cdbb1c",
+        "bytes": 6595
+      },
+      {
+        "path": "tests/test_idempotency.py",
+        "git_blob": "59d6bb00991562eea0e2e8bea337f355c1a15e11",
+        "sha256": "679589501a236587728bf6d7ec9ecf689ba6c0c4376ff6efe908d98b4373942b",
+        "bytes": 27713
+      }
+    ],
+    "committed_bytes_equal_author_worktree_bytes": true
+  },
+  "author_response": {
+    "C1-M-01": "ACCEPT — a failure while creating the job for a key (building the job, inserting the job row, inserting the binding) is raised as JobCreateFailed, whatever its cause, and answered 503 JOB_CREATE_FAILED ; store.py : new exception class and try / except around the creation branch only ; server.py : import and except (sqlite3.Error, JobCreateFailed)",
+    "C1-U-01": "corrected claim — C-FAILED-CREATE held on A2, not on A1",
+    "C1-N-01..C1-N-06": "NO ACTION — no code or test changed for them",
+    "reproducing_tests_added": [
+      "FailureTest.test_job_that_cannot_be_stored_answers_503_and_leaves_the_key_free",
+      "FailureTest.test_creation_failure_of_any_cause_answers_503_and_leaves_the_key_free"
+    ],
+    "existing_tests_changed": 0,
+    "other_issues_noticed_not_fixed": [
+      "very deep nesting : json.dumps raises RecursionError in request_fingerprint, before the transaction, and the keyed request gets 500 IDEMPOTENCY_PROCESSING_FAILED ; depth threshold depends on the thread stack ; present in A1, outside C1-M-01 ; the Author suggests C-FAILED-CREATE might apply",
+      "C-FAILED-CREATE second sentence : a retry with K and a request R that can never be stored cannot succeed ; K itself is not poisoned"
+    ],
+    "other_issues_status": "recorded, not routed ; the Author did not STOP and raised no blocking ambiguity ; no human gate"
+  },
+  "author_boundary": {
+    "author_commits": 0,
+    "author_pushes": 0,
+    "target_remote": "NONE",
+    "target_branches": [
+      "main"
+    ],
+    "stash": 0,
+    "basis": "target reflog held only the B0 and A1 commits before the freeze ; HEAD was A1 ; worktree changes were exactly the three reported paths ; every other tracked file, FIELD-001-CONTRACT.md included, was byte-identical to A1 ; no untracked or ignored file",
+    "scope_of_change": "the A1 → A2 diff matches the correction and the two reproducing tests described in the return, and nothing else ; test file changed by insertions only ; its classification belongs to C2",
+    "contract_unchanged": true,
+    "oracle_repository": "unchanged at its committed identity, clean, no remote ; 8 / 8 manifest hashes",
+    "q1_record": "Q1 directory seal and sequestered qualifier return unchanged",
+    "canonical_repository": "unchanged at 9522126f91f9ba911ea15d69e863f0f954c6aaed",
+    "role_contamination": "none observed ; the A2 return references no oracle, no Q1 and no qualification",
+    "writes_outside_target": "reported : one tempfile export of A1 (removed) and the tests' TemporaryDirectory databases ; one oversized probe output kept by the tool harness in its own tool-results file ; not independently observable beyond the target, oracle and canonical repositories ; no leftover under the known prefixes",
+    "status": "PASS"
+  },
+  "controller_verification_of_author_test_claims": {
+    "note": "verification of the Author claims only ; NOT qualification ; the controller did not run the oracle ; runs on scratch copies, never in the worktree",
+    "full_suite": "python -m unittest discover -s tests -t . → 44 tests OK, 3 of 3 runs",
+    "baseline": "python -m unittest tests.test_baseline → 10 tests OK",
+    "author_tests": "python -m unittest tests.test_idempotency → 34 tests OK",
+    "a2_tests_on_a1": "the A2 test file run on an export of A1 → 34 tests, FAILED (failures=2), exactly the two added tests",
+    "citations": "store.py:46-47, 99-101, 118-126 ; server.py:16, 95 ; tests/test_idempotency.py:529-554 — checked against the A2 bytes"
+  },
+  "author_return": {
+    "path": "missions/023-field-001-idempotent-job-submission/a2-author-return.md",
+    "sha256": "1bed1b85f2870095063cd7ffdfbbf6634eb0b7833c3630072bd19a5370fdd017",
+    "bytes": 8989,
+    "provenance": "raw AGENT CCR LAB #65 A2 return, transported by the human into the controller session, persisted verbatim"
+  },
+  "time_order": {
+    "b0_committed_at": "2026-09-26T12:02:09+02:00",
+    "oracle_frozen_at": "2026-09-26T12:09:08+02:00",
+    "a1_frozen_at": "2026-09-26T17:14:13+02:00",
+    "q1_commitment_published_at": "2026-09-26T18:18:21+02:00",
+    "c1_frozen_at": "2026-09-26T19:08:49+02:00",
+    "a2_frozen_at": "2026-09-27T03:37:46+02:00",
+    "c2": "NOT YET LAUNCHED",
+    "q2": "NOT YET — same frozen oracle, against A2",
+    "order": "A1 FROZEN < Q1_COMMITMENT PUBLISHED < C1 FROZEN < A2 FROZEN < C2 < Q2"
+  },
+  "loops": {
+    "author_implementation_passes": "2 of 2 (A1, A2) — no further Author pass",
+    "challenger_review_passes": "1 of 2 (C1) — C2 is the last",
+    "third_loop": "FORBIDDEN"
+  },
+  "next": "bounded Challenger C2 by AGENT CCR LAB #66, new session : classify C1-M-01 FIXED · REBUTTAL ACCEPTED · STILL MATERIAL · CHALLENGER FINDING WITHDRAWN ; defects newly introduced by A2 only ; no new broad review ; no oracle, no Q1 ; then Q2 by AGENT CCR LAB #67 with the same frozen oracle against A2"
+}
