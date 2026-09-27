@@ -1944,7 +1944,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "ONE INDEPENDENT COUNTER-EXPERTISE OF THE COMPLETE FIELD-001 TERMINAL EVIDENCE PACKAGE. — Mission 023 exécutée et complète, issue terminale FIELD_001_COMPLETE_AFTER_A2_C2_Q2 ; paquet factuel terminal missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob 59f96b51408defeba6c5dd4d235790e6528e5b6f, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter ce paquet complet vers une contre-expertise indépendante unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général.",
+    "value": "ONE FINAL INDEPENDENT QUALIFICATION OF THE CORRECTED FIELD-001 TERMINAL EVIDENCE PACKAGE. — FIELD-001 exécuté et complet, expérience valide et complète, boucle d'implémentation close, aucune réexécution, aucune expérience nouvelle ; analyse terminale corrigée dans missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob eeef388b6f24a06df5579eae7d744b440b4de546, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter le paquet terminal corrigé vers une qualification indépendante finale unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1975,17 +1975,31 @@
         }
       },
       {
-        "id": "ev-299",
+        "id": "ev-300",
+        "kind": "repo-path",
+        "ref": "missions/023-field-001-idempotent-job-submission/field-study-evidence.json",
+        "policy": "VERIFIABLE",
+        "supports": {
+          "subject": "next_action",
+          "field": "terminal_analytical_correction",
+          "value": "Correction analytique terminale de FIELD-001, ratifiée par l'humain, matérialisée dans missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob eeef388b6f24a06df5579eae7d744b440b4de546 : CHALLENGER_TRUE_FINDINGS réduit à C1-M-01 seul ; UNSUPPORTED_AUTHOR_CLAIMS = C1-U-01 et C1-N-05 ; C1-N-06 requalifié en limite de reproductibilité, fausseté et défaut d'étayage NOT_ESTABLISHED ; CROSS_REVIEW_CORRECTIONS NONE sous la définition gelée conditionnée par Q1, correction matérielle observée déclenchée par C1 = C1-M-01 consignée séparément ; métriques bornées par l'oracle explicites, l'oracle n'étant pas une vérité terrain complète. Aucune observation acquise, aucun artefact terminal brut, aucune décision modifiés."
+        },
+        "observed": {
+          "blob": "eeef388b6f24a06df5579eae7d744b440b4de546"
+        }
+      },
+      {
+        "id": "ev-301",
         "kind": "repo-path",
         "ref": "missions/023-field-001-idempotent-job-submission/field-study-evidence.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "ONE INDEPENDENT COUNTER-EXPERTISE OF THE COMPLETE FIELD-001 TERMINAL EVIDENCE PACKAGE. — Mission 023 exécutée et complète, issue terminale FIELD_001_COMPLETE_AFTER_A2_C2_Q2 ; paquet factuel terminal missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob 59f96b51408defeba6c5dd4d235790e6528e5b6f, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter ce paquet complet vers une contre-expertise indépendante unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général."
+          "value": "ONE FINAL INDEPENDENT QUALIFICATION OF THE CORRECTED FIELD-001 TERMINAL EVIDENCE PACKAGE. — FIELD-001 exécuté et complet, expérience valide et complète, boucle d'implémentation close, aucune réexécution, aucune expérience nouvelle ; analyse terminale corrigée dans missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob eeef388b6f24a06df5579eae7d744b440b4de546, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter le paquet terminal corrigé vers une qualification indépendante finale unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général."
         },
         "observed": {
-          "blob": "59f96b51408defeba6c5dd4d235790e6528e5b6f"
+          "blob": "eeef388b6f24a06df5579eae7d744b440b4de546"
         }
       }
     ]

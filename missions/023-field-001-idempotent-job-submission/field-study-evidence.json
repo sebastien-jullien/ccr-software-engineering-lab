@@ -821,10 +821,6 @@
           {
             "type": "SCALAR",
             "value": "C1-M-01 · C-FAILED-CREATE · a keyed first submission whose type holds a lone surrogate (\"\\ud800\") fails in insert_job with UnicodeEncodeError and was answered 500 IDEMPOTENCY_PROCESSING_FAILED instead of 503 JOB_CREATE_FAILED on A1 ; 0 job, key free · TRUE : independently supported on A1 by the controller reproduction on the exact A1 bytes and by the Author own A1 observation (A1 known limitations) · not exercised by the oracle, so Q1 neither supports nor contradicts it"
-          },
-          {
-            "type": "SCALAR",
-            "value": "C1-U-01 · unsupported-claim report on the A1 claim \"C-FAILED-CREATE … on failure → 503\" · TRUE : contradicted on A1 by C1-M-01 ; the Author corrected the claim in A2"
           }
         ]
       },
@@ -1046,15 +1042,11 @@
         "members": [
           {
             "type": "SCALAR",
-            "value": "C1-U-01 · A1 correctness claim \"C-FAILED-CREATE : the job and the binding are atomic ; on failure → 503 and the key stays free\" · OVERBROAD ON A1 (contradicted by C1-M-01) · corrected in A2 · SUPPORTED ON A2 (C2)"
+            "value": "C1-U-01 · A1 correctness claim \"C-FAILED-CREATE : the job and the binding are atomic ; on failure → 503 and the key stays free\" · ESTABLISHED UNSUPPORTED / OVERBROAD CORRECTNESS CLAIM ON A1 (contradicted by C1-M-01) · corrected in A2 · SUPPORTED ON A2 (C2)"
           },
           {
             "type": "SCALAR",
-            "value": "C1-N-05 · A1 test docstring overstating the gate guarantee · non-material"
-          },
-          {
-            "type": "SCALAR",
-            "value": "C1-N-06 · A1 per-mutant failing-test counts · NOT_ESTABLISHED (mutant code not returned) ; the substance of the claim is supported by the challenger own mutants"
+            "value": "C1-N-05 · A1 test docstring tests/test_idempotency.py:151-155 overstating the gate guarantee · DEMONSTRATED DOCUMENTATION / TEST OVERSTATEMENT · non-material"
           }
         ]
       },
@@ -2996,7 +2988,443 @@
       },
       "value": {
         "type": "SCALAR",
-        "value": "EXECUTED / COMPLETE · terminal outcome FIELD_001_COMPLETE_AFTER_A2_C2_Q2 (e-classify-c1 material findings PRESENT ; field-study evidence validation PASS) · FIELD-001 EXPERIMENT COMPLETE, SUBJECT TO ONE INDEPENDENT COUNTER-EXPERTISE"
+        "value": "EXECUTED / COMPLETE · terminal outcome FIELD_001_COMPLETE_AFTER_A2_C2_Q2 (e-classify-c1 material findings PRESENT ; field-study evidence validation PASS) · FIELD-001 EXPERIMENT COMPLETE · terminal analysis corrected (human-ratified analytical corrections) · SUBJECT TO ONE FINAL INDEPENDENT QUALIFICATION OF THE CORRECTED TERMINAL PACKAGE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "terminal.analytical_correction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "human-ratified analytical corrections applied on 2026-09-27 to the terminal analysis of a2ad6eb143da6360ba2b0a2abe430a4a5c4b59be : CHALLENGER_TRUE_FINDINGS restricted to C1-M-01 ; UNSUPPORTED_AUTHOR_CLAIMS = C1-U-01 and C1-N-05 ; C1-N-06 reclassified as a reproducibility limitation ; oracle-bounded metrics made explicit ; no acquired observation, raw terminal artifact, frozen record or frozen metric definition changed"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "metrics.challenger_true_findings.scope"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "C1 material findings independently supported on A1 : C1-M-01 only (1) ; C1-U-01 is an unsupported Author claim associated with C1-M-01, not a separate Challenger material finding, and does not increase CHALLENGER_TRUE_FINDINGS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_n06.classification"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "REPRODUCIBILITY LIMITATION — the Challenger established only that the exact per-mutant counts could not be reproduced from the returned material ; NOT REPRODUCIBLE ≠ FALSE ; NOT_ESTABLISHED ≠ ESTABLISHED UNSUPPORTED CLAIM"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_n06.reproducibility_limitation"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_n06.claim_false"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_n06.claim_unsupported"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "metrics.cross_review_corrections.frozen_q1_gated"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE — Q1 established no defect ; the frozen definition (authority 103 § 10) is preserved and not redefined post hoc"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "metrics.observed_c1_triggered_material_corrections"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-M-01 — any failure while creating the job for a key is raised as JobCreateFailed and answered 503 JOB_CREATE_FAILED (store.py try / except around the creation branch ; server.py except (sqlite3.Error, JobCreateFailed)) · C2 FIXED · controller reproduction on A2 : 503, 0 job, key free · not discriminated by Q2"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8c2de47d53bec72ee2638bb16868608e223399e8"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "metrics.a1_to_a2_causal_attribution"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "C1-M-01 — the whole A1 → A2 change"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "metrics.cross_review_corrections.methodological_limitation"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "the frozen Q1-gated CROSS_REVIEW_CORRECTIONS metric can undercount real Challenger value when the Q1 oracle coverage is incomplete : here it reads NONE while the C1-triggered material correction C1-M-01 lies outside the oracle coverage ; this is a methodological limitation, not an inconsistency"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "metrics.oracle_bounded"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "AUTHOR_FIRST_PASS_DEFECTS — NONE demonstrated by Q1 ; must not be read as A1 had zero material defects"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CHALLENGER_MISSES — NONE among Q1-demonstrated defects ; bounded by the oracle coverage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "MATERIAL_DEFECTS_MISSED_BY_BOTH — NONE demonstrated by Q1 / Q2 ; bounded by the oracle coverage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FINAL_REMAINING_DEFECTS — NONE established by Q2 ; must not be read as the final implementation having exhaustively zero defects"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.complete_ground_truth"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.coverage_c1_m01_class"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "INCOMPLETE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "metrics.enumeration"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ORACLE_BOUNDED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "defects.exhaustive_material_enumeration"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.c1_m01_specific_fix_confirmation"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.author_first_pass"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "STRONG_BUT_MATERIALLY_IMPERFECT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.author_self_observation"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SAW_C1_M01_BEHAVIOR"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.author_contract_classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "FAILED_TO_IDENTIFY_AS_MATERIAL_DEFECT"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.challenger_true_material_findings"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "1 — C1-M-01"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.challenger_value_type"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "value": "MATERIAL_RECLASSIFICATION"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CLAIM_CHALLENGE"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CORRECTION_TRIGGER"
+          },
+          {
+            "type": "SYMBOL",
+            "value": "CORRECTION_VERIFICATION"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.novel_behavioral_discovery_by_challenger"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.final_implementation"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NO REMAINING MATERIAL DEFECT ESTABLISHED WITHIN THE AVAILABLE EVIDENCE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.exhaustive_defect_absence"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.general_ccr_roi"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.ccr_scaling"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "interpretation.general_cross_review_recommendation"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_ESTABLISHED"
       }
     }
   ]
