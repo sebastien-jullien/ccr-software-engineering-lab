@@ -1944,7 +1944,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "REVEAL THE ORACLE AND THE FULL Q1 AND Q2 FOR AUDIT AGAINST THE COMMITMENTS, THEN ESTABLISH ATTRIBUTION AND PRODUCE THE FIELD-STUDY EVIDENCE. NO NEW CONCEPTUAL GATE. — Sur le go Git local de continuation, révéler la source de l'oracle, Q1 complet et Q2 complet, les auditer contre leurs engagements publiés (commit de l'oracle, manifeste, Q1_COMMITMENT, Q2_COMMITMENT et sceaux de répertoire), établir la preuve factuelle d'attribution et les métriques du § 10 de l'autorité 104, puis produire, valider et geler missions/023-field-001-idempotent-job-submission/field-study-evidence.json, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c.",
+    "value": "ONE INDEPENDENT COUNTER-EXPERTISE OF THE COMPLETE FIELD-001 TERMINAL EVIDENCE PACKAGE. — Mission 023 exécutée et complète, issue terminale FIELD_001_COMPLETE_AFTER_A2_C2_Q2 ; paquet factuel terminal missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob 59f96b51408defeba6c5dd4d235790e6528e5b6f, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter ce paquet complet vers une contre-expertise indépendante unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1961,31 +1961,31 @@
         }
       },
       {
-        "id": "ev-296",
+        "id": "ev-298",
         "kind": "repo-path",
-        "ref": "missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+        "ref": "missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
-          "field": "q2_commitment",
-          "value": "Q2 de FIELD-001 exécuté une seule fois par le qualificateur AGENT CCR LAB #67 contre l'A2 gelé c554667fba9a24123ba4964a1a00fe8ab6d2f6e1 avec le même oracle gelé 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 ; résultat séquestré hors des dépôts cible et canonique ; engagement Q2_COMMITMENT publié : SHA-256 du résultat de l'oracle 0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208, SHA-256 de la qualification e5890bf5c8dae0bb24f7ede2c2747d6225a57576f30549ff7a605845faf0f305 ; identités, propreté et hachages vérifiés mécaniquement par le contrôleur, sans lecture de Q2 ; passes d'auteur et de challenger closes. Preuve missions/023-field-001-idempotent-job-submission/q2-commitment.json, blob e220717ebb5c2882ac7408b5117690dc63ee6987."
+          "field": "terminal_reveal",
+          "value": "Révélation terminale de FIELD-001 : oracle, Q1 complet et Q2 complet révélés et audités contre leurs engagements ; oracle 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 conforme à son engagement (arbre, manifeste, 8 fichiers sur 8) et inchangé entre Q1 et Q2 ; Q1 sur A1 et Q2 sur A2 : 12 PASS, 0 FAIL, 0 BLOCKED chacun, ligne de base 10 sur 10 ; écarts consignés : fichiers auxiliaires et retouche post-exécution de Q1, canal auxiliaire des empreintes de Q2, exécution de Q2 dans la session de Q1 ; copies terminales à l'octet près ou caviardées du seul chemin séquestré. Manifeste missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json, blob e5f0c5348e0994d66b1b84147dbb2049a5ed8feb."
         },
         "observed": {
-          "blob": "e220717ebb5c2882ac7408b5117690dc63ee6987"
+          "blob": "e5f0c5348e0994d66b1b84147dbb2049a5ed8feb"
         }
       },
       {
-        "id": "ev-297",
+        "id": "ev-299",
         "kind": "repo-path",
-        "ref": "missions/023-field-001-idempotent-job-submission/mission.json",
+        "ref": "missions/023-field-001-idempotent-job-submission/field-study-evidence.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "REVEAL THE ORACLE AND THE FULL Q1 AND Q2 FOR AUDIT AGAINST THE COMMITMENTS, THEN ESTABLISH ATTRIBUTION AND PRODUCE THE FIELD-STUDY EVIDENCE. NO NEW CONCEPTUAL GATE. — Sur le go Git local de continuation, révéler la source de l'oracle, Q1 complet et Q2 complet, les auditer contre leurs engagements publiés (commit de l'oracle, manifeste, Q1_COMMITMENT, Q2_COMMITMENT et sceaux de répertoire), établir la preuve factuelle d'attribution et les métriques du § 10 de l'autorité 104, puis produire, valider et geler missions/023-field-001-idempotent-job-submission/field-study-evidence.json, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c."
+          "value": "ONE INDEPENDENT COUNTER-EXPERTISE OF THE COMPLETE FIELD-001 TERMINAL EVIDENCE PACKAGE. — Mission 023 exécutée et complète, issue terminale FIELD_001_COMPLETE_AFTER_A2_C2_Q2 ; paquet factuel terminal missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob 59f96b51408defeba6c5dd4d235790e6528e5b6f, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter ce paquet complet vers une contre-expertise indépendante unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général."
         },
         "observed": {
-          "blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c"
+          "blob": "59f96b51408defeba6c5dd4d235790e6528e5b6f"
         }
       }
     ]

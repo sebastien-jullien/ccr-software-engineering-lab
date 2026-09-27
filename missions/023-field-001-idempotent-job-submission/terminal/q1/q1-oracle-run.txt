@@ -1,0 +1,7 @@
+cwd: <SEQUESTERED_ORACLE_REPOSITORY>
+env: PYTHONDONTWRITEBYTECODE=1 PYTHONIOENCODING=utf-8
+command: python field001_oracle.py --repo E:\prog\ccr-field-001-idempotent-jobs --commit 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3 --out <results>\q1\q1-oracle-result.json > <results>\q1\q1-oracle-stdout.json 2> <results>\q1\q1-oracle-stderr.txt
+start_utc: 2026-09-26T15:58:20Z
+end_utc: 2026-09-26T15:58:23Z
+exit_code: 0
+note: cwd line corrected after the run (a shell printf escape had turned the backslash before 'f001' into a form-feed); other lines unchanged

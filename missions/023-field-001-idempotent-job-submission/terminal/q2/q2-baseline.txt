@@ -1,0 +1,20 @@
+FIELD-001 Q2 - baseline regression run on the exact A2 bytes
+repository: E:\prog\ccr-field-001-idempotent-jobs
+a2_commit: c554667fba9a24123ba4964a1a00fe8ab6d2f6e1
+a2_tree: 602d5e67b0a58feba09b9ebb185699e75b07fdc3
+export: git archive --format=tar c554667fba9a24123ba4964a1a00fe8ab6d2f6e1 -> one temporary directory (removed after the run)
+exported_files: 11
+exported_bytes_identical_to_git_blobs: YES
+python: 3.14.3
+env: PYTHONDONTWRITEBYTECODE=1 PYTHONIOENCODING=utf-8
+cwd: <temporary export of A2>
+command: python -m unittest tests.test_baseline
+start_utc: 2026-09-27T03:14:32Z
+end_utc: 2026-09-27T03:14:38Z
+exit_code: 0
+----- combined stdout/stderr (verbatim) -----
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 5.887s
+
+OK

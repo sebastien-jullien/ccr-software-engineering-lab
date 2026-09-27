@@ -1,0 +1,386 @@
+{
+  "oracle": "field-001-oracle/1",
+  "python": "3.14.3",
+  "b0_commit": "785795af434299d2b6d25910eac2761208766b0d",
+  "b0": {
+    "verdicts": {
+      "O-01": "PASS",
+      "O-02": "FAIL",
+      "O-03": "FAIL",
+      "O-04": "FAIL",
+      "O-05": "FAIL",
+      "O-06": "FAIL",
+      "O-07": "FAIL",
+      "O-08": "FAIL",
+      "O-09": "FAIL",
+      "O-10": "FAIL",
+      "O-11": "FAIL",
+      "O-12": "BLOCKED"
+    },
+    "expected": {
+      "O-01": "PASS",
+      "O-02": "FAIL",
+      "O-03": "FAIL",
+      "O-04": "FAIL",
+      "O-05": "FAIL",
+      "O-06": "FAIL",
+      "O-07": "FAIL",
+      "O-08": "FAIL",
+      "O-09": "FAIL",
+      "O-10": "FAIL",
+      "O-11": "FAIL",
+      "O-12": "BLOCKED"
+    },
+    "matches": true
+  },
+  "reference": {
+    "runs": 10,
+    "all_pass_every_run": true,
+    "verdicts_per_run": [
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      }
+    ]
+  },
+  "mutants": {
+    "raw-bytes": {
+      "targeted": [
+        "O-05"
+      ],
+      "verdicts": {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "FAIL",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      "targeted_fail": true
+    },
+    "in-memory": {
+      "targeted": [
+        "O-07"
+      ],
+      "verdicts": {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "FAIL",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "BLOCKED"
+      },
+      "targeted_fail": true
+    },
+    "poison": {
+      "targeted": [
+        "O-10"
+      ],
+      "verdicts": {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "FAIL",
+        "O-11": "PASS",
+        "O-12": "PASS"
+      },
+      "targeted_fail": true
+    },
+    "fallback": {
+      "targeted": [
+        "O-12"
+      ],
+      "verdicts": {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "PASS",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "FAIL"
+      },
+      "targeted_fail": true
+    },
+    "rebind": {
+      "targeted": [
+        "O-06",
+        "O-11"
+      ],
+      "verdicts": {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "FAIL",
+        "O-06": "FAIL",
+        "O-07": "PASS",
+        "O-08": "PASS",
+        "O-09": "FAIL",
+        "O-10": "PASS",
+        "O-11": "FAIL",
+        "O-12": "PASS"
+      },
+      "targeted_fail": true
+    },
+    "no-header": {
+      "targeted": [
+        "O-03",
+        "O-04"
+      ],
+      "verdicts": {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "FAIL",
+        "O-04": "FAIL",
+        "O-05": "FAIL",
+        "O-06": "PASS",
+        "O-07": "FAIL",
+        "O-08": "FAIL",
+        "O-09": "FAIL",
+        "O-10": "FAIL",
+        "O-11": "FAIL",
+        "O-12": "PASS"
+      },
+      "targeted_fail": true
+    }
+  },
+  "race_mutant_sensitivity": {
+    "note": "check-then-insert without atomicity; detection depends on the implementation's own nondeterminism, not on the harness",
+    "runs": 5,
+    "o08_fail_runs": 5,
+    "o09_fail_runs": 5,
+    "verdicts_per_run": [
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "FAIL",
+        "O-09": "FAIL",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "FAIL"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "FAIL",
+        "O-09": "FAIL",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "FAIL"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "FAIL",
+        "O-09": "FAIL",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "FAIL"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "FAIL",
+        "O-09": "FAIL",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "FAIL"
+      },
+      {
+        "O-01": "PASS",
+        "O-02": "PASS",
+        "O-03": "PASS",
+        "O-04": "PASS",
+        "O-05": "PASS",
+        "O-06": "PASS",
+        "O-07": "PASS",
+        "O-08": "FAIL",
+        "O-09": "FAIL",
+        "O-10": "PASS",
+        "O-11": "PASS",
+        "O-12": "FAIL"
+      }
+    ]
+  },
+  "seconds": 48.9,
+  "oracle_valid": true
+}

@@ -1,0 +1,216 @@
+{
+  "artifact": "FIELD_001_TERMINAL_REVEAL_MANIFEST",
+  "study_id": "FIELD-001",
+  "controller": "AGENT CCR LAB #1",
+  "governing": {
+    "authority": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+    "authority_blob": "a52e1584ef997ab05c70177f8dc827f07ded2d39",
+    "mission": "missions/023-field-001-idempotent-job-submission/mission.json",
+    "mission_blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c"
+  },
+  "sequestration": "lifted for the terminal audit, the attribution and the evidence materialization only (authority 104 § 13 ; mission 023 standing constraints released once Q2 completed) ; no sequestered file was modified",
+  "private_location_rule": "no private absolute filesystem location is published : where the absolute path of the sequestered oracle repository occurs, it is replaced by the token <SEQUESTERED_ORACLE_REPOSITORY> and the copy records byte_identity NO with the exact substitution",
+  "byte_preservation": "terminal/.gitattributes sets -text -whitespace so that every copy is stored and checked out byte for byte on any platform ; the oracle copy keeps its own frozen .gitattributes (text=auto eol=lf) over LF-only files",
+  "oracle_commitment": {
+    "commit": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99",
+    "tree": "50ee0d3532eb7faaea7fe6e45909a3ae2533e138",
+    "manifest_sha256": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46",
+    "frozen_at": "2026-09-26T12:09:08+02:00",
+    "published_in": [
+      "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+      "missions/023-field-001-idempotent-job-submission/field-study-manifest.json"
+    ],
+    "terminal_audit": "MATCHES_COMMITMENT"
+  },
+  "directory_seals": {
+    "q1": {
+      "published_in": "missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "sha256": "5a59b1a0cda61d328c094743807b8a62ed7d62bd989b08ef12ca749f5bcb8ceb",
+      "recomputed_at_reveal": "MATCH"
+    },
+    "q2": {
+      "published_in": "missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+      "sha256": "03973d3b7d5ec77b709cf4d6e6ae5d6018716af06c2787e8aa1d50473db2217f",
+      "recomputed_at_reveal": "MATCH"
+    }
+  },
+  "artifacts": [
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/.gitattributes",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : .gitattributes",
+      "original_sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "canonical_sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/.gitignore",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : .gitignore",
+      "original_sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "canonical_sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/MANIFEST.sha256",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : MANIFEST.sha256",
+      "original_sha256": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46",
+      "canonical_sha256": "97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46",
+      "byte_identity": "YES",
+      "committed_by": "MANIFEST.sha256 sha256 published in authority 104 and the field-study manifest"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/README.md",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : README.md",
+      "original_sha256": "3a3c81b34cd077b5c18f28affaf4bd4f8565222a89b96a317d3205cbd19961f5",
+      "canonical_sha256": "3a3c81b34cd077b5c18f28affaf4bd4f8565222a89b96a317d3205cbd19961f5",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : field001_oracle.py",
+      "original_sha256": "d4860354eee9367440ba93a79c1b16ae93112727aac7a08e622575c5046c982d",
+      "canonical_sha256": "d4860354eee9367440ba93a79c1b16ae93112727aac7a08e622575c5046c982d",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/reference/jobservice/server.py",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : reference/jobservice/server.py",
+      "original_sha256": "25cf681fa72a55fd84098821a5b2be2c1a5091f728615e55f175ac53ba097386",
+      "canonical_sha256": "25cf681fa72a55fd84098821a5b2be2c1a5091f728615e55f175ac53ba097386",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/reference/jobservice/store.py",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : reference/jobservice/store.py",
+      "original_sha256": "598b10ce43415e138e0f517a4dae1226de4be7a111454fcce37632ca85db672f",
+      "canonical_sha256": "598b10ce43415e138e0f517a4dae1226de4be7a111454fcce37632ca85db672f",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/validate_oracle.py",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : validate_oracle.py",
+      "original_sha256": "89003712d537f40175b34c3e8328fc257325c8c78f7ae1f47bf91ac9378efd5f",
+      "canonical_sha256": "89003712d537f40175b34c3e8328fc257325c8c78f7ae1f47bf91ac9378efd5f",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/oracle/validation-report.json",
+      "source": "oracle commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 : validation-report.json",
+      "original_sha256": "8847632ce4fc42f7dbfb29614a547ee6e5f31abd1f3144b1c86121abdd7a867c",
+      "canonical_sha256": "8847632ce4fc42f7dbfb29614a547ee6e5f31abd1f3144b1c86121abdd7a867c",
+      "byte_identity": "YES",
+      "committed_by": "oracle commit and MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json",
+      "source": "sequestered results : q1/q1-oracle-result.json",
+      "original_sha256": "03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768",
+      "committed_by": "Q1_COMMITMENT record missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "canonical_sha256": "03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-stdout.json",
+      "source": "sequestered results : q1/q1-oracle-stdout.json",
+      "original_sha256": "5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0",
+      "committed_by": "Q1_COMMITMENT record missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "canonical_sha256": "5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-baseline.txt",
+      "source": "sequestered results : q1/q1-baseline.txt",
+      "original_sha256": "63c89008f059822c07acb6af489df98736f7483d2945ce8f28e8c5846c478474",
+      "committed_by": "Q1_COMMITMENT record missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "canonical_sha256": "63c89008f059822c07acb6af489df98736f7483d2945ce8f28e8c5846c478474",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-qualification.md",
+      "source": "sequestered results : q1/q1-qualification.md",
+      "original_sha256": "8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c",
+      "committed_by": "Q1_COMMITMENT record missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "canonical_sha256": "01896c59f9c329a4b0a04825b0705c50581f2da3d3559cb721899fff17aa6c3d",
+      "byte_identity": "NO",
+      "redaction": "exactly one occurrence of the absolute path of the sequestered oracle repository replaced by the token <SEQUESTERED_ORACLE_REPOSITORY> ; no other byte changed ; replacing the token by that path restores the original bytes"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-stderr.txt",
+      "source": "sequestered results : q1/q1-oracle-stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "committed_by": "directory seal of the sequestered q1 folder, published in missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "canonical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-run.txt",
+      "source": "sequestered results : q1/q1-oracle-run.txt",
+      "original_sha256": "b4fcf43110fb441e230eb0b3f042e5952bf5649746bb006a6671f7c92027645c",
+      "committed_by": "directory seal of the sequestered q1 folder, published in missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "canonical_sha256": "7ab554bbed1e7f87a0456a6f64d67b2d52d5c6cd9fff3aeec6407cc490b72dce",
+      "byte_identity": "NO",
+      "redaction": "exactly one occurrence of the absolute path of the sequestered oracle repository replaced by the token <SEQUESTERED_ORACLE_REPOSITORY> ; no other byte changed ; replacing the token by that path restores the original bytes"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json",
+      "source": "sequestered results : q2/q2-oracle-result.json",
+      "original_sha256": "0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208",
+      "committed_by": "Q2_COMMITMENT record missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+      "canonical_sha256": "0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-stdout.json",
+      "source": "sequestered results : q2/q2-oracle-stdout.json",
+      "original_sha256": "5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0",
+      "committed_by": "Q2_COMMITMENT record missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+      "canonical_sha256": "5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-stderr.txt",
+      "source": "sequestered results : q2/q2-oracle-stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "committed_by": "Q2_COMMITMENT record missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+      "canonical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-baseline.txt",
+      "source": "sequestered results : q2/q2-baseline.txt",
+      "original_sha256": "49f6a492351ce28ee23c6225cf96ee03cd55442d4f06b8d2afa940dd01ebf205",
+      "committed_by": "Q2_COMMITMENT record missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+      "canonical_sha256": "49f6a492351ce28ee23c6225cf96ee03cd55442d4f06b8d2afa940dd01ebf205",
+      "byte_identity": "YES"
+    },
+    {
+      "canonical_path": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md",
+      "source": "sequestered results : q2/q2-qualification.md",
+      "original_sha256": "e5890bf5c8dae0bb24f7ede2c2747d6225a57576f30549ff7a605845faf0f305",
+      "committed_by": "Q2_COMMITMENT record missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+      "canonical_sha256": "fbc467fb3621c6d725b31ddc239b62b4a5ebfafd1a9daeaafbb67524e76b1753",
+      "byte_identity": "NO",
+      "redaction": "exactly one occurrence of the absolute path of the sequestered oracle repository replaced by the token <SEQUESTERED_ORACLE_REPOSITORY> ; no other byte changed ; replacing the token by that path restores the original bytes"
+    }
+  ],
+  "retained_external_references": [
+    {
+      "name": "raw AGENT CCR LAB #67 Q1 return",
+      "sha256": "ac1f99f274ff7cfd9fb87702a883c759d48ee1b9ffc12bda9a0a57b1187b88b9",
+      "published_in": "missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "status": "not published — it names private local paths ; the facts needed for the audit are extracted into missions/023-field-001-idempotent-job-submission/field-study-evidence.json"
+    },
+    {
+      "name": "raw AGENT CCR LAB #67 Q2 return",
+      "sha256": "fafae3183652ae91ffd120afb893dad19e3677f96e7d95e4f7cdb33ccda96988",
+      "published_in": "missions/023-field-001-idempotent-job-submission/q2-commitment.json",
+      "status": "not published — it names private local paths ; the facts needed for the audit are extracted into missions/023-field-001-idempotent-job-submission/field-study-evidence.json"
+    }
+  ]
+}

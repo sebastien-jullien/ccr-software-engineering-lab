@@ -1,0 +1,1239 @@
+{
+  "oracle": "field-001-oracle/1",
+  "python": "3.14.3",
+  "sqlite": "3.50.4",
+  "target": {
+    "commit": "c554667fba9a24123ba4964a1a00fe8ab6d2f6e1",
+    "tree": "602d5e67b0a58feba09b9ebb185699e75b07fdc3"
+  },
+  "cases": [
+    {
+      "id": "O-01",
+      "title": "legacy no-key behavior",
+      "clauses": [
+        "C-LEGACY"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-LEGACY",
+          "check": "first keyless submission creates a job (201)",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "json": {
+              "id": "242edb26-150a-442b-85da-467ce8cb20a6",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.182487+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-LEGACY",
+          "check": "second keyless submission creates a job (201)",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "json": {
+              "id": "548ce15c-877c-4ace-b91a-1c0d44956a29",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.188533+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-LEGACY",
+          "check": "the two keyless submissions return distinct jobs",
+          "result": "PASS",
+          "observed": [
+            "242edb26-150a-442b-85da-467ce8cb20a6",
+            "548ce15c-877c-4ace-b91a-1c0d44956a29"
+          ]
+        },
+        {
+          "clause": "C-LEGACY",
+          "check": "two jobs are stored",
+          "result": "PASS",
+          "observed": 2
+        },
+        {
+          "clause": "C-LEGACY",
+          "check": "keyless invalid JSON keeps the existing 400 INVALID_JSON",
+          "result": "PASS",
+          "observed": {
+            "status": 400,
+            "json": {
+              "error": "INVALID_JSON"
+            }
+          }
+        },
+        {
+          "clause": "C-LEGACY",
+          "check": "keyless invalid job body keeps the existing 400 INVALID_JOB",
+          "result": "PASS",
+          "observed": {
+            "status": 400,
+            "json": {
+              "error": "INVALID_JOB"
+            }
+          }
+        },
+        {
+          "clause": "C-LEGACY",
+          "check": "invalid keyless requests create no job",
+          "result": "PASS",
+          "observed": 2
+        }
+      ],
+      "observations": {},
+      "seconds": 0.188
+    },
+    {
+      "id": "O-02",
+      "title": "invalid key",
+      "clauses": [
+        "C-KEY"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-KEY",
+          "check": "invalid key 'has space' → 400 INVALID_IDEMPOTENCY_KEY",
+          "result": "PASS",
+          "observed": {
+            "status": 400,
+            "json": {
+              "error": "INVALID_IDEMPOTENCY_KEY"
+            }
+          }
+        },
+        {
+          "clause": "C-KEY",
+          "check": "invalid key 'slash/key' → 400 INVALID_IDEMPOTENCY_KEY",
+          "result": "PASS",
+          "observed": {
+            "status": 400,
+            "json": {
+              "error": "INVALID_IDEMPOTENCY_KEY"
+            }
+          }
+        },
+        {
+          "clause": "C-KEY",
+          "check": "invalid key 'xxxxxxxx…(129)' → 400 INVALID_IDEMPOTENCY_KEY",
+          "result": "PASS",
+          "observed": {
+            "status": 400,
+            "json": {
+              "error": "INVALID_IDEMPOTENCY_KEY"
+            }
+          }
+        },
+        {
+          "clause": "C-KEY",
+          "check": "invalid key 'semi;colon' → 400 INVALID_IDEMPOTENCY_KEY",
+          "result": "PASS",
+          "observed": {
+            "status": 400,
+            "json": {
+              "error": "INVALID_IDEMPOTENCY_KEY"
+            }
+          }
+        },
+        {
+          "clause": "C-KEY",
+          "check": "invalid key 'brace{' → 400 INVALID_IDEMPOTENCY_KEY",
+          "result": "PASS",
+          "observed": {
+            "status": 400,
+            "json": {
+              "error": "INVALID_IDEMPOTENCY_KEY"
+            }
+          }
+        },
+        {
+          "clause": "C-KEY",
+          "check": "invalid keys create no job",
+          "result": "PASS",
+          "observed": 0
+        },
+        {
+          "clause": "C-KEY",
+          "check": "valid key 'AAAA…(128)' is accepted (201)",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "ba7ebddc-5646-46cc-8c2d-283056336a6a",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.349584+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-KEY",
+          "check": "valid key 'az.AZ_09:-' is accepted (201)",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "932cf1c7-1771-47bd-98a3-116e8b4fba6b",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.354792+00:00"
+            }
+          }
+        }
+      ],
+      "observations": {},
+      "seconds": 0.16
+    },
+    {
+      "id": "O-03",
+      "title": "first keyed creation",
+      "clauses": [
+        "C-FIRST"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-FIRST",
+          "check": "first keyed submission → 201",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "2b891ee5-8fcd-4172-b297-ea0bd27656e4",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.502031+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-FIRST",
+          "check": "first keyed submission → Idempotency-Replayed: false",
+          "result": "PASS",
+          "observed": "false"
+        },
+        {
+          "clause": "C-FIRST",
+          "check": "exactly one job created",
+          "result": "PASS",
+          "observed": 1
+        },
+        {
+          "clause": "C-FIRST",
+          "check": "the returned job is the stored job",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "json": {
+              "id": "2b891ee5-8fcd-4172-b297-ea0bd27656e4",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.502031+00:00"
+            }
+          }
+        }
+      ],
+      "observations": {},
+      "seconds": 0.151
+    },
+    {
+      "id": "O-04",
+      "title": "identical replay",
+      "clauses": [
+        "C-REPLAY"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-FIRST",
+          "check": "setup: first keyed submission → 201",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "c1006043-2523-40c4-9671-5928b82936a4",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.654739+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-REPLAY",
+          "check": "identical retry → 200",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "replayed": "true",
+            "json": {
+              "id": "c1006043-2523-40c4-9671-5928b82936a4",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.654739+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-REPLAY",
+          "check": "identical retry → Idempotency-Replayed: true",
+          "result": "PASS",
+          "observed": "true"
+        },
+        {
+          "clause": "C-REPLAY",
+          "check": "identical retry returns the same job id",
+          "result": "PASS",
+          "observed": [
+            "c1006043-2523-40c4-9671-5928b82936a4",
+            "c1006043-2523-40c4-9671-5928b82936a4"
+          ]
+        },
+        {
+          "clause": "C-REPLAY",
+          "check": "no new job on identical retry",
+          "result": "PASS",
+          "observed": 1
+        }
+      ],
+      "observations": {},
+      "seconds": 0.152
+    },
+    {
+      "id": "O-05",
+      "title": "canonical JSON equivalence",
+      "clauses": [
+        "C-IDENTITY",
+        "C-REPLAY",
+        "C-CONFLICT"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-FIRST",
+          "check": "setup: first keyed submission → 201",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "27dd52c0-0c55-4afc-a681-ff311a03487b",
+              "type": "report",
+              "payload": {
+                "b": [
+                  1,
+                  2,
+                  {
+                    "q": "x",
+                    "p": null
+                  }
+                ],
+                "a": {
+                  "z": "Z",
+                  "y": true
+                }
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.808551+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-IDENTITY",
+          "check": "whitespace and key order differ only → same logical request → 200 replay",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "replayed": "true",
+            "json": {
+              "id": "27dd52c0-0c55-4afc-a681-ff311a03487b",
+              "type": "report",
+              "payload": {
+                "b": [
+                  1,
+                  2,
+                  {
+                    "q": "x",
+                    "p": null
+                  }
+                ],
+                "a": {
+                  "z": "Z",
+                  "y": true
+                }
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.808551+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-IDENTITY",
+          "check": "the equivalent request returns the same job id",
+          "result": "PASS",
+          "observed": [
+            "27dd52c0-0c55-4afc-a681-ff311a03487b",
+            "27dd52c0-0c55-4afc-a681-ff311a03487b"
+          ]
+        },
+        {
+          "clause": "C-IDENTITY",
+          "check": "array order is significant → different logical request → 409 IDEMPOTENCY_CONFLICT",
+          "result": "PASS",
+          "observed": {
+            "status": 409,
+            "json": {
+              "error": "IDEMPOTENCY_CONFLICT"
+            }
+          }
+        },
+        {
+          "clause": "C-IDENTITY",
+          "check": "string values are exact → different logical request → 409 IDEMPOTENCY_CONFLICT",
+          "result": "PASS",
+          "observed": {
+            "status": 409,
+            "json": {
+              "error": "IDEMPOTENCY_CONFLICT"
+            }
+          }
+        },
+        {
+          "clause": "C-IDENTITY",
+          "check": "the type value is exact → different logical request → 409 IDEMPOTENCY_CONFLICT",
+          "result": "PASS",
+          "observed": {
+            "status": 409,
+            "json": {
+              "error": "IDEMPOTENCY_CONFLICT"
+            }
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "only the first request created a job",
+          "result": "PASS",
+          "observed": 1
+        }
+      ],
+      "observations": {},
+      "seconds": 0.157
+    },
+    {
+      "id": "O-06",
+      "title": "same key / different request conflict",
+      "clauses": [
+        "C-CONFLICT"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-FIRST",
+          "check": "setup: first keyed submission → 201",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "85f8dd9c-e80e-4f79-b5b0-e80100f6732a",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:57.964385+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "same key, different request → 409",
+          "result": "PASS",
+          "observed": {
+            "status": 409,
+            "json": {
+              "error": "IDEMPOTENCY_CONFLICT"
+            }
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "409 body is {\"error\": \"IDEMPOTENCY_CONFLICT\"}",
+          "result": "PASS",
+          "observed": {
+            "error": "IDEMPOTENCY_CONFLICT"
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "no new job on conflict",
+          "result": "PASS",
+          "observed": 1
+        }
+      ],
+      "observations": {},
+      "seconds": 0.152
+    },
+    {
+      "id": "O-07",
+      "title": "persistence across restart",
+      "clauses": [
+        "C-DURABLE"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-FIRST",
+          "check": "setup: first keyed submission → 201",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "59b0f680-9cb9-441f-9d56-383d381ecb48",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:58.119654+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-DURABLE",
+          "check": "after stop / restart on the same database, identical retry → 200 replay",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "replayed": "true",
+            "json": {
+              "id": "59b0f680-9cb9-441f-9d56-383d381ecb48",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:58.119654+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-DURABLE",
+          "check": "the replay returns the same logical job",
+          "result": "PASS",
+          "observed": [
+            "59b0f680-9cb9-441f-9d56-383d381ecb48",
+            "59b0f680-9cb9-441f-9d56-383d381ecb48"
+          ]
+        },
+        {
+          "clause": "C-DURABLE",
+          "check": "no new job after restart",
+          "result": "PASS",
+          "observed": 1
+        },
+        {
+          "clause": "C-DURABLE",
+          "check": "the job is still readable after restart",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "json": {
+              "id": "59b0f680-9cb9-441f-9d56-383d381ecb48",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:58.119654+00:00"
+            }
+          }
+        }
+      ],
+      "observations": {},
+      "seconds": 0.288
+    },
+    {
+      "id": "O-08",
+      "title": "concurrent identical requests",
+      "clauses": [
+        "C-CONC-IDENTICAL"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-CONC-IDENTICAL",
+          "check": "exactly one HTTP 201",
+          "result": "PASS",
+          "observed": 1
+        },
+        {
+          "clause": "C-CONC-IDENTICAL",
+          "check": "zero HTTP 409",
+          "result": "PASS",
+          "observed": 0
+        },
+        {
+          "clause": "C-CONC-IDENTICAL",
+          "check": "every other successful request is a 200 replay (Idempotency-Replayed: true)",
+          "result": "PASS",
+          "observed": [
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "0713c5c4-4e6a-42ea-9342-199a167e0e52",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.404887+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "0713c5c4-4e6a-42ea-9342-199a167e0e52",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.404887+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "0713c5c4-4e6a-42ea-9342-199a167e0e52",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.404887+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "0713c5c4-4e6a-42ea-9342-199a167e0e52",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.404887+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "0713c5c4-4e6a-42ea-9342-199a167e0e52",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.404887+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "0713c5c4-4e6a-42ea-9342-199a167e0e52",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.404887+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "0713c5c4-4e6a-42ea-9342-199a167e0e52",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.404887+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "clause": "C-CONC-IDENTICAL",
+          "check": "exactly one distinct job id returned",
+          "result": "PASS",
+          "observed": [
+            "0713c5c4-4e6a-42ea-9342-199a167e0e52"
+          ]
+        },
+        {
+          "clause": "C-CONC-IDENTICAL",
+          "check": "exactly one job created",
+          "result": "PASS",
+          "observed": 1
+        }
+      ],
+      "observations": {
+        "statuses": [
+          200,
+          200,
+          200,
+          201,
+          200,
+          200,
+          200,
+          200
+        ],
+        "non_2xx_other_than_409": 0
+      },
+      "seconds": 0.248
+    },
+    {
+      "id": "O-09",
+      "title": "concurrent competing requests",
+      "clauses": [
+        "C-CONC-COMPETING"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "exactly one request is established (one HTTP 201)",
+          "result": "PASS",
+          "observed": 1
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "at most one job is created for the key",
+          "result": "PASS",
+          "observed": 1
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "no request with the losing identity succeeds (no silent rebinding)",
+          "result": "PASS",
+          "observed": [
+            {
+              "status": 409,
+              "json": {
+                "error": "IDEMPOTENCY_CONFLICT"
+              }
+            },
+            {
+              "status": 409,
+              "json": {
+                "error": "IDEMPOTENCY_CONFLICT"
+              }
+            },
+            {
+              "status": 409,
+              "json": {
+                "error": "IDEMPOTENCY_CONFLICT"
+              }
+            },
+            {
+              "status": 409,
+              "json": {
+                "error": "IDEMPOTENCY_CONFLICT"
+              }
+            }
+          ]
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "requests matching the winner are never answered 409",
+          "result": "PASS",
+          "observed": [
+            200,
+            200,
+            201,
+            200
+          ]
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "successful requests matching the winner replay the established job",
+          "result": "PASS",
+          "observed": [
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "4e3e3e4f-b694-4c09-92d6-6e409a036ca2",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.653677+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "4e3e3e4f-b694-4c09-92d6-6e409a036ca2",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.653677+00:00"
+              }
+            },
+            {
+              "status": 201,
+              "replayed": "false",
+              "json": {
+                "id": "4e3e3e4f-b694-4c09-92d6-6e409a036ca2",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.653677+00:00"
+              }
+            },
+            {
+              "status": 200,
+              "replayed": "true",
+              "json": {
+                "id": "4e3e3e4f-b694-4c09-92d6-6e409a036ca2",
+                "type": "email",
+                "payload": {
+                  "to": "ops@example.com",
+                  "tags": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "status": "QUEUED",
+                "created_at": "2026-09-27T03:03:58.653677+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "exactly one job exists for the key",
+          "result": "PASS",
+          "observed": 1
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "afterwards the winning request replays the established job (200, same id)",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "replayed": "true",
+            "json": {
+              "id": "4e3e3e4f-b694-4c09-92d6-6e409a036ca2",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:58.653677+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "afterwards the losing request → 409 IDEMPOTENCY_CONFLICT",
+          "result": "PASS",
+          "observed": {
+            "status": 409,
+            "json": {
+              "error": "IDEMPOTENCY_CONFLICT"
+            }
+          }
+        },
+        {
+          "clause": "C-CONC-COMPETING",
+          "check": "still exactly one job",
+          "result": "PASS",
+          "observed": 1
+        }
+      ],
+      "observations": {
+        "statuses": [
+          200,
+          200,
+          201,
+          200,
+          409,
+          409,
+          409,
+          409
+        ],
+        "winner": "R_EMAIL"
+      },
+      "seconds": 0.22
+    },
+    {
+      "id": "O-10",
+      "title": "failed creation does not poison key",
+      "clauses": [
+        "C-FAILED-CREATE"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-FAILED-CREATE",
+          "check": "creation failure → 503",
+          "result": "PASS",
+          "observed": {
+            "status": 503,
+            "json": {
+              "error": "JOB_CREATE_FAILED"
+            }
+          }
+        },
+        {
+          "clause": "C-FAILED-CREATE",
+          "check": "503 body is {\"error\": \"JOB_CREATE_FAILED\"}",
+          "result": "PASS",
+          "observed": {
+            "error": "JOB_CREATE_FAILED"
+          }
+        },
+        {
+          "clause": "C-FAILED-CREATE",
+          "check": "no job is established by the failed attempt",
+          "result": "PASS",
+          "observed": 0
+        },
+        {
+          "clause": "C-FAILED-CREATE",
+          "check": "a later retry with the same key and request succeeds (201, not replayed)",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "5244094b-f201-4c56-884a-638ab4e663eb",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:58.904783+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-FAILED-CREATE",
+          "check": "the retry created exactly one job",
+          "result": "PASS",
+          "observed": 1
+        },
+        {
+          "clause": "C-FAILED-CREATE",
+          "check": "the key then behaves normally (200 replay of the same job)",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "replayed": "true",
+            "json": {
+              "id": "5244094b-f201-4c56-884a-638ab4e663eb",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:58.904783+00:00"
+            }
+          }
+        }
+      ],
+      "observations": {},
+      "seconds": 0.183
+    },
+    {
+      "id": "O-11",
+      "title": "conflict does not mutate original binding",
+      "clauses": [
+        "C-CONFLICT"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-FIRST",
+          "check": "setup: first keyed submission → 201",
+          "result": "PASS",
+          "observed": {
+            "status": 201,
+            "replayed": "false",
+            "json": {
+              "id": "896e3924-194a-45ce-800e-277894c42f29",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:59.055398+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "different request → 409",
+          "result": "PASS",
+          "observed": {
+            "status": 409,
+            "json": {
+              "error": "IDEMPOTENCY_CONFLICT"
+            }
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "after the conflict the key is still bound to the original request (200 replay, same id)",
+          "result": "PASS",
+          "observed": {
+            "status": 200,
+            "replayed": "true",
+            "json": {
+              "id": "896e3924-194a-45ce-800e-277894c42f29",
+              "type": "email",
+              "payload": {
+                "to": "ops@example.com",
+                "tags": [
+                  "a",
+                  "b"
+                ]
+              },
+              "status": "QUEUED",
+              "created_at": "2026-09-27T03:03:59.055398+00:00"
+            }
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "the different request is still refused (409)",
+          "result": "PASS",
+          "observed": {
+            "status": 409,
+            "json": {
+              "error": "IDEMPOTENCY_CONFLICT"
+            }
+          }
+        },
+        {
+          "clause": "C-CONFLICT",
+          "check": "no job was created by conflicting requests",
+          "result": "PASS",
+          "observed": 1
+        }
+      ],
+      "observations": {},
+      "seconds": 0.153
+    },
+    {
+      "id": "O-12",
+      "title": "no silent legacy fallback",
+      "clauses": [
+        "C-NO-FALLBACK"
+      ],
+      "verdict": "PASS",
+      "blocked_reason": null,
+      "checks": [
+        {
+          "clause": "C-NO-FALLBACK",
+          "check": "a keyed request whose idempotency processing fails is answered with an explicit 5xx",
+          "result": "PASS",
+          "observed": {
+            "status": 503,
+            "json": {
+              "error": "JOB_CREATE_FAILED"
+            }
+          }
+        },
+        {
+          "clause": "C-NO-FALLBACK",
+          "check": "the request is not processed as an ordinary legacy POST (no job created)",
+          "result": "PASS",
+          "observed": {
+            "before": 1,
+            "after": 1
+          }
+        }
+      ],
+      "observations": {
+        "faulted_tables": [
+          "idempotency_keys"
+        ],
+        "faulted_job_columns": []
+      },
+      "seconds": 0.177
+    }
+  ],
+  "summary": {
+    "PASS": 12,
+    "FAIL": 0,
+    "BLOCKED": 0
+  }
+}

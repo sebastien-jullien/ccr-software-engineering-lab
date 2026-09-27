@@ -1,0 +1,3003 @@
+{
+  "representation": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "23-TOOLING-EXPERIMENT-003-RESULT-INSTANCE-V0.md"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "1676b3de4546b40a801d0a400b4c47ddd9b82062"
+      }
+    }
+  },
+  "execution": {
+    "id": "023-field-001-idempotent-job-submission"
+  },
+  "source": {
+    "kind": "MISSION",
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/023-field-001-idempotent-job-submission/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0045b127b35b9ac5938c25e8ea33b8232f0e041c"
+      }
+    }
+  },
+  "reported_by": {
+    "executor": "AGENT_CCR_LAB_1"
+  },
+  "return_contract": {
+    "authority": {
+      "locator": {
+        "kind": "REPO_PATH",
+        "value": "missions/023-field-001-idempotent-job-submission/mission.json"
+      },
+      "identity": {
+        "kind": "GIT_BLOB",
+        "value": "0045b127b35b9ac5938c25e8ea33b8232f0e041c"
+      }
+    }
+  },
+  "reported_entries": [
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-study-terminal"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "COMPLETE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a104-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md · GIT_BLOB a52e1584ef997ab05c70177f8dc827f07ded2d39 · SHA256 593fec7b057c8b18a946f4114c86c7139909d96f47af258bf2d51955ca9030ec · recomputed on the committed bytes · EQ the mission 023 reference"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a52e1584ef997ab05c70177f8dc827f07ded2d39"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a103-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md · GIT_BLOB fb885bca7a5ac876347b40c976021980939dfb0f · SHA256 a1523b8e908f6114e77e7be7f9d59c5adf854408d02df76fd6eb1c9d5411282f · recomputed on the committed bytes · EQ the mission 023 reference"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "103-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-DIRECTION-AND-EXPERIMENTAL-PROTOCOL-AUTHORIZATION.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "fb885bca7a5ac876347b40c976021980939dfb0f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-manifest-identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "missions/023-field-001-idempotent-job-submission/field-study-manifest.json · GIT_BLOB 0d61471ead3be646a8030af494a7c6236996f376 · SHA256 8a37f1729654517ac910576f4c4052b2489c645ad4f3e41949a7d44c01e8256e · recomputed on the committed bytes · EQ the mission 023 reference"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/field-study-manifest.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "0d61471ead3be646a8030af494a7c6236996f376"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-b0-commit"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "785795af434299d2b6d25910eac2761208766b0d · tree 7df985d26d241aa46f615e6821ea9b1621ecf936 · committed 2026-09-26T12:02:09+02:00"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a1-commit"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3 · tree 26fb9fbb270d5a43cf575ce114b71f87306959de · parent B0 · frozen 2026-09-26T17:14:13+02:00"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4d8bf030d5f122727f82dc160bb59a964536f040"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a2-commit"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "c554667fba9a24123ba4964a1a00fe8ab6d2f6e1 · tree 602d5e67b0a58feba09b9ebb185699e75b07fdc3 · parent A1 · frozen 2026-09-27T03:37:46+02:00 · final implementation"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-a2-differs"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-oracle-commit"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 · tree 50ee0d3532eb7faaea7fe6e45909a3ae2533e138 · MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46 · used by Q1 and by Q2"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/MANIFEST.sha256"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "7751e825a3bce733ceb8aca5d7c55a86ae60d059"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-commitment"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "a1_commit 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3 · oracle_commit 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 · oracle_manifest_sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46 · q1_oracle_result_sha256 03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768 · q1_qualification_sha256 8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c · published by canonical commit bed610dd26309e4fa8226e04fdd19e5307f2d51f before C1 · revealed files MATCH"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/q1-commitment.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e520f1b6b88c0815e416b936de1c7c194caf53f6"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-result-sha256"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-result-sha256"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o01"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o02"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o03"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o04"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o05"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o06"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o07"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o08"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o09"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q1-o12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o01"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o02"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o03"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o04"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o05"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o06"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o07"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o08"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o09"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o10"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o11"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-q2-o12"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-author-first-pass-defects"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "FROZEN DEFINITION (authority 103 § 10 : defects demonstrated by Q1) : NONE — Q1 on A1 : 12 PASS / 0 FAIL / 0 BLOCKED, no failed check out of 67"
+          },
+          {
+            "type": "SCALAR",
+            "value": "A1 MATERIAL CONTRACT DEVIATION OUTSIDE ORACLE COVERAGE (not demonstrated by Q1) : C1-M-01 · C-FAILED-CREATE · a keyed first submission whose type holds a lone surrogate (\"\\ud800\") fails in insert_job with UnicodeEncodeError and was answered 500 IDEMPOTENCY_PROCESSING_FAILED instead of 503 JOB_CREATE_FAILED on A1 ; 0 job, key free · established by the C1 reproduction and by the controller reproduction on the exact A1 bytes"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1de549937fe7ba0cdc707ffb9d079332181067e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-challenger-true-findings"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-M-01 · C-FAILED-CREATE · a keyed first submission whose type holds a lone surrogate (\"\\ud800\") fails in insert_job with UnicodeEncodeError and was answered 500 IDEMPOTENCY_PROCESSING_FAILED instead of 503 JOB_CREATE_FAILED on A1 ; 0 job, key free · TRUE : independently supported on A1 by the controller reproduction on the exact A1 bytes and by the Author own A1 observation (A1 known limitations) · not exercised by the oracle, so Q1 neither supports nor contradicts it"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-U-01 · unsupported-claim report on the A1 claim \"C-FAILED-CREATE … on failure → 503\" · TRUE : contradicted on A1 by C1-M-01 ; the Author corrected the claim in A2"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-challenger-false-or-nonmaterial"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "FALSE C1 CLAIMS : NONE ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-01 · malformed \"Idempotency-Key :\" header line dropped by the stdlib parser, request takes the legacy path (same parser as B0) · NON-MATERIAL (challenger classification, not reclassified)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-02 · replay of an established key needs the write lock ; under a lock held past the store timeout it is answered 503 JOB_CREATE_FAILED · NON-MATERIAL"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-03 · numbers beyond double range collapse to Infinity in the fingerprint (number equivalence not specified) · NON-MATERIAL"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-04 · surrounding SP / HTAB stripped from the key (RFC 9110 § 5.5) · NON-MATERIAL"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-05 · test docstring tests/test_idempotency.py:151-155 overstates the gate guarantee · NON-MATERIAL"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-06 · Author per-mutant counts not reproducible without the mutant code · NON-MATERIAL"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-challenger-misses"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "FROZEN DEFINITION (Q1 material defects absent from C1) : NONE — Q1 established no material defect"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1de549937fe7ba0cdc707ffb9d079332181067e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-missed-by-both"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "FROZEN DEFINITION (Q1 / Q2-supported defects never identified) : NONE — neither Q1 nor Q2 supports any defect"
+          },
+          {
+            "type": "SCALAR",
+            "value": "OUTSIDE ORACLE COVERAGE, NOT ESTABLISHED AS A DEFECT : very deep nesting (json.dumps RecursionError in request_fingerprint) → keyed 500, present in A1 and A2 ; self-reported by the Author in A2, absent from C1, not verified by the controller"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-cross-review-corrections"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "FROZEN DEFINITION (authority 103 § 10 : Q1-established A1 defects corrected in A2 because of true C1 findings) : NONE — Q1 established no A1 defect"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-TRIGGERED A1 → A2 MATERIAL CORRECTION OUTSIDE ORACLE COVERAGE : C1-M-01 — any failure while creating the job for a key is raised as JobCreateFailed and answered 503 JOB_CREATE_FAILED (store.py try / except around the creation branch ; server.py except (sqlite3.Error, JobCreateFailed)) · C2 FIXED · controller reproduction on A2 : 503, 0 job, key free · not discriminated by Q2"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8c2de47d53bec72ee2638bb16868608e223399e8"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-author-self-corrections"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NONE — the A1 → A2 diff (jobservice/server.py +2 −2 · jobservice/store.py +16 −8 · tests/test_idempotency.py +26 −0) is the C1-M-01 correction and its two reproducing tests only ; C2 : its only behavioral effect is 503 instead of 500 for non-storage creation failures"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-final-remaining-defects"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "FROZEN DEFINITION (Q2-established failures) : NONE — Q2 on A2 : 12 PASS / 0 FAIL / 0 BLOCKED, no failed check out of 67"
+          },
+          {
+            "type": "SCALAR",
+            "value": "OUTSIDE ORACLE COVERAGE, NOT ESTABLISHED AS DEFECTS : very deep nesting → keyed 500 (Author A2 other issue 1) ; the second sentence of C-FAILED-CREATE cannot hold for a request that can never be stored (Author A2 other issue 2, C2 contract remark, no human gate)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NON-MATERIAL : C2-N-01 · the cause of non-storage creation failures is no longer written to the verbose log"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e483e6bdd467b03eccc88115560689abf3d2624e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unsupported-author-claims"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-U-01 · A1 correctness claim \"C-FAILED-CREATE : the job and the binding are atomic ; on failure → 503 and the key stays free\" · OVERBROAD ON A1 (contradicted by C1-M-01) · corrected in A2 · SUPPORTED ON A2 (C2)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-05 · A1 test docstring overstating the gate guarantee · non-material"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-06 · A1 per-mutant failing-test counts · NOT_ESTABLISHED (mutant code not returned) ; the substance of the claim is supported by the challenger own mutants"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-unsupported-challenger-claims"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NONE ESTABLISHED — C1-M-01 and C1-U-01 supported (controller reproduction on A1, Author acceptance) ; the C2 classifications agree with the controller reproduction on A2 and with Q2 ; C1-N-01..C1-N-06 and C2-N-01 not independently verified by the controller (non-material)"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8c2de47d53bec72ee2638bb16868608e223399e8"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-role-contamination"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NONE OBSERVED — the Author (#65 : A1, A2) and Challenger (#66 : C1, C2) returns reference no oracle, no Q1 and no qualification ; no dispatch to them carried oracle or Q1 information ; the Q2 hash side-channel appeared after both Author and both Challenger passes were complete"
+          },
+          {
+            "type": "SCALAR",
+            "value": "QUALIFIER (#67) : Q2 ran in the same session as Q1 — a freshness deviation, not a role contamination (the qualifier is entitled to the oracle and to Q1)"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/q2-commitment.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e220717ebb5c2882ac7408b5117690dc63ee6987"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-contract-drift"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NONE — FIELD-001-CONTRACT.md sha256 7d5132bd119cbdd5f10b7690d6434fbeec872cf9526ab0c7ee751baa8c488f88 identical at B0, A1 and A2 ; the oracle unchanged from its commitment ; no clause added, removed or reinterpreted by authority"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-human-interventions"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NONE — no genuine semantic or authority intervention ; no human gate opened ; no role raised a blocking contract ambiguity"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-review-loops"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "Author passes 2 of 2 (A1, A2) · Challenger passes 2 of 2 (C1, C2) · independent qualifier runs 2 (Q1, Q2) · third loop NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-author-correction-quality"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-M-01 ACCEPT — correction scoped to the job-creation step ; C2 FIXED ; no new defect introduced by A2 (C2) ; controller reproduction on A2 : 503 JOB_CREATE_FAILED, 0 job, key free"
+          },
+          {
+            "type": "SCALAR",
+            "value": "REPRODUCING TESTS — two added ; fail on A1 and pass on A2 (Author, C2 and controller runs) ; no existing test changed (test diff = insertions only)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NO OPPORTUNISTIC CHANGE — the A1 → A2 diff is limited to the correction and its tests ; C1-N-01..C1-N-06 untouched"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CLAIM CORRECTION — C1-U-01 corrected ; SUPPORTED ON A2 (C2)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "SIDE EFFECT — C2-N-01, non-material : the cause of non-storage creation failures is no longer logged"
+          },
+          {
+            "type": "SCALAR",
+            "value": "FINAL QUALIFICATION — Q2 on A2 : 12 / 12 PASS ; baseline 10 / 10 OK ; no regression"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8c2de47d53bec72ee2638bb16868608e223399e8"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-final-oracle-result"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "Q2 · A2 c554667fba9a24123ba4964a1a00fe8ab6d2f6e1 · field-001-oracle/1 · 12 PASS / 0 FAIL / 0 BLOCKED · O-01..O-12 PASS"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-final-regression-result"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO_NEW_REGRESSION"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-baseline.txt"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "bfe377a0fc3f9d4241da5c0638081bca55701da7"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-value-added"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "MATERIALITY ENFORCEMENT — the Author had observed the behavior (A1 known limitation : lone surrogate → keyed 500) but did not classify it as a contract deviation and claimed \"on failure → 503\" ; C1 classified it as a C-FAILED-CREATE violation with clause, exact code, reproduction and consequence"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CROSS-REVIEW RECLASSIFICATION — the same behavior moved from an Author known limitation to an admissible material finding routed to A2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CORRECTION TRIGGER — A2 accepted C1-M-01 ; the whole A1 → A2 diff is attributable to it"
+          },
+          {
+            "type": "SCALAR",
+            "value": "VERIFICATION — C2 re-ran the C1 reproduction on A2 : FIXED ; the controller reproduction on A2 agrees"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CLAIM ACCURACY — the overbroad Author claim C1-U-01 was corrected and is supported on A2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "INDEPENDENT QUALIFICATION — Q2 : 12 / 12 PASS with no regression ; the oracle does not exercise non-storage creation failures, so Q2 neither confirms nor contradicts the C1-M-01 correction"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NOT ESTABLISHED — a novel behavioral discovery by the Challenger (the behavior was already in the Author A1 return) ; any value on oracle-covered behavior (Q1 found no defect to correct)"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8c2de47d53bec72ee2638bb16868608e223399e8"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-ccr-burden-added"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "PASSES — Author 2 · Challenger 2 · independent qualifier runs 2 (Q1, Q2)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1 — 1 material finding (C1-M-01) · 6 non-material observations (C1-N-01..C1-N-06) · 1 unsupported-claim report (C1-U-01)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C2 — 1 classification (C1-M-01 FIXED) · 1 claim verification (C1-U-01) · 1 non-material remark (C2-N-01) · 0 new defect"
+          },
+          {
+            "type": "SCALAR",
+            "value": "AUTHOR CORRECTION WORK — 1 accepted finding · 0 rebuttal · 3 files changed (+44 −10) · 2 tests added"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ROLE DISPATCHES — 6 transported manually (A1, Q1, C1, A2, C2, Q2), each return transported back"
+          },
+          {
+            "type": "SCALAR",
+            "value": "CONTROLLER OPERATIONS — canonical commits for FIELD-001 : 9 (authorization, transaction freeze, A1 freeze record, Q1 commitment, C1 freeze, A2 freeze record, C2 freeze, Q2 commitment, this terminal package) ; target repository commits : 3 (B0, A1 freeze, A2 freeze) ; oracle commit : 1 ; reproductions : C1-M-01 on A1 and on A2 ; Author test-claim verifications on A1 and A2 ; mechanical Q1 and Q2 commitment verifications"
+          },
+          {
+            "type": "SCALAR",
+            "value": "DISPATCH TEXT CORRECTIONS BEFORE TRANSPORT (procedural, non-semantic) — Q1 public return contract (file byte sizes removed) ; C2 section 3 wording (no existing independent qualification implied)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "GENUINE HUMAN SEMANTIC GATES — 0"
+          },
+          {
+            "type": "SCALAR",
+            "value": "METHODOLOGICAL DEVIATIONS — Q1 auxiliary files and post-run edit ; Q2 hash side-channel ; Q2 same-session execution"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ELAPSED TIME AND TOKEN COST — NOT_ESTABLISHED (not instrumented)"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-bounded-hypothesis"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "ON THIS SMALL CONTRACT CHANGE AND THIS OBSERVED RUN : cross-review turned a behavior the Author had observed but not classified into a material contract finding, which the Author corrected and the Challenger verified"
+          },
+          {
+            "type": "SCALAR",
+            "value": "ON THIS OBSERVED RUN : the independent oracle found no defect in A1 or in A2 ; the only material correction concerned behavior outside the oracle coverage"
+          },
+          {
+            "type": "SCALAR",
+            "value": "BOUNDED HYPOTHESIS ONLY : a challenger held to contract-clause materiality may add value by enforcing the classification of behaviors an author already observes — not established beyond this task"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NOT ESTABLISHED : that CCR generally improves software ; a positive or negative general ROI ; scaling to larger systems ; that cross-review should always or never be used"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-oracle-audit"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "MATCHES_COMMITMENT"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/MANIFEST.sha256"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "7751e825a3bce733ceb8aca5d7c55a86ae60d059"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-result-validation-status"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PASS"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-stop-events"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "NONE — no stop rule of authority 104 or mission 023 triggered ; no human gate"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "RETURN_CONTRACT",
+        "id": "rf-deviations"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "Q1 AUXILIARY FILES — q1-oracle-stderr.txt (empty) and q1-oracle-run.txt written beyond the four contracted files ; disclosed ; non-normative to the verdicts"
+          },
+          {
+            "type": "SCALAR",
+            "value": "Q1 POST-RUN EDIT — the cwd line of q1-oracle-run.txt corrected after the run ; effect on the Q1 oracle result NONE ESTABLISHED ; effect on the Q1 qualification NONE ESTABLISHED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "Q2 HASH SIDE-CHANNEL — the Q2 return contract requested individual file hashes : the q2-oracle-stdout.json hash equals the published q1-oracle-stdout.json hash and the q2-oracle-stderr.txt hash is that of an empty file ; exposed after both Author and both Challenger passes were complete"
+          },
+          {
+            "type": "SCALAR",
+            "value": "Q2 SAME SESSION — the Q2 dispatch required a new session ; Q2 ran in the #67 session that had run Q1 ; qualifier freshness from Q1 not preserved"
+          },
+          {
+            "type": "SCALAR",
+            "value": "DISCLOSED HARNESS ARTIFACTS OUTSIDE THE REPOSITORIES — tool output files of the role sessions and the Q1 qualifier helper scripts in its own session scratchpad ; not observable by the controller ; non-material"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "terminal.starting_state"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "canonical main 34b30f14b41bfdf440d4a1747ca49fc1f247afa5 = origin/main, clean, 74 RATIFIED / 0 PENDING, mission 023 blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c ; target B0 785795af434299d2b6d25910eac2761208766b0d, A1 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3, A2 c554667fba9a24123ba4964a1a00fe8ab6d2f6e1 tree 602d5e67b0a58feba09b9ebb185699e75b07fdc3, clean, no remote ; oracle 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 tree 50ee0d3532eb7faaea7fe6e45909a3ae2533e138, clean, no remote ; every identity EQ"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.terminal_audit.identity"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "HEAD 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 · tree 50ee0d3532eb7faaea7fe6e45909a3ae2533e138 · single commit (reflog 1 entry) · no remote · clean including ignored files · committed and worktree MANIFEST.sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46 · 8 / 8 listed files recomputed identical · canonical copies from the commit objects, byte-identical"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/MANIFEST.sha256"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "7751e825a3bce733ceb8aca5d7c55a86ae60d059"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.terminal_audit.source_used_q1_q2"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "Q1 and Q2 results both name oracle version field-001-oracle/1, Python 3.14.3, SQLite 3.50.4 ; the oracle identity (HEAD, tree, manifest, 8 file hashes) verified by the qualifier before and after each run and by the controller after Q1, after C1, after A2, after C2, after Q2 and at the reveal ; the oracle repository holds one commit"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.modified_between_q1_and_q2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.contract_mapping"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "O-01 → C-LEGACY : two keyless submissions → two distinct jobs ; keyless invalid JSON / invalid body keep 400 INVALID_JSON / INVALID_JOB · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-02 → C-KEY : 5 invalid keys → 400 INVALID_IDEMPOTENCY_KEY, no job ; 128-character and punctuation keys accepted · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-03 → C-FIRST : 201, Idempotency-Replayed false, one job, stored job returned · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-04 → C-REPLAY : 200, Idempotency-Replayed true, same id, no new job · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-05 → C-IDENTITY, C-REPLAY, C-CONFLICT : whitespace and key order (top and nested) → replay ; array order, string value, type value → 409 · WITHIN CONTRACT (numbers and duplicate members left untested, as not specified)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-06 → C-CONFLICT : 409 IDEMPOTENCY_CONFLICT, no new job · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-07 → C-DURABLE : stop and restart on the same database, replay of the same job · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-08 → C-CONC-IDENTICAL : 8 barrier-synchronized identical requests : one 201, zero 409, other successes 200 replays, one id, one job ; failed responses recorded, not asserted · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-09 → C-CONC-COMPETING : 4 + 4 competing requests : one established request, at most one job, no loser success, winner replays, afterwards winner 200 and loser 409 · WITHIN CONTRACT, see overreach note"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-10 → C-FAILED-CREATE : storage fault on the jobs insert → 503 JOB_CREATE_FAILED, no job, retry 201 then 200 replay · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-11 → C-CONFLICT : the binding is unchanged after a conflict · WITHIN CONTRACT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "O-12 → C-NO-FALLBACK : faults on durable idempotency state → explicit 5xx and no job · WITHIN CONTRACT (any 5xx accepted)"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.overreach"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "O-09 check \"exactly one request is established (one HTTP 201)\" requires one of the eight concurrent competing requests to be established ; C-CONC-COMPETING presupposes it (\"Once one request is established\") without stating it as a requirement · mild interpretive strictness · not discriminating in this study (PASS on A1 and on A2)"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.undercoverage"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C-FAILED-CREATE : only storage-level creation failures are exercised (SQLite trigger on the jobs insert) ; non-storage creation failures, the C1-M-01 class, are not exercised"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C-SCOPE : no dedicated case ; exercised indirectly through the entry point start-up line and GET of created jobs"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C-KEY : header-syntax edge cases (repeated header lines, surrounding whitespace, non-ASCII bytes) not exercised"
+          },
+          {
+            "type": "SCALAR",
+            "value": "input-dependent failures before the transaction (for example very deep nesting) not exercised"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "oracle.pre_freeze_validation"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "validation-report.json inside the oracle commit : B0 profile O-01 PASS, O-02..O-11 FAIL, O-12 BLOCKED = expected ; reference implementation 12 / 12 PASS in 10 / 10 runs ; 6 targeted mutants each caught ; race mutant O-08 and O-09 FAIL in 5 / 5 runs ; oracle_valid true"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/validation-report.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "23af8a96de85eb2a25f6dc11f19c1640428380d0"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.hash_audit"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "q1-oracle-result.json · committed 03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768 · revealed 03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-oracle-stdout.json · committed 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · revealed 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-baseline.txt · committed 63c89008f059822c07acb6af489df98736f7483d2945ce8f28e8c5846c478474 · revealed 63c89008f059822c07acb6af489df98736f7483d2945ce8f28e8c5846c478474 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-qualification.md · committed 8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c · revealed 8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-oracle-stderr.txt · sealed by the published directory seal · revealed e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 · MATCH (seal recomputed)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-oracle-run.txt · sealed by the published directory seal · revealed b4fcf43110fb441e230eb0b3f042e5952bf5649746bb006a6671f7c92027645c · MATCH (seal recomputed)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "directory seal 5a59b1a0cda61d328c094743807b8a62ed7d62bd989b08ef12ca749f5bcb8ceb recomputed · MATCH"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e5f0c5348e0994d66b1b84147dbb2049a5ed8feb"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.execution"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "VALID"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1de549937fe7ba0cdc707ffb9d079332181067e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.execution_detail"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "one oracle run, exit 0, empty standard error, result names A1 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3 tree 26fb9fbb270d5a43cf575ce114b71f87306959de, cases O-01..O-12 complete ; summary equals the per-case verdicts ; console output equals the result ; start 2026-09-26T15:58:20Z, end 2026-09-26T15:58:23Z (run metadata)"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.material_defects"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE — no failed check, no BLOCKED case"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e15ffdae6fa80501bee40d13cde277049f7fea61"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.baseline_regression"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NO REGRESSION — python -m unittest tests.test_baseline on the exact A1 export : Ran 10 tests, OK, exit 0"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-baseline.txt"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "a4146cdbcc46c943e69f0c401c7250e0fa8c4f29"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.infrastructure_failure"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1de549937fe7ba0cdc707ffb9d079332181067e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.qualification_status"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "COMPLETE — record generated mechanically from the raw Q1 files ; consistent with them (verdicts, defects none, baseline no regression, infrastructure none)"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1de549937fe7ba0cdc707ffb9d079332181067e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.deviation.auxiliary_files"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-run.txt"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "de521d4061e18130ffdfbcc658e5126487e1cd5f"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.deviation.auxiliary_files_content"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "q1-oracle-stderr.txt — the oracle standard error : empty (0 bytes)"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-oracle-run.txt — qualifier-written run metadata : cwd, env, command, start and end UTC, exit code 0, and a note on the edit ; not produced or read by the oracle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "neither file is normative to any verdict : the verdicts are in q1-oracle-result.json, written by the oracle process"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.deviation.post_run_edit"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.deviation.post_run_edit_detail"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "q1-oracle-result.json unchanged after its committed hash : revealed sha256 = Q1_COMMITMENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-qualification.md unchanged after its committed hash : revealed sha256 = Q1_COMMITMENT"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q1-baseline.txt unchanged : revealed sha256 = the published contracted hash"
+          },
+          {
+            "type": "SCALAR",
+            "value": "the edited line cannot affect the recorded oracle result : the result was written by the oracle during the run, before the edit, and matches its commitment ; the oracle never reads the run metadata"
+          },
+          {
+            "type": "SCALAR",
+            "value": "effect on the qualifier analysis : the record quotes the run metadata in its execution section and names the post-edit q1-oracle-run.txt hash b4fcf43110fb441e230eb0b3f042e5952bf5649746bb006a6671f7c92027645c ; its verdicts, defects and regression findings derive from the result, console and baseline files only"
+          },
+          {
+            "type": "SCALAR",
+            "value": "the pre-edit bytes of q1-oracle-run.txt were not preserved : that only the cwd line changed is the qualifier statement, NOT_ESTABLISHED independently"
+          },
+          {
+            "type": "SCALAR",
+            "value": "the deviation affects auxiliary provenance only"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.deviation.effect_on_mechanical_oracle_result"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.deviation.effect_on_qualification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE_ESTABLISHED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1.experimental_usability"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "USABLE — Q1 is a valid mechanical qualification of A1 ; the recorded deviation is limited to auxiliary run provenance"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1.material_findings"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-M-01 · C-FAILED-CREATE · a keyed first submission whose type holds a lone surrogate (\"\\ud800\") fails in insert_job with UnicodeEncodeError and was answered 500 IDEMPOTENCY_PROCESSING_FAILED instead of 503 JOB_CREATE_FAILED on A1 ; 0 job, key free · clause, exact code, reproduction and consequence present · controller reproduction on A1 : REPRODUCED"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1.non_material_findings"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-N-01"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-02"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-03"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-04"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-05"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-06"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1.unsupported_author_claims"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-U-01 · \"C-FAILED-CREATE : … on failure → 503 and the key stays free\" · contradicted on A1 by C1-M-01"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.author_behavioral_observation"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a1-author-return.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "969e04c308c374772d7c0ef904bca0b56ffdd3bc"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.author_material_contract_classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NO"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a1-author-return.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "969e04c308c374772d7c0ef904bca0b56ffdd3bc"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.author_correctness_claim"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "OVERBROAD_ON_A1"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a1-author-return.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "969e04c308c374772d7c0ef904bca0b56ffdd3bc"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.challenger_material_classification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-challenger-return.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "88d06a5fad20698ed80cf0a8d9d66a0804c9fd7e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.challenger_reproduction"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-challenger-return.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "88d06a5fad20698ed80cf0a8d9d66a0804c9fd7e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.controller_independent_reproduction_on_a1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c1-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e1146ad53478e58fc973efa63e54c449396ed2ff"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.author_a2_response"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "ACCEPT"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-author-return.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e180ef70dea9c43e1037fe3fcd7717f08f6ee92"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.challenger_triggered_correction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "creation failures of any cause in the keyed creation step answered 503 JOB_CREATE_FAILED instead of 500 ; rollback, free key, replay, conflict, fingerprint and legacy path unchanged ; two reproducing tests added"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.c2"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "FIXED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-challenger-return.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "930d7513b184ff60210484ee14f57f6c7fb8e48b"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.controller_reproduction_on_a2"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "keyed s1 lone-surrogate type → 503 JOB_CREATE_FAILED, 0 job ; retry → 503 ; storable request → 201 ; replay → 200"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8c2de47d53bec72ee2638bb16868608e223399e8"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c1_m01.oracle_coverage"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_COVERED"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "1c795933be8be6f41e709bf94a24a35b2af8dd59"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "a2.correction"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "store.py : new JobCreateFailed ; building the job, inserting the job row and inserting the binding wrapped in try / except Exception → JobCreateFailed, inside the transaction ; server.py : except (sqlite3.Error, JobCreateFailed) → 503 JOB_CREATE_FAILED ; tests : two reproducing tests in FailureTest"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "a2.attribution"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "the whole A1 → A2 change is attributable to C1-M-01 ; no self-correction ; no opportunistic change"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/a2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "13beec752bf256e915518567ae3b62ccb860c630"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "c2.classification"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "C1-M-01 · FIXED"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-U-01 · SUPPORTED ON A2"
+          },
+          {
+            "type": "SCALAR",
+            "value": "NEW DEFECTS INTRODUCED BY A2 · NONE"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C2-N-01 · non-material · the cause is no longer logged"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/c2-freeze.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "8c2de47d53bec72ee2638bb16868608e223399e8"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.hash_audit"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "q2-oracle-result.json · committed 0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208 · revealed 0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q2-oracle-stdout.json · committed 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · revealed 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q2-oracle-stderr.txt · committed e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 · revealed e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q2-baseline.txt · committed 49f6a492351ce28ee23c6225cf96ee03cd55442d4f06b8d2afa940dd01ebf205 · revealed 49f6a492351ce28ee23c6225cf96ee03cd55442d4f06b8d2afa940dd01ebf205 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "q2-qualification.md · committed e5890bf5c8dae0bb24f7ede2c2747d6225a57576f30549ff7a605845faf0f305 · revealed e5890bf5c8dae0bb24f7ede2c2747d6225a57576f30549ff7a605845faf0f305 · MATCH"
+          },
+          {
+            "type": "SCALAR",
+            "value": "directory seal 03973d3b7d5ec77b709cf4d6e6ae5d6018716af06c2787e8aa1d50473db2217f recomputed · MATCH"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e5f0c5348e0994d66b1b84147dbb2049a5ed8feb"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.execution"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "VALID"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e483e6bdd467b03eccc88115560689abf3d2624e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.execution_detail"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "one oracle run, exit 0, empty standard error, result names A2 c554667fba9a24123ba4964a1a00fe8ab6d2f6e1 tree 602d5e67b0a58feba09b9ebb185699e75b07fdc3, cases O-01..O-12 complete ; summary equals the per-case verdicts ; console output equals the result"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.material_defects"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE — no failed check, no BLOCKED case"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.baseline_regression"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NO REGRESSION — python -m unittest tests.test_baseline on the exact A2 export : Ran 10 tests, OK, exit 0"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-baseline.txt"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "bfe377a0fc3f9d4241da5c0638081bca55701da7"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.infrastructure_failure"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e483e6bdd467b03eccc88115560689abf3d2624e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.qualification_status"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "COMPLETE — record generated mechanically from the raw Q2 files ; consistent with them ; states that Q2 ran in the session that ran Q1"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e483e6bdd467b03eccc88115560689abf3d2624e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1_q2.stdout_bytes"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SAME"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e5f0c5348e0994d66b1b84147dbb2049a5ed8feb"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1_q2.oracle_semantic_result"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "SAME"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1_q2.oracle_semantic_comparison"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "fields compared : oracle version, Python, SQLite, summary, and for each case id, title, clauses, verdict, blocked reason, and every check (clause, description, result) — all equal"
+          },
+          {
+            "type": "SCALAR",
+            "value": "target differs as expected : Q1 = A1 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3, Q2 = A2 c554667fba9a24123ba4964a1a00fe8ab6d2f6e1"
+          },
+          {
+            "type": "SCALAR",
+            "value": "observed values equal after masking generated job ids and timestamps, except O-09 checks 5 and 7 : the scheduler-chosen winner differs (Q1 R_EMAIL_OTHER, Q2 R_EMAIL) ; both satisfy the same checks"
+          },
+          {
+            "type": "SCALAR",
+            "value": "recorded observations differ only in the order of concurrent statuses (O-08, O-09) and the O-09 winner ; durations differ"
+          },
+          {
+            "type": "SCALAR",
+            "value": "the equality of the console output bytes is consistent with this comparison but was not used to establish it"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "4e0cf18bdba21ced26bc45be1ca91791fc836b88"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1_q2.qualification"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "DIFFERENT"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e483e6bdd467b03eccc88115560689abf3d2624e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q1_q2.qualification_difference"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "the two records differ in identities (A1 / A2), generator hash, session disclosure (Q2), run metadata, durations and the O-09 winner ; their conclusions agree : 12 PASS, no material defect, no regression, no infrastructure failure"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.hash_side_channel.existed"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "YES"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/q2-commitment.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e220717ebb5c2882ac7408b5117690dc63ee6987"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.hash_side_channel.information_exposed"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "from the published hashes : the Q2 oracle console output bytes equal the Q1 ones (same summary and per-case verdict map, not the full results) ; the Q2 oracle standard error is empty"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.hash_side_channel.commitment"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "CRYPTOGRAPHICALLY USEFUL — every revealed Q2 file matches its committed hash ; NOT STRICTLY OUTCOME-FREE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.hash_side_channel.causal_impact_on_author"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.hash_side_channel.causal_impact_on_challenger"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NONE"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.hash_side_channel.impact_on_terminal_interpretation"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "methodological limitation only ; the audit establishes no further effect"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.same_session.deviation"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "PROTOCOL DEVIATION — the Q2 dispatch required a fresh independent qualifier in a new session ; Q2 ran in the #67 session that had run Q1"
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e483e6bdd467b03eccc88115560689abf3d2624e"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.same_session.independence_from_author"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESERVED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.same_session.independence_from_challenger"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "PRESERVED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.same_session.freshness_from_q1"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "NOT_PRESERVED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.same_session.mechanical_oracle_result"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "VALID"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.same_session.qualification_freshness"
+      },
+      "value": {
+        "type": "SYMBOL",
+        "value": "LIMITED"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "q2.same_session.effect_on_q2"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "NONE ESTABLISHED — the Q2 record is generated mechanically from the raw Q2 files ; the qualifier states that no Q1 outcome was displayed in its session and that no Q1 file was accessed for Q2 (not independently verifiable)"
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "terminal.package"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/.gitattributes · original sha256 d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c · canonical sha256 d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/.gitignore · original sha256 862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793 · canonical sha256 862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/MANIFEST.sha256 · original sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46 · canonical sha256 97a854f2feb4a48370f909225dac3d0b044f6101f8b8ca4f8f327a4ddaa51e46 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/README.md · original sha256 3a3c81b34cd077b5c18f28affaf4bd4f8565222a89b96a317d3205cbd19961f5 · canonical sha256 3a3c81b34cd077b5c18f28affaf4bd4f8565222a89b96a317d3205cbd19961f5 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/field001_oracle.py · original sha256 d4860354eee9367440ba93a79c1b16ae93112727aac7a08e622575c5046c982d · canonical sha256 d4860354eee9367440ba93a79c1b16ae93112727aac7a08e622575c5046c982d · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/reference/jobservice/server.py · original sha256 25cf681fa72a55fd84098821a5b2be2c1a5091f728615e55f175ac53ba097386 · canonical sha256 25cf681fa72a55fd84098821a5b2be2c1a5091f728615e55f175ac53ba097386 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/reference/jobservice/store.py · original sha256 598b10ce43415e138e0f517a4dae1226de4be7a111454fcce37632ca85db672f · canonical sha256 598b10ce43415e138e0f517a4dae1226de4be7a111454fcce37632ca85db672f · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/validate_oracle.py · original sha256 89003712d537f40175b34c3e8328fc257325c8c78f7ae1f47bf91ac9378efd5f · canonical sha256 89003712d537f40175b34c3e8328fc257325c8c78f7ae1f47bf91ac9378efd5f · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/oracle/validation-report.json · original sha256 8847632ce4fc42f7dbfb29614a547ee6e5f31abd1f3144b1c86121abdd7a867c · canonical sha256 8847632ce4fc42f7dbfb29614a547ee6e5f31abd1f3144b1c86121abdd7a867c · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json · original sha256 03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768 · canonical sha256 03e724e1e9831b744c6313b3a990b3914e0ba5118544499d593866f0040e1768 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-stdout.json · original sha256 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · canonical sha256 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-baseline.txt · original sha256 63c89008f059822c07acb6af489df98736f7483d2945ce8f28e8c5846c478474 · canonical sha256 63c89008f059822c07acb6af489df98736f7483d2945ce8f28e8c5846c478474 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-qualification.md · original sha256 8bdc624ee92552aad06f288dfe47424c3a310025fa68752399aff76c86b7f73c · canonical sha256 01896c59f9c329a4b0a04825b0705c50581f2da3d3559cb721899fff17aa6c3d · byte identity NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-stderr.txt · original sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 · canonical sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-run.txt · original sha256 b4fcf43110fb441e230eb0b3f042e5952bf5649746bb006a6671f7c92027645c · canonical sha256 7ab554bbed1e7f87a0456a6f64d67b2d52d5c6cd9fff3aeec6407cc490b72dce · byte identity NO"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-result.json · original sha256 0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208 · canonical sha256 0430ebd1be0b0e1b756bfd77d7a0af004cbdb2b81f4d273e3f8282c6d2a09208 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-stdout.json · original sha256 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · canonical sha256 5241e55dd46e89eb5e1eeaf1481918a51bc892cc77f81a39a90823c7c1a25ee0 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-oracle-stderr.txt · original sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 · canonical sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-baseline.txt · original sha256 49f6a492351ce28ee23c6225cf96ee03cd55442d4f06b8d2afa940dd01ebf205 · canonical sha256 49f6a492351ce28ee23c6225cf96ee03cd55442d4f06b8d2afa940dd01ebf205 · byte identity YES"
+          },
+          {
+            "type": "SCALAR",
+            "value": "missions/023-field-001-idempotent-job-submission/terminal/q2/q2-qualification.md · original sha256 e5890bf5c8dae0bb24f7ede2c2747d6225a57576f30549ff7a605845faf0f305 · canonical sha256 fbc467fb3621c6d725b31ddc239b62b4a5ebfafd1a9daeaafbb67524e76b1753 · byte identity NO"
+          }
+        ]
+      },
+      "evidence": {
+        "locator": {
+          "kind": "REPO_PATH",
+          "value": "missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json"
+        },
+        "identity": {
+          "kind": "GIT_BLOB",
+          "value": "e5f0c5348e0994d66b1b84147dbb2049a5ed8feb"
+        }
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "evidence.missing"
+      },
+      "value": {
+        "type": "SET",
+        "members": [
+          {
+            "type": "SCALAR",
+            "value": "pre-edit bytes of q1-oracle-run.txt : not preserved"
+          },
+          {
+            "type": "SCALAR",
+            "value": "Author mutant code : not returned ; per-mutant counts not reproducible"
+          },
+          {
+            "type": "SCALAR",
+            "value": "C1-N-01..C1-N-06 and C2-N-01 : not independently verified by the controller"
+          },
+          {
+            "type": "SCALAR",
+            "value": "Author A2 other issues (very deep nesting ; retry of a request that can never be stored) : not verified by the controller, not exercised by the oracle"
+          },
+          {
+            "type": "SCALAR",
+            "value": "role session transcripts beyond their returns : not available to the controller ; the Q2 qualifier statement on its session is not independently verifiable"
+          },
+          {
+            "type": "SCALAR",
+            "value": "elapsed time and token cost : not instrumented"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "REPORTED_VALUE",
+      "fact": {
+        "defined_by": "EXECUTOR",
+        "id": "mission_023.status"
+      },
+      "value": {
+        "type": "SCALAR",
+        "value": "EXECUTED / COMPLETE · terminal outcome FIELD_001_COMPLETE_AFTER_A2_C2_Q2 (e-classify-c1 material findings PRESENT ; field-study evidence validation PASS) · FIELD-001 EXPERIMENT COMPLETE, SUBJECT TO ONE INDEPENDENT COUNTER-EXPERTISE"
+      }
+    }
+  ]
+}
