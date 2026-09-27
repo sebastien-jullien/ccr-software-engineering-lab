@@ -1,0 +1,92 @@
+{
+  "artifact": "FIELD_001_C2_FREEZE",
+  "study_id": "FIELD-001",
+  "step": "C2 — bounded Challenger verification of the frozen A2, frozen by the controller",
+  "challenger": "AGENT CCR LAB #66 (new session)",
+  "controller": "AGENT CCR LAB #1",
+  "governing": {
+    "authority": "104-FIELD-001-IDEMPOTENT-JOB-SUBMISSION-EXPERIMENTAL-TRANSACTION-FREEZE.md",
+    "authority_blob": "a52e1584ef997ab05c70177f8dc827f07ded2d39",
+    "mission": "missions/023-field-001-idempotent-job-submission/mission.json",
+    "mission_blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c",
+    "branch": "br-material",
+    "procedure_step": "s-m-c2 (effect e-c2)"
+  },
+  "a2_verified": {
+    "commit": "c554667fba9a24123ba4964a1a00fe8ab6d2f6e1",
+    "tree": "602d5e67b0a58feba09b9ebb185699e75b07fdc3",
+    "parent": "914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3",
+    "freeze_record": "missions/023-field-001-idempotent-job-submission/a2-freeze.json",
+    "freeze_record_blob": "13beec752bf256e915518567ae3b62ccb860c630",
+    "freeze_record_commit": "1afc91afa1f8a1e3b9b643853fca9d1f95f97fa4"
+  },
+  "prior_records": {
+    "q1_commitment": {
+      "path": "missions/023-field-001-idempotent-job-submission/q1-commitment.json",
+      "blob": "e520f1b6b88c0815e416b936de1c7c194caf53f6",
+      "commit": "bed610dd26309e4fa8226e04fdd19e5307f2d51f"
+    },
+    "c1_freeze": {
+      "path": "missions/023-field-001-idempotent-job-submission/c1-freeze.json",
+      "blob": "e1146ad53478e58fc973efa63e54c449396ed2ff",
+      "commit": "9522126f91f9ba911ea15d69e863f0f954c6aaed"
+    }
+  },
+  "challenger_inputs": "common frozen input (B0 and the contract) + exact A1 and A2 bytes + C1 return (verbatim) + Author A2 return (verbatim) ; no oracle, no Q1 result, no Q1-derived metadata, no qualifier notes",
+  "challenger_return": {
+    "path": "missions/023-field-001-idempotent-job-submission/c2-challenger-return.md",
+    "sha256": "274a7cf9dac47825c14f50dea60eb8456d7cc8b7e5dc0fec049f04918d67791b",
+    "bytes": 9208,
+    "provenance": "raw AGENT CCR LAB #66 C2 return, transported by the human into the controller session, persisted verbatim"
+  },
+  "challenger_boundary": {
+    "challenger_commits": 0,
+    "challenger_pushes": 0,
+    "target": "HEAD = A2 commit and tree, parent A1, grandparent B0 ; branch main only ; no remote ; no stash ; status empty including ignored files ; reflog holds the B0, A1 and A2 commits only",
+    "writes": "one tempfile directory under the system temp directory (prefix c2-field001-), with the test temporary files redirected inside it ; removed — confirmed absent, no leftover ; nothing written inside the repository",
+    "oracle_and_q1": "oracle HEAD, tree, clean state, no remote and 8 / 8 manifest hashes unchanged ; Q1 directory seal and sequestered qualifier return unchanged",
+    "role_contamination": "none observed ; the C2 return references no oracle, no Q1 and no qualification",
+    "status": "PASS"
+  },
+  "c2_classification": {
+    "C1-M-01": {
+      "class": "FIXED",
+      "evidence": "store.py:118-126 wraps building the job, inserting the job row and inserting the binding in try / except Exception → JobCreateFailed, inside the transaction try, so store.py:136-139 still rolls back ; server.py:95 answers (sqlite3.Error, JobCreateFailed) with 503 JOB_CREATE_FAILED ; the C1 reproduction re-run on A2 → 503 JOB_CREATE_FAILED, 0 job, no binding ; on A1 → 500 as in C1 ; legacy path unchanged on B0",
+      "controller_reproduction": "REPRODUCED on a scratch export of the exact A2 bytes : keyed s1 with a lone-surrogate type → 503 JOB_CREATE_FAILED, 0 job, no binding ; same request → 503 again, 0 job ; s1 with a storable request → 201 ; replay → 200 ; 1 job, 1 binding. Behavior only, not qualification"
+    },
+    "C1-U-01": {
+      "class": "SUPPORTED ON A2",
+      "evidence": "six creation-phase failures (build job, job insert by trigger and by ValueError, binding insert, blocked COMMIT, lookup on a dropped table) → 503 on A2, 0 job, 0 binding, then retry 201 and replay 200 ; the 500 paths outside the creation step (key bound to a missing job, failure in request_fingerprint) identical on A1 and A2 ; claim holds as scoped to the creation step"
+    },
+    "new_defects_introduced_by_a2": "NONE — the only behavioral effect of the A1 → A2 diff is 503 instead of 500 for non-storage failures in the creation step ; rollback, free key, 409, replay, the missing-job 500, the fingerprint 500 and the legacy path unchanged ; C-CONC-IDENTICAL and C-CONC-COMPETING still conform on A2 (barrier-synchronized rounds, including a race whose first creation fails)",
+    "non_material": [
+      {
+        "id": "C2-N-01",
+        "subject": "non-storage creation failures no longer reach the log_error at server.py:99 ; the cause stays chained on the exception but is not written to the verbose log"
+      }
+    ],
+    "contract_ambiguity": "NONE blocking — the challenger notes that the second sentence of C-FAILED-CREATE cannot hold for a request that can never be stored ; retry behavior identical on A1 and A2 ; no human gate"
+  },
+  "final_implementation": {
+    "commit": "c554667fba9a24123ba4964a1a00fe8ab6d2f6e1",
+    "tree": "602d5e67b0a58feba09b9ebb185699e75b07fdc3",
+    "note": "A2 differs from A1 ; Q2 runs against A2"
+  },
+  "loops": {
+    "author_implementation_passes": "2 of 2 (A1, A2)",
+    "challenger_review_passes": "2 of 2 (C1, C2)",
+    "third_loop": "FORBIDDEN",
+    "further_implementation_or_review": "NONE"
+  },
+  "time_order": {
+    "a1_frozen_at": "2026-09-26T17:14:13+02:00",
+    "q1_commitment_published_at": "2026-09-26T18:18:21+02:00",
+    "c1_frozen_at": "2026-09-26T19:08:49+02:00",
+    "a2_frozen_at": "2026-09-27T03:37:46+02:00",
+    "c2_dispatched": "after the A2 freeze",
+    "c2_frozen_at": "by the canonical commit that adds this record",
+    "q2": "NOT YET — same frozen oracle, against A2",
+    "order": "A1 FROZEN < Q1_COMMITMENT PUBLISHED < C1 FROZEN < A2 FROZEN < C2 FROZEN < Q2"
+  },
+  "next": "Q2 by AGENT CCR LAB #67, new session, with the same frozen oracle against the exact A2 ; Q2 record sequestered and committed by hash like Q1 ; then the reveal of the oracle and of the full Q1 for audit against the commitments, the attribution and the field-study evidence"
+}

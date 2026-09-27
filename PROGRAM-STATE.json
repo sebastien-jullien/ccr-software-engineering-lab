@@ -1944,7 +1944,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "EXECUTE BOUNDED CHALLENGER C2 BY AGENT CCR LAB #66 AGAINST FROZEN A2, THEN RUN FINAL Q2 BY AGENT CCR LAB #67 WITH THE SAME FROZEN ORACLE. NO NEW CONCEPTUAL GATE. — Transporter la dépêche de vérification bornée C2 au challenger AGENT CCR LAB #66, session nouvelle : entrée commune gelée, A1 et A2 exacts, retour C1 et retour A2, sans oracle ni Q1 ; classer C1-M-01 en FIXED, REBUTTAL ACCEPTED, STILL MATERIAL ou CHALLENGER FINDING WITHDRAWN et ne relever que les défauts introduits par A2, sans nouveau cycle large ; puis, sur le go Git local de continuation, geler C2 et exécuter Q2 par #67 avec le même oracle gelé contre A2, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c.",
+    "value": "EXECUTE FINAL Q2 BY AGENT CCR LAB #67 WITH THE SAME FROZEN ORACLE AGAINST FROZEN A2, THEN REVEAL THE ORACLE AND FULL Q1 FOR AUDIT. NO NEW CONCEPTUAL GATE. — Transporter la dépêche Q2 au qualificateur AGENT CCR LAB #67, session nouvelle : exécuter une seule fois l'oracle gelé 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 contre l'A2 exact c554667fba9a24123ba4964a1a00fe8ab6d2f6e1, séquestrer le résultat Q2 comme Q1 et ne rendre que l'engagement Q2 sans issue ; puis, sur le go Git local de continuation, publier l'engagement Q2, révéler l'oracle et Q1 complet pour audit contre les engagements, établir l'attribution et produire la preuve de terrain, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1961,28 +1961,28 @@
         }
       },
       {
-        "id": "ev-292",
+        "id": "ev-294",
         "kind": "repo-path",
-        "ref": "missions/023-field-001-idempotent-job-submission/a2-freeze.json",
+        "ref": "missions/023-field-001-idempotent-job-submission/c2-freeze.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
-          "field": "a2_freeze",
-          "value": "A2 de FIELD-001 gelé par le contrôleur : commit du dépôt cible c554667fba9a24123ba4964a1a00fe8ab6d2f6e1, parent A1 914ba0b8345cb1eb7ba0d220e7b5eb072b35bcd3 ; passe de correction de l'auteur sur le constat matériel C1-M-01, ACCEPTÉ : un échec de création du job, quelle qu'en soit la cause, répond 503 JOB_CREATE_FAILED ; trois chemins modifiés, deux tests de reproduction ajoutés, aucun test existant modifié, aucune action sur les observations non matérielles ; zéro commit et zéro poussée de l'auteur, contrat, oracle et dépôt canonique inchangés ; affirmations de tests de l'auteur vérifiées, 44 tests réussis, sans qualification ; retour brut persisté mot pour mot dans missions/023-field-001-idempotent-job-submission/a2-author-return.md. Preuve missions/023-field-001-idempotent-job-submission/a2-freeze.json, blob 13beec752bf256e915518567ae3b62ccb860c630."
+          "field": "c2_freeze",
+          "value": "C2 de FIELD-001 exécuté par le challenger AGENT CCR LAB #66, session nouvelle, contre l'A2 gelé c554667fba9a24123ba4964a1a00fe8ab6d2f6e1, sans oracle ni Q1 ; frontière du challenger respectée : zéro commit, zéro poussée, dépôt cible inchangé, répertoire temporaire unique supprimé ; retour brut persisté mot pour mot dans missions/023-field-001-idempotent-job-submission/c2-challenger-return.md. C1-M-01 FIXED, reproduit par le contrôleur sur les octets exacts d'A2 : 503 JOB_CREATE_FAILED, aucun job, aucune liaison, clé libre ; C1-U-01 étayée sur A2 ; aucun défaut nouveau introduit par A2 ; une observation non matérielle, C2-N-01 ; passes d'auteur 2 sur 2 et de challenger 2 sur 2, aucune troisième boucle. Preuve missions/023-field-001-idempotent-job-submission/c2-freeze.json, blob 8c2de47d53bec72ee2638bb16868608e223399e8."
         },
         "observed": {
-          "blob": "13beec752bf256e915518567ae3b62ccb860c630"
+          "blob": "8c2de47d53bec72ee2638bb16868608e223399e8"
         }
       },
       {
-        "id": "ev-293",
+        "id": "ev-295",
         "kind": "repo-path",
         "ref": "missions/023-field-001-idempotent-job-submission/mission.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "EXECUTE BOUNDED CHALLENGER C2 BY AGENT CCR LAB #66 AGAINST FROZEN A2, THEN RUN FINAL Q2 BY AGENT CCR LAB #67 WITH THE SAME FROZEN ORACLE. NO NEW CONCEPTUAL GATE. — Transporter la dépêche de vérification bornée C2 au challenger AGENT CCR LAB #66, session nouvelle : entrée commune gelée, A1 et A2 exacts, retour C1 et retour A2, sans oracle ni Q1 ; classer C1-M-01 en FIXED, REBUTTAL ACCEPTED, STILL MATERIAL ou CHALLENGER FINDING WITHDRAWN et ne relever que les défauts introduits par A2, sans nouveau cycle large ; puis, sur le go Git local de continuation, geler C2 et exécuter Q2 par #67 avec le même oracle gelé contre A2, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c."
+          "value": "EXECUTE FINAL Q2 BY AGENT CCR LAB #67 WITH THE SAME FROZEN ORACLE AGAINST FROZEN A2, THEN REVEAL THE ORACLE AND FULL Q1 FOR AUDIT. NO NEW CONCEPTUAL GATE. — Transporter la dépêche Q2 au qualificateur AGENT CCR LAB #67, session nouvelle : exécuter une seule fois l'oracle gelé 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 contre l'A2 exact c554667fba9a24123ba4964a1a00fe8ab6d2f6e1, séquestrer le résultat Q2 comme Q1 et ne rendre que l'engagement Q2 sans issue ; puis, sur le go Git local de continuation, publier l'engagement Q2, révéler l'oracle et Q1 complet pour audit contre les engagements, établir l'attribution et produire la preuve de terrain, sous l'autorité 104 et la mission 023, blob 0045b127b35b9ac5938c25e8ea33b8232f0e041c."
         },
         "observed": {
           "blob": "0045b127b35b9ac5938c25e8ea33b8232f0e041c"
