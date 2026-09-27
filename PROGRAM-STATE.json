@@ -1944,7 +1944,7 @@
   ],
   "next_action": {
     "state": "SELECTED",
-    "value": "ONE FINAL INDEPENDENT QUALIFICATION OF THE CORRECTED FIELD-001 TERMINAL EVIDENCE PACKAGE. — FIELD-001 exécuté et complet, expérience valide et complète, boucle d'implémentation close, aucune réexécution, aucune expérience nouvelle ; analyse terminale corrigée dans missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob eeef388b6f24a06df5579eae7d744b440b4de546, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter le paquet terminal corrigé vers une qualification indépendante finale unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général.",
+    "value": "HUMAN R&D DIRECTION DECISION — NO AUTOMATIC FIELD-001 SUCCESSOR, NO AUTOMATIC EXPERIMENT. FIELD-001 IS CLOSED. FURTHER WORK REQUIRES AN EXPLICIT HUMAN R&D DIRECTION OR A NEW CONCRETE PRODUCT / METHOD NEED. FIELD-002 IS NOT AUTHORIZED. — FIELD-001 clos ; aucune expérience automatique, aucun successeur automatique ; FIELD-002 non autorisé ; tout travail futur exige une direction de R&D humaine explicite ou un besoin produit / méthode concret nouveau ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général.",
     "evidence": [
       {
         "id": "ev-065",
@@ -1961,42 +1961,28 @@
         }
       },
       {
-        "id": "ev-298",
-        "kind": "repo-path",
-        "ref": "missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json",
-        "policy": "VERIFIABLE",
-        "supports": {
-          "subject": "next_action",
-          "field": "terminal_reveal",
-          "value": "Révélation terminale de FIELD-001 : oracle, Q1 complet et Q2 complet révélés et audités contre leurs engagements ; oracle 0dd01113e6d8a295ebcfc30637fef0c9a82a3e99 conforme à son engagement (arbre, manifeste, 8 fichiers sur 8) et inchangé entre Q1 et Q2 ; Q1 sur A1 et Q2 sur A2 : 12 PASS, 0 FAIL, 0 BLOCKED chacun, ligne de base 10 sur 10 ; écarts consignés : fichiers auxiliaires et retouche post-exécution de Q1, canal auxiliaire des empreintes de Q2, exécution de Q2 dans la session de Q1 ; copies terminales à l'octet près ou caviardées du seul chemin séquestré. Manifeste missions/023-field-001-idempotent-job-submission/terminal/reveal-manifest.json, blob e5f0c5348e0994d66b1b84147dbb2049a5ed8feb."
-        },
-        "observed": {
-          "blob": "e5f0c5348e0994d66b1b84147dbb2049a5ed8feb"
-        }
-      },
-      {
-        "id": "ev-300",
+        "id": "ev-302",
         "kind": "repo-path",
         "ref": "missions/023-field-001-idempotent-job-submission/field-study-evidence.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
-          "field": "terminal_analytical_correction",
-          "value": "Correction analytique terminale de FIELD-001, ratifiée par l'humain, matérialisée dans missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob eeef388b6f24a06df5579eae7d744b440b4de546 : CHALLENGER_TRUE_FINDINGS réduit à C1-M-01 seul ; UNSUPPORTED_AUTHOR_CLAIMS = C1-U-01 et C1-N-05 ; C1-N-06 requalifié en limite de reproductibilité, fausseté et défaut d'étayage NOT_ESTABLISHED ; CROSS_REVIEW_CORRECTIONS NONE sous la définition gelée conditionnée par Q1, correction matérielle observée déclenchée par C1 = C1-M-01 consignée séparément ; métriques bornées par l'oracle explicites, l'oracle n'étant pas une vérité terrain complète. Aucune observation acquise, aucun artefact terminal brut, aucune décision modifiés."
+          "field": "field_001_closure",
+          "value": "Clôture canonique de FIELD-001, conséquence déterministe ratifiée par l'humain de la qualification indépendante finale du paquet terminal corrigé (commit 8146d65ca21ace8532636617170368618122b629, missions/023-field-001-idempotent-job-submission/field-study-evidence.json, sha256 14f19bc626a4f0ada1b0481c6c5779144f38c96557bca0e703fd9d5e77a8075d, blob eeef388b6f24a06df5579eae7d744b440b4de546) : qualification PASS WITH RECORDED EXPERIMENTAL LIMITATIONS, 0 défaut analytique matériel établi ; mission 023 COMPLETE / CLOSED ; FIELD-001 COMPLETE / VALID / INDEPENDENTLY QUALIFIED ; limitations conservées : écart des fichiers auxiliaires et retouche post-exécution de Q1, canal auxiliaire des empreintes de Q2, exécution de Q2 dans la session de Q1, sous-couverture de l'oracle, aucun effet invalidant FIELD-001 établi ; aucune réexécution ; boucles auteur, challenger et qualificateur closes ; boucle d'implémentation et de revue close ; le rapport de qualification indépendante finale, transmis par l'humain, n'est pas matérialisé dans le dépôt canonique."
         },
         "observed": {
           "blob": "eeef388b6f24a06df5579eae7d744b440b4de546"
         }
       },
       {
-        "id": "ev-301",
+        "id": "ev-303",
         "kind": "repo-path",
         "ref": "missions/023-field-001-idempotent-job-submission/field-study-evidence.json",
         "policy": "VERIFIABLE",
         "supports": {
           "subject": "next_action",
           "field": "value",
-          "value": "ONE FINAL INDEPENDENT QUALIFICATION OF THE CORRECTED FIELD-001 TERMINAL EVIDENCE PACKAGE. — FIELD-001 exécuté et complet, expérience valide et complète, boucle d'implémentation close, aucune réexécution, aucune expérience nouvelle ; analyse terminale corrigée dans missions/023-field-001-idempotent-job-submission/field-study-evidence.json, blob eeef388b6f24a06df5579eae7d744b440b4de546, instance de résultat v0 conforme au contrat de retour de la mission 023 ; transporter le paquet terminal corrigé vers une qualification indépendante finale unique ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général."
+          "value": "HUMAN R&D DIRECTION DECISION — NO AUTOMATIC FIELD-001 SUCCESSOR, NO AUTOMATIC EXPERIMENT. FIELD-001 IS CLOSED. FURTHER WORK REQUIRES AN EXPLICIT HUMAN R&D DIRECTION OR A NEW CONCRETE PRODUCT / METHOD NEED. FIELD-002 IS NOT AUTHORIZED. — FIELD-001 clos ; aucune expérience automatique, aucun successeur automatique ; FIELD-002 non autorisé ; tout travail futur exige une direction de R&D humaine explicite ou un besoin produit / méthode concret nouveau ; aucun verdict CCR généralisé, aucun score agrégé, aucun ROI général."
         },
         "observed": {
           "blob": "eeef388b6f24a06df5579eae7d744b440b4de546"
