@@ -14,7 +14,9 @@ CCR RUN ID          = CCR-20260907-002
 DATE                = 2026-09-07
 CCR SYSTEM          = v1.1.0
 CCR SYSTEM COMMIT   = c9de52b223ee13e79863e9747f08e88938d59579
-ANCRE PRÉ-RUN       = 7fb102758e6966a2340859ca8d5c65e3fa0beec9
+ANCRE PRÉ-RUN       = 40a280d6cbd7ae6ab5136c24a46e460adccfdc3d
+                      identité d'origine 7fb102758e6966a2340859ca8d5c65e3fa0beec9,
+                      réécrite le 2026-09-08 par git filter-repo
 WORKSPACE           = workspace jetable, hors du dépôt du Lab
 PRODUCTEUR          = AGENT CCR LAB #6
 MAX INVOCATIONS     = 32

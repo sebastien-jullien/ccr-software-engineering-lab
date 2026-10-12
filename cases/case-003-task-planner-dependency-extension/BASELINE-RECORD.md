@@ -30,7 +30,9 @@ WORKSPACE           = workspace jetable A, hors du dépôt du Lab
                       …\scratchpad\case003-e1\A
 
 SOURCE DU PACK      = git archive depuis
-                      a58e9cd1b43c26e9a3a8dc16330f0bf3e41eda71
+                      33a32aaff1a24325975555726630daa71edcd6f8
+                      (identité d'origine a58e9cd1b43c26e9a3a8dc16330f0bf3e41eda71,
+                      réécrite le 2026-09-08 par git filter-repo)
                       cases/case-003-task-planner-dependency-extension/participant
 
 ENTRÉES DE DÉPART   = 10/10 empreintes conformes au paquet ancré

@@ -25,7 +25,9 @@ BINAIRE                       = node E:/prog/ccr-system/bin/ccr.mjs
                                 (chemin explicite, jamais resolu via PATH)
 
 LAB BRANCH                    = main
-LAB HEAD                      = a58e9cd1b43c26e9a3a8dc16330f0bf3e41eda71
+LAB HEAD                      = 33a32aaff1a24325975555726630daa71edcd6f8
+                                identite d'origine a58e9cd1b43c26e9a3a8dc16330f0bf3e41eda71,
+                                reecrite le 2026-09-08 par git filter-repo
 
 SOURCE D'IDENTIFICATION       = titre semantique public uniquement
 PRIVATE / RECORDED RUN_ID     = NON UTILISE

@@ -433,7 +433,8 @@ U-01 HUMAN PRODUCT RESPONSE
 = authority 32 : NOT REOPENED
 = new representation : NO
 = TE004 : NO
-= EOL risk : SEPARATE / UNRESOLVED / NOT CURRENTLY SELECTED
+= EOL : SEPARATE from U-01 · handled as repository maintenance (`.gitattributes`),
+  not as an R&D subject
 = next : SELECTED — see NEXT GENUINE LAB DIRECTION
 
 NEXT GENUINE LAB DIRECTION
@@ -7035,8 +7036,8 @@ P-HR-01 IMPLEMENTATION TRANSACTION
 = obligations : IP-01..IP-10 · recognition CASES A..F · V0 compatibility and V1
   behavior matrices · fail-closed FC-01..FC-24 · no-bypass static inventory +
   dynamic proof · product-boundary proof · no semantic widening
-= baseline : 270 tests / 264 pass / 6 fail — T-E1, T-E2, T-H1..T-H4, historical
-  technical debt, NOT a P-HR-01 regression
+= baseline at freeze : 270 tests / 264 pass / 6 fail — T-E1, T-E2, T-H1..T-H4,
+  historical technical debt, NOT a P-HR-01 regression
 = product implementation : MATERIALIZED, SUBJECT TO INDEPENDENT QUALIFICATION —
   commit db7ed7716fc8764156ec1f9caaf577102ad68a2c · Mission Object V1 authority
   101-HANDOFF-ROUTING-P-HR-01-MISSION-OBJECT-V1.md (blob e9bb02ccf30fbedaf5b1bdca652f7af99f0baad2) ·
@@ -7075,8 +7076,8 @@ P-HR-01 IMPLEMENTATION INDEPENDENT QUALIFICATION
   CONFORMANCE IS NOT REAL-USE UTILITY
 = real V1 mission use : NOT EXERCISED · real-use product utility : NOT
   EVALUATED · end-to-end operational conformance : NOT FULLY ESTABLISHED
-= tests : 365 / 359 pass · 6 historical baseline failures REMAIN · new P-HR-01
-  tests 95 / 95 · NO_NEW_REGRESSION — NOT « all repository tests pass »
+= tests at qualification : 365 / 359 pass · the 6 baseline failures above unchanged ·
+  new P-HR-01 tests 95 / 95 · NO_NEW_REGRESSION — NOT « all repository tests pass »
 = product boundary : PASS · semantic widening : NONE ESTABLISHED
 = repair required : NO, on current evidence · implementation reopening : NOT
   JUSTIFIED · automatic successor : NONE
@@ -7625,7 +7626,9 @@ BOUNDED INTEGRATION DESIGN STUDY
 = TE004 : NO
 = new representation : NO
 = implementation : NOT AUTHORIZED
-= EOL : SEPARATE / UNSELECTED / .gitattributes UNCHANGED
+= checkout : `.gitattributes` materializes every text file in LF — repository
+  maintenance, not an R&D subject · recorded identities and historical results
+  unchanged · the six historical test failures are resolved
 = next : HUMAN R&D DIRECTION DECISION — CCR_MS_V2 ADOPTED ; NO AUTOMATIC IMPLEMENTATION, MACHINE SCHEMA, FIELD-002 OR HISTORICAL MIGRATION ; NO AUTOMATIC SUCCESSOR
 
 CURRENT LAB STREAM

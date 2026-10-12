@@ -109,11 +109,15 @@ CLAUDE AUTH
 
 ```text
 BRANCH        = main
-HEAD          = a58e9cd1b43c26e9a3a8dc16330f0bf3e41eda71
-PARENT        = 8426177d4f1d9b4f3dffd5309fad4f28d4065a36
+HEAD          = 33a32aaff1a24325975555726630daa71edcd6f8
+                identité d'origine a58e9cd1b43c26e9a3a8dc16330f0bf3e41eda71
+PARENT        = 984b2671f1d490295bda59199d2032e8685323f4
+                identité d'origine 8426177d4f1d9b4f3dffd5309fad4f28d4065a36
 COMMIT COUNT  = 2
 WORKTREE      = RUN-001-RECORD.md seul
 ```
+
+Les identités d'origine ont été réécrites le 2026-09-08 par `git filter-repo`.
 
 ## Provenance de CCR System
 
@@ -275,7 +279,7 @@ tarifaire : 24 coûts inconnus, 0 estimé. Rien n'est supposé.
 ## Vérification du gel avant lancement
 
 Empreintes SHA-256 comparées octet pour octet entre le commit d'ancrage
-`a58e9cd` et le Workspace B, avant le run.
+`33a32aa` (identité d'origine `a58e9cd`) et le Workspace B, avant le run.
 
 ```text
 PARTICIPANT FREEZE MATCH   = PASS — 10 / 10 fichiers identiques

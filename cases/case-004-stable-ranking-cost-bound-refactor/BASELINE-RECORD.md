@@ -21,7 +21,9 @@ DATE           = 2026-09-07
 PRODUCTEUR     = AGENT CCR LAB #5
 SESSION        = fraîche et indépendante
 WORKSPACE      = workspace jetable, hors du dépôt du Lab
-ANCRE PRÉ-RUN  = 7fb102758e6966a2340859ca8d5c65e3fa0beec9
+ANCRE PRÉ-RUN  = 40a280d6cbd7ae6ab5136c24a46e460adccfdc3d
+                 identité d'origine 7fb102758e6966a2340859ca8d5c65e3fa0beec9,
+                 réécrite le 2026-09-08 par git filter-repo
 ```
 
 Le paquet participant a été remis par extraction directe de l'objet Git du

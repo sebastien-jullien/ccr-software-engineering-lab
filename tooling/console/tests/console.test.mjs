@@ -26,7 +26,7 @@ import {
   symlinkSync,
 } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { join, resolve } from 'node:path';
+import { join, resolve, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { request as httpRequest } from 'node:http';
@@ -1470,6 +1470,38 @@ const labCandidates = (candidateClass) =>
   );
 
 /**
+ * Population AUTHENTIQUE de `missions/`, lue dans l'index Git par le HARNAIS.
+ *
+ * C'est un oracle independant de l'enumeration : la console parcourt le
+ * disque, elle ne lit jamais l'index. Aucune constante de comptage n'est
+ * gelee ici -- la population croit a chaque mission publiee, et un compte fige
+ * ne dirait rien de ce qui est enumere ni de ce qui ne doit pas l'etre.
+ */
+const LAB_TRACKED_MISSIONS = Object.freeze(
+  labGit(['ls-files', '-z', '--', 'missions']).split('\0').filter(Boolean),
+);
+
+const AUTHENTIC = Object.freeze({
+  MISSION: LAB_TRACKED_MISSIONS.filter((path) => /^missions\/[^/]+\/mission\.json$/.test(path)),
+  RESULT: LAB_TRACKED_MISSIONS.filter((path) => /^missions\/[^/]+\/result\.json$/.test(path)),
+});
+
+/**
+ * Temoins JSON publies sous `missions/` qui ne sont NI une mission NI un
+ * resultat. Le dernier porte un nom qui FINIT par `result.json`, a une
+ * profondeur que l'enumeration atteint : un filtre elargi au suffixe le
+ * laisserait passer, la ou la table normative exige le nom exact.
+ */
+const IRRELEVANT_JSON = Object.freeze([
+  'missions/021-handoff-routing-c2-probe/baseline-manifest.json',
+  'missions/022-p-hr-01-bounded-implementation/implementation-evidence.json',
+  'missions/023-field-001-idempotent-job-submission/a1-freeze.json',
+  'missions/023-field-001-idempotent-job-submission/terminal/q1/q1-oracle-result.json',
+]);
+
+const lastSegment = (path) => path.slice(path.lastIndexOf('/') + 1);
+
+/**
  * Depot jetable de DECOUVERTE, hors du depot du Lab.
  *
  * Il porte le voisinage complet d'une mission -- l'artefact, son resultat, et
@@ -1548,16 +1580,43 @@ after(() => {
   rmSync(discovery.root, { recursive: true, force: true });
 });
 
-test('T-E1 : la mission authentique de missions/ est enumeree', () => {
+test('T-E1 : chaque mission authentique de missions/ est enumeree, et rien d autre', () => {
   const paths = labCandidates('MISSION');
   assert.ok(paths.includes(GENUINE.missionPath), paths.join(' '));
-  assert.equal(paths.length, 5);
+
+  assert.ok(AUTHENTIC.MISSION.length > 0, 'population authentique lue dans l index');
+  for (const path of AUTHENTIC.MISSION) assert.ok(paths.includes(path), 'non enumeree : ' + path);
+
+  for (const path of paths.filter((candidate) => candidate.startsWith('missions/'))) {
+    assert.equal(lastSegment(path), 'mission.json', path);
+  }
+  for (const path of IRRELEVANT_JSON) {
+    assert.ok(LAB_TRACKED_MISSIONS.includes(path), 'temoin absent de l index : ' + path);
+    assert.ok(!paths.includes(path), path);
+  }
 });
 
-test('T-E2 : le resultat authentique de missions/ est enumere', () => {
+test('T-E2 : chaque resultat authentique de missions/ est enumere, et aucun autre JSON', () => {
   const paths = labCandidates('RESULT');
   assert.ok(paths.includes(GENUINE.resultPath), paths.join(' '));
-  assert.equal(paths.length, 4);
+
+  assert.ok(AUTHENTIC.RESULT.length > 0, 'population authentique lue dans l index');
+  for (const path of AUTHENTIC.RESULT) assert.ok(paths.includes(path), 'non enumere : ' + path);
+
+  /* Sous missions/, RESULT est le NOM EXACT `result.json` : ni un suffixe, ni
+     « tout JSON sauf mission.json ». */
+  for (const path of paths.filter((candidate) => candidate.startsWith('missions/'))) {
+    assert.equal(lastSegment(path), 'result.json', path);
+  }
+  for (const path of IRRELEVANT_JSON) {
+    assert.ok(LAB_TRACKED_MISSIONS.includes(path), 'temoin absent de l index : ' + path);
+    assert.ok(!paths.includes(path), path);
+  }
+  for (const path of LAB_TRACKED_MISSIONS) {
+    if (path.endsWith('.json') && lastSegment(path) !== 'result.json') {
+      assert.ok(!paths.includes(path), path);
+    }
+  }
 });
 
 test('T-E3 : les quatre candidats MISSION preexistants demeurent', () => {
@@ -1729,6 +1788,349 @@ test('T-H5 : ni le contrat de route ni la frontiere de securite ne bougent', asy
     '/api/mission',
     '/api/result',
   ]);
+});
+
+/* ================================================================== *
+ * CONSOMMATION REELLE DES COUPLES AUTHENTIQUES
+ * ================================================================== */
+
+/**
+ * Identites de l'arbre HEAD du Lab : l'objet Git, octets canoniques. C'est la
+ * verite contre laquelle les resultats authentiques ont enregistre leurs
+ * identites -- pas une extraction, qui depend de la configuration locale.
+ */
+const LAB_HEAD = new Map(
+  labGit(['ls-tree', '-r', '-l', '-z', '--full-tree', 'HEAD'])
+    .split('\0')
+    .filter(Boolean)
+    .map((line) => {
+      const [meta, path] = line.split('\t');
+      const [, , blob, size] = meta.trim().split(/\s+/);
+      return [path, { blob, size: Number(size) }];
+    }),
+);
+
+/** Attributs d'extraction effectifs, par chemin suivi (`git ls-files --eol`). */
+const LAB_ATTRIBUTES = new Map(
+  labGit(['ls-files', '--eol', '-z'])
+    .split('\0')
+    .filter(Boolean)
+    .map((line) => {
+      const [meta, path] = line.split('\t');
+      return [path, meta.slice(meta.indexOf('attr/') + 'attr/'.length).trim()];
+    }),
+);
+
+const lfGoverned = (path) => /(^|\s)eol=lf(\s|$)/.test(LAB_ATTRIBUTES.get(path) ?? '');
+
+/** Les couples authentiques : un `result.json` publie et la mission voisine. */
+const AUTHENTIC_PAIRS = Object.freeze(
+  AUTHENTIC.RESULT.map((resultPath) => ({
+    resultPath,
+    missionPath: resultPath.slice(0, -'result.json'.length) + 'mission.json',
+  })).filter((pair) => AUTHENTIC.MISSION.includes(pair.missionPath)),
+);
+
+/** Meme semantique que `requestJson` du client : un non-2xx est un ECHEC structure. */
+const fetchThrough = (get) => async (url) => {
+  const response = await get(url);
+  if (response.status < 200 || response.status > 299) {
+    const payload = response.json;
+    const fault = new Error((payload && payload.message) || 'HTTP ' + response.status);
+    fault.status = response.status;
+    fault.code = payload && payload.code ? payload.code : 'HTTP_' + response.status;
+    fault.details = payload && payload.details !== undefined ? payload.details : null;
+    throw fault;
+  }
+  return response.json;
+};
+
+/**
+ * Parcours de l'operateur, par le coordinateur REEL de l'interface.
+ *
+ * La mission est affichee ; le resultat est demande CONTRE le snapshot que le
+ * serveur vient de capturer, l'URL etant composee comme le fait le cablage du
+ * panneau C. Aucune identite n'est codee en dur. `between` s'execute entre
+ * l'affichage et la demande de resultat, la ou l'operateur lit l'ecran.
+ */
+async function consume(get, missionPath, resultPath, { displayed = null, between } = {}) {
+  const outcome = { mission: displayed, result: null, fault: null };
+  const coordinator = createCoordinator({ fetchImpl: fetchThrough(get) });
+  if (outcome.mission === null) {
+    await coordinator.selectMission(
+      '/api/mission?path=' + encodeURIComponent(missionPath),
+      (payload) => {
+        outcome.mission = payload;
+      },
+      (fault) => {
+        outcome.fault = fault;
+      },
+    );
+    if (outcome.mission === null) return outcome;
+  }
+  if (between) between(outcome.mission);
+  const snapshot = outcome.mission.snapshot;
+  await coordinator.selectResult(
+    resultQuery(resultPath, snapshot.path, snapshot.blob),
+    (payload) => {
+      outcome.result = payload;
+    },
+    (fault) => {
+      outcome.fault = fault;
+    },
+  );
+  return outcome;
+}
+
+/** Octets CANONIQUES d'un objet du Lab, sans aucun filtre d'extraction. */
+const labObject = (object) =>
+  execFileSync('git', ['cat-file', 'blob', object], {
+    cwd: LAB_ROOT,
+    windowsHide: true,
+    maxBuffer: 1 << 26,
+  });
+
+/**
+ * Depot jetable hors du Lab, porteur des octets canoniques d'un couple.
+ *
+ * AUCUN COMMIT n'est cree ici. La console exige un HEAD : il vient d'un clone
+ * local du depot de fixture construit plus haut, dont l'unique commit vide
+ * preexiste. `stage` place les octets dans l'INDEX seulement, d'ou
+ * `git checkout -- <chemins>` peut ensuite les extraire reellement.
+ */
+function pairRepository(t, prefix, pair, stage) {
+  const root = mkdtempSync(join(tmpdir(), prefix));
+  const repository = join(root, 'repository');
+  execFileSync('git', ['clone', '-q', '--no-hardlinks', fixture.repository, repository], {
+    windowsHide: true,
+    stdio: 'pipe',
+  });
+  const git = (argv) =>
+    execFileSync('git', argv, { cwd: repository, windowsHide: true, stdio: 'pipe' })
+      .toString()
+      .trim();
+  for (const path of [pair.missionPath, pair.resultPath]) {
+    mkdirSync(join(repository, dirname(path)), { recursive: true });
+    writeFileSync(join(repository, path), labObject('HEAD:' + path));
+  }
+  if (stage) git(['-c', 'core.autocrlf=false', 'add', '--', pair.missionPath, pair.resultPath]);
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  return { repository, git };
+}
+
+/** Le depot jetable porte toujours le seul commit preexistant de la fixture. */
+function assertNoCommitCreated(git) {
+  assert.equal(git(['rev-list', '--all', '--count']), '1');
+  assert.equal(
+    git(['rev-parse', 'HEAD']),
+    execFileSync('git', ['rev-parse', 'HEAD'], { cwd: fixture.repository, windowsHide: true })
+      .toString()
+      .trim(),
+  );
+}
+
+async function serve(t, repository) {
+  const server = await start({ repoRoot: repository, port: 0 });
+  t.after(() => server.close());
+  return (path) => httpCall(server.port, path);
+}
+
+for (const pair of AUTHENTIC_PAIRS) {
+  const label = pair.missionPath.split('/')[1].slice(0, 3);
+
+  test('T-C1 ' + label + ' : consommation reelle du couple authentique, de la decouverte a la presentation', async () => {
+    /* 0. Extraction deterministe : la politique gouverne les deux artefacts,
+          et les octets extraits SONT ceux de l'objet Git. */
+    for (const path of [pair.missionPath, pair.resultPath]) {
+      assert.ok(lfGoverned(path), 'aucune politique d extraction LF : ' + path);
+      assert.equal(
+        gitBlobId(readFileSync(join(LAB_ROOT, path))),
+        LAB_HEAD.get(path).blob,
+        'octets extraits differents de l objet Git : ' + path,
+      );
+    }
+
+    /* 1. Decouverte. */
+    const missions = await labGet('/api/candidates?class=MISSION');
+    const results = await labGet('/api/candidates?class=RESULT');
+    const missionCandidate = missions.json.candidates.find((entry) => entry.path === pair.missionPath);
+    const resultCandidate = results.json.candidates.find((entry) => entry.path === pair.resultPath);
+    assert.ok(missionCandidate, 'mission non decouverte');
+    assert.ok(resultCandidate, 'resultat non decouvert');
+    assert.equal(missionCandidate.bytes, LAB_HEAD.get(pair.missionPath).size);
+    assert.equal(resultCandidate.bytes, LAB_HEAD.get(pair.resultPath).size);
+
+    /* 2 a 5. Affichage, snapshot capture, /api/result, association, validation. */
+    const { mission, result, fault } = await consume(labGet, pair.missionPath, pair.resultPath);
+    assert.equal(fault, null, fault ? fault.code + ' ' + fault.message : '');
+    assert.equal(mission.validation.ok, true);
+    assert.deepEqual(mission.snapshot, { path: pair.missionPath, blob: mission.capture.blob });
+    assert.equal(mission.snapshot.blob, LAB_HEAD.get(pair.missionPath).blob);
+
+    assert.ok(result, 'resultat presente');
+    assert.deepEqual(result.missionRecapture, {
+      path: pair.missionPath,
+      blob: mission.snapshot.blob,
+      confirmed: true,
+    });
+    assert.equal(result.capture.blob, LAB_HEAD.get(pair.resultPath).blob);
+    assert.equal(result.validation.ok, true);
+    assert.equal(result.sourceAssociation.status, 'MATCH');
+    assert.equal(result.sourceAssociation.authority.identity.value, mission.snapshot.blob);
+    assert.equal(result.returnContractAssociation.status, 'MATCH');
+    assert.equal(result.returnContractAssociation.authority.identity.value, mission.snapshot.blob);
+    assert.deepEqual(result.pathDivergence, []);
+    assert.equal(result.aggregate, 'MATCH');
+    assert.equal(result.contractValidation.run, true);
+    assert.equal(result.contractValidation.ok, true);
+    assert.ok(result.reportedValues.length > 0);
+
+    /* 6. Preuves : la ou la politique gouverne la cible, la resolution dit la
+          verite de l'objet Git -- MATCH pour une identite courante, MISMATCH
+          pour une identite historique depassee, que rien ne doit masquer. */
+    for (const entry of result.evidence) {
+      const path = entry.locator && entry.locator.kind === 'REPO_PATH' ? entry.locator.value : null;
+      if (path === null || !entry.identity || !LAB_HEAD.has(path) || !lfGoverned(path)) continue;
+      const expected = entry.identity.value === LAB_HEAD.get(path).blob ? 'MATCH' : 'MISMATCH';
+      assert.equal(entry.resolution, expected, path + ' ' + entry.identity.value);
+    }
+  });
+}
+
+test('T-C2 : un couple authentique reellement incompatible reste MISMATCH, porte de contrat fermee', async () => {
+  assert.ok(AUTHENTIC_PAIRS.length >= 2);
+  const [displayedPair, otherPair] = AUTHENTIC_PAIRS;
+
+  /* Mission affichee : celle du premier couple ; resultat : celui du second.
+     Deux artefacts authentiques, aucun fabrique. */
+  const { mission, result, fault } = await consume(
+    labGet,
+    displayedPair.missionPath,
+    otherPair.resultPath,
+  );
+  assert.equal(fault, null, fault ? fault.code : '');
+  assert.equal(result.missionRecapture.confirmed, true);
+  assert.equal(result.sourceAssociation.status, 'MISMATCH');
+  assert.equal(
+    result.sourceAssociation.authority.identity.value,
+    LAB_HEAD.get(otherPair.missionPath).blob,
+  );
+  assert.notEqual(result.sourceAssociation.authority.identity.value, mission.snapshot.blob);
+  assert.equal(result.returnContractAssociation.status, 'MISMATCH');
+  assert.equal(result.aggregate, 'MISMATCH');
+  assert.deepEqual(result.contractValidation, {
+    run: false,
+    reason: 'RETURN_CONTRACT_ASSOCIATION_NOT_MATCH',
+  });
+});
+
+test('T-C3 : sans politique l ecart d extraction est rapporte, sous politique il disparait, et le snapshot perime vaut 409', async (t) => {
+  const pair = { missionPath: GENUINE.missionPath, resultPath: GENUINE.resultPath };
+  const { repository, git } = pairRepository(t, 'local-mission-console-v0-extraction-', pair, true);
+  const objectBlob = LAB_HEAD.get(pair.missionPath).blob;
+
+  /* Extraction REELLE par Git, en `core.autocrlf=true`, sous un jeu
+     d'attributs donne. Le `.gitattributes` n'est pas dans l'index : c'est donc
+     celui de la copie de travail qui gouverne l'extraction. */
+  const extract = (attributes) => {
+    writeFileSync(join(repository, '.gitattributes'), attributes);
+    for (const path of [pair.missionPath, pair.resultPath]) unlinkSync(join(repository, path));
+    git(['-c', 'core.autocrlf=true', 'checkout', '--', pair.missionPath, pair.resultPath]);
+    return readFileSync(join(repository, pair.missionPath));
+  };
+  const get = await serve(t, repository);
+
+  /* 1. TEMOIN : aucun attribut. L'extraction est CRLF, et la console rapporte
+        l'ecart, factuellement : MISMATCH, sans 409 puisque le snapshot affiche
+        est bien celui que le serveur recapture. */
+  const crlf = extract('');
+  assert.ok(crlf.includes(0x0d), 'extraction temoin sans CR');
+  assert.notEqual(gitBlobId(crlf), objectBlob);
+  const before = await consume(get, pair.missionPath, pair.resultPath);
+  assert.equal(before.fault, null, before.fault ? before.fault.code : '');
+  assert.equal(before.mission.snapshot.blob, gitBlobId(crlf));
+  assert.equal(before.result.missionRecapture.confirmed, true);
+  assert.equal(before.result.sourceAssociation.status, 'MISMATCH');
+  assert.equal(before.result.returnContractAssociation.status, 'MISMATCH');
+  assert.equal(before.result.aggregate, 'MISMATCH');
+  assert.equal(before.result.contractValidation.run, false);
+
+  /* 2. La politique du Lab, et une nouvelle extraction REELLE : octets LF,
+        identite de l'objet Git, quelle que soit la configuration locale. */
+  const lf = extract(readFileSync(join(LAB_ROOT, '.gitattributes')));
+  assert.ok(!lf.includes(0x0d), 'la politique n a pas gouverne l extraction');
+  assert.equal(gitBlobId(lf), objectBlob);
+
+  /* 3. Le snapshot affiche AVANT est desormais reellement perime : 409, et
+        rien n'est presente. */
+  const stale = await consume(get, pair.missionPath, pair.resultPath, {
+    displayed: before.mission,
+  });
+  assert.equal(stale.result, null, 'aucun resultat presente contre un snapshot perime');
+  assert.equal(stale.fault.status, 409);
+  assert.equal(stale.fault.code, 'MISSION_VERSION_CHANGED');
+  assert.equal(stale.fault.details.requestedMissionBlob, gitBlobId(crlf));
+  assert.deepEqual(stale.fault.details.missionRecapture, {
+    path: pair.missionPath,
+    blob: objectBlob,
+    confirmed: false,
+  });
+  assert.equal(stale.fault.details.aggregate, 'CANNOT_ESTABLISH');
+  assert.equal(stale.fault.details.contractValidation.run, false);
+
+  /* 4. Mission reaffichee : l'ecart d'extraction a disparu. */
+  const restored = await consume(get, pair.missionPath, pair.resultPath);
+  assert.equal(restored.fault, null, restored.fault ? restored.fault.code : '');
+  assert.equal(restored.mission.snapshot.blob, objectBlob);
+  assert.equal(restored.result.missionRecapture.confirmed, true);
+  assert.equal(restored.result.sourceAssociation.status, 'MATCH');
+  assert.equal(restored.result.returnContractAssociation.status, 'MATCH');
+  assert.equal(restored.result.aggregate, 'MATCH');
+  assert.equal(restored.result.contractValidation.run, true);
+  assert.equal(restored.result.contractValidation.ok, true);
+  assertNoCommitCreated(git);
+});
+
+test('T-C4 : une mission modifiee entre l affichage et la recapture n est pas acceptee silencieusement', async (t) => {
+  /* La modification n'est pas fabriquee : c'est la version ANTERIEURE reelle
+     d'une mission authentique qui a change, tiree de l'historique Git. */
+  const versions = (path) => labGit(['log', '--format=%H', '--', path]).split('\n').filter(Boolean);
+  const pair = AUTHENTIC_PAIRS.find((candidate) => versions(candidate.missionPath).length > 1);
+  assert.ok(pair, 'une mission authentique a une version anterieure');
+  const oldest = versions(pair.missionPath).at(-1);
+  const previousBytes = labObject(oldest + ':' + pair.missionPath);
+  const previousBlob = gitBlobId(previousBytes);
+  const currentBlob = LAB_HEAD.get(pair.missionPath).blob;
+  assert.notEqual(previousBlob, currentBlob);
+
+  const { repository, git } = pairRepository(t, 'local-mission-console-v0-recapture-', pair, false);
+  const get = await serve(t, repository);
+
+  /* Affichage de la version courante, puis la mission change sur disque
+     pendant que l'operateur lit l'ecran. */
+  const changed = await consume(get, pair.missionPath, pair.resultPath, {
+    between: (mission) => {
+      assert.equal(mission.snapshot.blob, currentBlob);
+      writeFileSync(join(repository, pair.missionPath), previousBytes);
+    },
+  });
+  assert.equal(changed.result, null, 'aucun resultat presente');
+  assert.equal(changed.fault.status, 409);
+  assert.equal(changed.fault.code, 'MISSION_VERSION_CHANGED');
+  assert.equal(changed.fault.details.requestedMissionBlob, currentBlob);
+  assert.equal(changed.fault.details.missionRecapture.blob, previousBlob);
+  assert.equal(changed.fault.details.missionRecapture.confirmed, false);
+
+  /* Reaffichee, la version anterieure est un couple reellement incompatible
+     avec ce resultat : MISMATCH, jamais un MATCH silencieux. */
+  const reselected = await consume(get, pair.missionPath, pair.resultPath);
+  assert.equal(reselected.fault, null, reselected.fault ? reselected.fault.code : '');
+  assert.equal(reselected.mission.snapshot.blob, previousBlob);
+  assert.equal(reselected.result.missionRecapture.confirmed, true);
+  assert.equal(reselected.result.sourceAssociation.status, 'MISMATCH');
+  assert.equal(reselected.result.aggregate, 'MISMATCH');
+  assert.equal(reselected.result.contractValidation.run, false);
+  assertNoCommitCreated(git);
 });
 
 test('les actifs statiques sont servis par liste blanche de noms', async () => {
